@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Nos Services | Atelier Artisanal</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#FFF8F5]/80 backdrop-blur-xl shadow-[0px_20px_40px_rgba(36,25,18,0.06)]">
+    <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+        <a class="text-2xl font-black text-[#964900] tracking-tighter headline-font" href="index.html">Atelier Artisanal</a>
+        <div class="hidden md:flex gap-8 items-center headline-font tracking-tight text-sm font-semibold">
+            <a class="text-stone-600 hover:text-[#964900] transition-colors" href="index.html">Accueil</a>
+            <a class="text-stone-600 hover:text-[#964900] transition-colors" href="about.html">À propos</a>
+            <a class="text-[#964900] border-b-2 border-[#964900] pb-1" href="services.html">Services</a>
+            <a class="text-stone-600 hover:text-[#964900] transition-colors" href="contact.html">Contact</a>
+        </div>
+        <a href="contact.html" class="hidden md:block ml-4 bg-primary hover:opacity-80 transition-all duration-300 active:scale-95 text-on-primary px-6 py-2.5 rounded-full font-bold headline-font">Obtenir un Devis</a>
+        <!-- Mobile Menu -->
+        <button class="md:hidden text-primary">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="pt-40 pb-20 px-6 max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row items-end gap-8 mb-16">
+        <div class="md:w-2/3">
+            <span class="inline-block px-4 py-1.5 mb-6 bg-primary-fixed text-on-primary-fixed rounded-full text-xs font-bold tracking-widest uppercase">Nos Compétences</span>
+            <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter leading-[0.9] text-primary mb-8 headline-font">Nos Métiers</h1>
+            <p class="text-xl md:text-2xl text-on-surface-variant max-w-2xl font-medium leading-relaxed font-body">
+                Fusionner l'artisanat ancestral et l'ingénierie contemporaine pour bâtir des espaces qui traversent le temps.
+            </p>
+        </div>
+        <div class="md:w-1/3 flex justify-end">
+            <a href="contact.html" class="group bg-secondary text-on-secondary w-32 h-32 rounded-full font-bold flex flex-col items-center justify-center gap-2 hover:opacity-90 transition-all active:scale-95 shadow-xl hover:shadow-2xl headline-font">
+                <span class="material-symbols-outlined text-3xl">calendar_today</span>
+                <span class="text-center text-xs leading-tight">Prendre<br/>Rendez-vous</span>
+            </a>
+        </div>
+    </div>
+    <div class="relative w-full h-[614px] rounded-[3rem] overflow-hidden shadow-2xl">
+        <img class="w-full h-full object-cover" data-alt="Close-up of master craftsman hands working with fine wood on a sunlit workbench, warm golden dust motes in the air, editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-WTY2rtWEB_-hpV7C7v3tEUKZBYTJknU9UyVhfxdf1k9K0pMg9JaDsRDGdAZrM_j9onsDE0PszuOpN_w75y4fbT4yonA6nU-xRoSJ9E08tWc7Qht4TAtwMPs1TInMhw6nfjENdxblpuG-oMgI8hEhOHI-2h7-zWgGxxF5G9iazLKqMAJhnv4_1H90UVtdhpc08LYCsXD-K_HtDJsnq3bgtpDPljBjoBYoUqUVWX6zTa9bDzQpanOvQqhPohU9qCa3cBprgEQFKiY" alt="Atelier bois" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+    </div>
+</header>
+
+<!-- Detailed Services List -->
+<main class="space-y-32 py-20">
+    <!-- Service 1: Structural Curation -->
+    <section class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+        <div class="order-2 md:order-1">
+            <div class="h-[500px] rounded-[3rem] overflow-hidden bg-surface-container-high shadow-xl rotate-1 group hover:rotate-0 transition-transform duration-500">
+                <img class="w-full h-full object-cover" data-alt="Interior of a modern house showing complex architectural wooden beams and high ceilings, bright natural light pouring through floor to ceiling windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7bsJwN7HmiUm7DlwEpXe2FEDDlSeaFJjeLoJxpLXmyiyDpeDFYqIM6mi3K2FemDrFU6ov5-SwMFs1X1EoLIOEjXVAB2n6QYPGsGaRHGuQBS2pJuYKV-SQvRGUercZaE8BkPzSZYHInDLg9ocy78hCjmxKz548pcyQXrP7kO88O3I-o85TzcefgiQHxp-tVlrNsajLpowLIri0Lec3yAMd0pX-IK_IbYoC2HtQVXuzWQBRpzjjlCTzdLtErB8oxK-8GYHWx1kltLw" alt="Charpente apparente" />
+            </div>
+        </div>
+        <div class="order-1 md:order-2 space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="w-12 h-[2px] bg-primary rounded-full"></span>
+                <span class="font-bold text-primary tracking-widest text-sm uppercase headline-font">Domaine 01</span>
+            </div>
+            <h2 class="text-5xl font-bold tracking-tight text-on-surface headline-font">Menuiserie Structurelle</h2>
+            <p class="text-lg text-on-surface-variant leading-relaxed font-body">
+                Nous sommes spécialisés dans les modifications structurelles haut de gamme qui privilégient à la fois la sécurité et l'harmonie esthétique. De la charpente lourde en bois massif aux renforts intégrés, nous veillons à ce que les fondations de votre habitat soient aussi belles que ses finitions.
+            </p>
+            <ul class="space-y-4 font-medium text-on-surface">
+                <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    Ingénierie de charpente en bois
+                </li>
+                <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    Restauration de fondations historiques
+                </li>
+                <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    Intégration d'acier architectural
+                </li>
+            </ul>
+            <a href="contact.html" class="inline-flex bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-bold hover:bg-primary hover:text-on-primary transition-colors items-center gap-2 headline-font shadow-sm">
+                Démarrer votre Projet <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Service 2: Bespoke Carpentry -->
+    <section class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+        <div class="space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="w-12 h-[2px] bg-primary rounded-full"></span>
+                <span class="font-bold text-primary tracking-widest text-sm uppercase headline-font">Domaine 02</span>
+            </div>
+            <h2 class="text-5xl font-bold tracking-tight text-on-surface headline-font">Agencement & Ébénisterie</h2>
+            <p class="text-lg text-on-surface-variant leading-relaxed font-body">
+                Chaque assemblage, chaque grain de bois et chaque finition sont traités avec passion. Nos maîtres ébénistes créent des meubles sur-mesure, des escaliers réalisés à la main et des aménagements uniques qui confèrent à votre espace tout son caractère.
+            </p>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="p-6 bg-surface-container-low rounded-[1.5rem] shadow-sm hover:shadow-md transition-shadow">
+                    <span class="material-symbols-outlined text-secondary mb-4 text-3xl">architecture</span>
+                    <h4 class="font-bold mb-1 headline-font">Assemblage sur-mesure</h4>
+                    <p class="text-xs text-on-surface-variant font-body">Précision tenon et mortaise.</p>
+                </div>
+                <div class="p-6 bg-surface-container-low rounded-[1.5rem] shadow-sm hover:shadow-md transition-shadow">
+                    <span class="material-symbols-outlined text-secondary mb-4 text-3xl">home_repair_service</span>
+                    <h4 class="font-bold mb-1 headline-font">Modules intégrés</h4>
+                    <p class="text-xs text-on-surface-variant font-body">Optimisation spatiale maximale.</p>
+                </div>
+            </div>
+            <a href="contact.html" class="inline-block bg-secondary text-on-secondary px-8 py-4 rounded-full font-bold hover:bg-on-secondary hover:text-secondary border-2 border-transparent hover:border-secondary transition-all headline-font shadow-sm">Réserver une Consultation</a>
+        </div>
+        <div>
+            <div class="h-[500px] rounded-[3rem] overflow-hidden bg-surface-container-high shadow-xl -rotate-1 group hover:rotate-0 transition-transform duration-500">
+                <img class="w-full h-full object-cover" data-alt="Macro detail shot of a perfectly joined wood corner in a luxury kitchen cabinet, soft side lighting highlighting wood grain and satin finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmlgyvlQlQmyDgcgHLX2fq30UtdHvhyBzCr6vLXrsLo1hdnrYDqzszNYx2npELAdiJ-vBMKpWJ5mhp6MvyyuVC1b1X2pFiJb8qQ3apSJHi0p3WnJ1CVxmoLSpj_D7jPQqpx8VLEddCQD0x596GwwWELiXe7Pdr3lxieHjEMiUwwcq2KAci_NWD9kRpkP404tNVcfVGgt80--CUbb1p8ur_zysLxPsrwRT1MGUy_2VJi88JWbpNW7HgQ0ogzpN9V8P7XVYBSNZ_FoA" alt="Détail ébénisterie" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 3: Material Consultation -->
+    <section class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+        <div class="order-2 md:order-1">
+            <div class="h-[500px] rounded-[3rem] overflow-hidden bg-surface-container-high shadow-xl rotate-1 group hover:rotate-0 transition-transform duration-500">
+                <img class="w-full h-full object-cover" data-alt="Mood board of construction materials: raw oak samples, dark slate tiles, brass hardware, and textile swatches arranged neatly on a designer table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-U2ph2dVShI0eykLvpy7zpTxqqIfBVT4KMKu1bBDXuUPQpUXwAu5sJg3QX_W7FwISBMlHuqbFEHwhe1j5Xp1IvJEoTvWFJhVCSriSRYrGB7fM1PAgkl_NMO3htmHCI8BOGybNcaMV1ip1rUIsnfsmQF41pOukVb_2KMSGDV3e6bI0fXMe8yyKQAcYKtXeG0npQEo6k2tHpuQtzkyyJ2E01IeNFQNULFW9jiIWGpQkTrfiEKowdaPaeBSyPjMQZ5ZAf9rYOX45I3c" alt="Échantillons de bois" />
+            </div>
+        </div>
+        <div class="order-1 md:order-2 space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="w-12 h-[2px] bg-primary rounded-full"></span>
+                <span class="font-bold text-primary tracking-widest text-sm uppercase headline-font">Domaine 03</span>
+            </div>
+            <h2 class="text-5xl font-bold tracking-tight text-on-surface headline-font">Choix des Essences</h2>
+            <p class="text-lg text-on-surface-variant leading-relaxed font-body">
+                Nous vous accompagnons dans le choix de matériaux durables et de haute performance. Du bois de grange récupéré à la pierre naturelle, nous trouvons les textures parfaites pour s'accorder à votre vision et à vos habitudes de vie.
+            </p>
+            <div class="bg-primary-fixed-dim/20 p-8 rounded-[2rem] border-l-4 border-primary">
+                <p class="italic text-on-primary-container font-medium font-body leading-relaxed">"Le choix de la matière marque le premier mot dans le dialogue entre la maison et ses habitants."</p>
+            </div>
+            <a href="#" class="inline-flex bg-primary text-on-primary px-8 py-4 rounded-full font-bold hover:bg-primary-container hover:text-on-primary-container transition-colors items-center gap-2 headline-font shadow-sm">
+                Voir le Portfolio Matériaux <span class="material-symbols-outlined">open_in_new</span>
+            </a>
+        </div>
+    </section>
+</main>
+
+<!-- Process Section -->
+<section class="bg-surface-container-low py-32 mt-20 overflow-hidden relative rounded-[3rem] mx-4 md:mx-8">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20">
+            <h2 class="text-5xl md:text-6xl font-bold tracking-tighter text-on-surface mb-6 headline-font">Notre Démarche</h2>
+            <p class="text-on-surface-variant max-w-xl mx-auto text-lg font-body">Quatre étapes, du premier croquis jusqu'à l'inspection finale.</p>
+        </div>
+        <div class="grid md:grid-cols-4 gap-12 relative">
+            <!-- Connective Line -->
+            <div class="hidden md:block absolute top-12 left-12 w-[calc(100%-6rem)] h-[2px] bg-secondary-container opacity-50 -z-10 rounded-full"></div>
+            <!-- Step 1 -->
+            <div class="flex flex-col items-center text-center space-y-6">
+                <div class="w-24 h-24 rounded-full bg-primary flex items-center justify-center text-on-primary text-3xl font-black shadow-lg ring-8 ring-surface-container-low headline-font">01</div>
+                <h3 class="text-2xl font-bold headline-font">L'Esquisse</h3>
+                <p class="text-sm text-on-surface-variant font-medium px-4 font-body leading-relaxed">Immersion dans vos habitudes, contraintes du lieu et vos aspirations esthétiques.</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="flex flex-col items-center text-center space-y-6">
+                <div class="w-24 h-24 rounded-full bg-secondary flex items-center justify-center text-on-secondary text-3xl font-black shadow-lg ring-8 ring-surface-container-low headline-font">02</div>
+                <h3 class="text-2xl font-bold headline-font">La Sélection</h3>
+                <p class="text-sm text-on-surface-variant font-medium px-4 font-body leading-relaxed">Choix des matières premières nobles et ajustements minutieux des plans techniques.</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="flex flex-col items-center text-center space-y-6">
+                <div class="w-24 h-24 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container text-3xl font-black shadow-lg ring-8 ring-surface-container-low headline-font">03</div>
+                <h3 class="text-2xl font-bold headline-font">Le Façonnage</h3>
+                <p class="text-sm text-on-surface-variant font-medium px-4 font-body leading-relaxed">Exécution de haute précision par nos maîtres artisans, en atelier ou sur le chantier.</p>
+            </div>
+            <!-- Step 4 -->
+            <div class="flex flex-col items-center text-center space-y-6">
+                <div class="w-24 h-24 rounded-full bg-inverse-surface flex items-center justify-center text-inverse-on-surface text-3xl font-black shadow-lg ring-8 ring-surface-container-low headline-font">04</div>
+                <h3 class="text-2xl font-bold headline-font">L'Aboutissement</h3>
+                <p class="text-sm text-on-surface-variant font-medium px-4 font-body leading-relaxed">Traitements, retouches finales et remise des clés de votre nouvel espace intemporel.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="max-w-7xl mx-auto px-6 py-32">
+    <div class="bg-primary rounded-[3rem] p-12 md:p-24 text-center text-on-primary relative overflow-hidden group shadow-2xl">
+        <div class="absolute inset-0 opacity-10 pointer-events-none transition-transform duration-1000 group-hover:scale-110">
+            <span class="material-symbols-outlined text-[20rem] absolute -bottom-10 -left-10">handyman</span>
+        </div>
+        <h2 class="text-4xl md:text-6xl font-bold mb-8 relative z-10 headline-font tracking-tight leading-tight">Prêt à façonner un lieu<br/>qui traversera les générations ?</h2>
+        <div class="flex flex-col md:flex-row gap-6 justify-center relative z-10 mt-12">
+            <a href="contact.html" class="bg-surface text-primary px-10 py-5 rounded-full font-black text-lg hover:scale-105 transition-transform shadow-lg headline-font">Prendre Rendez-vous</a>
+            <a href="tel:0123456789" class="border-2 border-surface/30 text-surface px-10 py-5 rounded-full font-black text-lg hover:bg-surface/20 transition-colors headline-font">Appeler l'Atelier</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-surface-container-low rounded-t-[3rem] mt-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 w-full max-w-7xl mx-auto">
+        <div class="space-y-6">
+            <span class="text-xl font-bold text-[#964900] headline-font">Atelier Artisanal</span>
+            <p class="font-['Inter'] text-stone-600 text-sm leading-relaxed max-w-sm">
+                Redéfinir l'artisanat et l'agencement comme une véritable forme d'art, au service de vos espaces de vie.
+            </p>
+        </div>
+        <div class="flex flex-col gap-4 font-['Inter'] text-stone-600 text-sm">
+            <h4 class="font-bold text-on-surface mb-2 headline-font uppercase tracking-widest text-[#964900] text-xs">Visite</h4>
+            <a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="index.html">Accueil</a>
+            <a class="text-[#964900] font-bold hover:translate-x-1 duration-200" href="services.html">Services</a>
+            <a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="about.html">À Propos</a>
+            <a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="contact.html">Contact</a>
+        </div>
+        <div class="flex flex-col gap-4 font-['Inter'] text-stone-600 text-sm">
+            <h4 class="font-bold text-on-surface mb-2 headline-font uppercase tracking-widest text-[#964900] text-xs">Ressources & Légal</h4>
+            <a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="#">Instagram</a>
+            <a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="#">LinkedIn</a>
+            <a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="#">Politique de Confidentialité</a>
+            <a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="#">Mentions Légales</a>
+            <a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="#">Foire Aux Questions</a>
+        </div>
+    </div>
+    <div class="border-t border-outline-variant/20 py-8 px-12 max-w-7xl mx-auto text-center md:text-left">
+        <p class="font-['Inter'] text-stone-500 text-sm">© 2024 Atelier Artisanal. Conception avec âme.</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact | L'Autorité Juridique</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-surface text-on-surface selection:bg-tertiary/20">
+
+<!-- TopNavBar -->
+<nav class="bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md fixed top-0 w-full z-50">
+    <div class="flex justify-between items-center w-full px-12 py-6 max-w-screen-2xl mx-auto">
+        <a class="font-serif text-2xl font-bold tracking-tighter text-slate-800 dark:text-slate-100 uppercase" href="index.html">
+            L'Autorité Juridique
+        </a>
+        <div class="hidden md:flex items-center gap-10 font-serif text-lg tracking-tight">
+            <a class="text-slate-600 dark:text-slate-400 hover:text-amber-700 dark:hover:text-amber-500 transition-colors duration-300" href="index.html">Accueil</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-amber-700 dark:hover:text-amber-500 transition-colors duration-300" href="about.html">Le Cabinet</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-amber-700 dark:hover:text-amber-500 transition-colors duration-300" href="services.html">Expertises</a>
+            <a class="text-amber-700 dark:text-amber-500 font-semibold border-b-2 border-amber-700" href="contact.html">Contact</a>
+        </div>
+        <a href="#contact-secure" class="inline-block bg-primary text-on-primary px-8 py-3 font-label text-sm uppercase tracking-[0.15em] font-semibold hover:opacity-90 transition-opacity">
+            Demander une Consultation
+        </a>
+    </div>
+</nav>
+
+<main class="pt-32">
+    <!-- Contact Header Section -->
+    <section class="px-12 pt-24 pb-16 max-w-screen-2xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+            <div class="lg:col-span-8">
+                <span class="font-label text-sm uppercase tracking-[0.2em] text-tertiary mb-6 block">Demandes & Consultations</span>
+                <h1 class="text-6xl md:text-8xl font-headline font-bold text-on-surface tracking-tighter leading-[0.95]">
+                    Présence Mondiale.<br/>Précision Personnelle.
+                </h1>
+            </div>
+            <div class="lg:col-span-4 lg:pb-4">
+                <p class="text-xl text-on-surface-variant font-body leading-relaxed max-w-sm">
+                    Notre intervention commence avant tout par une conversation. Nous prodiguons des conseils de premier plan pour toutes les entités exigeant un savoir-faire faisant figure d'autorité et une discrétion à toute épreuve.
+                </p>
+                <div class="h-[2px] w-20 bg-tertiary mt-12"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form and Direct Info Section -->
+    <section class="px-12 py-24 bg-surface-container-low" id="contact-secure">
+        <div class="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-24">
+            
+            <!-- Minimal Form -->
+            <div class="lg:col-span-7 bg-surface-container-lowest p-12 lg:p-20 border-l-[6px] border-tertiary">
+                <h2 class="text-3xl font-headline mb-12">Requête Sécurisée</h2>
+                
+                <form action="#" class="space-y-12">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div class="relative">
+                            <label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2 block">Nom Complet</label>
+                            <input class="w-full bg-transparent border-0 border-b border-outline-variant/30 py-3 px-0 focus:ring-0 focus:border-tertiary font-body transition-colors" placeholder="Votre nom" type="text"/>
+                        </div>
+                        <div class="relative">
+                            <label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2 block">Adresse E-mail</label>
+                            <input class="w-full bg-transparent border-0 border-b border-outline-variant/30 py-3 px-0 focus:ring-0 focus:border-tertiary font-body transition-colors" placeholder="contact@email.com" type="email"/>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2 block">Société / Organisation</label>
+                        <input class="w-full bg-transparent border-0 border-b border-outline-variant/30 py-3 px-0 focus:ring-0 focus:border-tertiary font-body transition-colors" placeholder="Nom de l'entreprise" type="text"/>
+                    </div>
+                    
+                    <div class="relative">
+                        <label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2 block">Message de Contexte</label>
+                        <textarea class="w-full bg-transparent border-0 border-b border-outline-variant/30 py-3 px-0 focus:ring-0 focus:border-tertiary font-body transition-colors resize-none" placeholder="Veuillez décrire brièvement vos attentes..." rows="4"></textarea>
+                    </div>
+                    
+                    <div class="pt-6">
+                        <button class="bg-primary text-on-primary px-12 py-5 font-label text-sm uppercase tracking-widest font-bold hover:bg-secondary transition-colors w-full md:w-auto" type="submit">
+                            Soumettre la Demande
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Direct Contact Info -->
+            <div class="lg:col-span-5 space-y-16">
+                <div>
+                    <h3 class="font-headline text-2xl mb-8">Lignes Directes</h3>
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-6 group">
+                            <span class="material-symbols-outlined text-tertiary mt-1">phone_in_talk</span>
+                            <div>
+                                <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-1">Standard International</p>
+                                <a class="text-2xl font-headline group-hover:text-tertiary transition-colors" href="tel:+33188090000">+33 (0) 1 88 09 00 00</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6 group">
+                            <span class="material-symbols-outlined text-tertiary mt-1">mail</span>
+                            <div>
+                                <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-1">Bureau Principal</p>
+                                <a class="text-2xl font-headline group-hover:text-tertiary transition-colors" href="mailto:renseignement@autorite-juridique.fr">renseignement@autorite-juridique.fr</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-surface-container p-10 border border-outline-variant/10">
+                    <h4 class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-6">Presse & Médias</h4>
+                    <p class="font-body text-on-surface-variant leading-relaxed">
+                        Pour tout communiqué de presse, d'expertises des partenaires ou prise de parole publique, contactez le pool presse via l'adresse <span class="text-on-surface font-semibold underline decoration-tertiary/30">presse@autorite-juridique.fr</span>
+                    </p>
+                </div>
+                
+                <div class="relative overflow-hidden group h-64 grayscale hover:grayscale-0 transition-all duration-700">
+                    <img alt="Architecture d'entreprise moderne de bureaux en verre" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo8UlhNgVHuIa5anfkzkv1XwVMD2NZ6CwbODVvshQ3fKIV37Aqu_w-mDaTstHehH0ncioOY9BiZRJc4ndByHE5sFZIXXFQI533zdk7BgHpwoGm4v-Ns_W5JixrfNVkunedwsZq-NLXLMFin40JHAxbvwrxwzDJAhio-3Hbl_qSLVWAOOJ_XedfguH3mGe2yI0Faw6E4xQEsurPy-rfAxCxef_1eCeKMG0ZtXCGdMZEOz9IcJbUwLN6LqvxuxENnx2OXG294Jkg4o--"/>
+                    <div class="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Offices -->
+    <section class="px-12 py-32 max-w-screen-2xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-baseline mb-24 gap-8">
+            <h2 class="text-5xl font-headline tracking-tight">Nos Bureaux Internationaux</h2>
+            <p class="font-label text-sm uppercase tracking-widest text-tertiary">Bâtir un élan stratégique</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-0">
+            <!-- London -->
+            <div class="group border-r border-outline-variant/20 p-12 hover:bg-surface-container transition-colors first:border-l">
+                <span class="font-headline text-4xl mb-8 block group-hover:text-tertiary transition-colors italic">01</span>
+                <h3 class="text-3xl font-headline mb-4">Londres</h3>
+                <p class="font-body text-on-surface-variant leading-relaxed mb-10">
+                    Bureaux Éxecutifs de Mayfair<br/>
+                    14-16 Berkeley Square<br/>
+                    Londres W1J 6AA, UK
+                </p>
+                <div class="h-64 overflow-hidden mb-8">
+                    <img alt="Vue de la rue de Londres au crépuscule" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqR67UKkhc1XjDZzgsMp9GS1q_6JQZRttF3A_08rBiClLvMVChdtXzmTHhwHlnniCd0GBm5OOnkUx5iBvnWWCu6R2A1MN6yeNERO-9VusVvt4DRY_8x8JPGCo9YEr5QEVWACIv6WO9ntSK_3bAGO7qKwiGqt6SIhpEpbP-FBL98DzsXFl-gw5N6o9jQBZT32bYI2ayvQP8D5_ge0gZBq38KSXesAR8XU-CNsb7spm4DIff64mJ-R4o8TR01an61NYiQzTy7ndKSYex"/>
+                </div>
+                <a class="font-label text-xs uppercase tracking-widest font-bold inline-flex items-center gap-3 border-b border-tertiary pb-1" href="#">
+                    Afficher la carte <span class="material-symbols-outlined text-sm">north_east</span>
+                </a>
+            </div>
+            
+            <!-- New York -->
+            <div class="group border-r border-outline-variant/20 p-12 hover:bg-surface-container transition-colors">
+                <span class="font-headline text-4xl mb-8 block group-hover:text-tertiary transition-colors italic">02</span>
+                <h3 class="text-3xl font-headline mb-4">New York</h3>
+                <p class="font-body text-on-surface-variant leading-relaxed mb-10">
+                    The Rockefeller Plaza<br/>
+                    75ème Étage, Suite 1200<br/>
+                    New York, NY 10112
+                </p>
+                <div class="h-64 overflow-hidden mb-8">
+                    <img alt="Horizon au crépuscule de New York" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRjOZMBe9vGmu5lpQ8wCiPp8qrXZ5dKzHfRn_MXXxRCHxRJRPWL-sf86xobGFKkqOnz-kD5GIJYN2E2JGwemZeqpnOc9WI6HXpVAJBYnMhRTJLW5eLnCeHrOVBkia6fIYx3YwOJYDfIMi8uRaLdabLNj3WOXOtNsFJ6UDZ3Qt0Z3MI-O9Y1b-v2PvVJJRmc-q4M2lYCpzAOhO3VR21P1I7RJ8bxFRVo9qaXRehqIcj-ItUFBdfuJF6twDA0XYJf4rP7wxRKjMSkHgF"/>
+                </div>
+                <a class="font-label text-xs uppercase tracking-widest font-bold inline-flex items-center gap-3 border-b border-tertiary pb-1" href="#">
+                    Afficher la carte <span class="material-symbols-outlined text-sm">north_east</span>
+                </a>
+            </div>
+            
+            <!-- Singapore -->
+            <div class="group border-r border-outline-variant/20 p-12 hover:bg-surface-container transition-colors">
+                <span class="font-headline text-4xl mb-8 block group-hover:text-tertiary transition-colors italic">03</span>
+                <h3 class="text-3xl font-headline mb-4">Singapour</h3>
+                <p class="font-body text-on-surface-variant leading-relaxed mb-10">
+                    Marina Bay Financial Centre<br/>
+                    Tour 3, 42ème Étage<br/>
+                    Singapour 018982
+                </p>
+                <div class="h-64 overflow-hidden mb-8">
+                    <img alt="Panorma resplendissant de la Marina Bay à Singapour de nuit" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyvipl0mGJrhY4suKdm32WcYNgE7t9igWOljkwUu4Z5vFjP3O1PqAV7EID4wvWvtVShaZZvYGVx1dr7G1xjhsd3c4JLgFiU1Zbdu-2UKx9rTLU_u9ItQNR-Kq0tVbKqc9vxI24DwLss8sKqEO6NQ5sXgB4oxgrnP-kPcVFvogO79KCPLXauh5pgwBQlNnPSiSl2nrx8CEHYcBaBWvT8rxeeCPv9upvGtbIVGwbE6-04PXV7CFNN45Z-8BA4YTKDmkH3-PksroCP7XN"/>
+                </div>
+                <a class="font-label text-xs uppercase tracking-widest font-bold inline-flex items-center gap-3 border-b border-tertiary pb-1" href="#">
+                    Afficher la carte <span class="material-symbols-outlined text-sm">north_east</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Placeholder (The Architectural Monolith Style) -->
+    <section class="w-full h-96 bg-surface-container-highest relative flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 opacity-40 grayscale" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTk4jXzzryeKbFwciwTz8FhR-5N2wCaq7Y_OnW4hZq9JdJIjAMhHwHlRSBMEJ71kSTpRNGD4pnUhfCcjLS9i343JArgF0uuv58WJTW9dPU7seIVSRgZejWClA1b93TvXJMWacxMnyUlt81W_aV0xr90D7Eqy1-vkSxyZxZqTAcGN1BvrUvB_iiy8BQzD9hwB_CtsU1lem0moa2HJL2HdxjgRqDis0zmpePfANrwuuH6u7SF4ufp636kek-NIhYq_WlDosvwpTUIe2O'); background-size: cover; background-position: center;"></div>
+        <div class="relative z-10 text-center">
+            <span class="material-symbols-outlined text-tertiary text-6xl mb-4">public</span>
+            <p class="font-headline text-2xl tracking-widest uppercase">Cartographie des Opérations Globales</p>
+            <div class="h-[1px] w-48 bg-tertiary/30 mx-auto mt-6"></div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer Shell -->
+<footer class="bg-slate-100 dark:bg-slate-950 w-full border-t-0">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-16 px-12 py-24 max-w-screen-2xl mx-auto">
+        <div class="md:col-span-1">
+            <a class="font-serif text-xl text-amber-700 dark:text-amber-600 font-bold mb-8 block uppercase" href="#">
+                L'Autorité Juridique
+            </a>
+            <p class="font-sans text-sm tracking-wide text-slate-700 dark:text-slate-300">
+                Un conseil intergénérationnel face à un modèle en constante évolution d'exigences légales. De la minutie à chaque écrit. De l'autorité dans l'action.
+            </p>
+        </div>
+        
+        <div>
+            <h4 class="font-sans text-xs uppercase tracking-[0.2em] text-slate-900 dark:text-white font-bold mb-8">Expertises</h4>
+            <ul class="space-y-4">
+                <li><a class="font-sans text-sm tracking-wide uppercase text-slate-500 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Contentieux</a></li>
+                <li><a class="font-sans text-sm tracking-wide uppercase text-slate-500 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Droit des Sociétés</a></li>
+                <li><a class="font-sans text-sm tracking-wide uppercase text-slate-500 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Capital Investissement</a></li>
+                <li><a class="font-sans text-sm tracking-wide uppercase text-slate-500 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Propriété Intellectuelle</a></li>
+            </ul>
+        </div>
+        
+        <div>
+            <h4 class="font-sans text-xs uppercase tracking-[0.2em] text-slate-900 dark:text-white font-bold mb-8">Confidentialité & Légal</h4>
+            <ul class="space-y-4">
+                <li><a class="font-sans text-sm tracking-wide uppercase text-slate-500 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Politique de Confidentialité</a></li>
+                <li><a class="font-sans text-sm tracking-wide uppercase text-slate-500 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Conditions d'Utilisation</a></li>
+                <li><a class="font-sans text-sm tracking-wide uppercase text-slate-500 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Cookies</a></li>
+                <li><a class="font-sans text-sm tracking-wide uppercase text-slate-500 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Accessibilité</a></li>
+            </ul>
+        </div>
+        
+        <div>
+            <h4 class="font-sans text-xs uppercase tracking-[0.2em] text-slate-900 dark:text-white font-bold mb-8">Droits Exclusifs</h4>
+            <p class="font-sans text-sm tracking-wide uppercase text-slate-500">
+                © 2026 L'Autorité Juridique. Tous droits réservés.
+            </p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

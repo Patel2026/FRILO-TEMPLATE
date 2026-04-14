@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchBuild - Construction & Architecture</title>
+    
+    <!-- Polices Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Fichier CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Barre de Navigation -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <!-- LE LOGO CLIENT IRA ICI -->
+                <span class="logo-text">Arch<span class="highlight">Build.</span></span>
+            </div>
+            <nav class="nav-links">
+                <a href="#services">Nos Services</a>
+                <a href="#realisations">Réalisations</a>
+                <a href="#contact" class="btn">Devis Gratuit</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Héros -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Bâtissons l'Avenir,<br> <span class="highlight">Garantie sur Mesure.</span></h1>
+            <p>Experts en architecture, rénovation et gros œuvre. Nous transformons vos visions en structures pérennes depuis plus de 15 ans.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-large">Démarrer un projet</a>
+                <a href="#services" class="btn btn-outline">Découvrir nos services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Notre Expertise</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="grid-services">
+                <div class="card">
+                    <div class="icon">🏗️</div>
+                    <h3>Gros Œuvre</h3>
+                    <p>Fondations, élévation des murs et toiture. Nous assurons la solidité totale de vos édifices.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">📐</div>
+                    <h3>Architecture</h3>
+                    <p>Design structurel et plans sur-mesure validés par nos ingénieurs et architectes DPLG.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🔨</div>
+                    <h3>Rénovation</h3>
+                    <p>Réhabilitation d'espaces anciens, mise aux normes et isolation thermique complète.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action "Contact" -->
+    <section id="contact" class="cta">
+        <div class="container cta-content">
+            <h2>Prêt à construire ?</h2>
+            <p>Discutons de vos plans. Nos devis sont gratuits et envoyés sous 24h.</p>
+            <a href="mailto:contact@client-btp.com" class="btn btn-dark">Contactez-nous &rarr;</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>ArchBuild</h3>
+                <p>Votre partenaire de confiance en construction.</p>
+            </div>
+            <div class="footer-contact">
+                <p>📍 123 Avenue des Chantiers, Paris</p>
+                <p>📞 01 23 45 67 89</p>
+                <p>✉️ contact@archbuild.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ArchBuild. Créé par FRILO.</p>
+        </div>
+    </footer>
+
+    <!-- Script de sécurité basique (Dissuasion anti-clic droit) -->
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault()); // Bloque clic droit
+    </script>
+</body>
+</html>

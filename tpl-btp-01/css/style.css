@@ -1,0 +1,287 @@
+/* ==============================================================
+   1. VARIABLES DE CONFIGURATION (À MODIFIER POUR LE CLIENT)
+   ============================================================== */
+:root {
+    /* Identité Visuelle */
+    --primary-color: #f59e0b;     /* Jaune "Chantier BTP" (Amber 500) */
+    --primary-dark: #d97706;      /* Variante sombre au survol */
+    
+    /* Couleurs de fond et textes */
+    --bg-dark: #171717;           /* Noir "Acier/Carbone" */
+    --bg-light: #f9fafb;          /* Fond gris très clair pour les sections */
+    --text-main: #334155;         /* Couleur texte paragraphes */
+    --text-light: #ffffff;
+    
+    /* Polices d'écriture */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-text: 'Open Sans', sans-serif;
+}
+
+/* ==============================================================
+   2. STYLES DE BASE (Reset)
+   ============================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-text);
+    color: var(--text-main);
+    line-height: 1.6;
+    background-color: var(--text-light);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    color: var(--bg-dark);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.highlight {
+    color: var(--primary-color);
+}
+
+/* ==============================================================
+   3. BOUTONS
+   ============================================================== */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: var(--bg-dark);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-color);
+}
+
+.btn:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: white;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--text-light);
+    border-color: var(--text-light);
+}
+
+.btn-outline:hover {
+    background-color: var(--text-light);
+    color: var(--bg-dark);
+}
+
+.btn-large {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+}
+
+.btn-dark {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    border-color: var(--bg-dark);
+}
+
+.btn-dark:hover {
+    background-color: transparent;
+    color: var(--bg-dark);
+}
+
+/* ==============================================================
+   4. NAVIGATION (HEADER)
+   ============================================================== */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 100;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--text-light);
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 600;
+}
+
+/* ==============================================================
+   5. SECTION HÉROS (Bannière image)
+   ============================================================== */
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    /* Remplacer cette URL par l'image principale du client */
+    background: url('https://images.unsplash.com/photo-1541888081177-d68a2bfdfd6a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(23, 23, 23, 0.7); /* Calque sombre */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    color: var(--text-light);
+}
+
+.hero h1 {
+    color: var(--text-light);
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* ==============================================================
+   6. SERVICES
+   ============================================================== */
+.services {
+    padding: 80px 0;
+    background-color: var(--bg-light);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+}
+
+.grid-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--text-light);
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-bottom: 4px solid transparent;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-bottom-color: var(--primary-color);
+}
+
+.card .icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+/* ==============================================================
+   7. CALL TO ACTION & FOOTER
+   ============================================================== */
+.cta {
+    background-color: var(--primary-color);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta h2 {
+    color: var(--bg-dark);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    color: var(--bg-dark);
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+footer {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    padding: 60px 0 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-info h3 {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    margin-bottom: 5px;
+    color: #9ca3af;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #374151;
+    color: #9ca3af;
+    font-size: 0.9rem;
+}

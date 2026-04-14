@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact | ARCHITECTES DE LA JUSTICE</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-surface text-on-surface">
+
+<!-- Top Navigation Shell -->
+<header class="bg-[#131313] dark:bg-[#131313] flex justify-between items-center w-full px-8 py-6 max-w-none mx-auto z-50 sticky top-0">
+    <a href="index.html" class="text-2xl font-black tracking-tighter text-white dark:text-white uppercase headline-font">
+        ARCHITECTES DE LA JUSTICE
+    </a>
+    <nav class="hidden md:flex gap-10 items-center">
+        <a class="text-white/70 dark:text-white/70 hover:text-white transition-colors duration-300 label-md" href="index.html">Accueil</a>
+        <a class="text-white/70 dark:text-white/70 hover:text-white transition-colors duration-300 label-md" href="about.html">Le Cabinet</a>
+        <a class="text-white/70 dark:text-white/70 hover:text-white transition-colors duration-300 label-md" href="services.html">Expertises</a>
+        <a class="text-[#b91c1c] dark:text-[#ffb4ab] border-b-2 border-[#b91c1c] pb-1 label-md" href="contact.html">Contact</a>
+        <a href="#contact-form" class="bg-primary-container text-on-primary-container px-6 py-2 label-md font-bold hover:bg-primary transition-colors duration-300">Consultation</a>
+    </nav>
+    <button class="md:hidden text-white">
+        <span class="material-symbols-outlined">menu</span>
+    </button>
+</header>
+
+<main>
+    <!-- Hero Section: Urgency driven -->
+    <section class="relative min-h-[716px] flex items-center overflow-hidden bg-surface-container-lowest">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent z-10"></div>
+            <img alt="Façade dramatique d'un tribunal au crépuscule" class="w-full h-full object-cover grayscale opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6C6CIozVBeUzc6Bg1e_OlDTpaWNz7W60CNs_xdiUAK0J1uEaIHiRmxNf0pKl7aanTmb75plzD2q9AHm6RVvLYzBSYaKD2h4Wcz2z5DezY3je6Pzwtdl_GHzjao1y7nEAYP3GRnWJTm1WARmvesJCwW5eyeEEuN-927u-DvBSzlX1P5BeDb0lz4TLsimeQM3HuEN6ibINNPpLWxfrSnXgSanI866GAQvYj7t1rWr7yHZbX1_wb373V0vKbMKuKV8_wmHx7y7wS0nF0"/>
+        </div>
+        
+        <div class="container mx-auto px-8 relative z-20">
+            <div class="max-w-4xl">
+                <p class="label-md text-primary mb-4 tracking-[0.2em] font-bold">Protocole de Réponse Prioritaire</p>
+                <h1 class="headline-font text-6xl md:text-8xl font-medium tracking-tight mb-8 leading-none">
+                    La Justice N'Attend Pas.<br/>
+                    <span class="italic text-primary-fixed-dim">Nous Non Plus.</span>
+                </h1>
+                <div class="flex flex-wrap gap-6 items-center">
+                    <a class="bg-primary-container text-on-primary-container px-10 py-5 text-lg font-bold hover:bg-primary transition-colors duration-300" href="#contact-form">
+                        Obtenir de l'Aide Immédiate
+                    </a>
+                    <p class="text-on-surface-variant max-w-xs text-sm border-l border-outline-variant pl-4">
+                        Équipe de réponse rapide disponible 24/7 pour toute évaluation de litiges à fort enjeu.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area: Asymmetrical Form & Profile -->
+    <section class="py-24 bg-surface" id="contact-form">
+        <div class="container mx-auto px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                
+                <!-- Form Column -->
+                <div class="lg:col-span-7 bg-surface-container-low p-12 relative">
+                    <div class="absolute top-0 left-0 w-1 h-24 bg-primary"></div>
+                    <h2 class="headline-font text-4xl mb-12">Soumettre un Dossier</h2>
+                    
+                    <form class="space-y-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                            <div class="relative">
+                                <label class="label-md text-on-surface-variant mb-2 block">Nom Complet</label>
+                                <input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-2 transition-all outline-none" placeholder="Saisissez votre nom" type="text"/>
+                            </div>
+                            <div class="relative">
+                                <label class="label-md text-on-surface-variant mb-2 block">Numéro de Contact</label>
+                                <input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-2 transition-all outline-none" placeholder="+33 (0) 6 00 00 00 00" type="tel"/>
+                            </div>
+                        </div>
+                        
+                        <div class="relative">
+                            <label class="label-md text-on-surface-variant mb-2 block">Classification du Dossier</label>
+                            <select class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-2 transition-all outline-none appearance-none">
+                                <option class="bg-surface-container">Contentieux d'Entreprise</option>
+                                <option class="bg-surface-container">Droit Constitutionnel</option>
+                                <option class="bg-surface-container">Droit Pénal des Affaires</option>
+                                <option class="bg-surface-container">Violations des Droits Civiques</option>
+                                <option class="bg-surface-container">Litiges Commerciaux à Forts Enjeux</option>
+                            </select>
+                        </div>
+                        
+                        <div class="relative">
+                            <label class="label-md text-on-surface-variant mb-2 block">Bref Exposé de l'Urgence</label>
+                            <textarea class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-2 transition-all outline-none resize-none" placeholder="Décrivez les aspects cruciaux de votre affaire..." rows="4"></textarea>
+                        </div>
+                        
+                        <button class="w-full md:w-auto bg-white text-surface-container-lowest px-12 py-5 font-bold hover:bg-primary hover:text-on-primary transition-colors duration-300" type="submit">
+                            CONFIRMER LA DEMANDE
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Profile & Location Column -->
+                <div class="lg:col-span-5 space-y-16">
+                    <!-- Lead Professional -->
+                    <div class="group relative">
+                        <div class="aspect-[4/5] overflow-hidden bg-surface-container-highest mb-6">
+                            <img alt="Portrait de Me Marcus Thorne" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7kmyJvEGldhW65d8EXxzCCtyanpxPhETJy17_cmSrSIDJoLjDp39JgmISph3V23k9rd3LOi2_ONrNd41IPwnY8nkhpgfaM4pQWyUsBnrazcQUT56Mmk8JL4esqjx54tU3eUvEPbfHMXojhtg5tnagvM8Tgq_goNouAZ2yBU7kd71RYqZtX6lint3Nr352HIrl77eMfJI42qwaHBWwuRlGe3YDiYx0wMmPcLV9XbKJ0ApogwIxMjDtAIr_6p_kOFPTPvnKbcCFe09Z"/>
+                        </div>
+                        <div class="border-l-4 border-tertiary pl-6">
+                            <h3 class="headline-font text-3xl mb-1">Me Marcus Thorne</h3>
+                            <p class="label-md text-tertiary font-bold mb-4">Directeur du Contentieux Principal</p>
+                            <p class="text-on-surface-variant leading-relaxed">
+                                "Lorsque les enjeux sont critiques, votre représentation se doit d'être imperturbable. Nous ne faisons pas que nous défendre; nous édifions la route vers la victoire."
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Details -->
+                    <div class="bg-surface-container-highest p-8">
+                        <div class="space-y-6">
+                            <div class="flex gap-4">
+                                <span class="material-symbols-outlined text-primary">location_on</span>
+                                <div>
+                                    <p class="label-md text-white mb-1">Siège Principal</p>
+                                    <p class="text-on-surface-variant">8 Rue de l'Amiral d'Estaing<br/>Étage Penthouse, Paris 75116</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <span class="material-symbols-outlined text-primary">mail</span>
+                                <div>
+                                    <p class="label-md text-white mb-1">Communications Sécurisées</p>
+                                    <p class="text-on-surface-variant">renseignements@architectjustice.com</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <span class="material-symbols-outlined text-primary">call</span>
+                                <div>
+                                    <p class="label-md text-white mb-1">Ligne Prioritaire</p>
+                                    <p class="text-on-surface-variant">+33 (0) 1 555 0199</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section: Tonal Shift -->
+    <section class="h-[500px] w-full bg-surface-container-lowest relative grayscale hover:grayscale-0 transition-all duration-700 overflow-hidden">
+        <div class="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-surface to-transparent"></div>
+        <img alt="Plan abstrait du réseau de la ville" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmYa7fsz8DReeNRxZGrswlMQRQtTHUI6Gq45a9DqjwEvruswxqs45uhnB1yAcydAMRGY1vMIRxK3NkXfULG6-HKutfOKsq7DwJ0pxSPBW3z8otGSnORcNbBzg2svYwmT4XC9dCfWOFC4R3r_N7iFg-2ygpDGGLPNuTDGD7IzkA2B3aSnrNfHTItS0W-4NSkBMYI2VVKbqejPTEEdAh-m6zMl49oBZ0OckHUQE9wGroI6KZjE_-PLjlg6qE4u1gvKJtSR7tt2nWYwrp"/>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+            <div class="w-12 h-12 bg-primary-container flex items-center justify-center animate-pulse">
+                <span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">location_on</span>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer Shell -->
+<footer class="bg-[#0e0e0e] dark:bg-[#0e0e0e] w-full px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-12 border-t border-white/5">
+    <div class="md:col-span-2">
+        <div class="text-xl font-bold text-white uppercase mb-6 headline-font">ARCHITECTES DE LA JUSTICE</div>
+        <p class="text-white/50 dark:text-white/50 max-w-sm mb-8">
+            Cabinet Professionnel spécialisé dans les litiges fédéraux et commerciaux de la plus haute importance. Reposant sur une fondation d'autorité et de précision absolue.
+        </p>
+        <div class="flex gap-6">
+            <a class="text-white/50 hover:text-[#ffb4ab] transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+            <a class="text-white/50 hover:text-[#ffb4ab] transition-colors" href="#"><span class="material-symbols-outlined">gavel</span></a>
+            <a class="text-white/50 hover:text-[#ffb4ab] transition-colors" href="#"><span class="material-symbols-outlined">account_balance</span></a>
+        </div>
+    </div>
+    
+    <div>
+        <h4 class="label-md text-white mb-6">Nos Expertises</h4>
+        <ul class="space-y-4">
+            <li><a class="text-white/50 dark:text-white/50 hover:text-[#ffb4ab] transition-colors label-md" href="#">Contentieux</a></li>
+            <li><a class="text-white/50 dark:text-white/50 hover:text-[#ffb4ab] transition-colors label-md" href="#">Droit Constitutionnel</a></li>
+            <li><a class="text-white/50 dark:text-white/50 hover:text-[#ffb4ab] transition-colors label-md" href="#">Droit des Sociétés</a></li>
+        </ul>
+    </div>
+    
+    <div>
+        <h4 class="label-md text-white mb-6">Légal</h4>
+        <ul class="space-y-4">
+            <li><a class="text-white/50 dark:text-white/50 hover:text-[#ffb4ab] transition-colors label-md" href="#">Politique de Confidentialité</a></li>
+            <li><a class="text-white/50 dark:text-white/50 hover:text-[#ffb4ab] transition-colors label-md" href="#">Conditions d'Utilisation</a></li>
+            <li><a class="text-white/50 dark:text-white/50 hover:text-[#ffb4ab] transition-colors label-md" href="#">Mentions Légales</a></li>
+        </ul>
+    </div>
+    
+    <div class="md:col-span-4 border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-6">
+        <p class="text-white/50 dark:text-white/50 text-xs uppercase tracking-widest">
+            © 2026 Les Architectes de la Justice. Cabinet Professionnel. Tous Droits Réservés.
+        </p>
+        <p class="text-white/50 dark:text-white/50 text-xs uppercase tracking-widest italic">
+            Conseil stratégique pour ceux qui ne font aucun compromis.
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

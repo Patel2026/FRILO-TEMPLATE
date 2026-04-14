@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Expert Services | Artisan Workshop</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#98cbff",
+                    "inverse-surface": "#3b2e26",
+                    "primary-container": "#f57c00",
+                    "surface": "#fff8f5",
+                    "surface-bright": "#fff8f5",
+                    "on-error": "#ffffff",
+                    "tertiary": "#00639c",
+                    "on-tertiary-fixed-variant": "#004a77",
+                    "on-tertiary-fixed": "#001d33",
+                    "tertiary-container": "#01a4ff",
+                    "on-tertiary-container": "#00375a",
+                    "on-background": "#241912",
+                    "on-secondary-fixed-variant": "#004786",
+                    "error-container": "#ffdad6",
+                    "secondary": "#005faf",
+                    "surface-dim": "#ebd6ca",
+                    "secondary-container": "#54a0fe",
+                    "surface-container": "#ffeade",
+                    "on-surface-variant": "#574235",
+                    "inverse-on-surface": "#ffede4",
+                    "error": "#ba1a1a",
+                    "on-surface": "#241912",
+                    "surface-container-low": "#fff1ea",
+                    "primary-fixed-dim": "#ffb786",
+                    "primary": "#964900",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#723600",
+                    "inverse-primary": "#ffb786",
+                    "tertiary-fixed": "#cee5ff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-container": "#003567",
+                    "on-primary-fixed": "#311300",
+                    "outline": "#8b7263",
+                    "background": "#fff8f5",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#a5c8ff",
+                    "surface-container-highest": "#f4ded2",
+                    "on-primary-container": "#572800",
+                    "outline-variant": "#dec1af",
+                    "secondary-fixed": "#d4e3ff",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#964900",
+                    "primary-fixed": "#ffdcc6",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#001c3a",
+                    "surface-container-high": "#fae4d8",
+                    "surface-variant": "#f4ded2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#FFF8F5]/70 dark:bg-stone-950/70 backdrop-blur-xl shadow-[0px_20px_40px_rgba(36,25,18,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<span class="text-2xl font-black text-[#964900] dark:text-[#F57C00] tracking-tighter">ArtisanWorkshop</span>
+<div class="hidden md:flex gap-8 items-center font-['Plus_Jakarta_Sans'] tracking-tight text-sm font-semibold">
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#964900] transition-colors" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#964900] transition-colors" href="#">About</a>
+<a class="text-[#964900] dark:text-[#F57C00] border-b-2 border-[#964900] pb-1" href="#">Services</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#964900] transition-colors" href="#">Contact</a>
+<button class="ml-4 bg-primary hover:opacity-80 transition-all duration-300 active:scale-95 text-on-primary px-6 py-2.5 rounded-full font-bold">Get a Quote</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="pt-40 pb-20 px-6 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-end gap-8 mb-16">
+<div class="md:w-2/3">
+<span class="inline-block px-4 py-1.5 mb-6 bg-primary-fixed text-on-primary-fixed rounded-full text-xs font-bold tracking-widest uppercase">Our Expertise</span>
+<h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter leading-[0.9] text-primary mb-8">Expert Services</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-2xl font-medium leading-relaxed">
+                    Merging ancestral craftsmanship with contemporary engineering to build legacies that stand the test of time.
+                </p>
+</div>
+<div class="md:w-1/3 flex justify-end">
+<button class="group bg-secondary text-on-secondary px-8 py-8 rounded-full font-bold flex flex-col items-center justify-center gap-2 hover:opacity-90 transition-all active:scale-95 aspect-square">
+<span class="material-symbols-outlined text-3xl">calendar_today</span>
+<span class="text-center text-sm leading-tight">Book a<br/>Consultation</span>
+</button>
+</div>
+</div>
+<div class="relative w-full h-[614px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Artisan workspace" class="w-full h-full object-cover" data-alt="Close-up of master craftsman hands working with fine wood on a sunlit workbench, warm golden dust motes in the air, editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-WTY2rtWEB_-hpV7C7v3tEUKZBYTJknU9UyVhfxdf1k9K0pMg9JaDsRDGdAZrM_j9onsDE0PszuOpN_w75y4fbT4yonA6nU-xRoSJ9E08tWc7Qht4TAtwMPs1TInMhw6nfjENdxblpuG-oMgI8hEhOHI-2h7-zWgGxxF5G9iazLKqMAJhnv4_1H90UVtdhpc08LYCsXD-K_HtDJsnq3bgtpDPljBjoBYoUqUVWX6zTa9bDzQpanOvQqhPohU9qCa3cBprgEQFKiY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+</div>
+</header>
+<!-- Detailed Services List -->
+<main class="space-y-32 py-20">
+<!-- Service 1: Structural Curation -->
+<section class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1">
+<div class="h-[500px] rounded-xl overflow-hidden bg-surface-container-high shadow-xl rotate-1 group hover:rotate-0 transition-transform duration-500">
+<img alt="Structural design" class="w-full h-full object-cover" data-alt="Interior of a modern house showing complex architectural wooden beams and high ceilings, bright natural light pouring through floor to ceiling windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7bsJwN7HmiUm7DlwEpXe2FEDDlSeaFJjeLoJxpLXmyiyDpeDFYqIM6mi3K2FemDrFU6ov5-SwMFs1X1EoLIOEjXVAB2n6QYPGsGaRHGuQBS2pJuYKV-SQvRGUercZaE8BkPzSZYHInDLg9ocy78hCjmxKz548pcyQXrP7kO88O3I-o85TzcefgiQHxp-tVlrNsajLpowLIri0Lec3yAMd0pX-IK_IbYoC2HtQVXuzWQBRpzjjlCTzdLtErB8oxK-8GYHWx1kltLw"/>
+</div>
+</div>
+<div class="order-1 md:order-2 space-y-8">
+<div class="flex items-center gap-4">
+<span class="w-12 h-[1px] bg-primary"></span>
+<span class="font-bold text-primary tracking-widest text-sm uppercase">Service 01</span>
+</div>
+<h2 class="text-5xl font-bold tracking-tight text-on-surface">Structural Curation</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed font-body">
+                    We specialize in high-end structural modifications that prioritize both safety and aesthetic harmony. From heavy timber framing to integrated steel supports, our team ensures your home's foundation is as beautiful as its finish.
+                </p>
+<ul class="space-y-4 font-medium text-on-surface">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        Timber Frame Engineering
+                    </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        Historical Foundation Restoration
+                    </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        Architectural Steel Integration
+                    </li>
+</ul>
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all flex items-center gap-2">
+                    Start Your Project <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Service 2: Bespoke Carpentry -->
+<section class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<div class="flex items-center gap-4">
+<span class="w-12 h-[1px] bg-primary"></span>
+<span class="font-bold text-primary tracking-widest text-sm uppercase">Service 02</span>
+</div>
+<h2 class="text-5xl font-bold tracking-tight text-on-surface">Bespoke Carpentry</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed font-body">
+                    Every joint, every grain, and every finish is curated with obsession. Our master carpenters create custom cabinetry, hand-turned staircases, and one-of-a-kind furniture pieces that define the soul of your space.
+                </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-6 bg-surface-container-low rounded-lg border border-outline-variant/15">
+<span class="material-symbols-outlined text-secondary mb-4">architecture</span>
+<h4 class="font-bold mb-1">Custom Joinery</h4>
+<p class="text-xs text-on-surface-variant">Mortise and tenon precision.</p>
+</div>
+<div class="p-6 bg-surface-container-low rounded-lg border border-outline-variant/15">
+<span class="material-symbols-outlined text-secondary mb-4">home_repair_service</span>
+<h4 class="font-bold mb-1">Built-in Units</h4>
+<p class="text-xs text-on-surface-variant">Maximized spatial utility.</p>
+</div>
+</div>
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all">Book a Consultation</button>
+</div>
+<div>
+<div class="h-[500px] rounded-xl overflow-hidden bg-surface-container-high shadow-xl -rotate-1 group hover:rotate-0 transition-transform duration-500">
+<img alt="Fine carpentry details" class="w-full h-full object-cover" data-alt="Macro detail shot of a perfectly joined wood corner in a luxury kitchen cabinet, soft side lighting highlighting wood grain and satin finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmlgyvlQlQmyDgcgHLX2fq30UtdHvhyBzCr6vLXrsLo1hdnrYDqzszNYx2npELAdiJ-vBMKpWJ5mhp6MvyyuVC1b1X2pFiJb8qQ3apSJHi0p3WnJ1CVxmoLSpj_D7jPQqpx8VLEddCQD0x596GwwWELiXe7Pdr3lxieHjEMiUwwcq2KAci_NWD9kRpkP404tNVcfVGgt80--CUbb1p8ur_zysLxPsrwRT1MGUy_2VJi88JWbpNW7HgQ0ogzpN9V8P7XVYBSNZ_FoA"/>
+</div>
+</div>
+</section>
+<!-- Service 3: Material Consultation -->
+<section class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1">
+<div class="h-[500px] rounded-xl overflow-hidden bg-surface-container-high shadow-xl rotate-1 group hover:rotate-0 transition-transform duration-500">
+<img alt="Materials selection" class="w-full h-full object-cover" data-alt="Mood board of construction materials: raw oak samples, dark slate tiles, brass hardware, and textile swatches arranged neatly on a designer table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-U2ph2dVShI0eykLvpy7zpTxqqIfBVT4KMKu1bBDXuUPQpUXwAu5sJg3QX_W7FwISBMlHuqbFEHwhe1j5Xp1IvJEoTvWFJhVCSriSRYrGB7fM1PAgkl_NMO3htmHCI8BOGybNcaMV1ip1rUIsnfsmQF41pOukVb_2KMSGDV3e6bI0fXMe8yyKQAcYKtXeG0npQEo6k2tHpuQtzkyyJ2E01IeNFQNULFW9jiIWGpQkTrfiEKowdaPaeBSyPjMQZ5ZAf9rYOX45I3c"/>
+</div>
+</div>
+<div class="order-1 md:order-2 space-y-8">
+<div class="flex items-center gap-4">
+<span class="w-12 h-[1px] bg-primary"></span>
+<span class="font-bold text-primary tracking-widest text-sm uppercase">Service 03</span>
+</div>
+<h2 class="text-5xl font-bold tracking-tight text-on-surface">Material Sourcing</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed font-body">
+                    We guide you through the selection of sustainable, high-performance materials. From reclaimed barn wood to volcanic stone, we find the perfect textures to match your vision and lifestyle.
+                </p>
+<div class="bg-primary-fixed-dim/20 p-8 rounded-xl border-l-4 border-primary">
+<p class="italic text-on-primary-container font-medium">"The material choice is the first word in the conversation between a home and its inhabitant."</p>
+</div>
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all flex items-center gap-2">View Portfolio <span class="material-symbols-outlined">open_in_new</span></button>
+</div>
+</section>
+</main>
+<!-- Process Section -->
+<section class="bg-surface-container-low py-32 mt-20 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-20">
+<h2 class="text-5xl md:text-6xl font-bold tracking-tighter text-on-surface mb-6">Our Craft Process</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto text-lg">Four steps from the first sketch to the final inspection.</p>
+</div>
+<div class="grid md:grid-cols-4 gap-12 relative">
+<!-- Connective Line -->
+<div class="hidden md:block absolute top-12 left-0 w-full h-[2px] bg-outline-variant opacity-30 -z-10"></div>
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center space-y-6">
+<div class="w-24 h-24 rounded-full bg-primary flex items-center justify-center text-on-primary text-3xl font-black shadow-lg ring-8 ring-surface">01</div>
+<h3 class="text-2xl font-bold">Ideation</h3>
+<p class="text-sm text-on-surface-variant font-medium px-4">Deep dive into your lifestyle, site requirements, and aesthetic goals.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center space-y-6">
+<div class="w-24 h-24 rounded-full bg-secondary flex items-center justify-center text-on-secondary text-3xl font-black shadow-lg ring-8 ring-surface">02</div>
+<h3 class="text-2xl font-bold">Curation</h3>
+<p class="text-sm text-on-surface-variant font-medium px-4">Selecting the raw materials and refining technical blueprints.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center space-y-6">
+<div class="w-24 h-24 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container text-3xl font-black shadow-lg ring-8 ring-surface">03</div>
+<h3 class="text-2xl font-bold">Creation</h3>
+<p class="text-sm text-on-surface-variant font-medium px-4">Precision execution by our master artisans on-site or in-studio.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center space-y-6">
+<div class="w-24 h-24 rounded-full bg-inverse-surface flex items-center justify-center text-inverse-on-surface text-3xl font-black shadow-lg ring-8 ring-surface">04</div>
+<h3 class="text-2xl font-bold">Completion</h3>
+<p class="text-sm text-on-surface-variant font-medium px-4">Final detailing, treatment, and handing over the keys to your legacy.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="max-w-7xl mx-auto px-6 py-32">
+<div class="bg-primary rounded-xl p-12 md:p-24 text-center text-on-primary relative overflow-hidden group">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[20rem] absolute -bottom-20 -left-20">handyman</span>
+</div>
+<h2 class="text-4xl md:text-6xl font-bold mb-8 relative z-10">Ready to build something<br/>that lasts generations?</h2>
+<div class="flex flex-col md:flex-row gap-4 justify-center relative z-10">
+<button class="bg-surface text-primary px-10 py-5 rounded-full font-black text-lg hover:scale-105 transition-transform">Book a Consultation</button>
+<button class="border-2 border-surface/30 text-surface px-10 py-5 rounded-full font-black text-lg hover:bg-surface/10 transition-colors">Call Our Studio</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#FFF8F5] dark:bg-stone-900 rounded-t-[3rem] mt-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 w-full max-w-7xl mx-auto">
+<div class="space-y-6">
+<span class="text-xl font-bold text-[#964900] dark:text-[#F57C00]">Artisan Workshop</span>
+<p class="font-['Inter'] text-stone-600 dark:text-stone-400 text-sm leading-relaxed max-w-xs">
+                    © 2024 Artisan Workshop. Crafting with Soul. 
+                    Redefining construction as an art form.
+                </p>
+</div>
+<div class="flex flex-col gap-4 font-['Inter'] text-stone-600 dark:text-stone-400 text-sm">
+<h4 class="font-bold text-on-surface mb-2">Navigation</h4>
+<a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="#">Home</a>
+<a class="text-[#964900] font-bold hover:translate-x-1 duration-200" href="#">Services</a>
+<a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="#">About</a>
+<a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-4 font-['Inter'] text-stone-600 dark:text-stone-400 text-sm">
+<h4 class="font-bold text-on-surface mb-2">Connect</h4>
+<a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="#">Instagram</a>
+<a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="#">LinkedIn</a>
+<a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="#">Privacy Policy</a>
+<a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="#">Terms of Service</a>
+<a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="#">FAQ</a>
+</div>
+</div>
+</footer>
+
+```</body></html>

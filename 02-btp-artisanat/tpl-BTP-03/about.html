@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>À Propos | Atelier Artisanal</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#FFF8F5]/80 backdrop-blur-xl shadow-[0px_20px_40px_rgba(36,25,18,0.06)]">
+    <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+        <a class="text-2xl font-black text-[#964900] tracking-tighter headline-font" href="index.html">Atelier Artisanal</a>
+        <div class="hidden md:flex gap-8 items-center headline-font tracking-tight text-sm font-semibold">
+            <a class="text-stone-600 hover:text-[#964900] transition-colors" href="index.html">Accueil</a>
+            <a class="text-[#964900] border-b-2 border-[#964900] pb-1" href="about.html">À propos</a>
+            <a class="text-stone-600 hover:text-[#964900] transition-colors" href="services.html">Services</a>
+            <a class="text-stone-600 hover:text-[#964900] transition-colors" href="contact.html">Contact</a>
+        </div>
+        <a href="contact.html" class="hidden md:block bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold text-sm hover:opacity-80 transition-all duration-300 active:scale-95 headline-font">Obtenir un Devis</a>
+        <!-- Mobile Menu Toggle -->
+        <div class="md:hidden">
+            <span class="material-symbols-outlined text-primary cursor-pointer">menu</span>
+        </div>
+    </div>
+</nav>
+
+<main class="pt-24 space-y-32">
+    <!-- Hero Section: Our Story -->
+    <section class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1">
+                <span class="inline-block px-4 py-1.5 bg-primary-fixed text-on-primary-fixed text-xs font-bold tracking-widest uppercase rounded-full mb-6 relative">
+                    <span class="absolute -left-1 top-1/2 -translate-y-1/2 w-2 h-2 bg-primary rounded-full animate-ping"></span>
+                    Fondé en 1994
+                </span>
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-8 leading-[1.1]">
+                    Notre Parcours
+                </h1>
+                <p class="text-xl text-on-surface-variant leading-relaxed max-w-xl mb-10 font-body">
+                    Dans un monde où la production de masse prime, nous avons choisi la voie de la patience. Ce qui n'était qu'un modeste établi dans un atelier poussiéreux est devenu aujourd'hui un sanctuaire dédié à la menuiserie et l'agencement sur-mesure, où chaque assemblage, finition et détail est traité avec le plus profond respect.
+                </p>
+                <div class="flex items-center gap-6">
+                    <div class="flex -space-x-3">
+                        <div class="w-12 h-12 rounded-full border-4 border-surface bg-surface-container-high flex items-center justify-center">
+                            <span class="material-symbols-outlined text-primary scale-75">handyman</span>
+                        </div>
+                        <div class="w-12 h-12 rounded-full border-4 border-surface bg-primary text-on-primary flex items-center justify-center font-bold text-sm">30+</div>
+                    </div>
+                    <span class="text-sm font-semibold text-on-surface-variant">Années de maîtrise artisanale</span>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2 relative group">
+                <div class="absolute -top-6 -left-6 w-32 h-32 bg-primary-fixed-dim/30 rounded-full blur-3xl group-hover:bg-primary-fixed-dim/50 transition-all duration-500"></div>
+                <img class="w-full aspect-[4/5] object-cover rounded-[3rem] shadow-2xl relative z-10" data-alt="Close-up of an elderly craftsman's weathered hands carefully chiseling a piece of oak wood in a sun-drenched workshop filled with dust motes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKxgpXtTeL04sP2zlOyd9Wcrz_HOE8b3HUXogriT8c9J0Xx_4dgsbFsdQUkJAOemdObHcEv3UORg1WNSpbKH2AE9d6R9jCmm5luwdNsLhAMwtFpdOOF7f5XBdk_zeNIAfttX9qZD4K-nrkRJaLwmq9UqjU1XDNwmc0fa_hU9UFi0d3tXD4yY70SkeIfoKsV1PnsNFT2lhHo7mgNkGQvfToKnDG2c4MKdFFfVtqnw114w-Aogkjr-4ghqjSYkPhquuwPgFvBSC8gXE" alt="Mains d'artisan travaillant le bois" />
+                <div class="absolute -bottom-10 -right-10 hidden md:block w-64 h-64 bg-surface-container rounded-[3rem] z-0"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="bg-surface-container-low py-24 px-6 rounded-[3rem] mx-4 md:mx-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-extrabold tracking-tight mb-4">Matières à Réflexion</h2>
+                <p class="text-on-surface-variant max-w-2xl mx-auto text-lg">Notre travail est guidé par une boussole de principes immuables garantissant que chaque projet devienne une pièce d'héritage.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="bg-surface-container-lowest p-10 rounded-[2rem] group hover:bg-primary transition-all duration-500 shadow-sm hover:shadow-2xl">
+                    <div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mb-8 group-hover:bg-on-primary transition-colors">
+                        <span class="material-symbols-outlined text-on-primary-container group-hover:text-primary">verified</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 group-hover:text-on-primary transition-colors">La Qualité Sans Compromis</h3>
+                    <p class="text-on-surface-variant group-hover:text-on-primary/80 transition-colors leading-relaxed">Nous ne croyons pas au "suffisamment bon". Chaque essence de bois est sélectionnée à la main et chaque coupe est mesurée avec une minutie chirurgicale.</p>
+                </div>
+                <!-- Value 2 -->
+                <div class="bg-surface-container-lowest p-10 rounded-[2rem] group hover:bg-secondary transition-all duration-500 shadow-sm hover:shadow-2xl">
+                    <div class="w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center mb-8 group-hover:bg-on-secondary transition-colors">
+                        <span class="material-symbols-outlined text-on-secondary-container group-hover:text-secondary">handshake</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 group-hover:text-on-secondary transition-colors">Intégrité Transparente</h3>
+                    <p class="text-on-surface-variant group-hover:text-on-secondary/80 transition-colors leading-relaxed">Une tarification limpide, des délais respectés à la lettre, et un engagement viscéral à faire les choses bien, même lorsque personne ne regarde.</p>
+                </div>
+                <!-- Value 3 -->
+                <div class="bg-surface-container-lowest p-10 rounded-[2rem] group hover:bg-tertiary transition-all duration-500 shadow-sm hover:shadow-2xl">
+                    <div class="w-16 h-16 bg-tertiary-container rounded-full flex items-center justify-center mb-8 group-hover:bg-on-tertiary transition-colors">
+                        <span class="material-symbols-outlined text-on-tertiary-container group-hover:text-tertiary">brush</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 group-hover:text-on-tertiary transition-colors">Le Geste & l'Outil</h3>
+                    <p class="text-on-surface-variant group-hover:text-on-tertiary/80 transition-colors leading-relaxed">L'alliance parfaite entre les méthodes artisanales ancestrales et une précision technique moderne pour insuffler une âme authentique à vos espaces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Team Section -->
+    <section class="max-w-7xl mx-auto px-6 py-12">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Les visages de l'atelier</h2>
+                <p class="text-lg text-on-surface-variant leading-relaxed">Le cœur battant de l'Atelier. Un collectif de maîtres engagés dans la renaissance d'un art de vivre intentionnel par l'excellence du fait main.</p>
+            </div>
+            <a href="portfolio.html" class="text-primary font-bold flex items-center gap-2 hover:translate-x-2 transition-transform headline-font">
+                Voir l'Équipe en Action <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Team Member 1 -->
+            <div class="flex flex-col items-center text-center group">
+                <div class="relative w-full aspect-[4/5] mb-6 overflow-hidden rounded-[2rem] bg-surface-container">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Portrait of a male artisan with a short beard wearing a canvas apron in a wood shop, smiling warmly at the camera." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIyoYIEbZ9vgpFEK15QXZONkqYwt723ek58zmTuRZgKCRqqrP9D_b6d1u5aa-o_CW8SG0aTb7774BoVOK3MO5ebqV2PuNvzAj-tQQMnLItaJUg4TTkBqig97jXXiyYG5X5R1kJK0ffft9AZLOBcWBHHHpp56xJrfzlmX7Mnl0IDSNehjnwINviO8q9vPv5LHE83kgh0Y9DTcSzktKtRsngWDj6GF3CsHObSbz02W99-pzRk-tLrnW1JFwr1Mm85CLMwd3ljNb7GwE" alt="Portrait Artisan"/>
+                </div>
+                <h4 class="text-xl font-bold">Arthur Sterling</h4>
+                <p class="text-primary font-medium text-sm mb-3 uppercase tracking-widest headline-font">Maître Poseur</p>
+                <p class="text-on-surface-variant text-sm px-4 leading-relaxed">Plus de 25 ans d'expertise dans la menuiserie structurelle et les charpentes apparentes.</p>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="flex flex-col items-center text-center group">
+                <div class="relative w-full aspect-[4/5] mb-6 overflow-hidden rounded-[2rem] bg-surface-container">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Portrait of a female craftsman with glasses working on a small detail, looking focused and professional in a bright studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF1w2ZoFSVCGGWFu80pNTJyg8TuA2sD3Crp6t8Rn61KgvVvHru8TiKH8kTb87_fewf1uP1o3Q0aYJ6x3Bvn72bLlS1x2qLN9eqNqqFQWSMSQGk5R7nsY1JNognJbXhodC_ptz3R_ULuz-9PNsIYec1gicNm9KgLWQCKfqUWVesdsU5SlAu3h7MaS--c5l0PQS2T4RFo8PuQerH89S-ZTeENdHmaWd-Uu5pKbNQmADwthtVi9JbfFqRgi30FlhplN3G_2X-QdOOvms" alt="Portrait Spécialiste" />
+                </div>
+                <h4 class="text-xl font-bold">Elena Vance</h4>
+                <p class="text-primary font-medium text-sm mb-3 uppercase tracking-widest headline-font">Experte Finitions</p>
+                <p class="text-on-surface-variant text-sm px-4 leading-relaxed">Spécialiste des huiles naturelles, laques poncées à la main et techniques de dorure.</p>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="flex flex-col items-center text-center group">
+                <div class="relative w-full aspect-[4/5] mb-6 overflow-hidden rounded-[2rem] bg-surface-container">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Portrait of a smiling young apprentice artisan holding a wooden mallet, standing in front of stacks of raw timber." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTREZtjbQjr6m7rjT2BKTwzlruJyf-v8yIvaFLVidcUA8XHFiMrPSkWenIJ7jbGAG_t9fTB2sQVIBT3S5KBLxY23-A2IXLmBZEpRVYjloaT7Mqr-lkw_cfTxXL27o_AGpFwKbHmQlgA-327QQ5QP_l1S3DnJiww-kkmJKZ7yLDPhXa3bO4y9z8C9YWFlVrcbEgoFDdjobVuyyEY7SsrWnwCk_ABgoja2QfBgfx1Qn271o7U0-Ii0LYwOw8MS4RCSk6PKH3igqgxic" alt="Portrait Apprenti" />
+                </div>
+                <h4 class="text-xl font-bold">Julian Rossi</h4>
+                <p class="text-primary font-medium text-sm mb-3 uppercase tracking-widest headline-font">Compagnon Menuisier</p>
+                <p class="text-on-surface-variant text-sm px-4 leading-relaxed">Un talent en pleine ascension, axé sur l'intégration du mobilier minimaliste contemporain.</p>
+            </div>
+            <!-- Team Member 4 -->
+            <div class="flex flex-col items-center text-center group">
+                <div class="relative w-full aspect-[4/5] mb-6 overflow-hidden rounded-[2rem] bg-surface-container">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Portrait of a mature woman in a bright workshop, holding a sketchpad and looking inspired." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMD_W4wLVLi9SEmvILnnZx5Eg2Hg29o1bTRjxrxklG9VKYfoefOatYD-dlDWZ89l8e6e6AyIXltUUVoH47FdlD3hdqkJnfVUHRHH8FhTSSroRDHrljbxSsHvlMJ5MfjbziYr-IxEV_H7n1liZ780402Ugw0uFZo1YStpowDUJELNvxrku-1v55CDVs0e0YnPWnQLkfCPDLNrmvBYZfY2umf0p-Y39YoDVu7kn74Re_fOdoeP98j_4r5_JK1L5sdlfP-HrgCM3Q-hQ" alt="Portrait Vision" />
+                </div>
+                <h4 class="text-xl font-bold">Sarah Chen</h4>
+                <p class="text-primary font-medium text-sm mb-3 uppercase tracking-widest headline-font">Directrice Design</p>
+                <p class="text-on-surface-variant text-sm px-4 leading-relaxed">La visionnaire qui sublime les exigences des clients en chefs-d'œuvre constructibles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Post-it CTA Section -->
+    <section class="max-w-5xl mx-auto px-6 pb-24">
+        <div class="bg-primary text-on-primary p-12 md:p-20 rounded-[3rem] relative overflow-hidden text-center shadow-[0px_40px_80px_rgba(150,73,0,0.15)]">
+            <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-primary-container/30 rounded-full blur-3xl"></div>
+            <div class="relative z-10">
+                <h2 class="text-3xl md:text-5xl font-bold mb-8 tracking-tight">Prêt à bâtir l'intemporel ?</h2>
+                <p class="text-on-primary/90 text-lg mb-10 max-w-2xl mx-auto">Qu'il s'agisse de créer l'âme d'une nouvelle maison ou de rénover un espace historique, nous investissons la même passion dans chaque coup de rabot.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="bg-surface text-primary px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform shadow-lg headline-font">Planifier une Rencontre</a>
+                    <a href="portfolio.html" class="border-2 border-on-primary text-on-primary px-8 py-4 rounded-full font-bold hover:bg-on-primary hover:text-primary transition-all headline-font">Explorer le Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-container-low rounded-t-[3rem] mt-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 w-full max-w-7xl mx-auto">
+        <div class="flex flex-col gap-6">
+            <span class="text-xl font-bold text-[#964900] headline-font">Atelier Artisanal</span>
+            <p class="font-['Inter'] text-stone-600 text-sm leading-relaxed max-w-sm">Mettre l'humain et la matière au centre de chaque espace.</p>
+            <div class="flex gap-4">
+                <a class="w-10 h-10 rounded-full bg-surface shadow-sm flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
+                    <span class="material-symbols-outlined text-sm">photo_camera</span>
+                </a>
+                <a class="w-10 h-10 rounded-full bg-surface shadow-sm flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
+                    <span class="material-symbols-outlined text-sm">share</span>
+                </a>
+            </div>
+        </div>
+        <div class="flex flex-col gap-4">
+            <h4 class="font-bold text-on-surface headline-font tracking-widest uppercase text-xs text-[#964900]">Exploration</h4>
+            <a class="font-['Inter'] text-stone-500 hover:text-[#964900] transition-colors text-sm hover:translate-x-1 duration-200" href="portfolio.html">Portfolio</a>
+            <a class="font-['Inter'] text-stone-500 hover:text-[#964900] transition-colors text-sm hover:translate-x-1 duration-200" href="#">Nos Essences</a>
+            <a class="font-['Inter'] text-stone-500 hover:text-[#964900] transition-colors text-sm hover:translate-x-1 duration-200" href="#">Visites d'Atelier</a>
+            <a class="font-['Inter'] text-stone-500 hover:text-[#964900] transition-colors text-sm hover:translate-x-1 duration-200" href="#">Questions Fréquentes</a>
+        </div>
+        <div class="flex flex-col gap-4">
+            <h4 class="font-bold text-on-surface headline-font tracking-widest uppercase text-xs text-[#964900]">Atelier Commun</h4>
+            <a class="font-['Inter'] text-stone-500 hover:text-[#964900] transition-colors text-sm hover:translate-x-1 duration-200" href="#">Instagram</a>
+            <a class="font-['Inter'] text-stone-500 hover:text-[#964900] transition-colors text-sm hover:translate-x-1 duration-200" href="#">LinkedIn</a>
+            <a class="font-['Inter'] text-stone-500 hover:text-[#964900] transition-colors text-sm hover:translate-x-1 duration-200" href="#">Mentions Légales</a>
+            <a class="font-['Inter'] text-stone-500 hover:text-[#964900] transition-colors text-sm hover:translate-x-1 duration-200" href="#">Politique RGPD</a>
+        </div>
+    </div>
+    <div class="border-t border-outline-variant/20 py-8 px-12 max-w-7xl mx-auto text-center md:text-left">
+        <p class="font-['Inter'] text-stone-500 text-sm">© 2024 Atelier Artisanal. Conception avec âme.</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#624604",
+                    "tertiary": "#785a1a",
+                    "on-secondary-fixed": "#353f56",
+                    "inverse-primary": "#ebeef7",
+                    "on-primary": "#f6f7ff",
+                    "on-tertiary": "#fff8f1",
+                    "on-secondary-fixed-variant": "#515c73",
+                    "surface-container-high": "#e3e9ec",
+                    "primary-dim": "#4f535a",
+                    "tertiary-dim": "#6b4e0e",
+                    "error-container": "#fe8983",
+                    "primary-fixed": "#dfe2eb",
+                    "primary": "#5b5e66",
+                    "outline-variant": "#abb3b7",
+                    "error-dim": "#4e0309",
+                    "secondary-dim": "#48536a",
+                    "primary-container": "#dfe2eb",
+                    "on-error-container": "#752121",
+                    "secondary-container": "#d7e2ff",
+                    "on-secondary-container": "#475269",
+                    "primary-fixed-dim": "#d1d4dd",
+                    "on-primary-fixed-variant": "#585c63",
+                    "surface-variant": "#dbe4e7",
+                    "surface-container": "#eaeff1",
+                    "surface-bright": "#f8f9fa",
+                    "on-error": "#fff7f6",
+                    "inverse-surface": "#0c0f10",
+                    "tertiary-fixed": "#fbd185",
+                    "surface": "#f8f9fa",
+                    "secondary-fixed": "#d7e2ff",
+                    "background": "#f8f9fa",
+                    "on-secondary": "#f9f8ff",
+                    "on-primary-fixed": "#3c3f46",
+                    "tertiary-container": "#fbd185",
+                    "inverse-on-surface": "#9b9d9e",
+                    "secondary": "#545f77",
+                    "secondary-fixed-dim": "#c9d4f0",
+                    "on-primary-container": "#4e5259",
+                    "on-surface": "#2b3437",
+                    "surface-container-low": "#f1f4f6",
+                    "surface-container-highest": "#dbe4e7",
+                    "on-tertiary-fixed": "#4a3400",
+                    "on-tertiary-fixed-variant": "#6c500f",
+                    "error": "#9f403d",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#586064",
+                    "outline": "#737c7f",
+                    "tertiary-fixed-dim": "#ecc479",
+                    "on-background": "#2b3437",
+                    "surface-tint": "#5b5e66",
+                    "surface-dim": "#d1dce0"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": [
+                            "Noto Serif"
+                    ],
+                    "body": [
+                            "Manrope"
+                    ],
+                    "label": [
+                            "Manrope"
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Noto Serif', serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- TopNavBar -->
+<nav class="bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md fixed top-0 w-full z-50">
+<div class="flex justify-between items-center w-full px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="font-serif text-2xl font-bold tracking-tighter text-slate-800 dark:text-slate-100">
+                The Editorial Authority
+            </div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="font-serif text-lg tracking-tight text-amber-700 dark:text-amber-500 font-semibold border-b-2 border-amber-700 hover:text-amber-700 dark:hover:text-amber-500 transition-colors duration-300" href="#">Home</a>
+<a class="font-serif text-lg tracking-tight text-slate-600 dark:text-slate-400 hover:text-amber-700 dark:hover:text-amber-500 transition-colors duration-300" href="#">About</a>
+<a class="font-serif text-lg tracking-tight text-slate-600 dark:text-slate-400 hover:text-amber-700 dark:hover:text-amber-500 transition-colors duration-300" href="#">Services</a>
+<a class="font-serif text-lg tracking-tight text-slate-600 dark:text-slate-400 hover:text-amber-700 dark:hover:text-amber-500 transition-colors duration-300" href="#">Contact</a>
+<button class="bg-primary text-on-primary px-8 py-3 text-sm font-bold tracking-widest uppercase transition-opacity active:opacity-80">
+                    Request Consultation
+                </button>
+</div>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-12 max-w-screen-2xl mx-auto">
+<div class="w-full grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-7 z-10">
+<div class="w-20 h-[2px] bg-tertiary mb-12"></div>
+<h1 class="text-7xl md:text-9xl font-headline font-bold text-on-surface leading-[0.95] tracking-tighter mb-8">
+                        Defining Legal <br/> Excellence.
+                    </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant font-body max-w-xl mb-12 leading-relaxed">
+                        Architecting generational trust through rigorous precision and strategic foresight in the most complex global jurisdictions.
+                    </p>
+<button class="group flex items-center gap-4 text-tertiary font-bold tracking-[0.2em] uppercase text-sm">
+<span>Request Consultation</span>
+<span class="w-12 h-[1px] bg-tertiary transition-all group-hover:w-20"></span>
+</button>
+</div>
+<div class="md:col-span-5 relative h-[600px] md:h-[800px] overflow-hidden">
+<img alt="Elegant professional in a tailored suit" class="w-full h-full object-cover grayscale brightness-90" data-alt="Monochrome portrait of a professional in a bespoke suit standing against a brutalist architectural concrete wall with dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2cgwa9D6w15NS_8iPyx_F1M9Gvy-viAhZMiXxG5tbQwB8Nk18CjNVeKvDtUidAzpxwuimYW9SptXCMoS4-Mn4cQ8ulXrOvUOJTzU35NsoJ_8BZ8jlEGhH8ho4ypm4d9vFWOii5-fyB-kpWaatRf0DK5kzPkVhGZU6pioBWpwtfXfdPCrq9PW0N7hfyHSuCGygfvAladg02VDpANr3fsK_YIuEIZLk-NJ09pOxz-5a_-sHSyeLcPvKPBQRFBbM5V9MP5inTYE9xZSL"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+</div>
+</div>
+</section>
+<!-- Practice Areas: Grid Section -->
+<section class="bg-surface-container py-32 px-12">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex justify-between items-end mb-24">
+<div>
+<span class="label-md uppercase tracking-[0.2em] text-tertiary font-bold mb-4 block">Practice Domains</span>
+<h2 class="text-5xl font-headline font-bold text-on-surface tracking-tight">Core Competencies</h2>
+</div>
+<div class="hidden md:block text-right max-w-xs text-on-surface-variant text-sm uppercase tracking-widest leading-loose">
+                        Global legal infrastructure designed for the architectural integrity of enterprise.
+                    </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-12 aspect-square flex flex-col justify-between group transition-colors hover:bg-on-surface hover:text-surface">
+<span class="text-4xl font-headline italic opacity-20 group-hover:opacity-10">01</span>
+<div>
+<h3 class="text-2xl font-headline font-bold mb-4">Private Equity</h3>
+<p class="text-sm leading-relaxed opacity-70 group-hover:opacity-90">Navigating complex capital structures and high-stakes transitions with unwavering precision.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-12 aspect-square flex flex-col justify-between group transition-colors hover:bg-on-surface hover:text-surface">
+<span class="text-4xl font-headline italic opacity-20 group-hover:opacity-10">02</span>
+<div>
+<h3 class="text-2xl font-headline font-bold mb-4">Intellectual Property</h3>
+<p class="text-sm leading-relaxed opacity-70 group-hover:opacity-90">Protecting the structural foundations of global innovation through forensic legal strategy.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-12 aspect-square flex flex-col justify-between group transition-colors hover:bg-on-surface hover:text-surface">
+<span class="text-4xl font-headline italic opacity-20 group-hover:opacity-10">03</span>
+<div>
+<h3 class="text-2xl font-headline font-bold mb-4">Corporate Law</h3>
+<p class="text-sm leading-relaxed opacity-70 group-hover:opacity-90">Governance architectures built for longevity, compliance, and institutional scale.</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-12 aspect-square flex flex-col justify-between group transition-colors hover:bg-on-surface hover:text-surface">
+<span class="text-4xl font-headline italic opacity-20 group-hover:opacity-10">04</span>
+<div>
+<h3 class="text-2xl font-headline font-bold mb-4">Litigation</h3>
+<p class="text-sm leading-relaxed opacity-70 group-hover:opacity-90">Decisive courtroom authority with a historical record of precedent-setting outcomes.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Preview -->
+<section class="py-48 px-12 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-24 items-center">
+<div class="md:col-span-5">
+<img alt="Modern minimalist law office architecture" class="w-full aspect-[4/5] object-cover" data-alt="Interior of a luxury minimalist office with expansive glass walls, black marble flooring, and sharp architectural lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9bNo-1QGOh-yA2uF4aTdaSmdRBZI7vw2k1ufPEq6bskzfiwJSMeqT7ibgi0ppgnaIJuoz5zbwfX2nAA_HO89dbSDkXzWQI5Uq6kiVYSfaVLlHGl_QJ5R87euzoXLXLSa6MbTYz33Ihlzom8xrjzV7o1oEoCmwPiOObccP-wJ1IN6JKucSZwSYQxslMMLsN6MXlgkdvdr3R6jS5Wy23tpw8frh8jGhsX9Q3eBnt8YRAekNDE5tKYsoZ0l0-w194Gxszo5tMMutMhHv"/>
+</div>
+<div class="md:col-span-7">
+<span class="label-md uppercase tracking-[0.2em] text-tertiary font-bold mb-8 block">Our Heritage</span>
+<h2 class="text-6xl font-headline font-bold text-on-surface leading-tight mb-12">An Uncompromising <br/> Legacy of Trust</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<p class="font-body text-lg leading-relaxed text-on-surface-variant">
+                            Founded on the principles of architectural permanence, The Editorial Authority serves as the silent engine behind some of the most significant legal maneuvers in modern history. We believe that law is not just a practice, but a structural necessity.
+                        </p>
+<p class="font-body text-lg leading-relaxed text-on-surface-variant">
+                            Our team represents a convergence of elite legal minds, curated from the world's premier institutions, dedicated to the singular pursuit of absolute clarity in an increasingly opaque global landscape.
+                        </p>
+</div>
+<div class="mt-16 flex items-center gap-8">
+<div class="text-center">
+<span class="block text-4xl font-headline font-bold text-tertiary">40+</span>
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant">Years of Authority</span>
+</div>
+<div class="w-[1px] h-12 bg-outline-variant/30"></div>
+<div class="text-center">
+<span class="block text-4xl font-headline font-bold text-tertiary">92%</span>
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant">Success Rate</span>
+</div>
+<div class="w-[1px] h-12 bg-outline-variant/30"></div>
+<div class="text-center">
+<span class="block text-4xl font-headline font-bold text-tertiary">12</span>
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant">Global Offices</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Advantages: Structured List -->
+<section class="bg-on-surface text-surface py-32 px-12">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-32">
+<div class="border-l border-tertiary/40 pl-12">
+<h3 class="text-sm font-label font-bold uppercase tracking-[0.3em] text-tertiary mb-6">Strategic Insight</h3>
+<p class="text-xl font-headline leading-relaxed italic opacity-80">
+                            "We do not react to the landscape; we define the contours through predictive legal modeling."
+                        </p>
+</div>
+<div class="border-l border-tertiary/40 pl-12">
+<h3 class="text-sm font-label font-bold uppercase tracking-[0.3em] text-tertiary mb-6">Global Reach</h3>
+<p class="text-xl font-headline leading-relaxed italic opacity-80">
+                            "A unified infrastructure that transcends borders, providing seamless authority in any jurisdiction."
+                        </p>
+</div>
+<div class="border-l border-tertiary/40 pl-12">
+<h3 class="text-sm font-label font-bold uppercase tracking-[0.3em] text-tertiary mb-6">Absolute Privacy</h3>
+<p class="text-xl font-headline leading-relaxed italic opacity-80">
+                            "An impenetrable vault of discretion for the world's most sensitive institutional assets."
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-48 px-12 text-center max-w-screen-2xl mx-auto">
+<div class="inline-block w-20 h-[2px] bg-tertiary mb-16"></div>
+<div class="max-w-4xl mx-auto">
+<blockquote class="text-4xl md:text-6xl font-headline font-normal leading-[1.2] text-on-surface mb-12">
+                    "In the theater of global finance, The Editorial Authority is the director. Their foresight is not merely strategic; it is prophetic."
+                </blockquote>
+<cite class="not-italic">
+<span class="block text-lg font-bold text-tertiary tracking-widest uppercase">Julius V. Sterling</span>
+<span class="block text-sm text-on-surface-variant uppercase tracking-widest mt-2">Chairman, Global Equity Partners</span>
+</cite>
+</div>
+</section>
+<!-- Contact Preview -->
+<section class="bg-surface-container-low py-48 px-12 text-center">
+<div class="max-w-screen-2xl mx-auto">
+<h2 class="text-6xl md:text-8xl font-headline font-bold text-on-surface tracking-tighter mb-16">
+                    Secure Your Position.
+                </h2>
+<div class="flex flex-col md:flex-row justify-center items-center gap-8">
+<button class="bg-on-surface text-surface px-12 py-5 text-sm font-bold tracking-[0.3em] uppercase hover:bg-tertiary transition-colors">
+                        Initiate Consultation
+                    </button>
+<a class="text-on-surface font-body text-xl border-b border-on-surface/20 hover:border-tertiary transition-colors" href="mailto:office@editorialauthority.com">
+                        office@editorialauthority.com
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16 px-12 py-24 max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-serif text-xl text-amber-700 dark:text-amber-600 mb-8">
+                    The Editorial Authority
+                </div>
+<p class="text-slate-700 dark:text-slate-300 font-sans text-sm tracking-wide leading-relaxed">
+                    A multi-jurisdictional legal powerhouse specializing in high-end corporate architecture and structural litigation.
+                </p>
+</div>
+<div>
+<h4 class="font-sans text-sm tracking-wide uppercase text-slate-500 mb-8">Practice Areas</h4>
+<ul class="space-y-4">
+<li><a class="font-sans text-sm tracking-wide uppercase text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Litigation</a></li>
+<li><a class="font-sans text-sm tracking-wide uppercase text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Corporate</a></li>
+<li><a class="font-sans text-sm tracking-wide uppercase text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Private Equity</a></li>
+<li><a class="font-sans text-sm tracking-wide uppercase text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Intellectual Property</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-sans text-sm tracking-wide uppercase text-slate-500 mb-8">Resources</h4>
+<ul class="space-y-4">
+<li><a class="font-sans text-sm tracking-wide uppercase text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Privacy Policy</a></li>
+<li><a class="font-sans text-sm tracking-wide uppercase text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-sans text-sm tracking-wide uppercase text-slate-500 mb-8">Global HQ</h4>
+<address class="not-italic font-sans text-sm tracking-wide uppercase text-slate-700 dark:text-slate-300 leading-loose">
+                    Madison Avenue 12th Floor<br/>
+                    New York, NY 10022<br/>
+                    T. +1 (212) 880-9000
+                </address>
+</div>
+</div>
+<div class="px-12 py-12 border-t border-slate-200 dark:border-slate-800 max-w-screen-2xl mx-auto flex justify-between items-center">
+<span class="font-sans text-[10px] tracking-wide uppercase text-slate-500">
+                © 2024 The Editorial Authority. All rights reserved.
+            </span>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-amber-700 transition-colors" href="#"><span class="material-symbols-outlined text-lg">share</span></a>
+<a class="text-slate-500 hover:text-amber-700 transition-colors" href="#"><span class="material-symbols-outlined text-lg">mail</span></a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Atelier Artisanal | Conception avec Âme</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#FFF8F5]/80 backdrop-blur-xl shadow-[0px_20px_40px_rgba(36,25,18,0.06)]">
+    <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+        <a class="text-2xl font-black text-[#964900] tracking-tighter headline-font" href="index.html">Atelier Artisanal</a>
+        <!-- Desktop Links -->
+        <div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] tracking-tight text-sm font-semibold">
+            <a class="text-[#964900] border-b-2 border-[#964900] pb-1" href="index.html">Accueil</a>
+            <a class="text-stone-600 hover:text-[#964900] transition-colors" href="about.html">À propos</a>
+            <a class="text-stone-600 hover:text-[#964900] transition-colors" href="services.html">Services</a>
+            <a class="text-stone-600 hover:text-[#964900] transition-colors" href="contact.html">Contact</a>
+        </div>
+        <a href="contact.html" class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-semibold text-sm hover:opacity-80 transition-all duration-300 active:scale-95 shadow-lg shadow-primary/20 headline-font">
+            Obtenir un Devis
+        </a>
+    </div>
+</nav>
+
+<main class="pt-24 space-y-32">
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-8 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6 space-y-8">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-primary-fixed text-on-primary-fixed rounded-full text-xs font-bold uppercase tracking-widest">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    Savoir-faire d'Excellence
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] text-on-surface">
+                    Façonner des <span class="text-primary italic">Héritages</span> pour la Vie Moderne.
+                </h1>
+                <p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                    Nous fusionnons les techniques de menuiserie traditionnelles avec un design contemporain pour créer des espaces à la fois intemporels et profondément personnels.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="contact.html" class="px-8 py-4 bg-primary text-on-primary rounded-xl font-bold text-lg hover:shadow-2xl hover:shadow-primary/30 transition-all active:scale-95 flex items-center justify-center gap-2 headline-font">
+                        Demander un Devis
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                    <a href="services.html" class="px-8 py-4 bg-surface-container-high text-primary rounded-xl font-bold text-lg hover:bg-surface-container-highest transition-all flex items-center justify-center gap-2 headline-font">
+                        Voir les Réalisations
+                    </a>
+                </div>
+            </div>
+            <div class="lg:col-span-6">
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-primary-container/10 rounded-xl blur-2xl group-hover:bg-primary-container/20 transition-all duration-500"></div>
+                    <img class="relative w-full aspect-[4/5] object-cover rounded-[3rem] shadow-2xl" data-alt="Close-up of an artisan woodworker meticulously measuring a piece of walnut wood in a sunlit, sawdust-filled modern workshop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8Z25I5JXjBdsfWMA9TmUs9h9ncMQhEziaomaxf3Aa1-InoTltlRHMdql0Mo4Lw4RdFaailVewH0CI0trTcW_TkLZskJpdRnUaZ6I-Vy5DrjX0p180SnKSvVZO_yqJvbeJOcRqVxIiYOhARSX9WOzb_D0O_TsWtZmR9EnWZbCuaxjyeVrZlrrmzMZBIReUhVOBSNpAMjev4zIqD0_m4GhcjuZJEs-1zHDLs3qOU7E8Rj-fppU2NXcUATjxd8WmUF4p-v816NdZnOQ" alt="Artisan ébéniste dans son atelier" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="bg-surface-container-low py-32 rounded-[3rem] mx-4 lg:mx-8 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-8 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                <div class="max-w-2xl space-y-4">
+                    <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight">Des Solutions Sur-Mesure pour des Propriétaires <span class="text-secondary italic">Exigeants</span>.</h2>
+                    <p class="text-on-surface-variant text-lg">Chaque projet est une collaboration entre notre atelier et votre vision.</p>
+                </div>
+                <span class="text-primary-fixed-dim text-8xl font-black opacity-20 select-none hidden lg:block headline-font tracking-tighter">SERVICES</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-surface-container-lowest p-8 rounded-[2rem] space-y-6 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-full aspect-[16/10] overflow-hidden rounded-2xl">
+                        <img class="w-full h-full object-cover" data-alt="Minimalist modern kitchen with custom oak cabinetry and integrated handles in a bright airy space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfVsoUJL-x19EhvUXShYCfLpuAobs9gYFx7CyCzkXVFAin2Hx7yJmTv4VXMhmLCZ9Fd_JVAlQrZ1pr7uuteH84vOLmsorI6eVjHagXz8ABX1UhjWJffl1g0JU2svdwwDlnt7aUb4i2PW10K51kyluogjBk94akjRAW7yXmsNVuwVPP4WKF1kNKewElM63im2GL2P2ezeJlZqFwDcCQRCL8KjVw44P8hJcnTOwe8L63nz1ytrAMG7uLO86RP3mc3W8fHEVMZsnwajw" alt="Agencement sur-mesure" />
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="text-2xl font-bold">Agencement Sur-Mesure</h3>
+                        <p class="text-on-surface-variant leading-relaxed">Des solutions de rangement qui s'intègrent discrètement à votre architecture ou qui se démarquent comme des pièces maîtresses.</p>
+                    </div>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-surface-container-lowest p-8 rounded-[2rem] space-y-6 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-full aspect-[16/10] overflow-hidden rounded-2xl">
+                        <img class="w-full h-full object-cover" data-alt="Open concept home interior renovation featuring clean white walls and natural wood flooring transitions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvVZHt7dY-G6miJ0f6BKXfBRiwmTtdOyBgY-hrhucIDV0eP3jlDpQlcxL4kc51vSufbvbu6OlEkW06izvQaO1K0lxSOwnlMgKpuBwhsR3P8GZM-eTzd_juS2d6_QaDMGhv075Q4-yVHcd5DyFVjVj2a0a5xafe5jBlFb7YmLKXptAjGWb8qW3nJ135CtwkxwKtDMsbD2rs4tOtbjCeIbjiXZ4pF9pLjVaClp5508RQANHrk2lm_axYq3aq5txPZA1bVAYz0-HYeFs" alt="Rénovation Intérieure" />
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="text-2xl font-bold">Rénovation Intérieure</h3>
+                        <p class="text-on-surface-variant leading-relaxed">Transformer des pièces vieillissantes en espaces intentionnels conçus pour votre mode de vie actuel.</p>
+                    </div>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-surface-container-lowest p-8 rounded-[2rem] space-y-6 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-full aspect-[16/10] overflow-hidden rounded-2xl">
+                        <img class="w-full h-full object-cover" data-alt="Handcrafted solid wood dining table with elegant tapered legs in a warm sunlit dining room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcnm85kNnA4Ksni7xJvbOw4FvF9fOhFJFP6jYf3nETfshSK_LKiAuRXeqjd6xsEqsGvGWn55xL2hLY2Am4Iss1gpj9RX8E9e0SujmpcGJpsndH4wNxWhVSd8tfMuoEljwXvRQNCwVOsfifNlJev38OTXcPBMJiJUxyYldO0y-UdGka98RoCYTL3kRqseZUyroyVnN2GC5L_VSRGr6ayIRC_d54a8kCT6F2XQMFtAUUEg_42ga0JrxGeXpe-kNh7M7ULRmwALge-0Q" alt="Ébénisterie d'Art" />
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="text-2xl font-bold">Ébénisterie d'Art</h3>
+                        <p class="text-on-surface-variant leading-relaxed">Mobilier sur-mesure et détails architecturaux façonnés à partir de bois nobles issus de sources durables.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators / Testimonials -->
+    <section class="max-w-7xl mx-auto px-8 overflow-hidden">
+        <div class="text-center space-y-4 mb-20">
+            <h2 class="text-4xl font-extrabold tracking-tight">Le Standard <span class="text-primary italic">Artisanal</span></h2>
+            <p class="text-on-surface-variant max-w-xl mx-auto">Ce que nos clients disent de notre engagement envers le détail et la qualité.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+            <div class="bg-surface-container-high p-10 rounded-[2rem] space-y-6 relative">
+                <span class="material-symbols-outlined text-primary text-5xl opacity-20 absolute top-8 right-8">format_quote</span>
+                <p class="text-lg font-medium leading-relaxed italic text-on-surface">"Le soin apporté aux détails de notre cellier sur-mesure est incroyable. Ce n'est pas qu'une étagère, c'est une pièce maîtresse que nous utilisons chaque jour."</p>
+                <div class="flex items-center gap-4 pt-4 border-t border-outline-variant/30 mt-6">
+                    <div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-on-secondary-fixed">ED</div>
+                    <div>
+                        <p class="font-bold">Eleanor D.</p>
+                        <p class="text-xs text-on-surface-variant uppercase tracking-wider">Propriétaire</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-secondary-container p-10 rounded-[2rem] space-y-6 relative mt-12 md:mt-0 shadow-lg">
+                <span class="material-symbols-outlined text-on-secondary-container text-5xl opacity-20 absolute top-8 right-8">format_quote</span>
+                <p class="text-lg font-medium leading-relaxed italic text-on-secondary-container">"Nous avons travaillé avec de nombreux artisans, mais la communication et le savoir-faire de l'Atelier sont dans une catégorie à part."</p>
+                <div class="flex items-center gap-4 pt-4 border-t border-on-secondary-container/20 mt-6">
+                    <div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center font-bold text-secondary">MK</div>
+                    <div class="text-on-secondary-container">
+                        <p class="font-bold text-on-secondary-container">Marcus K.</p>
+                        <p class="text-xs uppercase tracking-wider opacity-80">Architecte</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-surface-container-high p-10 rounded-[2rem] space-y-6 relative lg:mt-24">
+                <span class="material-symbols-outlined text-primary text-5xl opacity-20 absolute top-8 right-8">format_quote</span>
+                <p class="text-lg font-medium leading-relaxed italic text-on-surface">"Ils ont véritablement respecté notre intérieur durant les travaux. Le rendu final est impeccable et a même été livré en avance."</p>
+                <div class="flex items-center gap-4 pt-4 border-t border-outline-variant/30 mt-6">
+                    <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-on-primary-fixed">SJ</div>
+                    <div>
+                        <p class="font-bold">Sarah J.</p>
+                        <p class="text-xs text-on-surface-variant uppercase tracking-wider">Agente Immobilière</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Work Gallery -->
+    <section class="max-w-7xl mx-auto px-8 pb-12">
+        <div class="flex flex-col sm:flex-row items-center justify-between mb-16 gap-6">
+            <h2 class="text-4xl font-extrabold tracking-tight">Réalisations Récentes</h2>
+            <a class="group flex items-center gap-2 text-primary font-bold hover:text-primary-container transition-colors" href="services.html">
+                Voir l'Atelier
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-auto md:h-[800px]">
+            <div class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-[2rem] group min-h-[300px]">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Luxurious master bedroom featuring a custom-built floor-to-ceiling wooden headboard and warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtYge9ykbfompbcXI9JipMT98M0plLCPNYn7MSc_FOCEr35bToEr6wteehnEJi2sucWPPxyeFt0cS50T-Y4xdm9_MbV37CpAxS7FOeWFhD73G0IA9WJRUiAVQMcg7EUJ66vSzEw0cfDHbzulTKiDYtp3EHCRjp3bHqzKE5Dm-RUrlrNwowq9VmwQCp5a7z2jAoTmLN20QkkuqGgcuiTDy8QDIXwTP6s8gymhbzZsAAXMWxJgm_-xsRUCYGU-yb-qAQ8NQyi1NjfZc" alt="Master Bedroom" />
+                <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                    <p class="text-surface font-bold text-2xl headline-font mb-1">La Suite Héritage</p>
+                    <p class="text-surface/90">Rénovation Complète de Chambre</p>
+                </div>
+            </div>
+            <div class="md:col-span-2 relative overflow-hidden rounded-[2rem] group min-h-[300px]">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Modern living room with custom walnut floating shelves and a minimalist fireplace surround" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsZiEmOea5RuvNa6zq-PNW0mJzCU0eSiNCD8wNgN8PxTO57hleEa91vhXFezNFkLUuK0DSYIHqJ9_tIhBtNlxzIex1yzEwM4w-QkMCk37izfEiyrYET7B5zkB_NX3QUMGXAoE5HDlmIwAVBOnbFQudcsy2bAV014yufwZw4jhvblVjZZqqy_FDHd2k8YW3OQ6gRCNS3HOGKAijQPZb09c4wx-MgZnngxFKk6tA4sqwqBxbJeZtYN7GXc-bU5PQ32PIZpevUHhRFBI" alt="Living Room Detail" />
+                <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                    <p class="text-surface font-bold text-xl headline-font mb-1">Manteau de Cheminée Minimaliste</p>
+                    <p class="text-surface/90">Agencement de Salon</p>
+                </div>
+            </div>
+            <div class="relative overflow-hidden rounded-[2rem] group min-h-[300px]">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Close-up of precise dovetail joinery in a handmade wooden jewelry box or drawer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjhfkWQKg6vgsM50MZBUgCY2GE4H1c78ZOZKCCDROTbPuflG0PgNv9PrnaZTLciyoaecETEeoOz6uTNH9HAVspxpjCcbCdcXE5fTfFUc1YP2bMHBQlU71OHwvL3l8kYlha7EnA9fvDxrY4wSwN0DbjbodDisOQ_NijY8HTYErbhIaU2Nq9JWGn96mcVZifPhIxwIrMMv9XZmpRCTUXHul8ImrbAGOyxjnzxVu6WwTv2YTyu7MswN5-rJxLYI7sRiz3Ll4ffGBy9qk" alt="Joinery Detail" />
+                <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+                    <p class="text-surface font-bold headline-font mb-1">Assemblage Traditionnel</p>
+                    <p class="text-surface/90 text-sm">Précision d'ébénisterie</p>
+                </div>
+            </div>
+            <div class="relative overflow-hidden rounded-[2rem] group min-h-[300px]">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Ergonomic home office setup with a custom L-shaped desk made from reclaimed wood boards" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj_RG-xticlSrdQVvhvUB4jC0jSCaPoZ9Za5xl2aLtY4lMS3Hg7AfooYbCqzRRAhwaZMklnt7kFXfzYZ7_hH8A4bySnlZEkzk6Xj6RlWp9AuGg_Fli-FK4rBXRVdwIW9mdVNoRej8jRuK3rVPNFxzR3Hzw9DoBQaoamA7T3a4CfChgQX_C6ZxS3_9u4ezyRBUkc4dtqD1-KBj1qS4ZpV7FlQLSqFsbZSvGQEkTL2ABs3HcTJV284rI5Q2Y1QqJ938Pcfz9TxKfuU0" alt="Home Office" />
+                <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+                    <p class="text-surface font-bold headline-font mb-1">Alcôve Bureau</p>
+                    <p class="text-surface/90 text-sm">Espace de travail intégré</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-container-low rounded-t-[3rem] mt-20">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 w-full max-w-7xl mx-auto">
+        <div class="space-y-6">
+            <a class="text-xl font-bold text-[#964900] headline-font" href="index.html">Atelier Artisanal</a>
+            <p class="font-['Inter'] text-stone-600 text-sm leading-relaxed max-w-xs">
+                Bâtir les fondations de votre avenir avec le savoir-faire du passé. Artisanat et passion de la matière.
+            </p>
+            <div class="flex gap-4">
+                <a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all shadow-sm" href="#">
+                    <span class="material-symbols-outlined text-sm">public</span>
+                </a>
+                <a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all shadow-sm" href="#">
+                    <span class="material-symbols-outlined text-sm">share</span>
+                </a>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-8">
+            <div class="space-y-4">
+                <p class="font-bold text-[#964900] text-xs uppercase tracking-widest headline-font">Navigation</p>
+                <nav class="flex flex-col gap-3 font-['Inter'] text-sm">
+                    <a class="text-stone-500 hover:text-[#964900] hover:translate-x-1 transition-all duration-200" href="about.html">À Propos</a>
+                    <a class="text-stone-500 hover:text-[#964900] hover:translate-x-1 transition-all duration-200" href="services.html">Nos Services</a>
+                    <a class="text-stone-500 hover:text-[#964900] hover:translate-x-1 transition-all duration-200" href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <div class="space-y-4">
+                <p class="font-bold text-[#964900] text-xs uppercase tracking-widest headline-font">Légal</p>
+                <nav class="flex flex-col gap-3 font-['Inter'] text-sm">
+                    <a class="text-stone-500 hover:text-[#964900] hover:translate-x-1 transition-all duration-200" href="#">Confidentialité</a>
+                    <a class="text-stone-500 hover:text-[#964900] hover:translate-x-1 transition-all duration-200" href="#">Conditions Générales</a>
+                    <a class="text-stone-500 hover:text-[#964900] hover:translate-x-1 transition-all duration-200" href="#">FAQ</a>
+                </nav>
+            </div>
+        </div>
+        <div class="space-y-6">
+            <p class="font-bold text-[#964900] text-xs uppercase tracking-widest headline-font">La Newsletter</p>
+            <p class="text-stone-600 text-sm">Actualités saisonnières sur l'artisanat et inspirations design.</p>
+            <div class="flex bg-surface rounded-xl p-1 shadow-inner">
+                <input class="bg-transparent border-none focus:ring-0 text-sm w-full px-4 outline-none" placeholder="email@adresse.com" type="email"/>
+                <button class="bg-primary text-on-primary p-3 rounded-lg hover:bg-primary-container transition-colors">
+                    <span class="material-symbols-outlined text-sm">send</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="border-t border-outline-variant/20 py-8 px-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="font-['Inter'] text-stone-600 text-sm">© 2024 Atelier Artisanal. Conception avec âme.</p>
+        <div class="flex gap-6 font-['Inter'] text-stone-600 text-sm">
+            <a class="hover:underline decoration-[#f57c00] decoration-2 underline-offset-4 transition-all" href="#">Instagram</a>
+            <a class="hover:underline decoration-[#f57c00] decoration-2 underline-offset-4 transition-all" href="#">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
