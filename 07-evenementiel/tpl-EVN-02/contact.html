@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact | L'Élite Événementielle</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed antialiased">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="flex justify-between items-center px-8 py-5 max-w-7xl mx-auto">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+                    <span class="text-white font-black text-lg">E</span>
+                </div>
+                <span class="text-xl font-extrabold tracking-tighter text-primary uppercase">L'Élite Événementielle</span>
+            </a>
+            <div class="hidden md:flex items-center gap-10 font-headline text-sm font-semibold tracking-tight">
+                <a class="text-slate-500 hover:text-primary transition-all" href="index.html">Accueil</a>
+                <a class="text-slate-500 hover:text-primary transition-all" href="a-propos.html">Philosophie</a>
+                <a class="text-slate-500 hover:text-primary transition-all" href="services.html">Expertise</a>
+                <a class="text-slate-500 hover:text-primary transition-all" href="portfolio.html">Engagement</a>
+                <a class="text-primary border-b-2 border-primary pb-1" href="contact.html">Contact</a>
+            </div>
+            <button class="bg-primary text-white px-6 py-2.5 rounded-lg font-headline text-sm font-bold tracking-tight hover:shadow-xl active:scale-95 transition-all">
+                Demander un Devis
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-40">
+        <!-- Header -->
+        <header class="max-w-7xl mx-auto px-8 mb-32">
+            <div class="max-w-3xl">
+                <span class="font-label text-[10px] tracking-[0.4em] font-black text-primary mb-8 block uppercase">Dialogue Stratégique</span>
+                <h1 class="display-lg font-extrabold text-primary mb-10 tracking-tighter">Planifiez votre <br/><span class="text-slate-400">Prochain Jalon.</span></h1>
+                <p class="text-xl font-light text-on-surface-variant leading-relaxed opacity-80">
+                    Chaque grand événement commence par une consultation structurée. Discutons de vos enjeux et architecturons ensemble votre réussite.
+                </p>
+            </div>
+        </header>
+
+        <section class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-32 mb-40">
+            <!-- Form Side -->
+            <div>
+                <h2 class="font-headline text-3xl font-extrabold text-primary mb-12 uppercase tracking-tighter">Requête de Consultation.</h2>
+                <form class="space-y-10">
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div class="space-y-2">
+                            <label class="font-label text-xs uppercase tracking-widest text-slate-400 font-bold">Nom Complet</label>
+                            <input class="input-elite" placeholder="Prénom & Nom" type="text"/>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="font-label text-xs uppercase tracking-widest text-slate-400 font-bold">Société / Institution</label>
+                            <input class="input-elite" placeholder="Votre organisation" type="text"/>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div class="space-y-2">
+                            <label class="font-label text-xs uppercase tracking-widest text-slate-400 font-bold">Email Professionnel</label>
+                            <input class="input-elite" placeholder="email@votre-societe.com" type="email"/>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="font-label text-xs uppercase tracking-widest text-slate-400 font-bold">Nature de l'Événement</label>
+                            <select class="input-elite appearance-none">
+                                <option>Congrès Mondial / National</option>
+                                <option>Gala d'Excellence</option>
+                                <option>Retraite Exécutive</option>
+                                <option>Lancement de Produit</option>
+                                <option>Hébergement Studio Live</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="font-label text-xs uppercase tracking-widest text-slate-400 font-bold">Note Stratégique</label>
+                        <textarea class="input-elite min-h-[150px]" placeholder="Détaillez vos enjeux, le message clé et le public visé..."></textarea>
+                    </div>
+                    <button class="bg-primary text-white w-full md:w-auto px-16 py-6 rounded-lg font-headline font-black text-xs uppercase tracking-[0.2em] shadow-2xl hover:bg-primary-container transition-all">
+                        Transmettre le Dossier
+                    </button>
+                </form>
+            </div>
+
+            <!-- Practical Info -->
+            <div class="space-y-20">
+                <div class="bg-surface-container-low p-12 rounded-3xl relative overflow-hidden">
+                    <div class="texture-dots absolute inset-0 opacity-20"></div>
+                    <div class="relative z-10">
+                        <h3 class="font-headline text-2xl font-black text-primary uppercase mb-10 tracking-tight">Cotonou Studio.</h3>
+                        <div class="space-y-12 font-light">
+                            <div class="flex gap-8">
+                                <span class="material-symbols-outlined text-primary text-3xl">corporate_fare</span>
+                                <div>
+                                    <p class="font-headline font-bold text-xs uppercase text-primary mb-2">Quartier Général</p>
+                                    <p class="text-on-surface-variant leading-relaxed">Zone Résidentielle Novotel, Villa Elite<br/>Haie Vive, Cotonou</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-8">
+                                <span class="material-symbols-outlined text-primary text-3xl">smart_display</span>
+                                <div>
+                                    <p class="font-headline font-bold text-xs uppercase text-primary mb-2">Pôle Broadcast</p>
+                                    <p class="text-on-surface-variant leading-relaxed">Studio "Atrium" - Centre d'Affaires<br/>Boulevard de la Marina</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-8">
+                                <span class="material-symbols-outlined text-primary text-3xl">support_agent</span>
+                                <div>
+                                    <p class="font-headline font-bold text-xs uppercase text-primary mb-2">Ligne Directe</p>
+                                    <p class="text-on-surface-variant leading-relaxed">+229 01 55 55 55 55</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual Element: Map-like texture or brand image -->
+                <div class="relative aspect-video rounded-3xl overflow-hidden shadow-ambient group">
+                    <img class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:scale-110 group-hover:grayscale-0" data-alt="Siège social moderne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzjdQTXQsbnlGkp85Urjy-Tg_YTPdkqXphAePuJQf0Yi2Zrak0DQXoRo7X4qmaBHeBKFoDAHYiGotUsQkh2ccODdzidCc3Dc4bWdHBlEaiD2pF24vbUXQbT_q5Fm7L5XLqnDcWVbVgXuM1Am2smJGu32qoNRkBgMQgmg2s75dXQYdQ3-JIG9NPLkQ3_iEBPluaroS985uNR3hKsgFX04kU6gGPbU3TyvYxmtdIyL9_T1FoSkCrCH2k0U5xFfmqOqgiZchG_Iq_o4wF"/>
+                    <div class="absolute inset-x-8 bottom-8 p-6 bg-primary/95 text-white rounded-xl backdrop-blur-md translate-y-6 group-hover:translate-y-0 transition-transform">
+                        <p class="text-xs font-bold uppercase tracking-widest">Disponibilité : 24/7 pour missions en cours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-container text-white py-24">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-20 px-12 max-w-7xl mx-auto border-b border-white/5 pb-20 mb-16">
+            <div class="col-span-1">
+                <span class="text-2xl font-black tracking-tighter uppercase mb-8 block text-primary-fixed">L'Élite Événementielle</span>
+                <p class="font-body text-sm text-on-primary-container leading-relaxed opacity-60">
+                    Architecting the Future of Professional Gathering.
+                </p>
+            </div>
+            <div>
+                <h6 class="font-headline text-sm font-black text-white uppercase tracking-widest mb-10">Navigation</h6>
+                <ul class="space-y-6 text-sm text-on-primary-container opacity-60 font-medium">
+                    <li><a class="hover:text-white transition-colors" href="index.html">Accueil</a></li>
+                    <li><a class="hover:text-white transition-colors" href="a-propos.html">Philosophie</a></li>
+                    <li><a class="hover:text-white transition-colors" href="services.html">Expertise</a></li>
+                    <li><a class="hover:text-white transition-colors" href="portfolio.html">Engagement</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="font-headline text-sm font-black text-white uppercase tracking-widest mb-10">Engagement</h6>
+                <ul class="space-y-6 text-sm text-on-primary-container opacity-60 font-medium">
+                    <li><a class="hover:text-white transition-colors" href="#">Rapports d'Activité</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Méta-Données</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="px-12 text-center text-[8px] text-on-primary-container opacity-40 uppercase tracking-[0.5em]">
+            © 2026 L'ÉLITE ÉVÉNEMENTIELLE.
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Accueil | L'Ébène Haute Cuisine</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300&family=Manrope:wght@200;400;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+
+    <!-- TopNavBar -->
+    <header class="fixed top-0 w-full z-50 rounded-none bg-[#131313]/70 backdrop-blur-md border-b border-white/5">
+        <nav class="flex justify-between items-center w-full px-12 py-8 mx-auto">
+            <a href="index.html" class="font-headline text-2xl font-light tracking-[0.2em] text-[#f1c97d]">
+                L'ÉBÈNE
+            </a>
+            <div class="hidden md:flex gap-12 items-center">
+                <a class="font-headline tracking-tight text-lg uppercase transition-all duration-500 hover:tracking-widest text-[#f1c97d] border-b border-[#f1c97d]/30 pb-1" href="index.html">L'Expérience</a>
+                <a class="font-headline tracking-tight text-lg uppercase transition-all duration-500 hover:tracking-widest text-[#e5e2e1] hover:text-[#f1c97d]" href="menu.html">Dégustation</a>
+                <a class="font-headline tracking-tight text-lg uppercase transition-all duration-500 hover:tracking-widest text-[#e5e2e1] hover:text-[#f1c97d]" href="gallery.html">Galerie</a>
+                <a class="font-headline tracking-tight text-lg uppercase transition-all duration-500 hover:tracking-widest text-[#e5e2e1] hover:text-[#f1c97d]" href="reservation.html">Réservation</a>
+            </div>
+            <a href="reservation.html" class="bg-primary text-on-primary px-8 py-3 font-label text-sm tracking-[0.15em] uppercase hover:bg-primary-fixed-dim transition-all duration-500 text-center">
+                Réserver une Table
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover opacity-60 scale-105" data-alt="Plan large cinématique d'un restaurant sombre et élégant, tables éclairées à la bougie" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvt8BqJhEDe3_im0EE59-AHOJUoB4JxtHWcwiHK7vDan9CT4MWw1neNycx4AHErGiPMGVRXg1N8DBZDGWadPwqTwfP7RqgUjbrvd9PhtFjXVmoU66vD6o9s03oAaaKYxJNBbhsWbFM8yoKpMuwQjF3DnxHbUcNDHpvJce_Jgl_kqCxUmaGF6xT8Re_LFmsTk-_VxU1XixjKlbcHjQdaHZlHfEQuu9VMMd9hgddt8wcR2d4S_Y9fDYwMnFh9nhl6l1oWWuafLnSfK2b"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50"></div>
+            </div>
+            <div class="relative z-10 text-center px-6 max-w-5xl">
+                <span class="block text-primary font-label tracking-[0.4em] uppercase mb-6 text-sm">Gastronomie Afro-Contemporaine</span>
+                <h1 class="text-6xl md:text-8xl lg:text-9xl font-headline font-light tracking-tighter text-tertiary-fixed leading-none mb-8">
+                    L'Art de la <br/>Dégustation <span class="italic text-primary">Éphémère</span>
+                </h1>
+                <p class="text-on-surface-variant font-body text-lg md:text-xl max-w-2xl mx-auto leading-relaxed opacity-80 mb-12">
+                    Un voyage multi-sensoriel curaté à travers l'ombre et la lumière, mêlant terroirs béninois et techniques d'avant-garde mondiales.
+                </p>
+                <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+                    <a href="menu.html" class="bg-primary text-on-primary px-12 py-4 text-sm tracking-[0.2em] uppercase font-semibold hover:bg-primary-fixed-dim transition-all duration-500">
+                        Voir le Menu Dégustation
+                    </a>
+                    <a href="about.html" class="border border-outline-variant/30 text-primary px-12 py-4 text-sm tracking-[0.2em] uppercase font-semibold hover:bg-primary/5 transition-all duration-500">
+                        Notre Histoire
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Experience - Curated Menu Preview -->
+        <section class="py-32 bg-background px-12">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+                <div class="lg:col-span-5 space-y-12">
+                    <div class="space-y-4">
+                        <h2 class="text-5xl font-headline font-light text-primary leading-tight">Le Menu de Sang</h2>
+                        <p class="text-on-surface-variant font-body text-lg leading-relaxed max-w-md">
+                            Chaque plat est le chapitre d'un récit qui s'initie au crépuscule sur l'Océan et s'achève dans les ombres profondes de la nuit africaine.
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-16 pt-8">
+                        <div class="group border-b border-outline-variant/15 pb-8">
+                            <div class="flex justify-between items-baseline mb-3">
+                                <h3 class="text-2xl font-headline text-tertiary-fixed group-hover:text-primary transition-colors">Caviar d'Océan & Manioc Noir</h3>
+                                <span class="text-primary font-headline italic">Iv</span>
+                            </div>
+                            <p class="text-sm font-body text-on-surface-variant/70 tracking-wide uppercase">Esturgeon du golfe, crème végétale infusée au charbon, éclats d'or</p>
+                        </div>
+                        
+                        <div class="group border-b border-outline-variant/15 pb-8">
+                            <div class="flex justify-between items-baseline mb-3">
+                                <h3 class="text-2xl font-headline text-tertiary-fixed group-hover:text-primary transition-colors">Nocturne de Truffe Tropicale</h3>
+                                <span class="text-primary font-headline italic">Vii</span>
+                            </div>
+                            <p class="text-sm font-body text-on-surface-variant/70 tracking-wide uppercase">Igname soufflée, truffe noire d'importation, écume de poivre de Penja</p>
+                        </div>
+                        
+                        <div class="group border-b border-outline-variant/15 pb-8">
+                            <div class="flex justify-between items-baseline mb-3">
+                                <h3 class="text-2xl font-headline text-tertiary-fixed group-hover:text-primary transition-colors">Le Gibier Fumé</h3>
+                                <span class="text-primary font-headline italic">Xi</span>
+                            </div>
+                            <p class="text-sm font-body text-on-surface-variant/70 tracking-wide uppercase">Fumage au bois d'Ébène, réduction de baies de genièvre, cendres de racines</p>
+                        </div>
+                    </div>
+                    
+                    <a href="menu.html" class="inline-flex items-center gap-4 text-primary font-label tracking-widest uppercase text-sm group">
+                        Explorer Toute la Carte
+                        <span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
+                    </a>
+                </div>
+                
+                <div class="lg:col-span-7 relative">
+                    <div class="aspect-[4/5] bg-surface-container-low overflow-hidden">
+                        <img class="w-full h-full object-cover" data-alt="Plat gastronomique avec caviar noir et feuille d'or sur fond sombre" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWRXyeMhQDrxPtWBSr_W9jrlXcVX4DYD_EgXoOZQx50lAa035s7_GQBciNMsjMRtQGGaxhVwGj3jNVAwvzAKJ4uBMiwvrbrjBP8jsho5ffm42JEjPa7TG2YK336_hk2DrqqeBGxvEi05mttkSa0cRjFvWXkOe6KcYXEz40trdWebsC0Hhr5yUfLaiNaBFkkpGOuVINvU1ESTfTg-00Zz_GxuvJdK96ODyaN15ZiK1HZBrR68rD4Gi3EeHco4bpMtcjDiVMX1U8FJ1i"/>
+                    </div>
+                    <div class="absolute -bottom-12 -left-12 hidden lg:block w-72 aspect-square bg-surface-container-high p-8">
+                        <div class="border border-primary/20 h-full w-full flex flex-col justify-center items-center text-center p-4">
+                            <span class="font-headline text-4xl text-primary mb-2">12</span>
+                            <span class="font-label text-xs tracking-[0.2em] uppercase text-on-surface-variant">Temps dans l'Expérience Signature</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Chef Section -->
+        <section class="py-32 bg-surface-container-lowest">
+            <div class="max-w-7xl mx-auto px-12 flex flex-col lg:flex-row gap-20 items-center">
+                <div class="w-full lg:w-1/2 order-2 lg:order-1">
+                    <div class="space-y-8">
+                        <span class="font-label tracking-[0.4em] uppercase text-primary-fixed-dim text-xs">Le Curateur de l'Expérience</span>
+                        <h2 class="text-5xl font-headline font-light leading-tight">Chef Hakim Sènou</h2>
+                        <p class="text-on-surface font-body text-lg leading-relaxed opacity-80">
+                            "La gastronomie n'est pas qu'une question de goût ; c'est le silence entre les saveurs. À L'Ébène, nous vous invitons à expérimenter la pause, l'ombre, et la révélation d'une véritable profondeur culinaire."
+                        </p>
+                        <div class="pt-8 grid grid-cols-2 gap-8 border-t border-outline-variant/10">
+                            <div>
+                                <span class="block font-headline text-2xl text-primary">Cuisine d'Auteur</span>
+                                <span class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Reconnaissance Inernationale</span>
+                            </div>
+                            <div>
+                                <span class="block font-headline text-2xl text-primary">L'Afro-Fusion</span>
+                                <span class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Pionnier Ouest-Africain</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 order-1 lg:order-2">
+                    <div class="relative">
+                        <img class="w-full grayscale brightness-75" data-alt="Portrait d'un chef très concentré dans une cuisine tamisée" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAJxumd0SU8hfe1X9Ik3wsbO8l0ODgicqL5N8ep0QdLgJPP19p5CCWddfy0Q5JjvZPedsBcGVrrUv_ZUGm9Bs30Jh5MSBhlVzktp6loqjWTa12tqjb8Os6tqLvHJgw5Y0L4oTFfBT2165t0RW31tNP7nVm4WV8V_VAcTe7QhlfFXYAqZN0FI1zJ6LcqLvyslvkxur5A05oKGo-m5V_rYbmh8toKdhAMQjyFxEItaxJi483MweOW1aCFQf_N9hxDT2khpM67LJOhcaN"/>
+                        <div class="absolute -top-6 -right-6 w-full h-full border border-primary/20 -z-10"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="py-32 bg-background">
+            <div class="px-12 mb-16 flex justify-between items-end">
+                <h2 class="text-5xl font-headline font-light max-w-lg">Visions au Crépuscule</h2>
+                <div class="hidden md:block pb-2">
+                    <p class="font-label text-xs tracking-[0.2em] uppercase text-on-surface-variant">Défiler pour Explorer / 01-04</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 px-12">
+                <div class="md:col-span-2 aspect-video overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Verre de vin rouge sombre avec fumée" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMCQXZd-0zbUsYy7zZyBsm9Ae4EGXPnHuubf24LAuuQyFn9SxwCxH4n2kzphCiHuMKG4QzJ8Y4rcPnWaDcKvb4sR9gwgEaNChJDmd-lgJ7QF73upaCW-Ms6YdCG3qKcTkso5kO6pyVpHgUSFjU2gUINYcavy4YEfXLmg7qOZKhIpN-MYD83JmcojtqzAEF0oRvEBDeOl0Us58bxQpRhvs5sjoPddTrN628XkFg1T3RjJmCj1jh7wa4bEsp51uRN6stOJMvPyvoLWdP"/>
+                </div>
+                <div class="aspect-square overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Entrée de restaurant luxueux en marbre noir" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSpItFw2tLG-8uc41gG6I3Lqx4gKkWPXemEmXy0cR8Tk9UKQaBOLYX4ape_-HA7EEjjGDg34REf_qdd4ArENEKqIzp2Hmad06lnRqQloTpcBSWHE5GuLWE1ZPs7_Ls2TDsJLAY3kkDF1sexRMBh3JRsDpgnDCdj_gPepbQpffzPawzhWX-cwLRToVApPgUsykkdknPZA1XNt8GTczz2PVHhWHobdyWkS0B8ziiHHQ4bja0_zyJ04u76ZQSQ2zcJnuOMlSbwN8S0bTp"/>
+                </div>
+                <div class="aspect-square overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Salle à manger privée éclairée à la bougie" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbSX2yM6o_yrcGCE0g_WYnecXhXM5RujYPyPrlfZZkSp1E6X_zaUvTu5EBKEF17MrTJt17NE5-QC75VZRSWo-gZTpcGtOGf04B6oXjuopbHI7hf_y4QfzGzvlLGrCNYzb9iIHvXXS0hHSdwH-nCNd3JpYAA8q6_YWZxirKwIZtbPodXz1wDVaz0OjsefvC85C0L0p14Q8rS1CU_v9FNpjwQgjzZDQfx9_xLrzVdfZ82GYgLAgOMbKBcOxdLFzvw_IEJySRPU8nMPxw"/>
+                </div>
+                
+                <div class="aspect-square overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Cuisine professionnelle avec casseroles en cuivre et feu" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUaUuxNe3vF19NgiZveQL7p_dlQfB8k_-681WL4xYXpv8TJreS0Gl8OXW4MLkCiWcxIGWNw2P2IZZ-_uS8Am-yq0UYDs5MDY_naah9SQk70FJGFHaQUW7E_GDg33QGjjky5MDJXeKZZx5RAV7-xDiQXnpo2eTDWEijCjBHRcpSxVroimpNM2n5P8H8rZP9XNrpgNxK-dGuhvBad1EeNNShn5HhCPvatQiaYglvPDq0xWSMmOO_E4QRzbouMS9Qx2YeHQ1eqcTIGXCb"/>
+                </div>
+                <div class="md:col-span-3 aspect-[21/9] overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Dressage de plusieurs petites assiettes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqVUiw5WpriGKT9XVoETcCgzLw3x-E6mV4M9-2CvXV_0cnxjkah8FdZD_6dTQIgS2-wIWIt1H0x9QLuOeg9D9EKE-_Ak__MAzObMBC3zNd6bu5hVztmDvmrZaY171rczJeaX_IDCY-cze2ALJhbo2DX-GUEPuXWvfSURKUAGQDMxYAz9v3vnxX1ijnra3wo04DVi77YwZ0qL5zIujy4NRFa3V9XNListsicQ7Ub1F6_e-VWklqSVmDmjaK8MVrtiKC1sC-eu7V0i98"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="py-48 bg-surface-container-high relative overflow-hidden text-center">
+            <div class="absolute inset-0 opacity-10">
+                <img class="w-full h-full object-cover" data-alt="Texture d'un restaurant gastronomique" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW1HVftT1NWD7ZoXEczGUdovPME19PeQvUXNY5np7OeHURdJjTCQ_vUGxrM-W9ZTkrurU_2oKHeUKzLh1Mb1FND88dufgqO3NAO7_f9DSJj5VCsq0wbRV7QCB_a-RNbCpgeTtwdveTo8rbKDgrfCbf-cQfB4-aJzYuspe-95OlLJ3ucSjLj420-G4ASYQc_D1M1A5QLgJGUDEoV3CNezb5FOt8TxC6_FnX-SXRCTtxp46QA_QHGmfJRWGLaIHX9H9VvBVVgMn1ExeX"/>
+            </div>
+            <div class="relative z-10 max-w-3xl mx-auto px-6">
+                <h2 class="text-6xl font-headline font-light mb-12 text-tertiary-fixed italic">Votre Table Vous Attend.</h2>
+                <p class="text-on-surface-variant font-body text-lg mb-16 tracking-wide">Places disponibles uniquement sur réservation stricte chaque soir. Nous recommandons de réserver quatre semaines à l'avance pour nos dégustations du week-end.</p>
+                <a href="reservation.html" class="inline-block bg-primary text-on-primary px-16 py-5 text-sm tracking-[0.3em] uppercase font-bold hover:bg-primary-fixed-dim transition-all duration-500 shadow-2xl">
+                    Sécuriser une Réservation
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0e0e0e] w-full rounded-none pt-24 pb-12">
+        <div class="flex flex-col items-center w-full px-12 text-center">
+            <div class="font-headline text-xl font-light text-[#f1c97d] mb-6">
+                L'ÉBÈNE
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
+                <a class="font-label text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="reservation.html">Dîner Privé</a>
+                <a class="font-label text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Presse</a>
+                <a class="font-label text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Carrières</a>
+                <a class="font-label text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Confidentialité</a>
+            </div>
+            <div class="mb-12 space-y-2">
+                <p class="font-label text-xs tracking-widest text-on-surface-variant uppercase">RUE 205, QUARTIER HAIE VIVE, COTONOU</p>
+                <p class="font-label text-xs tracking-widest text-on-surface-variant uppercase">Demandes VIP : concierge@lebene.bj</p>
+            </div>
+            
+            <div class="pt-8 border-t border-outline-variant/10 w-full flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="font-body text-sm tracking-[0.1em] uppercase text-[#99907c]">© 2026 L'Ébène Haute Cuisine. Tous droits réservés.</p>
+                <div class="flex gap-8">
+                    <span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors">brand_awareness</span>
+                    <span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors">contact_page</span>
+                    <span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors">public</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

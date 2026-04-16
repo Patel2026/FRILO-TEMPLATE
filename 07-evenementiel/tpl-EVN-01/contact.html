@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact | L'Atelier des Émotions</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container antialiased">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 vellum-effect shadow-ambient no-line-rule">
+        <div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+            <a href="index.html" class="text-2xl font-headline text-primary italic">L'Atelier <span class="not-italic text-on-surface">des Émotions</span></a>
+            <div class="hidden md:flex items-center gap-10 font-headline tracking-wide text-xs uppercase font-bold">
+                <a class="text-stone-500 hover:text-primary transition-slow" href="index.html">Accueil</a>
+                <a class="text-stone-500 hover:text-primary transition-slow" href="about.html">Esprit</a>
+                <a class="text-stone-500 hover:text-primary transition-slow" href="services.html">Prestations</a>
+                <a class="text-stone-500 hover:text-primary transition-slow" href="gallery.html">Portfolio</a>
+                <a class="text-primary border-b border-primary/30 pb-1" href="contact.html">Contact</a>
+            </div>
+            <button class="bg-primary text-on-primary px-6 py-2.5 text-[10px] font-label uppercase tracking-[0.2em] scale-up-lift shadow-lg">
+                Organiser mon événement
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24">
+        <!-- Header -->
+        <header class="max-w-7xl mx-auto px-12 mb-32 header-offset">
+            <span class="font-label text-primary text-[10px] uppercase tracking-[0.4em] font-bold mb-6 block font-bold">Un Nouveau Récit</span>
+            <h1 class="font-headline text-6xl md:text-8xl italic mb-10 leading-tight">Commençons votre <br/><span class="not-italic text-stone-800">Parcours.</span></h1>
+            <p class="max-w-xl text-lg font-light text-on-surface-variant leading-relaxed">
+                Chaque grand événement commence par une simple conversation. Nous avons hâte d'écouter votre histoire et d'explorer comment nous pouvons la mettre en lumière.
+            </p>
+        </header>
+
+        <section class="max-w-7xl mx-auto px-12 grid lg:grid-cols-2 gap-32">
+            <!-- Form Side -->
+            <div>
+                <h2 class="font-headline text-3xl mb-12 italic">Formulaire de Consultation</h2>
+                <form class="space-y-12">
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div class="space-y-2">
+                            <label class="font-label text-[10px] uppercase tracking-widest text-primary font-bold">Nom Complet</label>
+                            <input class="input-bespoke" placeholder="Votre nom" type="text"/>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="font-label text-[10px] uppercase tracking-widest text-primary font-bold">Email</label>
+                            <input class="input-bespoke" placeholder="votre@email.com" type="email"/>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div class="space-y-2">
+                            <label class="font-label text-[10px] uppercase tracking-widest text-primary font-bold">Date Événement</label>
+                            <input class="input-bespoke" type="date"/>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="font-label text-[10px] uppercase tracking-widest text-primary font-bold">Type d'Événement</label>
+                            <select class="input-bespoke appearance-none">
+                                <option>Mariage de Prestige</option>
+                                <option>Gala Corporatif</option>
+                                <option>Réception Privée</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="font-label text-[10px] uppercase tracking-widest text-primary font-bold">Votre Vision</label>
+                        <textarea class="input-bespoke min-h-[120px]" placeholder="Dites-nous en un peu plus sur l'atmosphère que vous souhaitez créer..."></textarea>
+                    </div>
+                    <button class="bg-primary text-on-primary px-16 py-5 text-[10px] font-label uppercase tracking-[0.3em] scale-up-lift shadow-2xl w-full md:w-auto font-bold">
+                        Envoyer la Demande
+                    </button>
+                    <p class="text-[10px] text-stone-400 font-light italic">Réponse sous 48 heures ouvrées.</p>
+                </form>
+            </div>
+
+            <!-- Practical Info Side -->
+            <div class="space-y-20">
+                <div class="bg-surface-container p-12 rounded-2xl shadow-ambient border border-outline-variant/10">
+                    <h3 class="font-headline text-2xl mb-8 italic">Le Studio.</h3>
+                    <div class="space-y-10">
+                        <div class="flex items-start gap-6">
+                            <span class="material-symbols-outlined text-primary">location_on</span>
+                            <div>
+                                <p class="font-label text-[10px] uppercase tracking-widest font-bold text-primary mb-1">Localisation</p>
+                                <p class="text-on-surface-variant font-light leading-relaxed">Rue de la Haie Vive, Villa des Palmiers<br/>Cotonou, Bénin</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6">
+                            <span class="material-symbols-outlined text-secondary">mail</span>
+                            <div>
+                                <p class="font-label text-[10px] uppercase tracking-widest font-bold text-primary mb-1">Email</p>
+                                <p class="text-on-surface-variant font-light leading-relaxed">contact@atelier-emotions.bj</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6">
+                            <span class="material-symbols-outlined text-tertiary">call</span>
+                            <div>
+                                <p class="font-label text-[10px] uppercase tracking-widest font-bold text-primary mb-1">Conciergerie</p>
+                                <p class="text-on-surface-variant font-light leading-relaxed">+229 01 00 00 00 00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Atmospheric Image with Overlay -->
+                <div class="relative rounded-2xl overflow-hidden aspect-video shadow-ambient group">
+                    <img class="w-full h-full object-cover transition-slow group-hover:scale-110" data-alt="Intérieur studio élégant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzjdQTXQsbnlGkp85Urjy-Tg_YTPdkqXphAePuJQf0Yi2Zrak0DQXoRo7X4qmaBHeBKFoDAHYiGotUsQkh2ccODdzidCc3Dc4bWdHBlEaiD2pF24vbUXQbT_q5Fm7L5XLqnDcWVbVgXuM1Am2smJGu32qoNRkBgMQgmg2s75dXQYdQ3-JIG9NPLkQ3_iEBPluaroS985uNR3hKsgFX04kU6gGPbU3TyvYxmtdIyL9_T1FoSkCrCH2k0U5xFfmqOqgiZchG_Iq_o4wF"/>
+                    <div class="absolute inset-0 bg-stone-900/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-slow">
+                        <div class="vellum-effect px-10 py-6 rounded-xl text-center">
+                            <p class="font-headline italic text-lg">Nous recevoir sur rendez-vous uniquement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface w-full pt-32 pb-16">
+        <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-start px-12 gap-16 w-full border-t border-stone-200/30 pt-16">
+            <div class="flex flex-col gap-8">
+                <div class="text-2xl font-headline text-primary italic">L'Atelier des Émotions</div>
+                <p class="text-stone-400 max-w-xs font-body text-xs leading-loose uppercase tracking-widest">Sophistication silencieuse • Design intentionnel • Cotonou.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-16 md:gap-32">
+                <div class="flex flex-col gap-6">
+                    <span class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold">Suivre</span>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="#">Instagram</a>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="#">Pinterest</a>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <span class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold">Atelier</span>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-primary border-b border-primary/20 pb-0.5" href="contact.html">Nous Contacter</a>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="services.html">Nos Services</a>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <span class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold">Legal</span>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="#">Confidentialité</a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-32 px-12 text-center w-full">
+            <p class="font-body text-[8px] uppercase tracking-[0.4em] text-stone-300">© 2026 L'ATELIER DES ÉMOTIONS. BESPOKE ATELIER.</p>
+        </div>
+    </footer>
+</body>
+</html>

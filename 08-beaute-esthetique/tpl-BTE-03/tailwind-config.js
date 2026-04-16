@@ -1,0 +1,71 @@
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+            "colors": {
+                "inverse-on-surface": "#9e9c9c",
+                "tertiary-fixed-dim": "#69a4ff",
+                "error-container": "#f74b6d",
+                "tertiary-container": "#83b1ff",
+                "surface-container-low": "#f3f0ef",
+                "surface-variant": "#dfdcdc",
+                "on-tertiary-fixed": "#001737",
+                "primary-dim": "#a1003f",
+                "surface-container": "#eae7e7",
+                "surface-container-highest": "#dfdcdc",
+                "outline": "#787676",
+                "on-background": "#2f2e2e",
+                "primary-container": "#ff7290",
+                "on-secondary-fixed": "#403f3f",
+                "on-surface-variant": "#5c5b5b",
+                "on-error-container": "#510017",
+                "on-primary-container": "#4d001a",
+                "on-tertiary": "#eff2ff",
+                "surface-bright": "#f9f6f5",
+                "on-error": "#ffefef",
+                "surface-tint": "#b70049",
+                "tertiary-dim": "#004e9c",
+                "on-primary": "#ffeff0",
+                "surface-container-high": "#e5e2e1",
+                "on-primary-fixed-variant": "#5f0022",
+                "error": "#b41340",
+                "on-primary-fixed": "#000000",
+                "primary-fixed-dim": "#ff5580",
+                "error-dim": "#a70138",
+                "inverse-primary": "#ff4e7c",
+                "background": "#f9f6f5",
+                "on-surface": "#2f2e2e",
+                "secondary-fixed": "#e5e2e1",
+                "on-tertiary-container": "#003064",
+                "tertiary": "#005ab2",
+                "secondary": "#5c5b5b",
+                "outline-variant": "#afacac",
+                "inverse-surface": "#0e0e0e",
+                "surface": "#f9f6f5",
+                "tertiary-fixed": "#83b1ff",
+                "on-secondary": "#f5f2f1",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-fixed-variant": "#5c5b5b",
+                "primary": "#b70049",
+                "secondary-container": "#e5e2e1",
+                "on-secondary-container": "#525151",
+                "surface-dim": "#d6d4d3",
+                "primary-fixed": "#ff7290",
+                "secondary-fixed-dim": "#d6d4d3",
+                "secondary-dim": "#504f4f",
+                "on-tertiary-fixed-variant": "#003874"
+            },
+            "borderRadius": {
+                "DEFAULT": "0px",
+                "lg": "0px",
+                "xl": "0px",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Epilogue"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+            }
+        }
+    }
+}

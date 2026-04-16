@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Be_Vietnam_Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#ffffff",
+                    "outline-variant": "#bbb9b3",
+                    "surface-container": "#f6f3eb",
+                    "surface-container-high": "#f0eee5",
+                    "background": "#fffcf5",
+                    "on-tertiary": "#ffffff",
+                    "secondary-dim": "#b40026",
+                    "on-error-container": "#520c00",
+                    "surface-bright": "#fffcf5",
+                    "primary-dim": "#745200",
+                    "primary-container": "#feb700",
+                    "inverse-surface": "#0e0e0b",
+                    "secondary-fixed-dim": "#ffafad",
+                    "on-background": "#383833",
+                    "secondary-fixed": "#ffc3c1",
+                    "tertiary-fixed-dim": "#ef8a26",
+                    "error": "#be2d06",
+                    "inverse-primary": "#feb700",
+                    "secondary": "#ca002c",
+                    "inverse-on-surface": "#9e9d97",
+                    "tertiary-container": "#ff9735",
+                    "surface-variant": "#eae8df",
+                    "tertiary-fixed": "#ff9735",
+                    "surface-container-highest": "#eae8df",
+                    "primary-fixed-dim": "#ecaa00",
+                    "surface-dim": "#e5e3d9",
+                    "on-primary-fixed-variant": "#5f4200",
+                    "tertiary-dim": "#884800",
+                    "error-container": "#f95630",
+                    "on-tertiary-container": "#4d2600",
+                    "secondary-container": "#ffc3c1",
+                    "on-surface-variant": "#65645f",
+                    "on-secondary-fixed": "#6f0013",
+                    "on-tertiary-fixed": "#291200",
+                    "outline": "#82817b",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#533a00",
+                    "on-surface": "#383833",
+                    "surface-tint": "#845d00",
+                    "on-tertiary-fixed-variant": "#5a2e00",
+                    "surface-container-low": "#fcf9f2",
+                    "on-primary-fixed": "#392700",
+                    "surface": "#fffcf5",
+                    "primary": "#845d00",
+                    "error-dim": "#b92902",
+                    "primary-fixed": "#feb700",
+                    "tertiary": "#995200",
+                    "on-secondary-container": "#94001d",
+                    "on-secondary-fixed-variant": "#a50022"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-sun-gradient {
+            background: linear-gradient(45deg, #845d00 0%, #feb700 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container/30">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fffcf5]/70 dark:bg-stone-900/70 backdrop-blur-xl shadow-[0_20_40px_rgba(56,56,51,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-extrabold text-[#845d00] dark:text-[#feb700] tracking-tighter font-headline">The Grand Harvest</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#383833] dark:text-stone-300 hover:text-[#845d00] transition-colors font-headline font-bold tracking-tight" href="#">Home</a>
+<a class="text-[#845d00] dark:text-[#feb700] border-b-2 border-[#845d00] pb-1 font-headline font-bold tracking-tight" href="#">About</a>
+<a class="text-[#383833] dark:text-stone-300 hover:text-[#845d00] transition-colors font-headline font-bold tracking-tight" href="#">Menu</a>
+<a class="text-[#383833] dark:text-stone-300 hover:text-[#845d00] transition-colors font-headline font-bold tracking-tight" href="#">Gallery</a>
+<a class="text-[#383833] dark:text-stone-300 hover:text-[#845d00] transition-colors font-headline font-bold tracking-tight" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:block px-6 py-2.5 rounded-full bg-surface-container-highest text-on-surface font-headline font-bold hover:scale-105 transition-transform duration-200">Find Us</button>
+<button class="px-6 py-2.5 rounded-full bg-sun-gradient text-on-primary font-headline font-bold hover:scale-105 transition-transform duration-200 shadow-md">Book a Table</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-16 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2 space-y-6 z-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-tertiary-container text-on-tertiary-container font-headline text-xs font-bold uppercase tracking-widest">Our Heritage</span>
+<h1 class="text-6xl md:text-7xl font-headline font-extrabold text-on-background tracking-tighter leading-[0.9]">Rooted in <br/><span class="text-primary italic">Generosity</span></h1>
+<p class="text-lg text-on-surface-variant max-w-md leading-relaxed">The Grand Harvest is a family-owned legacy, bridging the gap between local soil and the communal table through our Farm-to-Buffet philosophy.</p>
+</div>
+<div class="w-full md:w-1/2 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative z-10 transform md:rotate-2">
+<img class="w-full h-full object-cover" data-alt="Overhead shot of a rustic family dining table filled with bountiful fresh vegetable dishes and warm golden lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaTT5aUSZbtwBFEbHvONyVHFG0BcdGPFX6JRhzDQTm52Gz1dbcBDAeP-ZDiwHh4I-l0xOUVUdAwpLC4BzOAEDBGsakMzjFM2vE3cWydlqhhNwo87glr9wc0tTZLyBka4eStktWuIYzcfij541U8XlAvuN9-5KrjHQWjU3vYLohkvOQEhQLBhTvBlIIEWkr5_4vyPdyGvFHPTDLCUa3tDcJA5jTad320MBjNGhQ8h-Mx86P1AHbxkb2u12HsgvM0O0HHQOsXe1fDOtn"/>
+</div>
+<div class="absolute -bottom-10 -left-10 w-64 h-64 bg-secondary-container/40 rounded-full blur-3xl -z-0"></div>
+<div class="absolute -top-10 -right-10 w-48 h-48 bg-primary-container/20 rounded-full blur-2xl -z-0"></div>
+</div>
+</div>
+</header>
+<!-- Metrics Section -->
+<section class="py-24 bg-surface-container">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+<div class="p-8 space-y-2">
+<div class="text-5xl font-headline font-extrabold text-primary">100+</div>
+<div class="text-on-surface-variant font-headline font-bold uppercase tracking-widest text-sm">Daily Dishes</div>
+</div>
+<div class="p-8 space-y-2">
+<div class="text-5xl font-headline font-extrabold text-secondary">30+</div>
+<div class="text-on-surface-variant font-headline font-bold uppercase tracking-widest text-sm">Local Farm Partners</div>
+</div>
+<div class="p-8 space-y-2">
+<div class="text-5xl font-headline font-extrabold text-primary-dim">10+</div>
+<div class="text-on-surface-variant font-headline font-bold uppercase tracking-widest text-sm">Years of Service</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Story Bento Grid -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-grid max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8">
+<div class="md:col-span-12 mb-8">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface tracking-tighter">The Farm-to-Buffet <span class="text-primary underline decoration-primary-container/50">Philosophy</span></h2>
+</div>
+<div class="md:col-span-7 bg-surface-container-low rounded-lg p-12 flex flex-col justify-center space-y-6 relative overflow-hidden">
+<h3 class="text-3xl font-headline font-bold text-on-surface leading-tight">Freshness is our only ingredient that isn't negotiable.</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">Founded by the Harrison family in 2014, our journey began with a simple question: Why should fine, farm-fresh produce be limited to small plates? We reimagined the buffet as a celebration of abundance, where quality and variety live in harmony.</p>
+<div class="flex items-center gap-4 pt-4">
+<div class="h-px w-12 bg-outline-variant"></div>
+<span class="font-headline font-bold text-primary italic text-lg">The Harrison Legacy</span>
+</div>
+</div>
+<div class="md:col-span-5 aspect-square md:aspect-auto rounded-lg overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Close up of organic heirloom tomatoes and herbs being prepared in a bright sunlit kitchen with wood textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_pWcnjplM3i-FOubYaJSvC00Udinkv6S97gI4-6PjbpqMEnJeRYa6v7kzlZP58EQSE_HmWneIOw7S2-n_VXImx-xR6oRmttAho_ZvsDOdj7nB7rTYawww2RxrRpFpci8YPe1XkMHCSIeGJhNF2AGDtvbg1HIT3GesFhPwuLrwYrx_-6zC3E_ylHT5177Lz1HFodxEEtQ3ahy0DSMpHIMb4i8WrtjqzdbWk4HVDqwlaNIw-Ag4y2yp8huDrXuJTmNtkzf6ABSj7ulv"/>
+</div>
+<div class="md:col-span-4 aspect-[4/5] rounded-lg overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Farmer walking through a lush vegetable field during a hazy morning golden hour light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChoVJDBFUdYJy4Sa7HQD6XQRcT6P-RDvoNjji7cuU-aNfgNEGgcA-yvvsQugy98DFedbr-J78dPn-amMCCJ1IwSk81vTtwo_BqlRNn_UNrLlmkkDYF9I04jWmhTrSwK90aVTQWcqcxn_GqjIwKBygd6LiF260hL8yj_aSaqSm7-26HgdMfeBts5zufOwudwOVA4BbAmthlUkj2fX0DVWeqa6LcAdzjgb2dT3V6PEHtsl4I6o3_WSNNg9ySjUCaliR6-pQ7g9za3ryR"/>
+</div>
+<div class="md:col-span-8 bg-secondary-container/20 rounded-lg p-12 flex flex-col justify-center">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">eco</span>
+</div>
+<h4 class="text-xl font-headline font-bold text-on-surface">Ethical Sourcing</h4>
+<p class="text-on-surface-variant text-sm">We partner with over 30 local farmers within a 50-mile radius to ensure every leaf and fruit is peak-season perfect.</p>
+</div>
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<h4 class="text-xl font-headline font-bold text-on-surface">Communal Joy</h4>
+<p class="text-on-surface-variant text-sm">Our dining room is designed as an atrium—a sun-drenched space where neighbors become friends over shared plates.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Section -->
+<section class="py-24 px-8 bg-surface-container-high relative overflow-hidden">
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-4xl font-headline font-extrabold text-on-surface tracking-tight">Our Core Values</h2>
+<div class="h-1 w-24 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Value 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-lg shadow-sm hover:translate-y-[-8px] transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block" data-weight="fill">verified</span>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-4">Quality Ingredients</h3>
+<p class="text-on-surface-variant leading-relaxed">No shortcuts. No substitutes. We believe that the best flavor comes from respecting the natural integrity of our produce.</p>
+</div>
+<!-- Value 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-lg shadow-sm hover:translate-y-[-8px] transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 block" data-weight="fill">favorite</span>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-4">Community Focus</h3>
+<p class="text-on-surface-variant leading-relaxed">We reinvest in Harvest Valley. From sponsoring local schools to supporting artisanal bakers, community is our heartbeat.</p>
+</div>
+<!-- Value 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-lg shadow-sm hover:translate-y-[-8px] transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-tertiary mb-6 block" data-weight="fill">restaurant_menu</span>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-4">Culinary Variety</h3>
+<p class="text-on-surface-variant leading-relaxed">A global palette with a local touch. Our menu evolves daily, ensuring there is always a new discovery on every visit.</p>
+</div>
+</div>
+</div>
+<!-- Decorative light leak -->
+<div class="absolute -top-40 -left-40 w-96 h-96 bg-surface-bright/50 rounded-full blur-[100px]"></div>
+</section>
+<!-- Team Section -->
+<section class="py-32 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
+<div class="space-y-4">
+<h2 class="text-5xl font-headline font-extrabold tracking-tighter">The Hands Behind <br/>the <span class="text-primary italic">Harvest</span></h2>
+<p class="text-on-surface-variant text-lg max-w-xl">Our team isn't just staff; they're the stewards of our culinary garden. Meet the experts crafting your experience.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Team Member 1 -->
+<div class="group">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Professional portrait of a male head chef in a clean white coat smiling in a warm kitchen environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYl0yid0WXOMSxe1zm2GNgoOxDPeSzkYiPFB5h_L82Sk9kCnOY3lbBHAgDcunCq5H7E2IgX4PerOprBryc27DzE6Jet0SaBSFi7_0Tgbhqmma9ICIn__AOYXmFJEtsQPpzsb4Yq-i08x4MnOCq7KatB0bKK-Eq8RQAhj3JqfWIkMriMa288YzMYciwRwUmFq4GAI2HEzoRzHowMkhIw8-eIDzpQFK4RzccEaZ4LW5ufYTdpWLtTTRnNIezljzvHY7evC9FwcxD_4I8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-white font-headline text-sm font-bold">15+ Years Experience</span>
+</div>
+</div>
+<h4 class="text-xl font-headline font-bold text-on-surface">Chef Marcus Thorne</h4>
+<p class="text-primary font-bold text-sm uppercase tracking-widest">Executive Chef</p>
+</div>
+<!-- Team Member 2 -->
+<div class="group">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Warm smiling woman in hospitality uniform standing in a sunlit restaurant dining room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiQ_s2pYmPe2iebR5BjJDTQA2e5HXelzimJfiGcr_XNvWIq90xJiNQYXpODe8cv873iUxiUnGD4Dkmen2pJ_EgggXSdnMshpqe17SUPhh6IOK0jt6jg_z8jNq53a6HWtmdKDe7VnJJoEYFCoJqfZA0DxS_q7_akedkpqdXuH7_4TpJPcZYKZ-WQp2xL6DQWwBze_qlg9Ktw9tFwseXKN2owGxF-LQrEim3g4U1WJGJN_sb6w2VE4tGojRaHcp9qeS7dtFNwKqxt7CU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-white font-headline text-sm font-bold">Hospitality Guru</span>
+</div>
+</div>
+<h4 class="text-xl font-headline font-bold text-on-surface">Elena Harrison</h4>
+<p class="text-primary font-bold text-sm uppercase tracking-widest">General Manager</p>
+</div>
+<!-- Team Member 3 -->
+<div class="group">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close up of a pastry chef delicately garnishing a dessert in a bright professional kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSAWVOJ-VnQMb-xZ2IiOV9gBH_SPN2MXrg0TNc6f_BiL9IQevDgmRgNZ5xrFrroXXHKOCBPgFyjGo0N0w-zIrzF8Jt0y1cB2kirGER7a3RM5v-FiIHCOmlhRr6PxWa7s6mjUV8upUU_afop00uvykhmGHLKzKhvgih4mS9d_fdckB53dHBVkqYTuwINZDdlUY2QF3-DtY1GxCzAf1Sdrl99gQDwW-qxauG5s5ZRzQpsSViSEYmluoNK9T9oJXGcZ23xBElIuuwWJut"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-white font-headline text-sm font-bold">Dessert Specialist</span>
+</div>
+</div>
+<h4 class="text-xl font-headline font-bold text-on-surface">Chef Sonal Patel</h4>
+<p class="text-primary font-bold text-sm uppercase tracking-widest">Pastry Chef</p>
+</div>
+<!-- Team Member 4 -->
+<div class="group">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Professional sommelier holding a wine glass and smiling in a modern rustic restaurant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdduVGrVMrRjccHZl8Zfk2r3_7c6K1KyQqPnEnS5-HWqfBV_NeyqNX9xMqRg15s1GaXrA2kaDTpUze-pXAFay9tyBUNaGqh4GheRLg4UPl_N0uNg_LbQmc_a4xNeRRD2d8RA7m--lWs8aonXxXMfU3nkRkyrnqaWzO1hQ0SuTl1YNJjyJo7MPJbb-mSUnZNugjg85XMCgapN4qxMDt-Ae5eATK2_Krzr5yvrX4iuUg24Po26pE8vhZ9LZNakOvtQ64gNL_0Z9m8EG_"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-white font-headline text-sm font-bold">Sommelier</span>
+</div>
+</div>
+<h4 class="text-xl font-headline font-bold text-on-surface">Julian Vance</h4>
+<p class="text-primary font-bold text-sm uppercase tracking-widest">Beverage Director</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-24 px-8">
+<div class="max-w-5xl mx-auto bg-primary rounded-xl overflow-hidden relative">
+<div class="absolute inset-0 bg-sun-gradient opacity-90"></div>
+<div class="relative z-10 px-12 py-16 text-center text-on-primary">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold mb-6">Experience the Harvest Today</h2>
+<p class="text-lg mb-10 max-w-2xl mx-auto opacity-90">Join us for a dining experience that honors the season, the farmer, and the tradition of communal eating.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="px-10 py-4 bg-white text-primary font-headline font-extrabold rounded-full hover:scale-105 transition-transform shadow-xl">Book a Table</button>
+<button class="px-10 py-4 border-2 border-white/30 text-white font-headline font-extrabold rounded-full hover:bg-white/10 transition-colors">View Today's Menu</button>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl"></div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-[#f6f3eb] dark:bg-stone-950">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-12 py-16 w-full text-center md:text-left">
+<div class="space-y-4">
+<div class="text-lg font-bold text-[#845d00]">The Grand Harvest</div>
+<p class="font-['Be_Vietnam_Pro'] text-sm text-[#383833] dark:text-stone-400 leading-relaxed">Cultivating community and celebrating local abundance since 2014.</p>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-semibold text-[#845d00]">Quick Links</span>
+<a class="font-['Be_Vietnam_Pro'] text-sm text-[#383833] dark:text-stone-400 opacity-80 hover:opacity-100 hover:text-[#ca002c] transition-colors" href="#">Hours</a>
+<a class="font-['Be_Vietnam_Pro'] text-sm text-[#383833] dark:text-stone-400 opacity-80 hover:opacity-100 hover:text-[#ca002c] transition-colors" href="#">Location</a>
+<a class="font-['Be_Vietnam_Pro'] text-sm text-[#383833] dark:text-stone-400 opacity-80 hover:opacity-100 hover:text-[#ca002c] transition-colors" href="#">Instagram</a>
+<a class="font-['Be_Vietnam_Pro'] text-sm text-[#383833] dark:text-stone-400 opacity-80 hover:opacity-100 hover:text-[#ca002c] transition-colors" href="#">Facebook</a>
+</div>
+<div class="space-y-4">
+<p class="font-['Be_Vietnam_Pro'] text-sm text-[#383833] dark:text-stone-400">© 2024 The Grand Harvest. All rights reserved. Open Daily: 11am - 10pm. 123 Orchard Lane, Harvest Valley.</p>
+</div>
+</div>
+</footer>
+</body></html>

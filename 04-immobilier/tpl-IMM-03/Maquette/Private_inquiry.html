@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f0f1f1",
+                    "surface-tint": "#5f5e5e",
+                    "background": "#f9f9f9",
+                    "tertiary-container": "#a7a5a5",
+                    "secondary-fixed": "#ffdea5",
+                    "secondary": "#775a19",
+                    "primary-fixed": "#e5e2e1",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#474746",
+                    "secondary-container": "#fed488",
+                    "surface-container-high": "#e8e8e8",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#1a1c1c",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "surface": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#d1c5b4",
+                    "on-primary-fixed": "#1c1b1b",
+                    "outline": "#7f7667",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "on-tertiary-container": "#3b3b3b",
+                    "surface-container": "#eeeeee",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-secondary-container": "#785a1a",
+                    "surface-variant": "#e2e2e2",
+                    "surface-container-low": "#f3f3f3",
+                    "on-primary-container": "#3b3b3b",
+                    "on-secondary-fixed": "#261900",
+                    "on-surface-variant": "#4e4639",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "tertiary-fixed": "#e4e2e1",
+                    "primary": "#5f5e5e",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "inverse-surface": "#2f3131",
+                    "surface-dim": "#dadada",
+                    "secondary-fixed-dim": "#e9c176",
+                    "inverse-primary": "#c8c6c5",
+                    "surface-bright": "#f9f9f9",
+                    "error": "#ba1a1a",
+                    "primary-container": "#a7a5a4",
+                    "on-background": "#1a1c1c",
+                    "tertiary": "#5f5e5e",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .gold-gradient {
+            background: linear-gradient(to right, #775a19, #e9c176);
+        }
+        .glass-nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav">
+<div class="flex justify-between items-center w-full px-12 py-6 mx-auto">
+<div class="font-['Noto_Serif'] font-bold text-xl tracking-tighter text-stone-900">CURATOR REALTY</div>
+<div class="hidden md:flex gap-12 font-['Noto_Serif'] text-sm tracking-widest uppercase">
+<a class="text-stone-600 hover:text-stone-900 transition-opacity duration-300" href="#">Listings</a>
+<a class="text-stone-600 hover:text-stone-900 transition-opacity duration-300" href="#">Services</a>
+<a class="text-stone-600 hover:text-stone-900 transition-opacity duration-300" href="#">Expertise</a>
+<a class="text-stone-600 hover:text-stone-900 transition-opacity duration-300" href="#">Team</a>
+<a class="text-yellow-700 font-semibold border-b border-yellow-700 transition-opacity duration-300" href="#">Contact</a>
+</div>
+<button class="bg-on-surface text-on-primary px-8 py-3 text-sm font-label uppercase tracking-widest hover:opacity-90 transition-all">
+                Private Viewing
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-12 py-24 md:py-32 grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
+<div class="md:col-span-8">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-secondary mb-6 block">Direct Inquiry</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter leading-none mb-8">
+                    Quiet Professionalism.<br/>Total Discretion.
+                </h1>
+<p class="font-body text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                    Our advisory firm operates with the highest level of confidentiality. Connect with our curators to discuss your portfolio requirements.
+                </p>
+</div>
+<div class="md:col-span-4 hidden md:block">
+<div class="aspect-[3/4] bg-surface-container-highest relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Interior of a luxury minimalist office with clean architectural lines, soft natural lighting, and a single black marble desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrilhNuLkjDgrAXH4TDc87rjh5YSre5GP5xGmD49c63q-mlopxafGz7OtdJWxlWBQ1TxUeQ_AVVpROeIKm_D1z6SbARfJBKZRsFWfBtF3gi2UWwBpqfi9N1pUpAPBFtytlbqyMWSCsYhSaDWH-v2Py2ekHpuyyiRpVn-yxTEqTNr2vVIOGyeIPS1e70LOjpWY8gQ92xxEEFdi_wFp371OeEvUV2SbR9FhKh_3cKEDA3GYu3gb0t_tEcvrx7uisG8-9GfYfkdq9bYJ5"/>
+<div class="absolute inset-0 bg-on-surface/5"></div>
+</div>
+</div>
+</section>
+<!-- Form & Details Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-outline-variant/20">
+<!-- Inquiry Form -->
+<div class="p-12 md:p-24 bg-surface-container-lowest">
+<h2 class="font-headline text-3xl font-bold mb-12">Submit a Brief</h2>
+<form class="space-y-12">
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Full Name</label>
+<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline focus:border-secondary focus:ring-0 px-0 py-4 transition-colors placeholder:text-outline-variant/50" placeholder="Arthur Morgan" type="text"/>
+</div>
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Confidential Email</label>
+<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline focus:border-secondary focus:ring-0 px-0 py-4 transition-colors placeholder:text-outline-variant/50" placeholder="a.morgan@firm.com" type="email"/>
+</div>
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Interest</label>
+<select class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline focus:border-secondary focus:ring-0 px-0 py-4 transition-colors appearance-none">
+<option>Private Asset Acquisition</option>
+<option>Portfolio Management</option>
+<option>Architectural Advisory</option>
+<option>Confidential Disposal</option>
+</select>
+</div>
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Message</label>
+<textarea class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline focus:border-secondary focus:ring-0 px-0 py-4 transition-colors placeholder:text-outline-variant/50" placeholder="Please detail the nature of your inquiry..." rows="4"></textarea>
+</div>
+<button class="w-full py-6 bg-on-surface text-on-primary font-label text-sm uppercase tracking-[0.2em] hover:bg-secondary transition-colors group flex items-center justify-center gap-4" type="submit">
+                        Send Secure Message
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</form>
+</div>
+<!-- Global Offices -->
+<div class="bg-surface-container-low p-12 md:p-24 flex flex-col justify-between">
+<div>
+<h2 class="font-headline text-3xl font-bold mb-16">Global Presence</h2>
+<div class="space-y-16">
+<!-- London -->
+<div class="group">
+<div class="flex justify-between items-baseline mb-4">
+<h3 class="font-headline text-2xl">London</h3>
+<span class="font-label text-xs uppercase tracking-widest text-secondary">Mayfair</span>
+</div>
+<p class="font-body text-on-surface-variant leading-relaxed max-w-xs">
+                                48 Berkeley Square, Mayfair<br/>
+                                London W1J 5AX, United Kingdom<br/>
+<span class="block mt-4 text-on-surface">+44 20 7946 0122</span>
+</p>
+</div>
+<!-- New York -->
+<div class="group">
+<div class="flex justify-between items-baseline mb-4">
+<h3 class="font-headline text-2xl">New York</h3>
+<span class="font-label text-xs uppercase tracking-widest text-secondary">Manhattan</span>
+</div>
+<p class="font-body text-on-surface-variant leading-relaxed max-w-xs">
+                                730 Fifth Avenue, Crown Building<br/>
+                                New York, NY 10019, USA<br/>
+<span class="block mt-4 text-on-surface">+1 212 555 0198</span>
+</p>
+</div>
+<!-- Dubai -->
+<div class="group">
+<div class="flex justify-between items-baseline mb-4">
+<h3 class="font-headline text-2xl">Dubai</h3>
+<span class="font-label text-xs uppercase tracking-widest text-secondary">DIFC</span>
+</div>
+<p class="font-body text-on-surface-variant leading-relaxed max-w-xs">
+                                Gate Village 4, Level 7<br/>
+                                Dubai International Financial Centre, UAE<br/>
+<span class="block mt-4 text-on-surface">+971 4 321 0000</span>
+</p>
+</div>
+</div>
+</div>
+<div class="mt-24 pt-12 border-t border-outline-variant/20">
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-4">General Inquiries</p>
+<a class="font-headline text-2xl text-secondary hover:text-on-surface transition-colors" href="mailto:private@curatorrealty.com">private@curatorrealty.com</a>
+</div>
+</div>
+</section>
+<!-- Feature Slate -->
+<section class="w-full bg-surface-container-highest grid grid-cols-1 md:grid-cols-2">
+<div class="h-[600px] relative">
+<img class="w-full h-full object-cover" data-alt="High-angle shot of a minimalist, luxury infinity pool overlooking a twilight city skyline with golden lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAg3j7THa_WN0wpSLZ3Rxa2KjGvenZ8_eo7IT3rP2ZAgbHa-mQOKU5YiHukkBkjh3D38hvSDW_YPwG-wQksZgu4h32IaxNcGvaRlgCM15Nji_abDktFQJUYmXv5VQnB-can3TYNY_w_HaVJNg8u-2AwHZidRsXDPP0dq7VHN8OdoW6V68jLObUWEO0ZnK7cKIYHDBjHEscvrrtMHfVxza3IIkeYi46-1J9TZMQuw5eK6lpjKqpvIWH935heFTQQE9fZ3bX7kKwm8Hh"/>
+<div class="absolute inset-0 bg-on-surface/10"></div>
+</div>
+<div class="flex items-center p-12 md:p-24 bg-surface-container-highest">
+<div class="max-w-md">
+<h2 class="font-headline text-4xl md:text-5xl font-bold leading-tight mb-8">
+                        "Luxury is not the absence of noise, but the presence of meaning."
+                    </h2>
+<p class="font-label text-xs uppercase tracking-[0.3em] text-secondary">The Digital Curator Philosophy</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 gap-8">
+<div class="font-['Noto_Serif'] text-lg font-bold">CURATOR REALTY</div>
+<div class="flex flex-wrap justify-center gap-8 font-['Manrope'] text-xs uppercase tracking-[0.2em]">
+<a class="text-stone-500 hover:text-yellow-600 transition-colors" href="#">Privacy Policy</a>
+<a class="text-stone-500 hover:text-yellow-600 transition-colors" href="#">Terms of Service</a>
+<a class="text-stone-500 hover:text-yellow-600 transition-colors" href="#">Cookie Settings</a>
+<a class="text-stone-500 hover:text-yellow-600 transition-colors" href="#">Press Kit</a>
+</div>
+<div class="font-['Manrope'] text-xs uppercase tracking-[0.2em] text-stone-500 text-center md:text-right">
+                © 2024 CURATOR REALTY. AN ARCHITECTURAL LEGACY.
+            </div>
+</div>
+</footer>
+</body></html>

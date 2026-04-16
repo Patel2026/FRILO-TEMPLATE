@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f0f1f1",
+                    "surface-tint": "#5f5e5e",
+                    "background": "#f9f9f9",
+                    "tertiary-container": "#a7a5a5",
+                    "secondary-fixed": "#ffdea5",
+                    "secondary": "#775a19",
+                    "primary-fixed": "#e5e2e1",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#474746",
+                    "secondary-container": "#fed488",
+                    "surface-container-high": "#e8e8e8",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#1a1c1c",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "surface": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#d1c5b4",
+                    "on-primary-fixed": "#1c1b1b",
+                    "outline": "#7f7667",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "on-tertiary-container": "#3b3b3b",
+                    "surface-container": "#eeeeee",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-secondary-container": "#785a1a",
+                    "surface-variant": "#e2e2e2",
+                    "surface-container-low": "#f3f3f3",
+                    "on-primary-container": "#3b3b3b",
+                    "on-secondary-fixed": "#261900",
+                    "on-surface-variant": "#4e4639",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "tertiary-fixed": "#e4e2e1",
+                    "primary": "#5f5e5e",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "inverse-surface": "#2f3131",
+                    "surface-dim": "#dadada",
+                    "secondary-fixed-dim": "#e9c176",
+                    "inverse-primary": "#c8c6c5",
+                    "surface-bright": "#f9f9f9",
+                    "error": "#ba1a1a",
+                    "primary-container": "#a7a5a4",
+                    "on-background": "#1a1c1c",
+                    "tertiary": "#5f5e5e",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .gold-gradient {
+            background: linear-gradient(to right, #775a19, #e9c176);
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Noto Serif', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-950/80 backdrop-blur-xl flex justify-between items-center px-12 py-6 mx-auto">
+<div class="font-['Noto_Serif'] font-bold text-xl tracking-tighter text-stone-900 dark:text-stone-50">CURATOR REALTY</div>
+<div class="hidden md:flex gap-12 font-['Noto_Serif'] text-sm tracking-widest uppercase items-center">
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:opacity-70 transition-opacity duration-300" href="#">Listings</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:opacity-70 transition-opacity duration-300" href="#">Services</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:opacity-70 transition-opacity duration-300" href="#">Expertise</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:opacity-70 transition-opacity duration-300" href="#">Team</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:opacity-70 transition-opacity duration-300" href="#">Contact</a>
+</div>
+<button class="bg-on-surface text-on-primary px-8 py-3 text-xs tracking-widest uppercase font-semibold hover:opacity-90 transition-all">Private Viewing</button>
+</nav>
+<main class="pt-24">
+<!-- Hero Section: The Architectural Legacy -->
+<section class="relative h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale-[20%] brightness-[0.85]" data-alt="Stunning modern architectural masterpiece with clean lines and floor-to-ceiling glass at dusk with warm interior lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDazb0_GQJ1QyIn9G0nPsgjP5NxdrFGENiXL4zToDEeC-WSbxbn8t8Zlbf117sDjrg9u2Fbr1v3InX7gBV1t7s8cAomPHw04QtUx2_Rk-6DlXHrHgNztjS_Tdmalxf02tH6o7sPD5-X8gfj23vXpEE4qJOiJyXF1F7fHGusoKxNhsFcRnEKLClDB0gFJKJ9xN7dztkoIvbL-DkuiXmLpRmZk04U0Gak2xdNqX2PqQVEw1OOT24_CgRwNePjopHmypKcu8nKkYUF6D9R"/>
+<div class="absolute inset-0 bg-on-surface/10"></div>
+</div>
+<div class="relative z-10 px-12 md:px-24 w-full">
+<span class="label-sm text-secondary-fixed-dim tracking-[0.3em] uppercase mb-6 block">Est. 1994</span>
+<h1 class="text-white text-5xl md:text-8xl max-w-4xl leading-tight mb-8">Preserving <br/><span class="italic">Architectural</span> Excellence.</h1>
+<div class="flex items-center gap-6">
+<div class="h-[1px] w-24 bg-secondary"></div>
+<p class="text-white/80 uppercase tracking-widest text-sm max-w-md font-light leading-relaxed">
+                        A decade-spanning commitment to the world's most significant residential artifacts.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Our Philosophy: The Feature Slate -->
+<section class="bg-surface-container-highest grid grid-cols-1 md:grid-cols-2 min-h-[700px]">
+<div class="relative order-2 md:order-1">
+<img class="w-full h-full object-cover" data-alt="Extreme close-up of high-end architectural detail showing brutalist concrete texture and sharp shadow lines in sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4JbMjTeQ7U_M9I_wiS58rg86BSJRDfwvIYUS5SbVyfvc8hUJG0QxfcLB52HqcxEl0hpfA2MPT1tjpdsCB3Sima0slLpCDL1n24WRCUAdxLKHYSBekVR8D94fF-kO3zNQgGH02sFA7VjU57LyLDsUvpcSd6V8L7ZZWbr0rRBrKAp449rmZC_lOsYDClSIiWucsRtpsVvvTrMXfzOOCAUPk8A_PfH2-edecu8R50X6hCGEFMnmSsLkYEKGsJKTWlDOLdy5h4Omxa436"/>
+</div>
+<div class="flex flex-col justify-center p-12 md:p-24 order-1 md:order-2 bg-surface">
+<h2 class="text-4xl md:text-6xl mb-12 leading-none">Our <br/>Philosophy</h2>
+<div class="max-w-md space-y-8">
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                        We believe that a residence is not merely a structure, but a curated vessel for a life well-lived. Our mission transcends brokerage; we are the guardians of architectural heritage.
+                    </p>
+<p class="text-on-surface-variant leading-relaxed italic border-l-2 border-secondary pl-6">
+                        "Luxury is not an accumulation of things, but the presence of space, light, and silence."
+                    </p>
+<div class="pt-8">
+<a class="inline-flex items-center gap-4 text-secondary uppercase tracking-widest text-xs font-bold border-b border-secondary pb-1" href="#">
+                            Discover our Vision <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Methodology: The High-Stakes Advisory -->
+<section class="bg-surface py-32 px-12 md:px-24">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-24 gap-8">
+<h2 class="text-4xl md:text-6xl max-w-xl">A Precise Methodology for Imprecise Markets.</h2>
+<p class="text-xs uppercase tracking-[0.2em] text-outline max-w-xs text-right">High-Stakes Advisory &amp; Data Integration</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1px bg-outline-variant/20">
+<!-- Method 01 -->
+<div class="bg-surface p-12 hover:bg-surface-container-low transition-colors duration-500">
+<span class="text-6xl serif text-secondary-fixed-dim/30 block mb-12">01</span>
+<h3 class="text-xl mb-6 font-semibold">Curation Over Volume</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        We selectively represent only twelve properties at any given time, ensuring every listing receives the exhaustive attention of our entire senior team.
+                    </p>
+</div>
+<!-- Method 02 -->
+<div class="bg-surface p-12 hover:bg-surface-container-low transition-colors duration-500">
+<span class="text-6xl serif text-secondary-fixed-dim/30 block mb-12">02</span>
+<h3 class="text-xl mb-6 font-semibold">Architectural Provenance</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        Our research department traces the lineage of every property, documenting its design intent, material origins, and historical significance.
+                    </p>
+</div>
+<!-- Method 03 -->
+<div class="bg-surface p-12 hover:bg-surface-container-low transition-colors duration-500">
+<span class="text-6xl serif text-secondary-fixed-dim/30 block mb-12">03</span>
+<h3 class="text-xl mb-6 font-semibold">Global Discretion</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        80% of our transactions occur off-market. We manage a private network of high-net-worth individuals where confidentiality is the primary currency.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Global Reach: The Mapless Map -->
+<section class="bg-on-surface text-surface py-32 px-12 md:px-24 overflow-hidden relative">
+<div class="flex flex-col md:flex-row gap-24 relative z-10">
+<div class="md:w-1/3">
+<h2 class="text-4xl md:text-6xl mb-12">Global <br/>Reach</h2>
+<p class="text-surface-variant/70 mb-12 leading-relaxed">
+                        From the historic townhouses of Mayfair to the brutalist villas of the Mediterranean, our influence spans across 14 sovereign territories and the world's most exclusive zip codes.
+                    </p>
+<ul class="space-y-6">
+<li class="flex justify-between items-center border-b border-surface-variant/20 pb-4">
+<span class="uppercase tracking-widest text-xs">London</span>
+<span class="text-secondary text-xs">HQ</span>
+</li>
+<li class="flex justify-between items-center border-b border-surface-variant/20 pb-4">
+<span class="uppercase tracking-widest text-xs">New York</span>
+<span class="text-surface-variant/40 text-xs">Est. 2005</span>
+</li>
+<li class="flex justify-between items-center border-b border-surface-variant/20 pb-4">
+<span class="uppercase tracking-widest text-xs">Tokyo</span>
+<span class="text-surface-variant/40 text-xs">Est. 2012</span>
+</li>
+<li class="flex justify-between items-center border-b border-surface-variant/20 pb-4">
+<span class="uppercase tracking-widest text-xs">St. Barts</span>
+<span class="text-surface-variant/40 text-xs">Est. 2018</span>
+</li>
+</ul>
+</div>
+<div class="md:w-2/3 relative h-[600px]">
+<img class="w-full h-full object-cover grayscale brightness-50 opacity-40" data-alt="Abstract aerial view of an architectural complex with symmetrical geometry and soft shadows in cool blue tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn0EEYd_izJiw6taxdH5HPESobu3bmc1rzKFiJasdxjMj0a-H4Tv9oMZDKd7LNBHB-abAB0I-MJdsA0U_HTB0lYIRzTZCpepd83YZLMf8GlJEAwYRRr-doUyKLwjjVXU0oto2ubdzTnbOj7yTlaOWWiEJpHaSbMmWxIvdVLpcsM9jMSIz11Augb3T7z7JN3WgiAkfxu1wjcUgEwbLzNVgVi81Fh1X2soy7g_UWI_CZ6P6hdLk1WiJSfVQ8G5_izznC09FCZZKEVEqY"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="text-center">
+<div class="text-[12rem] md:text-[20rem] font-bold leading-none serif opacity-10 select-none">14</div>
+<p class="uppercase tracking-[0.5em] -mt-12 text-secondary">Operational Capitals</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA: Private Invitation -->
+<section class="bg-surface py-48 px-12 text-center">
+<div class="max-w-2xl mx-auto">
+<h2 class="text-4xl md:text-6xl mb-12">Experience the Curator standard.</h2>
+<p class="text-on-surface-variant mb-12 text-lg">Whether you are acquiring a legacy or liquidating an asset, our advisors provide the analytical depth required for the world's most significant transactions.</p>
+<button class="gold-gradient text-white px-16 py-5 text-sm uppercase tracking-widest font-bold hover:brightness-110 transition-all">
+                    Inquire Privately
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 gap-8">
+<div class="font-['Noto_Serif'] text-lg font-bold text-stone-900 dark:text-stone-50">CURATOR REALTY</div>
+<div class="flex flex-wrap justify-center gap-8 font-['Manrope'] text-xs uppercase tracking-[0.2em]">
+<a class="text-stone-500 hover:text-yellow-600 transition-colors" href="#">Privacy Policy</a>
+<a class="text-stone-500 hover:text-yellow-600 transition-colors" href="#">Terms of Service</a>
+<a class="text-stone-500 hover:text-yellow-600 transition-colors" href="#">Cookie Settings</a>
+<a class="text-stone-500 hover:text-yellow-600 transition-colors" href="#">Press Kit</a>
+</div>
+<div class="font-['Manrope'] text-xs uppercase tracking-[0.2em] text-stone-500">
+            © 2024 CURATOR REALTY. AN ARCHITECTURAL LEGACY.
+        </div>
+</footer>
+</body></html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestion Privée | FRILO Patrimoine</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-surface text-earth-800 antialiased selection:bg-accent selection:text-white">
+
+    <!-- Topbar Institutionnelle -->
+    <div class="bg-surface border-b border-earth-400/20 py-2 text-xs font-sans tracking-wide hidden md:block">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center text-earth-600">
+            <div class="flex items-center gap-6">
+                <span class="font-bold tracking-widest uppercase">Société de Gestion Foncière</span>
+                <span class="flex items-center gap-2"><span
+                        class="material-symbols-outlined text-[16px] text-accent">location_on</span> Cotonou, Rép. du
+                    Bénin</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="hover:text-primary transition-colors">Espace Propriétaire</a>
+                <span class="w-px h-3 bg-earth-400/50"></span>
+                <a href="#" class="hover:text-primary transition-colors">Espace Locataire</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Principale -->
+    <nav class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-minimal transition-all" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="index.html" class="flex flex-col group">
+                <span class="font-serif font-bold text-2xl text-primary tracking-tight leading-none mb-1">FRILO
+                    Patrimoine</span>
+            </a>
+
+            <div class="hidden lg:flex items-center space-x-10">
+                <a href="index.html"
+                    class="text-primary font-bold text-sm tracking-wide border-b-2 border-accent pb-1">Accueil</a>
+                <a href="services.html"
+                    class="text-earth-600 hover:text-primary transition-colors text-sm font-semibold tracking-wide">Pôles
+                    d'Expertise</a>
+                <a href="about.html"
+                    class="text-earth-600 hover:text-primary transition-colors text-sm font-semibold tracking-wide">L'Institution</a>
+                <a href="contact.html"
+                    class="text-earth-600 hover:text-primary transition-colors text-sm font-semibold tracking-wide">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="contact.html" class="btn-primary">
+                    Parler à un conseiller
+                </a>
+            </div>
+
+            <button class="lg:hidden text-primary">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 1. Hero Institutionnel -->
+        <section class="relative min-h-[80vh] flex items-center bg-primary">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80"
+                    alt="Immeuble affaires" class="w-full h-full object-cover opacity-20 mix-blend-luminosity">
+                <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/40"></div>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 w-full">
+                <div class="py-20 md:py-32">
+                    <span class="text-accent font-bold tracking-widest text-xs uppercase mb-6 block">Gestion Locative &
+                        Transactions Sécurisées</span>
+                    <h1 class="text-5xl md:text-6xl font-serif font-bold text-white leading-tight mb-6">
+                        Valorisez et sécurisez votre patrimoine foncier au Bénin.
+                    </h1>
+                    <div class="w-16 h-1 bg-accent mb-8"></div>
+                    <p class="text-lg text-white/80 font-light mb-10 max-w-lg leading-relaxed">
+                        Des processus d'audit notarial rigoureux jusqu'au recouvrement intégral de vos loyers. Nous
+                        gérons vos actifs immobiliers comme s'il s'agissait des nôtres.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="contact.html" class="btn-accent px-8 py-4">Confier un mandat</a>
+                        <a href="services.html"
+                            class="btn-secondary !text-white !border-white hover:!bg-white hover:!text-primary px-8 py-4">Découvrir
+                            nos garanties</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anchor down -->
+            <div
+                class="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 animate-bounce">
+                <span class="text-[10px] text-white/50 uppercase tracking-widest font-bold">Défiler</span>
+                <span class="material-symbols-outlined text-white/50">arrow_downward</span>
+            </div>
+        </section>
+
+        <!-- 2. Chiffres de Réassurance -->
+        <section class="bg-white border-b border-earth-400/10 relative z-20 shadow-minimal">
+            <div
+                class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-earth-400/20">
+                <div>
+                    <h3 class="text-4xl font-serif font-bold text-primary mb-2">12 ans</h3>
+                    <p class="text-xs font-bold tracking-widest uppercase text-earth-600">D'expérience agence</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-serif font-bold text-primary mb-2">50k+ m²</h3>
+                    <p class="text-xs font-bold tracking-widest uppercase text-earth-600">Sous gestion locative</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-serif font-bold text-primary mb-2">0%</h3>
+                    <p class="text-xs font-bold tracking-widest uppercase text-earth-600">De taux d'impayés finaux</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-serif font-bold text-primary mb-2">100%</h3>
+                    <p class="text-xs font-bold tracking-widest uppercase text-earth-600">De transactions notariées</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Nos Pôles d'Expertise -->
+        <section class="py-24 bg-surface bg-pinstripe">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-20">
+                    <h2 class="text-4xl font-serif font-bold text-primary mb-6">Expertise Pluridisciplinaire</h2>
+                    <div class="w-16 h-1 bg-accent mx-auto mb-6"></div>
+                    <p class="text-earth-600 leading-relaxed text-lg">
+                        Nous ne sommes pas de simples intermédiaires. Nous sommes un cabinet d'administration de biens
+                        structuré pour protéger vos intérêts légaux et financiers.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="card-solid p-10 group">
+                        <div
+                            class="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-accent transition-colors mb-8">
+                            <span class="material-symbols-outlined text-3xl">key</span>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-primary mb-4">Gestion Locative & Syndic</h3>
+                        <p class="text-earth-600 leading-relaxed mb-8 text-sm">
+                            Sélection drastique des locataires (solvabilité exigée), rédaction de baux blindés, états
+                            des lieux stricts et recouvrement implacable. Nous optimisons le rendement de vos immeubles.
+                        </p>
+                        <a href="services.html"
+                            class="text-accent font-bold text-sm tracking-widest uppercase flex items-center gap-2 group-hover:text-primary transition-colors">
+                            Voir le détail <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        </a>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="card-solid p-10 group bg-primary text-white border-transparent">
+                        <div
+                            class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center text-accent mb-8">
+                            <span class="material-symbols-outlined text-3xl">real_estate_agent</span>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold mb-4 text-white">Courtage & Transaction</h3>
+                        <p class="text-white/80 leading-relaxed mb-8 text-sm">
+                            Vente et acquisition de foncier et d'immobilier résidentiel. Nous procédons à un audit
+                            systématique du Titre Foncier (IGN, Domaines) avant toute commercialisation pour garantir
+                            une vente sans litige.
+                        </p>
+                        <a href="services.html"
+                            class="text-accent font-bold text-sm tracking-widest uppercase flex items-center gap-2 transition-colors">
+                            Voir le détail <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        </a>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="card-solid p-10 group">
+                        <div
+                            class="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-accent transition-colors mb-8">
+                            <span class="material-symbols-outlined text-3xl">gavel</span>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-primary mb-4">Audit de Portefeuille</h3>
+                        <p class="text-earth-600 leading-relaxed mb-8 text-sm">
+                            Analyse juridique et financière de vos actifs actuels. Restructuration de vos propriétés,
+                            conseil en fiscalité immobilière béninoise et optimisation de transmission.
+                        </p>
+                        <a href="services.html"
+                            class="text-accent font-bold text-sm tracking-widest uppercase flex items-center gap-2 group-hover:text-primary transition-colors">
+                            Voir le détail <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Focus Diaspora -->
+        <section class="py-0 relative bg-primary">
+            <div class="grid lg:grid-cols-2">
+                <div class="relative h-[400px] lg:h-auto">
+                    <img src="https://www.afrilogement.com/assets/blog/1683823326224.jpg" alt="Investisseur Diaspora"
+                        class="absolute inset-0 w-full h-full object-cover">
+                    <!-- Overlay pour lisibilité si besoin -->
+                </div>
+                <div class="p-12 md:p-24 flex flex-col justify-center bg-gradient-corporate">
+                    <span class="text-accent font-bold tracking-widest text-xs uppercase mb-4 block">Département
+                        Expatriés & Diaspora</span>
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold text-white mb-6 leading-tight">Investir au
+                        pays, <br>sans les risques du pays.</h2>
+                    <p class="text-white/80 leading-relaxed mb-8 font-light text-lg">
+                        Nous connaissons les histoires dramatiques de chantiers abandonnés ou de faux terrains achetés à
+                        distance. Que vous soyez à Paris, Montréal ou New-York, nous agissons comme votre mandataire de
+                        confiance absolu sur le sol béninois.
+                    </p>
+                    <ul class="space-y-4 mb-10 text-white/90 text-sm">
+                        <li class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-accent">verified_user</span>
+                            <span>Nous vous représentons physiquement chez le notaire et l'huissier.</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-accent">verified_user</span>
+                            <span>Reporting hebdomadaire vidéo lors des visites d'acquisition.</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-accent">verified_user</span>
+                            <span>Perception des loyers virée mensuellement sur votre compte étranger.</span>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="contact.html" class="btn-accent px-8 py-4">Demander un appel vidéo privé</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Méthodologie / Valeur ajoutée -->
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <span class="text-accent font-bold tracking-widest text-xs uppercase mb-4 block">Notre
+                            Charte</span>
+                        <h2 class="text-4xl font-serif font-bold text-primary mb-6">La tolérance zéro sur l'informel.
+                        </h2>
+                        <div class="w-16 h-1 bg-accent mb-8"></div>
+                        <p class="text-earth-600 mb-8 leading-relaxed">
+                            Le marché immobilier local est gangréné par le "marketing sauvage" et le manque de
+                            documentation professionnelle. Notre agence est une réponse stricte à ce phénomène.
+                        </p>
+
+                        <div class="space-y-8">
+                            <div class="flex gap-6">
+                                <div class="text-3xl font-serif font-bold text-earth-400/30 line-through">01</div>
+                                <div>
+                                    <h4 class="text-xl font-serif font-bold text-primary mb-2">Refus de la sous-location
+                                        illégale</h4>
+                                    <p class="text-sm text-earth-600 leading-relaxed">Nous imposons des contrôles de
+                                        régularité dans tous nos immeubles gérés pour éviter l'usure prématurée de votre
+                                        bien.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6">
+                                <div class="text-3xl font-serif font-bold text-earth-400/30 line-through">02</div>
+                                <div>
+                                    <h4 class="text-xl font-serif font-bold text-primary mb-2">Comité d'attribution</h4>
+                                    <p class="text-sm text-earth-600 leading-relaxed">Chaque dossier locataire est
+                                        validé par un comité interne vérifiant fiches de paie, garanties bancaires et
+                                        antécédents de paiement.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="https://www.ouest-avenue.com/wp-content/uploads/Avant-contrat-immobilier.jpeg"
+                            alt="Signature Contrat" class="w-full aspect-square object-cover rounded shadow-corporate">
+                        <!-- Décoration -->
+                        <div class="absolute -bottom-6 -left-6 w-48 h-48 bg-surface -z-10"></div>
+                        <div class="absolute -top-6 -right-6 w-32 h-32 bg-primary/5 -z-10 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Formulaire de Mandat Rapide -->
+        <section class="py-24 bg-surface text-center">
+            <div class="max-w-3xl mx-auto px-6">
+                <span class="material-symbols-outlined text-5xl text-accent mb-6">description</span>
+                <h2 class="text-4xl font-serif font-bold text-primary mb-6">Déléguez-nous la gestion.</h2>
+                <p class="text-earth-600 mb-10 leading-relaxed">
+                    Testez la rigueur de notre cabinet. Soumettez votre intention de mandat, un gestionnaire expert vous
+                    rappellera sous 4 heures avec un plan d'action.
+                </p>
+                <form class="bg-white p-8 md:p-12 rounded shadow-sm border border-earth-400/10 text-left">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-primary mb-2">Votre
+                                demande concerne</label>
+                            <select
+                                class="w-full bg-surface border-earth-400/20 rounded-md focus:border-accent focus:ring-0 text-sm">
+                                <option>Mettre un bien en gestion locative</option>
+                                <option>Vendre un bien</option>
+                                <option>Conseil en investissement</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-primary mb-2">Numéro
+                                Téléphone</label>
+                            <input type="tel"
+                                class="w-full bg-surface border-earth-400/20 rounded-md focus:border-accent focus:ring-0 text-sm"
+                                placeholder="+229...">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary w-full py-4 text-center justify-center">Être rappelé par un
+                        expert</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Institutionnel -->
+    <footer class="bg-primary text-white/70 py-16 text-sm">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-1">
+                    <span class="font-serif font-bold text-2xl text-white tracking-tight leading-none mb-1 block">FRILO
+                        Patrimoine</span>
+                    <p class="font-bold text-accent text-xs tracking-widest uppercase mb-6">Société de Gestion Foncière
+                    </p>
+                    <p class="text-xs leading-relaxed opacity-80">La stabilité et la sécurité juridique au service de
+                        votre rentabilité immobilière au Bénin.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-serif font-bold text-white text-lg mb-6">Institution</h4>
+                    <ul class="space-y-3 text-xs tracking-wide">
+                        <li><a href="about.html" class="hover:text-accent transition-colors">Histoire du cabinet</a>
+                        </li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Gouvernance & Ethique</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition-colors">Recrutement</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-serif font-bold text-white text-lg mb-6">Expertises</h4>
+                    <ul class="space-y-3 text-xs tracking-wide">
+                        <li><a href="services.html" class="hover:text-accent transition-colors">Administration de
+                                biens</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition-colors">Transactions
+                                immobilières</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition-colors">Département Diaspora</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-serif font-bold text-white text-lg mb-6">Siège Cotonou</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li class="flex gap-3"><span
+                                class="material-symbols-outlined text-sm text-accent">location_on</span> Immeuble CICA,
+                            Quartier Ganhi.</li>
+                        <li class="flex gap-3"><span class="material-symbols-outlined text-sm text-accent">mail</span>
+                            contact@frilopatrimoine.bj</li>
+                        <li class="flex gap-3"><span class="material-symbols-outlined text-sm text-accent">call</span>
+                            +229 00 00 00 00</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between text-[11px] uppercase tracking-widest opacity-60">
+                <p>&copy; 2026 FRILO PATRIMOINE. CARTE PROFESSIONNELLE N° 2026-X.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Mentions Légales</a>
+                    <a href="#" class="hover:text-white">Confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

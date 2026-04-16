@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L'Institution | FRILO Patrimoine</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface text-earth-800 antialiased selection:bg-accent selection:text-white flex flex-col min-h-screen">
+
+    <!-- Navbar Principale -->
+    <nav class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-minimal transition-all" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="index.html" class="flex flex-col group">
+                <span class="font-serif font-bold text-2xl text-primary tracking-tight leading-none mb-1">FRILO Patrimoine</span>
+            </a>
+            
+            <div class="hidden lg:flex items-center space-x-10">
+                <a href="index.html" class="text-earth-600 hover:text-primary transition-colors text-sm font-semibold tracking-wide">Accueil</a>
+                <a href="services.html" class="text-earth-600 hover:text-primary transition-colors text-sm font-semibold tracking-wide">Pôles d'Expertise</a>
+                <a href="about.html" class="text-primary font-bold text-sm tracking-wide border-b-2 border-accent pb-1">L'Institution</a>
+                <a href="contact.html" class="text-earth-600 hover:text-primary transition-colors text-sm font-semibold tracking-wide">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="contact.html" class="btn-primary">
+                    Parler à un conseiller
+                </a>
+            </div>
+
+            <button class="lg:hidden text-primary">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        <!-- En-tête -->
+        <header class="py-24 bg-white text-center border-b border-earth-400/10">
+            <div class="max-w-3xl mx-auto px-6">
+                <span class="text-accent font-bold tracking-widest text-xs uppercase mb-6 block">Notre Histoire</span>
+                <h1 class="text-5xl md:text-6xl font-serif font-bold text-primary mb-6 leading-tight">Mettre de l'ordre <br>dans le foncier.</h1>
+                <div class="w-16 h-1 bg-accent mx-auto mb-8"></div>
+                <p class="text-lg text-earth-600 leading-relaxed font-light">
+                    Fondé par un collectif d'experts juridiques et financiers, le cabinet répond à l'urgence de professionnaliser le marché immobilier en pleine explosion d'Afrique de l'Ouest.
+                </p>
+            </div>
+        </header>
+
+        <!-- Contenu Corporate -->
+        <section class="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-start">
+            <div class="prose prose-lg text-earth-600 prose-headings:font-serif prose-headings:text-primary leading-relaxed">
+                <h2 class="text-3xl font-bold mb-6">Le Constat</h2>
+                <p class="mb-6">Le marché immobilier béninois et sous-régional est paradoxal. D'un côté, il offre des rendements locatifs parmi les plus attractifs du continent. De l'autre, l'informalité des intermédiaires crée des risques massifs : faux titres fonciers, vacance locative impunie, dégradation des biens.</p>
+                <p class="mb-6">C'est dans ce contexte que FRILO Patrimoine a structuré, dès 2014, le premier processus d'administration de biens à la "tolérance zéro".</p>
+                
+                <h2 class="text-3xl font-bold mt-12 mb-6">Un modèle hybride : L'Agent & Le Juriste</h2>
+                <p class="mb-6">Nous refusons l'approche du "courtier opportuniste". Chaque mandat que nous acceptons est préalablement instruit par notre département juridique en liaison avec nos Notaires partenaires. Un bien qui ne présente pas 100% de sécurité légale n'est ni géré, ni vendu par notre institution.</p>
+                <div class="bg-surface p-8 border-l-4 border-accent mt-8 mb-6 text-sm font-medium">
+                    <p class="mb-0">"La valeur de notre cabinet ne réside pas dans le nombre de biens que nous avons en catalogue, mais dans la sécurité absolue que nous garantissons à nos investisseurs."</p>
+                </div>
+            </div>
+
+            <!-- Panel valeurs -->
+            <div class="bg-primary text-white p-10 md:p-14 rounded-sm shadow-corporate">
+                <h3 class="font-serif text-3xl font-bold mb-10">Nos Engagements</h3>
+                
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="text-accent text-3xl shrink-0"><span class="material-symbols-outlined font-bold text-[32px]">shield</span></div>
+                        <div>
+                            <h4 class="font-serif font-bold text-xl mb-2">Protection Juridique</h4>
+                            <p class="text-sm font-light leading-relaxed text-white/70">Audit des conventions de vente, vérification des états des droits réels (EDR).</p>
+                        </div>
+                    </div>
+                    <div class="divider border-white/20"></div>
+                    <div class="flex gap-4">
+                        <div class="text-accent text-3xl shrink-0"><span class="material-symbols-outlined font-bold text-[32px]">analytics</span></div>
+                        <div>
+                            <h4 class="font-serif font-bold text-xl mb-2">Rendement Financier</h4>
+                            <p class="text-sm font-light leading-relaxed text-white/70">Révision annuelle des loyers, stratégie de défiscalisation, entretien curatif maîtrisé.</p>
+                        </div>
+                    </div>
+                    <div class="divider border-white/20"></div>
+                    <div class="flex gap-4">
+                        <div class="text-accent text-3xl shrink-0"><span class="material-symbols-outlined font-bold text-[32px]">handshake</span></div>
+                        <div>
+                            <h4 class="font-serif font-bold text-xl mb-2">Transparence Fiscale</h4>
+                            <p class="text-sm font-light leading-relaxed text-white/70">Nos honoraires sont clairs. Nous accompagnons nos clients sur la retenue à la source (loyers).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Institutionnel -->
+    <footer class="bg-primary text-white/70 py-12 text-sm text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <span class="font-serif font-bold text-xl text-white tracking-tight leading-none mb-4 block">FRILO Patrimoine</span>
+            <p class="text-xs uppercase tracking-widest opacity-60">&copy; 2026. SOCIÉTÉ DE GESTION FONCIÈRE. COTONOU.</p>
+        </div>
+    </footer>
+</body>
+</html>

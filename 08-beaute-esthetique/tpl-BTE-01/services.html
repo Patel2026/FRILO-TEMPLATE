@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Rituels | L'AURA - Haute Beauté</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;600;800&display=swap"
+        rel="stylesheet" />
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body
+    class="bg-surface text-on-surface font-body selection:bg-secondary selection:text-white antialiased overflow-x-hidden">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 glass-aura ghost-border">
+        <div class="flex justify-between items-center px-12 py-6 max-w-full">
+            <a href="index.html" class="text-2xl font-headline tracking-tighter text-on-background uppercase">L'Aura
+                Haute Beauté</a>
+            <div
+                class="hidden md:flex items-center gap-12 font-label text-[10px] font-extrabold tracking-[0.3em] uppercase">
+                <a class="text-on-surface/50 hover:text-on-surface transition-all" href="index.html">Accueil</a>
+                <a class="text-on-surface/50 hover:text-on-surface transition-all" href="a-propos.html">A propos</a>
+                <a class="text-secondary border-b border-secondary pb-1" href="services.html">Services</a>
+                <a class="text-on-surface/50 hover:text-on-surface transition-all" href="gallery.html">Galerie</a>
+                <a class="text-on-surface/50 hover:text-on-surface transition-all" href="contact.html">Contact</a>
+            </div>
+            <button class="btn-noble px-10 py-4 shadow-xl">
+                Réserver
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-40">
+        <!-- Header -->
+        <header class="max-w-[1400px] mx-auto px-12 mb-32">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-12">
+                <div class="max-w-3xl">
+                    <span
+                        class="font-label text-[10px] uppercase tracking-[0.4em] text-secondary mb-10 block font-black">Architecture
+                        des Soins</span>
+                    <h1 class="text-7xl md:text-9xl font-headline tracking-tighter leading-none italic font-normal">
+                        Rituels de <br /><span class="text-on-surface/30">Rénovation.</span></h1>
+                </div>
+            </div>
+        </header>
+
+        <!-- Services Loop (Magazine Editorial Layout) -->
+        <section class="max-w-[1400px] mx-auto px-12 space-y-48 mb-48">
+            <!-- Skincare Category -->
+            <div class="grid lg:grid-cols-2 gap-32 items-start group">
+                <div class="relative order-2 lg:order-1">
+                    <div class="aspect-[4/5] overflow-hidden bg-surface-variant group">
+                        <img alt="Soin Visage"
+                            class="w-full h-full object-cover grayscale-[0.1] transition-transform duration-1000 group-hover:scale-105"
+                            data-alt="Close up d'un soin visage luxe avec des textures crémeuses"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbntIiojGEk5tergfxA2MbB_u59om2N7R_MLjSL0mkBjK4WCktZDBqjsnUo6b6FF2NG5algDuqa6vhfrpzOfKydKEl3V1ZoLOksBbUljE9J3qjcIvehg_bCtmjdEIqg1fJMLEdq5kdhqcFKowOMORKL-SsUAxJt9DLIB9n88ngzH7fzZeYAQZkeownE4p71E_oQXHqXpKCvL9gsxkrp-3gxpps3wpUmgKEaU3ZZWSaWg-gwhB3xRpYLZ4tNzzBssGIer3UcoR6YBs" />
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 lg:pt-24">
+                    <span
+                        class="font-label text-[10px] uppercase tracking-[0.4em] text-secondary mb-10 block font-black">Catégorie
+                        I / Dermato-Esthétique</span>
+                    <h2 class="text-5xl font-headline mb-12 tracking-tighter italic font-normal">Soin Moléculaire.</h2>
+                    <p class="text-on-surface-variant font-light leading-relaxed text-lg mb-12 opacity-80">Nos
+                        protocoles de soin du visage transcendent le simple nettoyage pour devenir de véritables
+                        interventions de rénovation cellulaire. Nous utilisons les technologies les plus avancées du
+                        secteur esthétique mondial.</p>
+
+                    <div class="space-y-12">
+                        <div
+                            class="flex justify-between items-end border-b border-on-surface/5 pb-6 group cursor-pointer">
+                            <div>
+                                <h4 class="font-headline text-xl mb-2">Aura Luminance</h4>
+                                <p class="text-xs text-on-surface-variant opacity-60">Soin oxygénant & booster d'éclat
+                                    immédiat.</p>
+                            </div>
+                            <span
+                                class="font-label text-xs tracking-widest text-secondary group-hover:translate-x-2 transition-transform">90
+                                min</span>
+                        </div>
+                        <div
+                            class="flex justify-between items-end border-b border-on-surface/5 pb-6 group cursor-pointer">
+                            <div>
+                                <h4 class="font-headline text-xl mb-2">Molecular Repair</h4>
+                                <p class="text-xs text-on-surface-variant opacity-60">Rénovation profonde de la barrière
+                                    cutanée.</p>
+                            </div>
+                            <span
+                                class="font-label text-xs tracking-widest text-secondary group-hover:translate-x-2 transition-transform">120
+                                min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Body/Massage Category (Editorial Reveal) -->
+            <div class="bg-tonal-low -mx-12 px-12 py-40 rounded-none lg:-mx-24 lg:px-24 editorial-reveal items-center">
+                <div class="editorial-reveal-img h-[700px]">
+                    <img alt="Massage Architectural" class="w-full h-full object-cover grayscale-[0.2]"
+                        data-alt="Massage relaxant dans une ambiance zen minimaliste"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuASgvk2-oHH5AfhmNXvCGxgmsly9pruC505t6tujjr63FUUNicyojlP1L7XKbBXrqJxgAXFwNmS3LYrsiRFb7ufGZ0TR_WMZ83ItmMEmUN6iMr-FB2FU8qPC2JV7V54e-bgiOpi9XKWpRv3Thc-nMM7xQJ6G3eQoA5jxixn9fZtxVNRdgbWDLQybm-bhIOXybHniX0l6DRPyqxZ_1bzdv7q19anPbFR91339lNOGd9rTdMVBHc61uQf7ahxiyo5MzU0Y-I5TW-FMTY" />
+                </div>
+                <div class="editorial-reveal-text">
+                    <span
+                        class="font-label text-[10px] uppercase tracking-[0.4em] text-secondary mb-10 block font-black">Catégorie
+                        II / Harmonisation</span>
+                    <h2 class="text-5xl font-headline mb-10 tracking-tighter italic font-normal leading-tight">
+                        Architecture <br />du Corps.</h2>
+                    <p class="text-on-surface-variant font-light leading-loose text-lg mb-12 opacity-80">Libérez les
+                        tensions structurelles par une approche holistique du massage. Nos rituels corporels sont conçus
+                        comme une chorégraphie apaisante pour votre système nerveux.</p>
+                    <ul class="space-y-8 font-label text-[10px] uppercase font-black tracking-widest text-secondary">
+                        <li class="flex items-center gap-6">
+                            <span class="w-8 h-px bg-secondary"></span>
+                            Rituel Pierres de Quartz
+                        </li>
+                        <li class="flex items-center gap-6">
+                            <span class="w-8 h-px bg-secondary"></span>
+                            Drainage Sculpte Aura
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Signature Category -->
+            <div class="grid lg:grid-cols-2 gap-32 items-center">
+                <div>
+                    <span
+                        class="font-label text-[10px] uppercase tracking-[0.4em] text-secondary mb-10 block font-black">Catégorie
+                        III / Signatures</span>
+                    <h2 class="text-5xl font-headline mb-12 tracking-tighter italic font-normal">Les Accents.</h2>
+                    <p class="text-on-surface-variant font-light leading-relaxed text-lg mb-12 opacity-80">Des
+                        enhancements ciblés pour parfaire votre aura. Sourcils sculptés, cils densifiés et soins des
+                        mains architecturaux.</p>
+                    <a href="contact.html" class="btn-noble px-16 py-6 inline-block">Consultation Visage</a>
+                </div>
+                <div class="relative group">
+                    <div class="aspect-video bg-surface-variant overflow-hidden shadow-2xl">
+                        <img alt="Signature Detail"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000"
+                            data-alt="Close up de soins de précision esthétique"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4x2dd5TXnaIN1pyVRgLf2xeYpkljFvIu-gDLZ1m9-m0-M8QSZ77NQ5TwhPT9tiiTgZs59DaxiT7DGma4cG3uB92eD0VxgKkU6CXkNpbxlYsj69Mzzju9hw8XbVGUK18Lsw0CD_QmgHZr605gTCsQpJRsLqzBnpLmUidOujRlX8afz-NkyV9LLnM7kIpclKQE_dMgCqx_yKcQ8ZfgZWlB6wx0TApXo8Yk2f6oxiRbMF6kHnZU4gv6bCRKq15tMgr9E6GKqtWAdRdI" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Footer (Minimalist) -->
+        <section class="max-w-[1400px] mx-auto px-12 py-40 border-t border-on-surface/5">
+            <div class="grid md:grid-cols-4 gap-12 text-center md:text-left">
+                <div>
+                    <h5 class="font-label text-[10px] uppercase tracking-widest font-black mb-6">Technologies</h5>
+                    <p class="text-xs text-on-surface-variant opacity-50">IPL de pointe, radiofréquence bipolaire &
+                        micro-courants.</p>
+                </div>
+                <div>
+                    <h5 class="font-label text-[10px] uppercase tracking-widest font-black mb-6">Expertise</h5>
+                    <p class="text-xs text-on-surface-variant opacity-50">Esthéticiennes certifiées aux protocoles
+                        internationaux.</p>
+                </div>
+                <div>
+                    <h5 class="font-label text-[10px] uppercase tracking-widest font-black mb-6">Confidentialité</h5>
+                    <p class="text-xs text-on-surface-variant opacity-50">Espaces individuels insonorisés pour une
+                        intimité totale.</p>
+                </div>
+                <div>
+                    <h5 class="font-label text-[10px] uppercase tracking-widest font-black mb-6">Sur-Mesure</h5>
+                    <p class="text-xs text-on-surface-variant opacity-50">Analyse cutanée digitale avant chaque premier
+                        soin.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-100 py-32 px-12 border-t border-on-surface/5">
+        <div
+            class="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-24 mb-32 pb-24 border-b border-on-surface/5">
+            <div class="col-span-1">
+                <span class="text-2xl font-headline tracking-tighter uppercase mb-10 block">L'AURA HAUTE BEAUTÉ</span>
+            </div>
+            <div>
+                <h6 class="font-headline text-lg mb-10">Legal</h6>
+                <ul class="space-y-6 font-label text-[10px] uppercase tracking-widest opacity-60 font-black">
+                    <li><a class="hover:text-secondary transition-all" href="#">Conditions de réservation</a></li>
+                    <li><a class="hover:text-secondary transition-all" href="#">Politique de vie privée</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="flex flex-col md:flex-row justify-between items-center opacity-40 font-label text-[8px] uppercase tracking-[0.5em] font-black">
+            <span>© 2026 L'AURA HAUTE BEAUTÉ.</span>
+        </div>
+    </footer>
+</body>
+
+</html>

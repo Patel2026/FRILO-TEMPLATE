@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap');
+
+:root {
+    --harvest-gold: #845d00;
+    --harvest-gold-container: #feb700;
+    --harvest-tomato: #ca002c;
+}
+
+body {
+    background-color: #fffcf5;
+    color: #383833; /* on-surface */
+}
+
+h1, h2, h3, h4, .font-headline {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #383833;
+}
+
+.font-body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* Harvest Gradient */
+.harvest-gradient {
+    background: linear-gradient(45deg, var(--harvest-gold) 0%, var(--harvest-gold-container) 100%);
+}
+
+/* Ambient Depth Shadow */
+.harvest-shadow {
+    box-shadow: 0px 20px 40px rgba(56, 56, 51, 0.06);
+}
+
+/* Glassmorphism */
+.glass-nav {
+    background: rgba(255, 252, 245, 0.7);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+}
+
+/* No-Line Surface Architecture */
+.surface-card {
+    background-color: #ffffff; /* surface-container-lowest */
+}
+
+.surface-section {
+    background-color: #f6f3eb; /* surface-container */
+}
+
+/* Custom Scrollbar (friendly) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fffcf5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #eae8df;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #bbb9b3;
+}
+
+/* Horizontal Scroll Hide */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Pill Outline (Ghost Border) */
+.ghost-border {
+    border: 1px solid rgba(130, 129, 123, 0.15);
+}

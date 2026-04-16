@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>L'Esprit | L'Atrium des Saveurs</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container/30 antialiased">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 glass-nav shadow-[0_20px_40px_rgba(56,56,51,0.06)]">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <a href="index.html" class="text-2xl font-extrabold text-primary tracking-tighter font-headline">
+                L'Atrium <span class="text-secondary">des Saveurs</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight text-sm uppercase">
+                <a class="text-on-surface hover:text-primary transition-colors" href="index.html">Accueil</a>
+                <a class="text-primary border-b-2 border-primary pb-1" href="about.html">Esprit</a>
+                <a class="text-on-surface hover:text-primary transition-colors" href="menu.html">La Table</a>
+                <a class="text-on-surface hover:text-primary transition-colors" href="gallery.html">Galerie</a>
+                <a class="text-on-surface hover:text-primary transition-colors" href="contact.html">Contact</a>
+            </div>
+            <button class="harvest-gradient text-white px-6 py-2.5 rounded-xl font-headline font-bold hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg uppercase text-xs tracking-wider">
+                Réserver une table
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-32">
+        <!-- Brand Story -->
+        <section class="max-w-7xl mx-auto px-8 mb-32">
+            <div class="grid lg:grid-cols-2 gap-24 items-center">
+                <div>
+                    <span class="font-label uppercase tracking-[0.3em] text-secondary text-xs mb-6 block font-bold">Notre Manifeste</span>
+                    <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight text-on-surface mb-8 uppercase">
+                        Célébrer la Terre,<br/><span class="italic text-primary font-normal">Nourrir l'Ame.</span>
+                    </h1>
+                    <p class="text-xl font-light leading-loose mb-8 text-on-surface-variant">
+                        L'Atrium des Saveurs est né d'une vision simple : transformer le concept de buffet en une célébration éditoriale du goût. Nous avons voulu créer un espace où l'abondance ne sacrifie jamais la qualité.
+                    </p>
+                    <p class="text-lg font-light leading-relaxed text-on-surface-variant">
+                        Situé au cœur de Cotonou, notre atrium est un lieu de rendez-vous pour les gourmets qui apprécient la transparence, la fraîcheur et l'art de la table. Nous travaillons main dans la main avec des producteurs locaux pour que chaque ingrédient raconte une histoire de terroir.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -top-10 -left-10 w-64 h-64 bg-primary/5 rounded-full blur-[100px]"></div>
+                    <div class="aspect-square rounded-[3rem] overflow-hidden glass-nav p-3 shadow-2xl">
+                        <img alt="The Gallery" class="w-full h-full object-cover rounded-[2.5rem]" data-alt="Intérieur sophistiqué" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQft7a4u-Jvj2xHQJSY3mCols2Nh0dDi_B3ZWKlXoWE3zoTIXThbCDomvQ80d-qedU6cclVV00uNBNJaBEg5-dQI326IbGCXOTIx9FlM1f0CgaitRta4EPiXMhVMGUYzXX9t-SEs0Q7GfGwm9IYrZ1KQW2WoWYVAPHekClz7wjdw171pjoZIL9ubpcwodPM_NNmEnJNHtVVLxtpEXbzUaKjpAges75qHdjFBETaQRnw6TYpNlNspdgVY9VshMH4sqgtEJleDYvG6sC"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Pillars -->
+        <section class="bg-surface-container py-32 px-8 mb-32 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-64 h-64 bg-secondary/5 blur-[120px]"></div>
+            <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-16 relative z-10">
+                <div class="space-y-6">
+                    <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-primary shadow-xl">
+                        <span class="material-symbols-outlined text-3xl">local_mall</span>
+                    </div>
+                    <h3 class="font-headline text-2xl font-black uppercase tracking-tight">Sourcing Ethique</h3>
+                    <p class="text-on-surface-variant font-light leading-relaxed">Nous privilégions les circuits courts. Nos herbes aromatiques, nos fruits et nos légumes proviennent directement des coopératives agricoles entourant Cotonou.</p>
+                </div>
+                <div class="space-y-6">
+                    <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-secondary shadow-xl">
+                        <span class="material-symbols-outlined text-3xl">auto_awesome</span>
+                    </div>
+                    <h3 class="font-headline text-2xl font-black uppercase tracking-tight">Zéro Compromis</h3>
+                    <p class="text-on-surface-variant font-light leading-relaxed">Chaque plat du buffet est préparé en petites quantités pour garantir une fraîcheur "minute" et éviter tout gaspillage alimentaire.</p>
+                </div>
+                <div class="space-y-6">
+                    <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-primary shadow-xl">
+                        <span class="material-symbols-outlined text-3xl">diversity_3</span>
+                    </div>
+                    <h3 class="font-headline text-2xl font-black uppercase tracking-tight">Esprit de Famille</h3>
+                    <p class="text-on-surface-variant font-light leading-relaxed">L'Atrium est conçu comme une grande table familiale. Un espace chaleureux où l'on partage bien plus qu'un repas : un moment de vie éclairé.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Kitchen Garden Focus -->
+        <section class="max-w-7xl mx-auto px-8 mb-32">
+            <div class="grid lg:grid-cols-2 gap-24 items-center">
+                <div class="order-2 lg:order-1 relative">
+                    <div class="grid grid-cols-2 gap-6">
+                        <img class="rounded-[2rem] w-full h-80 object-cover" data-alt="Herbes fraîches" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsZUqD0OFrGxDuzbVVXIur3ir2nprmMbnWfRI_4eemImfwynW_qRAUJiki-7VTf1jHqZreNvAeh_ts8Fk0Dbp7BehJHkXwQ8S8mgvQ1Dn_zvz6jESf0j6E95UHt3otVku0DxmIszAStfrwkqPAykTgGpJxembIasGnuAjEMF8zgF4tfcCj8cyUsJRDr10I5rPrLKXvQlEIv55u0jvwxtrN9kHZ3lEcaOQB2y5Ewgn667l2LFswt_HX2sutRJNcG9bOTeJSumli3okj"/>
+                        <img class="rounded-[2rem] w-full h-64 object-cover mt-12" data-alt="Marché local" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzjdQTXQsbnlGkp85Urjy-Tg_YTPdkqXphAePuJQf0Yi2Zrak0DQXoRo7X4qmaBHeBKFoDAHYiGotUsQkh2ccODdzidCc3Dc4bWdHBlEaiD2pF24vbUXQbT_q5Fm7L5XLqnDcWVbVgXuM1Am2smJGu32qoNRkBgMQgmg2s75dXQYdQ3-JIG9NPLkQ3_iEBPluaroS985uNR3hKsgFX04kU6gGPbU3TyvYxmtdIyL9_T1FoSkCrCH2k0U5xFfmqOqgiZchG_Iq_o4wF"/>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <span class="font-label uppercase tracking-widest text-primary text-xs mb-4 block font-bold">Le Potager d'Atrium</span>
+                    <h2 class="font-headline text-5xl font-extrabold text-on-surface mb-8 uppercase tracking-tighter">Du Terroir à <br/><span class="text-secondary italic font-normal">l'Assiette.</span></h2>
+                    <p class="text-lg font-light leading-relaxed mb-10 text-on-surface-variant">
+                        Notre équipe de jardiniers et de cuisiniers travaille en symbiose. La carte n'est pas dictée par les tendances, mais par ce que la terre nous offre de plus beau aujourd'hui. L'ananas "Pain de Sucre", les mangues charnues et les légumes croquants sont les véritables stars de notre atrium.
+                    </p>
+                    <div class="p-8 bg-surface-container-low rounded-3xl border-l-8 border-primary">
+                        <p class="text-sm font-light italic leading-relaxed text-on-surface">
+                            "Nous ne sommes que les interprètes de la nature. Notre rôle est simplement de ne pas gâcher la splendeur des produits bruts."
+                        </p>
+                        <div class="mt-4 flex items-center gap-3">
+                            <span class="w-8 h-px bg-primary"></span>
+                            <span class="text-[10px] font-black uppercase tracking-widest">Chef Jean-Eudes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-surface-container py-20">
+        <div class="max-w-7xl mx-auto px-12 grid grid-cols-1 md:grid-cols-4 gap-16">
+            <div class="space-y-6">
+                <div class="text-xl font-extrabold text-primary font-headline uppercase tracking-tighter">L'Atrium <span class="text-secondary">des Saveurs</span></div>
+                <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                    © 2026 L'Atrium des Saveurs. Cotonou, Haie Vive.
+                </p>
+            </div>
+            <div>
+                <span class="font-headline font-black text-primary uppercase text-[10px] tracking-widest mb-8 block">Navigation</span>
+                <ul class="space-y-4 text-sm font-bold uppercase tracking-tight">
+                    <li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="index.html">Accueil</a></li>
+                    <li><a class="text-on-surface hover:text-primary transition-colors" href="about.html">Esprit</a></li>
+                    <li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="menu.html">La Table</a></li>
+                    <li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="font-headline font-black text-primary uppercase text-[10px] tracking-widest mb-8 block">Le Lieu</span>
+                <p class="text-sm text-on-surface-variant leading-relaxed">
+                    Haie Vive, Cotonou<br/>
+                    +229 01 00 00 00
+                </p>
+            </div>
+            <div>
+                <span class="font-headline font-black text-primary uppercase text-[10px] tracking-widest mb-8 block">L'Engagement</span>
+                <p class="text-[10px] text-on-surface-variant leading-relaxed opacity-60">
+                    Projets communautaires avec les maraîchers locaux.<br/>
+                    100% Gestion responsable des déchets.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

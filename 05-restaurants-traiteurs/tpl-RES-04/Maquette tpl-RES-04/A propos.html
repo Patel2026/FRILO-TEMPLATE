@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#2c2c2c",
+                    "on-surface": "#ffffff",
+                    "tertiary-dim": "#ff51fa",
+                    "inverse-on-surface": "#565554",
+                    "inverse-primary": "#9a00cf",
+                    "on-surface-variant": "#adaaaa",
+                    "surface-container-highest": "#262626",
+                    "on-background": "#ffffff",
+                    "error-dim": "#d73357",
+                    "surface-tint": "#e08dff",
+                    "on-error": "#490013",
+                    "tertiary-fixed-dim": "#ff61f8",
+                    "secondary-dim": "#e6c047",
+                    "inverse-surface": "#fcf8f8",
+                    "primary-fixed-dim": "#d160ff",
+                    "surface-container": "#1a1919",
+                    "on-primary": "#4f006c",
+                    "secondary": "#f5ce53",
+                    "on-tertiary-fixed-variant": "#6a006a",
+                    "error-container": "#a70138",
+                    "on-primary-container": "#3d0055",
+                    "tertiary": "#ff51fa",
+                    "on-secondary": "#584500",
+                    "on-primary-fixed-variant": "#4c0068",
+                    "primary-fixed": "#d978ff",
+                    "on-secondary-fixed": "#413200",
+                    "secondary-container": "#735c00",
+                    "outline-variant": "#494847",
+                    "on-tertiary": "#400040",
+                    "error": "#ff6e84",
+                    "secondary-fixed": "#f5ce53",
+                    "on-tertiary-container": "#230023",
+                    "primary-dim": "#bc00fb",
+                    "tertiary-fixed": "#ff81f5",
+                    "surface-variant": "#262626",
+                    "surface-dim": "#0e0e0e",
+                    "surface-container-high": "#201f1f",
+                    "surface": "#0e0e0e",
+                    "outline": "#777575",
+                    "on-primary-fixed": "#000000",
+                    "tertiary-container": "#fe00fe",
+                    "primary": "#e08dff",
+                    "surface-container-lowest": "#000000",
+                    "secondary-fixed-dim": "#e6c047",
+                    "background": "#0e0e0e",
+                    "surface-container-low": "#131313",
+                    "on-tertiary-fixed": "#320032",
+                    "primary-container": "#d978ff",
+                    "on-secondary-fixed-variant": "#634e00",
+                    "on-secondary-container": "#fff7ea",
+                    "on-error-container": "#ffb2b9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(38, 38, 38, 0.4);
+            backdrop-filter: blur(20px);
+        }
+        .neon-glow-primary {
+            box-shadow: 0 0 20px rgba(224, 141, 255, 0.15);
+        }
+        .text-neon-gradient {
+            background: linear-gradient(135deg, #e08dff 0%, #bc00fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-950/40 backdrop-blur-xl shadow-[0_0_20px_rgba(224,141,255,0.1)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-2xl font-bold tracking-[-0.02em] text-white font-headline">Electric Sanctuary</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-neutral-400 hover:text-white transition-colors font-headline tracking-tighter uppercase" href="#">Home</a>
+<a class="text-fuchsia-400 border-b-2 border-fuchsia-500 pb-1 font-headline tracking-tighter uppercase" href="#">About</a>
+<a class="text-neutral-400 hover:text-white transition-colors font-headline tracking-tighter uppercase" href="#">Drinks</a>
+<a class="text-neutral-400 hover:text-white transition-colors font-headline tracking-tighter uppercase" href="#">Events</a>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-dim text-on-primary-fixed px-6 py-2 rounded-lg font-headline font-bold uppercase tracking-widest text-sm hover:scale-95 transition-all duration-200 neon-glow-primary">
+                Book a Table
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-end justify-start overflow-hidden">
+<img alt="Venue Architecture" class="absolute inset-0 w-full h-full object-cover" data-alt="dramatic interior of a brutalist nightclub with concrete pillars, neon purple light strips, and dark atmospheric shadows in a high-end architectural style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArbDAlOMBgvePisTG_NBUmTHooDpnjq_9oKiMIiOCufSkKzPOJtRUIKCEMIUx1afVFJzWBh3-wWS62I1UMXnvxCcGPwiMHCllMy636UwSxwjS5_fIu78UvIYKCVZKBsVUtgfFxPSZqdSZq73PCh-ElsrbBCk9przvX1wts4DMzmR3w9-sTKjCAT3q295NQzbuT5liGDtPJYqSCG-KKpGbaUwoQUkIP10XeB3XpFuduDUhQK1RXlgVX-RkQf5rAPdj6ATPQoSLYcXzc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
+<div class="relative z-10 px-8 pb-24 md:px-20 max-w-6xl">
+<span class="label-md uppercase tracking-[0.3em] text-secondary mb-4 block">Our Origin</span>
+<h1 class="text-5xl md:text-8xl font-headline font-bold tracking-tighter text-white mb-6">
+                    A MONOLITH <br/> OF <span class="text-neon-gradient">SOUND.</span>
+</h1>
+<p class="text-on-surface-variant max-w-xl text-lg leading-relaxed font-light">
+                    Where the industrial soul of the city meets the refined pulse of late-night luxury. A sanctuary designed for those who find peace in the frequency.
+                </p>
+</div>
+</section>
+<!-- The Vision Section -->
+<section class="bg-surface py-32 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/2">
+<h2 class="text-4xl md:text-6xl font-headline font-bold tracking-tight mb-8">The <span class="text-secondary italic font-light">Vision</span></h2>
+<div class="space-y-6 text-on-surface-variant font-light text-lg">
+<p>
+                            Electric Sanctuary was born from a singular desire: to create a space that transcends the typical nightlife experience. We believe that a true sanctuary isn't silent—it's resonant.
+                        </p>
+<p>
+                            By marrying cutting-edge acoustic engineering with minimalist brutalist aesthetics, we've crafted an environment where every vibration is intentional. It is a dialogue between the raw and the radiant.
+                        </p>
+<div class="pt-8 border-l-2 border-secondary pl-8 italic">
+                            "We don't just host events; we curate atmospheres where the ego dissolves into the electric."
+                        </div>
+</div>
+</div>
+<div class="w-full md:w-1/2 relative">
+<div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden shadow-2xl relative translate-y-8">
+<img alt="Venue Detail" class="w-full h-full object-cover grayscale contrast-125" data-alt="close-up of high-end crystal glassware on a dark stone bar with a single beam of gold light illuminating the smoke in the air" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDniHLhR_p4cV4S_nIf-iT9WXvUfIejYyeE6TUUGle6FwD2xIHXnd4fzLRG08Q0qRMTsXgxejq1xsTXelqQ3jtXV0NsZ12QTI7Jw_6_dSMDUetLl88Xmp2F14Trv1t6xW9dU1hcUUlTCF5aKay2KBu9bvfg9yB7AFkXYocthnpmUBBAnTBGauGQHzFh51w3wEiRdBKMOcObiWlxIaaJGObMxAqOM8iSsS9RgZwJFY5V8Do9pG2fBZEnOj2X8dc7iKtSFm5YQHymdsT1"/>
+</div>
+<div class="absolute -top-12 -right-8 w-64 h-80 glass-panel rounded-xl hidden md:block border border-outline-variant/10"></div>
+</div>
+</div>
+</section>
+<!-- Meet the Mixologists -->
+<section class="bg-surface-container-low py-32 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="label-md uppercase tracking-[0.2em] text-primary mb-4 block">The Alchemists</span>
+<h2 class="text-4xl md:text-5xl font-headline font-bold">Meet the <span class="text-secondary">Mixologists</span></h2>
+</div>
+<div class="hidden md:block w-1/3 h-[1px] bg-outline-variant/30 mb-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Mixologist 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6 relative">
+<img alt="Bartender 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="stylish portrait of a male head bartender in a sleek black apron preparing a cocktail in a moody dark lounge setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuyNV0Mc9KGDBsqn33gQqtEDYGDD01ZeY5AKkO4QYhHnLxxUzHM9v9PVfSY6Pog5G_GPlniGvvmfcAde6SE86tKJFEbVPkH99Hc7XOHV2gG9TlHZwME9JgBqx_JcHjQjPIYZI8I4-WXWG-3roxQ0jArTya0q8Sk_q8fNn5T9-0C6RtSt2WXbmkYbmsCsfovmmBm9bZg7mnajUDoMHpBbVcF5TFsuMMMqKy437pj7eod97O6AZWq2-VFfAm5rvIgGeU4mDrVpmxDSWa"/>
+<div class="absolute inset-0 bg-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-1">Julian Vane</h3>
+<p class="text-secondary-dim font-label uppercase text-xs tracking-widest mb-4">Creative Director of Spirits</p>
+<p class="text-on-surface-variant font-light text-sm">Pioneer of molecular mixology with 15 years in the avant-garde London scene.</p>
+</div>
+<!-- Mixologist 2 -->
+<div class="group cursor-pointer translate-y-12">
+<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6 relative">
+<img alt="Bartender 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="portrait of a female bartender with tattoos and sophisticated style holding a shaker in a dimly lit high-end bar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn8-gFOuGCNlEnakl-6N_muObVZ2Z2Y4z9AXdbu-Eyq099q5_cKNklRST0RLhFqczMXNFl1D6-uzWR66-phNFUK8PCfurV7SKzDsmQ-DuYGJ6I5o8WXk-TToxgnwfKyZuQ06qeCznFNf63GRq4HvbIam9OGAMQ71kYkhUmnUU2X9DRS5w7UBPhqKZaI69jxouvAk74WUe9L_US3-ze7counO0idJBHAYFqjLV3oEXhIEcq6IywuGut0IHfxh5uJ2rWtAbA36fm_K_f"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-1">Elena Moretti</h3>
+<p class="text-secondary-dim font-label uppercase text-xs tracking-widest mb-4">Head Alchemist</p>
+<p class="text-on-surface-variant font-light text-sm">Specializing in botanical infusions and rare vintage liqueurs.</p>
+</div>
+<!-- Mixologist 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6 relative">
+<img alt="Bartender 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="close up of a professional bartender's hands carefully garnishing a martini glass in a dark luxury setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBADSv4oi4Eyr8OBaa34a4GXb5TaOV26D7EaAZGkqXDfohWgzOmWVTmYRZgNK5E8ZeWbwLzz1Wpg7EGAd-7iUFz0luZON1tbk4Lgn2GWdAr6faWQtx47DT0wfzSwSeQcWQap4sdYws9azznpyDcxz8rmbiVGl97Ixx0pwg0o6DcJAROJq3nSEUr3-lyN4A_hfMByzn5tDid0MvvT6bMtliaQMgMMES67a7HaPUchDdRdYfOdn1ssoM-ct5xiD0mp7kKgCwlEAp74GlV"/>
+<div class="absolute inset-0 bg-tertiary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-1">Marcus Thorne</h3>
+<p class="text-secondary-dim font-label uppercase text-xs tracking-widest mb-4">Craft Specialist</p>
+<p class="text-on-surface-variant font-light text-sm">Master of the classic ritual, bringing timeless technique to modern electric vibes.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Venue Zones Gallery -->
+<section class="bg-surface py-32 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-24">
+<h2 class="text-5xl md:text-7xl font-headline font-bold tracking-tighter mb-4 italic">THE ARCHITECTURE</h2>
+<p class="text-on-surface-variant tracking-[0.2em] uppercase text-sm">Three Zones. One Pulse.</p>
+</div>
+<div class="grid grid-cols-12 gap-6 md:gap-10">
+<!-- The Lounge -->
+<div class="col-span-12 md:col-span-7 group relative">
+<div class="aspect-[16/9] overflow-hidden rounded-xl bg-surface-container">
+<img alt="The Lounge" class="w-full h-full object-cover brightness-75 group-hover:scale-105 transition-all duration-700" data-alt="luxury lounge area with velvet seating, dark marble tables, and soft amber lighting under a brutalist concrete ceiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo5cmeuDFX0ugHqMhbehS84vMatQVkIpAyo7aXPKWI5qkxOKky2RqsvTCdCMyp8OLh1T3FO4-frUzfTHSO8n-e0qFic2NeYBqgWfG2kUY7YUcv7WsMcPl7WLdWLGeMKwp-oXf_4cAfN2n0jVd7OBoantLKmP8Teeq_DuTkR45HaVaUtG_Lrsd1kSp1RG-IEgGnPW5IMYMbBg7MQ6xmazGg37tVFL2sFbMOLUxnM0bsUs16jv67DZ3nn_lvYDwy-orW9w4YZJ_rSSlV"/>
+</div>
+<div class="absolute bottom-8 left-8">
+<h4 class="text-3xl font-headline font-bold text-white uppercase tracking-tighter">The Lounge</h4>
+<p class="text-secondary text-sm font-label tracking-widest mt-2">INTIMATE • SONIC • REFINED</p>
+</div>
+</div>
+<!-- The Dancefloor -->
+<div class="col-span-12 md:col-span-5 group relative md:translate-y-20">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container">
+<img alt="The Dancefloor" class="w-full h-full object-cover brightness-50 group-hover:scale-105 transition-all duration-700" data-alt="dark dancefloor filled with silhouettes of people dancing, illuminated by vertical laser beams and purple strobe lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLxhexo8ufJxjnDrV_-LiaoLTgSBOnpaXWicZdotjlcfw1t_7yPloKVjM9AruOphEdlEoJgX-XGOOMMm_IccmH7ipEVu1iFGRx5zQX1x86oUlVJd-fo7vwWQInywAwO8AYOuBbFEM2peOGpMJrGlpTJQX9mgMF-U0unuewHxiZRhg_wOx9hj1jHiSBtbQ-dQqnVgbS1hxxUIxBYeIT1PRlAbhSGxgqn7mDeXUXeOuaqxVevNpaRopcxungzzMeQfrFFy-ehOKUUnsH"/>
+</div>
+<div class="absolute bottom-8 left-8">
+<h4 class="text-3xl font-headline font-bold text-white uppercase tracking-tighter">The Dancefloor</h4>
+<p class="text-primary text-sm font-label tracking-widest mt-2">ELECTRIC • RAW • KINETIC</p>
+</div>
+</div>
+<!-- The Private Vault -->
+<div class="col-span-12 md:col-span-12 group relative mt-10 md:mt-24">
+<div class="aspect-[21/9] overflow-hidden rounded-xl bg-surface-container">
+<img alt="The Private Vault" class="w-full h-full object-cover brightness-50 group-hover:scale-105 transition-all duration-700" data-alt="exclusive private VIP room with gold accents, leather chairs, and a glass-enclosed cellar for rare spirits" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8m8h8YMQQFqcj-nZyV2V4Uy-z8uXglPtAxuKDcjDl73ttWtXPQUJ-UwXay92KbaTWtza-Exq40y_SUKdaHuDgsYtt6LVYYcbngoRYBiDB5erdS_1Ku5OAzAdbuI7GFYIgiLClHClM0R_NqqgEvIiQRoglcMbBxSReXm2KqMXniRrJb0jEuF4UA5JSkFCU4eptwdz400j6GLOZ_kJ095p-eX41IsQgAi_1VwFQSuGAfPPSEajVxf6z7eVRdCsojmS8maR-KlNoD8NH"/>
+</div>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-8">
+<span class="label-md uppercase tracking-[0.4em] text-secondary-dim mb-4">Reservation Only</span>
+<h4 class="text-4xl md:text-6xl font-headline font-bold text-white uppercase tracking-tighter">The Private Vault</h4>
+<div class="mt-8 px-6 py-2 border border-secondary text-secondary font-label uppercase text-xs tracking-widest hover:bg-secondary hover:text-on-secondary transition-colors cursor-pointer">
+                                Request Access
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-950 w-full py-16 px-8 border-t border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="space-y-4">
+<div class="text-xl font-black text-white font-headline">ELECTRIC SANCTUARY</div>
+<p class="text-neutral-500 font-['Manrope'] font-light text-sm max-w-xs">
+                    Where neon meets the void. Experience the pinnacle of curated nightlife.
+                </p>
+</div>
+<div class="flex flex-col space-y-4">
+<h5 class="text-amber-400 font-bold font-['Manrope'] tracking-wide">Socials</h5>
+<a class="text-neutral-500 hover:text-amber-200 transition-colors font-light" href="#">Instagram</a>
+<a class="text-neutral-500 hover:text-amber-200 transition-colors font-light" href="#">TikTok</a>
+<a class="text-neutral-500 hover:text-amber-200 transition-colors font-light" href="#">Newsletter</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h5 class="text-amber-400 font-bold font-['Manrope'] tracking-wide">Visit</h5>
+<a class="text-neutral-500 hover:text-amber-200 transition-colors font-light" href="#">Location</a>
+<a class="text-neutral-500 hover:text-amber-200 transition-colors font-light" href="#">Hours</a>
+</div>
+<div class="space-y-6">
+<h5 class="text-white font-bold font-['Manrope'] tracking-wide uppercase text-xs">Stay Informed</h5>
+<div class="flex border-b border-white/20 pb-2">
+<input class="bg-transparent border-none focus:ring-0 text-sm text-white w-full placeholder:text-neutral-600" placeholder="Email Address" type="email"/>
+<span class="material-symbols-outlined text-amber-400 cursor-pointer">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="text-[10px] text-neutral-600 tracking-widest font-['Manrope'] uppercase">© 2024 ELECTRIC SANCTUARY. ALL RIGHTS RESERVED.</span>
+<div class="flex space-x-6 text-[10px] text-neutral-600 tracking-widest font-['Manrope'] uppercase">
+<a class="hover:text-white" href="#">Privacy</a>
+<a class="hover:text-white" href="#">Terms</a>
+</div>
+</div>
+</footer>
+</body></html>

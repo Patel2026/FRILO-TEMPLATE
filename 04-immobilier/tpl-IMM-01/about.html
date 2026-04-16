@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notre Agence | FRILO Prestige</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface text-slate-800 antialiased selection:bg-accent selection:text-white flex flex-col min-h-screen">
+
+    <!-- Topbar Contact -->
+    <div class="bg-primary text-white/80 py-2 text-xs font-sans tracking-wide hidden md:block">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-accent">location_on</span> Immeuble CICA-TOYOTA, Cotonou</span>
+                <span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-accent">call</span> +229 00 00 00 00</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="hover:text-accent transition-colors">Notre Agence</a>
+                <a href="contact.html" class="hover:text-accent transition-colors">Carrières</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Principale -->
+    <nav class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex flex-col group">
+                <span class="font-display font-bold text-2xl text-primary tracking-tight leading-none">FRILO<span class="text-accent">.</span></span>
+                <span class="text-[10px] font-sans font-bold uppercase tracking-widest text-slate-400">Prestige Immobilier</span>
+            </a>
+            
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="text-slate-600 hover:text-accent transition-colors text-sm font-semibold tracking-wide">Accueil</a>
+                <a href="about.html" class="text-primary font-bold text-sm tracking-wide border-b-2 border-primary pb-1">L'Agence</a>
+                <a href="properties.html" class="text-slate-600 hover:text-accent transition-colors text-sm font-semibold tracking-wide">Nos Biens</a>
+                <a href="contact.html" class="text-slate-600 hover:text-accent transition-colors text-sm font-semibold tracking-wide">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="contact.html" class="btn-accent px-6 py-2.5 shadow-card">
+                    Estimer mon bien
+                </a>
+            </div>
+
+            <button class="lg:hidden text-primary">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        
+        <!-- Header Page -->
+        <header class="bg-primary pt-24 pb-32 text-center text-white relative flex items-center justify-center min-h-[40vh]">
+            <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1920&q=80" alt="Bureau Architecture" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-20">
+            <div class="relative z-10 max-w-3xl mx-auto px-6">
+                <span class="text-accent font-bold tracking-widest text-xs uppercase mb-4 block">Notre Identité</span>
+                <h1 class="text-4xl md:text-6xl font-display font-bold mb-6">Redéfinir le standing à Cotonou.</h1>
+                <p class="text-lg text-white/80 font-light leading-relaxed">
+                    Fondée avec la volonté de sécuriser et d'élever les transactions immobilières en Afrique de l'Ouest.
+                </p>
+            </div>
+        </header>
+
+        <!-- L'Histoire Section -->
+        <section class="max-w-7xl mx-auto px-6 -mt-16 relative z-20 mb-24">
+            <div class="bg-white rounded-xl shadow-luxury p-8 md:p-16 grid lg:grid-cols-2 gap-16 items-center border border-slate-100">
+                <div>
+                    <h2 class="text-3xl font-display font-bold text-primary mb-6">L'Immobilier de Confiance au Bénin</h2>
+                    <div class="space-y-6 text-slate-600 text-sm md:text-base leading-relaxed">
+                        <p>
+                            L'histoire de FRILO Prestige est née d'un constat simple en 2011 : le marché immobilier ouest-africain était florissant, mais souffrait d'un grave déficit de professionnalisme. Entre faux titres fonciers, courtiers informels et manque de transparence sur les prix, <i>investir était devenu un risque</i>.
+                        </p>
+                        <p>
+                            Nous avons bâti notre agence comme une <strong>forteresse juridique</strong>. Aujourd'hui, notre cabinet est reconnu à Cotonou pour sa sélectivité : nous refusons plus de 40% des mandats qui nous sont soumis si le dossier foncier ne passe pas notre audit notarial strict.
+                        </p>
+                        <p>
+                            Cette rigueur nous permet de proposer à nos clients : nationaux, diaspora et expatriés, une expérience d'achat et de vente d'un niveau international, sans mauvaise surprise.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-10 pt-8 border-t border-slate-100 flex items-center gap-6">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80" alt="Fondateur" class="w-16 h-16 rounded-full object-cover">
+                        <div>
+                            <p class="font-display font-bold text-primary text-xl">Sébastien Kossou</p>
+                            <p class="text-accent text-sm font-bold uppercase tracking-widest">Fondateur & Directeur Général</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative h-full min-h-[400px]">
+                    <div class="absolute inset-4 border-2 border-accent rounded-xl z-0 -translate-x-4 translate-y-4"></div>
+                    <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=80" alt="Réunion" class="w-full h-full object-cover rounded-xl relative z-10 shadow-luxury">
+                </div>
+            </div>
+        </section>
+
+        <!-- Nos Experts -->
+        <section class="py-24 bg-surface-alt">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-accent font-bold tracking-widest text-xs uppercase mb-4 block">L'Excellence Humaine</span>
+                    <h2 class="text-3xl md:text-4xl font-display font-bold text-primary mb-4">Vos Interlocuteurs Privilégiés</h2>
+                    <p class="text-slate-500 max-w-2xl mx-auto">Parce que chaque acquisition immobilière représente le projet d'une vie, nos courtiers sont formés à l'excellence transactionnelle et à l'intelligence de marché régionale.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Expert 1 -->
+                    <div class="group relative overflow-hidden rounded-xl bg-white shadow-card">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Agent" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:brightness-90">
+                        </div>
+                        <div class="absolute bottom-0 w-full p-6 bg-gradient-to-t from-primary via-primary/80 to-transparent pt-20">
+                            <h3 class="text-white font-display font-bold text-xl">Aïcha Diallo</h3>
+                            <p class="text-accent text-xs font-bold tracking-widest uppercase mb-3">Directrice Vente Résidentiel</p>
+                            <p class="text-white/80 text-sm font-light hidden group-hover:block transition-all">Spécialiste des villas de luxe sur le littoral (Route des pêches, Togbin).</p>
+                        </div>
+                    </div>
+
+                    <!-- Expert 2 -->
+                    <div class="group relative overflow-hidden rounded-xl bg-white shadow-card">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1531384441138-2736e62e0919?auto=format&fit=crop&w=600&q=80" alt="Agent" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:brightness-90">
+                        </div>
+                        <div class="absolute bottom-0 w-full p-6 bg-gradient-to-t from-primary via-primary/80 to-transparent pt-20">
+                            <h3 class="text-white font-display font-bold text-xl">Marc Kpomahou</h3>
+                            <p class="text-accent text-xs font-bold tracking-widest uppercase mb-3">Expert Foncier & Terrains</p>
+                            <p class="text-white/80 text-sm font-light hidden group-hover:block transition-all">Expertise juridique approfondie pour sécuriser les acquisitions de parcelles nues.</p>
+                        </div>
+                    </div>
+
+                    <!-- Expert 3 -->
+                    <div class="group relative overflow-hidden rounded-xl bg-white shadow-card">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80" alt="Agent" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:brightness-90">
+                        </div>
+                        <div class="absolute bottom-0 w-full p-6 bg-gradient-to-t from-primary via-primary/80 to-transparent pt-20">
+                            <h3 class="text-white font-display font-bold text-xl">Nadia Agbo</h3>
+                            <p class="text-accent text-xs font-bold tracking-widest uppercase mb-3">Responsable Rente & Gest. Locative</p>
+                            <p class="text-white/80 text-sm font-light hidden group-hover:block transition-all">Garantit la rentabilité et l'entretien de vos immeubles de rapport à Cotonou.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Super Footer -->
+    <footer class="bg-primary-dark pt-20 pb-10 text-white/70 text-sm border-t-4 border-accent">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div>
+                    <a href="index.html" class="flex flex-col mb-6">
+                        <span class="font-display font-bold text-3xl text-white tracking-tight leading-none mb-1">FRILO<span class="text-accent">.</span></span>
+                        <span class="text-[10px] font-sans font-bold uppercase tracking-widest text-accent">Prestige Immobilier</span>
+                    </a>
+                    <p class="font-light leading-relaxed mb-6">
+                        La référence de l'immobilier résidentiel et commercial haut de gamme en République du Bénin. Fiabilité, Ethique, et Excellence foncière.
+                    </p>
+                </div>
+
+                <!-- Liens Rapides -->
+                <div>
+                    <h4 class="font-display font-bold text-white uppercase tracking-widest text-xs mb-6">L'Agence</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-accent transition-colors">Notre histoire</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Notre équipe d'experts</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition-colors">Nous recruter / Mandats</a></li>
+                    </ul>
+                </div>
+
+                <!-- Catalogue -->
+                <div>
+                    <h4 class="font-display font-bold text-white uppercase tracking-widest text-xs mb-6">Catalogue</h4>
+                    <ul class="space-y-3">
+                        <li><a href="properties.html" class="hover:text-accent transition-colors">Villas avec Piscine</a></li>
+                        <li><a href="properties.html" class="hover:text-accent transition-colors">Appartements Centre-ville</a></li>
+                        <li><a href="properties.html" class="hover:text-accent transition-colors">Terrains (Titre Foncier)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-display font-bold text-white uppercase tracking-widest text-xs mb-6">Assistance Directe</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-accent text-lg mt-0.5">location_on</span>
+                            <span>Immeuble CICA-TOYOTA, 2ème étage<br>Cotonou, Bénin</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-accent text-lg">call</span>
+                            <span>+229 00 00 00 00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-light">
+                <p>&copy; 2026 FRILO Immobilier Afrique. Carte professionnelle N° 2026-X123.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

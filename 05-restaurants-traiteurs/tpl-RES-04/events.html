@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Événements | FRILO LOUNGE & GRILL</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface font-body text-on-surface-variant selection:bg-primary selection:text-on-primary antialiased">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0e0e0e]/40 backdrop-blur-xl shadow-[0_0_20px_rgba(224,141,255,0.1)]">
+        <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+            <a href="index.html" class="text-2xl font-bold tracking-[-0.02em] text-white font-headline neon-glow-purple">
+                FRILO <span class="text-secondary">LOUNGE</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-10 font-headline tracking-tighter uppercase text-sm">
+                <a class="text-neutral-400 hover:text-white transition-colors" href="index.html">Accueil</a>
+                <a class="text-neutral-400 hover:text-white transition-colors" href="about.html">Esprit</a>
+                <a class="text-neutral-400 hover:text-white transition-colors" href="menu.html">Carte</a>
+                <a class="text-primary border-b-2 border-primary pb-1" href="events.html">Événements</a>
+            </div>
+            <a href="reservations.html" class="bg-gradient-to-r from-primary to-primary-dim text-on-primary-fixed px-6 py-2.5 font-headline font-bold uppercase tracking-wider text-xs rounded-lg hover:scale-95 transition-all duration-300">
+                Réserver une table
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-32">
+        <header class="max-w-7xl mx-auto px-8 mb-20">
+            <span class="font-label uppercase tracking-widest text-secondary text-sm mb-4 block font-bold">Calendrier Nocturne</span>
+            <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter uppercase leading-none neon-glow-purple">
+                Les Rituels du <span class="text-primary italic">Mois.</span>
+            </h1>
+            <p class="mt-6 text-lg font-light max-w-2xl leading-relaxed">
+                Une sélection rigoureuse de soirées thématiques, de DJs sets exclusifs et de sessions live jazz pour les âmes nocturnes de Cotonou.
+            </p>
+        </header>
+
+        <section class="max-w-7xl mx-auto px-8 space-y-24 mb-32">
+            <!-- Event 1 -->
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 relative group overflow-hidden rounded-2xl aspect-[16/9]">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cyber Jazz" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQft7a4u-Jvj2xHQJSY3mCols2Nh0dDi_B3ZWKlXoWE3zoTIXThbCDomvQ80d-qedU6cclVV00uNBNJaBEg5-dQI326IbGCXOTIx9FlM1f0CgaitRta4EPiXMhVMGUYzXX9t-SEs0Q7GfGwm9IYrZ1KQW2WoWYVAPHekClz7wjdw171pjoZIL9ubpcwodPM_NNmEnJNHtVVLxtpEXbzUaKjpAges75qHdjFBETaQRnw6TYpNlNspdgVY9VshMH4sqgtEJleDYvG6sC"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+                </div>
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="font-label text-xs uppercase tracking-[0.3em] text-primary font-bold">Mercredi / 21:00</span>
+                    <h2 class="font-headline text-4xl font-bold uppercase tracking-tighter">Cyber Jazz Soirée</h2>
+                    <p class="font-light leading-relaxed">
+                        L'élégance du jazz classique rencontre des textures électroniques modernes. Une fusion hybride pour un milieu de semaine sophistiqué.
+                    </p>
+                    <div class="pt-4">
+                        <a href="reservations.html" class="inline-block px-8 py-3 bg-surface-container-high border border-outline-variant/30 font-headline font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-primary hover:text-on-primary transition-all">
+                            Réserver ma table
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 2 (Inverse) -->
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 lg:order-1 order-2 space-y-6">
+                    <span class="font-label text-xs uppercase tracking-[0.3em] text-secondary font-bold">Vendredi / 22:30</span>
+                    <h2 class="font-headline text-4xl font-bold uppercase tracking-tighter">Neon Pulse Residency</h2>
+                    <p class="font-light leading-relaxed">
+                        Le point culminant de la semaine. House mélodique et Afro-Tech avec les meilleurs curateurs sonores de la sous-région.
+                    </p>
+                    <div class="pt-4">
+                        <a href="reservations.html" class="inline-block px-8 py-3 bg-gradient-to-r from-primary to-primary-dim text-on-primary-fixed font-headline font-bold uppercase tracking-widest text-xs rounded-lg hover:shadow-[0_0_20px_rgba(224,141,255,0.4)] transition-all">
+                            Liste Privée
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 lg:order-2 order-1 relative group overflow-hidden rounded-2xl aspect-[16/9]">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Neon Pulse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEp_Bi71F3ZcJ_m8a4c-80-zZP08aCkGcJxTfcBOPgMTeCU-ktM6Bz0on-9tdgn-FDhIaHqggpN9cmzbzyeItlK6LCknFj-XnSrLiAaKtUsEgJUVMUhziUoYglQNF8fdna_gEjassRbK9PJJsJAMYhDSCRUWq2x64Zk-21-dqOIsO7DndMxb3I8t5-fj1D-F9pFRgLZHn-Q_9DUqTUoAphNVtEXvGQdXC-Wlek2-XiXJTORz8YsAHuX5Zy-jtzXG7sPjCh9NL3-eCk"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 relative group overflow-hidden rounded-2xl aspect-[16/9]">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Champagne Night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5B3BiNxASjziTh_qNkm9bo3aiZoRIgAUGj-74v9fTS0ntWGtVEz8z2CZdNRFDnsGisIgQNRAmOin2uUB0JfWictCv0iXDVetanTpaexuPcgZYM-iRy-ZsIcfN9dUgPXdGA9rr5ajegKUuBl9C9frbaLSxC1XKOZzcNmuYMi1fp0imuIZSXCtB6cB_MA73Xvd38DIzqgKYYbW4JwO-PK3UScoN2g-o_ZxBgJpFqYEU5R_De0uNCUopzle7Ub9PNS_1h6F5_TGglmBC"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+                </div>
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="font-label text-xs uppercase tracking-[0.3em] text-primary font-bold">Dimanche / 19:00</span>
+                    <h2 class="font-headline text-4xl font-bold uppercase tracking-tighter">Sunset Alchimie</h2>
+                    <p class="font-light leading-relaxed">
+                        Clôturez la semaine avec douceur. Mixologie expérimentale et grillades de mer, accompagnées de sets downtempo.
+                    </p>
+                    <div class="pt-4">
+                        <a href="reservations.html" class="inline-block px-8 py-3 bg-surface-container-high border border-outline-variant/30 font-headline font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-secondary hover:text-on-secondary transition-all">
+                            Accès Lounge
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter CTA -->
+        <section class="py-24 px-8 bg-surface-container-high">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="font-headline text-4xl font-bold mb-8 uppercase tracking-tighter">Rejoindre le Cercle <span class="text-primary italic">Obsidian.</span></h2>
+                <p class="text-on-surface-variant font-light mb-12">Recevez les codes d'accès prioritaires et les annonces d'événements secrets directement dans votre boîte mail.</p>
+                <form class="flex flex-col md:flex-row gap-4 max-w-xl mx-auto">
+                    <input class="flex-grow bg-surface border-0 border-b-2 border-outline-variant/20 py-4 px-6 focus:ring-0 focus:border-primary transition-all text-on-surface" placeholder="Votre adresse email" type="email"/>
+                    <button class="bg-primary text-on-primary px-10 py-4 font-headline font-bold uppercase tracking-widest text-xs rounded-lg hover:scale-95 transition-all">S'abonner</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0e0e0e] w-full py-16 px-8 border-t border-white/5">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+            <div class="space-y-6">
+                <div class="text-xl font-black text-white font-headline uppercase">FRILO <span class="text-secondary">LOUNGE</span></div>
+                <p class="font-body font-light tracking-wide text-neutral-500 text-sm leading-relaxed">
+                    Une destination pour les audacieux. Cotonou, Haie Vive.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <h5 class="text-white font-bold text-xs uppercase tracking-widest font-label">Navigation</h5>
+                <ul class="space-y-3 font-body font-light tracking-wide text-sm">
+                    <li><a class="text-neutral-500 hover:text-secondary transition-colors" href="index.html">Accueil</a></li>
+                    <li><a class="text-neutral-500 hover:text-secondary transition-colors" href="about.html">Esprit</a></li>
+                    <li><a class="text-neutral-500 hover:text-secondary transition-colors" href="menu.html">Carte</a></li>
+                    <li><a class="text-secondary font-bold" href="events.html">Événements</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h5 class="text-white font-bold text-xs uppercase tracking-widest font-label">Contact</h5>
+                <ul class="space-y-3 font-body font-light tracking-wide text-sm">
+                    <li class="text-neutral-500">Haie Vive, Cotonou</li>
+                    <li class="text-neutral-500">+229 01 00 00 00 00</li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h5 class="text-white font-bold text-xs uppercase tracking-widest font-label">Le Sanctum</h5>
+                <div class="pt-4">
+                    <div class="text-[10px] text-neutral-600 uppercase tracking-widest">© 2026 FRILO LOUNGE & GRILL.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

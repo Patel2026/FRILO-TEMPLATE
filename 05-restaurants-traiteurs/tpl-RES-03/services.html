@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Prestations | The FRILO Culinary</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed antialiased">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#faf9f5]/80 backdrop-blur-xl shadow-[0_8px_32px_rgba(27,28,26,0.04)]">
+        <div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+            <a href="index.html" class="font-headline text-2xl italic text-[#1b1c1a] tracking-tight">The FRILO Culinary</a>
+            <div class="hidden md:flex gap-10">
+                <a class="font-headline tracking-tight text-lg text-[#1b1c1a]/70 hover:text-primary transition-colors" href="index.html">Accueil</a>
+                <a class="font-headline tracking-tight text-lg text-[#1b1c1a]/70 hover:text-primary transition-colors" href="about.html">Philosophie</a>
+                <a class="font-headline tracking-tight text-lg text-primary border-b border-primary pb-1 transition-all" href="services.html">Prestations</a>
+                <a class="font-headline tracking-tight text-lg text-[#1b1c1a]/70 hover:text-primary transition-colors" href="gallery.html">Portfolio</a>
+                <a class="font-headline tracking-tight text-lg text-[#1b1c1a]/70 hover:text-primary transition-colors" href="contact.html">Contact</a>
+            </div>
+            <a href="contact.html" class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label text-sm uppercase tracking-widest hover:bg-primary-container transition-all duration-300">
+                Demander un devis
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-32">
+        <!-- Header -->
+        <section class="px-12 py-20 max-w-screen-2xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-end mb-24">
+                <div class="max-w-xl">
+                    <span class="font-label text-sm tracking-widest uppercase text-secondary mb-4 block">Notre Expertise</span>
+                    <h1 class="text-6xl font-headline leading-tight text-on-surface mb-8 uppercase">L'Art de <span class="italic text-primary">Recevoir.</span></h1>
+                    <p class="text-lg text-on-surface-variant leading-relaxed font-body">Nous transformons les rassemblements standards en expériences curatées. Qu'il s'agisse d'un dîner intime ou d'un gala grandiose, notre engagement envers l'excellence culinaire reste inébranlable.</p>
+                </div>
+                <div class="hidden md:block">
+                    <div class="h-px bg-outline-variant/30 w-full mb-8"></div>
+                    <div class="flex justify-between items-center text-sm font-label tracking-widest text-on-surface-variant/60 uppercase">
+                        <span>EST. 2012</span>
+                        <span>Traiteur sur-mesure</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-32">
+                <!-- Wedding -->
+                <div class="grid md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-7">
+                        <div class="aspect-[16/9] overflow-hidden rounded-xl bg-surface-container">
+                            <img class="w-full h-full object-cover" data-alt="Mariage élégant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsrxNwROxP9WO53MJXe7IyDe5iFY9Q7x-2kbrQa2e_TLHgynOhFG22i_1XpbqTw5zho1FACwJ2zZpIKRA4qsS6iGdfVdYqPIqSajAdnXoDivgLNC2rsMc3zTInPN22wwMvdhX89f1N52yeuH_Fc6BVU7aYhNxA6q4mRZ9CH0q0AQSY4GS7zhhiFbcPyOJEka-zSOFD775NNdEl320APJajZDg1_KtqA7Y_FdKIHa50z2ldjg_2C6ijBAV7w78VPFbeNXRd2uzfu_n3"/>
+                        </div>
+                    </div>
+                    <div class="md:col-span-5 md:-ml-20 z-10">
+                        <div class="bg-surface-container-lowest p-12 shadow-sm border border-outline-variant/10 rounded-lg">
+                            <span class="font-label text-xs tracking-widest uppercase text-primary mb-4 block">Expérience</span>
+                            <h2 class="text-4xl font-headline text-on-surface mb-6 uppercase italic">Mariages</h2>
+                            <p class="text-on-surface-variant mb-8 leading-relaxed">Du premier hors-d'œuvre au dernier toast, nous concevons des menus de mariage qui reflètent votre histoire unique. Notre approche complète inclut un soutien logistique et un personnel professionnel.</p>
+                            <ul class="space-y-4 mb-10">
+                                <li class="flex items-center gap-3 text-on-surface/80">
+                                    <span class="material-symbols-outlined text-secondary" style="font-size: 20px;">check_circle</span>
+                                    <span>Menus de Service complets sur-mesure</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-on-surface/80">
+                                    <span class="material-symbols-outlined text-secondary" style="font-size: 20px;">check_circle</span>
+                                    <span>Dégustation & Consultation de Menu</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-on-surface/80">
+                                    <span class="material-symbols-outlined text-secondary" style="font-size: 20px;">check_circle</span>
+                                    <span>Coordination Logistique le Jour J</span>
+                                </li>
+                            </ul>
+                            <a class="inline-flex items-center text-secondary font-medium hover:underline underline-offset-8 transition-all group" href="contact.html">
+                                <span class="font-label text-xs uppercase tracking-widest">Planifier un Mariage</span>
+                                <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corporate -->
+                <div class="grid md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-5 md:order-1 order-2 z-10 md:-mr-20">
+                        <div class="bg-surface-container-lowest p-12 shadow-sm border border-outline-variant/10 rounded-lg">
+                            <span class="font-label text-xs tracking-widest uppercase text-primary mb-4 block">Professionnalisme</span>
+                            <h2 class="text-4xl font-headline text-on-surface mb-6 uppercase italic">Corporate</h2>
+                            <p class="text-on-surface-variant mb-8 leading-relaxed">Affirmez votre image de marque avec un traiteur sophistiqué. Nous assurons un service fluide pour les déjeuners d'affaires, les conférences et les dîners de gala à fort enjeu.</p>
+                            <div class="grid grid-cols-2 gap-6 mb-10">
+                                <div class="space-y-2">
+                                    <span class="material-symbols-outlined text-primary">business_center</span>
+                                    <p class="text-sm font-bold text-on-surface uppercase tracking-tight">Déjeuner Executive</p>
+                                </div>
+                                <div class="space-y-2">
+                                    <span class="material-symbols-outlined text-primary">groups</span>
+                                    <p class="text-sm font-bold text-on-surface uppercase tracking-tight">Conférences</p>
+                                </div>
+                                <div class="space-y-2">
+                                    <span class="material-symbols-outlined text-primary">nightlife</span>
+                                    <p class="text-sm font-bold text-on-surface uppercase tracking-tight">Dîners de Gala</p>
+                                </div>
+                                <div class="space-y-2">
+                                    <span class="material-symbols-outlined text-primary">celebration</span>
+                                    <p class="text-sm font-bold text-on-surface uppercase tracking-tight">Lancements</p>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="inline-block bg-primary text-on-primary px-8 py-3 rounded-lg w-full font-medium text-center hover:bg-primary-container transition-colors font-label text-xs uppercase tracking-widest">Demande Corporate</a>
+                        </div>
+                    </div>
+                    <div class="md:col-span-7 md:order-2 order-1">
+                        <div class="aspect-[16/9] overflow-hidden rounded-xl bg-surface-container">
+                            <img class="w-full h-full object-cover" data-alt="Gala d'entreprise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmEuCJF-MfbTRJ3PS_IPSN5RX4FSTLD83z6HrRXiFfbETnbTYXT4GIpv3v1lWOmIcBW-7AfTQTcBfbVt9qkW1gFfhRk5G-pEE_oePLji2fk7v8-TiBF0ITtEKCE_2WsMp6xl1UtcOnB8MiY8gXBPDlBlQf5RJ4HLTcYHd9ZFAI5KL9P5PZkSTByzcyUWFeh5OvND_vJGaioFCuf7GcuKVXMRoFfsdq8dTcp_pohMzB5_uON-fBkaaunh5IK97rCwxkY00Fdlf1qXXY"/>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Private -->
+                <div class="grid md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-7">
+                        <div class="aspect-[16/9] overflow-hidden rounded-xl bg-surface-container">
+                            <img class="w-full h-full object-cover" data-alt="Dîner privé" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHFXGQrtsdasg73meF_JrQgSOSThpKvsI0uRp0U-5Gl5aSkTglk9eWEVxqO5woX2h4nHhN9d_XU15oSp5DHds5Pi6tIfjrglhM4cc2nqxLeiLPJFyNVZm9Xdsc9ss_hmUlYZBR8MPOvnBzg2t2qu-0ueyinprm64GkCCJ3nkIF0GfzMFI6WKIXU2BumqoarxQhOvTqbptX1cATijt9gkEjMH9DrjoTclPsmtrcxY8F30Y0HL_OFz_2rFjlX_0iiX37UtSiy7x5Hb8z"/>
+                        </div>
+                    </div>
+                    <div class="md:col-span-5 md:-ml-20 z-10">
+                        <div class="bg-surface-container-lowest p-12 shadow-sm border border-outline-variant/10 rounded-lg">
+                            <span class="font-label text-xs tracking-widest uppercase text-primary mb-4 block">Intimité</span>
+                            <h2 class="text-4xl font-headline text-on-surface mb-6 uppercase italic">Réceptions Privées</h2>
+                            <p class="text-on-surface-variant mb-8 leading-relaxed">Célébrez les étapes clés de la vie avec grâce. Des anniversaires marquants aux soirées exclusives, nous apportons l'expérience d'un restaurant gastronomique dans votre villa.</p>
+                            <div class="flex flex-wrap gap-3 mb-10">
+                                <span class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant text-sm border border-outline-variant/20 font-label uppercase tracking-widest text-[10px]">Dîners Privés</span>
+                                <span class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant text-sm border border-outline-variant/20 font-label uppercase tracking-widest text-[10px]">Anniversaires</span>
+                                <span class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant text-sm border border-outline-variant/20 font-label uppercase tracking-widest text-[10px]">Cocktails</span>
+                            </div>
+                            <a class="inline-flex items-center text-secondary font-medium hover:underline underline-offset-8 transition-all group" href="contact.html">
+                                <span class="font-label text-xs uppercase tracking-widest">Demander un devis</span>
+                                <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="bg-surface-container-low py-24 px-12">
+            <div class="max-w-screen-2xl mx-auto">
+                <div class="bg-surface-container-lowest p-16 md:p-24 rounded-lg shadow-sm border border-outline-variant/10 flex flex-col md:flex-row gap-16 items-center">
+                    <div class="flex-1">
+                        <span class="font-label text-sm tracking-widest uppercase text-secondary mb-6 block">Le Menu Curaté</span>
+                        <h2 class="text-5xl font-headline text-on-surface leading-tight mb-8 uppercase italic">Saveurs Uniques,<br/>Plateaux Personnalisés.</h2>
+                        <p class="text-lg text-on-surface-variant leading-relaxed font-body mb-8">Nous pensons qu'aucun événement ne devrait avoir le même goût. Notre équipe culinaire travaille directement avec vous pour concevoir un menu qui répond aux besoins spécifiques tout en dépassant les attentes.</p>
+                        <div class="grid grid-cols-2 gap-8 border-t border-outline-variant/20 pt-8">
+                            <div>
+                                <h4 class="font-bold text-on-surface text-lg mb-2">Design Diététique</h4>
+                                <p class="text-sm text-on-surface-variant">Expertise en gastronomie vegan, sans gluten et sensitive.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-on-surface text-lg mb-2">Sourcing Local</h4>
+                                <p class="text-sm text-on-surface-variant">Ingrédients récoltés auprès d'artisans béninois passionnés.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 w-full relative">
+                        <div class="aspect-square rounded-full overflow-hidden border-8 border-surface-container-low shadow-xl">
+                            <img class="w-full h-full object-cover" data-alt="Plat raffiné" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGGYRoKgQVAwuZqr4v5dJmhADMPfu_720utL5dYUgdNSZwPbz0U9qvrPTmhes8Rd_1afklEhqi4a4YWj5jPgJQWN9Av6eJjxZQV9POfgFF8e8-OZ_RbWcn8SUTDDwYCPjzCRrfQlLNjc15Y3JN66_aQ7CSUJ04XYBPJb6db8laOZLAlrqWS_Uas43nmOJHProf1W85AmanqXJuCk6fOIxfWdBv1VPPUQPnPuLsiCxF4xy8X34ETxZkyZjUDVT_RG_svmYBBiy_ijpU"/>
+                        </div>
+                        <div class="absolute -bottom-8 -right-8 bg-primary p-8 rounded-lg text-on-primary hidden md:block max-w-[240px]">
+                            <p class="font-serif italic text-xl">"La cuisine est notre langage, votre histoire notre inspiration."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="py-24 px-12 max-w-screen-2xl mx-auto text-center">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-4xl font-headline text-on-surface mb-8 uppercase">Prêt à curater votre prochain événement ?</h2>
+                <p class="text-on-surface-variant mb-12">Commençons une conversation sur votre vision, vos invités et le menu qui les réunira tous.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="bg-primary text-on-primary px-10 py-4 rounded-lg font-medium hover:bg-primary-container transition-all font-label text-xs uppercase tracking-widest">Planifier une Consultation</a>
+                    <a href="gallery.html" class="border border-outline-variant/40 px-10 py-4 rounded-lg font-medium text-on-surface hover:bg-surface-container transition-all font-label text-xs uppercase tracking-widest">Voir le Portfolio</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#f4f4f0] w-full border-t border-[#c5c8be]/20">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 max-w-screen-2xl mx-auto">
+            <div class="col-span-1 md:col-span-1">
+                <div class="font-headline text-xl text-[#1b1c1a] mb-6 italic">The FRILO Culinary</div>
+                <p class="font-body text-sm text-[#1b1c1a]/60 leading-relaxed max-w-xs">
+                    Traiteur d'exception pour ceux qui apprécient les détails les plus raffinés de la gastronomie.
+                </p>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Contact</span>
+                <span class="font-body text-sm text-[#1b1c1a]/60">hello@frilo-culinary.com</span>
+                <span class="font-body text-sm text-[#1b1c1a]/60">+229 01 00 00 00 00</span>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Suivez-nous</span>
+                <a class="font-body text-sm text-[#1b1c1a]/60" href="#">Instagram</a>
+                <a class="font-body text-sm text-[#1b1c1a]/60" href="#">Pinterest</a>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Legal</span>
+                <a class="font-body text-sm text-[#1b1c1a]/60" href="#">Vie Privée</a>
+            </div>
+        </div>
+        <div class="max-w-screen-2xl mx-auto px-12 py-8 border-t border-[#c5c8be]/10 text-center">
+            <p class="font-label text-[10px] tracking-widest uppercase text-[#1b1c1a]/40">
+                © 2026 The FRILO Culinary. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

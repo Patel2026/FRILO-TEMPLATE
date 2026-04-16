@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Clinique Le Sanctuaire | Soins Médicaux Modernes</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-surface font-body antialiased">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 h-20 glass-nav shadow-sm shadow-blue-900/5">
+    <div class="flex justify-between items-center px-12 max-w-screen-2xl mx-auto h-full">
+        <a href="index.html" class="text-2xl font-bold text-primary tracking-tight font-headline">Clinique Sanctuaire</a>
+        <div class="hidden md:flex items-center space-x-10">
+            <a class="text-primary border-b-2 border-primary font-headline tracking-tight font-semibold py-1" href="index.html">Accueil</a>
+            <a class="text-slate-600 hover:text-primary transition-colors duration-300 font-headline tracking-tight font-semibold" href="about.html">À propos</a>
+            <a class="text-slate-600 hover:text-primary transition-colors duration-300 font-headline tracking-tight font-semibold" href="services.html">Services</a>
+            <a class="text-slate-600 hover:text-primary transition-colors duration-300 font-headline tracking-tight font-semibold" href="equipe.html">Équipe</a>
+            <a class="text-slate-600 hover:text-primary transition-colors duration-300 font-headline tracking-tight font-semibold" href="contact.html">Contact</a>
+        </div>
+        <a href="contact.html" class="bg-primary-container text-on-primary px-8 py-3 rounded-xl font-semibold shadow-sm hover:scale-105 active:scale-95 transition-all duration-300">
+            Prendre Rendez-vous
+        </a>
+    </div>
+</nav>
+
+<main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-surface py-24 md:py-32">
+        <div class="max-w-screen-2xl mx-auto px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="relative z-10">
+                <h1 class="font-headline text-6xl md:text-7xl font-extrabold text-on-surface leading-[1.1] mb-8 tracking-tight">
+                    Un parcours de soin qui <span class="text-primary italic">respire</span> avec vous.
+                </h1>
+                <p class="text-lg text-on-surface-variant leading-relaxed mb-10 max-w-lg">
+                    Découvrez une nouvelle référence en matière de santé. Nous allions l'excellence médicale à un environnement apaisant, conçu pour votre bien-être total.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="contact.html" class="inline-flex justify-center bg-primary text-on-primary px-10 py-5 rounded-xl text-lg font-bold shadow-lg shadow-primary/20 hover:bg-primary-fixed-dim transition-all">
+                        Prendre un Rendez-vous
+                    </a>
+                    <a href="about.html" class="flex justify-center items-center gap-3 px-8 py-5 text-primary font-bold hover:bg-surface-container-low rounded-xl transition-all">
+                        <span class="material-symbols-outlined">play_circle</span>
+                        Visiter la Clinique
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -top-20 -right-20 w-96 h-96 bg-primary-fixed rounded-full blur-[100px] opacity-30"></div>
+                <div class="relative rounded-xl overflow-hidden shadow-2xl transform rotate-2">
+                    <img class="w-full aspect-[4/5] object-cover" data-alt="Modern clinical examination room with soft natural light, minimalist furniture, and a large window overlooking a garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUxW-HlgrxfMvU24M1skPDpgCXTmmq3zdl1R-Aw9Ceq9FS8R3whVIw2FueEwCXzwxhV5u4x91T-srg9zILlvQ0wqM9hpqeUh220RhsPYcuyR3qhHn9Y6YlFTHMKpZYjwCSIpj3Dv3h4i6w9XrumEFgVFDwpoihKcGikuD2PET3akt9EF5uH6JQeyIFCw4IruEq0ekhJUaRVNjJjmZ42YoC8Qw0p7pkwwPz7l9ePNoy05RYw0lSVb1dmMXHK4Y5Xf9Bz4JlkpVWeUs" alt="Salle d'examen moderne de la clinique" />
+                </div>
+                <div class="absolute -bottom-10 -left-10 bg-surface-container-lowest p-8 rounded-xl shadow-xl border-outline-variant/15 border max-w-xs">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="bg-secondary-container p-3 rounded-full">
+                            <span class="material-symbols-outlined text-on-secondary-fixed-variant" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+                        </div>
+                        <span class="font-bold text-on-surface">Prise en charge 5 étoiles</span>
+                    </div>
+                    <p class="text-sm text-on-surface-variant italic">"La consultation la plus paisible que j'aie jamais eue. Un véritable sanctuaire médical."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Bento Grid -->
+    <section class="py-24 bg-surface-container-low">
+        <div class="max-w-screen-2xl mx-auto px-12">
+            <div class="mb-16">
+                <span class="text-primary font-bold tracking-widest text-sm uppercase">Notre Expertise</span>
+                <h2 class="font-headline text-4xl font-bold mt-4">Services Médicaux Sur-Mesure</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="md:col-span-2 group relative overflow-hidden rounded-xl bg-surface-container-lowest p-10 hover:shadow-xl transition-all duration-500">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="material-symbols-outlined text-4xl text-primary mb-6">cardiology</span>
+                            <h3 class="font-headline text-2xl font-bold mb-4">Cardiologie Intégrative</h3>
+                            <p class="text-on-surface-variant leading-relaxed max-w-md">Une santé cardiaque globale alliant des diagnostics de pointe à une optimisation de vos habitudes de vie pour une vitalité durable.</p>
+                        </div>
+                        <img class="w-48 h-48 object-cover rounded-xl shadow-md opacity-80 group-hover:opacity-100 transition-opacity" data-alt="Doctor explaining heart health on a tablet to a patient in a light-filled office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXMsX5XnL_ReoLkNQo53zgIOjxFdqagWtmLt6dmpUH2KLQ7QUGkemhtu55Ux3BzfqRlEXgMAI1tbxDF1hRagpv1p9mkZV0by_kworOLygHXmMtJFeMXW6ceFBk-0TV7CFlBr1oCNMg_4jYbVr9H6RvE3ZORIHmhJHAePMdx1rMjpE4rL66juCWSnyTbL6L5OwsxyOsxJkfh66Xid_b5k5t86eS5Sc11r3_teYON48XDko9PCi3z-a17oXVDXKgCOSlzYj9rtEuxhg" alt="Cardiologue en consultation avec un patient" />
+                    </div>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-primary text-on-primary rounded-xl p-10 flex flex-col justify-between">
+                    <div>
+                        <span class="material-symbols-outlined text-4xl mb-6">psychology</span>
+                        <h3 class="font-headline text-2xl font-bold mb-4">Santé Globale</h3>
+                        <p class="opacity-90 leading-relaxed">Des systèmes de soutien mental et émotionnel directement intégrés à votre plan de santé physique.</p>
+                    </div>
+                    <a class="flex items-center gap-2 font-bold mt-8 group" href="services.html">
+                        En savoir plus <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-surface-container-lowest rounded-xl p-10 hover:shadow-xl transition-all">
+                    <span class="material-symbols-outlined text-4xl text-secondary mb-6">vital_signs</span>
+                    <h3 class="font-headline text-xl font-bold mb-4">Dépistage Préventif</h3>
+                    <p class="text-on-surface-variant text-sm leading-relaxed">Des protocoles avancés de détection précoce conçus pour anticiper les risques avant l'apparition des symptômes.</p>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="bg-surface-container-lowest rounded-xl p-10 hover:shadow-xl transition-all">
+                    <span class="material-symbols-outlined text-4xl text-tertiary mb-6">dermatology</span>
+                    <h3 class="font-headline text-xl font-bold mb-4">Soins Dermatologiques</h3>
+                    <p class="text-on-surface-variant text-sm leading-relaxed">Traitements cliniques pour la santé de la peau utilisant nos algorithmes de suivi et thérapies régénératives.</p>
+                </div>
+                <!-- Service Card 5 -->
+                <div class="bg-surface-container-lowest rounded-xl p-10 hover:shadow-xl transition-all">
+                    <span class="material-symbols-outlined text-4xl text-primary mb-6">science</span>
+                    <h3 class="font-headline text-xl font-bold mb-4">Laboratoire de Précision</h3>
+                    <p class="text-on-surface-variant text-sm leading-relaxed">Des diagnostics rapides et précis sur place, avec des résultats numériques immédiats via votre espace patient.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Preview Section -->
+    <section class="py-32 bg-surface overflow-hidden">
+        <div class="max-w-screen-2xl mx-auto px-12 grid grid-cols-1 lg:grid-cols-12 gap-16">
+            <div class="lg:col-span-4">
+                <span class="text-secondary font-bold tracking-widest text-sm uppercase">Les Praticiens</span>
+                <h2 class="font-headline text-5xl font-extrabold mt-6 leading-tight">Une Équipe de Pionniers</h2>
+                <p class="text-on-surface-variant mt-8 text-lg leading-relaxed">
+                    Notre équipe ne se limite pas à des professionnels de santé ; ce sont des guides bienveillants engagés dans votre parcours de guérison au Sanctuaire.
+                </p>
+                <a href="equipe.html" class="mt-10 text-primary font-bold flex items-center gap-2 group w-max">
+                    Découvrir toute l'équipe <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">east</span>
+                </a>
+            </div>
+            <div class="lg:col-span-8 flex flex-col md:flex-row gap-8">
+                <div class="flex-none w-full md:w-80 group">
+                    <div class="rounded-xl overflow-hidden h-[450px] mb-6 relative">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Portrait of a professional female doctor in a light blue coat smiling warmly in a bright hallway" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgybBCr9he91KTr4RPQfDQ2_Jd7cVUeGFzTiQ14CXF1AWxAv7gpBRjA1cXrp0TXIvEUVlYb_P4LVbmOLkNZX2-py2K02egBUaJM-v8etZtUcv_K9NTByQ3SMhG5f_Yhi8xbsdGBr0uQHYH9n06tvAMjJWJ1PuneB1liqE7UBSHZnMiAV5p6sUQOV3X7ctyIulDwRcfNGpeEJn3CTlftwi3hCxwPCjVHigzK2fxoWJy4ejxWbIpgM4uARyi0XVcmodQ_InHY0iLqNc" alt="Portrait du Dr. Elena Vos" />
+                        <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-6 rounded-lg">
+                            <h4 class="font-headline font-bold text-xl">Dr. Elena Vos</h4>
+                            <p class="text-primary text-sm font-semibold uppercase tracking-wider">Médecin Chef</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none w-full md:w-80 group md:mt-12">
+                    <div class="rounded-xl overflow-hidden h-[450px] mb-6 relative">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Portrait of a confident male specialist with glasses looking thoughtfully at the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2DDDjtZtoriPoBmL4Agx0JyyCoFa8S4tsv_zZgGJEsUdK8y5_MKuubLFAg6_qnpRfmeT6ibYg49QbgeftuD5Z1rqe1vDj1SXOxgVEwcyI-Ly3ykVbrgT6-kk--ZM_ySOa16AuefS6SLV1CqBHrnAWWiNAJJJPEFC6CPrwmmTOqpAnfg_Eh0MdH57a6X1kH2YMLZIgQtB5JBW32f56PMAV74A1w0BacaHk8t8kLqoVskaJORT-QVUsirTxNG6g93xDq5LVRHZo5u8" alt="Portrait du Dr. Marcus Chen" />
+                        <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-6 rounded-lg">
+                            <h4 class="font-headline font-bold text-xl">Dr. Marcus Chen</h4>
+                            <p class="text-primary text-sm font-semibold uppercase tracking-wider">Chef de Clinique - Cardiologie</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-surface-container-low">
+        <div class="max-w-screen-2xl mx-auto px-12">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="font-headline text-3xl font-bold">Témoignages de Guérison</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm border border-outline-variant/10">
+                    <div class="flex gap-1 text-tertiary-container mb-6">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-on-surface-variant leading-relaxed mb-8 italic">"Le passage d'une clinique standard au Sanctuaire a changé ma façon de concevoir la santé. Je ne me sens plus un simple numéro de dossier."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-on-primary-fixed">JS</div>
+                        <div>
+                            <p class="font-bold">Julien Sommier</p>
+                            <p class="text-xs text-on-surface-variant">Patient depuis 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm border border-outline-variant/10 md:translate-y-6">
+                    <div class="flex gap-1 text-tertiary-container mb-6">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-on-surface-variant leading-relaxed mb-8 italic">"Leur approche axée sur les soins préventifs et le bien-être m'a donné un nouveau souffle. Ici, les médecins prennent le temps de vous écouter."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-on-secondary-fixed">MR</div>
+                        <div>
+                            <p class="font-bold">Maya Rodriguez</p>
+                            <p class="text-xs text-on-surface-variant">Patiente depuis 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm border border-outline-variant/10">
+                    <div class="flex gap-1 text-tertiary-container mb-6">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-on-surface-variant leading-relaxed mb-8 italic">"Sophistiqué, propre et extrêmement professionnel. L'espace patient numérique simplifie terriblement la gestion de mes rendez-vous."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center font-bold text-on-tertiary-fixed">AK</div>
+                        <div>
+                            <p class="font-bold">Adam Kovar</p>
+                            <p class="text-xs text-on-surface-variant">Patient depuis 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Preview -->
+    <section class="py-24 bg-surface">
+        <div class="max-w-screen-xl mx-auto px-12">
+            <div class="bg-primary-container rounded-xl overflow-hidden flex flex-col md:flex-row shadow-2xl">
+                <div class="p-16 flex-1 text-on-primary">
+                    <h2 class="font-headline text-4xl font-bold mb-6">Commencez Votre Parcours Dès Aujourd'hui</h2>
+                    <p class="text-lg opacity-90 mb-10 max-w-md">Nos coordinateurs médicaux sont à votre disposition pour vous guider lors de votre enregistrement à la Clinique.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <span class="material-symbols-outlined text-2xl">call</span>
+                            <span class="font-headline font-bold text-xl">+33 (0)1 23 45 67 89</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="material-symbols-outlined text-2xl">location_on</span>
+                            <span class="font-headline font-bold text-xl">1200 Avenue de la Santé, Suite 100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 bg-surface-container-lowest p-16">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold mb-2 text-on-surface-variant">Nom Complet</label>
+                                <input class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all px-4 py-3 rounded-t-lg outline-none" placeholder="Jeanne Dupont" type="text"/>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold mb-2 text-on-surface-variant">Adresse Email</label>
+                                <input class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all px-4 py-3 rounded-t-lg outline-none" placeholder="jeanne@exemple.fr" type="email"/>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-2 text-on-surface-variant">Message (Optionnel)</label>
+                            <textarea class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all px-4 py-3 rounded-t-lg outline-none resize-none" placeholder="Comment pouvons-nous vous accompagner ?" rows="3"></textarea>
+                        </div>
+                        <button class="w-full hero-gradient text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-primary/30 transition-all" type="submit">
+                            Demander une Consultation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-16 px-12 bg-white">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-screen-2xl mx-auto">
+        <div class="col-span-1 md:col-span-1">
+            <div class="text-xl font-bold text-primary mb-6 font-headline">Clinique Le Sanctuaire</div>
+            <p class="text-slate-500 font-inter text-sm leading-relaxed mb-8">Élever les soins médicaux grâce à l'art, la science et l'empathie.</p>
+        </div>
+        <div>
+            <h4 class="font-bold text-primary mb-6">Navigation</h4>
+            <ul class="space-y-4">
+                <li><a class="text-slate-500 hover:text-primary transition-opacity font-inter text-sm underline-offset-4 hover:underline" href="about.html">À Propos</a></li>
+                <li><a class="text-slate-500 hover:text-primary transition-opacity font-inter text-sm underline-offset-4 hover:underline" href="services.html">Nos Services</a></li>
+                <li><a class="text-slate-500 hover:text-primary transition-opacity font-inter text-sm underline-offset-4 hover:underline" href="equipe.html">Équipe Médicale</a></li>
+                <li><a class="text-slate-500 hover:text-primary transition-opacity font-inter text-sm underline-offset-4 hover:underline" href="#">Espace Patient</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold text-primary mb-6">Ressources</h4>
+            <ul class="space-y-4">
+                <li><a class="text-slate-500 hover:text-primary transition-opacity font-inter text-sm underline-offset-4 hover:underline" href="#">Carrières</a></li>
+                <li><a class="text-slate-500 hover:text-primary transition-opacity font-inter text-sm underline-offset-4 hover:underline" href="#">Confidentialité</a></li>
+                <li><a class="text-slate-500 hover:text-primary transition-opacity font-inter text-sm underline-offset-4 hover:underline" href="#">Mentions Légales</a></li>
+                <li><a class="text-slate-500 hover:text-primary transition-opacity font-inter text-sm underline-offset-4 hover:underline" href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold text-primary mb-6">Contact</h4>
+            <div class="flex gap-4">
+                <a class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary hover:bg-surface-container-high transition-all" href="#">
+                    <span class="material-symbols-outlined text-lg">share</span>
+                </a>
+                <a class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary hover:bg-surface-container-high transition-all" href="#">
+                    <span class="material-symbols-outlined text-lg">medical_services</span>
+                </a>
+            </div>
+            <div class="mt-8 border-l-4 border-error pl-4">
+                <p class="text-xs font-bold text-error font-inter">Urgence Médicale ?</p>
+                <p class="text-xs text-slate-500 font-inter mt-1">Veuillez composer le 15 ou le 112 immédiatement.</p>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-screen-2xl mx-auto mt-16 pt-8 border-t border-slate-200">
+        <p class="text-slate-500 text-sm font-inter">© 2024 Clinique Le Sanctuaire. Tous droits réservés.</p>
+    </div>
+</footer>
+</body>
+</html>

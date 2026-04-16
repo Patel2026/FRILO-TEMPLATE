@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Réservation | L'Ébène Haute Cuisine</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,400&family=Manrope:wght@200;400;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        input[type="date"]::-webkit-calendar-picker-indicator,
+        input[type="time"]::-webkit-calendar-picker-indicator {
+            filter: invert(0.8) sepia(1) saturate(5) hue-rotate(350deg);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 rounded-none bg-[#131313]/70 backdrop-blur-md flex justify-between items-center px-12 py-8 mx-auto border-b border-white/5">
+        <a href="index.html" class="font-headline text-2xl font-light tracking-[0.2em] text-[#f1c97d]">L'ÉBÈNE</a>
+        <div class="hidden md:flex gap-12 items-center">
+            <a class="font-headline tracking-tight text-lg uppercase text-[#e5e2e1] hover:text-[#f1c97d] transition-colors duration-500 hover:tracking-widest" href="about.html">L'Expérience</a>
+            <a class="font-headline tracking-tight text-lg uppercase text-[#e5e2e1] hover:text-[#f1c97d] transition-colors duration-500 hover:tracking-widest" href="menu.html">Dégustation</a>
+            <a class="font-headline tracking-tight text-lg uppercase text-[#e5e2e1] hover:text-[#f1c97d] transition-colors duration-500 hover:tracking-widest" href="gallery.html">Galerie</a>
+            <a class="font-headline tracking-tight text-lg uppercase text-[#f1c97d] border-b border-[#f1c97d]/30 pb-1 hover:tracking-widest" href="reservation.html">Réservation</a>
+        </div>
+        <a href="reservation.html" class="bg-primary text-on-primary px-8 py-3 font-label font-bold text-sm tracking-widest uppercase hover:bg-primary-fixed-dim transition-all duration-500">Réserver une Table</a>
+    </nav>
+
+    <main class="pt-32 pb-24">
+        <!-- Hero Section -->
+        <section class="px-12 mb-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-end mt-8">
+            <div class="max-w-2xl">
+                <span class="font-label uppercase tracking-[0.3em] text-primary mb-6 block text-sm">Sécuriser Votre Couvert</span>
+                <h1 class="font-headline text-6xl md:text-8xl leading-none mb-8 font-light">Réservation</h1>
+                <p class="text-lg text-on-surface-variant font-light leading-relaxed max-w-md">
+                    Un voyage intime à travers l'ombre et la lumière. Nos tables sont rendues disponibles 30 jours à l'avance, le premier de chaque mois.
+                </p>
+            </div>
+            <div class="h-[400px] w-full overflow-hidden">
+                <img class="w-full h-full object-cover grayscale opacity-60" data-alt="Intérieur dramatique d'un restaurant sombre avec des projecteurs dorés sur les tables individuelles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPHhqcA-7qSKF56pLtpXy5bZ6-oRKoEBDz48Jv9nJCTMU4PaJtaAxGdXc9jLiR_htVyzmqYNYHiP_-YQiKTc36yOMDnAp0cZDzgHBoN9xpF8WNCqNKDAu5FgIeSBnJULBCRl0iphhKeCN0Vnkh3VItlZmowFMUZoxA78mZgaGMv4ds-T9mZrX18ZU6OlYP6SuWYNNex1q2KqBdZqcFCXUfD5QjWUHEqm5BpEEMaiE4k6x0kfTgWOWl4LBsx6an42r3EOH_QzkDCYxq"/>
+            </div>
+        </section>
+
+        <!-- Reservation Form & Details Grid -->
+        <section class="px-12 grid grid-cols-1 lg:grid-cols-12 gap-24">
+            <!-- Form Side -->
+            <div class="lg:col-span-7 bg-surface-container-low p-12 lg:p-20 border border-outline-variant/10">
+                <h2 class="font-headline text-3xl mb-12 font-light italic">La Table Vous Attend</h2>
+                
+                <form class="space-y-12">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div class="relative">
+                            <label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">Couverts</label>
+                            <select class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary appearance-none rounded-none text-on-surface">
+                                <option value="2">Table pour 2</option>
+                                <option value="4">Table pour 4</option>
+                                <option value="6">Table pour 6</option>
+                                <option value="private">Dîner Privé (8+)</option>
+                            </select>
+                            <span class="material-symbols-outlined absolute right-0 bottom-4 pointer-events-none text-outline">expand_more</span>
+                        </div>
+                        <div class="relative">
+                            <label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">Date</label>
+                            <input class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary rounded-none text-on-surface" type="date"/>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div class="relative">
+                            <label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">Heure Souhaitée</label>
+                            <select class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary appearance-none rounded-none text-on-surface">
+                                <option>18:30 — Premier Service</option>
+                                <option>19:30 — Service Continu</option>
+                                <option>20:30 — Deuxième Service</option>
+                                <option>21:30 — Fin de Soirée</option>
+                            </select>
+                            <span class="material-symbols-outlined absolute right-0 bottom-4 pointer-events-none text-outline">expand_more</span>
+                        </div>
+                        <div class="relative">
+                            <label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">Occasion</label>
+                            <input class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary rounded-none text-on-surface placeholder:text-surface-variant" placeholder="Anniversaire, Affaires, etc." type="text"/>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant">Coordonnées</label>
+                        <input class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary rounded-none text-on-surface placeholder:text-surface-variant" placeholder="Nom Complet" type="text"/>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                            <input class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary rounded-none text-on-surface placeholder:text-surface-variant" placeholder="Adresse Courriel" type="email"/>
+                            <input class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary rounded-none text-on-surface placeholder:text-surface-variant" placeholder="Numéro de Téléphone" type="tel"/>
+                        </div>
+                    </div>
+                    
+                    <div class="pt-8">
+                        <button class="w-full py-6 bg-primary text-on-primary font-label uppercase tracking-[0.2em] font-bold hover:bg-primary-fixed-dim transition-colors" type="submit">Demander une Réservation</button>
+                        <p class="mt-4 font-body text-[10px] uppercase tracking-widest text-center text-outline italic">Toute réservation est soumise à notre politique d'annulation de 24 heures.</p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Content Side -->
+            <div class="lg:col-span-5 space-y-24">
+                <!-- Contact Block -->
+                <div class="space-y-12">
+                    <div>
+                        <h3 class="font-label text-xs uppercase tracking-[0.4em] text-primary mb-8">Accès & Contact</h3>
+                        <p class="font-headline text-3xl font-light leading-snug mb-4">Rue 205, Quartier Haie Vive,<br/> Cotonou, Bénin</p>
+                        <a class="font-label text-primary border-b border-primary/20 pb-1 uppercase text-xs tracking-widest hover:text-on-surface transition-colors" href="#">Obtenir l'Itinéraire</a>
+                    </div>
+                    <div class="space-y-4 font-body">
+                        <p class="text-lg font-light text-on-surface">+229 21 00 00 00</p>
+                        <p class="text-lg font-light text-on-surface">concierge@lebene.bj</p>
+                    </div>
+                    <div class="pt-4 space-y-2 font-body">
+                        <h4 class="text-[10px] uppercase tracking-[0.2em] text-outline">Service du Soir</h4>
+                        <p class="text-sm font-light">Mercredi — Dimanche<br/>18:00 — 02:00</p>
+                    </div>
+                </div>
+
+                <!-- Private Events Inquiry -->
+                <div class="p-12 border border-outline-variant/15 bg-surface-container-lowest">
+                    <h3 class="font-headline text-2xl font-light mb-6 italic">Événements Privés</h3>
+                    <p class="font-body text-on-surface-variant mb-8 font-light leading-relaxed">
+                        Pour des groupes de 8 à 24 personnes, le Salon Privé du Chef offre un sanctuaire exclusif avec des menus dégustation sur-mesure et accords millésimés.
+                    </p>
+                    <button class="font-label text-primary uppercase text-xs tracking-[0.3em] font-bold flex items-center gap-4 hover:gap-8 transition-all">
+                        Se Renseigner <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+
+                <!-- Map Placeholder -->
+                <div class="relative group cursor-crosshair">
+                    <div class="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors z-10"></div>
+                    <div class="h-64 bg-surface-container-high w-full flex items-center justify-center relative grayscale contrast-125">
+                        <img class="w-full h-full object-cover opacity-30" data-alt="Photographie architecturale sombre montrant des lignes géométriques" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQmmzs3kS4YN6whJ4Zl45KJ_zKPhA_GLtPZjdBX4tLPJQvXQ3yGF7HwGiMrmCtghTmd_OwHQ_qy8qqt0YEcJd8Vn-IZfcNubQQBOvpyfJk1bBzaZtdZIp2i-xnjM6856-rK-UBziipNtB-vcbtDdSet2n2FSrCOmupxu2CRjvs6wLuObz4Ium7TRRkrLgGWINmmTcVQruqb1BlaV61Tevb-S5o5UsG1fpc47kigSveMkYPLEYTOeMpMva8xjwj7jd8eMNccE_SfrJj"/>
+                        <div class="absolute z-20 flex flex-col items-center">
+                            <span class="material-symbols-outlined text-primary text-4xl" data-weight="fill">location_on</span>
+                            <span class="font-label text-[10px] uppercase tracking-[0.3em] mt-2 font-bold text-on-surface">Voir la Carte</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter / Footer Signoff -->
+        <section class="mt-32 px-12 text-center max-w-4xl mx-auto border-t border-outline-variant/10 pt-24">
+            <h2 class="font-headline text-4xl font-light mb-12">Rejoindre le Cercle Privé</h2>
+            <p class="font-body text-on-surface-variant font-light mb-12 italic">Recevez des invitations exclusives pour nos dégustations en cave saisonnières et nos premières culinaires.</p>
+            <div class="flex flex-col md:flex-row gap-0 max-w-md mx-auto">
+                <input class="flex-1 bg-surface-container-low px-8 py-4 focus:outline-none border-none font-body text-xs tracking-widest placeholder:text-surface-variant" placeholder="VOTRE ADRESSE COURRIEL" type="email"/>
+                <button class="bg-on-surface text-background px-10 py-4 uppercase font-label text-xs font-bold tracking-widest hover:bg-primary transition-colors">Rejoindre</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full rounded-none pt-24 pb-12 bg-[#0e0e0e] flex flex-col items-center px-12 text-center">
+        <div class="font-headline text-xl font-light text-[#f1c97d] mb-6 tracking-[0.2em] uppercase">L'ÉBÈNE</div>
+        <div class="flex flex-wrap justify-center gap-12 mb-16 font-label">
+            <a class="text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Dîner Privé</a>
+            <a class="text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Presse</a>
+            <a class="text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Carrières</a>
+            <a class="text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Confidentialité</a>
+        </div>
+        <p class="font-body text-sm tracking-[0.1em] uppercase text-[#99907c]">© 2026 L'Ébène Haute Cuisine. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

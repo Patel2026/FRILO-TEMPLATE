@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#faf9f7",
+                    "on-surface": "#1a1c1b",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#fed488",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#e9e8e6",
+                    "surface-dim": "#dadad8",
+                    "on-secondary-fixed": "#261900",
+                    "secondary-fixed-dim": "#e9c176",
+                    "outline-variant": "#d1c5b4",
+                    "background": "#faf9f7",
+                    "inverse-primary": "#c8c6c5",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#f1f1ef",
+                    "secondary": "#775a19",
+                    "tertiary-fixed": "#e4e4cc",
+                    "on-surface-variant": "#4e4639",
+                    "inverse-surface": "#2f3130",
+                    "tertiary-fixed-dim": "#c8c8b0",
+                    "primary-container": "#a7a5a4",
+                    "on-primary-container": "#3b3b3b",
+                    "on-background": "#1a1c1b",
+                    "on-tertiary-fixed": "#1b1d0e",
+                    "secondary-fixed": "#ffdea5",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#5f5e5e",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "primary": "#5f5e5e",
+                    "surface-container-low": "#f4f3f1",
+                    "tertiary": "#5e604d",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed-variant": "#474746",
+                    "on-primary-fixed": "#1c1b1b",
+                    "surface-variant": "#e3e2e0",
+                    "primary-fixed": "#e5e2e1",
+                    "on-secondary-container": "#785a1a",
+                    "on-tertiary-fixed-variant": "#474836",
+                    "surface-container-highest": "#e3e2e0",
+                    "tertiary-container": "#a6a791",
+                    "surface-container": "#efeeec",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "on-tertiary-container": "#3b3c2b",
+                    "surface": "#faf9f7",
+                    "outline": "#7f7667"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .ghost-border { outline: 1px solid rgba(209, 197, 180, 0.15); }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/70 backdrop-blur-xl flex justify-between items-center px-8 py-6 max-w-full">
+<div class="text-2xl font-serif tracking-tighter text-stone-900">THE EDITORIAL AURA</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-stone-900 transition-colors" href="#">About</a>
+<a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-stone-900 transition-colors" href="#">Services</a>
+<a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-stone-900 transition-colors" href="#">Gallery</a>
+<a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-900 border-b-2 border-yellow-800 pb-1" href="#">Contact</a>
+</div>
+<button class="bg-on-secondary-fixed text-secondary-fixed px-8 py-3 text-[10px] uppercase tracking-[0.15em] font-label hover:bg-secondary hover:text-on-secondary transition-all duration-500">Book Now</button>
+</nav>
+<main class="pt-32">
+<!-- Hero Section: Editorial Reveal Pattern -->
+<section class="relative px-8 md:px-12 mb-32">
+<div class="flex flex-col md:flex-row items-end">
+<div class="w-full md:w-3/5 aspect-[4/5] md:aspect-[16/9] overflow-hidden">
+<img alt="Luxury spa interior with minimalist beige stone walls and soft warm ambient lighting" class="w-full h-full object-cover" data-alt="Minimalist high-end beauty institute interior with curved beige stone walls, soft architectural lighting, and a serene atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr76hak18LnpOsLEl442SMCsLjKXVbGoahv15cnq284KIYAOpQKR6ZxOT0USN-UGLwCv2cUuA9P1bybvnyjDHJZMGXQEN4KdGzIBLlH1mgJ4tsDGmBOtGW_tW2R9rPu5QTC33FTAI5rf4KE-LU7IK2vTMatf10U1vCo77tQkBy8FYidRsSKvymwDbkt1hsp4AAW7xN2BYlcalMXmJz1xyVGxlRGzYlnCUBCQaCdt87TJDUODqUiYSAl6QLzfOqIziNiknIDz5yJzQ"/>
+</div>
+<div class="w-full md:w-2/5 bg-surface-container-highest p-12 md:-ml-20 md:mb-12 relative z-10">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-secondary mb-4 block">Get In Touch</span>
+<h1 class="text-5xl md:text-7xl leading-tight mb-8">Connectivity <br/>&amp; Presence</h1>
+<p class="font-body text-on-surface-variant leading-relaxed max-w-sm">
+                        Experience the silent curation of beauty. Our doors are open for those seeking a sanctuary of refined aesthetic excellence.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Contact & Location Grid: Bento Style -->
+<section class="px-8 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12">
+<!-- Left: Contact Form -->
+<div class="md:col-span-7 bg-surface-container-lowest p-12 ghost-border">
+<h2 class="text-3xl mb-12">Send an Inquiry</h2>
+<form class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-stone-400 block mb-2">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-2 focus:ring-0 focus:border-secondary transition-all font-body" placeholder="MARCUS AURELIUS" type="text"/>
+</div>
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-stone-400 block mb-2">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-2 focus:ring-0 focus:border-secondary transition-all font-body" placeholder="MARCUS@THEAURA.COM" type="email"/>
+</div>
+</div>
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-stone-400 block mb-2">Service of Interest</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant py-2 focus:ring-0 focus:border-secondary transition-all font-body appearance-none">
+<option>EDITORIAL FACIAL</option>
+<option>ARCHITECTURAL BROWS</option>
+<option>SILENT MANICURE</option>
+<option>SKIN CURATION</option>
+</select>
+</div>
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-stone-400 block mb-2">Message</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant py-2 focus:ring-0 focus:border-secondary transition-all font-body resize-none" placeholder="YOUR VISION..." rows="4"></textarea>
+</div>
+<button class="bg-on-secondary-fixed text-secondary-fixed px-12 py-5 text-[10px] uppercase tracking-[0.2em] font-label w-full md:w-auto hover:bg-secondary hover:text-on-secondary transition-all duration-500" type="submit">Send Inquiry</button>
+</form>
+</div>
+<!-- Right: Details & Hours -->
+<div class="md:col-span-5 flex flex-col gap-12">
+<!-- Location Info -->
+<div class="bg-surface-container-low p-12 ghost-border">
+<h3 class="text-2xl mb-8">The Studio</h3>
+<div class="space-y-6 font-body text-on-surface-variant">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+<p class="leading-relaxed">1248 Avenue of the Arts,<br/>Lower Manhattan, NY 10013</p>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary">call</span>
+<p>+1 (212) 555-0198</p>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary">mail</span>
+<p>concierge@theeditorialaura.com</p>
+</div>
+</div>
+</div>
+<!-- Opening Hours -->
+<div class="bg-stone-900 text-stone-100 p-12">
+<h3 class="text-2xl mb-8 text-stone-50">Opening Hours</h3>
+<div class="space-y-4 font-label text-[11px] tracking-widest uppercase">
+<div class="flex justify-between border-b border-stone-800 pb-2">
+<span>Monday - Friday</span>
+<span>09:00 — 20:00</span>
+</div>
+<div class="flex justify-between border-b border-stone-800 pb-2">
+<span>Saturday</span>
+<span>10:00 — 18:00</span>
+</div>
+<div class="flex justify-between text-stone-500">
+<span>Sunday</span>
+<span>By Appointment Only</span>
+</div>
+</div>
+<p class="mt-8 font-body text-[12px] italic text-stone-400 lowercase">Appointments are released on the first of every month.</p>
+</div>
+</div>
+</section>
+<!-- Integrated Map Section -->
+<section class="mt-32 px-8 md:px-12">
+<div class="bg-surface-dim h-[500px] w-full flex items-center justify-center relative overflow-hidden ghost-border">
+<!-- Abstract Map Aesthetic -->
+<img alt="Abstract grayscale map of a city grid with minimalist aesthetic" class="w-full h-full object-cover grayscale opacity-30" data-alt="Minimalist architectural city map in a monochrome beige and black palette showing a quiet urban grid layout" data-location="New York" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzVc2HFxV5xBWs_3QkEt6qb51vcx7sL3koPR5kS7nFLJ58MXLvS-7-aWOYScRH70geI7MVwutEKCjzTEJAqjJwcy80c0E8PFnXCDl7P-W1gM88ZgK4xlQDILvfWUfkqObh0bpeeR4eIwjWoJrJMq7MkR4Ayc6rFQIn5b1-aYAH-5W8NEE5VcSCBS9CZYAnThE0RNW_Z3utq0HtNq_Rr_b-MAwneh18I2oHz73vD6fs6BZMKpu3ersAlgxk72mJgJuuFRWlvLW9jBE"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-on-surface text-surface p-8 text-center max-w-xs">
+<span class="material-symbols-outlined text-secondary-fixed mb-4 block text-4xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<h4 class="font-serif text-xl mb-2">Visit the Aura</h4>
+<p class="font-body text-[10px] uppercase tracking-widest text-stone-400 mb-6">Valet parking available via appointment</p>
+<a class="text-secondary-fixed text-[10px] uppercase tracking-widest border-b border-secondary-fixed pb-1" href="#">Open in Maps</a>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mt-32 py-24 bg-surface-container-low text-center px-8">
+<h2 class="text-4xl md:text-5xl mb-8">Begin Your Transformation</h2>
+<p class="font-body text-on-surface-variant max-w-lg mx-auto mb-12">
+                Our specialists are ready to curate a bespoke experience tailored to your unique skin architecture and aesthetic desires.
+            </p>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<button class="bg-on-secondary-fixed text-secondary-fixed px-12 py-5 text-[10px] uppercase tracking-[0.2em] font-label hover:bg-secondary hover:text-on-secondary transition-all">Book Online</button>
+<button class="border border-outline-variant px-12 py-5 text-[10px] uppercase tracking-[0.2em] font-label hover:bg-on-surface hover:text-surface transition-all">View Menu</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-stone-200 flex flex-col md:flex-row justify-between items-start px-12 py-20 gap-12">
+<div class="space-y-8">
+<div class="text-xl font-serif text-stone-900">THE EDITORIAL AURA</div>
+<p class="font-body text-sm uppercase tracking-widest text-stone-600">© 2024 THE EDITORIAL AURA. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="grid grid-cols-2 gap-12 md:gap-24">
+<div class="space-y-4 flex flex-col">
+<a class="font-body text-sm uppercase tracking-widest text-stone-600 hover:text-yellow-800 transition-colors" href="#">Instagram</a>
+<a class="font-body text-sm uppercase tracking-widest text-stone-600 hover:text-yellow-800 transition-colors" href="#">Pinterest</a>
+<a class="font-body text-sm uppercase tracking-widest text-stone-600 hover:text-yellow-800 transition-colors" href="#">LinkedIn</a>
+</div>
+<div class="space-y-4 flex flex-col">
+<a class="font-body text-sm uppercase tracking-widest text-stone-600 hover:text-yellow-800 transition-colors" href="#">Privacy Policy</a>
+<a class="font-body text-sm uppercase tracking-widest text-stone-600 hover:text-yellow-800 transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

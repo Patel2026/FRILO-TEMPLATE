@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Savoir-Faire | L'Ébène Haute Cuisine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+
+    <!-- Top Navigation Shell -->
+    <nav class="fixed top-0 w-full z-50 bg-[#131313]/70 backdrop-blur-md flex justify-between items-center px-12 py-8 mx-auto border-b border-white/5">
+        <a href="index.html" class="font-headline text-2xl font-light tracking-[0.2em] text-[#f1c97d]">L'ÉBÈNE</a>
+        <div class="hidden md:flex gap-12 items-center">
+            <a class="font-headline tracking-tight text-lg uppercase transition-all duration-500 hover:tracking-widest text-[#f1c97d] border-b border-[#f1c97d]/30 pb-1" href="about.html">L'Expérience</a>
+            <a class="font-headline tracking-tight text-lg uppercase transition-all duration-500 hover:tracking-widest text-[#e5e2e1] hover:text-[#f1c97d]" href="menu.html">Dégustation</a>
+            <a class="font-headline tracking-tight text-lg uppercase transition-all duration-500 hover:tracking-widest text-[#e5e2e1] hover:text-[#f1c97d]" href="gallery.html">Galerie</a>
+            <a class="font-headline tracking-tight text-lg uppercase transition-all duration-500 hover:tracking-widest text-[#e5e2e1] hover:text-[#f1c97d]" href="reservation.html">Réservation</a>
+        </div>
+        <a href="reservation.html" class="bg-primary text-on-primary px-8 py-3 text-sm font-semibold tracking-[0.15em] uppercase hover:bg-primary-fixed-dim transition-all duration-500">
+            Réserver une Table
+        </a>
+    </nav>
+
+    <main class="pt-24">
+        <!-- Hero Section: The Philosophy -->
+        <section class="relative min-h-screen flex items-center justify-center overflow-hidden px-12">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover opacity-40" data-alt="Gros plan cinématique d'un chef effectuant un dressage à la pince" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb2D7UgOwMJftolkOVOnWnQcyNHpq9G8ADlYzT_hL9WRv_6Ab2N82y0vP8n3cGDMfg9dJ3dbBrwMDK3fvUUqtKvOoAIWTFyGrXLGufv9HS1TtcCwJMt6-1ST_320t9TwMTbJL1GPut82mws4row4AwrlA2AH2mf31VpJS5eFjR2rJexT3FkDz2hVUXwW09cPrpqkoJ-dkRO7MGO89qaDib6GuIUetnfJiZqim_96Tg-CNcx2MiZQKP-4bkDJYUrchrD4GLmk6EO3Um"/>
+                <div class="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
+            </div>
+            <div class="relative z-10 text-center max-w-4xl">
+                <span class="font-label text-sm tracking-[0.4em] text-primary uppercase mb-8 block">Notre Essence</span>
+                <h1 class="font-headline text-6xl md:text-8xl font-light mb-12 leading-tight">
+                    Où l'Ombre <br/>
+                    <span class="italic font-serif text-primary">Définit</span> la Saveur
+                </h1>
+                <p class="font-body text-xl text-on-surface-variant font-light leading-relaxed max-w-2xl mx-auto">
+                    Né du silence de minuit, L'Ébène est un sanctuaire où l'absence de reflets extérieurs rehausse la pureté gustative. Nous considérons la haute gastronomie comme un dialogue intime entre le terroir africain et l'âme.
+                </p>
+            </div>
+        </section>
+
+        <!-- The Narrative: Asymmetric Grid -->
+        <section class="py-32 px-12 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+                <div class="md:col-span-7">
+                    <img class="w-full aspect-[4/5] object-cover grayscale brightness-75 border-none" data-alt="Intérieur maussade et exclusif du restaurant avec marbre noir" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfau9k9iFov7rEJgXCq7cs8qPHmhmChH9epakq7KUKeUeiP0yNHD3Odm_2HOzl13uHCJUPyvW4BbeL-f79o3KU0MbFnn0q-fy4wp8mP8w5bXz4BFRsOCnDbwpkS2XQM06fGr9fn-LK0GjCqTfvrz2hkP9HeXpodzPVWElUUOlY25kPZYpMqsVOZ-ETh54iZWDvpJe79eCcGJaSH6xYRe4dSW8j9sEXX8zUzR94zcOgtbH8BlHZplAOTlqwLSD4k9oVNizj7152Bklt"/>
+                </div>
+                <div class="md:col-span-5 md:pl-12">
+                    <h2 class="font-headline text-4xl mb-8 font-light leading-snug">L'Héritage <br/> de Notre Maison</h2>
+                    <div class="space-y-6 font-body text-on-surface-variant leading-relaxed">
+                        <p>Installé au cœur du quartier diplomatique de la Haie Vive (Cotonou), L'Ébène a commencé comme un collectif restreint d'artisans cherchant à redéfinir l'expérience singulière d'un dîner nocturne. Nous opérons en marge des traditions, mélangeant habilement techniques d'avant-garde moléculaire et un respect quasi religieux pour l'ingrédient endémique.</p>
+                        <p>Notre cuisine est un laboratoire de précision chirurgicale. Chaque texture y est considérée ; chaque effluve est curaté pour éveiller une mémoire enfouie, sublimer une mousson, ou illustrer une émotion silencieuse.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Visionary: Chef's Journey -->
+        <section class="bg-surface-container-lowest py-32 px-12">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+                <div class="md:col-span-5 md:order-2 relative">
+                    <img class="w-full aspect-square object-cover" data-alt="Portrait brut du chef Hakim Sènou" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC29hmaqQ2zcNXYFfRHbdAFWLJfafHG0Weq_vRXcb424kafL5J54bt0Z6RLaQMSiqLg-GyJhi9YFGhf4dVya98kfsAST2Sed0dydAgYGaJCFYMMuSJCwy9umKGA_JkNelfyRQqYFB9z0EJEKyC4ShspkHMAQ98ErN6ZW4wsx1n2pzE1ocSXApZB5cAey8RmDTlfuhaSJUpDf3Gq18LGSYlVGHPLA_0hbYVy0I_KefvGaDXfo-VqsFDpNR3BvW-j0SelJcgXCX1Xc1WD"/>
+                    <div class="mt-8 text-right md:absolute md:-left-24 md:top-24 md:text-left md:mt-0">
+                        <p class="font-headline text-2xl text-primary mb-1">Chef Hakim Sènou</p>
+                        <p class="font-label text-xs tracking-[0.2em] text-outline uppercase">Visionnaire Exécutif</p>
+                    </div>
+                </div>
+                <div class="md:col-span-7 md:order-1 pt-12">
+                    <span class="font-label text-xs tracking-[0.3em] text-outline uppercase mb-6 block italic">Le Parcours Culinaire</span>
+                    <h2 class="font-headline text-5xl mb-12 font-light">La Précision Née <br/> de la Passion.</h2>
+                    <div class="grid grid-cols-1 gap-12 font-body text-on-surface-variant leading-relaxed">
+                        <div class="border-l border-outline-variant/30 pl-8">
+                            <p class="text-primary font-headline text-xl mb-3">01. La Fondation</p>
+                            <p>Des années de jeunesse consacrées aux terroirs oubliés du Bénin, réalisant qu'une simple baie sauvage possède parfois plus de complexité aromatique qu'une centaine de sauces classiques superposées.</p>
+                        </div>
+                        <div class="border-l border-outline-variant/30 pl-8">
+                            <p class="text-primary font-headline text-xl mb-3">02. La Maîtrise</p>
+                            <p>Dompter les éléments du feu et du froid absolu au sein de cuisines triplement étoilées au Michelin (Paris, Tokyo), afin d'y affiner l'art du minimalisme esthétique et de l'extraction végétale à froid.</p>
+                        </div>
+                        <div class="border-l border-outline-variant/30 pl-8">
+                            <p class="text-primary font-headline text-xl mb-3">03. L'Ère de l'Ébène</p>
+                            <p>L'édification de L'Ébène Haute Cuisine — un manifeste très personnel ambitionnant de retirer toutes les distractions visuelles du monde moderne pour recentrer l'Être exclusivement sur la majesté du plat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="py-48 px-12 text-center bg-background">
+            <div class="max-w-3xl mx-auto">
+                <span class="material-symbols-outlined text-primary text-5xl mb-8" data-icon="format_quote">format_quote</span>
+                <blockquote class="font-headline text-3xl md:text-5xl italic font-light leading-tight mb-8">
+                    "Nous ne cuisinons pas uniquement pour les yeux. Nous cuisinons pour le court silence entre chaque bouchée, ce fragment de temps inestimable où l'âme trouve enfin son rythme."
+                </blockquote>
+                <cite class="font-label text-sm tracking-[0.2em] uppercase text-outline">— Chef Hakim Sènou</cite>
+            </div>
+        </section>
+
+        <!-- Atmospheric Gallery: Bento Pattern -->
+        <section class="px-12 pb-32 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px]">
+                <div class="md:col-span-2 md:row-span-2 overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-1000" data-alt="Gros plan extrême de truffes fraîchement tranchées" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsboS3BEtDAtW21eqHkyDSRVX3IDzEo6yVE9f29gqZejCWzj3VXWaWT-T0t-LBDgs3ORB0JAGeAmZxTxjY3OeYBg1fm9f9beNjOKNArlfN13jQb4DoEu4vHOzwI4dTCjedCiFoxQqN4F_Ofe08eHJ6wIanZp-pG846JF3Rv5wW3FupJB1yXyWGvdP_YFqfPXH2v7aWEjCiRmONjtEzkbWm1_4TwSI4XatNN1vBRqAbvzqxccDpNS4LRteOVKQiN4VuienlZLweDUpp"/>
+                </div>
+                <div class="md:col-span-2 overflow-hidden">
+                    <img class="w-full h-full object-cover brightness-50 hover:scale-105 transition-transform duration-1000" data-alt="Cocktail signature avec feuille d'or" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEo2U2itV11m511CcWURfGM3nWNjk_v95BctWEID0hj_AXTrEkRRNgN4acwMl2UcBneLnzynhM4EITLfxffsTJYz34we4o8vJX2Q161YeRtzsoG5j3qP6y3gvtGGEU5m8RViuQ77-zzV2XhTdmqA4YiYwA50PlZQ50ZMFx-r6Yls-RsvJHpgeliOQGUr5XvfrX0Z1G-LqkuzuKGFKVcO1SW8s6AYYIT4Pu3UyxqyNftkN-_OtHUIfOZN8sqTu1Y2KaQzM_MGXz4ei_"/>
+                </div>
+                <div class="overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale brightness-75 hover:scale-105 transition-transform duration-1000" data-alt="Plat gastronomique moléculaire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD8hkFdZstjsYNmi_GnXatTa-MuuP-2cFMbBeMfVSS242aiAj1Ry2xQ70OAGOFW4nenPXjahBtkawrrOvMCA5ApF6D0HkevaIbS2ZH0xMBlR9C5rOmo0RSeewMNgOpDCYGT9dwjFvgdMxj9tetlsij-HKeyRsNlK8CDjsrwh0xq_DAGsHlO1wx9OYk0WiKnqzooy_v6i-D_ilkT4dNxJTkok9uzmsYrmHojGROJfa7cqOhqQcBtEF1zuMjs7TIESl-IwZsn1C6JhI4"/>
+                </div>
+                <div class="overflow-hidden">
+                    <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="Table rustique avec ingrédients frais" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrr_3cSBd0Ni7FsW98cuUu9JlL9liOvYBCuoUfsRUSpW5E6ARl7v6CbzvpULBX_Bwdnal1Tok8cc31NAnQNSmPCu3UAOjyOE4TCLPT9VJamQXjak5JXwngTMhufnSkkTPaIOQx_iY-zzTWDK6QApWcZLYoNk3b2_HnQkIW6Yja9kYxiiZrZzzSAe57wZk8hNP01oM7WBoOpM0unrlc4q3GzveixpnArA8aHPqERPi8AyiYcFSDwlmzAnEiQz81OxWJG6B71y4XHfvb"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-32 bg-surface-container-low border-t border-outline-variant/10">
+            <div class="text-center px-12 max-w-4xl mx-auto">
+                <h3 class="font-headline text-4xl mb-6">Expérimentez le Crépuscule.</h3>
+                <p class="font-body text-on-surface-variant mb-12">Le nombre de couverts étant rigoureusement limité, nous vous invitons à planifier précocement votre venue.</p>
+                <div class="flex flex-col md:flex-row justify-center gap-6">
+                    <a href="reservation.html" class="bg-primary text-on-primary px-12 py-5 text-sm font-semibold tracking-[0.2em] uppercase hover:bg-primary-fixed-dim transition-all duration-500">
+                        Réserver un Couvert
+                    </a>
+                    <a href="menu.html" class="border border-outline/20 text-primary px-12 py-5 text-sm font-semibold tracking-[0.2em] uppercase hover:bg-on-surface/5 transition-all duration-500">
+                        Voir le Menu
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Shell -->
+    <footer class="w-full rounded-none pt-24 pb-12 bg-[#0e0e0e] flex flex-col items-center px-12 text-center">
+        <div class="font-headline text-xl font-light text-[#f1c97d] mb-6">L'ÉBÈNE</div>
+        <div class="flex flex-wrap justify-center gap-8 mb-12">
+            <a class="font-label text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Dîner Privé</a>
+            <a class="font-label text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Presse</a>
+            <a class="font-label text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Carrières</a>
+            <a class="font-label text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Confidentialité</a>
+        </div>
+        <div class="font-body text-xs tracking-[0.1em] uppercase text-[#474746]">
+            © 2026 L'Ébène Haute Cuisine. Tous droits réservés.
+        </div>
+    </footer>
+</body>
+</html>

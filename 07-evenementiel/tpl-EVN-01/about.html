@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>L'Esprit | L'Atelier des Émotions</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container antialiased">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 vellum-effect shadow-ambient no-line-rule">
+        <div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+            <a href="index.html" class="text-2xl font-headline text-primary italic">L'Atelier <span class="not-italic text-on-surface">des Émotions</span></a>
+            <div class="hidden md:flex items-center gap-10 font-headline tracking-wide text-xs uppercase font-bold">
+                <a class="text-stone-500 hover:text-primary transition-slow" href="index.html">Accueil</a>
+                <a class="text-primary border-b border-primary/30 pb-1" href="about.html">Esprit</a>
+                <a class="text-stone-500 hover:text-primary transition-slow" href="services.html">Prestations</a>
+                <a class="text-stone-500 hover:text-primary transition-slow" href="gallery.html">Portfolio</a>
+                <a class="text-stone-500 hover:text-primary transition-slow" href="contact.html">Contact</a>
+            </div>
+            <button class="bg-primary text-on-primary px-6 py-2.5 text-[10px] font-label uppercase tracking-[0.2em] scale-up-lift shadow-lg">
+                Organiser mon événement
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-32">
+        <!-- Brand Manifesto -->
+        <section class="max-w-7xl mx-auto px-12 mb-40">
+            <div class="grid lg:grid-cols-2 gap-32 items-center">
+                <div class="header-offset">
+                    <span class="font-label text-primary text-[10px] uppercase tracking-[0.4em] font-bold mb-8 block">Le Manifeste</span>
+                    <h1 class="font-headline text-5xl md:text-7xl leading-tight text-on-surface mb-10 italic">
+                        L'Atelier des <br/><span class="not-italic text-stone-800">Émotions Silencieuses</span>
+                    </h1>
+                    <p class="text-xl font-light leading-loose mb-10 text-on-surface-variant">
+                        Nous croyons que le luxe n'est pas une question de bruit, mais de résonance. Chaque événement que nous concevons est une pièce unique, une œuvre éphémère gravée dans l'éternité des souvenirs.
+                    </p>
+                    <p class="text-lg font-light leading-relaxed text-on-surface-variant">
+                        À Cotonou, nous avons fondé cet atelier avec une mission : rejeter l'esthétique du "modèle" pour embrasser l'authenticité de votre récit. Nous marions l'autorité intemporelle du classique à la respiration moderne du minimalisme.
+                    </p>
+                </div>
+                <div class="relative group">
+                    <div class="absolute -top-12 -left-12 w-64 h-64 bg-primary/5 rounded-full blur-[120px]"></div>
+                    <div class="aspect-[3/4] rounded-2xl overflow-hidden glass-nav p-4 shadow-ambient">
+                        <img alt="Portrait ou Ambiance Atelier" class="w-full h-full object-cover rounded-xl transition-slow group-hover:scale-105" data-alt="Sophistication silencieuse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQft7a4u-Jvj2xHQJSY3mCols2Nh0dDi_B3ZWKlXoWE3zoTIXThbCDomvQ80d-qedU6cclVV00uNBNJaBEg5-dQI326IbGCXOTIx9FlM1f0CgaitRta4EPiXMhVMGUYzXX9t-SEs0Q7GfGwm9IYrZ1KQW2WoWYVAPHekClz7wjdw171pjoZIL9ubpcwodPM_NNmEnJNHtVVLxtpEXbzUaKjpAges75qHdjFBETaQRnw6TYpNlNspdgVY9VshMH4sqgtEJleDYvG6sC"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Values (No-Line Sectioning) -->
+        <section class="py-40 bg-surface-container-low transition-slow overflow-hidden">
+            <div class="max-w-screen-xl mx-auto px-12 grid md:grid-cols-3 gap-20">
+                <div class="space-y-10">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary shadow-ambient">
+                        <span class="material-symbols-outlined text-3xl">flare</span>
+                    </div>
+                    <h3 class="font-headline text-3xl mb-6 italic">L'Art de l'Intention</h3>
+                    <p class="text-on-surface-variant font-light leading-loose">Chaque fleur, chaque lumière, chaque note de musique est placée avec une intention précise. Rien n'est laissé au hasard, car le hasard n'a pas sa place dans l'exceptionnel.</p>
+                </div>
+                <div class="space-y-10 mt-12 md:mt-24">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-secondary shadow-ambient">
+                        <span class="material-symbols-outlined text-3xl">eco</span>
+                    </div>
+                    <h3 class="font-headline text-3xl mb-6 italic">Botanique Sélective</h3>
+                    <p class="text-on-surface-variant font-light leading-loose">Nous collaborons avec les meilleurs artisans floraux pour créer des environnements organiques qui respirent la vie et la sérénité.</p>
+                </div>
+                <div class="space-y-10">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-tertiary shadow-ambient">
+                        <span class="material-symbols-outlined text-3xl">ink_pen</span>
+                    </div>
+                    <h3 class="font-headline text-3xl mb-6 italic">Héritage Papier</h3>
+                    <p class="text-on-surface-variant font-light leading-loose">De la papeterie sur-mesure au design de table, nous privilégions les textures tactiles qui rappellent la noblesse des matériaux anciens.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Founders / Team -->
+        <section class="py-40 px-12 max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-32 items-center">
+                <div class="order-2 lg:order-1 relative">
+                    <div class="grid grid-cols-2 gap-8">
+                        <img class="rounded-xl w-full h-80 object-cover mt-12 shadow-ambient" data-alt="Détails couture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDie1XkA4udyRfv1a990WyUL64HR0iWHQkfs7aMrmFx1inelMY4xyz0TgjKlW2fvWAUnMaYR3cd0CCiA8qvBbiRS2aZcpfYT_FVHsK6Li3ukTEHbDjQZOd3tm48eE81rYUPdhY8r6-hfnGvybtXnI8CSr15uKZsj5iKnS3lbkV8LGCcWL16ZvdnFAzRjgF2EsTB67ds-F8BXNNsiiOrILRgyuGQ39NiAZzliwoAXraVjYzXWy6BTb-iNS5u2FuJooBuER23EwWfi5Q"/>
+                        <img class="rounded-xl w-full h-96 object-cover shadow-ambient" data-alt="Portrait fondateurs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0fAE0Z5_n2YntDGyNwC45gGpZlEBVfsqSVbMTkkQ4HE2Li-mHE3ujiZJ64W1BrV8wqreWiZpzuy55HIDs_QiIBVovfvIQaGf-PsbjbTsChUHLupTv5FgNSVu5LMkMvtHqhACkGUbg4Pog-5RJdPvOXbFullYvKNejV_OFHSSJxM1MY5AzwsadcEyGWgPMRhpVDdn1i8G1q6uyOYjFe8McS41iT5yu0igzanN1XwcdlTmj2E3YO0PrmK01v8nVT-TTK67h0mkkeCQ"/>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <span class="font-label text-stone-400 text-[10px] uppercase tracking-[0.4em] font-bold block mb-8">Les Créateurs</span>
+                    <h2 class="font-headline text-5xl md:text-6xl mb-10 leading-tight italic">Une Passion pour <br/><span class="not-italic text-stone-800">l'Excellence.</span></h2>
+                    <p class="text-lg font-light leading-relaxed mb-10 text-on-surface-variant italic">
+                        "L'Atelier n'est pas seulement une entreprise de coordination ; c'est un engagement envers l'Art. Nous passons des centaines d'heures à raffiner chaque palette chromatique et chaque ligne de design pour que le résultat final semble avoir été créé d'un simple souffle sans effort."
+                    </p>
+                    <div class="flex items-center gap-6">
+                        <span class="h-px w-16 bg-primary"></span>
+                        <div class="font-label text-[10px] uppercase tracking-[0.2em] font-bold">Léon &amp; Sika, Fondateurs</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface w-full pt-32 pb-16">
+        <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-start px-12 gap-16 w-full border-t border-stone-200/30 pt-16">
+            <div class="flex flex-col gap-8">
+                <div class="text-2xl font-headline text-primary italic">L'Atelier des Émotions</div>
+                <p class="text-stone-400 max-w-xs font-body text-xs leading-loose uppercase tracking-widest">Sophistication silencieuse • Design intentionnel • Cotonou.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-16 md:gap-32">
+                <div class="flex flex-col gap-6">
+                    <span class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold">Suivre</span>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="#">Instagram</a>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="#">Pinterest</a>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <span class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold">Atelier</span>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="contact.html">Nous Contacter</a>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="services.html">Nos Services</a>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <span class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold">Legal</span>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="#">Confidentialité</a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-32 px-12 text-center w-full">
+            <p class="font-body text-[8px] uppercase tracking-[0.4em] text-stone-300">© 2026 L'ATELIER DES ÉMOTIONS. BESPOKE ATELIER.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Témoignages | L'Atelier des Émotions</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container antialiased">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 vellum-effect shadow-ambient no-line-rule">
+        <div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+            <a href="index.html" class="text-2xl font-headline text-primary italic">L'Atelier <span class="not-italic text-on-surface">des Émotions</span></a>
+            <div class="hidden md:flex items-center gap-10 font-headline tracking-wide text-xs uppercase font-bold">
+                <a class="text-stone-500 hover:text-primary transition-slow" href="index.html">Accueil</a>
+                <a class="text-stone-500 hover:text-primary transition-slow" href="about.html">Esprit</a>
+                <a class="text-stone-500 hover:text-primary transition-slow" href="services.html">Prestations</a>
+                <a class="text-stone-500 hover:text-primary transition-slow" href="gallery.html">Portfolio</a>
+                <a class="text-primary border-b border-primary/30 pb-1" href="testimonials.html">Témoignages</a>
+                <a class="text-stone-500 hover:text-primary transition-slow" href="contact.html">Contact</a>
+            </div>
+            <button class="bg-primary text-on-primary px-6 py-2.5 text-[10px] font-label uppercase tracking-[0.2em] scale-up-lift shadow-lg">
+                Organiser mon événement
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24">
+        <!-- Header -->
+        <header class="max-w-7xl mx-auto px-12 mb-32 header-offset">
+            <span class="font-label text-primary text-[10px] uppercase tracking-[0.4em] font-bold mb-6 block font-bold">Mots Doux & Souvenirs</span>
+            <h1 class="font-headline text-6xl md:text-8xl italic mb-10 leading-tight">La Voix de nos <br/><span class="not-italic text-stone-800">Ambassadeurs.</span></h1>
+            <p class="max-w-xl text-lg font-light text-on-surface-variant leading-relaxed">
+                Rien ne nous honore plus que la confiance de ceux qui nous ont confié leurs moments les plus chers. Voici quelques récits de nos collaborations.
+            </p>
+        </header>
+
+        <!-- Featured Testimonial (High Impact) -->
+        <section class="max-w-screen-xl mx-auto px-12 mb-40">
+            <div class="bg-surface-container p-16 md:p-32 rounded-2xl relative overflow-hidden shadow-ambient">
+                <div class="absolute -top-20 -right-20 w-80 h-80 bg-primary/5 rounded-full blur-[100px]"></div>
+                <div class="relative z-10 flex flex-col items-center text-center">
+                    <span class="material-symbols-outlined text-6xl text-primary/20 mb-12" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                    <blockquote class="font-headline text-3xl md:text-5xl italic leading-tight text-on-surface-variant mb-12">
+                        "L'Atelier des Émotions a transcendé nos attentes. Ce n'était pas seulement une organisation sans faille, c'était une vision artistique qui a donné à notre mariage une âme et une profondeur que nous n'aurions jamais pu imaginer seuls."
+                    </blockquote>
+                    <div class="flex flex-col items-center">
+                        <img class="w-20 h-20 rounded-full object-cover mb-6 grayscale border-2 border-primary/20 p-1" data-alt="Portrait Amandine & Kodjo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQft7a4u-Jvj2xHQJSY3mCols2Nh0dDi_B3ZWKlXoWE3zoTIXThbCDomvQ80d-qedU6cclVV00uNBNJaBEg5-dQI326IbGCXOTIx9FlM1f0CgaitRta4EPiXMhVMGUYzXX9t-SEs0Q7GfGwm9IYrZ1KQW2WoWYVAPHekClz7wjdw171pjoZIL9ubpcwodPM_NNmEnJNHtVVLxtpEXbzUaKjpAges75qHdjFBETaQRnw6TYpNlNspdgVY9VshMH4sqgtEJleDYvG6sC"/>
+                        <p class="font-label text-xs uppercase tracking-[0.3em] text-primary font-bold">Amandine &amp; Kodjo</p>
+                        <p class="text-[10px] uppercase tracking-widest text-stone-400 mt-1 font-light italic">Domaine de l'Équateur, Ouidah</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Grid -->
+        <section class="max-w-7xl mx-auto px-12 grid md:grid-cols-2 gap-20">
+            <!-- Testimonial 1 -->
+            <div class="space-y-10 group">
+                <div class="h-px w-full bg-outline-variant/30 group-hover:bg-primary/40 transition-slow"></div>
+                <div class="flex items-start gap-8">
+                    <span class="font-headline text-stone-300 text-5xl italic leading-none">01.</span>
+                    <div class="flex-grow">
+                        <p class="text-xl font-light text-on-surface-variant leading-relaxed mb-8 italic">"Une approche minimaliste mais incroyablement puissante. Ils ont su capturer l'élégance que nous recherchions pour le gala annuel de notre fondation."</p>
+                        <div class="font-label text-xs uppercase tracking-[0.2em] font-bold">Directeur de la Fondation B.</div>
+                        <div class="text-[10px] uppercase tracking-widest text-stone-400 mt-1">Gala des Arts, Palais des Congrès</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="space-y-10 group">
+                <div class="h-px w-full bg-outline-variant/30 group-hover:bg-primary/40 transition-slow"></div>
+                <div class="flex items-start gap-8">
+                    <span class="font-headline text-stone-300 text-5xl italic leading-none">02.</span>
+                    <div class="flex-grow">
+                        <p class="text-xl font-light text-on-surface-variant leading-relaxed mb-8 italic">"La discrétion et le professionnalisme de l'équipe Jour J nous ont permis de vivre notre célébration à 100%. Tout s'est déroulé comme dans un rêve."</p>
+                        <div class="font-label text-xs uppercase tracking-[0.2em] font-bold">Sarah &amp; Jean-Marc</div>
+                        <div class="text-[10px] uppercase tracking-widest text-stone-400 mt-1">Mariage Intimiste, Haie Vive</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="space-y-10 group">
+                <div class="h-px w-full bg-outline-variant/30 group-hover:bg-primary/40 transition-slow"></div>
+                <div class="flex items-start gap-8">
+                    <span class="font-headline text-stone-300 text-5xl italic leading-none">03.</span>
+                    <div class="flex-grow">
+                        <p class="text-xl font-light text-on-surface-variant leading-relaxed mb-8 italic">"Leur direction artistique est tout simplement époustouflante. Ils ne font pas que décorer, ils créent des décors de cinéma."</p>
+                        <div class="font-label text-xs uppercase tracking-[0.2em] font-bold">Elena V.</div>
+                        <div class="text-[10px] uppercase tracking-widest text-stone-400 mt-1">Anniversaire de Prestige, Calavi</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="space-y-10 group">
+                <div class="h-px w-full bg-outline-variant/30 group-hover:bg-primary/40 transition-slow"></div>
+                <div class="flex items-start gap-8">
+                    <span class="font-headline text-stone-300 text-5xl italic leading-none">04.</span>
+                    <div class="flex-grow">
+                        <p class="text-xl font-light text-on-surface-variant leading-relaxed mb-8 italic">"Nous avons apprécié leur capacité à marier les traditions locales avec un design résolument moderne. Un dialogue parfait entre hier et aujourd'hui."</p>
+                        <div class="font-label text-xs uppercase tracking-[0.2em] font-bold">Famille Bio Guéra</div>
+                        <div class="text-[10px] uppercase tracking-widest text-stone-400 mt-1">Réception Familiale, Grand-Popo</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface w-full pt-32 pb-16">
+        <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-start px-12 gap-16 w-full border-t border-stone-200/30 pt-16">
+            <div class="flex flex-col gap-8">
+                <div class="text-2xl font-headline text-primary italic">L'Atelier des Émotions</div>
+                <p class="text-stone-400 max-w-xs font-body text-xs leading-loose uppercase tracking-widest">Sophistication silencieuse • Design intentionnel • Cotonou.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-16 md:gap-32">
+                <div class="flex flex-col gap-6">
+                    <span class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold">Suivre</span>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="#">Instagram</a>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="#">Pinterest</a>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <span class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold">Atelier</span>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="contact.html">Nous Contacter</a>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="services.html">Nos Services</a>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <span class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold">Legal</span>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="#">Confidentialité</a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-32 px-12 text-center w-full">
+            <p class="font-body text-[8px] uppercase tracking-[0.4em] text-stone-300">© 2026 L'ATELIER DES ÉMOTIONS. BESPOKE ATELIER.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#faf9f7",
+                    "on-surface": "#1a1c1b",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#fed488",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#e9e8e6",
+                    "surface-dim": "#dadad8",
+                    "on-secondary-fixed": "#261900",
+                    "secondary-fixed-dim": "#e9c176",
+                    "outline-variant": "#d1c5b4",
+                    "background": "#faf9f7",
+                    "inverse-primary": "#c8c6c5",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#f1f1ef",
+                    "secondary": "#775a19",
+                    "tertiary-fixed": "#e4e4cc",
+                    "on-surface-variant": "#4e4639",
+                    "inverse-surface": "#2f3130",
+                    "tertiary-fixed-dim": "#c8c8b0",
+                    "primary-container": "#a7a5a4",
+                    "on-primary-container": "#3b3b3b",
+                    "on-background": "#1a1c1b",
+                    "on-tertiary-fixed": "#1b1d0e",
+                    "secondary-fixed": "#ffdea5",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#5f5e5e",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "primary": "#5f5e5e",
+                    "surface-container-low": "#f4f3f1",
+                    "tertiary": "#5e604d",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed-variant": "#474746",
+                    "on-primary-fixed": "#1c1b1b",
+                    "surface-variant": "#e3e2e0",
+                    "primary-fixed": "#e5e2e1",
+                    "on-secondary-container": "#785a1a",
+                    "on-tertiary-fixed-variant": "#474836",
+                    "surface-container-highest": "#e3e2e0",
+                    "tertiary-container": "#a6a791",
+                    "surface-container": "#efeeec",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "on-tertiary-container": "#3b3c2b",
+                    "surface": "#faf9f7",
+                    "outline": "#7f7667"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #faf9f7; color: #1a1c1b; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .ghost-border { outline: 1px solid rgba(209, 197, 180, 0.15); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-stone-50/70 dark:bg-stone-950/70 backdrop-blur-xl">
+<nav class="flex justify-between items-center w-full px-8 py-6 max-w-full">
+<div class="text-2xl font-serif tracking-tighter text-stone-900 dark:text-stone-50">THE EDITORIAL AURA</div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="font-label text-sm uppercase tracking-widest text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors" href="#">About</a>
+<a class="font-label text-sm uppercase tracking-widest text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors" href="#">Services</a>
+<a class="font-label text-sm uppercase tracking-widest text-stone-900 dark:text-stone-50 border-b-2 border-yellow-800 dark:border-yellow-600 pb-1" href="#">Gallery</a>
+<a class="font-label text-sm uppercase tracking-widest text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-on-secondary-fixed text-secondary-fixed px-8 py-3 font-label text-xs uppercase tracking-widest hover:bg-secondary transition-all duration-500">
+                Book Now
+            </button>
+</nav>
+</header>
+<main class="pt-32 min-h-screen">
+<!-- Hero Section -->
+<section class="px-8 mb-24">
+<div class="max-w-screen-2xl mx-auto flex flex-col items-center text-center">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-secondary mb-6">Visual Narrative</span>
+<h1 class="font-serif text-6xl md:text-8xl tracking-tight leading-tight mb-12">Curated Beauty</h1>
+<div class="w-full h-[614px] relative overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="luxury minimalist beauty institute interior with curved white walls, soft ambient light, and high-end modern furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiHLx-pJm3TXiSFVmnwwCeqpkiiLWwDNsgbmTNAxJaLrNRQY44Ph1ovPqhwH9GoHXHhjkNK5VZTItnEnMFtKJ4LXZ7kwNOIDRM6zRYnP4ThK_5sSHhT1ez0je9RLr4aa34Del6X1lWczCNehYDnvG4y_S97JYNYNbBGT5EY8mbfFevgf13f43V6NW9X3nMirq0y9dRK4kClRAoDn10QN617JHt2XqFMYygDARH65RW_qnO7CeWTxJaNP4g61qSjgcqEow-gi-2QoI"/>
+<div class="absolute inset-0 bg-black/5"></div>
+</div>
+</div>
+</section>
+<!-- Asymmetric Gallery Grid -->
+<section class="px-8 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-y-32">
+<!-- Entry 01 -->
+<div class="md:col-span-7">
+<div class="relative group">
+<img class="w-full h-auto grayscale hover:grayscale-0 transition-all duration-1000" data-alt="close up of a professional facial treatment with delicate golden tools and botanical essences in a high-end spa" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8Ls42EP-DatGDaFRK6-ZsGxWJLbiyM0iolYO0iHIdQrtH3rYZyJs9HpHYZJFe3Ek-rP9sZHo7XLlFCofjs1TUqOhAgw3Q7m4GZBOQ_lYXIJhpnPdOZZ2jgKGMD7RLgrsLOJybCp8Nmc5eVdXlL7lBLcAioPCn-BFnzm0mhEK57RU0Vn-N7sgtE25WgnJ5ZTIaENVRVexYtZsgIA_2wZu8fMYLtIItJSfYU1tdeeNGT7YrVyEjHBKoziCK9ayFTcFWPFj6RpYQpyA"/>
+<div class="mt-8 flex justify-between items-baseline">
+<h3 class="font-serif text-3xl">The Ritual</h3>
+<span class="font-label text-xs uppercase tracking-widest text-outline">Sanctuary I</span>
+</div>
+</div>
+</div>
+<!-- Entry 02 (Offset) -->
+<div class="md:col-span-4 md:col-start-9 md:pt-48">
+<div class="relative group">
+<img class="w-full h-[600px] object-cover" data-alt="close up of high-end skincare products in minimalist glass packaging on a white marble surface with morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPZ68WV9hkPcX8vVKugH_IgdKy1OLq29PISXC0vvffyn4TWnua07-YOAtXp14asKf3UQJq9vewKmcquodXx3G5lEjQZX1AAy_BxkLzGSZxSwdTH7EBFmo7WlansZQoVqaVPG4FTqYTwtLnEXsnG0_bhXj3FYojN_o9j-Qz5DIMBvwmCOGO3YG3i1d08ITEqTSTH6BU3OdedoupolTV-gshN7qMxgQvD64CI3yZVMdpCU9r9arNIjbzPvfD0ZRefiBurhxfXCyz2_U"/>
+<div class="mt-8">
+<span class="font-label text-xs uppercase tracking-widest text-secondary block mb-2">Refinement</span>
+<h3 class="font-serif text-2xl">Elemental Care</h3>
+</div>
+</div>
+</div>
+<!-- Large "Editorial Reveal" Block -->
+<div class="md:col-span-12 py-24 flex flex-col md:flex-row items-center gap-0">
+<div class="w-full md:w-[65%] h-[700px] bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="architectural view of a luxury clinic waiting area with travertine floors and neutral toned organic shaped chairs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBD4FwWao5xvWu1FhRsfouM896d6a9ISqtFTC0T6X6pg6mACi5nww_d08oVXM0TPpbTJAtSvGJ9cZAbb-ISlrb5OiNTrlf75h-scXP-gtp40Ezn03yloCWfSnEGdszYM51buy4_BAzG3_Iaw3I0kenpbHEPnUQEweEyJrpIjf8uktY7J1v1HqKL9mqYJ7Qjywse2gyAL8P8YXIMRifR_xd1kuKzT3ip_qclENqUIDUPc93ORgsrNjylbGOH8_i0B94Ok1V6cA2Ehg"/>
+</div>
+<div class="w-full md:w-[45%] md:-ml-24 p-12 md:p-20 bg-surface-container-highest z-10">
+<span class="font-label text-xs uppercase tracking-widest text-outline block mb-6">Signature Environment</span>
+<h2 class="font-serif text-4xl md:text-5xl leading-tight mb-8">Architectural Serenity</h2>
+<p class="font-body text-on-surface-variant leading-relaxed max-w-sm">
+                            Every curve of our institute was designed to harmonize with the human form, creating a subconscious state of tranquility before your journey begins.
+                        </p>
+</div>
+</div>
+<!-- Entry 04 -->
+<div class="md:col-span-5 md:pt-24">
+<div class="relative group">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="serene woman with radiant glowing skin resting in a soft focus luxury spa environment with golden warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzRBNkiN0CjZIP-vKER9-aA6OaGW6jrRbjnIDhpk29ZyEd8CYO6R2AcI0I8kdbO3Xtn3Bo5_BDen1Ot2QjptP_KpF1vWVTlU0E6oiZqyySQO6ynI3S0nhTVac21i5rP-UEcDBJD1-bGPhR_ZIEFj40319OYCU64xJ8LpU95CrkFdYHGo251btcdDwwCdkWldaSh0a22TzoSy3KVWyxoG3YIrNYVY5Mj04gRH9xq-PQHzQLrYb7Xcq0aXAMM-ZVY3Tru1Tsd0Wn4PA"/>
+</div>
+<div class="mt-8 flex items-center justify-between">
+<span class="font-serif text-2xl">Luminous Outcome</span>
+<span class="font-label text-xs uppercase tracking-[0.2em] text-outline">Case 012</span>
+</div>
+</div>
+</div>
+<!-- Entry 05 (Bento-like detail) -->
+<div class="md:col-span-6 md:col-start-7">
+<div class="grid grid-cols-2 gap-8">
+<div class="col-span-2">
+<img class="w-full aspect-video object-cover" data-alt="macro shot of premium face serum droplet on a textured stone surface with dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK0ugyH8evuMoyzu4yQrlNuFMkNUf1shnRYVMBnpFovWK7t5hW0SG2eEAsgUIK0I5VmolQaIqbd4sVrE0XWoVqzcPkM3iWf6frX6uTdqMsrCBh8-SbByK5Ygncekip1W7M1sjTb9A4H6CkfVFEvTBAx-_N3MOTcDk4xUzPrIdnGfMsxHQ4XvaTTaFRm3xGzNHFa7hWuzUDPgb4b2OoTt2hu9IFrWo3MEnPwjIuUKJ--dlGVnC4i8RJIvDwmqDVN9bYqUgDmzU7Bww"/>
+</div>
+<div class="bg-surface-container-low p-8 flex flex-col justify-end min-h-[300px]">
+<h4 class="font-serif text-xl mb-4">Precision</h4>
+<p class="font-body text-xs uppercase tracking-widest leading-loose">The art of the micro-dose. Tailored to your cellular needs.</p>
+</div>
+<div>
+<img class="w-full h-full object-cover" data-alt="close up detail of a luxury treatment room with soft linen towels and a single branch of jasmine in a vase" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn5KtmV-kfxv-Xv7LRnGK_hpNpaAPC0DXYRwOhQUDWPSOlJR-9ulUTH6OQ3gyIsMt2cHojEdyQ31rlWzFlUN-ZFe8lR6HlzqZNL6BtyTVM46oSOuzWklphLMLcpcMY22lmD-j96xtzKxqbL4JPt3kVrUomShliDSop_ksUmadjSs-y-5n0bMKTK_wiHjCJOpDssKr99HmdkiDtFjCFG9lwFXFuwK-ZBbHHV0UUZVppRs8TOrnPTTzhbo2ycecixAsxyh70-NOggzQ"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Call to Action -->
+<section class="mt-48 py-48 bg-surface-dim">
+<div class="max-w-screen-md mx-auto text-center px-8">
+<h2 class="font-serif text-5xl md:text-6xl mb-12 italic leading-tight">Step into the aura.</h2>
+<a class="inline-block bg-on-secondary-fixed text-secondary-fixed px-12 py-5 font-label text-sm uppercase tracking-widest hover:bg-secondary transition-all duration-500" href="#">
+                    Secure Your Appointment
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-stone-200 dark:bg-stone-900">
+<div class="flex flex-col md:flex-row justify-between items-start w-full px-12 py-20 gap-12">
+<div class="max-w-xs">
+<div class="text-xl font-serif text-stone-900 dark:text-stone-50 mb-6">THE EDITORIAL AURA</div>
+<p class="font-body text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400">
+                    Elevated aesthetics for the discerning individual.
+                </p>
+</div>
+<div class="flex flex-wrap gap-16">
+<div class="flex flex-col gap-4">
+<span class="font-serif text-stone-900 dark:text-stone-50 text-lg">Social</span>
+<a class="font-body text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400 hover:text-yellow-800 dark:hover:text-yellow-500 transition-colors" href="#">Instagram</a>
+<a class="font-body text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400 hover:text-yellow-800 dark:hover:text-yellow-500 transition-colors" href="#">Pinterest</a>
+<a class="font-body text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400 hover:text-yellow-800 dark:hover:text-yellow-500 transition-colors" href="#">LinkedIn</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-serif text-stone-900 dark:text-stone-50 text-lg">Legal</span>
+<a class="font-body text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400 hover:text-yellow-800 dark:hover:text-yellow-500 transition-colors" href="#">Privacy Policy</a>
+</div>
+</div>
+<div class="font-body text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400">
+                © 2024 THE EDITORIAL AURA. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>

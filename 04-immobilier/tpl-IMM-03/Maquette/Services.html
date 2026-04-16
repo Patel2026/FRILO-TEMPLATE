@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f0f1f1",
+                    "surface-tint": "#5f5e5e",
+                    "background": "#f9f9f9",
+                    "tertiary-container": "#a7a5a5",
+                    "secondary-fixed": "#ffdea5",
+                    "secondary": "#775a19",
+                    "primary-fixed": "#e5e2e1",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#474746",
+                    "secondary-container": "#fed488",
+                    "surface-container-high": "#e8e8e8",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#1a1c1c",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "surface": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#d1c5b4",
+                    "on-primary-fixed": "#1c1b1b",
+                    "outline": "#7f7667",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "on-tertiary-container": "#3b3b3b",
+                    "surface-container": "#eeeeee",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-secondary-container": "#785a1a",
+                    "surface-variant": "#e2e2e2",
+                    "surface-container-low": "#f3f3f3",
+                    "on-primary-container": "#3b3b3b",
+                    "on-secondary-fixed": "#261900",
+                    "on-surface-variant": "#4e4639",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "tertiary-fixed": "#e4e2e1",
+                    "primary": "#5f5e5e",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "inverse-surface": "#2f3131",
+                    "surface-dim": "#dadada",
+                    "secondary-fixed-dim": "#e9c176",
+                    "inverse-primary": "#c8c6c5",
+                    "surface-bright": "#f9f9f9",
+                    "error": "#ba1a1a",
+                    "primary-container": "#a7a5a4",
+                    "on-background": "#1a1c1c",
+                    "tertiary": "#5f5e5e",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "spacing": {},
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .gold-gradient {
+            background: linear-gradient(90deg, #775a19 0%, #e9c176 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-fixed selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="bg-white/80 dark:bg-stone-950/80 backdrop-blur-xl fixed top-0 w-full z-50 tonal-shift-bg">
+<div class="flex justify-between items-center w-full px-12 py-6 mx-auto">
+<div class="font-['Noto_Serif'] font-bold text-xl tracking-tighter text-stone-900 dark:text-stone-50">CURATOR REALTY</div>
+<div class="hidden md:flex gap-12 font-['Noto_Serif'] text-sm tracking-widest uppercase">
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:opacity-70 transition-opacity duration-300" href="#">Listings</a>
+<a class="text-yellow-700 dark:text-yellow-500 font-semibold border-b border-yellow-700 hover:opacity-100 transition-all" href="#">Services</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:opacity-70 transition-opacity duration-300" href="#">Expertise</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:opacity-70 transition-opacity duration-300" href="#">Team</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:opacity-70 transition-opacity duration-300" href="#">Contact</a>
+</div>
+<button class="bg-on-surface text-on-primary px-8 py-3 text-xs font-bold tracking-[0.2em] uppercase hover:opacity-90 transition-opacity">
+                Private Viewing
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-12 mb-32">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-end gap-12">
+<div class="md:w-1/2">
+<span class="font-label text-xs tracking-[0.3em] uppercase text-secondary mb-8 block">Exquisite Orchestration</span>
+<h1 class="font-headline text-6xl md:text-8xl font-bold leading-[0.9] tracking-tighter mb-12">Beyond <br/>Brokerage.</h1>
+</div>
+<div class="md:w-1/2 pb-4">
+<p class="text-lg text-on-surface-variant max-w-md leading-relaxed border-l border-outline-variant pl-8">
+                            We operate at the intersection of high-finance and architectural heritage, providing a suite of services designed for the global elite.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Service 01: Acquisition Strategy -->
+<section class="bg-surface-container-low py-32 overflow-hidden">
+<div class="max-w-7xl mx-auto px-12 grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-7 relative">
+<div class="absolute -top-12 -left-12 text-[10rem] font-headline font-bold text-surface-container-highest select-none pointer-events-none">01</div>
+<img class="w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Modern architectural marvel at dusk, clean lines, sharp angles, minimalist pool reflecting the warm interior lighting, luxury lifestyle aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7fXu1KAwuFFql6LcdLToImaaCkKFcXIdw6PKYqY-fHlLFZ1QZCfkSXT63s-KZAi0_CEvIKG9RjqL711uGoairhoxwJ8e_l4MkI1LkjVBW_SlqIpZLVnPyGvqDalF4OfPkx3HxHBvMt5klb-euinz5-vXFM-7ogaqv327gCEYqCfJfbTot2lSox7fcE0R9l2YQGpEGd1edEFjUDaf6bar1yxoLbxY7y5Spx8B63l1iB1sVKpZtwWTYzZbaBKx9d30D8pTjcwoZru-5"/>
+</div>
+<div class="md:col-span-5">
+<h2 class="font-headline text-4xl font-bold mb-8">Acquisition <br/>Strategy</h2>
+<p class="text-on-surface-variant mb-8 leading-loose">
+                        Navigating the off-market landscape requires more than just access; it requires a strategic vision. We utilize proprietary data and deep-rooted networks to identify assets before they ever reach the public eye.
+                    </p>
+<ul class="space-y-4 mb-12">
+<li class="flex items-center gap-4 text-sm tracking-wide font-semibold uppercase">
+<span class="w-8 h-px bg-secondary"></span> Off-Market Sourcing
+                        </li>
+<li class="flex items-center gap-4 text-sm tracking-wide font-semibold uppercase">
+<span class="w-8 h-px bg-secondary"></span> Quantitative Due Diligence
+                        </li>
+<li class="flex items-center gap-4 text-sm tracking-wide font-semibold uppercase">
+<span class="w-8 h-px bg-secondary"></span> Architectural Feasibility
+                        </li>
+</ul>
+<button class="border-b border-secondary pb-2 text-xs font-bold uppercase tracking-widest text-secondary hover:text-on-surface transition-colors">Learn More</button>
+</div>
+</div>
+</section>
+<!-- Service 02: Portfolio Management (The Feature Slate) -->
+<section class="py-32">
+<div class="max-w-7xl mx-auto px-12">
+<div class="bg-surface-container-highest flex flex-col md:flex-row-reverse items-center min-h-[500px]">
+<div class="md:w-1/2 h-[600px] overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Ultra-luxury penthouse interior office with bespoke wooden furniture, floor-to-ceiling windows overlooking a modern skyline, soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeZvp-a0dj7MthR6W9T9QYqDyXtSV2qFWeIXL0-b_RKNF74104N4pu4GmcXCcd1nYd7t-zCKrl05jc9amWD3n9HIEJ8WpJGbLoML4PkxtPI3_RTifLZ0Bk-fbe3LIszOguM52hKcg85VWdre860V_CNVokepBE3iNGk5Hur5Cj_TKZAYlVFnGgeZ3FN4ZOjs-Jxg3gR6RdiXFwZV4bKOMGlZAaMKvh0wWGHuJiMwz1csEzhB9nIGFJM4NomMO1BgePmGDj3kIXls3M"/>
+</div>
+<div class="md:w-1/2 p-16 md:p-24 bg-surface-container-highest">
+<span class="font-label text-[10px] tracking-[0.4em] uppercase text-secondary mb-6 block">Legacy Curation</span>
+<h2 class="font-headline text-5xl font-bold mb-8 leading-tight">Portfolio <br/>Management</h2>
+<p class="text-on-surface-variant mb-12 leading-loose max-w-sm">
+                            Treating real estate as a living asset class. We provide active stewardship for multi-jurisdictional holdings, ensuring yield optimization and capital preservation.
+                        </p>
+<div class="flex gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-on-surface text-on-primary">
+<span class="material-symbols-outlined" data-icon="account_balance">account_balance</span>
+</div>
+<div class="w-12 h-12 flex items-center justify-center border border-outline text-on-surface">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Service 03: International Divestment (Editorial Grid) -->
+<section class="bg-surface py-32">
+<div class="max-w-7xl mx-auto px-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-24">
+<div class="md:col-span-4">
+<h2 class="font-headline text-4xl font-bold mb-4">International <br/>Divestment</h2>
+<div class="w-24 h-1 bg-secondary mb-8"></div>
+</div>
+<div class="md:col-span-8">
+<p class="text-xl font-light text-on-surface-variant max-w-2xl">
+                            When the time comes to exit an investment, our global reach ensures your asset is presented to the world's most qualified buyers through exclusive channels.
+                        </p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-outline-variant/20">
+<div class="p-12 border-r border-outline-variant/20 group hover:bg-on-surface transition-colors duration-500">
+<h3 class="font-headline text-2xl mb-6 group-hover:text-on-primary">Global Marketing</h3>
+<p class="text-sm text-on-surface-variant group-hover:text-on-primary/70 leading-relaxed mb-8">Bespoke cinematic productions and international press placement in elite publications.</p>
+<span class="material-symbols-outlined text-secondary group-hover:text-secondary-fixed text-4xl" data-icon="public">public</span>
+</div>
+<div class="p-12 border-r border-outline-variant/20 group hover:bg-on-surface transition-colors duration-500">
+<h3 class="font-headline text-2xl mb-6 group-hover:text-on-primary">Private Auctions</h3>
+<p class="text-sm text-on-surface-variant group-hover:text-on-primary/70 leading-relaxed mb-8">Curated bidding events for high-value assets requiring immediate and discreet resolution.</p>
+<span class="material-symbols-outlined text-secondary group-hover:text-secondary-fixed text-4xl" data-icon="gavel">gavel</span>
+</div>
+<div class="p-12 group hover:bg-on-surface transition-colors duration-500">
+<h3 class="font-headline text-2xl mb-6 group-hover:text-on-primary">Network Transfer</h3>
+<p class="text-sm text-on-surface-variant group-hover:text-on-primary/70 leading-relaxed mb-8">Direct matching with our internal 'White Glove' database of active institutional investors.</p>
+<span class="material-symbols-outlined text-secondary group-hover:text-secondary-fixed text-4xl" data-icon="hub">hub</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Service 04: Bespoke Advisory -->
+<section class="py-32 bg-on-surface text-on-primary">
+<div class="max-w-7xl mx-auto px-12 flex flex-col md:flex-row gap-24">
+<div class="md:w-1/2 order-2 md:order-1">
+<img class="w-full aspect-[4/5] object-cover" data-alt="Elegant architectural blueprints on a dark wooden table next to a glass of whiskey, warm lighting, high-end design consultation vibe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJeen-5SaKcLUY-I8GRQ9DVOIb5L8sgJvgVJNXDrlqicei9d9dyaM8OSwjz8eK0qPUvh3fozWx2Ow4qHdJl9Qdd9l2G-eM6XeLDpCypev2tAP4j6A2Thk3sf4z0f9ZjRl27bUlKMGP2iTrU2UOUzMMOHPYzfsPnE37gc4hwRUbcDNAgshaCM6XMR3DDjeUTXXgSPHIadxtnlBjGgdTrThXiZCxPuBO5_qA86ZbgG3XCNYz5RuehQHTVSzoVGjgSdjSQJ9Xe0BK6VJg"/>
+</div>
+<div class="md:w-1/2 order-1 md:order-2 flex flex-col justify-center">
+<span class="font-label text-xs tracking-[0.5em] text-secondary mb-8">THE INNER CIRCLE</span>
+<h2 class="font-headline text-5xl md:text-7xl font-bold mb-12">Bespoke <br/>Advisory.</h2>
+<p class="text-surface-variant text-lg leading-loose mb-12">
+                        For the rare requirements that fall outside standard definitions. From tax-efficient structuring to art-collection integration within architectural spaces, our advisory is limitless.
+                    </p>
+<div class="space-y-8">
+<div class="flex items-start gap-6">
+<span class="text-secondary font-headline text-2xl">A.</span>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest mb-2">Heritage Preservation</h4>
+<p class="text-surface-variant text-sm">Managing the sensitive renovation and legal protection of Grade-listed historic manors.</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<span class="text-secondary font-headline text-2xl">B.</span>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest mb-2">Multi-Generational Structuring</h4>
+<p class="text-surface-variant text-sm">Organizing family office assets for seamless inheritance and minimal friction.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-12 text-center">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-headline text-4xl mb-12">Ready to define your <br/>architectural legacy?</h2>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="gold-gradient text-on-primary px-12 py-5 font-bold uppercase tracking-widest text-xs hover:opacity-90 transition-opacity">Request Prospectus</button>
+<button class="border border-on-surface text-on-surface px-12 py-5 font-bold uppercase tracking-widest text-xs hover:bg-on-surface hover:text-on-primary transition-all">Speak with a Partner</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 tonal-shift-bg surface-container-low">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 gap-8">
+<div class="font-['Noto_Serif'] text-lg font-bold text-stone-900 dark:text-stone-50">CURATOR REALTY</div>
+<div class="flex flex-wrap justify-center gap-8 font-['Manrope'] text-xs uppercase tracking-[0.2em] text-stone-500">
+<a class="hover:text-yellow-600 transition-colors active:scale-95" href="#">Privacy Policy</a>
+<a class="hover:text-yellow-600 transition-colors active:scale-95" href="#">Terms of Service</a>
+<a class="hover:text-yellow-600 transition-colors active:scale-95" href="#">Cookie Settings</a>
+<a class="hover:text-yellow-600 transition-colors active:scale-95" href="#">Press Kit</a>
+</div>
+<div class="font-['Manrope'] text-xs uppercase tracking-[0.2em] text-stone-500">
+                © 2024 CURATOR REALTY. AN ARCHITECTURAL LEGACY.
+            </div>
+</div>
+</footer>
+</body></html>

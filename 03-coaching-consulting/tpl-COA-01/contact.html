@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | FRILO CONSULTING</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface-white text-slate-700 antialiased selection:bg-accent selection:text-white flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass-panel border-b border-primary/5 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-primary text-white flex items-center justify-center font-heading font-bold text-lg sharp-border">F</div>
+                <span class="font-heading font-bold text-xl text-primary tracking-tight">FRILO CONSULTING</span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-slate-600 hover:text-accent transition-colors text-sm uppercase tracking-wide font-medium">Accueil</a>
+                <a href="about.html" class="text-slate-600 hover:text-accent transition-colors text-sm uppercase tracking-wide font-medium">L'Expertise</a>
+                <a href="services.html" class="text-slate-600 hover:text-accent transition-colors text-sm uppercase tracking-wide font-medium">Services</a>
+                <a href="contact.html" class="text-primary font-semibold text-sm uppercase tracking-wide">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="tel:+33180000000" class="text-sm font-semibold text-primary flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[18px]">call</span> +33 1 80 00 00 00
+                </a>
+            </div>
+
+            <button class="md:hidden text-primary">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-24">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
+            
+            <!-- Left Info Side -->
+            <div>
+                <nav class="flex items-center gap-2 mb-8 text-xs font-bold tracking-widest uppercase text-slate-400">
+                    <a href="index.html" class="hover:text-primary transition-colors">Accueil</a>
+                    <span class="w-1 h-1 rounded-full bg-accent"></span>
+                    <span class="text-primary">Contact</span>
+                </nav>
+                
+                <h1 class="text-5xl md:text-6xl font-heading font-extrabold text-primary mb-6 leading-tight">Engagez la <br />conversation.</h1>
+                <p class="text-lg text-slate-600 font-light mb-12 max-w-md leading-relaxed">
+                    Vous avez un défi stratégique ? Une restructuration en vue ? Nos partenaires analysent votre dossier sous 48h. L'information partagée reste strictement confidentielle.
+                </p>
+
+                <div class="space-y-10">
+                    <div class="flex items-start gap-6">
+                        <div class="w-12 h-12 bg-surface-alt text-accent flex items-center justify-center sharp-border">
+                            <span class="material-symbols-outlined">corporate_fare</span>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">Bureau de Paris (Siège)</h3>
+                            <p class="text-slate-500 font-light">12 Place Vendôme<br />75001 Paris, France</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-6">
+                        <div class="w-12 h-12 bg-surface-alt text-accent flex items-center justify-center sharp-border">
+                            <span class="material-symbols-outlined">language</span>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">Bureau de Singapour</h3>
+                            <p class="text-slate-500 font-light">Marina Bay Financial Centre<br />Tower 3, Singapour 018982</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-6">
+                        <div class="w-12 h-12 bg-surface-alt text-accent flex items-center justify-center sharp-border">
+                            <span class="material-symbols-outlined">contact_support</span>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">Canaux Directs</h3>
+                            <p class="text-slate-500 font-light mb-1">Dir. Commercial: +33 1 80 00 00 00</p>
+                            <a href="mailto:contact@friloconsulting.com" class="text-accent underline font-medium">contact@friloconsulting.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Form Side -->
+            <div class="bg-surface-alt p-10 md:p-14 sharp-border relative shadow-corporate border border-slate-100">
+                <!-- Decorative element -->
+                <div class="absolute top-0 right-0 w-32 h-32 bg-accent opacity-5 rounded-bl-full pointer-events-none"></div>
+
+                <h2 class="text-2xl font-heading font-bold text-primary mb-8 relative z-10">Demande de Consultation Initiale</h2>
+                
+                <form class="space-y-6 relative z-10">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Prénom & Nom *</label>
+                            <input type="text" class="w-full bg-white border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary sharp-border px-4 py-3 text-slate-700 transition-colors" placeholder="Jean Dupont">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">E-mail Professionnel *</label>
+                            <input type="email" class="w-full bg-white border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary sharp-border px-4 py-3 text-slate-700 transition-colors" placeholder="jean@entreprise.com">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Nom de l'Entreprise *</label>
+                            <input type="text" class="w-full bg-white border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary sharp-border px-4 py-3 text-slate-700 transition-colors" placeholder="Société SA">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Taille de l'Organisation</label>
+                            <select class="w-full bg-white border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary sharp-border px-4 py-3 text-slate-700 transition-colors">
+                                <option>Moins de 50 employés</option>
+                                <option>50 - 250 employés</option>
+                                <option>250 - 1000 employés</option>
+                                <option selected>Plus de 1000 employés</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Nature de la demande *</label>
+                        <select class="w-full bg-white border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary sharp-border px-4 py-3 text-slate-700 transition-colors">
+                            <option>Sélectionnez un sujet</option>
+                            <option>Conseil en Stratégie Institutionnelle</option>
+                            <option>Coaching Exécutif & Leadership</option>
+                            <option>Audit et Performance Opérationnelle</option>
+                            <option>Fusion / Acquisition</option>
+                            <option>Autre (préciser ci-dessous)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Description du défi actuel *</label>
+                        <textarea class="w-full bg-white border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary sharp-border px-4 py-3 text-slate-700 transition-colors" rows="4" placeholder="Veuillez décrire brièvement le contexte et l'objectif recherché..."></textarea>
+                    </div>
+
+                    <div class="pt-4">
+                        <button type="submit" class="btn-primary w-full py-4 text-base font-bold uppercase tracking-wide sharp-border">
+                            Soumettre la demande
+                        </button>
+                        <p class="text-center text-xs text-slate-400 mt-4 leading-relaxed">
+                            En soumettant ce formulaire, vous acceptez que FRILO CONSULTING traite vos données afin de répondre à votre demande. Nos équipes s'engagent à respecter une confidentialité totale.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Simple Footer for Contact Page -->
+    <footer class="corporate-gradient py-8 border-t-2 border-accent mt-auto">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <span class="font-heading font-bold text-white text-sm">FRILO CONSULTING</span>
+            <div class="flex gap-4 text-slate-400 text-xs">
+                <a href="#" class="hover:text-white transition-colors">Politique de Confidentialité</a>
+                <span>|</span>
+                <span>© 2026</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

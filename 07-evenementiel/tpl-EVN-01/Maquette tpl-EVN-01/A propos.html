@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#ffdea5",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#faf9f6",
+                    "inverse-on-surface": "#f2f1ee",
+                    "surface-dim": "#dbdad7",
+                    "surface-container": "#efeeeb",
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#576846",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#806221",
+                    "inverse-surface": "#2f312f",
+                    "surface-container-low": "#f4f3f1",
+                    "on-secondary-fixed": "#111f05",
+                    "on-surface": "#1a1c1a",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "inverse-primary": "#e9c176",
+                    "surface-bright": "#faf9f6",
+                    "background": "#faf9f6",
+                    "on-tertiary-fixed-variant": "#584233",
+                    "secondary-fixed-dim": "#b9cda4",
+                    "secondary": "#526442",
+                    "tertiary-fixed-dim": "#dfc1ac",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "on-surface-variant": "#4d453f",
+                    "primary": "#775a19",
+                    "on-background": "#1a1c1a",
+                    "surface-container-high": "#e9e8e5",
+                    "primary-container": "#ffe2b2",
+                    "outline-variant": "#d0c4bc",
+                    "on-tertiary-fixed": "#28180b",
+                    "tertiary-container": "#ffe0cc",
+                    "tertiary": "#715a49",
+                    "on-tertiary-container": "#7a6251",
+                    "on-secondary-fixed-variant": "#3b4c2c",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#775a19",
+                    "on-error": "#ffffff",
+                    "primary-fixed-dim": "#e9c176",
+                    "surface-container-highest": "#e3e2e0",
+                    "outline": "#7f756e",
+                    "secondary-fixed": "#d5e9bf",
+                    "surface-variant": "#e3e2e0",
+                    "secondary-container": "#d2e6bc",
+                    "on-primary-fixed": "#261900",
+                    "tertiary-fixed": "#fddcc7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .vellum-effect {
+            backdrop-filter: blur(20px);
+            background-color: rgba(250, 249, 246, 0.8);
+        }
+        .serif-italic { font-style: italic; }
+        .letter-spacing-couture { letter-spacing: 0.15em; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-md shadow-[0_20px_40px_rgba(119,90,25,0.05)]">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif text-[#775a19] dark:text-[#d4af37] italic">The Ethereal Editorial</div>
+<div class="hidden md:flex gap-8 items-center font-serif tracking-wide text-sm">
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#775a19] transition-colors duration-500 ease-out" href="#">Home</a>
+<a class="text-[#775a19] dark:text-[#d4af37] font-semibold border-b border-[#775a19]/30 pb-1 hover:text-[#775a19] transition-colors duration-500 ease-out" href="#">About</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#775a19] transition-colors duration-500 ease-out" href="#">Services</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#775a19] transition-colors duration-500 ease-out" href="#">Gallery</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#775a19] transition-colors duration-500 ease-out" href="#">Testimonials</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#775a19] transition-colors duration-500 ease-out" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 text-xs uppercase tracking-widest hover:-translate-y-0.5 transition-transform duration-300 ease-out">
+                Plan your wedding
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section: Editorial Header -->
+<section class="px-12 mb-32 max-w-screen-2xl mx-auto">
+<div class="relative grid grid-cols-12 gap-8 items-end">
+<div class="col-span-12 lg:col-span-7 z-10">
+<span class="label-md text-primary letter-spacing-couture mb-6 block uppercase font-medium">Curators of Emotion</span>
+<h1 class="text-6xl md:text-8xl font-headline leading-tight text-on-surface mb-8">
+                        Crafting <span class="serif-italic">Timeless</span> <br/> Legacies.
+                    </h1>
+<p class="body-lg text-on-surface-variant max-w-md leading-relaxed">
+                        We don't just plan events; we architect atmosphere. Our studio is a digital atelier where luxury meets the intimacy of a handwritten note.
+                    </p>
+</div>
+<div class="col-span-12 lg:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover grayscale-[20%] hover:scale-105 transition-transform duration-1000" data-alt="Dreamy outdoor wedding ceremony setup with soft morning mist, white floral arrangements, and delicate chiffon draping at sunrise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv7_n0FnFStorXRHuAk9pXkdW76E1-zb8wa0enOh-8beDco26WCdX-jvDbu3_OVWdSo3_-A_GYZZTwJOuo7eJosZfnN5gN_z3SuRW43gpVj34LGp-KDZ1ZMUSAiu2hH2BQ-eyR4D8-nFLMTzrI6RmkB78u3dB1oR11obLiQJdwPqeUZejjGfOQKpobaAJxuHye73fJPuxkxC1qM_TcqQB_UBNZ5DZo-fjpkoAVvraO0iI_N2jbaH0iqSJOnuloJvA-zvWja30SG6o"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Philosophy Section -->
+<section class="py-32 bg-surface-container-low overflow-hidden">
+<div class="max-w-screen-xl mx-auto px-12 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-secondary-container opacity-20 rounded-full blur-3xl"></div>
+<div class="aspect-square rounded-full border border-outline-variant/30 p-8 flex items-center justify-center relative z-10">
+<div class="w-full h-full rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Elegant close up of high quality cotton paper wedding invitation with gold wax seal on a silk background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxPE9mIkm__gHiDKRwFJLV-rfGbmb1kiS2aNSL9_K6jK54Ugx37JyaGStut6HqVNc42M_y9-_ybssUTAabzldmNfDdBpkCe-OsztMVMjHqNuMmlJUHjz0wZasxX6cHjS5mv-y0CY0flQgO4hBarAX1LZ_mCwE4tpw1uhCIyKvDR5cTrXcRR28xpDIj01Rsvbj4BZh-V_FIGlwxkLfwg6f6KhS014i7ksBPsRyayDtVV36LWWetjtWjR_TuhxSHsVcWcGf8B8JN6qI"/>
+</div>
+</div>
+</div>
+<div>
+<h2 class="headline-md font-headline text-primary mb-8">Our Philosophy</h2>
+<div class="space-y-6">
+<p class="body-lg text-on-surface leading-loose italic font-serif">
+                            "Luxury is not about the excess of things, but the presence of soul."
+                        </p>
+<p class="body-lg text-on-surface-variant leading-relaxed">
+                            We believe a wedding should feel like a deep breath—calm, intentional, and profoundly personal. Our focus is on the invisible threads that bind an event together: the way light hits a glass of champagne, the hushed silence before a walk down the aisle, and the tactile comfort of heavy vellum paper.
+                        </p>
+<p class="body-lg text-on-surface-variant leading-relaxed">
+                            By stripping away the noise of traditional "wedding industry" trends, we allow the raw emotion of your story to take center stage. Every decision is filtered through the lens of artistry and heritage.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Values: The Pillars -->
+<section class="py-40 px-12 max-w-screen-2xl mx-auto">
+<div class="text-center mb-24">
+<span class="label-md text-tertiary letter-spacing-couture uppercase mb-4 block">The Pillars of our Practice</span>
+<h2 class="headline-md font-headline">Refined Intentionality</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Dedication -->
+<div class="text-center space-y-6">
+<div class="w-16 h-16 bg-surface-container rounded-full mx-auto flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">favorite</span>
+</div>
+<h3 class="title-lg font-headline text-on-surface">Dedication</h3>
+<p class="body-lg text-on-surface-variant px-4">
+                        We take a limited number of commissions each year to ensure your journey is treated with the reverence it deserves.
+                    </p>
+</div>
+<!-- Artistry -->
+<div class="text-center space-y-6">
+<div class="w-16 h-16 bg-surface-container rounded-full mx-auto flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-3xl">palette</span>
+</div>
+<h3 class="title-lg font-headline text-on-surface">Artistry</h3>
+<p class="body-lg text-on-surface-variant px-4">
+                        Design is our language. We curate palettes and textures that evoke feeling long after the last dance.
+                    </p>
+</div>
+<!-- Precision -->
+<div class="text-center space-y-6">
+<div class="w-16 h-16 bg-surface-container rounded-full mx-auto flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-3xl">architecture</span>
+</div>
+<h3 class="title-lg font-headline text-on-surface">Precision</h3>
+<p class="body-lg text-on-surface-variant px-4">
+                        The magic is in the logistics. Our technical rigor allows you to remain present while we manage the complex choreography.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Meet the Planner: Profile Section -->
+<section class="py-32 bg-white">
+<div class="max-w-screen-xl mx-auto px-12">
+<div class="flex flex-col lg:flex-row items-center gap-20">
+<div class="w-full lg:w-1/2">
+<div class="relative group">
+<div class="absolute -inset-4 border border-primary/10 rounded-xl translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
+<div class="aspect-[3/4] overflow-hidden rounded-xl relative z-10 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Professional soft portrait of a woman wedding planner in a cream silk blouse, standing in a sunlit artist studio with neutral tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCG8EQ99xDYfqYSo1ShmegRm-MiLEzuceVDEHuBQKHzHZLChSBK9NEad9H64Bdob8nuPB6Xw9-2GefmFzw_I3O5QlrtfEZUf0udYdNcnta4iHN8tBNBLYo_I9iOjYjysS1Gh7PNmiaekngoF18R9-S9AgT3LeEgFOPVPbAqQ-lrAwxUN2fFnL30w_m0Hq_yRw4LUypmDLBm2MVZBmBOWENbj7tvgZHGre5tVR5Ew4LWr77UQb9XpoWqR-dFelp2Br7POxISS6prS5M"/>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2">
+<span class="label-md text-primary letter-spacing-couture uppercase mb-4 block">The Creative Director</span>
+<h2 class="text-5xl font-headline mb-8">Meet Elena Vance</h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed">
+<p>
+                                With a background in fine arts and editorial styling, Elena founded The Ethereal Editorial to bridge the gap between logistical management and creative vision. Her approach is rooted in the belief that the most beautiful weddings are the ones that reflect the quiet, authentic moments between two people.
+                            </p>
+<p>
+                                "My goal is for you to look back at your gallery decades from now and feel exactly what you felt in that moment—not just what you saw. We design for legacy, not for likes."
+                            </p>
+<div class="pt-8 flex gap-6">
+<a class="text-primary hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined">camera</span></a>
+<a class="text-primary hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="text-primary hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA: Subtle & Refined -->
+<section class="py-40 text-center px-12 bg-surface-container-low">
+<h2 class="text-4xl md:text-5xl font-headline mb-12 max-w-2xl mx-auto leading-tight">
+                Ready to begin your <span class="serif-italic">curated</span> journey?
+            </h2>
+<button class="bg-primary text-on-primary px-12 py-5 text-sm uppercase tracking-[0.2em] hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-primary/10">
+                Inquire for 2025
+            </button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#faf9f6] dark:bg-[#1a1c1a] w-full pt-20 pb-12">
+<div class="flex flex-col md:flex-row justify-between items-start px-12 gap-8 w-full border-t border-stone-200/20 max-w-screen-2xl mx-auto">
+<div class="flex flex-col gap-4">
+<div class="text-xl font-serif text-[#775a19] dark:text-[#d4af37]">The Ethereal Editorial</div>
+<p class="font-sans text-xs uppercase tracking-[0.1em] leading-relaxed text-stone-500 dark:text-stone-500">© 2024 The Ethereal Editorial. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap gap-10">
+<div class="flex flex-col gap-3">
+<span class="font-sans text-xs uppercase tracking-[0.1em] text-[#775a19] font-bold">Connect</span>
+<a class="font-sans text-xs uppercase tracking-[0.1em] leading-relaxed text-stone-500 hover:text-[#775a19] transition-all duration-400" href="#">Instagram</a>
+<a class="font-sans text-xs uppercase tracking-[0.1em] leading-relaxed text-stone-500 hover:text-[#775a19] transition-all duration-400" href="#">Pinterest</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-sans text-xs uppercase tracking-[0.1em] text-[#775a19] font-bold">Inquiries</span>
+<a class="font-sans text-xs uppercase tracking-[0.1em] leading-relaxed text-stone-500 hover:text-[#775a19] transition-all duration-400" href="#">Newsletter Signup</a>
+<a class="font-sans text-xs uppercase tracking-[0.1em] leading-relaxed text-stone-500 hover:text-[#775a19] transition-all duration-400" href="#">Contact Us</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-sans text-xs uppercase tracking-[0.1em] text-[#775a19] font-bold">Legal</span>
+<a class="font-sans text-xs uppercase tracking-[0.1em] leading-relaxed text-stone-500 hover:text-[#775a19] transition-all duration-400" href="#">Privacy Policy</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

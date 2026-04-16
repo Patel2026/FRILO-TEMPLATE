@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#faf9f7",
+                    "on-surface": "#1a1c1b",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#fed488",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#e9e8e6",
+                    "surface-dim": "#dadad8",
+                    "on-secondary-fixed": "#261900",
+                    "secondary-fixed-dim": "#e9c176",
+                    "outline-variant": "#d1c5b4",
+                    "background": "#faf9f7",
+                    "inverse-primary": "#c8c6c5",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#f1f1ef",
+                    "secondary": "#775a19",
+                    "tertiary-fixed": "#e4e4cc",
+                    "on-surface-variant": "#4e4639",
+                    "inverse-surface": "#2f3130",
+                    "tertiary-fixed-dim": "#c8c8b0",
+                    "primary-container": "#a7a5a4",
+                    "on-primary-container": "#3b3b3b",
+                    "on-background": "#1a1c1b",
+                    "on-tertiary-fixed": "#1b1d0e",
+                    "secondary-fixed": "#ffdea5",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#5f5e5e",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "primary": "#5f5e5e",
+                    "surface-container-low": "#f4f3f1",
+                    "tertiary": "#5e604d",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed-variant": "#474746",
+                    "on-primary-fixed": "#1c1b1b",
+                    "surface-variant": "#e3e2e0",
+                    "primary-fixed": "#e5e2e1",
+                    "on-secondary-container": "#785a1a",
+                    "on-tertiary-fixed-variant": "#474836",
+                    "surface-container-highest": "#e3e2e0",
+                    "tertiary-container": "#a6a791",
+                    "surface-container": "#efeeec",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "on-tertiary-container": "#3b3c2b",
+                    "surface": "#faf9f7",
+                    "outline": "#7f7667"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #faf9f7;
+            color: #1a1c1b;
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Noto Serif', serif;
+        }
+        .ghost-border {
+            outline: 1px solid rgba(209, 197, 180, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/70 dark:bg-stone-950/70 backdrop-blur-xl ghost-border">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-full">
+<div class="text-2xl font-serif tracking-tighter text-stone-900 dark:text-stone-50">THE EDITORIAL AURA</div>
+<div class="hidden md:flex items-center gap-12">
+<a class="text-stone-900 dark:text-stone-50 border-b-2 border-yellow-800 dark:border-yellow-600 pb-1 font-label text-sm uppercase tracking-widest" href="#">Home</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors font-label text-sm uppercase tracking-widest" href="#">About</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors font-label text-sm uppercase tracking-widest" href="#">Services</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors font-label text-sm uppercase tracking-widest" href="#">Gallery</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors font-label text-sm uppercase tracking-widest" href="#">Contact</a>
+</div>
+<button class="bg-on-secondary-fixed text-secondary-fixed px-8 py-3 font-label text-xs uppercase tracking-[0.2em] hover:opacity-80 transition-all duration-300">Book Now</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale-[0.2]" data-alt="extreme close-up of woman's face with flawless dewy skin and elegant makeup in soft ethereal natural morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBhnBqC6-_OUB9qyxuUVBxqXIrAS3D0MFPIU33-FyXlpcclG0-zWYWGrJj9qKKCUVKyCbUGX1KaYoG2eplsTjNZ6jOUzwm9P_2tLR1k-r1oRGXHoUSP57yN7YZGToqdo_tu42riGuk6XB0_BqRttX5eGvV-RXguwJKTcpQ_v491OHbCzZF6vwb-wwp-UwyWV6Fw3wNevYmoarxqx_V8EM_vGIbH9vLsRITQ_Hxwix5pL1uhhz1S0i2LrDkemv1jB1xZMoLHQxYDc4"/>
+<div class="absolute inset-0 bg-black/10"></div>
+</div>
+<div class="relative z-10 text-center max-w-4xl px-6">
+<span class="font-label text-sm uppercase tracking-[0.3em] text-surface-bright mb-8 block">Est. 2024 — Paris</span>
+<h1 class="text-6xl md:text-8xl text-surface-bright font-headline leading-tight tracking-tighter mb-12">The Poetry of <br/><span class="italic">Timeless Beauty</span></h1>
+<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+<button class="bg-surface-bright text-on-surface px-12 py-5 font-label text-xs uppercase tracking-[0.2em] transition-all duration-500 hover:bg-secondary-fixed">Book an appointment</button>
+<button class="border border-surface-bright/30 text-surface-bright px-12 py-5 font-label text-xs uppercase tracking-[0.2em] backdrop-blur-sm hover:bg-surface-bright/10 transition-all">Explore Services</button>
+</div>
+</div>
+</section>
+<!-- Services Preview (Bento/Asymmetric Grid) -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="mb-24 text-center md:text-left">
+<p class="font-label text-xs uppercase tracking-[0.3em] text-secondary mb-4">Our Curated Rituals</p>
+<h2 class="text-5xl font-headline tracking-tight text-on-surface">The Science of Sophistication</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<!-- Skincare -->
+<div class="md:col-span-7 group">
+<div class="aspect-[16/9] mb-8 overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="minimalist aesthetic of luxury glass skincare bottles on textured stone surface with morning shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAIg9lbybUBp3_RH-hfHNcwU9RH_KsXIb-rx3gtNnsH1ZPsceaV_EPrQxa4cmBq7YnKWq8XstzQ1PlGvWf6uxRNUaovG_bhPMyjVy1EntnjaRM9xRnbhvprJoxcCLpn_hOY-jXU5kMjkDd9T--cEzDcDSck_fPd3-arn7Tl8ntJoFY7fNPw33TO8Yvmq795CymQ16Zzv6_kdZJuNy-QZqCgLQBWfCkLOoHRP8R7PkPUkAHt_G09tm_48G8bhaEE_YICUeFHK0MDFQ"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-2xl font-headline mb-2">Molecular Skincare</h3>
+<p class="text-on-surface-variant max-w-md">Precision-driven treatments designed to revitalize the cellular structure and restore luminosity.</p>
+</div>
+<span class="font-label text-xs uppercase tracking-widest text-secondary mt-2">Discover</span>
+</div>
+</div>
+<!-- Massage -->
+<div class="md:col-span-5 md:mt-24 group">
+<div class="aspect-[4/5] mb-8 overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="tranquil overhead shot of spa treatment with essential oils and smooth warm stones on soft linen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASgvk2-oHH5AfhmNXvCGxgmsly9pruC505t6tujjr63FUUNicyojlP1L7XKbBXrqJxgAXFwNmS3LYrsiRFb7ufGZ0TR_WMZ83ItmMEmUN6iMr-FB2FU8qPC2JV7V54e-bgiOpi9XKWpRv3Thc-nMM7xQJ6G3eQoA5jxixn9fZtxVNRdgbWDLQybm-bhIOXybHniX0l6DRPyqxZ_1bzdv7q19anPbFR91339lNOGd9rTdMVBHc61uQf7ahxiyo5MzU0Y-I5TW-FMTY"/>
+</div>
+<h3 class="text-2xl font-headline mb-2">Architectural Massage</h3>
+<p class="text-on-surface-variant">Techniques that sculpt and release, harmonizing the body's natural silhouette through rhythmic flow.</p>
+</div>
+<!-- Specialized Treatments -->
+<div class="md:col-span-5 group">
+<div class="aspect-[4/5] mb-8 overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="close-up of elegant gold leaf facial application on model with closed eyes and serene expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4x2dd5TXnaIN1pyVRgLf2xeYpkljFvIu-gDLZ1m9-m0-M8QSZ77NQ5TwhPT9tiiTgZs59DaxiT7DGma4cG3uB92eD0VxgKkU6CXkNpbxlYsj69Mzzju9hw8XbVGUK18Lsw0CD_QmgHZr605gTCsQpJRsLqzBnpLmUidOujRlX8afz-NkyV9LLnM7kIpclKQE_dMgCqx_yKcQ8ZfgZWlB6wx0TApXo8Yk2f6oxiRbMF6kHnZU4gv6bCRKq15tMgr9E6GKqtWAdRdI"/>
+</div>
+<h3 class="text-2xl font-headline mb-2">Signature Accents</h3>
+<p class="text-on-surface-variant">Bespoke enhancements that define and illuminate your natural features with artisan precision.</p>
+</div>
+<!-- Hidden Space/Asymmetry -->
+<div class="md:col-span-7 flex items-center justify-center p-12">
+<div class="max-w-sm text-center">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6">auto_awesome</span>
+<p class="italic font-headline text-xl text-on-surface-variant leading-relaxed">"Beauty begins the moment you decide to be yourself, enhanced by the hands of experts."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Preview: The Editorial Reveal -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center relative">
+<div class="w-full md:w-3/5 z-0">
+<img class="w-full h-[600px] object-cover grayscale-[0.3]" data-alt="interior of a high-end minimalist beauty clinic with curved walls beige stone and warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBymlSIqW5F4jtwIsXVK8U1_5lZR_zk0InM44lbY5vl5wKq37CjKXEiXztIRjq9tGhReDkFnJ3qO-69MVmS4TGKtr9m-dRrXx7zAU27axFJ8UoELtQN4jJiaubwr9SWII-ZvlbCWt0tZ_FKhxuTCtFdftq5dRZteJqZOMXCiCPsigFXSJFQl6sS7rbRsNnLjxhqplJ3CugMaJPVZ6XZvOGgZUDzaJmCG7nLcLU7D_UdbnN5yO4liRWsbcWSSst7x-EsA2PU29vh6c"/>
+</div>
+<div class="w-full md:w-2/5 md:-ml-24 z-10 bg-surface-container-highest p-16 shadow-2xl">
+<p class="font-label text-xs uppercase tracking-[0.3em] text-secondary mb-6">The Institute</p>
+<h2 class="text-4xl font-headline mb-8 leading-snug">Curating the Aura <br/>of Modern Luxury</h2>
+<p class="text-on-surface-variant mb-10 leading-relaxed">Founded on the principles of discretion, refinement, and clinical excellence, The Editorial Aura is a sanctuary for those who seek beauty as a philosophy. We blend traditional craftsmanship with avant-garde technology.</p>
+<a class="inline-flex items-center gap-4 font-label text-xs uppercase tracking-[0.2em] text-on-surface group" href="#">
+                    Read our story
+                    <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">east</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div>
+<p class="font-label text-xs uppercase tracking-[0.3em] text-secondary mb-4">Visual Journal</p>
+<h2 class="text-5xl font-headline tracking-tight">The Aesthetic Portfolio</h2>
+</div>
+<div class="h-[1px] flex-grow bg-outline-variant/30 hidden md:block mx-12 mb-6"></div>
+<a class="font-label text-xs uppercase tracking-[0.2em] border-b border-on-surface pb-1" href="#">View Full Gallery</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-[3/4] bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" data-alt="soft focus close-up of a white orchid against a neutral beige wall with dramatic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiiyyzRPEWyiqc_sNuajhS2kNL21NsEqd0tLUNOBQGDUldQ0AAgBtKJSuvahVKAnFUrLChuDL3vuUVZVgLvw-KC7V47wd_YGda1gRikR-PZsJfbf7_-xUmsc9qVQSZA1olZiK2Oa9JzYkbaSubFsH81MVHdGPrRxzDSz-MBta_MUOh0Ot7uF_1s4M3R_j1JMBPkkDjHloMuI5lpUc3m9ULRJGYgWywNVmg2IvSc7zwEwnVNmsw5SpRD7FtpSwssX8WVXTYQw41oz8"/>
+</div>
+<div class="aspect-[3/4] bg-surface-variant overflow-hidden md:mt-12">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" data-alt="a pair of elegant minimalist leather slippers on a stone floor in a bright sunlit room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqZAAt9QNHzDzSN8AUjp3T_H0GfSgF5BzOM00aVgJsY_xE-J1vxnzsuqAQ5Z7-9lPzkeDMYjCEWJPUEL9JvCusgDHdBR_rJt3Zx7tnk8AuN76zV3wTnIPqhzc4phMeY33vUbN9cZnaX5MgHXZmmU4MtAJH7phFZhgKlmSVLSKpLVopIMvyE0_DMfCnq-cy5zKDp6fT10nVjlMYQpCGPgGhLK_qUvt3ii1CJ1xZneAw61yX06qt-y9lqX6DWBJLXTk_xWYxFlGGtxM"/>
+</div>
+<div class="aspect-[3/4] bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" data-alt="luxury cosmetic cream swirling in a glass jar with a gold lid in soft focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbntIiojGEk5tergfxA2MbB_u59om2N7R_MLjSL0mkBjK4WCktZDBqjsnUo6b6FF2NG5algDuqa6vhfrpzOfKydKEl3V1ZoLOksBbUljE9J3qjcIvehg_bCtmjdEIqg1fJMLEdq5kdhqcFKowOMORKL-SsUAxJt9DLIB9n88ngzH7fzZeYAQZkeownE4p71E_oQXHqXpKCvL9gsxkrp-3gxpps3wpUmgKEaU3ZZWSaWg-gwhB3xRpYLZ4tNzzBssGIer3UcoR6YBs"/>
+</div>
+<div class="aspect-[3/4] bg-surface-variant overflow-hidden md:mt-12">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" data-alt="reflection of a woman's silhouette in a large minimalist round mirror in a spa setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsVTh4kKO4xiWxL-w2kh-9f9DjI5Gg2nuDi8CCdi_-maLIETMNZebc8lfcILq_JOOUcnN3up3YudkTRGijFY3FM2KsI6Rxpvg3uOJO9iCBsVVtKe8K_E-OS7yYvyZ3rpJ28lMGFsXrtTsYD6BR_L0iNYgwM-EXSF5A8MVO3kGKX6UJSksYmNuxDMdtMrXnOEHIEVVnFiAH-Ll0YQGtnecgT9C6dx-xxXYGa-QLocbaaNZddNj9Ps-4HUmaTpPC_SXQ3seRGrdoaR0"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-32 bg-surface-dim">
+<div class="max-w-5xl mx-auto px-8">
+<div class="text-center mb-20">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">format_quote</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<div class="text-center md:text-left">
+<p class="font-headline text-lg italic text-on-surface mb-8 leading-relaxed">"An unparalleled experience of stillness and rejuvenation. The attention to detail is truly editorial in its precision."</p>
+<p class="font-label text-xs uppercase tracking-widest font-bold">Elena Vance</p>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant/60">Creative Director</p>
+</div>
+<div class="text-center md:text-left">
+<p class="font-headline text-lg italic text-on-surface mb-8 leading-relaxed">"The atmosphere alone is restorative. I leave every treatment feeling like a more refined version of myself."</p>
+<p class="font-label text-xs uppercase tracking-widest font-bold">Julianne Moore</p>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant/60">Philanthropist</p>
+</div>
+<div class="text-center md:text-left">
+<p class="font-headline text-lg italic text-on-surface mb-8 leading-relaxed">"Beyond beauty treatments, it's a sensory journey. The Editorial Aura has redefined luxury wellness for me."</p>
+<p class="font-label text-xs uppercase tracking-widest font-bold">Sofia Ricci</p>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant/60">Fashion Editor</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="relative py-48 bg-on-secondary-fixed text-secondary-fixed overflow-hidden">
+<!-- Abstract shape backgrounds instead of textures -->
+<div class="absolute top-0 right-0 w-1/2 h-full bg-secondary-fixed/5 -skew-x-12 translate-x-1/4"></div>
+<div class="absolute bottom-0 left-0 w-1/3 h-1/2 border border-secondary-fixed/10 -translate-x-1/4 translate-y-1/4"></div>
+<div class="relative z-10 max-w-4xl mx-auto text-center px-8">
+<h2 class="text-5xl md:text-7xl font-headline mb-12 tracking-tight leading-tight">Ready to Reveal Your <br/><span class="italic">Signature Glow?</span></h2>
+<p class="text-secondary-fixed-dim font-label text-sm uppercase tracking-[0.4em] mb-16 max-w-lg mx-auto leading-loose">Limited sessions available for new clients. Secure your sanctuary today.</p>
+<button class="bg-secondary-fixed text-on-secondary-fixed px-16 py-6 font-label text-xs uppercase tracking-[0.3em] hover:bg-surface-bright transition-all duration-500">Secure Appointment</button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-stone-200 dark:bg-stone-900 w-full">
+<div class="flex flex-col md:flex-row justify-between items-start w-full px-12 py-20 gap-12">
+<div class="flex flex-col gap-8">
+<div class="text-xl font-serif text-stone-900 dark:text-stone-50">THE EDITORIAL AURA</div>
+<p class="max-w-xs font-label text-xs uppercase tracking-widest text-stone-600 dark:text-stone-400">Curating elevated beauty experiences since 2024. A sanctuary of science and art.</p>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div class="flex flex-col gap-4">
+<h4 class="font-headline text-stone-900 dark:text-stone-50 mb-2">Explore</h4>
+<a class="font-label text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400 hover:text-yellow-800 dark:hover:text-yellow-500 transition-colors" href="#">Services</a>
+<a class="font-label text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400 hover:text-yellow-800 dark:hover:text-yellow-500 transition-colors" href="#">Academy</a>
+<a class="font-label text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400 hover:text-yellow-800 dark:hover:text-yellow-500 transition-colors" href="#">Boutique</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-headline text-stone-900 dark:text-stone-50 mb-2">Connect</h4>
+<a class="font-label text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400 hover:text-yellow-800 dark:hover:text-yellow-500 transition-colors" href="#">Instagram</a>
+<a class="font-label text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400 hover:text-yellow-800 dark:hover:text-yellow-500 transition-colors" href="#">Pinterest</a>
+<a class="font-label text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400 hover:text-yellow-800 dark:hover:text-yellow-500 transition-colors" href="#">LinkedIn</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-headline text-stone-900 dark:text-stone-50 mb-2">Newsletter</h4>
+<div class="flex border-b border-stone-400 dark:border-stone-700 py-2">
+<input class="bg-transparent border-none focus:ring-0 font-label text-xs uppercase tracking-widest w-full" placeholder="YOUR EMAIL" type="email"/>
+<button class="text-stone-900 dark:text-stone-50">
+<span class="material-symbols-outlined">north_east</span>
+</button>
+</div>
+<p class="font-label text-[10px] uppercase tracking-widest text-stone-400">Join our mailing list for exclusive event invitations.</p>
+</div>
+</div>
+<div class="px-12 pb-12 flex flex-col md:flex-row justify-between items-center gap-6 opacity-60">
+<span class="font-label text-xs uppercase tracking-widest text-stone-800 dark:text-stone-200">© 2024 THE EDITORIAL AURA. ALL RIGHTS RESERVED.</span>
+<div class="flex gap-8">
+<a class="font-label text-xs uppercase tracking-widest text-stone-800 dark:text-stone-200 hover:text-yellow-800 transition-colors" href="#">Privacy Policy</a>
+<a class="font-label text-xs uppercase tracking-widest text-stone-800 dark:text-stone-200 hover:text-yellow-800 transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

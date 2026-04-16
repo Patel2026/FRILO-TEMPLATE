@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menu | The Kinetic Gourmet</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Be+Vietnam+Pro:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#ffc6a0",
+                    "secondary-fixed-dim": "#ffb37e",
+                    "primary-container": "#ff7577",
+                    "primary": "#ba0027",
+                    "surface-bright": "#f9f6f5",
+                    "surface-tint": "#ba0027",
+                    "secondary-dim": "#7f3e00",
+                    "tertiary-fixed-dim": "#bc8df9",
+                    "primary-dim": "#a30021",
+                    "surface-container-high": "#e4e2e1",
+                    "tertiary-container": "#c89dff",
+                    "on-secondary-fixed": "#562800",
+                    "error-container": "#f95630",
+                    "background": "#f9f6f5",
+                    "error": "#b02500",
+                    "on-secondary-fixed-variant": "#803e00",
+                    "tertiary-dim": "#65379d",
+                    "on-secondary": "#fff0e8",
+                    "on-error": "#ffefec",
+                    "outline-variant": "#afadac",
+                    "inverse-surface": "#0e0e0e",
+                    "on-primary": "#ffefee",
+                    "secondary": "#914700",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-primary": "#ff525b",
+                    "outline": "#787676",
+                    "surface-container": "#eae7e7",
+                    "on-surface": "#2f2f2e",
+                    "on-primary-fixed-variant": "#60000f",
+                    "on-background": "#2f2f2e",
+                    "error-dim": "#b92902",
+                    "surface-container-low": "#f3f0ef",
+                    "on-tertiary-fixed-variant": "#4d1c85",
+                    "inverse-on-surface": "#9e9c9c",
+                    "on-tertiary-fixed": "#25004b",
+                    "on-tertiary": "#faefff",
+                    "on-surface-variant": "#5c5b5b",
+                    "surface-dim": "#d6d4d3",
+                    "secondary-container": "#ffc6a0",
+                    "tertiary": "#7144aa",
+                    "surface-variant": "#dfdcdc",
+                    "on-tertiary-container": "#440f7c",
+                    "surface": "#f9f6f5",
+                    "on-primary-fixed": "#000000",
+                    "primary-fixed": "#ff7577",
+                    "on-secondary-container": "#733700",
+                    "surface-container-highest": "#dfdcdc",
+                    "primary-fixed-dim": "#ff5960",
+                    "on-error-container": "#520c00",
+                    "on-primary-container": "#4e000a",
+                    "tertiary-fixed": "#c89dff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Be Vietnam Pro"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Epilogue', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-shadow {
+            box-shadow: 0 12px 32px rgba(186, 0, 39, 0.08);
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black italic text-primary tracking-tighter uppercase font-headline">
+                The Kinetic Gourmet
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-headline tracking-tighter uppercase font-bold text-on-surface hover:text-primary transition-colors hover:scale-105 transition-transform duration-200" href="#">Home</a>
+<a class="font-headline tracking-tighter uppercase font-bold text-on-surface hover:text-primary transition-colors hover:scale-105 transition-transform duration-200" href="#">About</a>
+<a class="font-headline tracking-tighter uppercase font-bold text-primary border-b-2 border-primary pb-1 hover:scale-105 transition-transform duration-200" href="#">Menu</a>
+<a class="font-headline tracking-tighter uppercase font-bold text-on-surface hover:text-primary transition-colors hover:scale-105 transition-transform duration-200" href="#">Services</a>
+<a class="font-headline tracking-tighter uppercase font-bold text-on-surface hover:text-primary transition-colors hover:scale-105 transition-transform duration-200" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-headline font-bold uppercase tracking-tighter scale-95 active:opacity-80 transition-all hover:bg-primary-dim">
+                Order Now
+            </button>
+</div>
+</nav>
+<main class="pt-24 pb-20 max-w-7xl mx-auto px-6">
+<!-- Hero Section -->
+<header class="py-12 mb-8">
+<h1 class="text-6xl md:text-8xl font-black tracking-tighter text-primary leading-[0.9] mb-4">
+                THE<br/>MENU.
+            </h1>
+<p class="text-on-surface-variant text-lg max-w-xl font-medium">
+                High-energy flavors, editorial presentation. Every bite is designed to move your soul.
+            </p>
+</header>
+<!-- Category Quick Navigation -->
+<div class="sticky top-[80px] z-40 py-4 bg-surface flex gap-3 overflow-x-auto no-scrollbar mb-12">
+<a class="bg-secondary px-6 py-2 rounded-md text-on-secondary font-bold whitespace-nowrap" href="#burgers">Burgers</a>
+<a class="bg-surface-container-high px-6 py-2 rounded-md text-on-surface-variant font-bold whitespace-nowrap hover:bg-surface-variant" href="#sides">Sides</a>
+<a class="bg-surface-container-high px-6 py-2 rounded-md text-on-surface-variant font-bold whitespace-nowrap hover:bg-surface-variant" href="#drinks">Drinks</a>
+<a class="bg-surface-container-high px-6 py-2 rounded-md text-on-surface-variant font-bold whitespace-nowrap hover:bg-surface-variant" href="#desserts">Desserts</a>
+</div>
+<!-- Menu Categories -->
+<div class="space-y-24">
+<!-- Category: Burgers -->
+<section id="burgers">
+<div class="flex items-baseline gap-4 mb-10">
+<h2 class="text-4xl font-black tracking-tighter text-on-surface uppercase">Burgers</h2>
+<div class="h-[2px] grow bg-surface-container-highest"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Item Card -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group kinetic-shadow flex flex-col">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Gourmet double cheeseburger with melting cheddar, fresh lettuce, and ripe tomato on a toasted brioche bun, studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHF5j1UHcAztre6b_KlPcxcilAqVMhBDvUkpvphlZ5zM1gtFm09BGeMVJ3ZmujRHPre3TdfPFw4FViGeGfOW2ui0JCTaxj55jQe2d-Eu6slN8H7sdpiU__FRhlfrOF2fvuH7bdzjXcc_eFHcY1CRen9p9Mly5YIvcizu1ghh3bMEkOqe0k--7u1lJ2nKff6cMMOHyyxIitHEtRK6BpYBFreNm5swPrQlezcqKPyi8SjZVm689lGcGB1-Z5v7EAm6xASsgmaSu0L5lm"/>
+</div>
+<div class="p-6 flex flex-col grow">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-on-surface">The Kinetic Prime</h3>
+<span class="text-primary font-black text-xl">$16.50</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                                Aged Angus beef, smoked gouda, caramelized onions, and our signature "Zest" sauce on a handmade brioche bun.
+                            </p>
+<button class="mt-auto w-full bg-secondary-container text-on-secondary-container py-3 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-secondary-fixed transition-colors active:scale-95">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+                                QUICK ADD
+                            </button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group kinetic-shadow flex flex-col">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Spicy buffalo chicken burger with blue cheese dressing and spicy slaw, dramatic close-up, warm restaurant lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATopUg-1fWjncYHTIVoc3YrBoT9aXecHhO9rVi-yJNg26Gr1uYt9I-RKyqEyauIjJExzw78HQf7QB1HJ0iw1GubQZVQYXiTG8MTltZqt81aIUap3tKRt8eUklvEHlX4MOCQMOqQeF8dnPSmUB8olVg58ITp9hRgSRMU_uzpePGsX3lsF7MnRHRdXM69J1CypxUq3XK66s1bmMGSCA5KzgxRsuytTPNclcurfp6UQWV9isWussKGwmUtn7RG7Hqw6u2qD-5d19V6X2L"/>
+</div>
+<div class="p-6 flex flex-col grow">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-on-surface">Heat Wave Chicken</h3>
+<span class="text-primary font-black text-xl">$14.00</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                                Crispy buttermilk chicken tossed in habanero glaze, cooling celery slaw, and ranch drizzle.
+                            </p>
+<button class="mt-auto w-full bg-secondary-container text-on-secondary-container py-3 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-secondary-fixed transition-colors active:scale-95">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+                                QUICK ADD
+                            </button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group kinetic-shadow flex flex-col">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Plant-based burger patty with smashed avocado and sprouts on a multigrain bun, bright airy overhead shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXRbr_ZNhATs_YxmbFgJ4xWNeC_RkDLFpSO3qTayuuP7d8aWJzFrRVeE9BP3ZlunS_AFB9S0BcCvMk8Zbo1qTVc9KvrpP45i-v67Y87zI5gIh7jeN8GuZgWHwkiTB9nvw3mgiI7RgdyWosYOkepyHD84TLvdwUZ_KPe8pnxPRcfXrdihct9v9UiRpmbqQ39sABOqRluvk30OSpUQWeRPvlgNdqUJNoyeUZmyIPCT72Sr7r6BmOXNtR8c0cOkJloTcjU4wLYtmoZimw"/>
+</div>
+<div class="p-6 flex flex-col grow">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-on-surface">The Earth Mover</h3>
+<span class="text-primary font-black text-xl">$15.50</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                                House-made black bean &amp; quinoa patty, smashed avocado, pickled radishes, and vegan aioli.
+                            </p>
+<button class="mt-auto w-full bg-secondary-container text-on-secondary-container py-3 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-secondary-fixed transition-colors active:scale-95">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+                                QUICK ADD
+                            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Category: Sides -->
+<section class="bg-surface-container-low -mx-6 px-6 py-16 rounded-3xl" id="sides">
+<div class="flex items-baseline gap-4 mb-10">
+<h2 class="text-4xl font-black tracking-tighter text-on-surface uppercase">Sides</h2>
+<div class="h-[2px] grow bg-outline-variant/30"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-surface-container-lowest p-4 rounded-2xl flex flex-col gap-4 group">
+<div class="aspect-square rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Crispy golden sweet potato fries served in a small wire basket, coarse salt grains visible, macro shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHkwrQ55KMvSE2t73H4O9qeYypbzxiJGMxWGJr64sVs3nwQRFezNEBXZ5x91Tfp34lcPlzPnXX_75fY6vu7BRzBuElBMcW9fQQFYZTal9wnJJi7d0aArwQm3cmjRK3PLokVjlywfP77iGbtQ9Hja8MuIihD7aTuM1Ejswl9munXqqM0iljAaXEywVjFm8NRyxkleu4t5a8kf9xSZmADDmrAGp_hBo4hLNoimWk2TqjECd99Nt4ZbjWI1bItgeKhHDWxvOQ1I655LtA"/>
+</div>
+<div>
+<h3 class="font-bold text-lg">Zesty Fries</h3>
+<p class="text-xs text-on-surface-variant mb-2">Truffle oil &amp; parmesan dust.</p>
+<div class="flex justify-between items-center">
+<span class="font-black text-primary">$6.50</span>
+<button class="p-2 bg-secondary text-on-secondary rounded-full active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl flex flex-col gap-4 group">
+<div class="aspect-square rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Beer battered onion rings stacked on a wooden board, golden brown and crispy texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdaQtXMax5-kKVbs7nt4K1M2PkNEthh35DuLfgEKCUfnXCgDix9zyJ0A-2AU5QMaDWOoZPG7JbUzCbSbvjDrI5555gZLLrbl2NfstuFNX2hSvfI9iiAx-xKVE3QuPgMcLA39FQkmwPGxIeHT0ZA0iMDKR9dYdAiI-idu9rGKuirXmtCmN4IF0cwbMThiooiEFtGHovZjR3B3Jb_L6_0AgD4d2A0S-UF14P5iQ_sFk_x13zU81DfhmKr8hRLI3k9k4TZbThUhvMyeZz"/>
+</div>
+<div>
+<h3 class="font-bold text-lg">Onion Loops</h3>
+<p class="text-xs text-on-surface-variant mb-2">Beer battered with spicy dip.</p>
+<div class="flex justify-between items-center">
+<span class="font-black text-primary">$7.00</span>
+<button class="p-2 bg-secondary text-on-secondary rounded-full active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl flex flex-col gap-4 group">
+<div class="aspect-square rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Fresh caesar salad with crunchy croutons and shaved parmesan in a sleek white bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUmPuSOaBR302hTV4jtK70_83qrG3BxhdUGb8e_9c5b8wDdWDg-r_S5w0BervFlWbdM_H1daMwj0m36RrEHerIFIs45F_2GdiSujP5GjXxorUMUq-To4T37KS60WVn9GCi2_jVJEdkVfnx_LM_j4UUs1wFV1moFaqIcLo_gApG9DQlfsN9WEeG36H7aQ9S1mY6XEVZwyWl0QVeRxVLF9_Pqo6f8lhaXkR8yA7apf8mTkUalMLAIdugHWJXwODindaOd8nVhOsTvIMd"/>
+</div>
+<div>
+<h3 class="font-bold text-lg">Market Salad</h3>
+<p class="text-xs text-on-surface-variant mb-2">Seasonal greens &amp; lemon vinaigrette.</p>
+<div class="flex justify-between items-center">
+<span class="font-black text-primary">$8.00</span>
+<button class="p-2 bg-secondary text-on-secondary rounded-full active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl flex flex-col gap-4 group">
+<div class="aspect-square rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Creamy mac and cheese with a golden breadcrumb crust in a small cast iron skillet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATviiJnojL89YfXce0ui8iXwgu1xTF1Bwfn7TQwAfHzz4q54FW29AcKCwGkIiil5XVy0iVXelstVVMOMsOdrKfYznn3lb8g79u0kUEBwCIOQnZ7kyHClibiH0aw-P6L-lrng3NoLULcozHcH4CAmRZ0xYZ6yuUFIVqj4sGWaMXtgdqPWK8g1XehT0O-cWBjG-E4pgQoj0Xza25jYdUPSYwWLZLuSuXbWBt-bicSBlOfq8XD0s5rJda9keUGGlK8g2Nxc4axwe0yoix"/>
+</div>
+<div>
+<h3 class="font-bold text-lg">Sizzle Mac</h3>
+<p class="text-xs text-on-surface-variant mb-2">Five cheese blend, panko crust.</p>
+<div class="flex justify-between items-center">
+<span class="font-black text-primary">$9.00</span>
+<button class="p-2 bg-secondary text-on-secondary rounded-full active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Category: Drinks -->
+<section id="drinks">
+<div class="flex items-baseline gap-4 mb-10">
+<h2 class="text-4xl font-black tracking-tighter text-on-surface uppercase">Drinks</h2>
+<div class="h-[2px] grow bg-surface-container-highest"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex bg-surface-container-lowest rounded-2xl overflow-hidden kinetic-shadow">
+<div class="w-1/3 overflow-hidden">
+<img class="h-full w-full object-cover" data-alt="Craft berry lemonade with fresh mint and ice in a tall glass, bright sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUMY5py-mNai1p5bqgR4OBQ6pmX7YqcAQX23x8oIbCPwJZ2JM3iNm0Z1wgyuqXSMDCG-C_Tr74XJWfO19u8GXlspDUj5nHLkXX6Ymu20npS3bTHgl6rkBru1tFNq6Olzo1AhV4HXsTsn4dA4HCXtR_9oXHPzsSm9GcwnBqhI9kVR1V_8VtDEKpA8R_3PMvwd8e116EKAtMI0oQ4VIfqWRSFREQgYJHp0Xt7HRCGdeaXKIZdVqKdRF9l5bItb7IaEw5tkzLPaDpzAz6"/>
+</div>
+<div class="w-2/3 p-6">
+<h3 class="text-xl font-bold mb-1">Kinetic Lemonade</h3>
+<p class="text-sm text-on-surface-variant mb-4">Hand-pressed lemons, dragon fruit, and organic agave.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-black text-lg">$5.50</span>
+<button class="bg-primary text-on-primary px-4 py-1 rounded-full text-xs font-bold active:scale-95">ADD</button>
+</div>
+</div>
+</div>
+<div class="flex bg-surface-container-lowest rounded-2xl overflow-hidden kinetic-shadow">
+<div class="w-1/3 overflow-hidden">
+<img class="h-full w-full object-cover" data-alt="Iced salted caramel latte with thick cream foam on top in a clear glass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm1OPZQam5KKzRmfwSIb1IBk2yec5ZUCv7A6HHbSeh7-o3rslXqKX9WdlIryJ73ynTLzwEiftNVsgWVYrzn8Jj8o7lK_UlRy0Vh0W_-jTRnwLE46KnOU-FCGooRrDLOpklfOF9_hN7tvklpXkMZD7zBW_p0YnQNdRrKl9PbhteqIZtmZxS4rCokKZIlGE77clsMe-KTlm7_ILOxdBWmOm0-3mLwXE27M31KfbxKKLe4zHABBM_K7TSvppKA-P18A5iI_GQi3tLNzWD"/>
+</div>
+<div class="w-2/3 p-6">
+<h3 class="text-xl font-bold mb-1">Cold Brew Nitro</h3>
+<p class="text-sm text-on-surface-variant mb-4">12-hour cold steep with a hint of salted caramel.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-black text-lg">$6.00</span>
+<button class="bg-primary text-on-primary px-4 py-1 rounded-full text-xs font-bold active:scale-95">ADD</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Category: Desserts -->
+<section id="desserts">
+<div class="flex items-baseline gap-4 mb-10">
+<h2 class="text-4xl font-black tracking-tighter text-on-surface uppercase">Desserts</h2>
+<div class="h-[2px] grow bg-surface-container-highest"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<div class="relative rounded-3xl overflow-hidden h-80 group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Molten chocolate lava cake with vanilla bean ice cream on a designer plate, dark moody lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVe5LBEfYfOyXOfGGXUxtm0nWIlSPOrm0M65l4_T1DP2BNTvLbSMXwbvhyGHDwcVj12eItGePsC5SFlhkF9JzhnACiUm_FFEDcDBDoyaPcR9LQ09BLaTfu5MsCS1e2juSusfxDQXqEjkL18tYFGYPaczaE_avmd0_hn5J2pw5E0N1U0SAXuC4uWO0sJvW0Tkk3ZOJRShVFcJYv7hfpUGhZ90pyIPVCReAL2Ssd5vRM-ZvgRA_QgLk0IHZdH5e13CEwXsK3TSvCUt3s"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<h3 class="text-3xl font-black tracking-tight mb-2">Molten Soul Cake</h3>
+<p class="text-white/80 max-w-sm text-sm mb-4">Rich 70% dark chocolate center with Madagascan vanilla bean gelato.</p>
+<div class="flex items-center gap-6">
+<span class="text-primary-container font-black text-2xl">$12.00</span>
+<button class="bg-primary text-on-primary px-8 py-2 rounded-full font-bold text-sm tracking-tighter active:scale-95 transition-all">ORDER DESSERT</button>
+</div>
+</div>
+</div>
+<div class="relative rounded-3xl overflow-hidden h-80 group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Glazed brioche donuts with gourmet toppings like pistachio and rose petals, bright colorful presentation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_v26ExeJwsAD_QHKoCRFOdUXyfSY_aVmd50Lx0CP52tRVXJ-cnHLUohEJj347s1B4NPlbYim8bWQFC96g8C_i1Pkpri9HzPsDZTypQ5UrdXh7wNPs2AWbuHWBKnfU5so1PNB6b-4UI6ou8y_42iqUV0HfLzAcDV0RznroR2S6x--ul3rVr6TjSoBsqDQhXXWtnMnIL3uQ3D4QgE1ThU6SwXUCgFRWiQlIiTOt-5WYFnexgDtOQV9-mgnA3GDRZLbM0nSTezUB2KH1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<h3 class="text-3xl font-black tracking-tight mb-2">Zest Donuts</h3>
+<p class="text-white/80 max-w-sm text-sm mb-4">Triple-glazed brioche donuts with seasonal citrus zest and honey.</p>
+<div class="flex items-center gap-6">
+<span class="text-primary-container font-black text-2xl">$10.00</span>
+<button class="bg-primary text-on-primary px-8 py-2 rounded-full font-bold text-sm tracking-tighter active:scale-95 transition-all">ORDER DESSERT</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Floating Action Button (View Basket) -->
+<div class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
+<button class="bg-primary text-on-primary kinetic-shadow px-8 py-4 rounded-full flex items-center gap-3 font-headline font-black tracking-tighter hover:bg-primary-dim transition-all hover:scale-105 active:scale-95">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
+            VIEW BASKET (3)
+            <span class="bg-on-primary/20 px-2 py-1 rounded text-xs ml-2">$37.00</span>
+</button>
+</div>
+<!-- Footer Shell -->
+<footer class="w-full rounded-t-3xl mt-20 bg-surface-container-low">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start">
+<span class="text-xl font-black text-primary font-headline uppercase italic">The Kinetic Gourmet</span>
+<p class="text-on-surface-variant text-sm mt-2 text-center md:text-left">Elevating the pace of premium dining.</p>
+</div>
+<div class="flex gap-8 text-sm font-body">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Facebook</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">TikTok</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Locations</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</div>
+<p class="text-on-surface-variant text-sm font-body">
+                © 2024 The Kinetic Gourmet. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>

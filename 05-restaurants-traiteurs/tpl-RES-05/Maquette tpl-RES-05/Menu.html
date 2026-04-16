@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#ffffff",
+                    "outline-variant": "#bbb9b3",
+                    "surface-container": "#f6f3eb",
+                    "surface-container-high": "#f0eee5",
+                    "background": "#fffcf5",
+                    "on-tertiary": "#ffffff",
+                    "secondary-dim": "#b40026",
+                    "on-error-container": "#520c00",
+                    "surface-bright": "#fffcf5",
+                    "primary-dim": "#745200",
+                    "on-error-container": "#520c00",
+                    "surface-bright": "#fffcf5",
+                    "primary-dim": "#745200",
+                    "inverse-surface": "#0e0e0b",
+                    "secondary-fixed-dim": "#ffafad",
+                    "on-background": "#383833",
+                    "secondary-fixed": "#ffc3c1",
+                    "tertiary-fixed-dim": "#ef8a26",
+                    "error": "#be2d06",
+                    "inverse-primary": "#feb700",
+                    "secondary": "#ca002c",
+                    "inverse-on-surface": "#9e9d97",
+                    "tertiary-container": "#ff9735",
+                    "surface-variant": "#eae8df",
+                    "tertiary-fixed": "#ff9735",
+                    "surface-container-highest": "#eae8df",
+                    "primary-fixed-dim": "#ecaa00",
+                    "surface-dim": "#e5e3d9",
+                    "on-primary-fixed-variant": "#5f4200",
+                    "tertiary-dim": "#884800",
+                    "error-container": "#f95630",
+                    "on-tertiary-container": "#4d2600",
+                    "secondary-container": "#ffc3c1",
+                    "on-surface-variant": "#65645f",
+                    "on-secondary-fixed": "#6f0013",
+                    "on-tertiary-fixed": "#291200",
+                    "outline": "#82817b",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#533a00",
+                    "on-surface": "#383833",
+                    "surface-tint": "#845d00",
+                    "on-tertiary-fixed-variant": "#5a2e00",
+                    "surface-container-low": "#fcf9f2",
+                    "on-primary-fixed": "#392700",
+                    "surface": "#fffcf5",
+                    "primary": "#845d00",
+                    "error-dim": "#b92902",
+                    "primary-fixed": "#feb700",
+                    "tertiary": "#995200",
+                    "on-secondary-container": "#94001d",
+                    "on-secondary-fixed-variant": "#a50022"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fffcf5]/70 dark:bg-stone-900/70 backdrop-blur-xl shadow-[0_20_40px_rgba(56,56,51,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<span class="text-2xl font-extrabold text-[#845d00] dark:text-[#feb700] tracking-tighter font-headline">The Grand Harvest</span>
+<div class="hidden md:flex items-center space-x-8 font-headline font-bold tracking-tight">
+<a class="text-[#383833] dark:text-stone-300 hover:text-[#845d00] transition-colors hover:scale-105 transition-transform duration-200" href="#">Home</a>
+<a class="text-[#383833] dark:text-stone-300 hover:text-[#845d00] transition-colors hover:scale-105 transition-transform duration-200" href="#">About</a>
+<a class="text-[#845d00] dark:text-[#feb700] border-b-2 border-[#845d00] pb-1 hover:scale-105 transition-transform duration-200" href="#">Menu</a>
+<a class="text-[#383833] dark:text-stone-300 hover:text-[#845d00] transition-colors hover:scale-105 transition-transform duration-200" href="#">Gallery</a>
+<a class="text-[#383833] dark:text-stone-300 hover:text-[#845d00] transition-colors hover:scale-105 transition-transform duration-200" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:block px-6 py-2 rounded-full font-headline font-bold text-[#845d00] dark:text-[#feb700] hover:scale-105 transition-all">Find Us</button>
+<button class="px-6 py-2.5 rounded-full font-headline font-bold bg-gradient-to-r from-primary to-primary-container text-on-primary shadow-lg hover:scale-105 active:scale-95 transition-all duration-200">Book a Table</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<header class="max-w-7xl mx-auto px-8 mb-20 text-center">
+<span class="font-label text-secondary font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Seasonal Selection</span>
+<h1 class="font-headline text-6xl md:text-8xl font-extrabold tracking-tighter text-on-surface mb-6">Our Menu</h1>
+<p class="max-w-2xl mx-auto text-on-surface-variant text-lg leading-relaxed">
+                A curation of the earth's finest offerings, harvested daily and prepared with reverence for tradition and taste.
+            </p>
+</header>
+<!-- Category Navigation (Sticky) -->
+<div class="sticky top-[80px] z-40 bg-surface/80 backdrop-blur-md mb-16 py-4 border-y border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-8 overflow-x-auto no-scrollbar flex justify-center space-x-6 md:space-x-12">
+<a class="whitespace-nowrap font-headline font-bold text-sm text-primary hover:text-primary-dim transition-colors" href="#morning">Morning Harvest</a>
+<a class="whitespace-nowrap font-headline font-bold text-sm text-on-surface-variant hover:text-primary transition-colors" href="#carvery">The Carvery</a>
+<a class="whitespace-nowrap font-headline font-bold text-sm text-on-surface-variant hover:text-primary transition-colors" href="#ocean">Ocean Bounty</a>
+<a class="whitespace-nowrap font-headline font-bold text-sm text-on-surface-variant hover:text-primary transition-colors" href="#garden">Garden Path</a>
+<a class="whitespace-nowrap font-headline font-bold text-sm text-on-surface-variant hover:text-primary transition-colors" href="#finale">The Grand Finale</a>
+</div>
+</div>
+<!-- Menu Sections -->
+<div class="max-w-7xl mx-auto px-8 space-y-32">
+<!-- Morning Harvest -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center" id="morning">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="wb_sunny">wb_sunny</span>
+<h2 class="font-headline text-4xl font-bold tracking-tight">Morning Harvest</h2>
+</div>
+<p class="text-on-surface-variant mb-8 text-lg">Artisanal brunch plates featuring farm-fresh eggs, stone-ground grains, and sunrise preserves.</p>
+<div class="space-y-8">
+<div class="group">
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="font-headline text-xl font-bold group-hover:text-primary transition-colors">Truffled Wild Mushroom Toast</h3>
+<span class="font-headline font-bold text-primary">$22</span>
+</div>
+<p class="text-on-surface-variant text-sm">Sourdough, poached organic egg, herb-infused ricotta, and shaved seasonal truffles.</p>
+</div>
+<div class="group bg-tertiary-container/10 p-6 rounded-lg -mx-6">
+<div class="flex justify-between items-baseline mb-1">
+<div class="flex items-center gap-2">
+<h3 class="font-headline text-xl font-bold">Heirloom Grain Bowl</h3>
+<span class="bg-secondary text-on-secondary px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider">Seasonal</span>
+</div>
+<span class="font-headline font-bold text-primary">$19</span>
+</div>
+<p class="text-on-surface-variant text-sm">Spelt, quinoa, roasted root vegetables, tahini drizzle, and toasted pumpkin seeds.</p>
+</div>
+<div class="group">
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="font-headline text-xl font-bold group-hover:text-primary transition-colors">Honey-Glazed Brioche Stack</h3>
+<span class="font-headline font-bold text-primary">$18</span>
+</div>
+<p class="text-on-surface-variant text-sm">Cultured butter, wildflower honey, macerated berries, and vanilla bean cream.</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2">
+<img alt="Gourmet brunch spread" class="w-full aspect-[4/3] object-cover rounded-lg shadow-xl" data-alt="Top down view of a rustic wooden table with poached eggs on sourdough, fresh berries, and artisanal coffee in morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoT0gVpxei7MdYnS1TlHKZhbhKkiJ1FXKrfGnTcm_MiS0aFVpFKMllUp4hCbEQJ7WMZMHiLhukrXt3JCSgBEunO_Yhmvbh1BGUySGmnLxn3mBKQGS2g0AyPWVX2K6Jryw8X29ADxU7jokmNicXUXMz6OPRtrbXwOWC_XO0a9cT7PPTt8ozjKS0uZFbvsQ_21WgrRhm2SIiqkEa9lCxKcZ9ZeRQckxDEgLkBYV362Pwlh4QWLuxaEkqvEI_iurLUum8_dw2WT6FJNg7"/>
+</div>
+</section>
+<!-- The Carvery -->
+<section class="bg-surface-container py-20 -mx-8 px-8 rounded-lg overflow-hidden" id="carvery">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6">
+<img alt="Roast meat being carved" class="w-full aspect-square object-cover rounded-lg shadow-2xl" data-alt="Close up of a perfectly seared ribeye steak resting on a wooden board with rosemary sprigs and sea salt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2U36tGd_Yo4fflWhg2xTJ9v3OCX6vkpsK_nIQ_ovCHSlWHn0ZTm1ZCAKDEZukpHBy24e-KvGiKRGZRD0kSckYP4vhnpt5LhFr5hVEwgOjFs8sTooFNcTffTRHaUZywc_V6Q90gC7W_gxYKJdYf1AGHlusVwCvU9NPGOULEiEyM0wOu_2PhxM3DcgS3z4jnWoEGa1rZoML0Njs02dqkkbi3GybRoEaCGoJX4vP2kVwHsn04aRBk0SVp_mAEr8coEoPLiF27eYgupAC"/>
+</div>
+<div class="lg:col-span-6">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="local_fire_department">local_fire_department</span>
+<h2 class="font-headline text-4xl font-bold tracking-tight">The Carvery</h2>
+</div>
+<p class="text-on-surface-variant mb-10 text-lg">Prime cuts and heritage roasts, slow-cooked over open flames and seasoned with mountain herbs.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-sm border border-outline-variant/5">
+<h3 class="font-headline text-lg font-bold mb-2">Heritage Ribeye</h3>
+<p class="text-sm text-on-surface-variant mb-4">45-day dry-aged beef, bone marrow butter, roasted garlic.</p>
+<span class="font-headline font-bold text-primary">$58</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-sm border border-outline-variant/5">
+<h3 class="font-headline text-lg font-bold mb-2">Herb-Crusted Lamb</h3>
+<p class="text-sm text-on-surface-variant mb-4">Slow-roasted shoulder, mint salsa verde, charred onions.</p>
+<span class="font-headline font-bold text-primary">$42</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-sm border border-outline-variant/5">
+<h3 class="font-headline text-lg font-bold mb-2">Smoke-Fired Chicken</h3>
+<p class="text-sm text-on-surface-variant mb-4">Half bird, cider brine, smoked paprika rub, lemon zest.</p>
+<span class="font-headline font-bold text-primary">$34</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-sm border border-outline-variant/5 relative">
+<span class="absolute -top-3 -right-3 bg-secondary text-on-secondary text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-widest">Specials</span>
+<h3 class="font-headline text-lg font-bold mb-2">Venison Loin</h3>
+<p class="text-sm text-on-surface-variant mb-4">Juniper berry jus, blackberry reduction, parsnip puree.</p>
+<span class="font-headline font-bold text-primary">$49</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Ocean Bounty -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start" id="ocean">
+<div>
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-sky-600" data-icon="waves">waves</span>
+<h2 class="font-headline text-4xl font-bold tracking-tight">Ocean Bounty</h2>
+</div>
+<p class="text-on-surface-variant mb-12 text-lg">Sustainable treasures from the deep, delivered daily and prepared with minimalist elegance.</p>
+<div class="space-y-12">
+<div class="flex gap-6 items-start group">
+<div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden">
+<img alt="Salmon dish" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Pan seared salmon fillet with crispy skin served on a bed of bright green asparagus and lemon wedges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW0-IexJz4Lm2M4Cf0FI7QrpHIcsU0E8d1_GbHEs6_Lc7iuu3k68yl119s0ADYgBA019zDaJcbOcTOjadsO7OnH8VXYCIDXMzyeNYabPHCNodXRjMxjNKNNfg9Eu20DIDwOx24Q8pg2CW5Z19PTWmQbu2YggafABL2vyOszD4HeQYKYwyyMd4-DhlBgf_t7XkdCWKa3y9VdrpRoRtFIzvwOOun4ZdF25EBUFDzbiigF_KMv-MQqlKPRqmSjypSeSZ-YaBL6tlY8JDv"/>
+</div>
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline text-xl font-bold">Pacific King Salmon</h3>
+<span class="font-headline font-bold text-primary">$38</span>
+</div>
+<p class="text-on-surface-variant text-sm">Crispy skin, pea and mint puree, lemon-butter emulsion.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start group">
+<div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden">
+<img alt="Scallops" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Seared diver scallops served in a scallop shell with cauliflower foam and micro-greens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKY4QI59qnOZSuzGaQCDiq_eV4w1hw0FkAVINCasv6BRmvWkkpW4JX5EFkpytUlLhgXMnSx-CcN7JAXtpYq9qZfDjZY7XzS9EdAcZjowyPM5a157l6ZhrRs7t9uHyDfd-eCZmvSCo6RpYH37bHAbhdVbdsDzka0aCwswKu0IeIXuPcYmGCHzlnUg83Rdt2RCHDgKsKHy8nfsSg2u6DMhaXjCfmtZKJ96i-GDfqZFgP1jaMogtnpxj0plJYKMYmHYvsCVN_1iQOv55F"/>
+</div>
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline text-xl font-bold">Diver Scallops</h3>
+<span class="font-headline font-bold text-primary">$44</span>
+</div>
+<p class="text-on-surface-variant text-sm">Pan-seared, cauliflower textures, caper-raisin dressing.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-10 rounded-lg">
+<h3 class="font-headline text-2xl font-bold mb-6">Today's Catch</h3>
+<div class="space-y-6">
+<div class="border-b border-outline-variant/10 pb-6">
+<div class="flex justify-between mb-2">
+<span class="font-bold">Wild Seabass</span>
+<span class="font-bold text-primary">$46</span>
+</div>
+<p class="text-sm text-on-surface-variant">Salt-crusted and baked with fennel and citrus. Served table-side.</p>
+</div>
+<div class="border-b border-outline-variant/10 pb-6">
+<div class="flex justify-between mb-2">
+<span class="font-bold">Oysters on the Half Shell</span>
+<span class="font-bold text-primary">$28</span>
+</div>
+<p class="text-sm text-on-surface-variant">Six boutique oysters, champagne mignonette, fresh horseradish.</p>
+</div>
+</div>
+<div class="mt-10 p-6 bg-primary/5 rounded-lg border border-primary/10">
+<p class="text-xs font-label uppercase tracking-widest text-primary font-bold mb-2">Chef's Recommendation</p>
+<p class="text-sm text-on-surface italic">"The Seabass is exceptionally sweet today, sourced from the cold currents of the northern coast."</p>
+</div>
+</div>
+</section>
+<!-- Garden Path & Desserts Bento -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Garden Path -->
+<div class="lg:col-span-8 bg-surface-container-low p-12 rounded-lg relative overflow-hidden group" id="garden">
+<div class="relative z-10">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-green-700" data-icon="park">park</span>
+<h2 class="font-headline text-4xl font-bold tracking-tight">Garden Path</h2>
+</div>
+<p class="text-on-surface-variant mb-12 text-lg max-w-md">Botanical masterpieces celebrating the peak of the harvest. 100% plant-based, infinite in flavor.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+<div>
+<h3 class="font-headline text-lg font-bold mb-2">Heritage Beet Carpaccio</h3>
+<p class="text-sm text-on-surface-variant mb-2">Golden and candy-stripe beets, cashew cream, toasted hazelnuts.</p>
+<span class="font-bold text-primary">$18</span>
+</div>
+<div>
+<h3 class="font-headline text-lg font-bold mb-2">Cauliflower Steak</h3>
+<p class="text-sm text-on-surface-variant mb-2">Ras el hanout spice, pomegranate jewels, mint yogurt.</p>
+<span class="font-bold text-primary">$24</span>
+</div>
+<div>
+<h3 class="font-headline text-lg font-bold mb-2">Wild Nettle Gnocchi</h3>
+<p class="text-sm text-on-surface-variant mb-2">Hand-rolled, pine nut butter, crispy sage, vegan parm.</p>
+<span class="font-bold text-primary">$26</span>
+</div>
+<div class="bg-primary-container/20 p-4 rounded-lg">
+<h3 class="font-headline text-lg font-bold mb-2">Seasonal Harvest Salad</h3>
+<p class="text-sm text-on-surface-variant mb-2">Everything fresh this morning, house vinaigrette.</p>
+<span class="font-bold text-primary">$16</span>
+</div>
+</div>
+</div>
+<img alt="Vegan salad" class="absolute -right-20 -bottom-20 w-80 h-80 object-cover rounded-full opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" data-alt="Artfully arranged salad bowl with vibrant vegetables, micro-greens and edible flowers on a ceramic plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM9alQuBkloR0rntPWdj1auPHPd9CFg4DDflpL7PQRNsDw_ad4lG2od2IW1P26AVlfXsjtTeGiJurxjCok-OGjoFWiN_1IMy7Xe1IxahIV1jKOywci3eJUjcO38ehMxDfJwZzPl3-CQBiS734OpAcxDu__o8vM7NqxsBSQw6Tb0JnlQIMgqJRUIeQUCqXcl0M-G2c7HvJdCLum4DvZPOu2Sz7YRd9p4KmEcWJLXebpCrB14_4_uoPZP__h7zRQWCwmXykVPJgLSO9E"/>
+</div>
+<!-- The Grand Finale -->
+<div class="lg:col-span-4 bg-secondary-container/30 p-12 rounded-lg border border-secondary-container/50" id="finale">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-secondary" data-icon="bakery_dining">bakery_dining</span>
+<h2 class="font-headline text-3xl font-bold tracking-tight">The Grand Finale</h2>
+</div>
+<div class="space-y-10">
+<div>
+<h3 class="font-headline text-lg font-bold mb-1">Salted Caramel Tart</h3>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest mb-2">Signature</p>
+<p class="text-sm text-on-surface-variant">Dark chocolate ganache, sea salt, gold leaf.</p>
+</div>
+<div>
+<h3 class="font-headline text-lg font-bold mb-1">Honey Lavender Posset</h3>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest mb-2">Light &amp; Floral</p>
+<p class="text-sm text-on-surface-variant">Shortbread crumble, infused honey.</p>
+</div>
+<div>
+<h3 class="font-headline text-lg font-bold mb-1">Poached Autumn Pear</h3>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest mb-2">Seasonal</p>
+<p class="text-sm text-on-surface-variant">Star anise, red wine reduction, vanilla bean gelato.</p>
+</div>
+</div>
+<div class="mt-12">
+<img alt="Dessert" class="w-full h-48 object-cover rounded-lg shadow-lg" data-alt="Elegant chocolate dessert with gold leaf and artistic sauce smears on a dark plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmO1D99HqofRktRfeM0TxKsB5EknLvJu1g5tQuzHum2mA_CW9LBp5qJbsYZkQ1R1wczMpHG7oTL2RlL_6qVl1NbbaaOC6GMFB_Pxuhc6o3YYH0-UskcsDHCJN3HXr6N5CjtGYkW2OX3f8JN5m0hCLccFOAh6nDp3RoaSIFRxNZE1KkKibPicU_OFOAI6H3AUQBqRuhkuDf4zEjUEO1EbxVydFsyF-Bj7IX64yf126_5SSToO17Zf1bOyc1bRZW2POffO-wCPTyHcVT"/>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-[#f6f3eb] dark:bg-stone-950">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-12 py-16 w-full text-center md:text-left max-w-7xl mx-auto">
+<div class="space-y-4">
+<span class="text-lg font-bold text-[#845d00] font-headline">The Grand Harvest</span>
+<p class="font-body text-sm text-[#383833] dark:text-stone-400 leading-relaxed">
+                    © 2024 The Grand Harvest. All rights reserved.<br/>
+                    Open Daily: 11am - 10pm.<br/>
+                    123 Orchard Lane, Harvest Valley.
+                </p>
+</div>
+<div class="flex flex-col space-y-2">
+<span class="font-headline font-bold text-[#845d00] mb-2">Explore</span>
+<a class="font-body text-sm text-[#383833] dark:text-stone-400 hover:text-[#ca002c] transition-colors opacity-80 hover:opacity-100" href="#">Hours</a>
+<a class="font-body text-sm text-[#383833] dark:text-stone-400 hover:text-[#ca002c] transition-colors opacity-80 hover:opacity-100" href="#">Location</a>
+<a class="font-body text-sm text-[#383833] dark:text-stone-400 hover:text-[#ca002c] transition-colors opacity-80 hover:opacity-100" href="#">Gift Cards</a>
+<a class="font-body text-sm text-[#383833] dark:text-stone-400 hover:text-[#ca002c] transition-colors opacity-80 hover:opacity-100" href="#">Careers</a>
+</div>
+<div class="flex flex-col space-y-2">
+<span class="font-headline font-bold text-[#845d00] mb-2">Connect</span>
+<a class="font-body text-sm text-[#383833] dark:text-stone-400 hover:text-[#ca002c] transition-colors opacity-80 hover:opacity-100" href="#">Instagram</a>
+<a class="font-body text-sm text-[#383833] dark:text-stone-400 hover:text-[#ca002c] transition-colors opacity-80 hover:opacity-100" href="#">Facebook</a>
+<a class="font-body text-sm text-[#383833] dark:text-stone-400 hover:text-[#ca002c] transition-colors opacity-80 hover:opacity-100" href="#">Twitter</a>
+<a class="font-body text-sm text-[#383833] dark:text-stone-400 hover:text-[#ca002c] transition-colors opacity-80 hover:opacity-100" href="#">Newsletter</a>
+</div>
+</div>
+</footer>
+</body></html>

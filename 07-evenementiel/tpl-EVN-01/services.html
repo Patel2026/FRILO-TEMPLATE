@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Prestations | L'Atelier des Émotions</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container antialiased">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 vellum-effect shadow-ambient no-line-rule">
+        <div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+            <a href="index.html" class="text-2xl font-headline text-primary italic">L'Atelier <span class="not-italic text-on-surface">des Émotions</span></a>
+            <div class="hidden md:flex items-center gap-10 font-headline tracking-wide text-xs uppercase font-bold">
+                <a class="text-stone-500 hover:text-primary transition-slow" href="index.html">Accueil</a>
+                <a class="text-stone-500 hover:text-primary transition-slow" href="about.html">Esprit</a>
+                <a class="text-primary border-b border-primary/30 pb-1" href="services.html">Prestations</a>
+                <a class="text-stone-500 hover:text-primary transition-slow" href="gallery.html">Portfolio</a>
+                <a class="text-stone-500 hover:text-primary transition-slow" href="contact.html">Contact</a>
+            </div>
+            <button class="bg-primary text-on-primary px-6 py-2.5 text-[10px] font-label uppercase tracking-[0.2em] scale-up-lift shadow-lg">
+                Organiser mon événement
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-32">
+        <!-- Hero Header -->
+        <section class="max-w-7xl mx-auto px-12 mb-32 header-offset">
+            <span class="font-label text-primary text-[10px] uppercase tracking-[0.4em] font-bold mb-6 block">Nos Services</span>
+            <h1 class="font-headline text-6xl md:text-8xl leading-tight text-on-surface mb-10 italic">
+                Une Symphonie <br/><span class="not-italic text-stone-800">de Prestations</span>
+            </h1>
+            <p class="text-xl font-light leading-loose text-on-surface-variant max-w-2xl">
+                De la planification intégrale à la direction de création pure, nous offrons une expertise sur-mesure pour donner vie à votre vision. Chaque package est un cadre d'excellence prêt à être personnalisé.
+            </p>
+        </section>
+
+        <!-- Services Loop (Soft Edges Sectioning) -->
+        <section class="space-y-40 mb-40">
+            <!-- Service 1: Full Planning -->
+            <div class="grid lg:grid-cols-2 gap-24 items-center max-w-7xl mx-auto px-12">
+                <div class="relative group">
+                    <div class="absolute -inset-10 bg-primary/5 rounded-full blur-[100px] opacity-0 group-hover:opacity-100 transition-slow"></div>
+                    <img alt="Planification" class="w-full aspect-[4/5] object-cover rounded-2xl shadow-ambient relative z-10 transition-slow" data-alt="Détails de papeterie et fleurs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRKSFKnJfp1Wd6K8UhL2HtwSg4MW3GnZx77zlWEZUtksAeDzK09jyaiCrpR3bfRBUbqZb_v29FNoYbmez8docxGQpiQfYDFDLRysgzllYLnHzHZ4L5sK0lS-DlF8KeICJy52R7SnYKZYBqKh7X89z4fGscVvKDnGRDQHWFWzk2zps7L-ssycfPAflqi1TYJts5CWW3hEvTGcgUB6YcOuPIYqLq-YSUgiSq96g8EoSzDxziVD_9NIhN2TDaC78NLoCFojvoYj213PU"/>
+                </div>
+                <div>
+                    <span class="font-label text-stone-400 text-[10px] uppercase tracking-[0.3em] font-bold mb-6 block">Atelier Complet</span>
+                    <h2 class="font-headline text-5xl mb-8 italic">Accompagnement <span class="not-italic text-stone-800">Couture.</span></h2>
+                    <p class="text-lg font-light leading-relaxed mb-10 text-on-surface-variant">
+                        Une expérience holistique conçue pour les clients désirant une gestion professionnelle du concept à la conclusion. Nous orchestrons les complexités logistiques pendant que vous savourez chaque instant de votre événement.
+                    </p>
+                    <ul class="space-y-6 mb-12">
+                        <li class="flex items-center gap-4 text-sm font-light">
+                            <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                            <span>Sélection de lieux & coordination des visites</span>
+                        </li>
+                        <li class="flex items-center gap-4 text-sm font-light">
+                            <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                            <span>Design conceptuel complet & styling</span>
+                        </li>
+                        <li class="flex items-center gap-4 text-sm font-light">
+                            <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                            <span>Gestion du budget & des fournisseurs</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-block border-b border-primary text-primary pb-2 text-[10px] font-bold uppercase tracking-[0.2em] hover:text-on-surface hover:border-on-surface transition-slow">Demander une proposition</a>
+                </div>
+            </div>
+
+            <!-- Service 2: Creative Direction (BG Shift) -->
+            <div class="bg-surface-container py-40">
+                <div class="grid lg:grid-cols-2 gap-24 items-center max-w-7xl mx-auto px-12">
+                    <div class="order-2 lg:order-1">
+                        <span class="font-label text-stone-400 text-[10px] uppercase tracking-[0.3em] font-bold mb-6 block">Art & Design</span>
+                        <h2 class="font-headline text-5xl mb-8 italic">Direction de <span class="not-italic text-stone-800">Création.</span></h2>
+                        <p class="text-lg font-light leading-relaxed mb-10 text-on-surface-variant">
+                            Nous créons des atmosphères. Notre service de direction artistique se concentre sur l'esthétique visuelle et sensorielle de votre journée : couleurs, textures, lumières et fragrances.
+                        </p>
+                        <ul class="space-y-6 mb-12">
+                            <li class="flex items-center gap-4 text-sm font-light">
+                                <span class="w-2 h-2 rounded-full bg-secondary/40"></span>
+                                <span>Moodboards sensoriels & palettes chromatiques</span>
+                            </li>
+                            <li class="flex items-center gap-4 text-sm font-light">
+                                <span class="w-2 h-2 rounded-full bg-secondary/40"></span>
+                                <span>Curation florale & design de table</span>
+                            </li>
+                            <li class="flex items-center gap-4 text-sm font-light">
+                                <span class="w-2 h-2 rounded-full bg-secondary/40"></span>
+                                <span>Design d'éclairage d'ambiance</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="inline-block border-b border-secondary text-secondary pb-2 text-[10px] font-bold uppercase tracking-[0.2em] hover:text-on-surface hover:border-on-surface transition-slow">Consulter notre studio</a>
+                    </div>
+                    <div class="order-1 lg:order-2 group">
+                        <img alt="Direction Artistique" class="w-full aspect-[4/5] object-cover rounded-2xl shadow-ambient transition-slow group-hover:scale-[0.98]" data-alt="Détails de table raffinés" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf6PCyAfMFisnnWQlgyTkgIJ8JILVp58lWue9m2KubcAJoQXY_zp-yblTApKTWlxYJQQ511GX53h9dIDPbXHZ-NI0xPQOxmRxXRtIWK4jAr50NqUXKoR2vc1oBHnxt0CISAX8gsl6n_wii3bCtMtrv5iUCIUlo00hEjYRFaWw1jmlEZuF6Dz0qY1sbQE-O6JF33TIVQCMLsp3CUejr7agbsk8xdwYA1moEsl2nNv361aIF9QppBSTJYZ1hXWOC08QoLI8wqDk6U2s"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3: On-Day Coordination -->
+            <div class="grid lg:grid-cols-2 gap-24 items-center max-w-7xl mx-auto px-12">
+                <div class="group">
+                    <img alt="Coordination" class="w-full aspect-square object-cover rounded-2xl shadow-ambient transition-slow group-hover:scale-105" data-alt="Coordination de mariage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY5njvOjVCp0jq0futNxDr1oTLmeIjeRSVTDbLuIUMX3WoPqlIOGKv9jJGVUAF-2ulUqJSVy-96A0lu141MlcMEKw9u2fpUvRp1VoSUnEUf2UOXFiXlRH_Cv5tDVAAqVTH-cxeyHew7hn0yySSDcuCEN3RJTmelyWE9zFAK26AmeTPgeVUhUFWyNr3QOukbmoDQTO5e76kYVvDfKf8-PZrOO6D3acDdbp2w080PIAlvtgzU3Br4yXx2PbTdUFmkG_IdfVc0ZlNp7U"/>
+                </div>
+                <div>
+                    <span class="font-label text-stone-400 text-[10px] uppercase tracking-[0.3em] font-bold mb-6 block">Sérénité Totale</span>
+                    <h2 class="font-headline text-5xl mb-8 italic">Management <span class="not-italic text-stone-800">Jour J.</span></h2>
+                    <p class="text-lg font-light leading-relaxed mb-10 text-on-surface-variant">
+                        Pour ceux qui ont tout planifié mais souhaitent confier les rênes à un professionnel le jour venu. Nous sommes la main invisible qui veille au parfait déroulement de chaque chapitre de votre histoire.
+                    </p>
+                    <ul class="space-y-6 mb-12">
+                        <li class="flex items-center gap-4 text-sm font-light">
+                            <span class="w-2 h-2 rounded-full bg-tertiary/40"></span>
+                            <span>Exécution scrupuleuse du planning</span>
+                        </li>
+                        <li class="flex items-center gap-4 text-sm font-light">
+                            <span class="w-2 h-2 rounded-full bg-tertiary/40"></span>
+                            <span>Point de contact unique des fournisseurs</span>
+                        </li>
+                        <li class="flex items-center gap-4 text-sm font-light">
+                            <span class="w-2 h-2 rounded-full bg-tertiary/40"></span>
+                            <span>Gestion des imprévus en toute discrétion</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-block border-b border-tertiary text-tertiary pb-2 text-[10px] font-bold uppercase tracking-[0.2em] hover:text-on-surface hover:border-on-surface transition-slow">S'enquérir de nos disponibilités</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Journey Bento -->
+        <section class="max-w-7xl mx-auto px-12 pb-40">
+            <div class="mb-24 text-center">
+                <span class="font-label text-primary text-[10px] uppercase tracking-[0.4em] font-bold mb-4 block">Notre Philosophie</span>
+                <h2 class="text-5xl font-headline italic">Le Voyage <span class="not-italic text-stone-800">Éditorial</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-8 h-auto md:h-[650px]">
+                <div class="md:col-span-2 md:row-span-2 bg-surface-container p-12 rounded-2xl flex flex-col justify-center shadow-ambient border border-outline-variant/10 group overflow-hidden">
+                    <span class="text-primary font-headline text-7xl mb-10 opacity-30 group-hover:opacity-100 transition-slow">01</span>
+                    <h3 class="text-3xl font-headline mb-6 italic">Découverte & Vision</h3>
+                    <p class="text-on-surface-variant leading-loose font-light">
+                        Chaque voyage commence par une conversation. Nous plongeons dans votre histoire, vos préférences esthétiques et les émotions que vous souhaitez susciter.
+                    </p>
+                </div>
+                <div class="md:col-span-2 bg-primary-container/20 p-10 rounded-2xl flex flex-col justify-center shadow-ambient group hover:bg-primary transition-slow">
+                    <span class="text-primary font-headline text-5xl mb-6 group-hover:text-white">02</span>
+                    <h3 class="text-xl font-headline mb-4 font-bold group-hover:text-white uppercase tracking-tight">Design Stratégique</h3>
+                    <p class="text-on-primary-container/80 text-sm font-light leading-relaxed group-hover:text-white/80">Traduire votre vision en un plan de design éditorial cohérent qui résonne à chaque point de contact.</p>
+                </div>
+                <div class="bg-secondary-container/20 p-10 rounded-2xl flex flex-col justify-center shadow-ambient group hover:bg-secondary transition-slow">
+                    <span class="text-secondary font-headline text-5xl mb-6 group-hover:text-white">03</span>
+                    <h3 class="text-lg font-headline mb-4 font-bold group-hover:text-white uppercase tracking-tight">L'Exécution</h3>
+                    <p class="text-on-secondary-container/80 text-xs font-light leading-relaxed group-hover:text-white/80">Gestion méticuleuse de la logistique, assurant que chaque élément est parfaitement en place.</p>
+                </div>
+                <div class="bg-tertiary-container/20 p-10 rounded-2xl flex flex-col justify-center shadow-ambient group hover:bg-tertiary transition-slow">
+                    <span class="text-tertiary font-headline text-5xl mb-6 group-hover:text-white">04</span>
+                    <h3 class="text-lg font-headline mb-4 font-bold group-hover:text-white uppercase tracking-tight">Présence Épurée</h3>
+                    <p class="text-on-tertiary-container/80 text-xs font-light leading-relaxed group-hover:text-white/80">Le jour venu, nous sommes la main invisible qui assure que tout s'écoule avec une grâce naturelle.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface w-full pt-32 pb-16">
+        <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-start px-12 gap-16 w-full border-t border-stone-200/30 pt-16">
+            <div class="flex flex-col gap-8">
+                <div class="text-2xl font-headline text-primary italic">L'Atelier des Émotions</div>
+                <p class="text-stone-400 max-w-xs font-body text-xs leading-loose uppercase tracking-widest">Sophistication silencieuse • Design intentionnel • Cotonou.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-16 md:gap-32">
+                <div class="flex flex-col gap-6">
+                    <span class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold">Suivre</span>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="#">Instagram</a>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="#">Pinterest</a>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <span class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold">Atelier</span>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="contact.html">Nous Contacter</a>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="services.html">Nos Services</a>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <span class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold">Legal</span>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="#">Confidentialité</a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-32 px-12 text-center w-full">
+            <p class="font-body text-[8px] uppercase tracking-[0.4em] text-stone-300">© 2026 L'ATELIER DES ÉMOTIONS. BESPOKE ATELIER.</p>
+        </div>
+    </footer>
+</body>
+</html>

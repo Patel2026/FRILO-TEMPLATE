@@ -1,0 +1,37 @@
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+body { 
+    font-family: 'Inter', sans-serif; 
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    font-family: 'Epilogue', sans-serif; 
+}
+
+.glass-nav {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.editorial-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* Custom shadow for Brutalist feel */
+.brutalist-shadow {
+    box-shadow: 0 20px 40px rgba(47, 46, 46, 0.06);
+}
+
+/* Sharp transition for images */
+.image-reveal {
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Vertical text for editorial look */
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}

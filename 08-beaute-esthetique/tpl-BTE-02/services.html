@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Nos Soins | Flora Skin</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Be+Vietnam+Pro:wght@400;500&family=Caveat:wght@400;700&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container antialiased">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-[#F4EFE6]/70 backdrop-blur-md shadow-[0_10px_40px_rgba(29,28,22,0.05)] flex justify-between items-center px-8 py-4 max-w-full">
+        <div class="text-[22px] font-headline font-bold text-[#55433b]">Flora Skin</div>
+        <div class="hidden md:flex items-center space-x-10">
+            <a class="text-[#55433b] hover:text-[#94451a] transition-colors font-label text-sm tracking-wide" href="index.html">Accueil</a>
+            <a class="text-[#55433b] hover:text-[#94451a] transition-colors font-label text-sm tracking-wide" href="a-propos.html">Notre Histoire</a>
+            <a class="text-[#94451a] border-b-2 border-[#94451a] pb-1 font-medium font-label text-sm tracking-wide" href="services.html">Soins</a>
+            <a class="text-[#55433b] hover:text-[#94451a] transition-colors font-label text-sm tracking-wide" href="#">Journal</a>
+            <a class="text-[#55433b] hover:text-[#94451a] transition-colors font-label text-sm tracking-wide" href="contact.html">Contact</a>
+        </div>
+        <button class="bg-primary text-on-primary px-6 py-2.5 rounded-full hover:scale-105 transition-transform duration-300 font-label text-sm font-medium">
+            Prendre RDV 🌿
+        </button>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative h-[614px] flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 bg-secondary">
+                <img class="w-full h-full object-cover opacity-60" data-alt="dreamy macro photography of dew drops on mossy green forest floor with soft morning light filtering through leaves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfcxS8MGVOW6MbspiYzPHrvOUNKsAo9KLPowfXkC4JVtXnjkFHYaNfHgDFa75tzPlb0E-xS2bquSII0fJSWJBEhiiMtib17lpBOcM2QXG27Eg5pCiF4gRq6ULnrYHp1wV-WK2SmekDmPKdrSDFrIgMNmsM-fPodlF1BkZY_tPLJtRSiDOo76Mrx7-Q0O7l4MgJkLGY7v8kGgosQCJWd2fP6hMWFNdoKbIO9evaaVlCz2EjJUdLOc8n-1ubb-l1D8USfn9f9GnGM2s"/>
+            </div>
+            <div class="relative z-10 text-center px-6">
+                <span class="font-handwritten text-3xl text-secondary-container mb-4 block">L'art de la Terre</span>
+                <h1 class="font-headline text-6xl md:text-8xl text-white tracking-tight">Nos Soins</h1>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="bg-surface-container-low py-24 px-6 paper-grain text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="font-headline text-4xl text-on-surface mb-8 leading-tight">Une philosophie de régénération organique pour votre peau.</h2>
+                <p class="text-on-surface-variant text-lg leading-relaxed mb-12">
+                    Chaque rituel Flora Skin est une immersion sensorielle conçue à partir d'extraits botaniques purs. Nous fusionnons la sagesse ancestrale de l'herboristerie avec des protocoles de soin modernes pour restaurer l'éclat originel de votre visage et de votre corps.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="px-6 py-2 bg-secondary-container text-on-secondary-container rounded-full font-label text-xs tracking-widest uppercase flex items-center gap-2">
+                        <span class="material-symbols-outlined text-sm">eco</span> Certifié Bio
+                    </span>
+                    <span class="px-6 py-2 bg-secondary-container text-on-secondary-container rounded-full font-label text-xs tracking-widest uppercase flex items-center gap-2">
+                        <span class="material-symbols-outlined text-sm">pets</span> Cruelty-Free
+                    </span>
+                    <span class="px-6 py-2 bg-secondary-container text-on-secondary-container rounded-full font-label text-xs tracking-widest uppercase flex items-center gap-2">
+                        <span class="material-symbols-outlined text-sm">recycling</span> Éco-conçu
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soins Menu Tabs -->
+        <section class="py-16 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex justify-center border-b border-outline-variant/30 mb-16">
+                    <div class="flex space-x-12">
+                        <button class="pb-4 text-primary border-b-2 border-primary font-label font-bold text-sm tracking-[0.2em] uppercase transition-all">Visage</button>
+                        <button class="pb-4 text-on-surface-variant hover:text-primary font-label text-sm tracking-[0.2em] uppercase transition-all">Corps</button>
+                        <button class="pb-4 text-on-surface-variant hover:text-primary font-label text-sm tracking-[0.2em] uppercase transition-all">Rituels</button>
+                    </div>
+                </div>
+
+                <!-- Visage Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                    <!-- Card 1 -->
+                    <div class="group bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                        <div class="h-64 overflow-hidden relative">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="luxurious facial treatment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrjvAXI4aJyfTMt1qQDhE_o-HWvtNXpfZheQxJgPiQOORjUylCZVRYPw6UjqJYj5e4xehzskakPUKyipIKcrwCTO04lBeJJsp9VHf_0WbjR4H7w_jjQoUKs5Y9T157LA9cG5pV7TzNieCoSU9x78FsFZPQfvNAlOdVNotiwl0ScZune1NLNFftjYjdyyoxKcvMN8Eeew0xrCuOgDJbVPjswB1csax3T2eNwT2d6nuEz6VCICtalNYb1BgZjgsxVtmBY9QlUTob9mU"/>
+                            <div class="absolute top-4 right-4 bg-surface/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary">60 MIN</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="font-headline text-2xl text-on-surface mb-3">Soin Éclat Royal</h3>
+                            <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Un cocktail de vitamine C et d'enzymes de fruits pour réveiller les teints ternes instantanément.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="font-serif text-xl text-primary">85 €</span>
+                                <button class="text-secondary font-label text-xs font-bold uppercase tracking-widest flex items-center gap-2 group-hover:translate-x-2 transition-transform">Découvrir <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="group bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                        <div class="h-64 overflow-hidden relative">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="clay mask application" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3Tpx93OaWgmI_s11KEjAxN5JEW8xXMpkuBiChgk82GMhL0yzg91ikqTJURugfiIzZsJ3mOnCp5JFuC0BFd9mJJ3dyaGKo78ncZm7KIM1BQ3dxq5w6JSccIPiPCuYOh7eoDZsiEWiK39bpoG5AoGRxp5gcykP3eGD79QNXTrkOueL9utO9i5tx81OfEWlENEsM77JUvfykyy58AG12reMpLHzZUQMyjr5dJ5N9c4VeDekY2P2SUqsk3ZMIbOEATobvxEY8xsM3q6M"/>
+                            <div class="absolute top-4 right-4 bg-surface/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary">45 MIN</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="font-headline text-2xl text-on-surface mb-3">Masque Argile & Thé</h3>
+                            <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Purification profonde aux argiles volcaniques et extraits de thé vert antioxydant.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="font-serif text-xl text-primary">65 €</span>
+                                <button class="text-secondary font-label text-xs font-bold uppercase tracking-widest flex items-center gap-2 group-hover:translate-x-2 transition-transform">Découvrir <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="group bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                        <div class="h-64 overflow-hidden relative">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="facial massage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr9D4uE-qNZRNoaaQ93AA4advMAW3dyl9DrMxKTbaJ474dSos3oPMmAJ6EMZyzeD32kTyKok7e3v__PYxoiWbW5ijpP8tZnfmjJvNeCdWB3JqfJbd8AEtTSvgEJMQxm5rAiuy8zU3Ct_rVrSWBHfFV2KmPSv7pMLAuVvf8SDqo4oKrt_--VPXcWhQqyegAlM0ee15BnQurhILvOzjj_SM0YKGQ-F71FgfryDFdqmU_nav3IODR2F5lpSHENYkwgjJvPymYPYI9Jhk"/>
+                            <div class="absolute top-4 right-4 bg-surface/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary">90 MIN</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="font-headline text-2xl text-on-surface mb-3">Lifting Végétal</h3>
+                            <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Modelage ancestral drainant et actifs raffermissants pour une peau lissée et tonique.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="font-serif text-xl text-primary">120 €</span>
+                                <button class="text-secondary font-label text-xs font-bold uppercase tracking-widest flex items-center gap-2 group-hover:translate-x-2 transition-transform">Découvrir <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="py-24 bg-surface-container overflow-hidden text-center">
+            <div class="max-w-7xl mx-auto px-6">
+                <span class="font-handwritten text-2xl text-primary mb-2 block">Le Voyage Flora</span>
+                <h2 class="font-headline text-4xl mb-16">Votre parcours de régénération</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                    <div class="hidden md:block absolute top-1/4 left-0 w-full h-[1px] bg-outline-variant/30 z-0"></div>
+                    <div class="relative z-10 flex flex-col items-center">
+                        <div class="w-20 h-20 bg-background rounded-full flex items-center justify-center mb-8 shadow-sm border-4 border-secondary-container">
+                            <span class="material-symbols-outlined text-3xl text-secondary">forum</span>
+                        </div>
+                        <h4 class="font-headline text-xl mb-4">Consultation</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Nous analysons votre typologie cutanée et vos besoins saisonniers pour un soin sur-mesure.</p>
+                    </div>
+                    <div class="relative z-10 flex flex-col items-center">
+                        <div class="w-20 h-20 bg-background rounded-full flex items-center justify-center mb-8 shadow-sm border-4 border-secondary-container">
+                            <span class="material-symbols-outlined text-3xl text-secondary">spa</span>
+                        </div>
+                        <h4 class="font-headline text-xl mb-4">Protocole</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Application des nectars botaniques par des gestuelles de massage précises et relaxantes.</p>
+                    </div>
+                    <div class="relative z-10 flex flex-col items-center">
+                        <div class="w-20 h-20 bg-background rounded-full flex items-center justify-center mb-8 shadow-sm border-4 border-secondary-container">
+                            <span class="material-symbols-outlined text-3xl text-secondary">auto_awesome</span>
+                        </div>
+                        <h4 class="font-headline text-xl mb-4">Résultats</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Une peau visiblement repulpée, un esprit apaisé et des conseils de routine à domicile.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="bg-secondary py-24 px-6 text-white text-left">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="font-headline text-4xl mb-12 text-center">Questions fréquentes</h2>
+                <div class="space-y-6">
+                    <div class="border-b border-white/20 pb-6 group">
+                        <button class="w-full flex justify-between items-center text-left text-xl font-headline focus:outline-none">
+                            <span>Quels produits utilisez-vous lors des soins ?</span>
+                            <span class="material-symbols-outlined text-tertiary-fixed">add</span>
+                        </button>
+                        <div class="hidden group-focus-within:block mt-4 text-secondary-container/90 leading-relaxed font-body font-light">
+                            Nous utilisons exclusivement notre propre gamme "Flora Organics", formulée à froid avec des ingrédients 100% naturels, sans parabens, silicones ou parfums synthétiques.
+                        </div>
+                    </div>
+                    <div class="border-b border-white/20 pb-6 group">
+                        <button class="w-full flex justify-between items-center text-left text-xl font-headline focus:outline-none">
+                            <span>Faut-il prévoir une tenue particulière ?</span>
+                            <span class="material-symbols-outlined text-tertiary-fixed">add</span>
+                        </button>
+                        <div class="hidden group-focus-within:block mt-4 text-secondary-container/90 leading-relaxed font-body font-light">
+                            Nous mettons à votre disposition des peignoirs en coton biologique et des chaussons. Venez simplement comme vous êtes, nous nous occupons de tout.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking CTA -->
+        <section class="py-24 px-6 relative overflow-hidden bg-background text-center">
+            <div class="max-w-6xl mx-auto rounded-lg bg-surface-container-highest p-12 md:p-24 flex flex-col items-center relative z-10 shadow-xl">
+                <span class="font-label text-xs uppercase tracking-[0.3em] text-primary mb-6">Réservez votre instant</span>
+                <h2 class="font-headline text-5xl md:text-6xl text-on-surface mb-8 tracking-tighter">Accordez-vous une pause sensorielle.</h2>
+                <div class="flex flex-col sm:flex-row gap-6 relative z-10">
+                    <button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label text-sm font-bold uppercase tracking-widest hover:scale-105 transition-all shadow-lg">
+                        Prendre rendez-vous
+                    </button>
+                    <button class="border border-primary text-primary px-10 py-4 rounded-full font-label text-sm font-bold uppercase tracking-widest hover:bg-primary/5 transition-all">
+                        Voir tous les tarifs
+                    </button>
+                </div>
+                <div class="absolute -bottom-20 -right-20 w-64 h-64 opacity-10 rotate-12 pointer-events-none">
+                    <span class="material-symbols-outlined text-[12rem]">potted_plant</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full rounded-t-[40px] mt-20 bg-[#2D3D2B] text-[#d1eac8]">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 max-w-7xl mx-auto text-left">
+            <div class="space-y-6">
+                <div class="text-2xl font-headline font-bold text-[#fef9f0]">Flora Skin</div>
+                <p class="font-body text-sm opacity-80 leading-relaxed">La beauté cultivée par la terre. Notre sanctuaire urbain vous accueille pour une régénération profonde et consciente.</p>
+            </div>
+            <div class="space-y-6">
+                <h4 class="font-headline text-2xl text-[#fef9f0]">Navigation</h4>
+                <div class="flex flex-col space-y-4">
+                    <a class="text-[#d1eac8]/80 hover:text-[#fef9f0] hover:translate-x-1 transition-all font-body" href="index.html">Accueil</a>
+                    <a class="text-[#d1eac8]/80 hover:text-[#fef9f0] hover:translate-x-1 transition-all font-body" href="a-propos.html">Notre Histoire</a>
+                    <a class="text-[#fef9f0] underline font-body" href="services.html">Soins</a>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <h4 class="font-headline text-2xl text-[#fef9f0]">Lieu</h4>
+                <p class="text-[#d1eac8]/80 font-body">42 Rue Botanique, Paris 75003</p>
+                <div class="mt-6 pt-6 border-t border-[#d1eac8]/10 text-xs opacity-60 font-body uppercase tracking-widest text-center md:text-left">
+                    © Flora Skin Beauty grown from the earth.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

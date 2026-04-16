@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Be+Vietnam+Pro:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed": "#26fedc",
+                      "secondary-container": "#006b5b",
+                      "tertiary": "#ff62c5",
+                      "on-tertiary-container": "#000000",
+                      "tertiary-container": "#ff00bd",
+                      "primary-fixed-dim": "#bc6fff",
+                      "surface-tint": "#cf96ff",
+                      "surface-container-high": "#32113d",
+                      "on-tertiary-fixed": "#350025",
+                      "secondary": "#26fedc",
+                      "on-background": "#fbdbff",
+                      "on-primary-fixed-variant": "#450074",
+                      "error": "#ff6e84",
+                      "on-tertiary-fixed-variant": "#710052",
+                      "secondary-fixed-dim": "#00efce",
+                      "background": "#1b0424",
+                      "secondary-dim": "#00efce",
+                      "on-primary-container": "#37005f",
+                      "on-secondary": "#005d4f",
+                      "on-error-container": "#ffb2b9",
+                      "on-secondary-container": "#ddfff5",
+                      "on-secondary-fixed": "#00483d",
+                      "surface-container-low": "#22062c",
+                      "primary-dim": "#a533ff",
+                      "surface-container": "#2a0b35",
+                      "surface": "#1b0424",
+                      "inverse-on-surface": "#684a70",
+                      "surface-variant": "#3a1646",
+                      "outline": "#8a6a92",
+                      "surface-container-highest": "#3a1646",
+                      "tertiary-fixed": "#ff89cd",
+                      "error-dim": "#d73357",
+                      "on-primary-fixed": "#000000",
+                      "on-primary": "#480079",
+                      "on-secondary-fixed-variant": "#006859",
+                      "on-error": "#490013",
+                      "primary-container": "#c683ff",
+                      "outline-variant": "#5a3d62",
+                      "tertiary-fixed-dim": "#ff6ec7",
+                      "primary": "#cf96ff",
+                      "on-surface-variant": "#c39fca",
+                      "on-surface": "#fbdbff",
+                      "tertiary-dim": "#ff62c5",
+                      "surface-bright": "#421b4f",
+                      "inverse-primary": "#8d00e6",
+                      "error-container": "#a70138",
+                      "surface-container-lowest": "#000000",
+                      "inverse-surface": "#fff7fb",
+                      "on-tertiary": "#440030",
+                      "primary-fixed": "#c683ff",
+                      "surface-dim": "#1b0424"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Epilogue"],
+                      "body": ["Be Vietnam Pro"],
+                      "label": ["Be Vietnam Pro"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #1b0424;
+            color: #fbdbff;
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .signature-gradient {
+            background: linear-gradient(135deg, #cf96ff 0%, #a533ff 100%);
+        }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#1b0424]/60 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(72,0,121,0.2)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#cf96ff] font-['Epilogue']">The Kinetic Gala</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-8 font-['Epilogue'] tracking-tight">
+<a class="text-[#26fedc] border-b-2 border-[#26fedc] pb-1" href="#">Home</a>
+<a class="text-white/80 hover:text-[#cf96ff] transition-colors" href="#">About</a>
+<a class="text-white/80 hover:text-[#cf96ff] transition-colors" href="#">Services</a>
+<a class="text-white/80 hover:text-[#cf96ff] transition-colors" href="#">Gallery</a>
+<a class="text-white/80 hover:text-[#cf96ff] transition-colors" href="#">Contact</a>
+</div>
+<button class="hidden md:block bg-primary text-on-primary font-bold py-3 px-6 rounded-full hover:scale-105 transition-transform duration-200">
+                Plan your event
+            </button>
+<!-- Mobile Menu Toggle -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary cursor-pointer text-3xl">menu</span>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Vibrant event" class="w-full h-full object-cover opacity-40" data-alt="Cinematic wide shot of a high-end luxury party with magenta and cyan stage lights, shimmering confetti falling, and a blurred energetic crowd" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd0rAgKjl6-c1OMmFG9Ui_0LeRCsQ5dRn41sfFr5mCZseUkTeJFS14lRZCRNu8y7KqrSehhibc8-trIPR5TsA03tCUgfAOCSi3NrS0kIKIRU0P20gJXH7Igffw-aSIVsmf1dUFNl0sNIDJVfHjB0xpByHn_IdJgnacedVPzjxqCiUjiG6kYnlUljGuAVeJit5uodLfoCCA_fOi1zoxj8X3DV8eePEl039gvySrRc02dN7IvhU_cO_HFfgrkMRMhX_LznKFlbjvfVU"/>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-3xl">
+<span class="text-secondary font-bold tracking-widest uppercase mb-4 block">Structured Euphoria</span>
+<h1 class="font-headline text-6xl md:text-8xl font-black leading-tight tracking-tighter mb-8">
+                        Events That <span class="text-transparent bg-clip-text signature-gradient">Defy Physics.</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant mb-10 max-w-xl font-body leading-relaxed">
+                        We blend meticulous logistics with electric creativity to curate moments that pulse with life.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="signature-gradient text-on-primary font-black py-5 px-10 rounded-full text-lg hover:scale-105 transition-transform shadow-lg shadow-primary/20">
+                            Plan your event
+                        </button>
+<button class="border-2 border-secondary text-secondary font-bold py-5 px-10 rounded-full text-lg hover:bg-secondary/10 transition-colors">
+                            Watch Showreel
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<h2 class="font-headline text-5xl font-extrabold mb-4">Our Craft</h2>
+<p class="text-secondary font-medium tracking-wide">THE PILLARS OF KINETIC PLANNING</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Decoration -->
+<div class="bg-surface-container-high p-10 rounded-xl hover:scale-105 transition-transform duration-300 border-b-4 border-primary">
+<div class="mb-6">
+<span class="material-symbols-outlined text-5xl text-primary" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h3 class="text-2xl font-black mb-4 font-headline">Decoration</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Immersive environments crafted from light, texture, and unexpected floral geometry.</p>
+<ul class="space-y-3 text-sm font-bold text-primary/80">
+<li>+ SCENIC DESIGN</li>
+<li>+ CUSTOM INSTALLATIONS</li>
+<li>+ LIGHTING CHOREOGRAPHY</li>
+</ul>
+</div>
+<!-- Animation -->
+<div class="bg-surface-container-high p-10 rounded-xl hover:scale-105 transition-transform duration-300 border-b-4 border-secondary">
+<div class="mb-6">
+<span class="material-symbols-outlined text-5xl text-secondary" data-icon="celebration">celebration</span>
+</div>
+<h3 class="text-2xl font-black mb-4 font-headline">Animation</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">High-energy performances and interactive tech that keeps the adrenaline surging all night.</p>
+<ul class="space-y-3 text-sm font-bold text-secondary/80">
+<li>+ AVANT-GARDE TALENT</li>
+<li>+ INTERACTIVE PROJECTIONS</li>
+<li>+ LIVE MIXOLOGY SHOWS</li>
+</ul>
+</div>
+<!-- Planning -->
+<div class="bg-surface-container-high p-10 rounded-xl hover:scale-105 transition-transform duration-300 border-b-4 border-tertiary">
+<div class="mb-6">
+<span class="material-symbols-outlined text-5xl text-tertiary" data-icon="calendar_month">calendar_month</span>
+</div>
+<h3 class="text-2xl font-black mb-4 font-headline">Planning</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">The architectural backbone of every gala. Flawless timing, zero-friction logistics.</p>
+<ul class="space-y-3 text-sm font-bold text-tertiary/80">
+<li>+ STRATEGIC TIMELINES</li>
+<li>+ VENDOR SYMPHONY</li>
+<li>+ CONCIERGE MANAGEMENT</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-24 bg-surface overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 mb-16">
+<h2 class="font-headline text-5xl md:text-7xl font-black mb-6 text-center">Visual <span class="text-tertiary">Rhythm</span></h2>
+<p class="text-on-surface-variant text-center max-w-2xl mx-auto">A glimpse into our world of high-velocity creative execution and aesthetic precision.</p>
+</div>
+<div class="px-4">
+<div class="editorial-grid max-w-[1600px] mx-auto">
+<!-- Bento Gallery -->
+<div class="col-span-12 md:col-span-6 lg:col-span-4 h-[400px] rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of vibrant pink and purple stage lights hitting a crystalline sculpture at a luxury gala event" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCSrTVkTbKA4pZYn79k_igLzh_8p6RlmOnQ16kRA8gMNIS5pnzfFIiONFI0VH5oFx3Kq2ZKgVMqz6rgZyS-1yLw6JA1A-hZM0Ntdr364ANKKWfDykuQxbIWy4OwROEVKrtnYpRSXOlvLBUwwJdVn3qQK3yxAj5eiNFLzcQ2WGzkBBlSVbF0iubkOiQvZSIWxnPFhVDQ9B9P6pW98PLxIaZlJjZIgLbGkcY53YJPkeAWSIJB2pRdK08O6KeZIptZH7vJQZGnZ9WeY4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6 font-headline font-bold text-xl uppercase tracking-tighter">Neon Nights</div>
+</div>
+<div class="col-span-12 md:col-span-6 lg:col-span-8 h-[400px] rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Wide shot of an outdoor evening party with thousands of fairy lights draped over large trees and elegant tables set for dinner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDss-JsC1erRq9KVwW4T2KuWeVdMfuK918mK_mYqK73dPtyFsul0JeHwS-3YaDqNJOQWWlc_x7QZsetLmDy0UcQk4KPXxETqt0QiypXA04W3Rf4LyEnnFWr7oUT3Ss8vwC-nJO6S9GOslihVgys6ur98ilYS_u0sFXdH-rfHEi8ltbi9zyQdlZ5RmcSGjpFhHJlhETo-TXvv3HPTlwsckaRC3qUo9vBrZEeq-FDo8nQf_PI4aqBkVbqIuBRDNzHeRDZgY26Qb4NvUM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6 font-headline font-bold text-xl uppercase tracking-tighter">The Forest Gala</div>
+</div>
+<div class="col-span-12 md:col-span-12 lg:col-span-5 h-[600px] rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Dancer in an elaborate futuristic costume with glowing LED accents performing in front of a dark cinematic backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZUuweRn6dhXiFb2QlTBaIXEXL6yX-Y2LIcI7SadFF1Ld1omoeJEFslg_QM30SpE_9sO419yPiCjoyj06rVNJ_eZUcLVdaPGNP7jHeInIhNAmkd-_hmJ-BMgb4bN6WSCukG_9uc2ZUICkA74EuGYwSLSwZhf4UQLyH0eDCEFRUfb_eBgvtT7Q3FWzy-QSQ2W5XUt2Ym1FdyfwRCaY_n_PvrT0PTfK7MKqyZL8DYyj-PfzFFV9lDhnPAu4Imvrg4ckmxtairgxICeA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6 font-headline font-bold text-xl uppercase tracking-tighter">Live Kinetic Art</div>
+</div>
+<div class="col-span-12 md:col-span-6 lg:col-span-7 h-[600px] rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end DJ booth with sophisticated lighting and a crowd of well-dressed people dancing in a purple-hued luxury club space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATdPg5P0ZBMn71TNOhJFelzoGz2pywcXmirxHvxRKlOq4hV4nICijigNjtEjyzreSsKBfFxLkxOt9iNSaYtv70T0ITyp-TWHyCljq5OMw5chXIX4H4KrSvigLchboMz0_aTMxeRqmF4ZLLYj2vZl156dnqO7Ij0Kbd1Su9hx6TjLVlJloEV288zPqmkJjJ8ueHUpe1ldAZ4QZ8yv3Maq378h89HiDE9CjbZZJBbUflH2TJ0CXvPrjHiL05SEmcoz4UP0ef4b1G58U"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6 font-headline font-bold text-xl uppercase tracking-tighter">Sonic Pulse</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-24 bg-surface-container-low relative">
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline text-5xl font-black mb-8 leading-tight">The Kinetic <br/><span class="text-secondary">Advantage.</span></h2>
+<div class="space-y-10">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="electric_bolt">electric_bolt</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">High-Velocity Creativity</h4>
+<p class="text-on-surface-variant">We don't just follow trends; we generate the energy that creates them.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="architecture">architecture</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Architectural Precision</h4>
+<p class="text-on-surface-variant">Every second of your event is mapped, tested, and polished to a diamond shine.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-tertiary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary" data-icon="hub">hub</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">The Ecosystem Network</h4>
+<p class="text-on-surface-variant">Unrivaled access to world-class talent, venues, and technology partners.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute inset-0 bg-primary/20 blur-[120px] rounded-full"></div>
+<div class="relative bg-surface-container-high rounded-xl p-8 border border-outline-variant/20">
+<img class="rounded-lg w-full grayscale hover:grayscale-0 transition-all duration-500" data-alt="Professional team reviewing large floor plans and digital 3D models of a concert stage on a modern wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcBqaG--sZGqgHi5vak-73fV-yzZR_-gUb5lNGtA4hFiNn4vkIuqiCvtnRU8rcI0h9Des8uaFl79JkDUrQSvJ1q2GeP0gW0hueARwhSO5kob1f-qMKVo8kCJzrdJxbzPjnDI3MRVmUFig3DSIfXHZcXcvSqiP-RqHkYNqJodxPWieCjHV6R_NH63EtQcBzc6zQDfXJTpwKfrp83FcL55TlniXBOwks14DhCA6oIDcVi0g7GtOBAzi7BdT-i1rVQd4VtyAp6RsNoUY"/>
+<div class="mt-8 flex justify-between items-center">
+<div>
+<p class="text-4xl font-black font-headline">500+</p>
+<p class="text-xs uppercase tracking-widest text-secondary">Events Delivered</p>
+</div>
+<div>
+<p class="text-4xl font-black font-headline">12</p>
+<p class="text-xs uppercase tracking-widest text-primary">Global Awards</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="font-headline text-4xl font-black mb-16 text-center">Word on the <span class="text-primary">Dancefloor.</span></h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="p-12 rounded-xl bg-surface-container-low relative border border-outline-variant/10">
+<span class="material-symbols-outlined absolute top-8 right-8 text-primary/20 text-6xl" data-icon="format_quote">format_quote</span>
+<p class="text-2xl font-medium leading-relaxed mb-8 italic">"They transformed a warehouse into a floating garden of light. Our guests are still talking about it six months later. Absolutely transcendental."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest"></div>
+<div>
+<p class="font-bold">Julian Vane</p>
+<p class="text-sm text-secondary">Creative Director, Lumina Corp</p>
+</div>
+</div>
+</div>
+<div class="p-12 rounded-xl bg-surface-container-low relative border border-outline-variant/10">
+<span class="material-symbols-outlined absolute top-8 right-8 text-secondary/20 text-6xl" data-icon="format_quote">format_quote</span>
+<p class="text-2xl font-medium leading-relaxed mb-8 italic">"The planning was invisible and the execution was explosive. The Kinetic Gala is the only team I trust with our annual summit."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest"></div>
+<div>
+<p class="font-bold">Elena Rossi</p>
+<p class="text-sm text-tertiary">Founder, The Peak Initiative</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 bg-surface relative">
+<div class="max-w-4xl mx-auto px-8">
+<div class="bg-surface-container-high rounded-xl p-12 md:p-20 shadow-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-3xl -mr-32 -mt-32"></div>
+<div class="relative z-10 text-center mb-12">
+<h2 class="font-headline text-5xl font-black mb-4">Start the Movement.</h2>
+<p class="text-on-surface-variant">Tell us about your vision. Let's make it kinetic.</p>
+</div>
+<form class="relative z-10 space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs uppercase tracking-widest font-bold text-secondary">Your Name</label>
+<input class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-secondary rounded-lg py-4 px-6 text-on-surface" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs uppercase tracking-widest font-bold text-secondary">Email Address</label>
+<input class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-secondary rounded-lg py-4 px-6 text-on-surface" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs uppercase tracking-widest font-bold text-secondary">The Vision</label>
+<textarea class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-secondary rounded-lg py-4 px-6 text-on-surface" placeholder="Briefly describe your event..." rows="4"></textarea>
+</div>
+<button class="w-full signature-gradient text-on-primary font-black py-5 px-10 rounded-full text-xl hover:scale-[1.02] transition-transform shadow-xl">
+                            Send Inquiry
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-[#22062c]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-7xl mx-auto">
+<div class="text-center md:text-left mb-8 md:mb-0">
+<div class="text-xl font-black text-[#cf96ff] mb-4 font-headline">The Kinetic Gala</div>
+<p class="font-['Be_Vietnam_Pro'] text-sm uppercase tracking-widest text-[#8a6a92]">© 2024 The Kinetic Gala. Structured Euphoria.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-['Be_Vietnam_Pro'] text-sm uppercase tracking-widest">
+<a class="text-[#8a6a92] hover:text-[#26fedc] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#8a6a92] hover:text-[#26fedc] transition-colors" href="#">Terms of Service</a>
+<a class="text-[#8a6a92] hover:text-[#26fedc] transition-colors" href="#">FAQ</a>
+<a class="text-[#8a6a92] hover:text-[#26fedc] transition-colors" href="#">Instagram</a>
+<a class="text-[#8a6a92] hover:text-[#26fedc] transition-colors" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+</body></html>

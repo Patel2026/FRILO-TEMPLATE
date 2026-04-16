@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Vibe | PULSE - L'Énergie des Événements</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&family=Be+Vietnam+Pro:wght@400;500;600;700;900&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-tertiary selection:text-background antialiased overflow-x-hidden">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 glass-effect shadow-ambient">
+        <div class="flex justify-between items-center px-8 py-5 max-w-7xl mx-auto">
+            <a href="index.html" class="text-3xl font-black tracking-tighter text-primary font-headline italic">PULSE</a>
+            <div class="hidden md:flex items-center gap-10 font-headline text-sm font-bold tracking-tight uppercase">
+                <a class="text-white/70 hover:text-primary transition-all" href="index.html">Live</a>
+                <a class="text-white/70 hover:text-primary transition-all" href="a-propos.html">Esprit</a>
+                <a class="text-white/70 hover:text-primary transition-all" href="services.html">Craft</a>
+                <a class="text-secondary border-b-2 border-secondary pb-1" href="gallery.html">Vibe</a>
+                <a class="text-white/70 hover:text-primary transition-all" href="contact.html">Flux</a>
+            </div>
+            <button class="signature-gradient-bg px-8 py-3 rounded-full font-headline font-black text-xs uppercase tracking-widest btn-pulse shadow-lg shadow-primary/20">
+                Plan Project
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-40 pb-24">
+        <!-- Gallery Header -->
+        <header class="max-w-7xl mx-auto px-8 mb-24">
+            <div class="max-w-4xl">
+                <span class="text-secondary font-black tracking-[0.4em] uppercase mb-8 block text-sm">Rétrospective de Haute Vélocité</span>
+                <h1 class="font-headline text-6xl md:text-9xl font-black leading-none uppercase tracking-tighter mb-10 italic">Légende <br/><span class="signature-gradient">Visuelle.</span></h1>
+                <p class="text-xl font-light text-on-surface-variant leading-relaxed opacity-70">
+                    Capturer l'énergie cinétique avant qu'elle ne s'échappe. Une collection de moments qui ont marqué le tempo de Cotonou.
+                </p>
+            </div>
+        </header>
+
+        <!-- Gallery Grid (Kinetic Masonry) -->
+        <section class="max-w-[1800px] mx-auto px-8">
+            <!-- Filter Pills (Neon Style) -->
+            <div class="flex flex-wrap gap-4 mb-20 justify-center md:justify-start">
+                <button class="px-8 py-3 rounded-full bg-primary text-background font-black text-xs uppercase tracking-widest shadow-lg shadow-primary/20">All Vibes</button>
+                <button class="px-8 py-3 rounded-full bg-surface-container-low text-secondary font-bold text-xs uppercase tracking-widest hover:bg-surface-container-high transition-all ghost-border">Festivals</button>
+                <button class="px-8 py-3 rounded-full bg-surface-container-low text-tertiary font-bold text-xs uppercase tracking-widest hover:bg-surface-container-high transition-all ghost-border">Galas VIP</button>
+                <button class="px-8 py-3 rounded-full bg-surface-container-low text-primary font-bold text-xs uppercase tracking-widest hover:bg-surface-container-high transition-all ghost-border">Fashion</button>
+            </div>
+
+            <div class="editorial-grid">
+                <!-- Project 1 (Large) -->
+                <div class="col-span-12 md:col-span-8 h-[600px] rounded-kinetic overflow-hidden relative group cursor-pointer shadow-ambient">
+                    <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Foule vibrante festival" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd0rAgKjl6-c1OMmFG9Ui_0LeRCsQ5dRn41sfFr5mCZseUkTeJFS14lRZCRNu8y7KqrSehhibc8-trIPR5TsA03tCUgfAOCSi3NrS0kIKIRU0P20gJXH7Igffw-aSIVsmf1dUFNl0sNIDJVfHjB0xpByHn_IdJgnacedVPzjxqCiUjiG6kYnlUljGuAVeJit5uodLfoCCA_fOi1zoxj8X3DV8eePEl039gvySrRc02dN7IvhU_cO_HFfgrkMRMhX_LznKFlbjvfVU"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
+                    <div class="absolute bottom-12 left-12">
+                        <span class="text-secondary font-black text-xs uppercase tracking-[0.3em] mb-4 block">Festival 2025</span>
+                        <h3 class="font-headline text-4xl font-black uppercase tracking-tighter">Océan de Lumières</h3>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Small Tall) -->
+                <div class="col-span-12 md:col-span-4 h-[600px] rounded-kinetic overflow-hidden relative group cursor-pointer shadow-ambient">
+                    <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Installation décorative neon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCSrTVkTbKA4pZYn79k_igLzh_8p6RlmOnQ16kRA8gMNIS5pnzfFIiONFI0VH5oFx3Kq2ZKgVMqz6rgZyS-1yLw6JA1A-hZM0Ntdr364ANKKWfDykuQxbIWy4OwROEVKrtnYpRSXOlvLBUwwJdVn3qQK3yxAj5eiNFLzcQ2WGzkBBlSVbF0iubkOiQvZSIWxnPFhVDQ9B9P6pW98PLxIaZlJjZIgLbGkcY53YJPkeAWSIJB2pRdK08O6KeZIptZH7vJQZGnZ9WeY4"/>
+                    <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="absolute inset-x-12 bottom-12 p-8 bg-background/60 backdrop-blur-xl rounded-kinetic translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                        <span class="text-primary text-[10px] font-black uppercase mb-2 block tracking-widest">Macro-Détails</span>
+                        <h4 class="font-headline font-black text-xl uppercase tracking-tighter">Cristal Kinétique</h4>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Small Tall) -->
+                <div class="col-span-12 md:col-span-12 lg:col-span-5 h-[800px] rounded-kinetic overflow-hidden relative group cursor-pointer shadow-ambient">
+                    <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Danseur en mouvement" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZUuweRn6dhXiFb2QlTBaIXEXL6yX-Y2LIcI7SadFF1Ld1omoeJEFslg_QM30SpE_9sO419yPiCjoyj06rVNJ_eZUcLVdaPGNP7jHeInIhNAmkd-_hmJ-BMgb4bN6WSCukG_9uc2ZUICkA74EuGYwSLSwZhf4UQLyH0eDCEFRUfb_eBgvtT7Q3FWzy-QSQ2W5XUt2Ym1FdyfwRCaY_n_PvrT0PTfK7MKqyZL8DYyj-PfzFFV9lDhnPAu4Imvrg4ckmxtairgxICeA"/>
+                </div>
+
+                <!-- Project 4 (Wide) -->
+                <div class="col-span-12 md:col-span-12 lg:col-span-7 h-[800px] rounded-kinetic overflow-hidden relative group cursor-pointer shadow-ambient">
+                    <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Gala annuel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDss-JsC1erRq9KVwW4T2KuWeVdMfuK918mK_mYqK73dPtyFsul0JeHwS-3YaDqNJOQWWlc_x7QZsetLmDy0UcQk4KPXxETqt0QiypXA04W3Rf4LyEnnFWr7oUT3Ss8vwC-nJO6S9GOslihVgys6ur98ilYS_u0sFXdH-rfHEi8ltbi9zyQdlZ5RmcSGjpFhHJlhETo-TXvv3HPTlwsckaRC3qUo9vBrZEeq-FDo8nQf_PI4aqBkVbqIuBRDNzHeRDZgY26Qb4NvUM"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-80"></div>
+                    <div class="absolute bottom-16 left-16">
+                        <span class="text-tertiary font-black text-xs uppercase tracking-[0.3em] mb-4 block">Lancement Privé</span>
+                        <h3 class="font-headline text-5xl font-black uppercase tracking-tighter">La Forêt d'Argent</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Vision Section -->
+        <section class="max-w-4xl mx-auto px-8 py-40 text-center">
+            <h2 class="font-headline text-4xl font-black mb-10 uppercase italic">Chaque pixel est une décharge.</h2>
+            <p class="text-xl font-light text-on-surface-variant leading-relaxed opacity-60 italic">
+                Notre collection visuelle est en constante expansion, car nous n'arrêtons jamais de pulser. Chaque capture est une preuve que l'énergie peut être structurée.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-container-highest rounded-t-[5rem] pt-32 pb-16">
+        <div class="max-w-7xl mx-auto px-12 grid grid-cols-1 md:grid-cols-4 gap-24 mb-32 border-b border-white/5 pb-24 text-sm font-bold uppercase tracking-widest text-on-surface-variant opacity-60">
+            <div class="col-span-1">
+                <span class="text-4xl font-black text-primary font-headline italic mb-8 block opacity-100">PULSE</span>
+                <p class="leading-relaxed font-light normal-case tracking-normal">
+                    L'architecte des moments qui défient la gravité.
+                </p>
+            </div>
+            <div>
+                <h6 class="font-headline text-xs font-black text-secondary tracking-[0.4em] mb-12 opacity-100">Ressources</h6>
+                <ul class="space-y-6">
+                    <li><a class="hover:text-primary transition-all" href="#">Le Press-kit</a></li>
+                    <li><a class="hover:text-primary transition-all" href="#">Showreel 2026</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center px-12">
+            <p class="text-[10px] uppercase tracking-[0.6em] opacity-40">
+                PULSE BY FRILO © 2026.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

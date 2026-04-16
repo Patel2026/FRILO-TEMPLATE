@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Dégustation | L'Ébène Haute Cuisine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#131313]/70 backdrop-blur-md border-b border-white/5">
+        <div class="flex justify-between items-center w-full px-12 py-8 mx-auto">
+            <a href="index.html" class="font-headline text-2xl font-light tracking-[0.2em] text-[#f1c97d]">
+                L'ÉBÈNE
+            </a>
+            <div class="hidden md:flex gap-12 items-center">
+                <a class="font-headline tracking-tight text-lg uppercase transition-all duration-500 hover:tracking-widest text-[#e5e2e1] hover:text-[#f1c97d]" href="index.html">L'Expérience</a>
+                <a class="font-headline tracking-tight text-lg uppercase transition-all duration-500 hover:tracking-widest text-[#f1c97d] border-b border-[#f1c97d]/30 pb-1" href="menu.html">Dégustation</a>
+                <a class="font-headline tracking-tight text-lg uppercase transition-all duration-500 hover:tracking-widest text-[#e5e2e1] hover:text-[#f1c97d]" href="gallery.html">Galerie</a>
+                <a class="font-headline tracking-tight text-lg uppercase transition-all duration-500 hover:tracking-widest text-[#e5e2e1] hover:text-[#f1c97d]" href="reservation.html">Réservation</a>
+            </div>
+            <a href="reservation.html" class="bg-primary text-on-primary px-8 py-3 font-label text-sm uppercase tracking-[0.15em] hover:bg-primary-fixed-dim transition-all duration-500 text-center font-bold">
+                Réserver une Table
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-32">
+        <!-- Hero Section -->
+        <section class="px-12 py-24 md:py-40 flex flex-col items-center text-center">
+            <h1 class="font-headline text-5xl md:text-8xl font-light tracking-tighter mb-8 max-w-4xl leading-tight">
+                Une Odyssée <br/><span class="text-primary italic">d'Ombre & de Lumière</span>
+            </h1>
+            <p class="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed opacity-80">
+                Un récit culinaire minutieux où la technique rencontre l'éphémère. Nos menus sont composés comme des poèmes visuels et sensoriels, reflétant l'élégance silencieuse du monde nocturne africain.
+            </p>
+        </section>
+
+        <!-- Featured Section (Bento Inspired) -->
+        <section class="px-12 pb-32">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto md:h-[700px]">
+                <div class="md:col-span-7 bg-surface-container-low relative group overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale-[0.2] group-hover:scale-105 transition-transform duration-700 opacity-60" data-alt="Gros plan sur un dessert sombre avec de la feuille d'or" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEdkfppajqLDhxDKdom6uHNBPs_2sjxUK1q7J9cfFS5Pt4rOFog3HNh0GrJXWYmfwHA_9e2QyxvRs91NLGb2Fe7bnsVjtDzDic8j-Xa7vArMawFnB-rz3H2pKjQo8nEipyestHCOsjUk6HNYZMS8mmDkbMRfAS-WDt8TT2yVdhyncwAv8-1dnTE-h3UGxS_0CpJqWJMbjRaW5eyWSFyZHRreK8rNgiPI0moNNyfsnp8Knjnu74G-gJ9SctxsytcSIJ0R4DdGU10ibe"/>
+                    <div class="absolute inset-0 p-12 flex flex-col justify-end bg-gradient-to-t from-background via-transparent to-transparent">
+                        <span class="font-label text-primary text-xs tracking-[0.3em] uppercase mb-4">La Philosophie</span>
+                        <h2 class="font-headline text-4xl text-on-surface mb-6">Minuit au Jardin</h2>
+                        <p class="font-body text-on-surface-variant max-w-md">Notre esthétique signature : des notes Umami profondes contrastées par la brillance des fermentations béninoises saisonnières.</p>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-5 grid grid-rows-2 gap-8">
+                    <div class="bg-surface-container-high p-12 flex flex-col justify-center">
+                        <span class="font-label text-primary text-xs tracking-[0.3em] uppercase mb-4">Sélection de la Cave</span>
+                        <h3 class="font-headline text-3xl mb-4 text-on-surface">Le Terroir & L'Âge</h3>
+                        <p class="font-body text-on-surface-variant mb-6">Explorez notre collection verticale de millésimes rares, scrupuleusement curatée pour s'harmoniser avec le sel et la fumée de notre cuisine.</p>
+                        <a class="text-primary font-label text-xs tracking-widest uppercase border-b border-primary/20 w-max pb-1 hover:border-primary transition-all" href="#">Voir la Carte des Vins</a>
+                    </div>
+                    
+                    <div class="bg-surface-container-low relative overflow-hidden">
+                        <img class="w-full h-full object-cover opacity-40" data-alt="Intérieur minimaliste d'un salon privé" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzGV61-9T7XYxV60axgyXqmz6jutiTfl2Wh6PIEwDvFdgIfGWJddv9PjTqOwxfpnPqlOcfTrBOzdZKDWGwBhmWZZenb2aY_UjAj_p54IcOvInv5ML0_jEbjr70jeAQrZwu2-NFqMDekprmC2r6Y3LIllpOZundwxaJ9YEFQdeX3D-P3gnwtT9FxoJGHxBJnxFr3cGrFMw8vG6a3ZfYtazcyK6ZrL836c37q8I2Rz0pZdh3PbmOoTLlNsYuSzBOOqf4R_mU4Boq2OZU"/>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="font-headline text-2xl text-on-surface border border-outline-variant/30 px-8 py-4 backdrop-blur-sm">Salon Privé</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Degustation Menu -->
+        <section class="bg-surface-container-lowest py-32 px-12">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+                    <div>
+                        <span class="font-label text-primary text-xs tracking-[0.4em] uppercase mb-4 block">L'Expérience Phare</span>
+                        <h2 class="font-headline text-6xl font-light">Le Crépuscule</h2>
+                    </div>
+                    <div class="text-right">
+                        <span class="font-headline text-4xl text-primary block mb-2">125 000 FCFA</span>
+                        <span class="font-label text-xs tracking-widest text-on-surface-variant uppercase">Par Personne | Neuf Temps Sensoriels</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-16">
+                    <!-- Menu Item 1 -->
+                    <div class="group border-b border-outline-variant/10 pb-8 hover:border-primary/30 transition-colors duration-500">
+                        <div class="flex justify-between items-baseline mb-3">
+                            <h4 class="font-headline text-xl text-on-surface">L'Éveil</h4>
+                            <span class="text-primary text-xs font-label font-bold">I</span>
+                        </div>
+                        <p class="font-body text-on-surface-variant italic leading-relaxed text-sm">
+                            Feuille d'huître, émulsion saumurée infusée au charbon végétal, et un murmure d'eau de mer glacée face au Golfe. Un prélude à la profondeur.
+                        </p>
+                    </div>
+                    
+                    <!-- Menu Item 2 -->
+                    <div class="group border-b border-outline-variant/10 pb-8 hover:border-primary/30 transition-colors duration-500">
+                        <div class="flex justify-between items-baseline mb-3">
+                            <h4 class="font-headline text-xl text-on-surface">Le Sous-Bois</h4>
+                            <span class="text-primary text-xs font-label font-bold">II</span>
+                        </div>
+                        <p class="font-body text-on-surface-variant italic leading-relaxed text-sm">
+                            Morilles sauvages, consommé parfumé à l'écorce, tapenade de champignons noirs et croustillant de tubercule rôti.
+                        </p>
+                    </div>
+                    
+                    <!-- Menu Item 3 -->
+                    <div class="group border-b border-outline-variant/10 pb-8 hover:border-primary/30 transition-colors duration-500">
+                        <div class="flex justify-between items-baseline mb-3">
+                            <h4 class="font-headline text-xl text-on-surface">L'Argent de l'Atlantique</h4>
+                            <span class="text-primary text-xs font-label font-bold">III</span>
+                        </div>
+                        <p class="font-body text-on-surface-variant italic leading-relaxed text-sm">
+                            Bar de ligne poché lentement, sel de citron confit de nos plantations, surmonté d'un voile de radis transparent.
+                        </p>
+                    </div>
+                    
+                    <!-- Menu Item 4 -->
+                    <div class="group border-b border-outline-variant/10 pb-8 hover:border-primary/30 transition-colors duration-500">
+                        <div class="flex justify-between items-baseline mb-3">
+                            <h4 class="font-headline text-xl text-on-surface">L'Alchimiste</h4>
+                            <span class="text-primary text-xs font-label font-bold">IV</span>
+                        </div>
+                        <p class="font-body text-on-surface-variant italic leading-relaxed text-sm">
+                            Pintade de savane maturée 14 jours, réduction d'ail noir africain, et baies de poivre de Selim fumées. Servi sur roche noire.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mt-24 text-center">
+                    <p class="font-body text-sm text-on-surface-variant tracking-widest uppercase mb-8">Accord Mets & Vins de Réserve — 80 000 FCFA</p>
+                    <a href="reservation.html" class="inline-block border border-outline-variant/30 px-12 py-4 text-xs font-label tracking-widest uppercase hover:bg-on-surface hover:text-background transition-all duration-500">Réserver l'Expérience</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- A La Carte Section -->
+        <section class="py-32 px-12 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-24">
+                <!-- Category 1 -->
+                <div>
+                    <h3 class="font-headline text-3xl mb-12 flex items-center gap-4">
+                        <span class="h-[1px] w-8 bg-primary"></span>
+                        Les Entrées
+                    </h3>
+                    <div class="space-y-12">
+                        <div class="flex flex-col">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <span class="font-body font-bold uppercase tracking-[0.1em] text-xs leading-relaxed">Risotto à la Truffe Noire</span>
+                                <span class="font-headline text-primary text-lg">28K</span>
+                            </div>
+                            <p class="text-on-surface-variant text-sm font-light leading-relaxed">Riz Acquerello infusé 7 ans, beurre de montagne et éclats de perles noires hivernales fraîchement râpées.</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <span class="font-body font-bold uppercase tracking-[0.1em] text-xs leading-relaxed">Pétoncles Fumés</span>
+                                <span class="font-headline text-primary text-lg">24K</span>
+                            </div>
+                            <p class="text-on-surface-variant text-sm font-light leading-relaxed">Coquilles royales de Hokkaido, fumées au bois de pommier, velours de chou-fleur safrané.</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <span class="font-body font-bold uppercase tracking-[0.1em] text-xs leading-relaxed">Carpaccio Terreux</span>
+                                <span class="font-headline text-primary text-lg">18K</span>
+                            </div>
+                            <p class="text-on-surface-variant text-sm font-light leading-relaxed">Betteraves anciennes cuites en croûte de sel, crème de pistache et fleurs d'agrumes.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 2 -->
+                <div>
+                    <h3 class="font-headline text-3xl mb-12 flex items-center gap-4">
+                        <span class="h-[1px] w-8 bg-primary"></span>
+                        La Résistance
+                    </h3>
+                    <div class="space-y-12">
+                        <div class="flex flex-col">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <span class="font-body font-bold uppercase tracking-[0.1em] text-xs leading-relaxed">Légine des Glaciers</span>
+                                <span class="font-headline text-primary text-lg">45K</span>
+                            </div>
+                            <p class="text-on-surface-variant text-sm font-light leading-relaxed">Pochée lentement aux aromates, aspergée de Dashi et poireaux fermentés.</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <span class="font-body font-bold uppercase tracking-[0.1em] text-xs leading-relaxed">Striploin Wagyu A5</span>
+                                <span class="font-headline text-primary text-lg">85K</span>
+                            </div>
+                            <p class="text-on-surface-variant text-sm font-light leading-relaxed">Bœuf de la préfecture de Kagoshima, grillé au charbon de bois blanc Binchotan, jus de moelle.</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <span class="font-body font-bold uppercase tracking-[0.1em] text-xs leading-relaxed">Carré d'Agneau</span>
+                                <span class="font-headline text-primary text-lg">42K</span>
+                            </div>
+                            <p class="text-on-surface-variant text-sm font-light leading-relaxed">En croûte d'herbes folles, aubergine fumée confite et réduction corsée au vin vieux.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 3 -->
+                <div>
+                    <h3 class="font-headline text-3xl mb-12 flex items-center gap-4">
+                        <span class="h-[1px] w-8 bg-primary"></span>
+                        Les Desserts
+                    </h3>
+                    <div class="space-y-12">
+                        <div class="flex flex-col">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <span class="font-body font-bold uppercase tracking-[0.1em] text-xs leading-relaxed">Cacao Nocturne</span>
+                                <span class="font-headline text-primary text-lg">18K</span>
+                            </div>
+                            <p class="text-on-surface-variant text-sm font-light leading-relaxed">Textures de chocolat noir (80% origines Afrique), caramel au miso et sel noir des falaises.</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <span class="font-body font-bold uppercase tracking-[0.1em] text-xs leading-relaxed">Nuage d'Hibiscus</span>
+                                <span class="font-headline text-primary text-lg">16K</span>
+                            </div>
+                            <p class="text-on-surface-variant text-sm font-light leading-relaxed">Mousse légère au Bissap (hibiscus), granité de fraises sauvages et brisures de thé blanc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Image Callout -->
+        <section class="h-[614px] relative overflow-hidden flex items-center justify-center">
+            <img class="absolute inset-0 w-full h-full object-cover opacity-50 grayscale" data-alt="Plan rapproché du dressage minutieux par le chef" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkVWdaG4FRiOIWhdUFkxC8bVee90asObJVIOpsaFNjswZ43ot92dajSDtByMKcIT14fai8KPZ8pakssdTSxVtgo-qJzeFNij-T4l5chgGovyE8fpMaXjEbR-8E6XrpHGoIYE1rfS_Ep_r_4eiibf1WoCgiK4npATgmm_en0Q72lXAhdrFrwTDPbOhNnwa12mtasYImCxfulTIYz7iinauSomD-y4F48a-P00-FZNYIiNBEaVXOCuBJzBOQLgPHduu_9238pDHUE-w4"/>
+            <div class="relative z-10 text-center px-12">
+                <h2 class="font-headline text-4xl md:text-6xl mb-8">Façonné par <span class="italic text-primary">l'Invisible</span></h2>
+                <a href="reservation.html" class="inline-block bg-primary text-on-primary px-16 py-5 text-sm uppercase tracking-[0.2em] font-label font-bold hover:bg-primary-fixed-dim transition-all">Sécuriser une Table</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0e0e0e] w-full pt-24 pb-12 flex flex-col items-center px-12 text-center">
+        <div class="font-headline text-xl font-light text-[#f1c97d] mb-6">L'ÉBÈNE</div>
+        <div class="flex space-x-8 mb-12">
+            <a class="font-label text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Dîner Privé</a>
+            <a class="font-label text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Presse</a>
+            <a class="font-label text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Carrières</a>
+            <a class="font-label text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Confidentialité</a>
+        </div>
+        <div class="text-[#99907c] font-body text-xs tracking-widest mb-12 leading-loose">
+            RUE 205, QUARTIER HAIE VIVE, COTONOU<br/>
+            MERCREDI — DIMANCHE | 18:00 — 02:00
+        </div>
+        <div class="font-body text-sm tracking-[0.1em] uppercase text-[#99907c]">
+            © 2026 L'Ébène Haute Cuisine. Tous droits réservés.
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>L'AURA | Haute Beauté & Spa - Cotonou</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;600;800&display=swap"
+        rel="stylesheet" />
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body
+    class="bg-surface text-on-surface font-body selection:bg-secondary selection:text-white antialiased overflow-x-hidden">
+
+    <!-- TopNavBar (Glassmorphism) -->
+    <nav class="fixed top-0 w-full z-50 glass-aura ghost-border">
+        <div class="flex justify-between items-center px-12 py-6 max-w-full">
+            <a href="index.html" class="text-2xl font-headline tracking-tighter text-on-background uppercase">L'Aura
+                Haute Beauté</a>
+            <!-- Desktop Nav -->
+            <div
+                class="hidden md:flex items-center gap-12 font-label text-[10px] font-extrabold tracking-[0.3em] uppercase">
+                <a class="text-secondary border-b border-secondary pb-1" href="index.html">Accueil</a>
+                <a class="text-on-surface/50 hover:text-on-surface transition-all" href="a-propos.html">A propos</a>
+                <a class="text-on-surface/50 hover:text-on-surface transition-all" href="services.html">Services</a>
+                <a class="text-on-surface/50 hover:text-on-surface transition-all" href="gallery.html">Gallerie</a>
+                <a class="text-on-surface/50 hover:text-on-surface transition-all" href="contact.html">Contact</a>
+            </div>
+            <button class="btn-noble px-10 py-4 shadow-xl">
+                Réserver
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img alt="Peau éclatante" class="w-full h-full object-cover grayscale-[0.1] contrast-[1.05]"
+                    data-alt="Gros plan sur un visage féminin à la peau parfaite, lumière naturelle douce"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBhnBqC6-_OUB9qyxuUVBxqXIrAS3D0MFPIU33-FyXlpcclG0-zWYWGrJj9qKKCUVKyCbUGX1KaYoG2eplsTjNZ6jOUzwm9P_2tLR1k-r1oRGXHoUSP57yN7YZGToqdo_tu42riGuk6XB0_BqRttX5eGvV-RXguwJKTcpQ_v491OHbCzZF6vwb-wwp-UwyWV6Fw3wNevYmoarxqx_V8EM_vGIbH9vLsRITQ_Hxwix5pL1uhhz1S0i2LrDkemv1jB1xZMoLHQxYDc4" />
+                <div class="absolute inset-0 bg-black/5"></div>
+            </div>
+            <div class="relative z-10 text-center max-w-5xl px-8">
+                <span class="font-label text-xs uppercase tracking-[0.5em] text-white mb-10 block opacity-90">Institut •
+                    Spa • Haute Performance</span>
+                <h1 class="text-7xl md:text-9xl text-white font-headline leading-[0.9] tracking-tighter mb-16">
+                    La Poésie de la <br />
+                    <span class="italic font-normal">Beauté Pure.</span>
+                </h1>
+                <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
+                    <button
+                        class="bg-white text-on-surface px-14 py-6 font-label text-[10px] uppercase tracking-[0.3em] font-black hover:bg-secondary-fixed transition-all duration-700">
+                        Prendre Rendez-vous
+                    </button>
+                    <button
+                        class="border border-white/40 text-white backdrop-blur-md px-14 py-6 font-label text-[10px] uppercase tracking-[0.3em] font-black hover:bg-white/10 transition-all">
+                        Explorer les Soins
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview (Asymmetric Grid) -->
+        <section class="py-48 bg-surface px-12">
+            <div class="max-w-[1400px] mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-32 gap-12">
+                    <div class="max-w-xl">
+                        <span
+                            class="font-label text-[10px] uppercase tracking-[0.4em] text-secondary mb-6 block font-black">Nos
+                            services sélectionnés avec soin</span>
+                        <h2 class="text-6xl font-headline tracking-tighter leading-none">La science <br />du
+                            raffinement.</h2>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-20">
+                    <!-- Skincare -->
+                    <div class="md:col-span-7 group">
+                        <div class="aspect-[16/9] mb-12 overflow-hidden bg-surface-variant">
+                            <img alt="Soin Moléculaire"
+                                class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                                data-alt="Flacons de luxe minimalistes sur une pierre texturée"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAIg9lbybUBp3_RH-hfHNcwU9RH_KsXIb-rx3gtNnsH1ZPsceaV_EPrQxa4cmBq7YnKWq8XstzQ1PlGvWf6uxRNUaovG_bhPMyjVy1EntnjaRM9xRnbhvprJoxcCLpn_hOY-jXU5kMjkDd9T--cEzDcDSck_fPd3-arn7Tl8ntJoFY7fNPw33TO8Yvmq795CymQ16Zzv6_kdZJuNy-QZqCgLQBWfCkLOoHRP8R7PkPUkAHt_G09tm_48G8bhaEE_YICUeFHK0MDFQ" />
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <div class="max-w-md">
+                                <h3 class="text-3xl font-headline mb-4 tracking-tight">Soins moléculaires</h3>
+                                <p class="text-on-surface-variant font-light leading-relaxed text-lg opacity-70">Des
+                                    soins de précision conçus pour revitaliser la structure cellulaire et redonner de
+                                    l'éclat à la peau.</p>
+                            </div>
+                            <a href="services.html"
+                                class="font-label text-[10px] uppercase tracking-widest text-secondary font-black border-b border-secondary/20 pb-1 mt-4">Détails</a>
+                        </div>
+                    </div>
+
+                    <!-- Massage -->
+                    <div class="md:col-span-5 md:mt-32 group">
+                        <div class="aspect-[4/5] mb-12 overflow-hidden bg-surface-variant">
+                            <img alt="Massage Architectural"
+                                class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                                data-alt="Pierres chaudes et huiles essentielles sur du lin"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuASgvk2-oHH5AfhmNXvCGxgmsly9pruC505t6tujjr63FUUNicyojlP1L7XKbBXrqJxgAXFwNmS3LYrsiRFb7ufGZ0TR_WMZ83ItmMEmUN6iMr-FB2FU8qPC2JV7V54e-bgiOpi9XKWpRv3Thc-nMM7xQJ6G3eQoA5jxixn9fZtxVNRdgbWDLQybm-bhIOXybHniX0l6DRPyqxZ_1bzdv7q19anPbFR91339lNOGd9rTdMVBHc61uQf7ahxiyo5MzU0Y-I5TW-FMTY" />
+                        </div>
+                        <h3 class="text-3xl font-headline mb-4 tracking-tight">Massage Lymphatique</h3>
+                        <p class="text-on-surface-variant font-light leading-relaxed opacity-70">Des techniques qui
+                            sculptent et libèrent, harmonisant la silhouette naturelle du corps grâce à des mouvements
+                            rythmiques.</p>
+                    </div>
+
+                    <!-- Accents -->
+                    <div class="md:col-span-5 group">
+                        <div class="aspect-[4/5] mb-12 overflow-hidden bg-surface-variant">
+                            <img alt="Touches Signature"
+                                class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                                data-alt="Application de feuilles d'or lors d'un soin visage"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4x2dd5TXnaIN1pyVRgLf2xeYpkljFvIu-gDLZ1m9-m0-M8QSZ77NQ5TwhPT9tiiTgZs59DaxiT7DGma4cG3uB92eD0VxgKkU6CXkNpbxlYsj69Mzzju9hw8XbVGUK18Lsw0CD_QmgHZr605gTCsQpJRsLqzBnpLmUidOujRlX8afz-NkyV9LLnM7kIpclKQE_dMgCqx_yKcQ8ZfgZWlB6wx0TApXo8Yk2f6oxiRbMF6kHnZU4gv6bCRKq15tMgr9E6GKqtWAdRdI" />
+                        </div>
+                        <h3 class="text-3xl font-headline mb-4 tracking-tight">L'Éclat Signature</h3>
+                        <p class="text-on-surface-variant font-light leading-relaxed opacity-70">Des retouches sur
+                            mesure qui soulignent et mettent en valeur vos traits naturels avec une précision
+                            artisanale.</p>
+                    </div>
+
+                    <!-- Text Block ( Luxury Quote) -->
+                    <div class="md:col-span-7 flex items-center justify-center py-24">
+                        <div class="max-w-md text-center">
+                            <span class="material-symbols-outlined text-secondary text-5xl mb-8 opacity-40">spa</span>
+                            <blockquote class="font-headline text-3xl text-on-surface italic leading-relaxed mb-10">
+                                "La beauté commence au moment où vous décidez d'être vous-même."
+                            </blockquote>
+                            <div class="w-12 h-0.5 bg-secondary/30 mx-auto"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview: The Editorial Reveal -->
+        <section class="py-48 bg-surface-container-low px-12 overflow-hidden">
+            <div class="max-w-[1400px] mx-auto editorial-reveal">
+                <div class="editorial-reveal-img h-[700px]">
+                    <img alt="L'Institut" class="w-full h-full object-cover grayscale-[0.2]"
+                        data-alt="Intérieur d'un salon de beauté haut de gamme au design futuriste et épuré"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBymlSIqW5F4jtwIsXVK8U1_5lZR_zk0InM44lbY5vl5wKq37CjKXEiXztIRjq9tGhReDkFnJ3qO-69MVmS4TGKtr9m-dRrXx7zAU27axFJ8UoELtQN4jJiaubwr9SWII-ZvlbCWt0tZ_FKhxuTCtFdftq5dRZteJqZOMXCiCPsigFXSJFQl6sS7rbRsNnLjxhqplJ3CugMaJPVZ6XZvOGgZUDzaJmCG7nLcLU7D_UdbnN5yO4liRWsbcWSSst7x-EsA2PU29vh6c" />
+                </div>
+                <div class="editorial-reveal-text">
+                    <span
+                        class="font-label text-[10px] uppercase tracking-[0.4em] text-secondary mb-8 block font-black">L'Institut
+                        Aura – Haie Vive</span>
+                    <h2 class="text-5xl font-headline mb-10 tracking-tighter leading-tight">Créer l'aura <br />du luxe
+                        moderne</h2>
+                    <p class="text-on-surface-variant font-light leading-loose text-lg mb-12 opacity-80">Fondé sur les
+                        principes de discrétion et d'excellence clinique, L'Aura est un sanctuaire pour ceux qui
+                        perçoivent la beauté comme une philosophie de vie. Nous fusionnons l'artisanat traditionnel avec
+                        les avant-gardes technologiques.</p>
+                    <a class="inline-flex items-center gap-6 font-label text-[10px] uppercase tracking-[0.2em] text-on-surface group font-black"
+                        href="a-propos.html">
+                        Notre Histoire
+                        <span
+                            class="material-symbols-outlined group-hover:translate-x-3 transition-transform text-secondary">east</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journal Section (Minimalist Grid) -->
+        <section class="py-48 px-12 bg-surface">
+            <div class="max-w-[1400px] mx-auto">
+                <div class="flex items-center justify-between mb-24">
+                    <h2 class="text-5xl font-headline tracking-tighter">Le portfolio esthétique</h2>
+                    <div class="h-px flex-grow bg-on-surface/10 mx-16"></div>
+                    <a href="gallery.html"
+                        class="font-label text-[10px] uppercase tracking-[0.3em] font-black hover:text-secondary transition-colors">Tout
+                        Voir</a>
+                </div>
+                <div class="journal-grid">
+                    <div class="journal-item">
+                        <img data-alt="Orchidée banche"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiiyyzRPEWyiqc_sNuajhS2kNL21NsEqd0tLUNOBQGDUldQ0AAgBtKJSuvahVKAnFUrLChuDL3vuUVZVgLvw-KC7V47wd_YGda1gRikR-PZsJfbf7_-xUmsc9qVQSZA1olZiK2Oa9JzYkbaSubFsH81MVHdGPrRxzDSz-MBta_MUOh0Ot7uF_1s4M3R_j1JMBPkkDjHloMuI5lpUc3m9ULRJGYgWywNVmg2IvSc7zwEwnVNmsw5SpRD7FtpSwssX8WVXTYQw41oz8" />
+                    </div>
+                    <div class="journal-item md:translate-y-16">
+                        <img data-alt="Textue de crème"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbntIiojGEk5tergfxA2MbB_u59om2N7R_MLjSL0mkBjK4WCktZDBqjsnUo6b6FF2NG5algDuqa6vhfrpzOfKydKEl3V1ZoLOksBbUljE9J3qjcIvehg_bCtmjdEIqg1fJMLEdq5kdhqcFKowOMORKL-SsUAxJt9DLIB9n88ngzH7fzZeYAQZkeownE4p71E_oQXHqXpKCvL9gsxkrp-3gxpps3wpUmgKEaU3ZZWSaWg-gwhB3xRpYLZ4tNzzBssGIer3UcoR6YBs" />
+                    </div>
+                    <div class="journal-item">
+                        <img data-alt="Peignoir luxe"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqZAAt9QNHzDzSN8AUjp3T_H0GfSgF5BzOM00aVgJsY_xE-J1vxnzsuqAQ5Z7-9lPzkeDMYjCEWJPUEL9JvCusgDHdBR_rJt3Zx7tnk8AuN76zV3wTnIPqhzc4phMeY33vUbN9cZnaX5MgHXZmmU4MtAJH7phFZhgKlmSVLSKpLVopIMvyE0_DMfCnq-cy5zKDp6fT10nVjlMYQpCGPgGhLK_qUvt3ii1CJ1xZneAw61yX06qt-y9lqX6DWBJLXTk_xWYxFlGGtxM" />
+                    </div>
+                    <div class="journal-item md:translate-y-16">
+                        <img data-alt="Miroir spa"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsVTh4kKO4xiWxL-w2kh-9f9DjI5Gg2nuDi8CCdi_-maLIETMNZebc8lfcILq_JOOUcnN3up3YudkTRGijFY3FM2KsI6Rxpvg3uOJO9iCBsVVtKe8K_E-OS7yYvyZ3rpJ28lMGFsXrtTsYD6BR_L0iNYgwM-EXSF5A8MVO3kGKX6UJSksYmNuxDMdtMrXnOEHIEVVnFiAH-Ll0YQGtnecgT9C6dx-xxXYGa-QLocbaaNZddNj9Ps-4HUmaTpPC_SXQ3seRGrdoaR0" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Vision -->
+        <section class="relative py-64 bg-on-secondary-fixed text-white overflow-hidden text-center">
+            <div class="absolute inset-0 bg-stone-950/20"></div>
+            <div class="relative z-10 max-w-4xl mx-auto px-8">
+                <h2 class="text-6xl md:text-8xl font-headline mb-16 tracking-tight leading-[0.9]">Prête à révéler
+                    <br /><span class="italic font-normal">votre Aura ?</span>
+                </h2>
+                <p class="font-label text-xs uppercase tracking-[0.4em] mb-16 opacity-60 font-black">Sessions limitées
+                    pour les nouveaux rituels.</p>
+                <button
+                    class="bg-secondary text-white px-16 py-7 font-label text-[10px] uppercase tracking-[0.3em] font-black hover:bg-white hover:text-on-surface transition-all duration-700 shadow-2xl">
+                    Sécuriser un Rendez-vous
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-100 py-32 px-12 border-t border-on-surface/5">
+        <div
+            class="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-24 mb-32 pb-24 border-b border-on-surface/5">
+            <div class="col-span-1">
+                <span class="text-2xl font-headline tracking-tighter uppercase mb-10 block">L'AURA HAUTE BEAUTÉ</span>
+                <p
+                    class="font-label text-xs uppercase tracking-[0.1em] text-on-surface-variant opacity-60 leading-loose">
+                    Curateur d'expériences esthétiques élevées depuis 2026. Un sanctuaire de science et d'art à Cotonou.
+                </p>
+            </div>
+            <div>
+                <h6 class="font-headline text-lg mb-10">Explorer</h6>
+                <ul class="space-y-6 font-label text-[10px] uppercase tracking-widest opacity-60 font-black">
+                    <li><a class="hover:text-secondary transition-all" href="services.html">Rituels Visage</a></li>
+                    <li><a class="hover:text-secondary transition-all" href="services.html">Massages Sculpt</a></li>
+                    <li><a class="hover:text-secondary transition-all" href="services.html">Soins Signatures</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="font-headline text-lg mb-10">Connecter</h6>
+                <ul class="space-y-6 font-label text-[10px] uppercase tracking-widest opacity-60 font-black">
+                    <li><a class="hover:text-secondary transition-all" href="#">Instagram</a></li>
+                    <li><a class="hover:text-secondary transition-all" href="#">Pinterest</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="font-headline text-lg mb-10">Sanctuaire</h6>
+                <p
+                    class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant opacity-60 leading-loose">
+                    Novotel Area<br />Haie Vive, Cotonou<br />Bénin
+                </p>
+            </div>
+        </div>
+        <div
+            class="flex flex-col md:flex-row justify-between items-center gap-8 opacity-40 font-label text-[8px] uppercase tracking-[0.5em] font-black">
+            <span>© 2026 L'AURA HAUTE BEAUTÉ. TOUS DROITS RÉSERVÉS.</span>
+            <div class="flex gap-12">
+                <a href="#">Privacité</a>
+                <a href="#">Mentions Légales</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact | FRILO Héritage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        .glass-nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="flex justify-between items-center w-full px-12 py-6 mx-auto">
+            <a href="index.html" class="font-headline font-bold text-xl tracking-tighter text-stone-900">FRILO HÉRITAGE</a>
+            <div class="hidden md:flex gap-12 font-headline text-sm tracking-widest uppercase">
+                <a class="text-stone-600 hover:text-stone-900 transition-opacity duration-300" href="index.html">Accueil</a>
+                <a class="text-stone-600 hover:text-stone-900 transition-opacity duration-300" href="services.html">Services</a>
+                <a class="text-stone-600 hover:text-stone-900 transition-opacity duration-300" href="about.html">Savoir-Faire</a>
+                <a class="text-stone-600 hover:text-stone-900 transition-opacity duration-300" href="experts.html">Experts</a>
+                <a class="text-secondary font-semibold border-b border-secondary transition-opacity duration-300" href="contact.html">Contact</a>
+            </div>
+            <a href="contact.html" class="bg-on-surface text-on-primary px-8 py-3 text-sm font-label uppercase tracking-widest hover:opacity-90 transition-all">
+                Visite Privée
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-32">
+        <!-- Hero Section -->
+        <section class="px-12 py-24 md:py-32 grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
+            <div class="md:col-span-8">
+                <span class="font-label text-xs uppercase tracking-[0.3em] text-secondary mb-6 block">Requête Directe</span>
+                <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter leading-none mb-8">
+                    Professionnalisme Silencieux.<br/>Discrétion Totale.
+                </h1>
+                <p class="font-body text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                    Notre bureau de conseil opère avec le plus haut niveau de confidentialité. Connectez-vous avec nos directeurs associés pour échanger sur vos impératifs patrimoniaux.
+                </p>
+            </div>
+            <div class="md:col-span-4 hidden md:block">
+                <div class="aspect-[3/4] bg-surface-container-highest relative overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale" data-alt="Intérieur minimaliste d'un bureau de luxe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrilhNuLkjDgrAXH4TDc87rjh5YSre5GP5xGmD49c63q-mlopxafGz7OtdJWxlWBQ1TxUeQ_AVVpROeIKm_D1z6SbARfJBKZRsFWfBtF3gi2UWwBpqfi9N1pUpAPBFtytlbqyMWSCsYhSaDWH-v2Py2ekHpuyyiRpVn-yxTEqTNr2vVIOGyeIPS1e70LOjpWY8gQ92xxEEFdi_wFp371OeEvUV2SbR9FhKh_3cKEDA3GYu3gb0t_tEcvrx7uisG8-9GfYfkdq9bYJ5"/>
+                    <div class="absolute inset-0 bg-on-surface/5"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form & Details Section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-outline-variant/20">
+            <!-- Inquiry Form -->
+            <div class="p-12 md:p-24 bg-surface-container-lowest">
+                <h2 class="font-headline text-3xl font-bold mb-12">Soumettre un Dossier</h2>
+                <form class="space-y-12">
+                    <div class="relative">
+                        <label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Nom et Prénom</label>
+                        <input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline focus:border-secondary focus:ring-0 px-0 py-4 transition-colors placeholder:text-outline-variant/50" placeholder="Ex: S. Houngbédji" type="text"/>
+                    </div>
+                    <div class="relative">
+                        <label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Courriel Professionnel</label>
+                        <input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline focus:border-secondary focus:ring-0 px-0 py-4 transition-colors placeholder:text-outline-variant/50" placeholder="s.houngbedji@holding.com" type="email"/>
+                    </div>
+                    <div class="relative">
+                        <label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Nature de la Requête</label>
+                        <select class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline focus:border-secondary focus:ring-0 px-0 py-4 transition-colors appearance-none">
+                            <option>Acquisition d'Actif Privé (Off-Market)</option>
+                            <option>Gestion de Portefeuille (Syndic/Locatif)</option>
+                            <option>Conseil Légal & Architectural</option>
+                            <option>Cession Confidentielle (Vente)</option>
+                        </select>
+                    </div>
+                    <div class="relative">
+                        <label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Précisions (Optionnel)</label>
+                        <textarea class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline focus:border-secondary focus:ring-0 px-0 py-4 transition-colors placeholder:text-outline-variant/50" placeholder="Veuillez détailler très brièvement les contours de votre besoin..." rows="4"></textarea>
+                    </div>
+                    <button class="w-full py-6 bg-on-surface text-on-primary font-label text-sm uppercase tracking-[0.2em] hover:bg-secondary transition-colors group flex items-center justify-center gap-4" type="submit">
+                        Transmettre de manière sécurisée
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Global Offices -->
+            <div class="bg-surface-container-low p-12 md:p-24 flex flex-col justify-between">
+                <div>
+                    <h2 class="font-headline text-3xl font-bold mb-16">Bureaux Stratégiques</h2>
+                    <div class="space-y-16">
+                        <!-- Cotonou -->
+                        <div class="group">
+                            <div class="flex justify-between items-baseline mb-4">
+                                <h3 class="font-headline text-2xl">Cotonou</h3>
+                                <span class="font-label text-xs uppercase tracking-widest text-secondary">Siège Social</span>
+                            </div>
+                            <p class="font-body text-on-surface-variant leading-relaxed max-w-xs">
+                                12 Avenue Jean-Paul II, Haie Vive<br/>
+                                Cotonou, R. Bénin<br/>
+                                <span class="block mt-4 text-on-surface">+229 21 30 00 00</span>
+                            </p>
+                        </div>
+                        <!-- Paris -->
+                        <div class="group">
+                            <div class="flex justify-between items-baseline mb-4">
+                                <h3 class="font-headline text-2xl">Paris</h3>
+                                <span class="font-label text-xs uppercase tracking-widest text-secondary">Diaspora Europe</span>
+                            </div>
+                            <p class="font-body text-on-surface-variant leading-relaxed max-w-xs">
+                                75 Avenue Marceau, 16ème arr.<br/>
+                                Paris 75016, France<br/>
+                                <span class="block mt-4 text-on-surface">+33 1 47 20 00 04</span>
+                            </p>
+                        </div>
+                        <!-- Montreal -->
+                        <div class="group">
+                            <div class="flex justify-between items-baseline mb-4">
+                                <h3 class="font-headline text-2xl">Montréal</h3>
+                                <span class="font-label text-xs uppercase tracking-widest text-secondary">Diaspora Amériques</span>
+                            </div>
+                            <p class="font-body text-on-surface-variant leading-relaxed max-w-xs">
+                                1000 De La Gauchetière Ouest<br/>
+                                Montréal, QC H3B 4W5, Canada<br/>
+                                <span class="block mt-4 text-on-surface">+1 514 871 0000</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-24 pt-12 border-t border-outline-variant/20">
+                    <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-4">Correspondance Générale</p>
+                    <a class="font-headline text-2xl text-secondary hover:text-on-surface transition-colors" href="mailto:private@frilo.bj">private@frilo.bj</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Slate -->
+        <section class="w-full bg-surface-container-highest grid grid-cols-1 md:grid-cols-2">
+            <div class="h-[600px] relative">
+                <img class="w-full h-full object-cover" data-alt="Piscine minimaliste vue de haut" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAg3j7THa_WN0wpSLZ3Rxa2KjGvenZ8_eo7IT3rP2ZAgbHa-mQOKU5YiHukkBkjh3D38hvSDW_YPwG-wQksZgu4h32IaxNcGvaRlgCM15Nji_abDktFQJUYmXv5VQnB-can3TYNY_w_HaVJNg8u-2AwHZidRsXDPP0dq7VHN8OdoW6V68jLObUWEO0ZnK7cKIYHDBjHEscvrrtMHfVxza3IIkeYi46-1J9TZMQuw5eK6lpjKqpvIWH935heFTQQE9fZ3bX7kKwm8Hh"/>
+                <div class="absolute inset-0 bg-on-surface/10"></div>
+            </div>
+            <div class="flex items-center p-12 md:p-24 bg-surface-container-highest">
+                <div class="max-w-md">
+                    <h2 class="font-headline text-4xl md:text-5xl font-bold leading-tight mb-8">
+                        "Le luxe n'est pas l'absence de bruit, mais la présence indéniable de sens."
+                    </h2>
+                    <p class="font-label text-xs uppercase tracking-[0.3em] text-secondary">La Philosophie FRILO</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-container-low">
+        <div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 gap-8">
+            <div class="font-headline text-lg font-bold">FRILO HÉRITAGE</div>
+            <div class="flex flex-wrap justify-center gap-8 font-body text-xs uppercase tracking-[0.2em]">
+                <a class="text-stone-500 hover:text-yellow-600 transition-colors" href="#">Politique de Discrétion</a>
+                <a class="text-stone-500 hover:text-yellow-600 transition-colors" href="#">Mentions Légales</a>
+                <a class="text-stone-500 hover:text-yellow-600 transition-colors" href="#">Honoraire</a>
+            </div>
+            <div class="font-body text-xs uppercase tracking-[0.2em] text-stone-500 text-center md:text-right">
+                © 2026 FRILO HÉRITAGE. UN HÉRITAGE ARCHITECTURAL.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

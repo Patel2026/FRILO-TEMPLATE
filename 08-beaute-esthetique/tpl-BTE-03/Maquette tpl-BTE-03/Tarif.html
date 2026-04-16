@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pricing | AURA BEAUTY</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#9e9c9c",
+                    "tertiary-fixed-dim": "#69a4ff",
+                    "error-container": "#f74b6d",
+                    "tertiary-container": "#83b1ff",
+                    "surface-container-low": "#f3f0ef",
+                    "surface-variant": "#dfdcdc",
+                    "on-tertiary-fixed": "#001737",
+                    "primary-dim": "#a1003f",
+                    "surface-container": "#eae7e7",
+                    "surface-container-highest": "#dfdcdc",
+                    "outline": "#787676",
+                    "on-background": "#2f2e2e",
+                    "primary-container": "#ff7290",
+                    "on-secondary-fixed": "#403f3f",
+                    "on-surface-variant": "#5c5b5b",
+                    "on-error-container": "#510017",
+                    "on-primary-container": "#4d001a",
+                    "on-tertiary": "#eff2ff",
+                    "surface-bright": "#f9f6f5",
+                    "on-error": "#ffefef",
+                    "surface-tint": "#b70049",
+                    "tertiary-dim": "#004e9c",
+                    "on-primary": "#ffeff0",
+                    "surface-container-high": "#e5e2e1",
+                    "on-primary-fixed-variant": "#5f0022",
+                    "error": "#b41340",
+                    "on-primary-fixed": "#000000",
+                    "primary-fixed-dim": "#ff5580",
+                    "error-dim": "#a70138",
+                    "inverse-primary": "#ff4e7c",
+                    "background": "#f9f6f5",
+                    "on-surface": "#2f2e2e",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-tertiary-container": "#003064",
+                    "tertiary": "#005ab2",
+                    "secondary": "#5c5b5b",
+                    "outline-variant": "#afacac",
+                    "inverse-surface": "#0e0e0e",
+                    "surface": "#f9f6f5",
+                    "tertiary-fixed": "#83b1ff",
+                    "on-secondary": "#f5f2f1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#5c5b5b",
+                    "primary": "#b70049",
+                    "secondary-container": "#e5e2e1",
+                    "on-secondary-container": "#525151",
+                    "surface-dim": "#d6d4d3",
+                    "primary-fixed": "#ff7290",
+                    "secondary-fixed-dim": "#d6d4d3",
+                    "secondary-dim": "#504f4f",
+                    "on-tertiary-fixed-variant": "#003874"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-headline { font-family: 'Epilogue', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { backdrop-filter: blur(20px); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f6f5]/80 dark:bg-[#2f2e2e]/80 backdrop-blur-xl flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#2f2e2e] dark:text-[#f9f6f5] uppercase font-headline">AURA BEAUTY</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Inter'] uppercase tracking-[0.1em] text-[13px] text-[#2f2e2e] dark:text-[#f9f6f5] hover:text-[#b70049] transition-colors" href="#">Home</a>
+<a class="font-['Inter'] uppercase tracking-[0.1em] text-[13px] text-[#2f2e2e] dark:text-[#f9f6f5] hover:text-[#b70049] transition-colors" href="#">About</a>
+<a class="font-['Inter'] uppercase tracking-[0.1em] text-[13px] text-[#2f2e2e] dark:text-[#f9f6f5] hover:text-[#b70049] transition-colors" href="#">Services</a>
+<a class="font-['Inter'] uppercase tracking-[0.1em] text-[13px] text-[#b70049] border-b-2 border-[#b70049] pb-1" href="#">Pricing</a>
+<a class="font-['Inter'] uppercase tracking-[0.1em] text-[13px] text-[#2f2e2e] dark:text-[#f9f6f5] hover:text-[#b70049] transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 font-bold uppercase tracking-widest text-xs transition-transform active:scale-95 duration-150">
+            Book Appointment
+        </button>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Header -->
+<header class="px-8 md:px-16 mb-20">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-2xl">
+<span class="text-primary font-bold tracking-[0.3em] text-xs uppercase mb-4 block">Our Manifesto</span>
+<h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter leading-[0.9] text-on-surface mb-6">
+                        INVEST IN <br/><span class="text-primary">YOUR GLOW.</span>
+</h1>
+</div>
+<p class="text-on-surface-variant max-w-md font-body leading-relaxed text-lg border-l-2 border-primary-container pl-6">
+                    Transparent, premium pricing for the modern individual. No hidden fees, just clinical excellence and artistic precision.
+                </p>
+</div>
+</header>
+<!-- Pricing Bento Grid -->
+<section class="px-8 md:px-16 grid grid-cols-1 md:grid-cols-12 gap-0 overflow-hidden">
+<!-- Category: Facial Aesthetics -->
+<div class="md:col-span-8 bg-surface-container-low p-12 relative group border-r border-b border-outline-variant/10">
+<div class="flex justify-between items-start mb-16">
+<div>
+<h2 class="text-4xl font-headline font-bold uppercase tracking-tight mb-2">Facial Aesthetics</h2>
+<p class="text-on-surface-variant font-medium tracking-wide">Skin-deep rejuvenation and precision sculpting.</p>
+</div>
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="face_5">face_5</span>
+</div>
+<div class="space-y-12">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center group/item">
+<div class="flex-1">
+<div class="flex items-center gap-4 mb-2">
+<h3 class="text-xl font-bold font-headline uppercase">The Signature Glow Facial</h3>
+<div class="bg-primary-container text-on-primary-container px-3 py-0.5 text-[10px] font-black uppercase tracking-tighter">Bestseller</div>
+</div>
+<p class="text-on-surface-variant text-sm max-w-md">90 minutes of intensive hydration using medical-grade serums and lymphatic drainage.</p>
+</div>
+<div class="flex items-center gap-8 mt-4 md:mt-0">
+<span class="text-2xl font-headline font-extrabold">$185</span>
+<button class="bg-on-surface text-surface px-6 py-3 font-bold uppercase text-[10px] tracking-widest hover:bg-primary transition-colors">Book Now</button>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center group/item">
+<div class="flex-1">
+<h3 class="text-xl font-bold font-headline uppercase mb-2">Microneedling Therapy</h3>
+<p class="text-on-surface-variant text-sm max-w-md">Collagen induction therapy for texture refinement and scar reduction.</p>
+</div>
+<div class="flex items-center gap-8 mt-4 md:mt-0">
+<span class="text-2xl font-headline font-extrabold">$320</span>
+<button class="bg-on-surface text-surface px-6 py-3 font-bold uppercase text-[10px] tracking-widest hover:bg-primary transition-colors">Book Now</button>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center group/item">
+<div class="flex-1">
+<h3 class="text-xl font-bold font-headline uppercase mb-2">Sculpt &amp; Lift Massage</h3>
+<p class="text-on-surface-variant text-sm max-w-md">Manual lifting technique focused on muscle toning and jawline definition.</p>
+</div>
+<div class="flex items-center gap-8 mt-4 md:mt-0">
+<span class="text-2xl font-headline font-extrabold">$145</span>
+<button class="bg-on-surface text-surface px-6 py-3 font-bold uppercase text-[10px] tracking-widest hover:bg-primary transition-colors">Book Now</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Image Block -->
+<div class="md:col-span-4 min-h-[400px] bg-primary relative overflow-hidden">
+<img alt="Beauty treatment" class="w-full h-full object-cover grayscale mix-blend-multiply opacity-80" data-alt="Close up of a luxury facial treatment with focus on glowing skin and high end clinical environment with soft pink lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdyfHMCc-6UUTPW3bQXki4pSxxUvMUcfvtowPLYe3kCmqsXKlbxREUlKarAmkmxF2a7FxnVO2vcNdWBLh7E-PtVXYSQlvmCghhhcOL6BqF008KyrZY9gA106e6Mp1yghaNKwsAHMTibQ3K9vF1F6yd2jBi7YfNwxfjE5jfza2Xj8KlvUGK1KjPAJR_ItDRVdS63q60bJsoSdSwYfzEojLD0LVsfGju2YfDCCYG2EIyEmx1JXoh36DbLFO2h5wzkkrYjfllVgVgNDk"/>
+<div class="absolute inset-0 flex items-center justify-center p-12">
+<div class="text-surface border-2 border-surface/30 p-8">
+<h4 class="text-2xl font-headline font-bold uppercase leading-none mb-4">Membership <br/>Access</h4>
+<p class="text-sm font-medium mb-6">Unlimited aura maintenance starting at $199/mo.</p>
+<a class="inline-block border-b-2 border-surface font-bold text-xs uppercase tracking-widest pb-1 hover:text-primary-container transition-colors" href="#">Learn More</a>
+</div>
+</div>
+</div>
+<!-- Category: Color & Hair -->
+<div class="md:col-span-4 bg-surface-container-high p-12 border-b border-outline-variant/10">
+<div class="mb-12">
+<h2 class="text-3xl font-headline font-bold uppercase mb-4">Color Lab</h2>
+<p class="text-on-surface-variant text-sm">Couture coloring and architectural cuts.</p>
+</div>
+<div class="space-y-10">
+<div class="flex justify-between items-center group">
+<div>
+<p class="font-bold uppercase text-xs tracking-widest">Full Balayage</p>
+<p class="text-on-surface-variant text-[10px] uppercase">3 Hours</p>
+</div>
+<span class="font-headline font-bold">$295+</span>
+</div>
+<div class="flex justify-between items-center group">
+<div>
+<p class="font-bold uppercase text-xs tracking-widest">Global Tint</p>
+<p class="text-on-surface-variant text-[10px] uppercase">1.5 Hours</p>
+</div>
+<span class="font-headline font-bold">$115</span>
+</div>
+<div class="flex justify-between items-center group">
+<div>
+<p class="font-bold uppercase text-xs tracking-widest">Director Cut</p>
+<p class="text-on-surface-variant text-[10px] uppercase">1 Hour</p>
+</div>
+<span class="font-headline font-bold">$160</span>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 font-bold uppercase text-xs tracking-widest hover:bg-primary-dim transition-colors mt-4">Consult &amp; Book</button>
+</div>
+</div>
+<!-- Category: Nails & Details -->
+<div class="md:col-span-8 bg-surface-container-lowest p-12 border-b border-outline-variant/10">
+<div class="flex justify-between items-start mb-16">
+<div>
+<h2 class="text-4xl font-headline font-bold uppercase tracking-tight mb-2">Nails &amp; Details</h2>
+<p class="text-on-surface-variant font-medium tracking-wide">The finishing touches that define your aesthetic.</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-4xl" data-icon="brush">brush</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="border-l-4 border-primary pl-6">
+<div class="flex justify-between items-center mb-2">
+<h4 class="font-bold uppercase tracking-widest text-sm">The Aura Manicure</h4>
+<span class="font-headline font-bold text-primary">$85</span>
+</div>
+<p class="text-on-surface-variant text-xs mb-6">Deep cuticle care, gel overlay, and high-shine top coat.</p>
+<button class="text-primary font-bold uppercase text-[10px] tracking-widest flex items-center gap-2 group">
+                            Book Service <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="border-l-4 border-surface-container pl-6">
+<div class="flex justify-between items-center mb-2">
+<h4 class="font-bold uppercase tracking-widest text-sm">Brow Architecture</h4>
+<span class="font-headline font-bold text-on-surface">$65</span>
+</div>
+<p class="text-on-surface-variant text-xs mb-6">Mapping, waxing, and tinting for the perfect structural frame.</p>
+<button class="text-on-surface font-bold uppercase text-[10px] tracking-widest flex items-center gap-2 group">
+                            Book Service <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="border-l-4 border-surface-container pl-6">
+<div class="flex justify-between items-center mb-2">
+<h4 class="font-bold uppercase tracking-widest text-sm">Lash Lift &amp; Tint</h4>
+<span class="font-headline font-bold text-on-surface">$120</span>
+</div>
+<p class="text-on-surface-variant text-xs mb-6">Semi-permanent curl and saturation for a wide-awake gaze.</p>
+<button class="text-on-surface font-bold uppercase text-[10px] tracking-widest flex items-center gap-2 group">
+                            Book Service <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="border-l-4 border-surface-container pl-6">
+<div class="flex justify-between items-center mb-2">
+<h4 class="font-bold uppercase tracking-widest text-sm">Russian Pedicure</h4>
+<span class="font-headline font-bold text-on-surface">$110</span>
+</div>
+<p class="text-on-surface-variant text-xs mb-6">Medical-grade dry pedicure for flawless skin and durability.</p>
+<button class="text-on-surface font-bold uppercase text-[10px] tracking-widest flex items-center gap-2 group">
+                            Book Service <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mt-24 px-8 md:px-16 text-center">
+<div class="bg-inverse-surface text-surface py-20 px-8 relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary-container via-transparent to-transparent"></div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-6xl font-headline font-extrabold uppercase tracking-tighter mb-8">Ready for your <span class="text-primary-container">Transformation?</span></h2>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<button class="bg-primary text-on-primary px-12 py-5 font-bold uppercase tracking-widest text-sm hover:bg-primary-dim transition-all">Book Online Now</button>
+<button class="border-2 border-outline-variant text-surface px-12 py-5 font-bold uppercase tracking-widest text-sm hover:bg-surface hover:text-on-surface transition-all">Gift Cards</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f3f0ef] dark:bg-[#1a1a1a] flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full gap-8">
+<div class="text-xl font-bold text-[#2f2e2e] dark:text-[#f9f6f5] font-headline uppercase">AURA BEAUTY</div>
+<div class="flex gap-8">
+<a class="font-['Inter'] uppercase tracking-[0.2em] text-[12px] text-[#5c5b5b] dark:text-[#afacac] hover:text-[#b70049] transition-colors" href="#">Instagram</a>
+<a class="font-['Inter'] uppercase tracking-[0.2em] text-[12px] text-[#5c5b5b] dark:text-[#afacac] hover:text-[#b70049] transition-colors" href="#">TikTok</a>
+<a class="font-['Inter'] uppercase tracking-[0.2em] text-[12px] text-[#5c5b5b] dark:text-[#afacac] hover:text-[#b70049] transition-colors" href="#">Facebook</a>
+</div>
+<div class="text-right">
+<div class="flex gap-4 mb-4 justify-center md:justify-end">
+<a class="font-['Inter'] uppercase tracking-[0.2em] text-[12px] text-[#5c5b5b] dark:text-[#afacac] hover:text-[#b70049] transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Inter'] uppercase tracking-[0.2em] text-[12px] text-[#5c5b5b] dark:text-[#afacac] hover:text-[#b70049] transition-colors" href="#">Terms</a>
+</div>
+<p class="font-['Inter'] uppercase tracking-[0.2em] text-[12px] text-[#5c5b5b] dark:text-[#afacac]">© 2024 AURA BEAUTY. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery &amp; Events | The Culinary Curator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#2f312e",
+                        "surface-container-highest": "#e3e2df",
+                        "primary-fixed": "#d8e8cb",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#121f0d",
+                        "outline": "#757870",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#705460",
+                        "on-tertiary-fixed-variant": "#5a3f4b",
+                        "on-surface-variant": "#444841",
+                        "surface-bright": "#faf9f5",
+                        "primary-fixed-dim": "#bccbb0",
+                        "surface-variant": "#e3e2df",
+                        "primary-container": "#6a7961",
+                        "secondary-fixed": "#f2e1b8",
+                        "secondary-fixed-dim": "#d5c59e",
+                        "inverse-primary": "#bccbb0",
+                        "primary": "#526049",
+                        "on-secondary-fixed-variant": "#514628",
+                        "inverse-on-surface": "#f2f1ed",
+                        "surface-dim": "#dbdad6",
+                        "on-tertiary-fixed": "#2a151f",
+                        "on-tertiary-container": "#fffbff",
+                        "surface-container": "#efeeea",
+                        "secondary-container": "#f2e1b8",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#706343",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#231b03",
+                        "surface-tint": "#54634c",
+                        "on-primary-fixed-variant": "#3d4b35",
+                        "on-primary": "#ffffff",
+                        "surface": "#faf9f5",
+                        "on-surface": "#1b1c1a",
+                        "on-background": "#1b1c1a",
+                        "secondary": "#695d3d",
+                        "tertiary-container": "#8b6c79",
+                        "on-primary-container": "#f8ffee",
+                        "surface-container-high": "#e9e8e4",
+                        "background": "#faf9f5",
+                        "tertiary-fixed-dim": "#e1bdcb",
+                        "outline-variant": "#c5c8be",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffd8e7",
+                        "surface-container-low": "#f4f4f0",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#faf9f5]/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-[0_8px_32px_rgba(27,28,26,0.04)]">
+<nav class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="font-serif text-2xl italic text-[#1b1c1a] dark:text-[#faf9f5]">The Culinary Curator</div>
+<div class="hidden md:flex items-center gap-10 font-serif tracking-tight text-lg">
+<a class="text-[#1b1c1a]/70 dark:text-[#faf9f5]/70 hover:text-[#526049] transition-colors duration-300" href="#">Home</a>
+<a class="text-[#1b1c1a]/70 dark:text-[#faf9f5]/70 hover:text-[#526049] transition-colors duration-300" href="#">About</a>
+<a class="text-[#1b1c1a]/70 dark:text-[#faf9f5]/70 hover:text-[#526049] transition-colors duration-300" href="#">Services</a>
+<a class="text-[#526049] dark:text-[#7D8C73] border-b border-[#526049] pb-1 hover:text-[#526049] transition-colors duration-300" href="#">Gallery</a>
+<a class="text-[#1b1c1a]/70 dark:text-[#faf9f5]/70 hover:text-[#526049] transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-lg font-body font-medium transition-all hover:bg-primary-container active:scale-95">
+                Request a Quote
+            </button>
+</nav>
+</header>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<section class="px-12 max-w-screen-2xl mx-auto mb-20">
+<div class="flex flex-col md:flex-row items-end justify-between gap-12">
+<div class="max-w-2xl">
+<span class="font-label text-xs tracking-[0.2em] uppercase text-secondary mb-4 block">Visual Chronicles</span>
+<h1 class="font-serif text-6xl md:text-7xl leading-[1.1] text-on-surface mb-8">Elevated moments, curated for the <span class="italic">discerning</span> eye.</h1>
+</div>
+<div class="hidden md:block pb-4">
+<p class="font-body text-lg text-on-surface-variant leading-relaxed max-w-sm">
+                        A collection of our most evocative celebrations, where culinary artistry meets architectural event design.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Category Filters -->
+<section class="px-12 max-w-screen-2xl mx-auto mb-16">
+<div class="flex flex-wrap gap-8 items-center border-b border-outline-variant/20 pb-6">
+<button class="font-label text-sm tracking-widest uppercase text-primary border-b-2 border-primary pb-1">All Events</button>
+<button class="font-label text-sm tracking-widest uppercase text-on-surface-variant hover:text-primary transition-colors">Weddings</button>
+<button class="font-label text-sm tracking-widest uppercase text-on-surface-variant hover:text-primary transition-colors">Corporate</button>
+<button class="font-label text-sm tracking-widest uppercase text-on-surface-variant hover:text-primary transition-colors">Private Affairs</button>
+<div class="ml-auto hidden sm:flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-xl">filter_list</span>
+<span class="font-label text-xs uppercase tracking-widest">Refine Search</span>
+</div>
+</div>
+</section>
+<!-- Gallery Grid (Editorial Asymmetry) -->
+<section class="px-12 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<!-- Large Feature Card -->
+<div class="md:col-span-8 group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl bg-surface-container mb-6">
+<img class="w-full aspect-[16/10] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Luxurious wedding banquet table set with crystal glassware and white floral centerpieces under soft ambient evening lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIJ5qFII1xGfaEsDabsMDd571fZmlflw0ywH83KOLKyFgQTVJLRIIvqHfsaLRbJbUdcOqjTVl2yGLcROmFarPv2WaBrdnLlFPG2p6_JnRhvlxW0Ubf7npKQ7yRdhnUtyCpv_-VeY1Cyiuv8pYWOlFNyKi_y-YnjPlgikKe96w8oTsQg7wjZ_zzShZZjOBf6fj8asGWrDMUh3KOzZ9OZzSBuFI5euXwC3GJUDzGbYDi1xcfzEx1aMEXsUWTASO9VezYmnWbSnnzSSYk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="flex justify-between items-start pr-12">
+<div>
+<span class="font-label text-xs tracking-widest uppercase text-secondary">Weddings</span>
+<h3 class="font-serif text-3xl mt-2 group-hover:text-primary transition-colors">The Glasshouse Gala</h3>
+</div>
+<span class="material-symbols-outlined text-primary mt-4 opacity-0 group-hover:opacity-100 transition-all transform translate-x-[-10px] group-hover:translate-x-0">arrow_forward</span>
+</div>
+</div>
+<!-- Vertical Card -->
+<div class="md:col-span-4 mt-12 md:mt-24 group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl bg-surface-container mb-6">
+<img class="w-full aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Exquisite plate of artisanal appetizers with micro-greens and edible flowers on white porcelain at a corporate event" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrnr5-cfXQlEH9D_TbIk1OvWyCgMPP6iXWZ-gnDecyHLiiZ6Jtuu8ZovLGAkwc8_-9BrPzPgKczPQreKkcrfK0-3oW5XTaAKgvmIZpqKD8jGNHi6VaLyMykOEguZnXsutRkEPuQyY5TbQAQK4F3M9kZdIWeaBQxH-yNzSglCo8mIK_4GWe7GuKyQZ4RVddcs3x27CYz9Kn-mxn5rMoWIz56KtR2RPX5TudeWf4qyBetNs2puMT9ozY3LvWxxq2TGmaxH5K5q5ZCoHK"/>
+</div>
+<div>
+<span class="font-label text-xs tracking-widest uppercase text-secondary">Corporate</span>
+<h3 class="font-serif text-2xl mt-2 group-hover:text-primary transition-colors">Venture Capital Summit</h3>
+</div>
+</div>
+<!-- Small Grid Offset -->
+<div class="md:col-span-4 group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl bg-surface-container mb-6">
+<img class="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Intimate candlelit dinner table setup in a rustic wine cellar with exposed brick and dark wood accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5gVOQX2SfwdV6PiHF4qmWJztRCnI_wt0SWF0J0pa139_ULtTN0-BUjjkkySvqCWz5ZgfEFpJ6tHS1H9d9qOz98Z7Hvb_srU2EtTZk08uzN56cXAR47vyFha8qkyZc3hqJvZ658It7Xf4ghxM6vZ2pWvI76faOA3SR9aoGHAYoTeUtbOlcty0sXcafB3x25HROnSPDHS8FsrZLjDNkZFYSq7S1drB5f2-Ztflc21MiTwn8pYdWkJgHrGyh4C3yxh2n4PmYhQGb5zWl"/>
+</div>
+<div>
+<span class="font-label text-xs tracking-widest uppercase text-secondary">Private Affairs</span>
+<h3 class="font-serif text-2xl mt-2 group-hover:text-primary transition-colors">The Cellar Reserve Dinner</h3>
+</div>
+</div>
+<div class="md:col-span-8 group cursor-pointer md:mt-[-8rem]">
+<div class="relative overflow-hidden rounded-xl bg-surface-container mb-6">
+<img class="w-full aspect-[16/9] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Professional bartenders preparing craft cocktails with fresh herbs and botanical spirits for a high-end evening reception" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1TdctHCx5u1wE-nbmWUR00um60BhQgbvUxvbUqRC7Hq75KS0eDCnCyYcPjv5fvfsRpNQmUBgs0K9Au-6aXEsOxafEb4bqxjZYVe5eZS6d95eQZGe36e7TogQjNriX7f3308zGwbdCVGECd4lxwu5jQeAt5E6NsRnT3lPVqnXopYPfck8zQej5aAoK9mJkU9uABIL1HCs-5rBLgeXNbVPQi-ZIwo5iKM8guLpbEAORQiSzZqhJnAOkR900xVqGiZiCsiOkVieKRuhM"/>
+<div class="absolute bottom-6 right-6 bg-surface-bright/90 backdrop-blur-md p-6 rounded-lg shadow-xl max-w-xs">
+<p class="font-body text-sm italic text-on-surface-variant">"The attention to detail in the mixology program was as impressive as the food itself."</p>
+</div>
+</div>
+<div>
+<span class="font-label text-xs tracking-widest uppercase text-secondary">Corporate</span>
+<h3 class="font-serif text-3xl mt-2 group-hover:text-primary transition-colors">Modernist Mixology Launch</h3>
+</div>
+</div>
+<!-- Last Column Trio -->
+<div class="md:col-span-12 grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl bg-surface-container mb-6">
+<img class="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Elegant outdoor garden party with hanging lanterns and floral arrangements on long wooden tables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTQMl190W9O4JdyJ9uKeVLyN01GOEAl88kh2aXPwynGCQez9tkHoYVNhdHRsW5pEs2sOakmbs0XtDepgcSsyCcl3lNo6V5UEPffEeUyt15oleYxwzyKjeZHVHXF4oTLjOkUxXmvSlWNiw_pCBOCK0bNJeiy6r6wtz6cuI7FX9ekPpfrUI73BXPHH5PVVMweQB0qWfm9CsMN2L4C63W48QDZw9u7HSvl1Fom7INkrlqmQCn_zLcWlTrIGCz6IJjV-ui3skeuU7Bt42n"/>
+</div>
+<h4 class="font-serif text-xl group-hover:text-primary transition-colors">Estate Garden Reception</h4>
+</div>
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl bg-surface-container mb-6">
+<img class="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of hand-decorated desserts with gold leaf and fresh berries on a marble display" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEhcZyDLT4vF5bOYNe7gjBymK6Ab3bmdzg0W1KRFUaP1YWFNetzCw2GSmXt7bdfBIwLu7i91vEJw28JJSBtj2vKOBhpnPCCBmBsfYxx7m6BturenqcSdWBDuhUXysAIXmkCQcZGVS9PhUMiRJs4j_WJZ2fZCWu1Da5ACiG2udG1i8OEmZ_0WvUTIBvqMlM3Gz3Db9q9t60ctcEPnN8fz_tFb6kGUsRhf92R-UbfgKL9GXkU5gAGjT8vHpImKH9Z1qKuG5i5-88R-o2"/>
+</div>
+<h4 class="font-serif text-xl group-hover:text-primary transition-colors">The Gilded Patisserie</h4>
+</div>
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl bg-surface-container mb-6">
+<img class="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Large gathering of people dancing and celebrating in a beautifully lit modern industrial venue" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBND5zj6KDqTyiu7wq3O0B0qaAHSFpHZoipSBbVqpek8Vd-ZL0J9psIitK9FDlWMkV-cepTeCgHkp8Dnv4IAX3QpqGDQKjxuriw-fELkOnzrGmxSfWOL7vtCO78mQVBX5FQte3kewMGzsKDGVWa6YAqO0_i8FQZtGG1bAmxnWb1NwK73jGjmBM6J3w0tONEnLt4tq1VlXb29NswbzFdyyel7t9TWJvdCLcSBGivzWj2DmuWoklGor7UIVI_j6E9b6_AFf54WGC00TX2"/>
+</div>
+<h4 class="font-serif text-xl group-hover:text-primary transition-colors">Skyline Anniversary</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section with Tonal Shift -->
+<section class="mt-32 px-12 py-24 bg-surface-container-low">
+<div class="max-w-4xl mx-auto text-center">
+<span class="font-label text-xs tracking-[0.2em] uppercase text-secondary mb-6 block">Your Event Reimagined</span>
+<h2 class="font-serif text-5xl md:text-6xl text-on-surface mb-10 leading-tight">Ready to curate your next <span class="italic text-primary">masterpiece?</span></h2>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-body font-semibold tracking-wide hover:shadow-lg transition-all">
+                        Inquire Now
+                    </button>
+<button class="border border-outline-variant/40 text-on-surface px-10 py-4 rounded-lg font-body font-semibold hover:bg-surface-container transition-all">
+                        View Menu Collections
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f4f4f0] dark:bg-stone-950 w-full border-t border-[#c5c8be]/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 max-w-screen-2xl mx-auto">
+<div class="md:col-span-1">
+<div class="font-serif text-xl text-[#1b1c1a] dark:text-[#faf9f5] mb-6">The Culinary Curator</div>
+<p class="font-sans text-sm text-[#1b1c1a]/60 dark:text-[#faf9f5]/60 leading-relaxed">
+                    Crafting bespoke culinary experiences for those who appreciate the intersection of taste and design.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-sans text-sm tracking-wide uppercase font-bold text-[#1b1c1a] dark:text-[#faf9f5]">Connect</h4>
+<a class="font-sans text-sm text-[#1b1c1a]/60 dark:text-[#faf9f5]/60 hover:underline decoration-[#695d3d] underline-offset-4 transition-opacity" href="#">Instagram</a>
+<a class="font-sans text-sm text-[#1b1c1a]/60 dark:text-[#faf9f5]/60 hover:underline decoration-[#695d3d] underline-offset-4 transition-opacity" href="#">LinkedIn</a>
+<a class="font-sans text-sm text-[#1b1c1a]/60 dark:text-[#faf9f5]/60 hover:underline decoration-[#695d3d] underline-offset-4 transition-opacity" href="#">Pinterest</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-sans text-sm tracking-wide uppercase font-bold text-[#1b1c1a] dark:text-[#faf9f5]">Company</h4>
+<a class="font-sans text-sm text-[#1b1c1a]/60 dark:text-[#faf9f5]/60 hover:underline decoration-[#695d3d] underline-offset-4 transition-opacity" href="#">Privacy Policy</a>
+<a class="font-sans text-sm text-[#1b1c1a]/60 dark:text-[#faf9f5]/60 hover:underline decoration-[#695d3d] underline-offset-4 transition-opacity" href="#">Terms of Service</a>
+<a class="font-sans text-sm text-[#1b1c1a]/60 dark:text-[#faf9f5]/60 hover:underline decoration-[#695d3d] underline-offset-4 transition-opacity" href="#">Sustainability</a>
+<a class="font-sans text-sm text-[#1b1c1a]/60 dark:text-[#faf9f5]/60 hover:underline decoration-[#695d3d] underline-offset-4 transition-opacity" href="#">Careers</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-sans text-sm tracking-wide uppercase font-bold text-[#1b1c1a] dark:text-[#faf9f5]">Studio</h4>
+<p class="font-sans text-sm text-[#1b1c1a]/60 dark:text-[#faf9f5]/60">
+                    124 Artisan Row<br/>
+                    Culinary Arts District<br/>
+                    New York, NY 10012
+                </p>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-outline-variant/10 text-center">
+<p class="font-sans text-sm tracking-wide uppercase text-[#1b1c1a]/60 dark:text-[#faf9f5]/60">
+                © 2024 The Culinary Curator. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>

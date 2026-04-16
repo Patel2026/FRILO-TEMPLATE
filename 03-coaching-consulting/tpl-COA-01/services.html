@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | FRILO CONSULTING</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface-white text-slate-700 antialiased selection:bg-accent selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass-panel border-b border-primary/5 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-primary text-white flex items-center justify-center font-heading font-bold text-lg sharp-border">F</div>
+                <span class="font-heading font-bold text-xl text-primary tracking-tight">FRILO CONSULTING</span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-slate-600 hover:text-accent transition-colors text-sm uppercase tracking-wide font-medium">Accueil</a>
+                <a href="about.html" class="text-slate-600 hover:text-accent transition-colors text-sm uppercase tracking-wide font-medium">L'Expertise</a>
+                <a href="services.html" class="text-primary font-semibold text-sm uppercase tracking-wide">Services</a>
+                <a href="contact.html" class="text-slate-600 hover:text-accent transition-colors text-sm uppercase tracking-wide font-medium">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="contact.html" class="btn-primary px-6 py-2.5 text-sm font-bold uppercase tracking-wide sharp-border">Prendre RDV</a>
+            </div>
+
+            <button class="md:hidden text-primary">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Page Header -->
+        <header class="pt-40 pb-20 bg-surface">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <nav class="flex justify-center items-center gap-2 mb-8 text-xs font-bold tracking-widest uppercase text-slate-400">
+                    <a href="index.html" class="hover:text-primary transition-colors">Accueil</a>
+                    <span class="w-1 h-1 rounded-full bg-accent"></span>
+                    <span class="text-primary">Services</span>
+                </nav>
+                <h1 class="text-5xl md:text-7xl font-heading font-extrabold text-primary mb-6">Nos domaines d'intervention.</h1>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto font-light leading-relaxed">
+                    Des méthodologies éprouvées pour résoudre les défis les plus complexes de votre entreprise. 
+                </p>
+            </div>
+        </header>
+
+        <!-- Services Detailed List -->
+        <section class="py-24 bg-white border-t border-slate-100">
+            <div class="max-w-7xl mx-auto px-6 space-y-24">
+                
+                <!-- Service Block 1 -->
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="w-16 h-16 bg-surface-alt text-accent flex items-center justify-center rounded-sm mb-6">
+                            <span class="material-symbols-outlined text-4xl">strategy</span>
+                        </div>
+                        <h2 class="text-3xl font-heading font-bold text-primary mb-4">Conseil en Stratégie Institutionnelle</h2>
+                        <p class="text-slate-600 mb-6 font-light leading-relaxed">
+                            Nous aidons les conseils d'administration et les PDG à concevoir des stratégies d'entreprise gagnantes. Cela inclut l'analyse des paysages concurrentiels, l'identification d'opportunités de marché non exploitées et l'optimisation du portefeuille de produits.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-accent text-sm">check</span> Planification Stratégique à 3-5 ans
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-accent text-sm">check</span> Accompagnement Fusions & Acquisitions
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-accent text-sm">check</span> Pénétration de Nouveaux Marchés
+                            </li>
+                        </ul>
+                        <a href="contact.html?service=strategy" class="text-primary font-bold uppercase tracking-widest text-sm flex items-center gap-2 group">
+                            Demander un audit préalable <span class="material-symbols-outlined text-accent group-hover:translate-x-2 transition-transform">trending_flat</span>
+                        </a>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Strategy Planning" class="w-full aspect-video object-cover sharp-border shadow-corporate">
+                    </div>
+                </div>
+
+                <div class="w-full h-px bg-slate-100"></div>
+
+                <!-- Service Block 2 -->
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80" alt="Executive Coaching" class="w-full aspect-video object-cover sharp-border shadow-corporate">
+                    </div>
+                    <div>
+                        <div class="w-16 h-16 bg-surface-alt text-accent flex items-center justify-center rounded-sm mb-6">
+                            <span class="material-symbols-outlined text-4xl">psychology</span>
+                        </div>
+                        <h2 class="text-3xl font-heading font-bold text-primary mb-4">Coaching Exécutif & Leadership</h2>
+                        <p class="text-slate-600 mb-6 font-light leading-relaxed">
+                            Le sommet de l'entreprise est la place la plus isolée. Nos partenaires travaillent en tête-à-tête avec les cadres dirigeants pour affiner leur vision, améliorer leur résilience en temps de crise et maximiser leur impact communicationnel.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-accent text-sm">check</span> Mentoring C-Level Personnalisé
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-accent text-sm">check</span> Gestion de Transition Professionnelle
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-accent text-sm">check</span> Évaluation Psychométrique des Leaders
+                            </li>
+                        </ul>
+                        <a href="contact.html?service=coaching" class="text-primary font-bold uppercase tracking-widest text-sm flex items-center gap-2 group">
+                            Planifier une session d'essai <span class="material-symbols-outlined text-accent group-hover:translate-x-2 transition-transform">trending_flat</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full h-px bg-slate-100"></div>
+
+                <!-- Service Block 3 -->
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="w-16 h-16 bg-surface-alt text-accent flex items-center justify-center rounded-sm mb-6">
+                            <span class="material-symbols-outlined text-4xl">speed</span>
+                        </div>
+                        <h2 class="text-3xl font-heading font-bold text-primary mb-4">Performance Opérationnelle</h2>
+                        <p class="text-slate-600 mb-6 font-light leading-relaxed">
+                            Éliminez l'inefficacité à tous les niveaux de votre organisation. Nous déployons des méthodologies d'amélioration continue pour réduire les coûts cachés et accélérer les cycles de livraison sans compromettre la qualité.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-accent text-sm">check</span> Audit des Processus Internes
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-accent text-sm">check</span> Transformation Digitale Agnostique
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-accent text-sm">check</span> Restructuration des Coûts
+                            </li>
+                        </ul>
+                        <a href="contact.html?service=performance" class="text-primary font-bold uppercase tracking-widest text-sm flex items-center gap-2 group">
+                            Discuter de vos processus <span class="material-symbols-outlined text-accent group-hover:translate-x-2 transition-transform">trending_flat</span>
+                        </a>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80" alt="Performance Data" class="w-full aspect-video object-cover sharp-border shadow-corporate">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Structured Engagement Models -->
+        <section class="py-24 bg-surface-alt">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-accent font-bold tracking-widest text-xs uppercase mb-4 block">Modèles d'Engagement</span>
+                    <h2 class="text-4xl font-heading font-bold text-primary leading-tight">Cadres d'intervention clairs et transparents.</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Pricing 1 -->
+                    <div class="bg-white p-10 sharp-border relative border border-slate-100 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-2xl font-heading font-bold text-primary mb-2">Audit Express</h3>
+                        <p class="text-slate-500 font-light text-sm mb-6">Idéal pour diagnostiquer un point bloquant spécifique rapidement.</p>
+                        <div class="mb-8">
+                            <span class="text-3xl font-heading font-bold text-primary">€4,500</span>
+                            <span class="text-sm text-slate-400">/intervention</span>
+                        </div>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-baseline gap-3 text-sm text-slate-600">
+                                <span class="material-symbols-outlined text-accent text-[14px]">check</span> 2 ateliers de travail intensifs
+                            </li>
+                            <li class="flex items-baseline gap-3 text-sm text-slate-600">
+                                <span class="material-symbols-outlined text-accent text-[14px]">check</span> Rapport de diagnostic détaillé
+                            </li>
+                            <li class="flex items-baseline gap-3 text-sm text-slate-600">
+                                <span class="material-symbols-outlined text-accent text-[14px]">check</span> 3 Quick-Wins immédiatement applicables
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn-secondary w-full py-3 text-sm font-bold uppercase tracking-wide sharp-border">Choisir</a>
+                    </div>
+                    
+                    <!-- Pricing 2 (Highlighted) -->
+                    <div class="bg-primary p-10 sharp-border relative flex flex-col h-full transform md:scale-105 shadow-corporate">
+                        <div class="absolute top-0 right-0 bg-accent text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 sharp-border rounded-tl-none rounded-br-none">Le plus demandé</div>
+                        <h3 class="text-2xl font-heading font-bold text-white mb-2">Accompagnement Trimestriel</h3>
+                        <p class="text-slate-400 font-light text-sm mb-6">Pour un déploiement stratégique contrôlé et itératif.</p>
+                        <div class="mb-8">
+                            <span class="text-3xl font-heading font-bold text-white">Sur Mesure</span>
+                        </div>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-baseline gap-3 text-sm text-slate-300">
+                                <span class="material-symbols-outlined text-accent text-[14px]">check</span> Consultant senior dédié
+                            </li>
+                            <li class="flex items-baseline gap-3 text-sm text-slate-300">
+                                <span class="material-symbols-outlined text-accent text-[14px]">check</span> Séances hebdomadaires de pilotage
+                            </li>
+                            <li class="flex items-baseline gap-3 text-sm text-slate-300">
+                                <span class="material-symbols-outlined text-accent text-[14px]">check</span> Implémentation opérationnelle
+                            </li>
+                            <li class="flex items-baseline gap-3 text-sm text-slate-300">
+                                <span class="material-symbols-outlined text-accent text-[14px]">check</span> Accès réseau d'experts internationaux
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn-primary w-full py-3 text-sm font-bold uppercase tracking-wide sharp-border border-none">Demander un Devis</a>
+                    </div>
+
+                    <!-- Pricing 3 -->
+                    <div class="bg-white p-10 sharp-border relative border border-slate-100 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-2xl font-heading font-bold text-primary mb-2">Coaching Dirigeant</h3>
+                        <p class="text-slate-500 font-light text-sm mb-6">Ajustement du leadership pour CEOs et Fondateurs.</p>
+                        <div class="mb-8">
+                            <span class="text-3xl font-heading font-bold text-primary">€1,200</span>
+                            <span class="text-sm text-slate-400">/séance (2h)</span>
+                        </div>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-baseline gap-3 text-sm text-slate-600">
+                                <span class="material-symbols-outlined text-accent text-[14px]">check</span> Confidentialité absolue
+                            </li>
+                            <li class="flex items-baseline gap-3 text-sm text-slate-600">
+                                <span class="material-symbols-outlined text-accent text-[14px]">check</span> Outils psychométriques avancés
+                            </li>
+                            <li class="flex items-baseline gap-3 text-sm text-slate-600">
+                                <span class="material-symbols-outlined text-accent text-[14px]">check</span> Support de crise 24/7 (sur forfait 10+)
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn-secondary w-full py-3 text-sm font-bold uppercase tracking-wide sharp-border">Réserver</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-heading font-bold text-primary mb-4">Questions Fréquentes</h2>
+                    <p class="text-slate-600 font-light">La clarté avant l'engagement.</p>
+                </div>
+                
+                <div class="space-y-4">
+                    <!-- FAQ Item -->
+                    <div class="border border-slate-200 sharp-border">
+                        <button class="w-full flex justify-between items-center text-left p-6 font-bold text-primary hover:text-accent transition-colors">
+                            Quels secteurs industriels couvrez-vous principalement ?
+                            <span class="material-symbols-outlined">add</span>
+                        </button>
+                    </div>
+                    <!-- FAQ Item -->
+                    <div class="border border-slate-200 sharp-border">
+                        <button class="w-full flex justify-between items-center text-left p-6 font-bold text-primary hover:text-accent transition-colors">
+                            Combien de temps faut-il pour voir un retour sur investissement tangible ?
+                            <span class="material-symbols-outlined">add</span>
+                        </button>
+                    </div>
+                    <!-- FAQ Item -->
+                    <div class="border border-slate-200 sharp-border p-6 bg-surface-alt">
+                        <button class="w-full flex justify-between items-center text-left font-bold text-primary hover:text-accent transition-colors mb-4">
+                            Quelle est la différence entre un Audit Express et un Accompagnement Trimestriel ?
+                            <span class="material-symbols-outlined">remove</span>
+                        </button>
+                        <p class="text-slate-600 text-sm font-light leading-relaxed">
+                            L'Audit Express est un format coup de poing conçu pour isoler rapidement les causes profondes d'un problème donné (durée totale : moins de 2 semaines). <br><br>L'Accompagnement Trimestriel est une démarche beaucoup plus profonde où nos associés s'intègrent littéralement à vos équipes pour piloter le changement sur la durée, garantir son exécution et réajuster la trajectoire en temps réel.
+                        </p>
+                    </div>
+                    <!-- FAQ Item -->
+                    <div class="border border-slate-200 sharp-border">
+                        <button class="w-full flex justify-between items-center text-left p-6 font-bold text-primary hover:text-accent transition-colors">
+                            Pouvons-nous signer un accord de confidentialité avant toute discussion ?
+                            <span class="material-symbols-outlined">add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark pt-24 pb-10 border-t-4 border-accent" style="background-color: #06101c;">
+        <!-- Identical Footer to index.html -->
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="md:col-span-1">
+                <a href="index.html" class="flex items-center gap-2 mb-6">
+                    <div class="w-8 h-8 bg-accent text-white flex items-center justify-center font-heading font-bold text-lg sharp-border">F</div>
+                    <span class="font-heading font-bold text-xl text-white tracking-tight">FRILO CONSULTING</span>
+                </a>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Le cabinet de conseil et coaching réservé à l'élite corporative.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-widest text-sm mb-6">Expertise</h4>
+                <ul class="space-y-4">
+                    <li><a href="services.html" class="text-white font-semibold transition-colors text-sm">Conseil en Stratégie</a></li>
+                    <li><a href="services.html" class="text-white font-semibold transition-colors text-sm">Coaching Exécutif</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-widest text-sm mb-6">Cabinet</h4>
+                <ul class="space-y-4">
+                    <li><a href="about.html" class="text-slate-400 hover:text-white transition-colors text-sm">Notre Équipe</a></li>
+                    <li><a href="contact.html" class="text-slate-400 hover:text-white transition-colors text-sm">Bureaux</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-widest text-sm mb-6">Contact</h4>
+                <ul class="space-y-4 mb-6">
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-accent text-[18px]">mail</span>
+                        <a href="mailto:contact@friloconsulting.com" class="text-slate-400 hover:text-white transition-colors text-sm">contact@friloconsulting.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 border-t border-slate-800 pt-8 flex justify-between items-center text-slate-500 text-xs">
+            <p>© 2026 FRILO CONSULTING. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

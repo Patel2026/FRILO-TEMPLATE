@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Notre Histoire | La Braise Express</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <a href="index.html" class="text-2xl font-black italic text-primary font-headline tracking-tighter uppercase">La Braise <span class="text-on-surface">Express</span></a>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="text-on-surface hover:text-primary transition-colors font-headline tracking-tighter uppercase font-bold" href="index.html">Accueil</a>
+                <a class="text-primary border-b-2 border-primary pb-1 font-headline tracking-tighter uppercase font-bold" href="about.html">Notre Histoire</a>
+                <a class="text-on-surface hover:text-primary transition-colors font-headline tracking-tighter uppercase font-bold" href="menu.html">Menu</a>
+                <a class="text-on-surface hover:text-primary transition-colors font-headline tracking-tighter uppercase font-bold" href="services.html">Services</a>
+                <a class="text-on-surface hover:text-primary transition-colors font-headline tracking-tighter uppercase font-bold" href="contact.html">Contact</a>
+            </div>
+            <a href="menu.html" class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold font-headline tracking-tighter uppercase hover:scale-105 active:opacity-80 transition-all">
+                Commander
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="relative px-8 py-20 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7">
+                <h1 class="font-headline text-6xl md:text-8xl font-black tracking-tighter text-primary leading-[0.9] mb-8 uppercase">
+                    VITESSE.<br/>QUALITÉ.<br/>BRAISE.
+                </h1>
+                <p class="text-xl md:text-2xl text-on-surface-variant font-medium max-w-xl leading-relaxed">
+                    Nous n'avons pas seulement construit une cuisine ; nous avons conçu un circuit de course culinaire. Chez La Braise Express, nous prouvons que la vitesse urbaine et la précision gourmet peuvent cohabiter dans la même assiette.
+                </p>
+            </div>
+            <div class="lg:col-span-5 relative">
+                <div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+                    <img class="w-full h-full object-cover" data-alt="Chef cuisinant avec des flammes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqAItgeD2IaXlKLe5cZAM-jJ0NaBXPJ9AYXSsfarC1SepVPaM51aCndpeHItHZwIqxyJ_FK05VLScwRY1AS3ofqIuCk1Px_Yi9HQavqZjmxzdRKWcmiOqYxXLKaq-koh7oifSs45WXZGA5xUGQw8uC4KX2Jb_cZDBw7FD_FJVdtPYPHUMbPvnwDdlkGMspvFNuURcxZRagqDxfJReuEXGJMbj3r6MkmMw6JlbsVKdFLd7ipoNECtGcdo5DT_ADg0PW8jas1Ixwg-JA"/>
+                </div>
+                <div class="absolute -bottom-8 -left-8 bg-secondary-container p-8 rounded-2xl shadow-xl -rotate-3 max-w-[200px]">
+                    <span class="text-4xl font-black text-on-secondary-container block leading-none">0%</span>
+                    <span class="text-sm font-bold uppercase tracking-widest text-on-secondary-container leading-tight">Compromis sur le Goût</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Mission Grid -->
+        <section class="bg-surface-container-low py-24 px-8 mt-12">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-surface-container-lowest p-10 rounded-3xl shadow-sm hover:translate-y-[-8px] transition-transform duration-300">
+                        <div class="w-16 h-16 bg-primary-container/20 rounded-xl flex items-center justify-center mb-6 text-primary">
+                            <span class="material-symbols-outlined text-4xl">bolt</span>
+                        </div>
+                        <h3 class="font-headline text-3xl font-black mb-4 tracking-tight uppercase">Vélocité</h3>
+                        <p class="text-on-surface-variant leading-relaxed">Chaque minute compte. Notre flux de travail est optimisé pour livrer une fraîcheur maximale à la vitesse de votre vie. Pas d'attente, juste du plaisir.</p>
+                    </div>
+                    <div class="bg-surface-container-lowest p-10 rounded-3xl shadow-sm hover:translate-y-[-8px] transition-transform duration-300">
+                        <div class="w-16 h-16 bg-secondary-container/20 rounded-xl flex items-center justify-center mb-6 text-secondary">
+                            <span class="material-symbols-outlined text-4xl">restaurant</span>
+                        </div>
+                        <h3 class="font-headline text-3xl font-black mb-4 tracking-tight uppercase">Artisanat</h3>
+                        <p class="text-on-surface-variant leading-relaxed">Ingrédients sélectionnés, recettes signées par des chefs, et talent saisonnier. Nous traitons chaque commande comme un plat signature.</p>
+                    </div>
+                    <div class="bg-surface-container-lowest p-10 rounded-3xl shadow-sm hover:translate-y-[-8px] transition-transform duration-300">
+                        <div class="w-16 h-16 bg-tertiary-container/20 rounded-xl flex items-center justify-center mb-6 text-tertiary">
+                            <span class="material-symbols-outlined text-4xl">local_fire_department</span>
+                        </div>
+                        <h3 class="font-headline text-3xl font-black mb-4 tracking-tight uppercase">Intensité</h3>
+                        <p class="text-on-surface-variant leading-relaxed">La saveur n'est pas une suggestion, c'est notre mandat. Nous montons le feu et les épices pour faire vibrer votre palais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="py-24 px-8 max-w-7xl mx-auto overflow-hidden">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="w-full md:w-1/2 relative">
+                    <div class="relative z-10 grid grid-cols-2 gap-4">
+                        <div class="aspect-square rounded-3xl overflow-hidden shadow-lg mt-12">
+                            <img class="w-full h-full object-cover" data-alt="Équipe en cuisine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbF9iQbwnk-S-ysnRSTuxTCcmpcjJeuz58Kq2UA9JRlKFfftBzLUEz7pNOao87ETPqk08FZCJEVGV7uH3flGo2YefopRikiH7gDzx44ydOFHM7BmmHex-HBkkEBC1MhF4q3mcE1f67eHpsxOmEtOGDH4KbSxdtAS7pCgB6aQaeIYmUscoMMG6YddY5_cNAzzq8p5dySFUg_fBfPsl6lhORYndRj-LDb47KNSfpCTVcmVpx1Dpui8Oz-rItD_mTrXucemg5JLsGO2kz"/>
+                        </div>
+                        <div class="aspect-square rounded-3xl overflow-hidden shadow-lg">
+                            <img class="w-full h-full object-cover" data-alt="Ingrédients frais" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP1uDtBhv2dT68EQaRVaE2coXy05_np1bRHK7u7y_zPOBCyIZC_u2VXSkqTAB1zVRPKTi8X1KJGKpduWT5niBejKbTRCi2s_VURZRcpIWrkibX2ZxqgAQJJP5heV5aT6JLUGPHr6_6DahX8EkWLxjvHae7s2vwARp2isoa03zA8N9JUszjBcFbGD0OzSqwh-loMvYlew7wmf-Y_cJ25nExQo7kcSU2lzmQuZcFQGUuib3UiO5EaX3QHN5khLQS2au6AqCObAjfdkaa"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="font-headline text-5xl font-black tracking-tighter mb-8 leading-tight">LES MAINS DERRIÈRE<br/><span class="text-primary uppercase">LA BRAISE</span></h2>
+                    <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
+                        Notre équipe est un collectif de rebelles culinaires. Nous avons quitté le monde guindé de la haute gastronomie pour apporter des techniques d'exception à la scène fast-casual de Cotonou. Menés par le Chef Marcus Vane, nous opérons comme une équipe de ravitaillement de Formule 1 — précis, passionnés et implacables.
+                    </p>
+                    <div class="flex gap-4">
+                        <div class="bg-surface-container p-6 rounded-2xl flex-1">
+                            <span class="text-3xl font-black block">12+</span>
+                            <span class="text-xs font-bold uppercase tracking-widest text-outline leading-tight">Chefs Passionnés</span>
+                        </div>
+                        <div class="bg-surface-container p-6 rounded-2xl flex-1">
+                            <span class="text-3xl font-black block">100%</span>
+                            <span class="text-xs font-bold uppercase tracking-widest text-outline leading-tight">Produits Frais</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Journey -->
+        <section class="py-24 px-8 bg-surface">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-16">
+                    <h2 class="font-headline text-4xl font-black tracking-tighter uppercase mb-4">Notre Épopée</h2>
+                    <div class="h-1.5 w-24 bg-primary rounded-full"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
+                    <div class="md:col-span-2 md:row-span-2 bg-primary-container rounded-[2.5rem] p-12 flex flex-col justify-end relative overflow-hidden text-on-primary-container">
+                        <div class="absolute top-12 right-12 opacity-20">
+                            <span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+                        </div>
+                        <span class="font-headline text-6xl font-black mb-4">2021</span>
+                        <h4 class="font-headline text-2xl font-bold mb-4 uppercase">L'Allumage</h4>
+                        <p class="text-lg opacity-90">Tout a commencé dans un garage avec un seul but : servir le meilleur burger de la ville en moins de 4 minutes.</p>
+                    </div>
+                    <div class="md:col-span-2 bg-surface-container-high rounded-[2.5rem] p-8 flex items-center gap-6">
+                        <div class="w-24 h-24 bg-surface-container-lowest rounded-full flex-shrink-0 flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined text-4xl">location_on</span>
+                        </div>
+                        <div>
+                            <span class="font-headline text-3xl font-black">2022</span>
+                            <p class="font-medium text-on-surface-variant">Expansion vers 5 points de vente stratégiques à Cotonou. Le mouvement Braise Express est officiellement lancé.</p>
+                        </div>
+                    </div>
+                    <div class="bg-secondary-container rounded-[2.5rem] p-8 flex flex-col justify-center text-on-secondary-container">
+                        <span class="font-headline text-3xl font-black mb-2">2023</span>
+                        <p class="text-sm font-bold leading-tight">Lancement de notre technologie de livraison "Heat-Sync" garantissant que les aliments arrivent à température de cuisine.</p>
+                    </div>
+                    <div class="bg-surface-container-highest rounded-[2.5rem] p-8 flex flex-col justify-center">
+                        <span class="font-headline text-3xl font-black mb-2">2024</span>
+                        <p class="text-sm text-on-surface-variant font-bold leading-tight">Élu #1 Marque Fast-Casual pour la Qualité & la Rapidité par Urban Eats Magazine.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-24 px-8 max-w-5xl mx-auto text-center">
+            <h2 class="font-headline text-5xl md:text-7xl font-black tracking-tighter mb-10 leading-[0.9] uppercase">PRÊT À GOÛTER<br/>À L'ACCÉLÉRATION ?</h2>
+            <a href="menu.html" class="inline-block bg-primary text-on-primary text-xl px-12 py-5 rounded-full font-black font-headline tracking-tight uppercase shadow-xl hover:scale-105 active:scale-95 transition-all">
+                Voir les Spéciaux du Jour
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full rounded-t-3xl mt-20 bg-surface-container-low border-t-0">
+        <div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 max-w-7xl mx-auto">
+            <div class="text-xl font-black text-primary font-headline uppercase italic">LA BRAISE EXPRESS</div>
+            <div class="flex gap-8 text-sm font-body">
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Instagram</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Facebook</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">TikTok</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Points de Vente</a>
+            </div>
+            <p class="text-on-surface-variant text-sm font-body">© 2026 La Braise Express. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

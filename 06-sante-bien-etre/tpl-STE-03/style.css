@@ -1,0 +1,27 @@
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+
+.botanical-watermark {
+    background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M100 20C100 20 80 60 40 80C60 80 100 100 100 100C100 100 140 80 160 80C120 60 100 20 100 20Z' fill='%23c9a96e' fill-opacity='0.05'/%3E%3C/svg%3E");
+}
+
+.editorial-shadow {
+    box-shadow: 0 40px 60px -15px rgba(116, 90, 39, 0.06);
+}
+
+body { 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    background-color: #fcf9f4; 
+}
+h1, h2, h3, .font-serif, .font-headline { 
+    font-family: 'Noto Serif', serif; 
+}

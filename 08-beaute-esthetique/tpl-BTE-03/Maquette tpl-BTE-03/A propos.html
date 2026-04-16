@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#9e9c9c",
+                    "tertiary-fixed-dim": "#69a4ff",
+                    "error-container": "#f74b6d",
+                    "tertiary-container": "#83b1ff",
+                    "surface-container-low": "#f3f0ef",
+                    "surface-variant": "#dfdcdc",
+                    "on-tertiary-fixed": "#001737",
+                    "primary-dim": "#a1003f",
+                    "surface-container": "#eae7e7",
+                    "surface-container-highest": "#dfdcdc",
+                    "outline": "#787676",
+                    "on-background": "#2f2e2e",
+                    "primary-container": "#ff7290",
+                    "on-secondary-fixed": "#403f3f",
+                    "on-surface-variant": "#5c5b5b",
+                    "on-error-container": "#510017",
+                    "on-primary-container": "#4d001a",
+                    "on-tertiary": "#eff2ff",
+                    "surface-bright": "#f9f6f5",
+                    "on-error": "#ffefef",
+                    "surface-tint": "#b70049",
+                    "tertiary-dim": "#004e9c",
+                    "on-primary": "#ffeff0",
+                    "surface-container-high": "#e5e2e1",
+                    "on-primary-fixed-variant": "#5f0022",
+                    "error": "#b41340",
+                    "on-primary-fixed": "#000000",
+                    "primary-fixed-dim": "#ff5580",
+                    "error-dim": "#a70138",
+                    "inverse-primary": "#ff4e7c",
+                    "background": "#f9f6f5",
+                    "on-surface": "#2f2e2e",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-tertiary-container": "#003064",
+                    "tertiary": "#005ab2",
+                    "secondary": "#5c5b5b",
+                    "outline-variant": "#afacac",
+                    "inverse-surface": "#0e0e0e",
+                    "surface": "#f9f6f5",
+                    "tertiary-fixed": "#83b1ff",
+                    "on-secondary": "#f5f2f1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#5c5b5b",
+                    "primary": "#b70049",
+                    "secondary-container": "#e5e2e1",
+                    "on-secondary-container": "#525151",
+                    "surface-dim": "#d6d4d3",
+                    "primary-fixed": "#ff7290",
+                    "secondary-fixed-dim": "#d6d4d3",
+                    "secondary-dim": "#504f4f",
+                    "on-tertiary-fixed-variant": "#003874"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f6f5]/80 dark:bg-[#2f2e2e]/80 backdrop-blur-xl transition-all duration-300">
+<div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<span class="text-2xl font-bold tracking-tighter text-[#2f2e2e] dark:text-[#f9f6f5] uppercase font-headline">AURA BEAUTY</span>
+<div class="hidden md:flex gap-12">
+<a class="font-label text-[12px] uppercase tracking-[0.2em] text-[#5c5b5b] dark:text-[#afacac] hover:text-[#b70049] transition-colors" href="#">Home</a>
+<a class="font-label text-[12px] uppercase tracking-[0.2em] text-[#b70049] border-b-2 border-[#b70049] pb-1" href="#">About</a>
+<a class="font-label text-[12px] uppercase tracking-[0.2em] text-[#5c5b5b] dark:text-[#afacac] hover:text-[#b70049] transition-colors" href="#">Services</a>
+<a class="font-label text-[12px] uppercase tracking-[0.2em] text-[#5c5b5b] dark:text-[#afacac] hover:text-[#b70049] transition-colors" href="#">Pricing</a>
+<a class="font-label text-[12px] uppercase tracking-[0.2em] text-[#5c5b5b] dark:text-[#afacac] hover:text-[#b70049] transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 font-label text-[12px] uppercase tracking-widest hover:opacity-80 transition-opacity active:scale-95 duration-150">
+                Book Appointment
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="px-8 py-20 md:py-32 overflow-hidden">
+<div class="max-w-7xl mx-auto editorial-grid gap-8">
+<div class="col-span-12 md:col-span-7 mb-12 md:mb-0">
+<span class="text-primary font-label text-[12px] uppercase tracking-[0.4em] mb-6 block">Our Identity</span>
+<h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter leading-none mb-8">THE <span class="text-primary">AURA</span> PHILOSOPHY</h1>
+<p class="text-on-surface-variant text-xl md:text-2xl leading-relaxed max-w-xl">We don't just provide treatments; we craft confidence. AURA BEAUTY was born from the intersection of editorial art and clinical precision.</p>
+</div>
+<div class="col-span-12 md:col-span-5 relative">
+<div class="w-full aspect-[3/4] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="dramatic high-fashion portrait of a woman with avant-garde makeup and sharp lighting, professional studio aesthetic with soft fuchsia accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdETL36YnBI58k8ULfa36s3HgcdJ_B-e-vJmEFeeCStuoiW0m0mRqzZcV4DviFs6Nb4Xy13URLlLO1pyoDyAr8ZC6LW3GVEkFo29gXKRfhomF6gLyEuO7idEzoiK1-V8X7ywBcDuURXCyCXFk63y0ryzLCGA1daIj3yE4b9Bnp8paVGOGF-Kxz8ifWhtVNTSlGGJ4SELKTMu40XibfMFVS1TmAsFpb3a-UkhUyaYHnlM8QX-_TZLyJaovUIYHKMGdJsU0cjvioYIs"/>
+</div>
+<div class="absolute -bottom-10 -left-10 hidden md:block w-48 h-48 bg-primary-container p-6 text-on-primary-container font-headline font-bold text-2xl">
+                        SINCE<br/>2018
+                    </div>
+</div>
+</div>
+</section>
+<!-- Our Story / Mission -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-7xl mx-auto editorial-grid gap-16 items-center">
+<div class="col-span-12 md:col-span-6 order-2 md:order-1">
+<div class="aspect-video bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="wide shot of a sleek modern beauty salon interior with minimalist marble surfaces, minimalist black chairs, and soft ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK-xPT4BUw3u3kgJBY5NxZpEdfyS6OQM4quIchm-Muq1bkYpgtdK8Q0GtmlFdWJ2cr5-gkrppx0jpmd49ZLW60BjWWLorxjWENsedSJmGE8Jcl4RJiEjXLY6vZc7pu15_fEvGpqToIh8Dp3zuXrQZvNd0MKXMy2zA8pAs1bmvtBmmiFhF1dchMjtr56idZg6OBivUYJpiXJ4a36334KSxlgy6qP4TV2IHBRNi_RHW0irpKiBJm8xBWcEA01EBiE4ZK1frO0by4_KA"/>
+</div>
+</div>
+<div class="col-span-12 md:col-span-6 order-1 md:order-2">
+<h2 class="text-4xl md:text-5xl font-headline font-bold tracking-tight mb-8">BORN FROM EMPOWERMENT</h2>
+<div class="space-y-6 text-on-surface-variant text-lg">
+<p>Our journey began with a simple observation: the beauty industry lacked a space that combined the rigor of high-fashion aesthetics with a genuinely empowering environment.</p>
+<p>Founder Elena Rossi envisioned a salon where every guest is treated like a canvas for high-art styling. We believe that true style isn't about conformity; it's about amplifying the unique aura each individual carries.</p>
+<p class="font-bold text-primary">"Your reflection is not just an image; it's an announcement of who you are to the world."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Meet the Team (Bento Style) -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div>
+<span class="text-primary font-label text-[12px] uppercase tracking-[0.4em] mb-4 block">The Collective</span>
+<h2 class="text-5xl font-headline font-extrabold tracking-tighter">OUR ARTISTS</h2>
+</div>
+<p class="text-on-surface-variant max-w-sm">Curated specialists chosen for their visionary approach to hair, skin, and makeup artistry.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<!-- Member 1 -->
+<div class="md:col-span-2 group relative overflow-hidden bg-surface-container-lowest">
+<div class="aspect-square md:aspect-video overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="professional portrait of a confident female stylist with chic short hair wearing a minimalist black outfit in a bright studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhGNegXHwi2h8RiMJ6tG31mNBq0IYgln84Hyj2vxWwxvhg8655OkT535Fc6_bzaYQae55m9CPQ5cTIiadB9PNYy1mTB2RILpHM2BDuyfljG68HbutSKNwrgBld2_87JSVDXFllOLu77YzwcO4U-JLfoZV8zl99_0jdKXfWBOu53-MYWaNP3rlNnByrLu38BruGZZ0LF5dF9dRUjkdWWO0Z72I8ZWV61gpgstdn87Ae34zLJA3cx41zz6DNUuNk9FoQ-Di_Yj2SYjM"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-bold mb-1">ELENA ROSSI</h3>
+<span class="text-primary font-label text-[12px] uppercase tracking-widest block mb-4">Founder &amp; Creative Director</span>
+<p class="text-on-surface-variant text-sm leading-relaxed">Visionary artist with 15 years in luxury styling and editorial fashion.</p>
+</div>
+</div>
+<!-- Member 2 -->
+<div class="group bg-surface-container-lowest">
+<div class="aspect-square overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="headshot of a male hair specialist with modern groomed look against a neutral grey wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyykNFHiZ_GTa-82OUPeiSlSElpEaoSW_sw1TVgaW3bTQQQMpd2MBUyH853bzReVq0LaDRddWxWGeu2yT_NMdBgDqmipPCS342bs8jfnmXS2YxmO7UCmTn3SzftVl_TRTI919O8iwCp9f52A5fGh8rjCiG9fhN6E_SFRz_w-nTThCppogzGKBr_Rw0usxaJmtWtcA_59_SgMoyc1E_OOUh0lNizQ5DVrpYHzY7ia5gaM-r23WQOBqcPten0dr7XBfjKSCPj_zIi3Y"/>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-headline font-bold">MARCUS VANE</h3>
+<span class="text-primary font-label text-[10px] uppercase tracking-widest block mb-2">Master Colorist</span>
+</div>
+</div>
+<!-- Member 3 -->
+<div class="group bg-surface-container-lowest">
+<div class="aspect-square overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="portrait of a female aesthetician with glowing skin and a gentle smile, focused professional atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmiwwmJyd60oPmQ5_TKLgh7lpkBXAWKX2iCt1mxSlW3TvaaKmDaWy1ISwYjp6lcenZ9vFpONP0O29byzyCZKA_Eo9ouv18y0l1sVa-XQD7xBaesyNDB8MK1dG6VK-eNKA4tj0a6ac41ndE4qXTo8F9L4qTPzsgIMwUouh89l6M2wyAv4vqykzX4uhUnDDtLZ9kO74UILFqL_qkaXgdrZqkqpAoDyGX76KehTm_Cxjywm7TGsVsQbzNtuct4D3OW9AH2EmWy_z1eqI"/>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-headline font-bold">SARAH CHENG</h3>
+<span class="text-primary font-label text-[10px] uppercase tracking-widest block mb-2">Skin Specialist</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Atmosphere Gallery -->
+<section class="py-24 px-8 bg-surface-container">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-4xl font-headline font-bold tracking-tight mb-12 text-center">THE ATMOSPHERE</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[250px]">
+<div class="col-span-2 row-span-2 overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="detail shot of luxury salon products on a minimalist glass shelf with soft pink backlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPbvCEMvJla0O_Ucf3VrN_XQcAYgFeJnMqV1EE5pv0zguwGel2shRCXdW4W65fu63G5_KGQK28za8Y9fszXkH3nwpgdPWftZgI82N6KAg1yArjY-s6afxLfmHTsRT9dh1utun7Vntv2pi5iBbO-JGRQ7jOCvEeCyOrRybxWa2AQkfPRrl6h5iTq8ro_uVJ4Khdfx22P2L7a4Z1n7-17fUedvPW2N3Y_zX28nHrpZKlIUu8SJ5w-yz5c3liu9uGZTX6TX23h-8FKec"/>
+</div>
+<div class="col-span-2 overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="abstract view of architectural salon lines and premium lighting fixtures reflecting off polished surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOPjGJr8NlzFTWaY2UOnI9Q00-nbf4M9fW1pmrmjzYbEe9gF15reSyjc0jIISNsxJ7Uqqdrnb8mT5206zvGf1JBjdLURnzTBqqc1Bqe63KS0xHNeZ5oiMkCNIJV1GoVT35mJKVOAHbcSYkctQClhaQWv3XfenWwaXlcVYkYR4SUXbHJ2Xe5oto1a3T65Va3BGthJodaTDvFDfb_plA9Egnf9UCO_FJgYXuPQYtbVUQutMCmz28-37MirxoD5Uo9dww_JTbhj8QLvY"/>
+</div>
+<div class="overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="close up of high-end salon chair with chrome details and soft leather in a bright modern space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa2gzQcLsJOF7xZKxUkYHqm38h83029hRD6lS6cBTaZliVmZ4oZme5wLQ_gpCZPyNy6PpsR2yEAzuVcOCY6rLlN6n5zbTkyoLLRqcUOQl0T5C5ZFZYouhORzfEA-NXkeikDhSCjT9jjkcia9_2ub-bHwIgYwv1Xelx_hSanMPHs3q6bfKPmgs-ZC4Qgcz4KFleJIZRwvjQdp43j691_DjQJwA5Jzlj7W7SAjq73_d_3yx_1BQK3UhYfxD2mRNlPKbQq9Di-s0QTLI"/>
+</div>
+<div class="overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="macro shot of beauty salon tools laid out on a marble tray, clean and surgical precision aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKOqIw63G5qY0PBLnxtceFr8IQvcF3oN7Aw2qO7-RkINSMZpyrcTw25NZuAMN5_5tPlzz24YrEEVVvZb2u1Ja4547Bx0RnXrSyHwKmZ7miKtzn-BqEbCjcdnduzsezEJI1LEjV6Xi-hNTYDHwWPKrQDC0D9pksGcwSD7iPN6RH1_M5KMeG3tSiu8pIiRQ7PySxyzR1WFK5xJ5rJD7jk3NeMI-fwV1Ge7nfCG3DRVDZopbeFyy6O9a-6Ht9LOUISSgXK4hnZsjLbgU"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Values CTA -->
+<section class="py-24 px-8 bg-on-surface text-surface">
+<div class="max-w-4xl mx-auto text-center">
+<span class="material-symbols-outlined text-primary text-6xl mb-8">star_rate</span>
+<h2 class="text-4xl md:text-6xl font-headline font-extrabold tracking-tighter mb-8 leading-tight">READY TO DEFINE YOUR AURA?</h2>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary px-10 py-5 font-label text-[14px] uppercase tracking-[0.2em] hover:opacity-90 transition-opacity">
+                        View Our Services
+                    </button>
+<button class="border border-outline-variant/30 text-surface px-10 py-5 font-label text-[14px] uppercase tracking-[0.2em] hover:bg-surface/10 transition-colors">
+                        Our Pricing
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f3f0ef] dark:bg-[#1a1a1a] w-full border-t-0">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full gap-8 max-w-full mx-auto">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="text-xl font-bold text-[#2f2e2e] dark:text-[#f9f6f5] font-headline uppercase">AURA BEAUTY</span>
+<span class="font-['Inter'] uppercase tracking-[0.2em] text-[12px] text-[#5c5b5b] dark:text-[#afacac]">© 2024 AURA BEAUTY. ALL RIGHTS RESERVED.</span>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Inter'] uppercase tracking-[0.2em] text-[12px] text-[#5c5b5b] dark:text-[#afacac] hover:text-[#b70049] transition-colors ease-in-out duration-300" href="#">Instagram</a>
+<a class="font-['Inter'] uppercase tracking-[0.2em] text-[12px] text-[#5c5b5b] dark:text-[#afacac] hover:text-[#b70049] transition-colors ease-in-out duration-300" href="#">TikTok</a>
+<a class="font-['Inter'] uppercase tracking-[0.2em] text-[12px] text-[#5c5b5b] dark:text-[#afacac] hover:text-[#b70049] transition-colors ease-in-out duration-300" href="#">Facebook</a>
+<a class="font-['Inter'] uppercase tracking-[0.2em] text-[12px] text-[#5c5b5b] dark:text-[#afacac] hover:text-[#b70049] transition-colors ease-in-out duration-300" href="#">Privacy Policy</a>
+<a class="font-['Inter'] uppercase tracking-[0.2em] text-[12px] text-[#5c5b5b] dark:text-[#afacac] hover:text-[#b70049] transition-colors ease-in-out duration-300" href="#">Terms</a>
+</div>
+</div>
+</footer>
+</body></html>

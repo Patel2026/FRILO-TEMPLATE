@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&amp;family=Manrope:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#303221",
+                    "error-container": "#93000a",
+                    "surface-container": "#201f1f",
+                    "primary-fixed-dim": "#e9c176",
+                    "tertiary": "#d0cdcd",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-tertiary-container": "#454544",
+                    "on-primary-fixed": "#261900",
+                    "on-error": "#690005",
+                    "outline-variant": "#4d4635",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "tertiary-fixed": "#e5e2e1",
+                    "background": "#131313",
+                    "secondary-fixed-dim": "#c8c8b0",
+                    "surface-dim": "#131313",
+                    "secondary-container": "#494a38",
+                    "surface-variant": "#353534",
+                    "secondary-fixed": "#e4e4cc",
+                    "on-primary-container": "#5b4000",
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "surface": "#131313",
+                    "on-secondary-fixed-variant": "#474836",
+                    "inverse-surface": "#e5e2e1",
+                    "on-surface": "#e5e2e1",
+                    "inverse-primary": "#775a19",
+                    "surface-container-highest": "#353534",
+                    "surface-container-low": "#1c1b1b",
+                    "on-tertiary": "#313030",
+                    "on-background": "#e5e2e1",
+                    "on-primary": "#412d00",
+                    "error": "#ffb4ab",
+                    "on-secondary-fixed": "#1b1d0e",
+                    "on-secondary-container": "#b9baa3",
+                    "primary-container": "#d4ad65",
+                    "on-surface-variant": "#d0c5af",
+                    "tertiary-container": "#b4b2b2",
+                    "on-error-container": "#ffdad6",
+                    "secondary": "#c8c8b0",
+                    "surface-bright": "#393939",
+                    "inverse-on-surface": "#313030",
+                    "outline": "#99907c",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "primary-fixed": "#ffdea5",
+                    "primary": "#f1c97d",
+                    "surface-container-high": "#2a2a2a",
+                    "surface-tint": "#e9c176"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "sm": "0px",
+                    "md": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "0px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Manrope', sans-serif;
+        }
+        .serif-headline {
+            font-family: 'Noto Serif', serif;
+        }
+        .gallery-mask {
+            mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/70 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-12 py-8 mx-auto">
+<div class="font-['Noto_Serif'] text-2xl font-light tracking-[0.2em] text-[#f1c97d]">
+                L'Atelier Noir
+            </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-['Noto_Serif'] tracking-tight text-lg uppercase text-[#e5e2e1] hover:text-[#f1c97d] transition-colors duration-500 ease-in-out hover:tracking-widest" href="#">The Experience</a>
+<a class="font-['Noto_Serif'] tracking-tight text-lg uppercase text-[#e5e2e1] hover:text-[#f1c97d] transition-colors duration-500 ease-in-out hover:tracking-widest" href="#">Degustation</a>
+<a class="font-['Noto_Serif'] tracking-tight text-lg uppercase text-[#f1c97d] border-b border-[#f1c97d]/30 pb-1 hover:tracking-widest transition-all duration-500" href="#">Gallery</a>
+<a class="font-['Noto_Serif'] tracking-tight text-lg uppercase text-[#e5e2e1] hover:text-[#f1c97d] transition-colors duration-500 ease-in-out hover:tracking-widest" href="#">Reservations</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 text-sm font-label tracking-[0.15em] uppercase hover:bg-primary-fixed-dim transition-all duration-500">
+                Book a Table
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<header class="px-12 mb-24 max-w-7xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div>
+<span class="label-md uppercase tracking-[0.3em] text-outline mb-4 block">Visual Narrative</span>
+<h1 class="text-6xl md:text-8xl serif-headline font-light leading-none tracking-tighter">
+                        A Study in <br/><span class="italic text-primary">Shadow &amp; Light</span>
+</h1>
+</div>
+<div class="max-w-xs">
+<p class="body-lg text-on-surface-variant font-light leading-relaxed">
+                        Every frame is a curated moment. From the meticulous precision of the kitchen to the architectural silence of the dining room.
+                    </p>
+</div>
+</div>
+</header>
+<!-- Immersive Masonry-style Grid -->
+<section class="px-6 md:px-12 max-w-[1600px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 items-start">
+<!-- Large Vertical Feature -->
+<div class="md:col-span-7 group cursor-pointer">
+<div class="overflow-hidden mb-4">
+<img alt="Interior Design" class="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105 grayscale-[30%] hover:grayscale-0" data-alt="Cinematic wide shot of a luxury restaurant interior with dark marble textures, warm dim lighting, and minimalist furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARSoi-acgZWrx4KIVDVNZ1NGVVZIaxJU_ahKARz7sVmxbqM9BSaw497l-eKtG1PQFIvZPmYbIYOT2j8tlO6icGWaSIW_-3CoNrK0YEcxRx9yb8IBTfxo9Ml0jh50kerSTmHoE5iKXjEVaNqGWCXrPq_kzHq4Ce1irAJ2qnmBn0C-IgYSQuVJQaMAjuncmCJEs-hqb2LJaC7NghBg9oAC2XJz9UOrntfOgVl0v5eWtcoPReZiEhUAvXSYg18D56J7XlKF48zA0NHaWc"/>
+</div>
+<div class="flex justify-between items-baseline border-b border-outline-variant/10 pb-4">
+<h3 class="serif-headline text-2xl font-light">The Grand Atelier</h3>
+<span class="font-label text-xs tracking-widest text-outline uppercase">01 / Interior</span>
+</div>
+</div>
+<!-- Secondary Stack -->
+<div class="md:col-span-5 flex flex-col gap-20 pt-24">
+<div class="group cursor-pointer">
+<div class="overflow-hidden mb-4">
+<img alt="Signature Dish" class="w-full aspect-square object-cover transition-transform duration-1000 group-hover:scale-105 grayscale-[20%] hover:grayscale-0" data-alt="Macro photography of a gourmet dish featuring a single scallop with dark herb oils on a matte black ceramic plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhsNNpeomOL1XEKwenKHDWO1ajsSRbqSW1C9vf8AB_4WnEcMO3Yl0i9kG1T4Gi9nKoE8QBwxqnocvIcpABvnRHWk4ubt9lSQs8VVYzx8hZBvAKinTCqeE1jnMmQ247l4dXTHjKHchmJI1lLJsLKAlcTN_BcgUsY-v26Sig8Pfv913oTXirjzzv7qI6fGuspLBV-4sXA79MGHsBqMdTuUmGHn1By2Mwr3iCiUGOMbcFAjQg6sLavCbwIsdbx3bSgRs24ZuSwLIg0WUl"/>
+</div>
+<div class="flex justify-between items-baseline border-b border-outline-variant/10 pb-4">
+<h3 class="serif-headline text-xl font-light italic">Oceanic Depths</h3>
+<span class="font-label text-xs tracking-widest text-outline uppercase">02 / Degustation</span>
+</div>
+</div>
+<div class="group cursor-pointer pl-12">
+<div class="overflow-hidden mb-4">
+<img alt="Bar Atmosphere" class="w-full aspect-[3/4] object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Moody close-up of a crystal cocktail glass on a reflective dark bar top with golden amber lighting and bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxBMnN9yWOXfywFXbcReuvUYE_5LykR6iMC1Vox3lrlWiwUsWB11W9bvdCBqc4JL8kocQIpNq5aMMxCzXXu2J-x7K-4cFnw-r4d0k6BXmSY4Zr3ICXfy6A83kz2_qUVsrMi35aQPbFeS3dtdEYdoYhnMCz0DwGWdpZmLPobgzbVF3Hxr_T_yL1STYAr-jxIjDiK1IR7cGvSOIa15rvEDlgDwY-YmPe58qWGzbhYbEPbMnJZfrRE48NAVMc7_dV02EBfsqYhcetQsJQ"/>
+</div>
+<div class="flex justify-between items-baseline border-b border-outline-variant/10 pb-4">
+<h3 class="serif-headline text-xl font-light">The Midnight Bar</h3>
+<span class="font-label text-xs tracking-widest text-outline uppercase">03 / Spirits</span>
+</div>
+</div>
+</div>
+<!-- Full Width Panoramic Interruption -->
+<div class="md:col-span-12 py-12">
+<div class="relative h-[614px] overflow-hidden group">
+<img alt="Chef at Work" class="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-110" data-alt="Action shot of a chef's hands precisely plating a dish in a dimly lit professional kitchen using tweezers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSbICeSQjkHCumGARZo-sYHGa0XOJ2P7RmMte3zlF8wemsgq9LN_qc99I-u3ZksrPWw1goy1L7AKRbNR_3jjvQdlGJgWQT4v2kde2gDMO4zaLl7biYifJ1trQisurtC2D9Mwxcjvrkb8y3mmMFeQXgdL2qdiIuAmIz18oHRE6EOslZsaxntJXgvBcbttlFJpITgW98g59OJ3EHK9CEfNNymOAxvSISHrJR-Fcv22IhJ79rhCYq7q2TyqwGKo1BWFjWaZdZC0Pmn3h1"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<div class="text-center px-6">
+<h2 class="serif-headline text-4xl md:text-6xl font-light text-primary tracking-tight">The Precision of Passion</h2>
+</div>
+</div>
+</div>
+</div>
+<!-- Asymmetric Bottom Grid -->
+<div class="md:col-span-4 flex flex-col gap-12">
+<div class="group cursor-pointer">
+<div class="overflow-hidden mb-4">
+<img alt="Private Room" class="w-full aspect-[4/3] object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Exclusive private dining room with a single long oak table, high-backed leather chairs, and architectural spotlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ2lSenFi1PsbPf6VbrXD0G77c_YdPbbsSxrbaLApcEHytyP5Cu9DGa3uHv8iWyFkWqareyO2UjpVyb7c2Vc7wfWmzKb33xs7kBUJOMVvT7zTDuPbWG-kjXT5O4hYFUKym7ZlyDVceOZmcpuksC53sh826QDXnxxvlu1r7HN6krY6uY06llyf-fKTAzqD9ryAsqur6_I7HURIAI3hhNlMpZfON0XSLrmTqrRPl2BaA535XsE1laY7RzXDp_Def2s9I6poWPulQg_Ye"/>
+</div>
+<div class="flex justify-between items-baseline border-b border-outline-variant/10 pb-4">
+<h3 class="serif-headline text-xl font-light">The Vault</h3>
+<span class="font-label text-xs tracking-widest text-outline uppercase">04 / Private</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-8 group cursor-pointer md:mt-24">
+<div class="overflow-hidden mb-4">
+<img alt="Wine Cellar" class="w-full aspect-[16/9] object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Wall-to-wall glass wine cellar featuring thousands of bottles organized by vintage with soft backlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDQVL9lDRfEuvkScBH3Ka1Uh3tbu4Pa4FfFJqoPovmHugjcyrvK_9fetzeKXuNEjUAKmpOgwFICUnAfAjvkgQoaYyVfiUaL6h7d91_vJFWyjvOnIBBu4nYUnMN5GDpu4fnB-IoMt6vVMkesxUB7SJR4lc5wGLQWmjwHPhME_FWWL1dOoHEcXyYK9VpQIxeo4veM2buoOwp-itWrDiKIZq2T_yheMWntQkSDyJYYvrBcPFQnMwUHG58_E5GBXAtcqRNdE5wUA8be2F8"/>
+</div>
+<div class="flex justify-between items-baseline border-b border-outline-variant/10 pb-4">
+<h3 class="serif-headline text-2xl font-light italic">Vintages of the Century</h3>
+<span class="font-label text-xs tracking-widest text-outline uppercase">05 / Cellar</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mt-32 px-12 text-center max-w-4xl mx-auto">
+<h2 class="serif-headline text-5xl font-light mb-8">Ready to Write Your Chapter?</h2>
+<p class="body-lg text-on-surface-variant font-light mb-12">
+                Reservations are released on the first of every month for the following season. We invite you to join us for an evening of quiet intensity.
+            </p>
+<div class="flex flex-col md:flex-row justify-center gap-8">
+<button class="bg-primary text-on-primary px-12 py-5 text-sm font-label tracking-[0.2em] uppercase transition-all duration-500 hover:tracking-[0.3em]">
+                    Book a Table
+                </button>
+<button class="border border-outline-variant/30 text-primary px-12 py-5 text-sm font-label tracking-[0.2em] uppercase transition-all duration-500 hover:bg-on-surface/5">
+                    View the Menu
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] w-full pt-24 pb-12 px-12">
+<div class="flex flex-col items-center w-full text-center">
+<div class="font-['Noto_Serif'] text-xl font-light text-[#f1c97d] mb-6 tracking-[0.2em] uppercase">
+                L'Atelier Noir
+            </div>
+<div class="flex flex-wrap justify-center gap-8 mb-12">
+<a class="font-['Manrope'] text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Private Dining</a>
+<a class="font-['Manrope'] text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Press</a>
+<a class="font-['Manrope'] text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Careers</a>
+<a class="font-['Manrope'] text-sm tracking-[0.1em] uppercase text-[#99907c] hover:text-[#f1c97d] transition-colors duration-300" href="#">Privacy</a>
+</div>
+<p class="font-['Manrope'] text-xs tracking-[0.1em] uppercase text-[#4d4635] mb-8">
+                124 Noir Boulevard, Metropolitan District
+            </p>
+<div class="text-[#99907c] font-['Manrope'] text-[10px] tracking-[0.2em] uppercase">
+                © 2024 L'Atelier Noir. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact | FRILO BEAUTY</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-[#f9f6f5]/80 backdrop-blur-xl flex justify-between items-center px-8 py-4 max-w-full mx-auto transition-all duration-300">
+        <div class="text-2xl font-bold tracking-tighter text-[#2f2e2e] uppercase font-headline">FRILO BEAUTY</div>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="font-label text-[12px] uppercase tracking-[0.2em] text-[#2f2e2e] hover:text-[#b70049] transition-colors" href="index.html">Accueil</a>
+            <a class="font-label text-[12px] uppercase tracking-[0.2em] text-[#2f2e2e] hover:text-[#b70049] transition-colors" href="a-propos.html">À propos</a>
+            <a class="font-label text-[12px] uppercase tracking-[0.2em] text-[#2f2e2e] hover:text-[#b70049] transition-colors" href="services.html">Soins</a>
+            <a class="font-label text-[12px] uppercase tracking-[0.2em] text-[#2f2e2e] hover:text-[#b70049] transition-colors" href="tarifs.html">Tarifs</a>
+            <a class="font-label text-[12px] uppercase tracking-[0.2em] text-[#b70049] border-b-2 border-[#b70049] pb-1" href="contact.html">Contact</a>
+        </div>
+        <button class="bg-primary text-on-primary px-6 py-2 font-label text-[12px] uppercase tracking-widest hover:bg-primary-dim transition-all active:scale-95 shadow-lg">Prendre RDV</button>
+    </nav>
+
+    <main class="pt-24 min-h-screen text-left">
+        <!-- Hero Section -->
+        <section class="px-8 md:px-16 py-12 md:py-24 grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
+            <div class="md:col-span-8">
+                <span class="text-primary font-label text-[12px] uppercase tracking-[0.4em] mb-4 block">Contactez-nous</span>
+                <h1 class="text-6xl md:text-8xl font-headline font-extrabold leading-[0.9] tracking-tighter uppercase text-on-surface">Connectez avec <br/> votre <span class="text-primary">Aura.</span></h1>
+            </div>
+            <div class="md:col-span-4 pb-2">
+                <p class="text-on-surface-variant text-lg leading-relaxed border-l-4 border-primary pl-6">
+                    Notre sanctuaire est conçu pour votre transformation. Contactez-nous pour planifier une consultation privée ou pour vous renseigner sur nos plans de soins sur mesure.
+                </p>
+            </div>
+        </section>
+
+        <!-- Bento Contact Layout -->
+        <section class="px-8 md:px-16 pb-24">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <!-- Contact Info Card -->
+                <div class="md:col-span-4 bg-surface-container-low p-10 flex flex-col justify-between min-h-[400px] shadow-sm">
+                    <div>
+                        <h2 class="font-headline text-3xl font-bold uppercase mb-12 tracking-tight">L'Atelier</h2>
+                        <div class="space-y-10">
+                            <div>
+                                <p class="text-primary font-label text-[10px] uppercase tracking-[0.2em] mb-2">Adresse</p>
+                                <p class="text-xl font-medium leading-snug">742 Boulevard Néon, <br/>Quartier de la Mode, NY 10012</p>
+                            </div>
+                            <div>
+                                <p class="text-primary font-label text-[10px] uppercase tracking-[0.2em] mb-2">Renseignements</p>
+                                <p class="text-xl font-medium">hello@frilobeauty.com</p>
+                                <p class="text-xl font-medium">+1 (212) 555-0198</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 pt-8">
+                        <span class="material-symbols-outlined text-secondary hover:text-primary cursor-pointer transition-colors">public</span>
+                        <span class="material-symbols-outlined text-secondary hover:text-primary cursor-pointer transition-colors">camera_alt</span>
+                        <span class="material-symbols-outlined text-secondary hover:text-primary cursor-pointer transition-colors">video_library</span>
+                    </div>
+                </div>
+
+                <!-- Hours Card -->
+                <div class="md:col-span-3 bg-on-surface text-surface p-10 shadow-lg relative overflow-hidden">
+                    <div class="absolute -right-8 -top-8 text-primary/10 text-9xl font-bold rotate-12 pointer-events-none">H</div>
+                    <h2 class="font-headline text-2xl font-bold uppercase mb-10 tracking-tight text-primary-container">Disponibilité</h2>
+                    <ul class="space-y-6 font-label text-sm uppercase tracking-widest">
+                        <li class="flex justify-between border-b border-on-surface-variant/30 pb-2">
+                            <span class="text-inverse-on-surface">Lun</span>
+                            <span>10:00 - 19:00</span>
+                        </li>
+                        <li class="flex justify-between border-b border-on-surface-variant/30 pb-2">
+                            <span class="text-inverse-on-surface">Mar</span>
+                            <span>10:00 - 19:00</span>
+                        </li>
+                        <li class="flex justify-between border-b border-on-surface-variant/30 pb-2">
+                            <span class="text-inverse-on-surface">Mer</span>
+                            <span>10:00 - 19:00</span>
+                        </li>
+                        <li class="flex justify-between border-b border-on-surface-variant/30 pb-2">
+                            <span class="text-inverse-on-surface">Jeu</span>
+                            <span>10:00 - 21:00</span>
+                        </li>
+                        <li class="flex justify-between border-b border-on-surface-variant/30 pb-2">
+                            <span class="text-inverse-on-surface">Ven</span>
+                            <span>09:00 - 20:00</span>
+                        </li>
+                        <li class="flex justify-between border-b border-on-surface-variant/30 pb-2">
+                            <span class="text-inverse-on-surface">Sam</span>
+                            <span>09:00 - 18:00</span>
+                        </li>
+                        <li class="flex justify-between pb-2">
+                            <span class="text-primary-container">Dim</span>
+                            <span class="text-primary-container">Fermé</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="md:col-span-5 bg-surface-container-lowest p-10 shadow-[0_20px_40px_rgba(47,46,46,0.06)] border border-outline-variant/10">
+                    <h2 class="font-headline text-3xl font-bold uppercase mb-10 tracking-tight">Demande d'Infos</h2>
+                    <form action="#" class="space-y-8">
+                        <div class="relative">
+                            <input class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 placeholder:uppercase placeholder:text-[10px] placeholder:tracking-[0.2em] outline-none" placeholder="Votre Nom" type="text"/>
+                        </div>
+                        <div class="relative">
+                            <input class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 placeholder:uppercase placeholder:text-[10px] placeholder:tracking-[0.2em] outline-none" placeholder="Adresse Email" type="email"/>
+                        </div>
+                        <div class="relative">
+                            <select class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 uppercase text-[10px] tracking-[0.2em] text-on-surface-variant outline-none">
+                                <option>Service souhaité</option>
+                                <option>Soins Avancés</option>
+                                <option>Dermothérapie</option>
+                                <option>Sculpture Laser</option>
+                                <option>Consultation</option>
+                            </select>
+                        </div>
+                        <div class="relative">
+                            <textarea class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 placeholder:uppercase placeholder:text-[10px] placeholder:tracking-[0.2em] resize-none outline-none" placeholder="Votre Message" rows="4"></textarea>
+                        </div>
+                        <button class="w-full bg-primary text-on-primary font-label uppercase tracking-[0.3em] py-5 text-sm font-bold hover:bg-primary-dim transition-colors active:scale-95 duration-150" type="submit">Envoyer la transmission</button>
+                    </form>
+                </div>
+
+                <!-- Map Component (Full Width Lower) -->
+                <div class="md:col-span-12 h-[500px] relative overflow-hidden group shadow-xl">
+                    <div class="absolute inset-0 grayscale contrast-125 opacity-80 hover:grayscale-0 transition-all duration-700">
+                        <img alt="Carte Moderne" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBTisZS_cHqXWityPMM36T3an-zJDhRdZThLDP5aaoNOR4ZXNwxlfjeaWvPoQNOdvFC7h7Bj_kOA1Qh3flaRHsHU1jfam7JLiQmlb7yvmx3msP4MbjMsZl75oRf-ZldxjhtJaEFL9KJzrcmNKTfgM5fU48dknkkCg46fo4YVkJU8qTM5t23J_Fw-yQRnq6PLTQC0W73ERbIcunwd267nRZ3aerS0xn7eHUpJRvl4ZnJQdt16ZJpU0j0wdOmCntzgnCKIDwWcMkhvM"/>
+                    </div>
+                    <div class="absolute inset-0 pointer-events-none flex items-center justify-center">
+                        <div class="w-16 h-16 bg-primary flex items-center justify-center text-on-primary">
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-8 left-8 bg-surface/90 backdrop-blur-md p-6 max-w-xs border-l-8 border-primary shadow-2xl">
+                        <h4 class="font-headline font-bold uppercase text-lg mb-2">Visitez le Studio</h4>
+                        <p class="text-xs uppercase tracking-widest text-on-surface-variant">Service de voiturier disponible à l'entrée Est.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#f3f0ef] flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full gap-8">
+        <div class="text-xl font-bold text-[#2f2e2e] uppercase font-headline">FRILO BEAUTY</div>
+        <div class="flex flex-wrap justify-center gap-8 font-body uppercase tracking-[0.2em] text-[10px]">
+            <a class="text-[#5c5b5b] hover:text-[#b70049] transition-colors" href="#">Instagram</a>
+            <a class="text-[#5c5b5b] hover:text-[#b70049] transition-colors" href="#">TikTok</a>
+            <a class="text-[#5c5b5b] hover:text-[#b70049] transition-colors" href="#">Facebook</a>
+            <a class="text-[#5c5b5b] hover:text-[#b70049] transition-colors" href="#">Confidentialité</a>
+            <a class="text-[#5c5b5b] hover:text-[#b70049] transition-colors" href="#">Conditions</a>
+        </div>
+        <div class="font-body uppercase tracking-[0.2em] text-[10px] text-[#5c5b5b]">
+            © 2024 FRILO BEAUTY. TOUS DROITS RÉSERVÉS.
+        </div>
+    </footer>
+</body>
+</html>

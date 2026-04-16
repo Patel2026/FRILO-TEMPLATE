@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Engagement | L'Élite Événementielle</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed antialiased">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="flex justify-between items-center px-8 py-5 max-w-7xl mx-auto">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+                    <span class="text-white font-black text-lg">E</span>
+                </div>
+                <span class="text-xl font-extrabold tracking-tighter text-primary uppercase">L'Élite Événementielle</span>
+            </a>
+            <div class="hidden md:flex items-center gap-10 font-headline text-sm font-semibold tracking-tight">
+                <a class="text-slate-500 hover:text-primary transition-all" href="index.html">Accueil</a>
+                <a class="text-slate-500 hover:text-primary transition-all" href="a-propos.html">Philosophie</a>
+                <a class="text-slate-500 hover:text-primary transition-all" href="services.html">Expertise</a>
+                <a class="text-primary border-b-2 border-primary pb-1" href="portfolio.html">Engagement</a>
+                <a class="text-slate-500 hover:text-primary transition-all" href="contact.html">Contact</a>
+            </div>
+            <button class="bg-primary text-white px-6 py-2.5 rounded-lg font-headline text-sm font-bold tracking-tight hover:shadow-xl active:scale-95 transition-all">
+                Demander un Devis
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-40 pb-24">
+        <!-- Header -->
+        <header class="max-w-7xl mx-auto px-8 mb-24">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-12">
+                <div class="max-w-3xl">
+                    <span class="font-label text-[10px] tracking-[0.4em] font-black text-primary mb-8 block uppercase">Études de Cas & Réalisations</span>
+                    <h1 class="display-lg font-extrabold text-primary mb-10 tracking-tighter">Engagement <br/><span class="text-slate-400">Corporatif.</span></h1>
+                    <p class="text-xl font-light text-on-surface-variant leading-relaxed opacity-80">
+                        Découvrez comment nous traduisons l'ambition institutionnelle en expériences physiques mémorables et structurées.
+                    </p>
+                </div>
+                <!-- Filter Pills -->
+                <div class="flex flex-wrap gap-3 pb-2">
+                    <button class="px-6 py-2 rounded-lg bg-primary text-white text-xs font-bold uppercase tracking-widest transition-all">Tout</button>
+                    <button class="px-6 py-2 rounded-lg bg-surface-container-high text-slate-500 text-xs font-bold uppercase tracking-widest hover:bg-slate-200 transition-all">Congrès</button>
+                    <button class="px-6 py-2 rounded-lg bg-surface-container-high text-slate-500 text-xs font-bold uppercase tracking-widest hover:bg-slate-200 transition-all">Galas</button>
+                    <button class="px-6 py-2 rounded-lg bg-surface-container-high text-slate-500 text-xs font-bold uppercase tracking-widest hover:bg-slate-200 transition-all">Digital</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Portfolio Grid (Bento style) -->
+        <section class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-8">
+            <!-- Featured Case Study -->
+            <div class="md:col-span-8 group cursor-pointer">
+                <div class="relative overflow-hidden rounded-2xl aspect-[16/9] mb-8 shadow-ambient">
+                    <img alt="Tech Summit Cotonou" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Vue d'ensemble d'un sommet technologique" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCchW-F-dIVhh6qQ4jtQm-cgxcWZAZVtfKmfeAZTYovN4k3XOhgf7_xQeMVQiOvj-MAvu3KnFc4nHe3UPR1CX2to2Nl3RqLHe8ab66_9Zk_LLGrnMrx509N7wVcB1a5_9gzPYsP8G9kJaUmEpXwvXK06nf81FwYob2HAzBZxTtbrAPrmoYFW_RGojFSxjFHTs0cxjdu_n5g_RftLPONd_0FXIMIeCeHmvygkzJGDdcfjIRLx7LYWeXHwJErVoiB54xxejcxKKmAbyM"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-12">
+                        <span class="text-white/60 text-xs font-bold uppercase tracking-[0.3em] mb-2">Sommet National</span>
+                        <h3 class="text-white text-3xl font-black uppercase tracking-tight">Bénin Tech Summit 2025</h3>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="text-[10px] font-black tracking-widest text-primary uppercase bg-primary-fixed px-3 py-1 rounded">Congrès</span>
+                            <span class="text-xs text-slate-400 font-medium">Palais des Congrès, Cotonou</span>
+                        </div>
+                        <p class="text-on-surface-variant font-light leading-relaxed max-w-xl">Coordination de 1 500 délégués, 50 intervenants internationaux et gestion d'une infrastructure réseau hybride pour une diffusion mondiale en temps réel.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="md:col-span-4 group cursor-pointer md:mt-16">
+                <div class="relative overflow-hidden rounded-2xl aspect-[4/5] mb-8 shadow-ambient">
+                    <img alt="Gala Finance" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Table de gala raffinée" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDwPCoG10ACe43GnsYrQ6vl_tY4svmywjx5IGF15LIyuXgdLC7uToC8AJ8sF6InRoSgjR6AOWji9VkD_GCiqEahqVOQ4XUcxdufi9jGPJ0LVMWESTT4HVv2lyNRnJkSoL-sYlelGoLLIjIHcD769fphwxnuQzluLb5IiZQhByHU2gBfoTRjFT20n9SrT5czC7b5immckN_25WnDk0N-YqaJvZXs77eQIDOqCN23tSsGsoUt97VLzAxvJo81I6FDRsANWcMc7DdgpM"/>
+                    <div class="absolute inset-x-8 bottom-8 p-6 bg-white rounded-xl shadow-2xl translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                        <span class="text-primary text-[10px] font-black uppercase tracking-widest mb-1 block">Gala Annuel</span>
+                        <h4 class="font-headline font-black text-slate-800">Célébration d'Excellence Bancaire</h4>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="text-[10px] font-black tracking-widest text-primary uppercase bg-primary-fixed px-3 py-1 rounded">Prestige</span>
+                        <span class="text-xs text-slate-400 font-medium">Golden Tulip, Cotonou</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 3 -->
+            <div class="md:col-span-4 group cursor-pointer">
+                <div class="relative overflow-hidden rounded-2xl aspect-[4/5] mb-8 shadow-ambient">
+                    <img alt="Leadership Workshop" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Atelier de leadership exécutif" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT8xPgPca4AC13owNC5n_RXi2IskHdu2PZV-1vpcW1BOA3AiYJdqz5cn3VN0-hWKpDu8P5h6vvOBMb3BdfOxUNeHx8sTLzB66GBHtXQRdiZPJWDQ_7IagRrLTrmrkLlwTT_kSSP_k-2IhXNcgzTbta-4ItxpvG2Rc5YFEivcvFfh8KnjFfFn23Y4Bb8OIDxTOd9BLBFXEeQAw8Z91d6ScViaZmSLuJArm6y9r-H0liqLpf8IbxuqvUaJIRwyt0HM8S05gboSnbfsw"/>
+                </div>
+                <div>
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="text-[10px] font-black tracking-widest text-primary uppercase bg-primary-fixed px-3 py-1 rounded">Séminaire</span>
+                        <span class="text-xs text-slate-400 font-medium">Novotel Orisha</span>
+                    </div>
+                    <h4 class="font-headline font-black text-primary uppercase tracking-tight text-xl mb-2">Retraite de Planification Stratégique</h4>
+                    <p class="text-xs text-on-surface-variant font-light leading-relaxed">Conception d'un environnement confidentiel pour le CODIR d'une multinationale.</p>
+                </div>
+            </div>
+
+            <!-- Case Study 4 (Full Span CTA style) -->
+            <div class="md:col-span-8 group cursor-pointer">
+                <div class="relative overflow-hidden rounded-2xl aspect-[16/9] mb-8 shadow-ambient">
+                    <img alt="Cocktail Networking" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Cocktail de networking en terrasse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsW-3-xaq5OBwsrNMoNsnSbv_Y5UFqPIHZb_jj4hzURBkXmCn7lNNEFTAoqj9KLpjm8E2ilRDyZ2NoRI8sw0-JHUU4aJyMMzp33TVvS5qO09Ly6Dqv8W8LM06II6Bx0eoJXJZm_5empB2nrn1f7mey9npugsaDNh53tmarjoTzVIIdZD3HIIONuGqBUfYQdrSAFjZftb3F_Aphba3gWwvs2VMO8lxNrgHzkNxoRjUCpe2io9LcaJeBWNTNHlMdWF75ndmFta2gxy0"/>
+                    <div class="absolute inset-0 bg-primary/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <span class="px-8 py-4 bg-white text-primary font-bold rounded-lg shadow-2xl">Découvrir le Récit</span>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="text-[10px] font-black tracking-widest text-primary uppercase bg-primary-fixed px-3 py-1 rounded">Networking</span>
+                            <span class="text-xs text-slate-400 font-medium">Haie Vive Lounge</span>
+                        </div>
+                        <h4 class="font-headline font-black text-primary uppercase tracking-tight text-2xl">Soirée "Cercle des Leaders"</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Metrics/Grid Dot Texture -->
+        <section class="max-w-7xl mx-auto px-8 py-40">
+            <div class="bg-primary p-12 md:p-24 rounded-3xl relative overflow-hidden">
+                <div class="texture-dots absolute inset-0 opacity-20"></div>
+                <div class="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+                    <div>
+                        <span class="block text-5xl font-black text-white mb-4">120+</span>
+                        <span class="text-[10px] text-primary-fixed font-bold uppercase tracking-widest">Événements Majeurs</span>
+                    </div>
+                    <div>
+                        <span class="block text-5xl font-black text-white mb-4">15k</span>
+                        <span class="text-[10px] text-primary-fixed font-bold uppercase tracking-widest">Participants Gérés</span>
+                    </div>
+                    <div>
+                        <span class="block text-5xl font-black text-white mb-4">02</span>
+                        <span class="text-[10px] text-primary-fixed font-bold uppercase tracking-widest">Pays d'Intervention</span>
+                    </div>
+                    <div>
+                        <span class="block text-5xl font-black text-white mb-4">98%</span>
+                        <span class="text-[10px] text-primary-fixed font-bold uppercase tracking-widest">Rétention Client</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-container text-white py-24">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-20 px-12 max-w-7xl mx-auto border-b border-white/5 pb-20 mb-16">
+            <div class="col-span-1">
+                <span class="text-2xl font-black tracking-tighter uppercase mb-8 block text-primary-fixed">L'Élite Événementielle</span>
+                <p class="font-body text-sm text-on-primary-container leading-relaxed opacity-60">
+                    Architectural Precision for Human Connection.
+                </p>
+            </div>
+            <div>
+                <h6 class="font-headline text-sm font-black text-white uppercase tracking-widest mb-10">Engagement</h6>
+                <ul class="space-y-6 text-sm text-on-primary-container opacity-60 font-medium">
+                    <li><a class="hover:text-white transition-colors" href="#">Congrès Nationaux</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Galas d'Excellence</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Retraites de CEO</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="font-headline text-sm font-black text-white uppercase tracking-widest mb-10">Suivez l'Impact</h6>
+                <ul class="space-y-6 text-sm text-on-primary-container opacity-60 font-medium">
+                    <li><a class="hover:text-white transition-colors" href="#">LinkedIn Insights</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Rapports Annuels</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="px-12 text-center text-[8px] text-on-primary-container opacity-40 uppercase tracking-[0.5em]">
+            Elite Event Curation © 2026. Made with Precision.
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pavillon de Vente | FRILO Promotion</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-primary text-concrete-200 antialiased selection:bg-accent selection:text-white bg-blueprint">
+
+    <!-- Navbar Structure -->
+    <nav class="fixed w-full z-50 transition-all border-b border-white/10 bg-primary/90 backdrop-blur-md" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-accent flex items-center justify-center font-display font-bold text-primary text-xl">F.</div>
+                <div class="flex flex-col">
+                    <span class="font-display font-bold text-xl text-white tracking-widest leading-none mb-1">FRILO</span>
+                    <span class="text-[10px] font-sans font-bold uppercase tracking-[0.2em] text-accent">Promotion BTP</span>
+                </div>
+            </a>
+            
+            <div class="hidden lg:flex items-center space-x-10">
+                <a href="index.html" class="font-display text-concrete-400 text-sm tracking-widest uppercase hover:text-white transition-colors">Accueil</a>
+                <a href="projects.html" class="font-display text-concrete-400 text-sm tracking-widest uppercase hover:text-white transition-colors">Nos Programmes</a>
+                <a href="about.html" class="font-display text-concrete-400 text-sm tracking-widest uppercase hover:text-white transition-colors">L'Ingénierie</a>
+                <a href="contact.html" class="font-display text-white text-sm tracking-widest uppercase hover:text-accent transition-colors relative after:absolute after:-bottom-2 after:left-0 after:w-full after:h-0.5 after:bg-accent">Bulle de Vente</a>
+            </div>
+
+            <button class="lg:hidden text-white">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-[104px]">
+        <div class="max-w-7xl mx-auto px-6 py-20 pb-32">
+            
+            <div class="text-center md:text-left mb-16">
+                <span class="font-display text-accent text-sm tracking-[0.3em] uppercase mb-4 block">Espace Acquéreurs & Investisseurs</span>
+                <h1 class="text-5xl md:text-6xl font-display font-bold text-white mb-6 leading-tight">ENTRER DANS <br>LE PROGRAMME.</h1>
+                <p class="text-lg text-concrete-400 font-light max-w-2xl">
+                    Réservez votre créneau pour visiter notre pavillon des ventes, découvrir les maquettes 3D interactives de nos résidences et consulter le cahier des charges des finitions (carrelages, menuiseries).
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-16 items-start">
+                
+                <!-- Zone Contact Rapide (Col Gauche) -->
+                <div class="lg:col-span-5 space-y-12">
+                    
+                    <div>
+                        <div class="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center text-accent mb-4">
+                            <span class="material-symbols-outlined">map</span>
+                        </div>
+                        <h4 class="font-display text-xl text-white mb-2 uppercase tracking-wide">Pavillon Des Ventes</h4>
+                        <p class="text-sm font-light text-concrete-400 leading-relaxed">
+                            Quartier Haie Vive, Rue 12<br>Immeuble Horizon, RDC<br>Cotonou, République du Bénin
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <div class="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center text-accent mb-4">
+                            <span class="material-symbols-outlined">contact_support</span>
+                        </div>
+                        <h4 class="font-display text-xl text-white mb-2 uppercase tracking-wide">Lignes Commerciales</h4>
+                        <div class="text-sm font-light text-concrete-400 leading-relaxed space-y-1">
+                            <p>Directeur des Ventes : +229 00 00 00 00</p>
+                            <p>WhatsApp (Diaspora) : +229 00 00 00 01</p>
+                            <a href="mailto:vente@frilopromotion.bj" class="text-accent underline font-bold hover:text-white transition-colors block mt-2">vente@frilopromotion.bj</a>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-white/10 pt-8 mt-12 !mt-12">
+                        <p class="font-display text-xs text-white uppercase tracking-widest mb-4">Moyens de paiement acceptés pour VEFA</p>
+                        <div class="flex gap-4 opacity-50">
+                            <!-- Placeholder Swift / Banks -->
+                            <div class="h-8 w-16 border border-white/20 flex items-center justify-center text-[10px] font-bold">SWIFT</div>
+                            <div class="h-8 w-16 border border-white/20 flex items-center justify-center text-[10px] font-bold">CHÈQUE</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulaire Prise de RDV / Demande Plaquette (Col Droite) -->
+                <div class="lg:col-span-7 bg-surface border border-white/5 p-10 md:p-14 relative shadow-2xl">
+                    <div class="absolute top-0 right-0 w-2 h-32 bg-accent"></div>
+                    <div class="absolute -top-3 -left-3 w-6 h-6 border-t-2 border-l-2 border-accent"></div>
+                    
+                    <h2 class="text-3xl font-display font-bold text-white mb-8">RÉSERVER UN LOT / DEMANDER INFO</h2>
+                    
+                    <form class="space-y-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <label class="block text-[10px] font-bold uppercase tracking-widest text-concrete-500 mb-2">Identification</label>
+                                <input type="text" class="w-full bg-transparent border-b border-white/20 text-white pb-2 pt-1 font-light outline-none focus:border-accent transition-colors placeholder-concrete-700" placeholder="Nom Complet" required>
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-bold uppercase tracking-widest text-concrete-500 mb-2">Contact Direct</label>
+                                <input type="tel" class="w-full bg-transparent border-b border-white/20 text-white pb-2 pt-1 font-light outline-none focus:border-accent transition-colors placeholder-concrete-700" placeholder="+229 ou international" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase tracking-widest text-concrete-500 mb-4">Programme de prédilection</label>
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <label class="border border-white/10 p-4 cursor-pointer hover:border-accent transition-colors group flex items-start gap-3">
+                                    <input type="radio" name="projet" class="mt-1 bg-transparent border-white/20 text-accent focus:ring-accent accent-accent" checked>
+                                    <div>
+                                        <span class="block font-display text-white text-sm tracking-wide">Cité "L'OASIS" (Togbin)</span>
+                                        <span class="text-[10px] text-concrete-500 uppercase tracking-widest">Villas R+1</span>
+                                    </div>
+                                </label>
+                                <label class="border border-white/10 p-4 cursor-pointer hover:border-accent transition-colors group flex items-start gap-3">
+                                    <input type="radio" name="projet" class="mt-1 bg-transparent border-white/20 text-accent focus:ring-accent accent-accent">
+                                    <div>
+                                        <span class="block font-display text-white text-sm tracking-wide">Tour "LES ALIZÉS"</span>
+                                        <span class="text-[10px] text-concrete-500 uppercase tracking-widest">Appartements Haut Standing</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase tracking-widest text-concrete-500 mb-4">Votre demande (Au choix)</label>
+                            <select class="w-full bg-surface border border-white/20 text-white p-4 font-light outline-none focus:border-accent appearance-none cursor-pointer text-sm">
+                                <option>Je souhaite téléharger la plaquette et les plans (PDF)</option>
+                                <option>Je souhaite prendre un rdv avec un conseiller</option>
+                                <option>Je souhaite réserver une parcelle / un lot immédiatement</option>
+                            </select>
+                        </div>
+
+                        <div class="pt-4">
+                            <button type="submit" class="btn-primary w-full shadow-solid hover:shadow-none hover:translate-y-2 hover:translate-x-2">Envoyer la demande sécurisée</button>
+                            <p class="text-center text-[10px] uppercase font-bold tracking-widest text-concrete-600 mt-6">
+                                Vos données sont chiffrées de bout en bout. Nous respectons votre confidentialité d'investisseur.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- Footer Brutaliste -->
+    <footer class="bg-primary border-t border-white/10 pt-10 pb-10">
+        <div class="max-w-7xl mx-auto px-6 flex justify-center text-[10px] font-bold tracking-widest uppercase text-concrete-600">
+            <p>&copy; 2026 FRILO Promotion. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

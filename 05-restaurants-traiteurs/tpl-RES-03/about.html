@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Philosophie | The FRILO Culinary</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        .editorial-shadow {
+            box-shadow: 0 32px 64px -12px rgba(27, 28, 26, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed antialiased">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#faf9f5]/80 backdrop-blur-xl shadow-[0_8px_32px_rgba(27,28,26,0.04)]">
+        <div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+            <a href="index.html" class="font-headline text-2xl italic text-[#1b1c1a] tracking-tight">The FRILO Culinary</a>
+            <div class="hidden md:flex gap-10">
+                <a class="font-headline tracking-tight text-lg text-[#1b1c1a]/70 hover:text-primary transition-colors" href="index.html">Accueil</a>
+                <a class="font-headline tracking-tight text-lg text-primary border-b border-primary pb-1 transition-all" href="about.html">Philosophie</a>
+                <a class="font-headline tracking-tight text-lg text-[#1b1c1a]/70 hover:text-primary transition-colors" href="services.html">Prestations</a>
+                <a class="font-headline tracking-tight text-lg text-[#1b1c1a]/70 hover:text-primary transition-colors" href="gallery.html">Portfolio</a>
+                <a class="font-headline tracking-tight text-lg text-[#1b1c1a]/70 hover:text-primary transition-colors" href="contact.html">Contact</a>
+            </div>
+            <a href="contact.html" class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label text-sm uppercase tracking-widest hover:bg-primary-container transition-all duration-300">
+                Demander un devis
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24">
+        <!-- Hero Section -->
+        <section class="max-w-screen-2xl mx-auto px-12 mb-32">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+                <div class="lg:col-span-7">
+                    <span class="font-label text-sm uppercase tracking-[0.2em] text-secondary mb-6 block">Notre Héritage</span>
+                    <h1 class="font-headline text-6xl lg:text-8xl leading-[1.1] text-on-surface -tracking-[0.02em] mb-12 uppercase">
+                        Concevoir des <i class="italic">Récits</i> Culinaires Inoubliables.
+                    </h1>
+                    <p class="font-body text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        Depuis plus d'une décennie, nous sommes les architectes silencieux des événements les plus prestigieux de Cotonou, transformant des ingrédients rares en souvenirs extraordinaires.
+                    </p>
+                </div>
+                <div class="lg:col-span-5 relative">
+                    <div class="aspect-[4/5] overflow-hidden rounded-xl editorial-shadow">
+                        <img class="w-full h-full object-cover" data-alt="Chef préparant un plat avec précision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCallKx767V_LMj-_z_XR3xM8-BG3Xy1p96Y8uIFjK9JDrM_8VMFeozIr2R020iMoGdpYXxtNskL_Zvecbpl56ZRs8AsOl5ztD5vN2TVG0223XkPEnv5U3F3CrPZT1WX5IrZ9mMIUHz3iEeImI7pzWChg0q-bvJwDvMaET7L-lbqcgVV64oDs-USvixGIGVmGSde6bc6rmqQeau23T74E_dEt65KoJFdfAVznSfiHU3au46aouhvBI2_Mt5kmywVzsSHPygNPkN1R-M"/>
+                    </div>
+                    <div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-lg shadow-xl max-w-xs hidden lg:block">
+                        <p class="font-headline text-lg italic text-primary">"L'âme d'un plat réside dans le silence de la création."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Story -->
+        <section class="bg-surface-container-low py-32 mb-32">
+            <div class="max-w-screen-2xl mx-auto px-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                    <div class="relative order-2 lg:order-1">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="space-y-4">
+                                <img class="rounded-xl w-full aspect-square object-cover" data-alt="Cuisine moderne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcaDQOcPwt8j1UyRP_kxAhcFl-2Ja26aOFuf-X6dXb-Qyvp0bPn-4OQHvf_z6d0bujVbNj0B7vWSq1d6yaeVc31yQLO7xtLBH5ZcrGsV64X18lUAzkBjVH7HD8RepXuhr_nvc9SCnZIng1sTZKj7T4PB00DTut5x4lLtbUax05YY9kr1zbc87lkA07FqxWR3nPvxrNii57yTXAAqAiFT6jxmBSNIdZFHenqe1Cb7pmKtAW1Htgw-OtNsCMz_Ka9f-YoslfLxOpj3-k"/>
+                                <img class="rounded-xl w-full aspect-[3/4] object-cover" data-alt="Entrée raffinée" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW9iMV-JUmk3B-Igi3FFjlXqdyueWp469WQXtEueQZdqG3OZJTyqZxV3NdFp01bxzpt1hNQentXovEIXt_Imy-jAKRO4KuXOxfTixuw0LNo6t8SF2wbVEpiXSfr3pP-WVrD94Jt6cA6PX6B2NN9GYrBji27QAukBLk2YRx4yvPNkVJpoMKfUkZFhPJb4rG5X101ZFrgsI-S9CfZK9JFhG7gz-C0qt03wOyI4UcXMXbuaZGkIWW_NhnApM33pox_5yl7_4_qrAW4NEe"/>
+                            </div>
+                            <div class="pt-12 space-y-4">
+                                <img class="rounded-xl w-full aspect-[3/4] object-cover" data-alt="Décoration de gala" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqBRius0IpxNFLx8W0U25JI3GnF0ebgN03S6CBp7jXIr-xpb-jZ6I39ijqOwcYJqtZvRAfEvcUzLeWAdbRR53ZEqKiQoqq9AnrkSF0UY9G2JoDTL6e2-qIOJtsZ1aQwZsAhabejH6M3bwHw4Cg1_0DmBR4VqscZi11Vs3mv2c1YshL1YNOONsdLL6f97tTJueRTlws0qmn1sT_tPVo4JBBaNfRmy05nRC9KL7kDhgsP9SvfpWzx27ty4ianINIHOWI8qMe2XRtq0WD"/>
+                                <img class="rounded-xl w-full aspect-square object-cover" data-alt="Personnel en formation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArjsYO4NqJpVnxOHN_UGAV4jCOW47D1taL6uNi_bmcTnWYpfb4OWLpeuPl9UqCMzgmvIVte5yjVMZkfEiMh7qArpURYNNvTsRHoppv-e7Q_cuPfkBvVAo3fGBsIP2oSN5_A-y4gvT2fO3OkWxl0CASqdb8W6I-flH7w27C035Ho6jK--04_g-TLDDBPj42g-aygvl8CZrVEltVDc_7OC5-V9NPr_pxTe8fzZGtEAYXILOQ3XthYiJ4GQOFUYmaQ1xuUoyQssWvQUXO"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2 space-y-8">
+                        <h2 class="font-headline text-4xl lg:text-5xl text-on-surface uppercase italic">L'Obsession de la Qualité</h2>
+                        <div class="w-12 h-px bg-outline-variant"></div>
+                        <p class="font-body text-lg text-on-surface-variant leading-loose">
+                            Notre aventure a commencé avec une philosophie simple : la perfection n'est pas un but, mais un prérequis. Nous sélectionnons nos produits auprès de fermes régénératrices et nos viandes auprès de producteurs éthiques qui partagent notre respect pour le terroir béninois. 
+                        </p>
+                        <p class="font-body text-lg text-on-surface-variant leading-loose">
+                            Chaque menu que nous concevons est une création sur-mesure, adaptée au rythme de la saison et à l'esprit unique de votre événement. Des dîners intimes aux galas diplomatiques, nous curatons chaque détail pour créer une expérience sensorielle cohérente.
+                        </p>
+                        <div class="pt-6">
+                            <a class="text-secondary font-medium flex items-center gap-2 group transition-all uppercase tracking-widest text-xs" href="#">
+                                <span>Notre charte qualité</span>
+                                <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_right_alt</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="max-w-screen-2xl mx-auto px-12 mb-32">
+            <div class="text-center mb-20">
+                <span class="font-label text-sm uppercase tracking-[0.2em] text-secondary mb-4 block">Les Maîtres</span>
+                <h2 class="font-headline text-5xl text-on-surface uppercase">Les Esprits derrière la Carte</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Lead Chef -->
+                <div class="group bg-surface-container-lowest p-6 rounded-xl transition-all hover:bg-surface-container">
+                    <div class="overflow-hidden rounded-lg mb-8 aspect-[3/4]">
+                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Chef Julian" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdIKD3pDsg9FwK8Dws5GLLI8nLQvsD3M6bpxJ5fQJeDzJ4SmsUl3VO3I8atcHJJGGkL-51t-AHbqJXKU8PdviOrW96TtqylB2hM2HX-nwSnCs8aVqQDUgyqt9J9XguOonaskcYU9b__PgxuK8xbnQRosf3TEb4L8kJjgpgjkkuRRnorLDawppl2hZVJBsWbfP4v4g7uVL6hxfw7vEzm2aXQrkgwDc34uuPPCYLrHpzp68dHB_x_jbnnJgEPzNcCSmZ7hWtEGST5zgV"/>
+                    </div>
+                    <h3 class="font-headline text-2xl text-on-surface mb-2">Julian Vane</h3>
+                    <p class="font-label text-xs uppercase tracking-widest text-secondary mb-4">Chef Exécutif</p>
+                    <p class="font-body text-on-surface-variant text-sm leading-relaxed">
+                        Diplômé des meilleures écoles avec 20 ans d'expérience dans les cuisines étoilées à travers l'Europe.
+                    </p>
+                </div>
+                <!-- Designer -->
+                <div class="group bg-surface-container-lowest p-6 rounded-xl transition-all hover:bg-surface-container">
+                    <div class="overflow-hidden rounded-lg mb-8 aspect-[3/4]">
+                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Elena Rossi" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhXTOw0FESLAjdJ_Ik3GoP3LZYpbhpCXYFWbHlMiOMHMV4kquxSbvHhLqw2iNbu5ggFN58TazadqojmprD08Fd18iqol8Lvt4R2svTSzr9Z6C4X14o_MFHjASzDhSQlDcvQPF9CFrT3J7M3XUlbJ8g7dSFlLJkszRzx81BBZqoASoMVflnkGuNZC_pNvHMWAU__ZLDQzRAGb5aD_CrIe_lm7TdWwDjBNnxovSoZwThPARAQwObReWrDlh2FM5SGvlGW5SAXjKE47AZ"/>
+                    </div>
+                    <h3 class="font-headline text-2xl text-on-surface mb-2">Elena Rossi</h3>
+                    <p class="font-label text-xs uppercase tracking-widest text-secondary mb-4">Designer d'Événements</p>
+                    <p class="font-body text-on-surface-variant text-sm leading-relaxed">
+                        Elena s'assure que chaque choix de linge et de fleurs raconte fidèlement votre histoire.
+                    </p>
+                </div>
+                <!-- Sommelier -->
+                <div class="group bg-surface-container-lowest p-6 rounded-xl transition-all hover:bg-surface-container">
+                    <div class="overflow-hidden rounded-lg mb-8 aspect-[3/4]">
+                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Marcus Thorne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjQAO20R2Dj3SlQfUfAs73sJZEBtVqqf_qfaSZN2T9jbqjn7Hup11zddVpIBaNAr_sv06U2HovvrI8v44kzQ-OlTY3EythcXQ6ceEUitGu2FbDMilErI2QTHgItKUkR8Oq9258P8QmmaCTZHqg8Bvp6m3lY1M6gfGVmYxFtWOgNQqlvvVItQg6gXUWaU8XctXhqb069rmEdsW7M1yhxM9iRk4iFZEiXgAOEM1-3Uqa7u7RvQQMxxf7MmMvj5uDvkqJoGLp_nGmbM_z"/>
+                    </div>
+                    <h3 class="font-headline text-2xl text-on-surface mb-2">Marcus Thorne</h3>
+                    <p class="font-label text-xs uppercase tracking-widest text-secondary mb-4">Maître Sommelier</p>
+                    <p class="font-body text-on-surface-variant text-sm leading-relaxed">
+                        Curateur d'une cave d'exception, Marcus crée des accords qui subliment nos offres culinaires.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="max-w-screen-2xl mx-auto px-12 pb-24 border-b border-outline-variant/20">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                <div class="text-center">
+                    <span class="block font-headline text-5xl text-primary mb-2">1.2k+</span>
+                    <span class="font-label text-xs uppercase tracking-[0.15em] text-on-surface-variant">Réceptions Orchestrées</span>
+                </div>
+                <div class="text-center">
+                    <span class="block font-headline text-5xl text-primary mb-2">15</span>
+                    <span class="font-label text-xs uppercase tracking-[0.15em] text-on-surface-variant">Menus Signatures</span>
+                </div>
+                <div class="text-center">
+                    <span class="block font-headline text-5xl text-primary mb-2">42</span>
+                    <span class="font-label text-xs uppercase tracking-[0.15em] text-on-surface-variant">Partenaires Artisans</span>
+                </div>
+                <div class="text-center">
+                    <span class="block font-headline text-5xl text-primary mb-2">12</span>
+                    <span class="font-label text-xs uppercase tracking-[0.15em] text-on-surface-variant">Prix Internationaux</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#f4f4f0] w-full">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 max-w-screen-2xl mx-auto">
+            <div class="col-span-1 md:col-span-1">
+                <div class="font-headline text-xl text-[#1b1c1a] mb-6 italic">The FRILO Culinary</div>
+                <p class="font-body text-sm text-[#1b1c1a]/60 leading-relaxed max-w-xs">
+                    Traiteur d'exception pour ceux qui apprécient les détails les plus raffinés de la gastronomie.
+                </p>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Contact</span>
+                <span class="font-body text-sm text-[#1b1c1a]/60">hello@frilo-culinary.com</span>
+                <span class="font-body text-sm text-[#1b1c1a]/60">+229 01 00 00 00 00</span>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Suivez-nous</span>
+                <a class="font-body text-sm text-[#1b1c1a]/60 hover:text-primary transition-colors" href="#">Instagram</a>
+                <a class="font-body text-sm text-[#1b1c1a]/60 hover:text-primary transition-colors" href="#">Pinterest</a>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Mentions</span>
+                <a class="font-body text-sm text-[#1b1c1a]/60 hover:text-primary transition-colors" href="#">Vie Privée</a>
+                <a class="font-body text-sm text-[#1b1c1a]/60 hover:text-primary transition-colors" href="#">Conditions</a>
+            </div>
+        </div>
+        <div class="max-w-screen-2xl mx-auto px-12 py-8 border-t border-[#c5c8be]/10 text-center">
+            <p class="font-label text-[10px] tracking-widest uppercase text-[#1b1c1a]/40">
+                © 2026 The FRILO Culinary. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

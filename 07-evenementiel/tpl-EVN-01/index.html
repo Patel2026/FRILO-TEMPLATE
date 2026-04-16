@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>L'Atelier des Émotions | Design Événementiel de Prestige</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container antialiased">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 vellum-effect shadow-ambient no-line-rule">
+        <div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+            <a href="index.html" class="text-2xl font-headline text-primary italic">L'Atelier <span class="not-italic text-on-surface">des Émotions</span></a>
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-10 font-headline tracking-wide text-xs uppercase font-bold">
+                <a class="text-primary border-b border-primary/30 pb-1" href="index.html">Accueil</a>
+                <a class="text-stone-500 hover:text-primary transition-slow" href="about.html">Esprit</a>
+                <a class="text-stone-500 hover:text-primary transition-slow" href="services.html">Prestations</a>
+                <a class="text-stone-500 hover:text-primary transition-slow" href="gallery.html">Portfolio</a>
+                <a class="text-stone-500 hover:text-primary transition-slow" href="contact.html">Contact</a>
+            </div>
+            <button class="bg-primary text-on-primary px-6 py-2.5 text-[10px] font-label uppercase tracking-[0.2em] scale-up-lift shadow-lg">
+                Organiser mon événement
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover" data-alt="Couple dans un jardin au coucher du soleil" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbfwwvPa9olPMTyMXvuDS6etamAm_XxW0v6WhJEn8AqgNHdQFoIXExgj44HqmInOpIt9bEBgPmXjnIaiuiI6FiYKNYqyXPM1FktuQ14XAn7QFqfFRpozAGdhV35SPQDHaVKCnMsy8v5TKt0JAM7_uKSVLCoSl-Lx06MWPE_J7Wyq82nqtCKtf38g7MnjeoSz46w-qSdN8m-zoVW1flAUQ1-yJDshLuJ84L5pZDpZlNqYOOpdouDb0VBH-qN59kHTZooxp2bP50zvI"/>
+                <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/40 to-transparent"></div>
+            </div>
+            <div class="relative z-10 px-12 max-w-5xl">
+                <span class="font-label text-primary text-[10px] uppercase tracking-[0.4em] block mb-8 font-bold">Artisan de l'Éphémère • Fondé à Cotonou</span>
+                <h1 class="font-headline text-6xl md:text-8xl leading-tight text-on-surface mb-10 italic">
+                    Écrire vos <br/>
+                    <span class="not-italic text-stone-800">Instants Précieux</span>
+                </h1>
+                <p class="text-on-surface-variant text-lg max-w-lg leading-loose mb-12 font-light">
+                    Un atelier de design événementiel dédié à ceux qui cherchent l'extraordinaire. Nous traduisons le langage de votre âme en une célébration vibrante et intemporelle.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center gap-10">
+                    <button class="bg-primary text-on-primary px-10 py-5 text-[10px] font-label uppercase tracking-[0.2em] scale-up-lift shadow-2xl">
+                        Démarrer le voyage
+                    </button>
+                    <a href="gallery.html" class="text-on-surface font-label text-[10px] uppercase tracking-[0.2em] border-b border-outline-variant/40 pb-1 hover:text-primary hover:border-primary transition-slow">
+                        Voir le Portfolio
+                    </a>
+                </div>
+            </div>
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-10 left-12 flex items-center gap-4 text-primary opacity-50">
+                <span class="h-px w-12 bg-primary"></span>
+                <span class="text-[8px] uppercase tracking-[0.3em] font-bold">Faire défiler</span>
+            </div>
+        </section>
+
+        <!-- Services Preview -->
+        <section class="py-40 px-12 bg-surface-container-low transition-slow">
+            <div class="max-w-screen-2xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+                    <div class="max-w-xl">
+                        <span class="font-label text-primary text-[10px] uppercase tracking-[0.3em] font-bold mb-4 block">Notre Savoir-faire</span>
+                        <h2 class="font-headline text-5xl mb-6 leading-tight">L'Excellence <span class="italic font-normal">Curatée.</span></h2>
+                        <p class="text-on-surface-variant font-light text-lg">Nos prestations sont conçues pour offrir une transition fluide de votre vision à une réalité impeccablement orchestrée.</p>
+                    </div>
+                    <div class="h-[1px] bg-outline-variant/20 flex-grow mx-16 hidden lg:block"></div>
+                    <span class="font-headline text-primary italic text-2xl opacity-60">L'Approche Atelier</span>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                    <!-- Service 1 -->
+                    <div class="group relative bg-surface p-10 rounded-2xl shadow-ambient scale-up-lift border border-outline-variant/5">
+                        <div class="w-20 h-20 bg-primary-container/20 rounded-full flex items-center justify-center mb-10 transition-slow group-hover:bg-primary group-hover:text-white">
+                            <span class="material-symbols-outlined text-3xl">auto_stories</span>
+                        </div>
+                        <div class="aspect-[4/3] rounded-2xl overflow-hidden mb-10">
+                            <img class="w-full h-full object-cover transition-slow group-hover:scale-110" data-alt="Design de mariage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRKSFKnJfp1Wd6K8UhL2HtwSg4MW3GnZx77zlWEZUtksAeDzK09jyaiCrpR3bfRBUbqZb_v29FNoYbmez8docxGQpiQfYDFDLRysgzllYLnHzHZ4L5sK0lS-DlF8KeICJy52R7SnYKZYBqKh7X89z4fGscVvKDnGRDQHWFWzk2zps7L-ssycfPAflqi1TYJts5CWW3hEvTGcgUB6YcOuPIYqLq-YSUgiSq96g8EoSzDxziVD_9NIhN2TDaC78NLoCFojvoYj213PU"/>
+                        </div>
+                        <h3 class="font-headline text-2xl mb-4 italic">Planification Complète</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-10 font-light">Du premier croquis à la dernière danse, nous gérons chaque détail exquis de votre voyage.</p>
+                        <a class="font-label text-[10px] uppercase tracking-[0.2em] text-primary flex items-center gap-3 font-bold" href="services.html">
+                            Découvrir <span class="material-symbols-outlined text-sm">north_east</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="group relative bg-surface p-10 rounded-2xl shadow-ambient scale-up-lift mt-0 md:mt-20 border border-outline-variant/5">
+                        <div class="w-20 h-20 bg-secondary-container/20 rounded-full flex items-center justify-center mb-10 transition-slow group-hover:bg-secondary group-hover:text-white">
+                            <span class="material-symbols-outlined text-3xl">palette</span>
+                        </div>
+                        <div class="aspect-[4/3] rounded-2xl overflow-hidden mb-10">
+                            <img class="w-full h-full object-cover transition-slow group-hover:scale-110" data-alt="Décoration de prestige" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf6PCyAfMFisnnWQlgyTkgIJ8JILVp58lWue9m2KubcAJoQXY_zp-yblTApKTWlxYJQQ511GX53h9dIDPbXHZ-NI0xPQOxmRxXRtIWK4jAr50NqUXKoR2vc1oBHnxt0CISAX8gsl6n_wii3bCtMtrv5iUCIUlo00hEjYRFaWw1jmlEZuF6Dz0qY1sbQE-O6JF33TIVQCMLsp3CUejr7agbsk8xdwYA1moEsl2nNv361aIF9QppBSTJYZ1hXWOC08QoLI8wqDk6U2s"/>
+                        </div>
+                        <h3 class="font-headline text-2xl mb-4 italic">Direction Artistique</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-10 font-light">Conception d'environnements atmosphériques qui évoquent l'émotion et reflètent votre esthétique personnelle.</p>
+                        <a class="font-label text-[10px] uppercase tracking-[0.2em] text-primary flex items-center gap-3 font-bold" href="services.html">
+                            Découvrir <span class="material-symbols-outlined text-sm">north_east</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="group relative bg-surface p-10 rounded-2xl shadow-ambient scale-up-lift border border-outline-variant/5">
+                        <div class="w-20 h-20 bg-tertiary-container/20 rounded-full flex items-center justify-center mb-10 transition-slow group-hover:bg-tertiary group-hover:text-white">
+                            <span class="material-symbols-outlined text-3xl">diamond</span>
+                        </div>
+                        <div class="aspect-[4/3] rounded-2xl overflow-hidden mb-10">
+                            <img class="w-full h-full object-cover transition-slow group-hover:scale-110" data-alt="Coordination Logistique" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY5njvOjVCp0jq0futNxDr1oTLmeIjeRSVTDbLuIUMX3WoPqlIOGKv9jJGVUAF-2ulUqJSVy-96A0lu141MlcMEKw9u2fpUvRp1VoSUnEUf2UOXFiXlRH_Cv5tDVAAqVTH-cxeyHew7hn0yySSDcuCEN3RJTmelyWE9zFAK26AmeTPgeVUhUFWyNr3QOukbmoDQTO5e76kYVvDfKf8-PZrOO6D3acDdbp2w080PIAlvtgzU3Br4yXx2PbTdUFmkG_IdfVc0ZlNp7U"/>
+                        </div>
+                        <h3 class="font-headline text-2xl mb-4 italic">Coordination Jour J</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-10 font-light">Une gestion discrète et magistrale garantissant que votre journée se déroule exactement comme chorégraphiée.</p>
+                        <a class="font-label text-[10px] uppercase tracking-[0.2em] text-primary flex items-center gap-3 font-bold" href="services.html">
+                            Découvrir <span class="material-symbols-outlined text-sm">north_east</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Masonry Preview -->
+        <section class="py-40 px-12 bg-surface">
+            <div class="max-w-screen-2xl mx-auto">
+                <div class="text-center mb-24">
+                    <span class="font-label text-stone-400 text-[10px] uppercase tracking-[0.4em] font-bold block mb-6">Le Lookbook</span>
+                    <h2 class="font-headline text-5xl md:text-6xl mb-6 italic">Instants suspendus <span class="not-italic text-stone-800">dans le Vellum.</span></h2>
+                </div>
+                
+                <div class="masonry">
+                    <div class="masonry-item">
+                        <div class="group overflow-hidden rounded-2xl relative">
+                            <img class="w-full object-cover transition-slow group-hover:scale-105" data-alt="Table de mariage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClOpcCHaa1ithah_0A1blTSGaPpehrJFlxvHoj9sYwQ3d_usGwi1GwIysb3a_5JokXVRSSGwXUZC2groO5Hnq8Pz6ZdFA5RKRtyGYsoI28MuW3P2RBm2qq6P_y5p79q0TxGNPeWS9gDyPGRsfaFk66HdrAz_j7O5kRL6W5KbsjANSJugO80O7tJPDbzN26XaxspZKy5K29tA53JeJ1BtuURJkJgpxAonU2etqaYDGy0tfLRa4OzvOohSMF5PIGEPVGmqOq-WGiv80"/>
+                            <div class="absolute inset-x-8 bottom-8 p-6 vellum-effect rounded-xl opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-slow">
+                                <p class="text-[8px] uppercase tracking-widest text-primary font-bold mb-1">Cotonou, 2024</p>
+                                <h4 class="font-headline text-sm italic">Symphonie en Blanc Rose</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="group overflow-hidden rounded-2xl relative">
+                            <img class="w-full object-cover transition-slow group-hover:scale-105" data-alt="Gâteau de mariage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB84L_JNjd1GiNk2GH9EMImDLftS-6MIfra9qRdJXdy09MpRMlQwxhwbzn_EfY7RdFPxLAlpZPlTE72NaonaxUYrUT-qGAPhoDR6L7Mu3iPfnQrNp1pfQrTJaux0P3IWAQyHHjt4XIPSQ9pxn0EBmRGCytnnUjZM_oBv7pj-eRo6z6C8WL7KpfKUXJj5WoDz3WIAXfMs6n7seESm9nRDMpUdDXkY-Ko8kZ1S19z_THnVYp8V0nVGTz1roo3QA9gMsbCTeYcZDl7nGg"/>
+                            <div class="absolute inset-x-8 bottom-8 p-6 vellum-effect rounded-xl opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-slow">
+                                <p class="text-[8px] uppercase tracking-widest text-primary font-bold mb-1">Ouidah Shore</p>
+                                <h4 class="font-headline text-sm italic">Pureté et Feuilles d'Or</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <img class="w-full rounded-2xl object-cover hover:opacity-90 transition-slow" data-alt="Découverte du marié" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSRWa5220aDzQiuT8r8BCJ_O5HYYKil5_5aaaAFKgifaCFL_uoFCr0gn1hrKFrMvPp-jFYlbMJiW6PSnUJsLtioJIT6QfNQ3bQYN3XSSqvdk3p0CpD-PMn7ooLJHDLGeEyA8v84qWID_MW7Gohjlr0t9843eu5b1O9EczOi_Cx3SwHGsyER-AXR24OvsQJrQllqUgp1qnVM77emwftJomIqqgj-lBm_qETKmi0zA2rA8MJsi1Lcauq7HrRNLceOBkb8K6sQ-DYmyA"/>
+                    </div>
+                    <div class="masonry-item">
+                        <img class="w-full rounded-2xl object-cover hover:opacity-90 transition-slow" data-alt="Champagne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCviK3LO3RgNW0NY2SnZ-E4QqcPxbQJmEi_j-ufTbgFowUnpA7mLFeHcp1_6BQyVP2tqnoIVFqt6zxr_T59-KFqeY0rjX8jbtXgDSCnroHzIvzdHl0dify6EtKkOCg_7tglFpB8AnuGgjpThCWh3UXijCZZvocN3M3_-V_JCp4Dykzp9uJJwkCBDso2d8XHsK-kLcaziaRs5-6NfD9hl1PqUvrxSLvG-p4NPJXaNCewVaF03v2-bPWOGoJC5_uD-TobDjkLV4xZQQE"/>
+                    </div>
+                </div>
+                
+                <div class="mt-24 text-center">
+                    <button class="border border-outline px-12 py-5 rounded-sm font-label text-[10px] uppercase tracking-[0.3em] hover:bg-stone-900 hover:text-white transition-slow font-bold">
+                        Découvrir plus d'histoires
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signature Quote -->
+        <section class="py-48 bg-stone-50/50">
+            <div class="max-w-screen-xl mx-auto px-12 text-center">
+                <span class="material-symbols-outlined text-5xl text-primary/30 mb-16" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                <blockquote class="font-headline text-3xl md:text-5xl leading-tight text-on-surface-variant mb-16 italic font-light">
+                    "Collaborer avec l'Atelier des Émotions, c'est comme avoir un poète pour designer notre mariage. Chaque détail semblait profondément personnel, et la journée a été plus qu'une célébration — c'était un chef-d'œuvre."
+                </blockquote>
+                <cite class="not-italic">
+                    <span class="font-label text-xs uppercase tracking-[0.3em] text-primary block mb-3 font-bold">Kendra &amp; Malik</span>
+                    <span class="text-stone-400 text-[10px] font-label uppercase tracking-[0.2em]">Villa Noire, Cotonou</span>
+                </cite>
+            </div>
+        </section>
+
+        <!-- Final Journey CTA -->
+        <section class="py-40 px-12">
+            <div class="max-w-screen-xl mx-auto bg-primary text-on-primary rounded-2xl overflow-hidden relative shadow-2xl">
+                <div class="absolute inset-0 opacity-20">
+                    <img class="w-full h-full object-cover" data-alt="Rubans de soie" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh18X07-ioacPm4Z89IKWJ2KdZc3DIWDRNcuAGUhM4-64nY42sFv1rUxAASSHeVliWUD5MV07If-k0vxY8lnv5XqIuRdwCz3iZcs6E6uyMoqc_nOyxmwDlFjanF2mrO21v2ZuizwxHZ74R7UApICagcv-DGsV2jkEe7O_UcX7MTB2pzlBzdYrZN-2rBYiOBc6iaCQVqghoKfar6ZnVDtKrllD0bsKV_VBKo7CmcqsEu_1laFew3I9XC4ncK2LGuptwxUU5r6E5A1I"/>
+                </div>
+                <div class="relative z-10 p-16 md:p-32 flex flex-col items-center text-center">
+                    <h2 class="font-headline text-4xl md:text-7xl mb-10 leading-tight">Commencez votre voyage <br/><span class="italic font-normal">avec nous dès aujourd'hui</span></h2>
+                    <p class="text-on-primary/70 text-lg max-w-2xl mb-16 font-light">Nous n'acceptons qu'un nombre limité de commissions par an pour garantir à chaque héritage notre entière attention créative.</p>
+                    <div class="flex flex-col md:flex-row gap-8 w-full max-w-lg">
+                        <input class="flex-grow bg-white/10 border-b border-white/30 text-white placeholder:text-white/40 focus:ring-0 focus:border-white transition-slow px-6 py-4 font-body outline-none" placeholder="Votre Adresse Email" type="email"/>
+                        <button class="bg-surface text-primary px-10 py-5 text-[10px] font-label uppercase tracking-[0.2em] scale-up-lift whitespace-nowrap font-bold shadow-xl">
+                            Demander une Étude
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface w-full pt-32 pb-16">
+        <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-start px-12 gap-16 w-full border-t border-stone-200/30 pt-16">
+            <div class="flex flex-col gap-8">
+                <div class="text-2xl font-headline text-primary italic">L'Atelier des Émotions</div>
+                <p class="text-stone-400 max-w-xs font-body text-xs leading-loose uppercase tracking-widest">Définir la prochaine génération de célébrations de prestige à travers une sophistication silencieuse et un design intentionnel.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-16 md:gap-32">
+                <div class="flex flex-col gap-6">
+                    <span class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold">Suivre</span>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="#">Instagram</a>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="#">Pinterest</a>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <span class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold">Atelier</span>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="contact.html">Nous Contacter</a>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="about.html">Notre Philosophie</a>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <span class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold">Legal</span>
+                    <a class="font-label text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-slow" href="#">Confidentialité</a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-32 px-12 text-center w-full">
+            <p class="font-body text-[8px] uppercase tracking-[0.4em] text-stone-300">© 2026 L'ATELIER DES ÉMOTIONS. CURATING LEGACIES WITH GRACE.</p>
+        </div>
+    </footer>
+</body>
+</html>

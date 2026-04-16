@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#00b3d7",
+                    "secondary": "#00677d",
+                    "on-surface": "#191c1e",
+                    "tertiary-container": "#00404e",
+                    "on-tertiary-fixed-variant": "#004e5f",
+                    "surface-container-highest": "#e0e3e6",
+                    "secondary-fixed-dim": "#4cd6fb",
+                    "surface-dim": "#d8dadd",
+                    "on-primary-fixed": "#001d36",
+                    "surface-bright": "#f7f9fc",
+                    "secondary-fixed": "#b3ebff",
+                    "surface-tint": "#416084",
+                    "on-secondary-fixed": "#001f27",
+                    "on-surface-variant": "#43474e",
+                    "primary-fixed-dim": "#a9c9f2",
+                    "tertiary": "#002933",
+                    "outline-variant": "#c3c6cf",
+                    "on-tertiary-fixed": "#001f27",
+                    "primary-container": "#1a3c5e",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#87a7ce",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#eceef1",
+                    "surface-container-low": "#f2f4f7",
+                    "on-secondary-container": "#005c70",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#e6e8eb",
+                    "on-background": "#191c1e",
+                    "outline": "#73777f",
+                    "inverse-primary": "#a9c9f2",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed-variant": "#28496b",
+                    "surface-variant": "#e0e3e6",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#d1e4ff",
+                    "error-container": "#ffdad6",
+                    "on-secondary": "#ffffff",
+                    "primary": "#002645",
+                    "inverse-surface": "#2d3133",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#b3ebff",
+                    "inverse-on-surface": "#eff1f4",
+                    "surface": "#f7f9fc",
+                    "tertiary-fixed-dim": "#4cd6fb",
+                    "secondary-container": "#50d9fe",
+                    "on-secondary-fixed-variant": "#004e5f",
+                    "background": "#f7f9fc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift {
+            background: linear-gradient(180deg, transparent 0%, rgba(242, 244, 247, 0.5) 100%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<span class="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-slate-50 font-headline">Clinika</span>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-cyan-600 font-label uppercase tracking-wider text-xs transition-all duration-300 hover:opacity-80" href="#">Home</a>
+<a class="text-cyan-700 dark:text-cyan-400 border-b-2 border-cyan-700 dark:border-cyan-400 pb-1 font-label uppercase tracking-wider text-xs transition-all duration-300 hover:opacity-80" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-cyan-600 font-label uppercase tracking-wider text-xs transition-all duration-300 hover:opacity-80" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-cyan-600 font-label uppercase tracking-wider text-xs transition-all duration-300 hover:opacity-80" href="#">Contact</a>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 hover:opacity-90 active:scale-95">
+                Book Appointment
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Section 1: Page Header -->
+<header class="relative py-24 overflow-hidden bg-surface-container-low">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute -top-24 -left-24 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+</div>
+<div class="relative max-w-7xl mx-auto px-8">
+<nav aria-label="Breadcrumb" class="flex mb-4 text-sm font-medium">
+<ol class="flex items-center space-x-2">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Home</a></li>
+<li class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-sm text-outline">chevron_right</span>
+<span class="text-secondary">About Us</span>
+</li>
+</ol>
+</nav>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-primary tracking-tight leading-tight">
+                    Committed to Your <br/>
+<span class="text-secondary">Clinical Excellence.</span>
+</h1>
+</div>
+</header>
+<!-- Section 2: Detailed History/Mission -->
+<section class="py-24 max-w-7xl mx-auto px-8">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/2 relative">
+<div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+<img alt="Founding Team" class="w-full h-full object-cover" data-alt="Modern high-end medical clinic interior with soft natural lighting, elegant minimalist decor and professional healthcare architectural details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcSpjLxGDLK_u3GmVboVmv8HR-dhTlNjCDroI4pQdw3tTS-djaFgTK4TqYJEiquYIZB-QNB1vHvcJ1mpVmwgG7oA2OYffEqWfV6XxavzEN06h3vIWRqOngqGdLPSWBUmetXXucgRvH44mprYgdsKjjIWFrMoIxlPRsQ_V6nX52becbQ-Dnfy6kaMPkZxHeS6dN_sc4KwX4yOszr_ivNBZsSJIz1vzsrWvHCzx3qxgSkVbjECVGswF9lfyVAryNc-E_iuCVQ4TNI2Py"/>
+</div>
+<div class="absolute -bottom-8 -right-8 bg-surface-container-lowest p-8 rounded-2xl shadow-xl max-w-xs border-l-4 border-secondary">
+<p class="text-secondary font-headline font-bold text-4xl mb-1">1998</p>
+<p class="text-on-surface-variant font-medium uppercase tracking-widest text-xs">Year of Foundation</p>
+</div>
+</div>
+<div class="lg:w-1/2 space-y-8">
+<span class="label-md uppercase tracking-[0.2em] text-secondary font-bold font-label">Our History</span>
+<h2 class="text-4xl font-headline font-bold text-primary leading-tight">Founded on Trust, Driven by Innovation</h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed text-lg">
+<p>Clinika began with a singular vision: to bridge the gap between high-precision medical technology and the human touch that defines healing. Over two decades, we have evolved from a small community practice into a center of medical excellence.</p>
+<p>Our mission is to provide personalized, state-of-the-art healthcare that prioritizes the patient's dignity and comfort. We believe that every individual deserves access to world-class diagnostics and treatment within a supportive, warm environment.</p>
+</div>
+<div class="pt-4">
+<button class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-lg font-bold hover:translate-x-1 transition-transform flex items-center gap-2">
+                            Download Annual Report
+                            <span class="material-symbols-outlined">download</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Team Section (Expanded) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16 text-center max-w-2xl mx-auto">
+<span class="label-md uppercase tracking-[0.2em] text-secondary font-bold font-label">The Specialists</span>
+<h2 class="text-4xl font-headline font-bold text-primary mt-4">World-Class Medical Team</h2>
+<p class="text-on-surface-variant mt-4">Our doctors are leaders in their respective fields, bringing decades of collective expertise to Clinika.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Doctor 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-[24px] shadow-sm hover:shadow-md transition-shadow group">
+<div class="aspect-square rounded-xl overflow-hidden mb-6">
+<img alt="Dr. Sarah Mitchell" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Professional female doctor portrait in white coat, bright clinical background, confident and caring expression, cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMXBPVOnS29AvNPx5oEm8AXGfxCmxgmG3NzXJa3BhSKvSA40mpxY9TdkfN0E9k4bXjeYKnkY2Fqq3J5nBwjryoK336mU4acnqVB5wVltxNMivmgl3xthUTczimZ_gMKf3VIaQujuK0Ie_VZvKjR-MCD8d0bbhiejFZEAv_8ZbsGUbMsMNVnHfKFx3gMFcj1G2UqSKuzxpkOUS4bLcWvWTTSOtRUCUVWntegCqu9MgGUVWa3b4x-gsgxV9UazwLQ8TdPaP4LL3vt2M3"/>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded mb-4 inline-block">Cardiology</span>
+<h3 class="text-xl font-headline font-bold text-primary mb-2">Dr. Sarah Mitchell</h3>
+<p class="text-on-surface-variant text-sm mb-4 leading-relaxed line-clamp-2">Specializing in advanced cardiovascular diagnostics and preventative heart care with 15 years of experience.</p>
+<a class="text-secondary font-bold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all" href="#">
+                            View Profile <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Doctor 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-[24px] shadow-sm hover:shadow-md transition-shadow group">
+<div class="aspect-square rounded-xl overflow-hidden mb-6">
+<img alt="Dr. James Chen" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Professional male doctor in scrub suit, modern laboratory background, expert facial expression, sharp focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvXjd6OjI7bPhnd8nF0moOd5JyzK-LFB_uZtXRX2slvxmZlJSMMVUXrAWYlf9uBWBKWKa-WZpLNNMrc8mtjgnd04EvdC9ROZR2tO1sKL9F99G8Wb9m3hiJywPsgxExzcoGE8I7d6VMd4c5FiXTUJe6fP9Dh8GAgiw0pxeBZGpAA88JUSoGZVkxnMsNSKB8tYp027mw6mXrsSvXy-YjMo3kwdWViffL4cvy4IeETWPxqW4NfRrl9EbT0LIvUs4vvsdckJFguFFPW4Bm"/>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded mb-4 inline-block">Neurology</span>
+<h3 class="text-xl font-headline font-bold text-primary mb-2">Dr. James Chen</h3>
+<p class="text-on-surface-variant text-sm mb-4 leading-relaxed line-clamp-2">Expert in neuro-rehabilitation and complex brain disorders, focusing on patient-centric recovery plans.</p>
+<a class="text-secondary font-bold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all" href="#">
+                            View Profile <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Doctor 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-[24px] shadow-sm hover:shadow-md transition-shadow group">
+<div class="aspect-square rounded-xl overflow-hidden mb-6">
+<img alt="Dr. Elena Rodriguez" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Professional medical specialist in sterile environment, friendly expression, high-end healthcare setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIp9nMu2ywP9gdzV6s0VVKk4iqRp5A6RlUe-Dfx-Gaq946n7cSek4nEqd55auUAUiDKqDgvAmTTGKrQvAoIQrQcphBQCuNRb7qwYF_BjpbmFRBge9uFwL-PLUNCYTHCiBaXmsNHkJKS9iWYspWKFQHyxKKkUXtxkBbH-oxqHtFNswLH7y7ZBNCDdDbka3gAZaf2csT-fCpPJBW4AImfswdtsflxquZqmZYv-DyBxjWS9S0Od3tB_ab5Uq1f_wp7bPfwhPr4sQTIGHf"/>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded mb-4 inline-block">Pediatrics</span>
+<h3 class="text-xl font-headline font-bold text-primary mb-2">Dr. Elena Rodriguez</h3>
+<p class="text-on-surface-variant text-sm mb-4 leading-relaxed line-clamp-2">Dedicated to child wellness and development, providing compassionate care for the youngest patients.</p>
+<a class="text-secondary font-bold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all" href="#">
+                            View Profile <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Facilities Gallery (Bento-style Grid) -->
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-12">
+<span class="label-md uppercase tracking-[0.2em] text-secondary font-bold font-label text-sm">Our Space</span>
+<h2 class="text-4xl font-headline font-bold text-primary mt-4">Advanced Medical Environments</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 h-[800px]">
+<div class="md:col-span-2 md:row-span-2 rounded-[32px] overflow-hidden group relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Ultra-modern surgical operating room with advanced robotic equipment, blue ambient lighting, sterile and high-tech atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfh9ZWIP7E3I9akyAtq0jXEuGAWuJ6POXOOi2kl-OXCGkTChQFM6iGSkbwkBgMOJJ_mBRXtOPy-PSrgB2IUNmctIKmQZZgXmjVzI5LwTwymmNaK6H9QXm3JQIPdAfWI6Dk_HWm7pimCAM5PtcXbdnzLuJtJqRgS92_BYVDDmWTdUQ5sW9HNoyRlg--A_7ZzZTX-ILvkkOxX0fk-zzRtZSl6NRXO8Epx787gxK4ecy34RKPCe0e4ZjrcC1-JCzIRYZxW2DIrpFKCez1"/>
+<div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-primary/80 to-transparent">
+<h4 class="text-white font-headline font-bold text-xl">Surgical Suites</h4>
+</div>
+</div>
+<div class="md:col-span-2 rounded-[32px] overflow-hidden group relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Elegant medical waiting area with designer furniture, warm wood accents, large windows and serene aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkQ-vlaSPgdNsvYgDfOsLw8rTd1P3Q3skjgLw1TXDwEwDFfYtiljL3uBs1pjdPDU2otdPlqm27rUmkn-xOI4gdLk4Otoqsasp3eMS3PDzinA2JrBqq5aPVvJ_KVZ2COVJSYGchacRwLKVZtl12NtJywlbGZl1QffIPykBGeaQf3Q4zEkpsdYat1OH4sDBOgvsauc90jlfhRCUFgQEcEJf-UdEWPP2spM1gF9WcowhYUoFhR1RTqkdVlc1if8vpqw8hRZM4LdOMildt"/>
+<div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-primary/80 to-transparent">
+<h4 class="text-white font-headline font-bold text-xl">Patient Lounge</h4>
+</div>
+</div>
+<div class="rounded-[32px] overflow-hidden group relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-tech diagnostic imaging room with MRI scanner, clean minimalist design and professional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR2gbxsHlOlNxXRilqYk7kVWSstU_xJ9UW6fWBExdtrox7BqlgpORiTYXtw28CoPcvtRvqbPHkcrM7tBU6NYsvLmdui26VoAZ3NIhsES6tjoIz_181TO2JjCxfWNa2irIdI5AL3MdyX-9e7nBLJw9KcOayhcqTgmq3kt5xHdYDqzo0ZAvmV1VYJ8gAaBQyqMEXqFhiEvK_eI390trH6SP2BZO6-3kSVBoz1eRANbyKHrHSIwG7roY8GvfO1Wymz5nLxmWRk6MEhOpl"/>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-primary/80 to-transparent">
+<h4 class="text-white font-headline font-bold text-lg">Diagnostics</h4>
+</div>
+</div>
+<div class="rounded-[32px] overflow-hidden group relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Biomedical laboratory with scientists, microscope equipment and bright clean surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQWaEkJD-r8Gix1tJktjHwVgMmhq0-hwAtMjKwUpuS5im9lc6WZBOgasULtrs7mDzfK_1w-NCoRNiL-vb5lXat4DV4w48ACQMdv-DrMrnL0WBDGg7Pp8uFjCvgjXYvvNo3Tcdvh5UIBlkupbCWkVLYUKoF3Gzqfk6DVct-rqM3w4AqK6FtcdmuTkxosPtYfGxywufz-ohirNov81WMq0ytWmbpPAzSIXzBeaVspG-Fl6Og7oGieClO58NV4jAopd9qRPHacgQ57K_3"/>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-primary/80 to-transparent">
+<h4 class="text-white font-headline font-bold text-lg">Research Lab</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Why Choose Us -->
+<section class="py-24 bg-primary text-white overflow-hidden relative">
+<div class="absolute inset-0 opacity-5 pointer-events-none">
+<div class="absolute top-0 right-0 w-[800px] h-[800px] bg-secondary-container rounded-full blur-[120px]"></div>
+</div>
+<div class="max-w-7xl mx-auto px-8 relative">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<span class="label-md uppercase tracking-[0.2em] text-on-primary-container font-bold font-label">The Difference</span>
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold mt-4">Why Clinika Stands Apart</h2>
+</div>
+<button class="bg-secondary text-white px-8 py-4 rounded-lg font-bold flex items-center gap-3 hover:bg-on-tertiary-container transition-colors group">
+                        Discover Our Methods
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+<!-- Block 1: Experience -->
+<div class="space-y-6">
+<div class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center backdrop-blur-lg">
+<span class="material-symbols-outlined text-secondary-fixed text-3xl">workspace_premium</span>
+</div>
+<h3 class="text-xl font-headline font-bold">25+ Years Experience</h3>
+<p class="text-on-primary-container text-sm leading-relaxed">A legacy of clinical excellence and thousands of successful outcomes across multiple specialties.</p>
+</div>
+<!-- Block 2: Quality -->
+<div class="space-y-6">
+<div class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center backdrop-blur-lg">
+<span class="material-symbols-outlined text-secondary-fixed text-3xl">verified</span>
+</div>
+<h3 class="text-xl font-headline font-bold">Certified Quality</h3>
+<p class="text-on-primary-container text-sm leading-relaxed">Rigorous international standards in medical safety, hygiene, and technological integration.</p>
+</div>
+<!-- Block 3: Care -->
+<div class="space-y-6">
+<div class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center backdrop-blur-lg">
+<span class="material-symbols-outlined text-secondary-fixed text-3xl">favorite</span>
+</div>
+<h3 class="text-xl font-headline font-bold">Patient-First Care</h3>
+<p class="text-on-primary-container text-sm leading-relaxed">Empathy is as vital as the diagnosis. We provide a nurturing environment for your journey to health.</p>
+</div>
+<!-- Block 4: Support -->
+<div class="space-y-6">
+<div class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center backdrop-blur-lg">
+<span class="material-symbols-outlined text-secondary-fixed text-3xl">headset_mic</span>
+</div>
+<h3 class="text-xl font-headline font-bold">Ongoing Support</h3>
+<p class="text-on-primary-container text-sm leading-relaxed">From pre-op to recovery, our team is available 24/7 for patient monitoring and coordination.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 dark:bg-black text-white relative w-full pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="space-y-6">
+<span class="text-xl font-bold text-white font-headline">Clinika</span>
+<p class="text-slate-400 text-sm leading-relaxed">Redefining medical standards through precision technology and human-centric care since 1998.</p>
+</div>
+<div>
+<h4 class="font-headline font-bold text-white mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 inline-block" href="#">Our Services</a></li>
+<li><a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 inline-block" href="#">Find a Doctor</a></li>
+<li><a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 inline-block" href="#">Patient Portal</a></li>
+<li><a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 inline-block" href="#">Bookings</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-white mb-6">Support</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 inline-block" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 inline-block" href="#">Terms of Service</a></li>
+<li><a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 inline-block" href="#">Cookie Settings</a></li>
+<li><a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 inline-block" href="#">Accessibility</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-white mb-6">Newsletter</h4>
+<div class="flex">
+<input class="bg-slate-800 border-none rounded-l-lg text-sm w-full focus:ring-2 focus:ring-cyan-500" placeholder="Email address" type="email"/>
+<button class="bg-secondary px-4 rounded-r-lg hover:bg-on-tertiary-container transition-colors">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-800">
+<p class="text-slate-500 text-sm text-center">© 2024 Clinika Medical Excellence. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

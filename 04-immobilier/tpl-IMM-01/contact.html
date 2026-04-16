@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactez-nous | FRILO Prestige</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface text-slate-800 antialiased selection:bg-accent selection:text-white flex flex-col min-h-screen">
+
+    <!-- Topbar Contact -->
+    <div class="bg-primary text-white/80 py-2 text-xs font-sans tracking-wide hidden md:block">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-accent">location_on</span> Immeuble CICA-TOYOTA, Cotonou</span>
+                <span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-accent">call</span> +229 00 00 00 00</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="about.html" class="hover:text-accent transition-colors">Notre Agence</a>
+                <a href="properties.html" class="hover:text-accent transition-colors">Nos Mandats</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Principale -->
+    <nav class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex flex-col group">
+                <span class="font-display font-bold text-2xl text-primary tracking-tight leading-none">FRILO<span class="text-accent">.</span></span>
+                <span class="text-[10px] font-sans font-bold uppercase tracking-widest text-slate-400">Prestige Immobilier</span>
+            </a>
+            
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="text-slate-600 hover:text-accent transition-colors text-sm font-semibold tracking-wide">Accueil</a>
+                <a href="about.html" class="text-slate-600 hover:text-accent transition-colors text-sm font-semibold tracking-wide">L'Agence</a>
+                <a href="properties.html" class="text-slate-600 hover:text-accent transition-colors text-sm font-semibold tracking-wide">Nos Biens</a>
+                <a href="contact.html" class="text-primary font-bold text-sm tracking-wide border-b-2 border-primary pb-1">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#estimer" class="btn-accent px-6 py-2.5 shadow-card">
+                    Estimer mon bien
+                </a>
+            </div>
+
+            <button class="lg:hidden text-primary">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        
+        <div class="max-w-7xl mx-auto px-6 pt-16 pb-24 grid lg:grid-cols-2 gap-16">
+            
+            <!-- Informations de l'agence -->
+            <div>
+                <span class="text-accent font-bold tracking-widest text-xs uppercase mb-4 block">Notre Bureau</span>
+                <h1 class="text-4xl md:text-5xl font-display font-bold text-primary mb-6">Discutons de votre projet en toute discrétion.</h1>
+                <p class="text-slate-600 mb-10 leading-relaxed max-w-md">
+                    Que vous cherchiez la perle rare, que vous souhaitiez vendre votre villa, ou discuter d'un investissement locatif, nos experts fonciers sont à votre écoute.
+                </p>
+
+                <div class="space-y-8 bg-white p-8 rounded-xl shadow-sm border border-slate-100">
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 rounded bg-primary/5 flex items-center justify-center text-primary shrink-0">
+                            <span class="material-symbols-outlined">location_on</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary">Siège Social - Cotonou</h4>
+                            <p class="text-sm text-slate-500 mt-1">Immeuble CICA-TOYOTA, 2ème étage<br>Quartier Ganhi, Cotonou, Bénin</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 rounded bg-primary/5 flex items-center justify-center text-primary shrink-0">
+                            <span class="material-symbols-outlined">forum</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary">Contact Rapide</h4>
+                            <p class="text-sm text-slate-500 mt-1">
+                                Téléphone : +229 00 00 00 00<br>
+                                Whatsapp : +229 00 00 00 01
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 rounded bg-primary/5 flex items-center justify-center text-primary shrink-0">
+                            <span class="material-symbols-outlined">schedule</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary">Horaires de réception</h4>
+                            <p class="text-sm text-slate-500 mt-1">Lundi - Vendredi : 08h30 - 18h30<br>Samedi : Sur rendez-vous privé</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulaires combinés (Achat / Vente) -->
+            <div id="estimer" class="bg-primary text-white p-8 md:p-12 rounded-xl shadow-luxury relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 border-[40px] border-white/5 rounded-full -translate-y-1/2 translate-x-1/3"></div>
+                
+                <div class="relative z-10">
+                    <h2 class="text-2xl font-display font-bold mb-8">Quel est l'objet de votre demande ?</h2>
+                    
+                    <!-- Tabs Fictive (Sert à styliser l'interface) -->
+                    <div class="flex gap-2 mb-8 border-b border-white/20 pb-4">
+                        <label class="cursor-pointer group flex items-center gap-2">
+                            <input type="radio" name="sujet" class="text-accent focus:ring-accent" checked>
+                            <span class="text-sm font-bold tracking-widest uppercase">Je Vends (Estimation)</span>
+                        </label>
+                        <label class="cursor-pointer group flex items-center gap-2 ml-4">
+                            <input type="radio" name="sujet" class="text-accent focus:ring-accent">
+                            <span class="text-sm font-bold tracking-widest uppercase opacity-50 group-hover:opacity-100">J'Achète</span>
+                        </label>
+                    </div>
+
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-bold text-white/50 uppercase tracking-widest mb-2">Nom Complet</label>
+                                <input type="text" class="w-full bg-white/10 border border-white/20 text-white placeholder-white/30 rounded py-3 px-4 outline-none focus:border-accent font-sans text-sm" placeholder="Ex: Jean Dubois">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-white/50 uppercase tracking-widest mb-2">Téléphone</label>
+                                <input type="tel" class="w-full bg-white/10 border border-white/20 text-white placeholder-white/30 rounded py-3 px-4 outline-none focus:border-accent font-sans text-sm" placeholder="+229 ...">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-white/50 uppercase tracking-widest mb-2">Type de bien concerné</label>
+                            <select class="w-full bg-white/10 border border-white/20 text-white placeholder-white/30 rounded py-3 px-4 outline-none focus:border-accent font-sans text-sm appearance-none cursor-pointer">
+                                <option class="text-slate-800">Villa indépendante</option>
+                                <option class="text-slate-800">Appartement vide</option>
+                                <option class="text-slate-800">Terrain (Avec Titre Foncier obligatoirement)</option>
+                                <option class="text-slate-800">Immeuble commercial</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-white/50 uppercase tracking-widest mb-2">Description / Quartier</label>
+                            <textarea rows="4" class="w-full bg-white/10 border border-white/20 text-white placeholder-white/30 rounded py-3 px-4 outline-none focus:border-accent font-sans text-sm resize-none" placeholder="Décrivez brièvement le bien (superficie, localisation précise, état)..."></textarea>
+                        </div>
+
+                        <div class="pt-2">
+                            <button type="submit" class="btn-accent w-full py-4 text-primary">Envoyer la demande confidentielle</button>
+                            <p class="text-center text-[10px] text-white/40 mt-4 leading-relaxed">
+                                Les informations partagées sont strictement confidentielles. Nos experts locaux vous rappelleront sous 24h ouvrées.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Super Footer (Minimal) -->
+    <footer class="bg-primary-dark py-8 text-white/70 text-sm border-t-4 border-accent text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <span class="font-display font-bold text-xl text-white tracking-tight leading-none mb-4 block">FRILO<span class="text-accent">.</span> Prestige Immobilier</span>
+            <p class="text-xs font-light">&copy; 2026 FRILO Immobilier Afrique. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Expertise | L'Élite Événementielle</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed antialiased">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="flex justify-between items-center px-8 py-5 max-w-7xl mx-auto">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+                    <span class="text-white font-black text-lg">E</span>
+                </div>
+                <span class="text-xl font-extrabold tracking-tighter text-primary uppercase">L'Élite Événementielle</span>
+            </a>
+            <div class="hidden md:flex items-center gap-10 font-headline text-sm font-semibold tracking-tight">
+                <a class="text-slate-500 hover:text-primary transition-all" href="index.html">Accueil</a>
+                <a class="text-slate-500 hover:text-primary transition-all" href="a-propos.html">Philosophie</a>
+                <a class="text-primary border-b-2 border-primary pb-1" href="services.html">Expertise</a>
+                <a class="text-slate-500 hover:text-primary transition-all" href="portfolio.html">Engagement</a>
+                <a class="text-slate-500 hover:text-primary transition-all" href="contact.html">Contact</a>
+            </div>
+            <button class="bg-primary text-white px-6 py-2.5 rounded-lg font-headline text-sm font-bold tracking-tight hover:shadow-xl active:scale-95 transition-all">
+                Demander un Devis
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-40">
+        <!-- Header -->
+        <header class="max-w-7xl mx-auto px-8 mb-32">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-12">
+                <div class="max-w-3xl">
+                    <span class="font-label text-[10px] tracking-[0.4em] font-black text-primary mb-8 block uppercase">Nos Domaines d'Intervention</span>
+                    <h1 class="display-lg font-extrabold text-primary mb-10 tracking-tighter">Solutions <br/><span class="text-slate-400">Stratégiques.</span></h1>
+                    <p class="text-xl font-light text-on-surface-variant leading-relaxed opacity-80">
+                        De la conception architecturale de votre événement à sa gestion opérationnelle millimétrée, nous offrons un écosystème de services complets pour le secteur corporatif.
+                    </p>
+                </div>
+                <div class="hidden lg:block pb-4">
+                    <div class="w-24 h-24 border-2 border-primary/10 rounded-full flex items-center justify-center animate-spin-slow">
+                        <span class="material-symbols-outlined text-primary text-4xl">architecture</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Services List (Editorial Grid Style) -->
+        <section class="max-w-7xl mx-auto px-8 space-y-40 mb-40">
+            <!-- Service 1 -->
+            <div class="grid lg:grid-cols-2 gap-24 items-center group">
+                <div class="relative rounded-3xl overflow-hidden aspect-[16/10] shadow-2xl">
+                    <img class="w-full h-full object-cover grayscale-[20%] group-hover:scale-110 transition-transform duration-1000" data-alt="Gestion de congrès" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvVK3OscgEWkjv-OOGVfIbDLaJxM8dpp9RufEL_PKsIevgBe2zs3mAoRpoKlA2t0y_nXOadtpxXEoPtduBCY1BumdXWh5je_rhnsmD_yQC4RZxJq7bLuW6zO4tC2BNoc8mGRz845VV7-hyVKFHH8ubDed46HED_MuP9QLPFTy1kOx77IuXorPQOmGnfNTFUZudVCu7svhEQIeQ1HeYiSHigxJICb7r3GBeH5mp3xq1yBYp9EeHkHCkkFUFiGjpTmjeJHUV5nXN6e4"/>
+                    <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/5 transition-all"></div>
+                </div>
+                <div>
+                    <span class="font-label text-[10px] text-slate-400 font-black uppercase tracking-widest mb-6 block">Sommets & Congrès</span>
+                    <h2 class="font-headline text-4xl font-extrabold text-primary mb-8 uppercase tracking-tighter">Management Global de Conférences.</h2>
+                    <p class="text-on-surface-variant font-light leading-loose mb-10">Nous gérons la complexité des rassemblements de grande envergure. Notre approche inclut la gestion des intervenants internationaux, la production audiovisuelle de pointe et la coordination des flux de participants.</p>
+                    <ul class="space-y-6 mb-12">
+                        <li class="flex items-center gap-4 text-primary font-bold text-xs uppercase tracking-widest">
+                            <span class="w-2 h-2 rounded-full bg-primary"></span>
+                            <span>Scénographie & Régie Technique</span>
+                        </li>
+                        <li class="flex items-center gap-4 text-primary font-bold text-xs uppercase tracking-widest">
+                            <span class="w-2 h-2 rounded-full bg-primary"></span>
+                            <span>Gestion des Invitations & Protocole</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn-primary inline-block">Consultation Conférence</a>
+                </div>
+            </div>
+
+            <!-- Service 2 (Reverse, Tonal BG) -->
+            <div class="bg-surface-container-low -mx-8 px-8 py-32 rounded-3xl lg:-mx-20 lg:px-20">
+                <div class="grid lg:grid-cols-2 gap-24 items-center group max-w-7xl mx-auto">
+                    <div class="order-2 lg:order-1">
+                        <span class="font-label text-[10px] text-slate-400 font-black uppercase tracking-widest mb-6 block">Retraites Exécutives</span>
+                        <h2 class="font-headline text-4xl font-extrabold text-primary mb-8 uppercase tracking-tighter">Séminaires de Leadership.</h2>
+                        <p class="text-on-surface-variant font-light leading-loose mb-10">Conçus pour la réflexion stratégique et la cohésion d'équipe de haut niveau. Nous créons des cadres confidentiels et inspirants propices à la prise de décision.</p>
+                        <div class="grid grid-cols-2 gap-8 mb-12">
+                            <div class="p-6 bg-white rounded-xl shadow-sm border-l-4 border-slate-300">
+                                <h4 class="font-headline font-black text-xs uppercase mb-2">Immersion</h4>
+                                <p class="text-[11px] font-light text-slate-500 leading-relaxed">Sélection de lieux hors-site exclusifs au Bénin ou à l'international.</p>
+                            </div>
+                            <div class="p-6 bg-white rounded-xl shadow-sm border-l-4 border-slate-300">
+                                <h4 class="font-headline font-black text-xs uppercase mb-2">Curation</h4>
+                                <p class="text-[11px] font-light text-slate-500 leading-relaxed">Design de programmes sur-mesure et facilitation d'ateliers.</p>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn-primary inline-block">Planifier une Retraite</a>
+                    </div>
+                    <div class="order-1 lg:order-2 relative rounded-3xl overflow-hidden aspect-[16/10] shadow-2xl">
+                        <img class="w-full h-full object-cover grayscale-[20%] group-hover:scale-110 transition-transform duration-1000" data-alt="Haut niveau de réunion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyt2f0eRWyvmAOovyyVWoJW1MM8mQ0QBvTzRuRoiuh8yf8blfYoK5c0hVNEOM-fB1fmTxCa_Xi6f7UMCu5deq_xeXS5ImGpqfSCR4exlRDf-N81JRdTF5iVXUd4M00vIRXcf9vLZl9ifwsQoVnVIRWGFLdGycYbkkPnaJQiT853Gve8XYoKG9nwALfTPGHhYXWloO2bAUu2TiYBzRkVejFP2LnRCOOzl9Xa5aBd6pw-T62c6wFApdCMWZolzFGaZu607jFr7lrCvc"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="grid lg:grid-cols-2 gap-24 items-center group">
+                <div class="relative rounded-3xl overflow-hidden aspect-[16/10] shadow-2xl">
+                    <img class="w-full h-full object-cover grayscale-[20%] group-hover:scale-110 transition-transform duration-1000" data-alt="Lancement de produit luxe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjzkOwQO4nNqYsgCdnzTC4my0CWsKWirr-jPr5L_HaRswvguX71DHbxtRRRdT1KlaQtWogi_wX4REQ7IdhloFE1dV-kQlZ4QhLcBU0fo6G6XM_KW6Iq548O2xMdebSY9pAfMOEvYgiu7WyNlMF5HEHBagTY91K9MhSkhgIx7hICYUYHNi4d4I9WhfYNAZA_UyePKve1gINkMEyTS7c4uLugCPl8i4LPZSQ65ttzdajcb8muC8ENO8FSC9otA_kAj97OQjxa5KcPPY"/>
+                    <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/5 transition-all"></div>
+                </div>
+                <div>
+                    <span class="font-label text-[10px] text-slate-400 font-black uppercase tracking-widest mb-6 block">Production & Médias</span>
+                    <h2 class="font-headline text-4xl font-extrabold text-primary mb-8 uppercase tracking-tighter">Lancements & Studio Live.</h2>
+                    <p class="text-on-surface-variant font-light leading-loose mb-10">Création d'expériences de marque immersives et diffusion de contenus hybrides de haute qualité pour une portée globale.</p>
+                    <div class="space-y-6 mb-12">
+                        <div class="flex gap-6 items-start">
+                            <span class="material-symbols-outlined text-primary">videocam</span>
+                            <div>
+                                <h4 class="font-headline font-black text-xs uppercase mb-1">Broadcasting</h4>
+                                <p class="text-xs text-slate-500">Flux HD stabilisés et interactions multi-plateformes.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-start">
+                            <span class="material-symbols-outlined text-primary">campaign</span>
+                            <div>
+                                <h4 class="font-headline font-black text-xs uppercase mb-1">Brand Experience</h4>
+                                <p class="text-xs text-slate-500">Mise en scène créative pour marquer les esprits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn-primary inline-block">Explorer le Studio</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Vision -->
+        <section class="py-40 bg-primary overflow-hidden relative">
+            <div class="texture-dots absolute inset-0"></div>
+            <div class="max-w-4xl mx-auto px-8 text-center relative z-10">
+                <h2 class="font-headline text-4xl md:text-5xl font-black text-white mb-10 uppercase tracking-tighter">Votre vision, notre architecture.</h2>
+                <p class="text-surface-variant text-lg font-light leading-loose mb-12 opacity-80">Chaque service est un élément modulaire d'une solution globale conçue pour amplifier votre autorité corporative. Discutons de votre prochain jalon.</p>
+                <button class="bg-white text-primary px-12 py-5 rounded-lg font-headline font-black text-base uppercase tracking-widest hover:-translate-y-1 transition-all">Contactez un Curateur</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-container text-white py-24">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-20 px-12 max-w-7xl mx-auto border-b border-white/5 pb-20 mb-16">
+            <div class="col-span-1">
+                <span class="text-2xl font-black tracking-tighter uppercase mb-8 block">L'Élite Événementielle</span>
+                <p class="font-body text-sm text-on-primary-container leading-relaxed opacity-60">
+                    Architectural Precision for Human Connection.
+                </p>
+            </div>
+            <div>
+                <h6 class="font-headline text-sm font-black text-white uppercase tracking-widest mb-10">Expertise</h6>
+                <ul class="space-y-6 text-sm text-on-primary-container opacity-60 font-medium">
+                    <li><a class="hover:text-white transition-colors" href="#">Congrès Mondiaux</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Retraites VIP</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Digital Broadcast</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="font-headline text-sm font-black text-white uppercase tracking-widest mb-10">Contact</h6>
+                <p class="text-sm text-on-primary-container opacity-60 leading-relaxed">
+                    Novotel Area, Haie Vive<br/>
+                    Cotonou, Bénin
+                </p>
+            </div>
+        </div>
+        <div class="px-12 text-center text-[10px] text-on-primary-container opacity-40 uppercase tracking-[0.5em]">
+            © 2026 L'ÉLITE ÉVÉNEMENTIELLE.
+        </div>
+    </footer>
+</body>
+</html>

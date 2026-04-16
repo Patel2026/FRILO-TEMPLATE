@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+    --primary: #002045;
+    --primary-container: #1a365d;
+    --surface: #f5faff;
+}
+
+body {
+    background-color: var(--surface);
+    color: #171c20; /* on-surface */
+}
+
+h1, h2, h3, h4, .font-headline {
+    font-family: 'Manrope', sans-serif;
+}
+
+.font-body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Glassmorphism (Architectural Vellum) */
+.glass-effect {
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.75);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+/* Ambient Shadow (Soft Elite) */
+.shadow-ambient {
+    box-shadow: 0 20px 40px rgba(0, 32, 69, 0.05); /* Tinté Bleu Primaire */
+}
+
+/* No-Line Sectioning (Tonal Layering) */
+.surface-container-low {
+    background-color: #eff4f9;
+}
+
+.surface-container {
+    background-color: #e9eef3;
+}
+
+.surface-container-highest {
+    background-color: #dee3e8;
+}
+
+/* Grid Dot Texture */
+.texture-dots {
+    background-image: radial-gradient(#43474e 0.5px, transparent 0.5px);
+    background-size: 32px 32px;
+    opacity: 0.05;
+}
+
+/* Event Ledger (Vertical Accent) */
+.ledger-accent {
+    border-left: 4px solid var(--primary);
+}
+
+/* Sharp-Approachable Buttons (Rounded md) */
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    transition: all 300ms ease;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Ghost Border (Accessibilité) */
+.ghost-border {
+    border: 1px solid rgba(196, 198, 207, 0.15); /* outline-variant at 15% */
+}
+
+/* Editorial Contrast (Dramatic Scale) */
+.display-lg {
+    font-size: clamp(3rem, 10vw, 5rem);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+/* Bespoke Inputs (Ghost Shift) */
+.input-elite {
+    background-color: #dee3e8; /* container-highest */
+    border: 1px solid transparent;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    width: 100%;
+    transition: all 400ms ease;
+}
+
+.input-elite:focus {
+    outline: none;
+    background-color: white;
+    border-color: rgba(0, 32, 69, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 32, 69, 0.03);
+}

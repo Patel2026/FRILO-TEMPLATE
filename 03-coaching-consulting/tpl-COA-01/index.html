@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FRILO CONSULTING | Prenez le contrôle de votre croissance</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface-white text-slate-700 antialiased selection:bg-accent selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass-panel border-b border-primary/5 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-primary text-white flex items-center justify-center font-heading font-bold text-lg sharp-border">F</div>
+                <span class="font-heading font-bold text-xl text-primary tracking-tight">FRILO CONSULTING</span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-primary font-semibold text-sm uppercase tracking-wide">Accueil</a>
+                <a href="about.html" class="text-slate-600 hover:text-accent transition-colors text-sm uppercase tracking-wide font-medium">L'Expertise</a>
+                <a href="services.html" class="text-slate-600 hover:text-accent transition-colors text-sm uppercase tracking-wide font-medium">Services</a>
+                <a href="contact.html" class="text-slate-600 hover:text-accent transition-colors text-sm uppercase tracking-wide font-medium">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="tel:+33180000000" class="text-sm font-semibold text-primary flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[18px]">call</span> +33 1 80 00 00 00
+                </a>
+                <a href="contact.html" class="btn-primary px-6 py-2.5 text-sm font-bold uppercase tracking-wide sharp-border">Prendre RDV</a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="md:hidden text-primary">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-[90vh] flex items-center pt-24 overflow-hidden bg-surface">
+            <div class="absolute right-0 top-0 w-1/2 h-full hidden lg:block z-0">
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32d7?auto=format&fit=crop&w=1920&q=80" alt="Executive Meeting" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-l from-transparent to-surface"></div>
+            </div>
+            
+            <div class="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 w-full">
+                <div class="py-20">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-alt border border-slate-200 rounded-full mb-8">
+                        <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                        <span class="text-xs font-bold tracking-widest text-primary uppercase">Cabinet de Stratégie B2B</span>
+                    </div>
+                    
+                    <h1 class="text-5xl md:text-7xl font-heading font-extrabold leading-[1.1] mb-6 text-primary">
+                        Transformez <br />
+                        <span class="text-gradient">votre vision</span><br />
+                        en résultats.
+                    </h1>
+                    
+                    <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-lg leading-relaxed font-light">
+                        Nous accompagnons les dirigeants et les comités de direction dans leurs défis de croissance, de restructuration et de leadership. 
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="contact.html" class="btn-primary px-8 py-4 text-base font-bold uppercase tracking-wide sharp-border">
+                            Démarrer une consultation <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        </a>
+                        <a href="services.html" class="btn-secondary px-8 py-4 text-base font-bold uppercase tracking-wide sharp-border">
+                            Découvrir nos solutions
+                        </a>
+                    </div>
+                    
+                    <div class="mt-16 flex items-center gap-6">
+                        <div class="flex -space-x-3">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" class="w-12 h-12 rounded-full border-2 border-white object-cover" alt="Client">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=100&q=80" class="w-12 h-12 rounded-full border-2 border-white object-cover" alt="Client">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&q=80" class="w-12 h-12 rounded-full border-2 border-white object-cover" alt="Client">
+                        </div>
+                        <p class="text-sm text-slate-600 font-medium">Rejoint par plus de <br /><span class="text-primary font-bold">500+ entreprises leaders</span>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Partners Strip -->
+        <section class="border-y border-slate-200 bg-white py-10 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <p class="text-center text-xs font-bold tracking-widest text-slate-400 uppercase mb-8">Ils nous ont confié leur croissance</p>
+                <!-- Simulated logos with typography -->
+                <div class="flex flex-wrap justify-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                    <span class="font-heading font-extrabold text-2xl">Axiom</span>
+                    <span class="font-heading font-extrabold text-2xl tracking-tighter">VORTEX</span>
+                    <span class="font-heading font-bold text-2xl flex items-center gap-1"><span class="material-symbols-outlined text-accent">shape_line</span> SYNERGY</span>
+                    <span class="font-heading font-extrabold text-2xl italic">Lumina</span>
+                    <span class="font-heading font-bold text-2xl uppercase tracking-widest">Equinox</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview -->
+        <section class="py-24 bg-surface-white">
+            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="Lead Consultant" class="w-full aspect-[4/5] object-cover sharp-border shadow-corporate">
+                    <div class="absolute -bottom-8 -right-8 bg-white p-8 shadow-corporate sharp-border border border-slate-100 hidden md:block">
+                        <span class="text-6xl font-heading font-bold text-accent mb-2 block">20+</span>
+                        <p class="text-sm font-bold tracking-wider uppercase text-primary">Années d'excellence<br>stratégique</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="text-accent font-bold tracking-widest text-xs uppercase mb-4 block">Notre Philosophie</span>
+                    <h2 class="text-4xl md:text-5xl font-heading font-bold text-primary mb-6 leading-tight">La clarté engendre l'action.</h2>
+                    <p class="text-lg text-slate-600 mb-6 leading-relaxed font-light">
+                        Nous refusons les théories génériques. Notre approche s'appuie sur une analyse granulaire de votre écosystème, couplée à une méthodologie d'exécution implacable.
+                    </p>
+                    <p class="text-base text-slate-600 mb-10 leading-relaxed">
+                        Que vous fassiez face à une stagnation des revenus, un changement d'échelle ou un besoin de structuration de votre leadership, FRILO CONSULTING vous apporte la feuille de route exacte pour franchir le prochain palier.
+                    </p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3 text-primary font-medium">
+                            <span class="material-symbols-outlined text-accent">check_circle</span> Audits de performance objectifs
+                        </li>
+                        <li class="flex items-center gap-3 text-primary font-medium">
+                            <span class="material-symbols-outlined text-accent">check_circle</span> Coaching directionnel sur-mesure
+                        </li>
+                        <li class="flex items-center gap-3 text-primary font-medium">
+                            <span class="material-symbols-outlined text-accent">check_circle</span> Déploiement de stratégies agiles
+                        </li>
+                    </ul>
+                    <a href="about.html" class="text-primary font-bold uppercase tracking-widest text-sm flex items-center gap-2 group">
+                        Rencontrer l'équipe 
+                        <span class="material-symbols-outlined text-accent group-hover:translate-x-2 transition-transform">trending_flat</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview -->
+        <section class="py-24 bg-surface-alt">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                    <div class="max-w-2xl">
+                        <span class="text-accent font-bold tracking-widest text-xs uppercase mb-4 block">Domaines d'Intervention</span>
+                        <h2 class="text-4xl md:text-5xl font-heading font-bold text-primary leading-tight">Solutions conçues pour les hauts dirigeants.</h2>
+                    </div>
+                    <a href="services.html" class="btn-secondary px-6 py-3 text-xs font-bold uppercase tracking-widest sharp-border shrink-0">Voir tous les services</a>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-10 sharp-border hover:shadow-corporate-hover transition-all duration-300 group border border-slate-100 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
+                            <span class="material-symbols-outlined text-8xl text-primary">strategy</span>
+                        </div>
+                        <div class="w-14 h-14 bg-surface-alt text-accent flex items-center justify-center rounded-sm mb-8">
+                            <span class="material-symbols-outlined text-3xl">lightbulb</span>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-primary mb-4">Conseil en Stratégie</h3>
+                        <p class="text-slate-600 mb-8 font-light leading-relaxed">
+                            Cartographie de votre positionnement marché et de votre avantage concurrentiel. Redéfinition des modèles économiques pour une scalabilité maximale.
+                        </p>
+                        <a href="services.html" class="inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-wide group-hover:text-accent transition-colors">
+                            En savoir plus <span class="material-symbols-outlined">chevron_right</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="bg-white p-10 sharp-border hover:shadow-corporate-hover transition-all duration-300 group border border-slate-100 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
+                            <span class="material-symbols-outlined text-8xl text-primary">psychology</span>
+                        </div>
+                        <div class="w-14 h-14 bg-surface-alt text-accent flex items-center justify-center rounded-sm mb-8">
+                            <span class="material-symbols-outlined text-3xl">psychology</span>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-primary mb-4">Coaching Exécutif</h3>
+                        <p class="text-slate-600 mb-8 font-light leading-relaxed">
+                            Accompagnement individuel des C-levels pour débloquer les freins mentaux, améliorer la prise de décision sous pression et gérer les crises.
+                        </p>
+                        <a href="services.html" class="inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-wide group-hover:text-accent transition-colors">
+                            En savoir plus <span class="material-symbols-outlined">chevron_right</span>
+                        </a>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="bg-white p-10 sharp-border hover:shadow-corporate-hover transition-all duration-300 group border border-slate-100 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
+                            <span class="material-symbols-outlined text-8xl text-primary">groups_3</span>
+                        </div>
+                        <div class="w-14 h-14 bg-surface-alt text-accent flex items-center justify-center rounded-sm mb-8">
+                            <span class="material-symbols-outlined text-3xl">groups_3</span>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-primary mb-4">Transformation d'Équipe</h3>
+                        <p class="text-slate-600 mb-8 font-light leading-relaxed">
+                            Alignement de la culture d'entreprise avec les objectifs stratégiques. Optimisation de la communication interdépartementale et rétention des talents.
+                        </p>
+                        <a href="services.html" class="inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-wide group-hover:text-accent transition-colors">
+                            En savoir plus <span class="material-symbols-outlined">chevron_right</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section (Dark Corporate) -->
+        <section class="corporate-gradient py-24 relative overflow-hidden">
+            <!-- abstract pattern -->
+            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+            
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+                    <div class="text-center">
+                        <span class="text-5xl md:text-6xl font-heading font-bold text-white mb-2 block">2.4<span class="text-accent">M+</span></span>
+                        <h4 class="text-sm font-bold uppercase tracking-widest text-slate-300">Valeur Générée</h4>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-5xl md:text-6xl font-heading font-bold text-white mb-2 block">150<span class="text-accent">+</span></span>
+                        <h4 class="text-sm font-bold uppercase tracking-widest text-slate-300">Missions Succès</h4>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-5xl md:text-6xl font-heading font-bold text-white mb-2 block">98<span class="text-accent">%</span></span>
+                        <h4 class="text-sm font-bold uppercase tracking-widest text-slate-300">Taux de Rétention</h4>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-5xl md:text-6xl font-heading font-bold text-white mb-2 block">3</span>
+                        <h4 class="text-sm font-bold uppercase tracking-widest text-slate-300">Bureaux Monde</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-16">
+                <!-- Title Block -->
+                <div class="lg:col-span-4">
+                    <span class="text-accent font-bold tracking-widest text-xs uppercase mb-4 block">Études de cas</span>
+                    <h2 class="text-4xl md:text-5xl font-heading font-bold text-primary mb-6 leading-tight">Ce que disent nos leaders.</h2>
+                    <p class="text-slate-600 mb-8 font-light">Le succès mesurable est notre seule véritable métrique. Découvrez comment nous avons redéfini la trajectoire de nos clients.</p>
+                    <div class="flex gap-4">
+                        <button class="w-12 h-12 border border-slate-200 text-primary flex items-center justify-center hover:bg-surface-alt transition-colors">
+                            <span class="material-symbols-outlined">arrow_back</span>
+                        </button>
+                        <button class="w-12 h-12 bg-primary text-white flex items-center justify-center hover:bg-primary-light transition-colors">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Testimonial Cards -->
+                <div class="lg:col-span-8 grid md:grid-cols-2 gap-8">
+                    <!-- Unit 1 -->
+                    <div class="bg-surface-alt p-10 sharp-border relative">
+                        <span class="material-symbols-outlined text-4xl text-primary/10 absolute top-8 right-8">format_quote</span>
+                        <div class="flex items-center gap-1 mb-6">
+                            <span class="material-symbols-outlined text-accent text-sm" style="font-variation-settings:'FILL' 1">star</span>
+                            <span class="material-symbols-outlined text-accent text-sm" style="font-variation-settings:'FILL' 1">star</span>
+                            <span class="material-symbols-outlined text-accent text-sm" style="font-variation-settings:'FILL' 1">star</span>
+                            <span class="material-symbols-outlined text-accent text-sm" style="font-variation-settings:'FILL' 1">star</span>
+                            <span class="material-symbols-outlined text-accent text-sm" style="font-variation-settings:'FILL' 1">star</span>
+                        </div>
+                        <p class="text-lg font-medium text-primary mb-8 leading-relaxed">
+                            "L'intervention de FRILO a été un point de bascule. Non seulement nous avons restructuré nos opérations pour réduire les coûts de 20%, mais l'équipe de direction n'a jamais été aussi alignée."
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=100&q=80" alt="CEO" class="w-14 h-14 rounded-full object-cover grayscale">
+                            <div>
+                                <h4 class="font-bold text-primary">Marianne Dubois</h4>
+                                <p class="text-xs font-bold uppercase tracking-wide text-slate-500">CEO, Axiom Technologies</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Unit 2 -->
+                    <div class="bg-surface-alt p-10 sharp-border relative">
+                        <span class="material-symbols-outlined text-4xl text-primary/10 absolute top-8 right-8">format_quote</span>
+                        <div class="flex items-center gap-1 mb-6">
+                            <span class="material-symbols-outlined text-accent text-sm" style="font-variation-settings:'FILL' 1">star</span>
+                            <span class="material-symbols-outlined text-accent text-sm" style="font-variation-settings:'FILL' 1">star</span>
+                            <span class="material-symbols-outlined text-accent text-sm" style="font-variation-settings:'FILL' 1">star</span>
+                            <span class="material-symbols-outlined text-accent text-sm" style="font-variation-settings:'FILL' 1">star</span>
+                            <span class="material-symbols-outlined text-accent text-sm" style="font-variation-settings:'FILL' 1">star</span>
+                        </div>
+                        <p class="text-lg font-medium text-primary mb-8 leading-relaxed">
+                            "Leur coaching exécutif de pointe m'a permis de naviguer dans une fusion-acquisition complexe avec une clarté absolue. Un soutien indispensable pour tout dirigeant."
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=100&q=80" alt="Founder" class="w-14 h-14 rounded-full object-cover grayscale">
+                            <div>
+                                <h4 class="font-bold text-primary">Thierry Laurent</h4>
+                                <p class="text-xs font-bold uppercase tracking-wide text-slate-500">Fondateur, VORTEX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-24 bg-white relative overflow-hidden">
+            <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
+                <div class="bg-surface p-12 md:p-20 border border-slate-200 sharp-border shadow-corporate relative overflow-hidden">
+                    <div class="absolute -right-20 -top-20 w-64 h-64 bg-accent/5 rounded-full blur-3xl"></div>
+                    
+                    <h2 class="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">Prêt à transformer votre trajectoire ?</h2>
+                    <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto font-light">
+                        Réservez un appel de découverte stratégique de 30 minutes avec l'un de nos partenaires expérimentés. Pas d'engagement, uniquement de la valeur pure.
+                    </p>
+                    <a href="contact.html" class="btn-primary px-10 py-5 text-lg font-bold uppercase tracking-wide sharp-border shadow-lg shadow-accent/20">
+                        Planifier une stratégie
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="corporate-gradient pt-24 pb-10 border-t-4 border-accent">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="md:col-span-1">
+                <a href="index.html" class="flex items-center gap-2 mb-6">
+                    <div class="w-8 h-8 bg-accent text-white flex items-center justify-center font-heading font-bold text-lg sharp-border">F</div>
+                    <span class="font-heading font-bold text-xl text-white tracking-tight">FRILO CONSULTING</span>
+                </a>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Le cabinet de conseil et coaching réservé à l'élite corporative. Nous traduisons le chaos de la croissance en stratégies limpides.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 border border-slate-700 flex items-center justify-center text-slate-400 hover:bg-accent hover:text-white hover:border-accent transition-all sharp-border"><span class="material-symbols-outlined text-sm">public</span></a>
+                    <a href="#" class="w-10 h-10 border border-slate-700 flex items-center justify-center text-slate-400 hover:bg-accent hover:text-white hover:border-accent transition-all sharp-border"><span class="material-symbols-outlined text-sm">work</span></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-widest text-sm mb-6">Expertise</h4>
+                <ul class="space-y-4">
+                    <li><a href="services.html" class="text-slate-400 hover:text-white transition-colors text-sm">Conseil en Stratégie</a></li>
+                    <li><a href="services.html" class="text-slate-400 hover:text-white transition-colors text-sm">Coaching Exécutif</a></li>
+                    <li><a href="services.html" class="text-slate-400 hover:text-white transition-colors text-sm">Performance Opérationnelle</a></li>
+                    <li><a href="services.html" class="text-slate-400 hover:text-white transition-colors text-sm">Culture d'Entreprise</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-widest text-sm mb-6">Cabinet</h4>
+                <ul class="space-y-4">
+                    <li><a href="about.html" class="text-slate-400 hover:text-white transition-colors text-sm">Notre Équipe</a></li>
+                    <li><a href="about.html" class="text-slate-400 hover:text-white transition-colors text-sm">Philosophie</a></li>
+                    <li><a href="#" class="text-slate-400 hover:text-white transition-colors text-sm">Carrières</a></li>
+                    <li><a href="contact.html" class="text-slate-400 hover:text-white transition-colors text-sm">Bureaux</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-widest text-sm mb-6">Contact</h4>
+                <ul class="space-y-4 mb-6">
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-accent text-[18px] mt-0.5">location_on</span>
+                        <span class="text-slate-400 text-sm">12 Place Vendôme<br />75001 Paris, France</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-accent text-[18px]">mail</span>
+                        <a href="mailto:contact@friloconsulting.com" class="text-slate-400 hover:text-white transition-colors text-sm">contact@friloconsulting.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-slate-500 text-xs text-center md:text-left">
+                © 2026 FRILO CONSULTING. Tous droits réservés.
+            </p>
+            <div class="flex items-center gap-6">
+                <a href="#" class="text-slate-500 hover:text-white text-xs transition-colors">Confidentialité</a>
+                <a href="#" class="text-slate-500 hover:text-white text-xs transition-colors">Mentions Légales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple navbar shadow on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-md');
+                nav.classList.replace('border-primary/5', 'border-transparent');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.classList.replace('border-transparent', 'border-primary/5');
+            }
+        });
+    </script>
+</body>
+</html>

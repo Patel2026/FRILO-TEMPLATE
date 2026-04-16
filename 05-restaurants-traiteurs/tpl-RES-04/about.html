@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>L'Esprit | FRILO LOUNGE & GRILL</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface font-body text-on-surface-variant selection:bg-primary selection:text-on-primary antialiased">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0e0e0e]/40 backdrop-blur-xl shadow-[0_0_20px_rgba(224,141,255,0.1)]">
+        <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+            <a href="index.html" class="text-2xl font-bold tracking-[-0.02em] text-white font-headline neon-glow-purple">
+                FRILO <span class="text-secondary">LOUNGE</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-10 font-headline tracking-tighter uppercase text-sm">
+                <a class="text-neutral-400 hover:text-white transition-colors" href="index.html">Accueil</a>
+                <a class="text-primary border-b-2 border-primary pb-1" href="about.html">Esprit</a>
+                <a class="text-neutral-400 hover:text-white transition-colors" href="menu.html">Carte</a>
+                <a class="text-neutral-400 hover:text-white transition-colors" href="events.html">Événements</a>
+            </div>
+            <a href="reservations.html" class="bg-gradient-to-r from-primary to-primary-dim text-on-primary-fixed px-6 py-2.5 font-headline font-bold uppercase tracking-wider text-xs rounded-lg hover:scale-95 transition-all duration-300">
+                Réserver une table
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-32">
+        <!-- Philosophy Section -->
+        <section class="max-w-7xl mx-auto px-8 mb-32">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <span class="font-label uppercase tracking-widest text-secondary text-sm mb-6 block font-bold">Notre Manifeste</span>
+                    <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter leading-tight text-on-surface mb-8 uppercase">
+                        La Nuit est notre<br/><span class="italic text-primary">Sanctuaire.</span>
+                    </h1>
+                    <p class="text-lg font-light leading-relaxed mb-8">
+                        Au FRILO LOUNGE & GRILL, nous croyons que la nuit n'est pas une simple absence de lumière, mais un espace de création pure. Nous avons conçu ce sanctuaire pour ceux qui cherchent à s'échapper du tumulte de Cotonou et à se retrouver dans l'éclat des néons.
+                    </p>
+                    <p class="text-lg font-light leading-relaxed">
+                        Chaque cocktail, chaque grillade, chaque pulsation sonore est une note dans notre symphonie nocturne. Nous marions le brut et le raffiné pour offrir une expérience sensorielle sans compromis.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-full blur-[100px]"></div>
+                    <div class="aspect-square rounded-2xl overflow-hidden glass-card p-2">
+                        <img class="w-full h-full object-cover rounded-xl opacity-80" data-alt="Intérieur Lounge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2x2Cx3Wi0LgMxmQ0-bhD6nB8WJEZJYJ6cCgOZu7HYs2efORp0Q3q2hyc2gmZ6lVq6XdPZKg6dwlkyD5E5lrFwL4LTUCSW3DnsCEval2mqnD07ffGx7MYCj499ETGlANpLE-PX_MSqyxviOZ68OmBeoa4aT_1lQZfvthOnrL8DMSxr1kaEKBoQOr0rrYbU-3fy4_YWVrupTCfUcQr74nEIvWjOolw5dKdKbnE6Ev9LCEUhXX3NEqAooXI9xHYl1Uxu_H3NhV3WnA6K"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="bg-surface-container-low py-20 px-8 mb-32">
+            <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 border-y border-outline-variant/10 py-12">
+                <div class="text-center">
+                    <span class="block font-headline text-5xl font-bold text-primary mb-2">42</span>
+                    <span class="text-[10px] uppercase font-label tracking-widest">Signatures Alchimiques</span>
+                </div>
+                <div class="text-center">
+                    <span class="block font-headline text-5xl font-bold text-secondary mb-2">12</span>
+                    <span class="text-[10px] uppercase font-label tracking-widest">VIP Booths</span>
+                </div>
+                <div class="text-center">
+                    <span class="block font-headline text-5xl font-bold text-primary mb-2">18h</span>
+                    <span class="text-[10px] uppercase font-label tracking-widest">Maturation Viande</span>
+                </div>
+                <div class="text-center">
+                    <span class="block font-headline text-5xl font-bold text-secondary mb-2">102%</span>
+                    <span class="text-[10px] uppercase font-label tracking-widest">Énergie Électrique</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="max-w-7xl mx-auto px-8 mb-32">
+            <h2 class="font-headline text-4xl md:text-5xl font-bold text-center mb-20 uppercase tracking-tighter">Les Architectes de la <span class="text-primary italic">Vibe.</span></h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Alchemist -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-2xl aspect-[3/4] mb-6">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 brightness-75 group-hover:brightness-100" data-alt="Mixologue" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcVYyxPM5EvkI85brpbCcmX1f0xw9m-YRPNPdGejD2sPFva8mncd1JXCCo3O4Ql31Cqdqr8FtZPXjHDGNx0S6Zv0nFe1FP4MEUfCk16-mfRt5V6pGTBHow7vTV7PdWdB4-1iMcNXdFoCIU-CVrdlg1b7tKR6TcxEk6mL8Vwo99nhnLxM4UFD-AzgWazTlnOqZzOjgCCLm94Fv2XS_IKDTIU0IJY4gLem2GEFpjZZ5dUtoOqHNGCykqGtjZJNWpwYTdF0xHtfgL2ftz"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+                    </div>
+                    <h3 class="font-headline text-2xl font-bold mb-1 uppercase">Marc-Aurèle</h3>
+                    <p class="font-label text-xs uppercase tracking-widest text-primary mb-4 font-bold">Maître Alchimiste</p>
+                    <p class="text-sm font-light">Marc-Aurèle ne crée pas de boissons, il distille des émotions. Expert en mixologie moléculaire et en infusions locales.</p>
+                </div>
+                <!-- Grill Master -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-2xl aspect-[3/4] mb-6">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 brightness-75 group-hover:brightness-100" data-alt="Grill Master" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvltvbCHWdFex2CSjhnbVmQbXknkydw6lBg1erlKgh3-tvKt5dwhZpL_i6ZKW5LcH0NlIS0qdAxcK0tq6d7Fkc0dKStBCqT0BSyfLzY5PR-PjQzJFyvWFdGZYOFhCAgiAPOpoXck-pBHm3FtFKnuL9dCXpZO9BbHvutj2EaWqvsCZyL-8tJZLFO3g0UtJimQTjpj0nT-9ExykY7U0mTYDh7yjGx2OgEXouWCsnf5HTHNafCeFXgGsipUNqNSizDa0Hz-INJLp8R-1L"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+                    </div>
+                    <h3 class="font-headline text-2xl font-bold mb-1 uppercase">Koffi David</h3>
+                    <p class="font-label text-xs uppercase tracking-widest text-secondary mb-4 font-bold">Grill Master</p>
+                    <p class="text-sm font-light">Le feu est son domaine. Koffi sublime les viandes d'exception par des cuissons lentes et des fumages au bois de pays.</p>
+                </div>
+                <!-- Sound Curator -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-2xl aspect-[3/4] mb-6">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 brightness-75 group-hover:brightness-100" data-alt="DJ" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEp_Bi71F3ZcJ_m8a4c-80-zZP08aCkGcJxTfcBOPgMTeCU-ktM6Bz0on-9tdgn-FDhIaHqggpN9cmzbzyeItlK6LCknFj-XnSrLiAaKtUsEgJUVMUhziUoYglQNF8fdna_gEjassRbK9PJJsJAMYhDSCRUWq2x64Zk-21-dqOIsO7DndMxb3I8t5-fj1D-F9pFRgLZHn-Q_9DUqTUoAphNVtEXvGQdXC-Wlek2-XiXJTORz8YsAHuX5Zy-jtzXG7sPjCh9NL3-eCk"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+                    </div>
+                    <h3 class="font-headline text-2xl font-bold mb-1 uppercase">Mélanie Diago</h3>
+                    <p class="font-label text-xs uppercase tracking-widest text-primary mb-4 font-bold">Curatrice Sonore</p>
+                    <p class="text-sm font-light">Architecte des ambiances, Mélanie sculpte le paysage sonore du lounge pour une immersion totale dans l'Électrique.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signature Experience -->
+        <section class="py-32 px-8 bg-surface-container-high border-y border-outline-variant/10 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="font-headline text-4xl md:text-5xl font-bold mb-8 uppercase italic">L'Excellence est notre <span class="text-secondary">Standard.</span></h2>
+                <p class="text-lg font-light leading-loose mb-12">
+                    Nous ne servons pas simplement du bœuf ou du gin. Nous servons des histoires racontées à travers le goût, la texture et la vibration. Le FRILO LOUNGE & GRILL est l'endroit où la société de Cotonou vient pour être elle-même, loin de la lumière du jour.
+                </p>
+                <div class="flex items-center justify-center space-x-8 text-on-surface-variant opacity-60">
+                    <span class="material-symbols-outlined text-4xl">local_bar</span>
+                    <span class="material-symbols-outlined text-4xl">skillet</span>
+                    <span class="material-symbols-outlined text-4xl">headphones</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0e0e0e] w-full py-16 px-8 border-t border-white/5">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+            <div class="space-y-6">
+                <div class="text-xl font-black text-white font-headline uppercase">FRILO <span class="text-secondary">LOUNGE</span></div>
+                <p class="font-body font-light tracking-wide text-neutral-500 text-sm leading-relaxed">
+                    Une destination pour les audacieux. Cotonou, Haie Vive.
+                </p>
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-amber-400 opacity-80 cursor-pointer">public</span>
+                    <span class="material-symbols-outlined text-amber-400 opacity-80 cursor-pointer">motion_photos_on</span>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <h5 class="text-white font-bold text-xs uppercase tracking-widest font-label">Navigation</h5>
+                <ul class="space-y-3 font-body font-light tracking-wide text-sm">
+                    <li><a class="text-neutral-500 hover:text-secondary transition-colors" href="index.html">Accueil</a></li>
+                    <li><a class="text-secondary font-bold" href="about.html">Esprit</a></li>
+                    <li><a class="text-neutral-500 hover:text-secondary transition-colors" href="menu.html">Carte</a></li>
+                    <li><a class="text-neutral-500 hover:text-secondary transition-colors" href="events.html">Événements</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h5 class="text-white font-bold text-xs uppercase tracking-widest font-label">Contact</h5>
+                <ul class="space-y-3 font-body font-light tracking-wide text-sm">
+                    <li class="text-neutral-500">Haie Vive, Cotonou</li>
+                    <li class="text-neutral-500">+229 01 00 00 00 00</li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h5 class="text-white font-bold text-xs uppercase tracking-widest font-label">Le Sanctum</h5>
+                <div class="pt-4">
+                    <div class="text-[10px] text-neutral-600 uppercase tracking-widest">© 2026 FRILO LOUNGE & GRILL.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

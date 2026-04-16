@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Ethereal Editorial | Bespoke Wedding Planning</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+        .scale-up-lift { transition: transform 300ms ease-out; }
+        .scale-up-lift:hover { transform: translateY(-2px); }
+        .fade-in-slow { transition: opacity 600ms ease-in-out; }
+        .no-line-rule { border: none !important; }
+        .tonal-shift { background-color: rgba(250, 249, 246, 0.8); }
+        @media (min-width: 768px) {
+            .masonry {
+                column-count: 2;
+                column-gap: 2rem;
+            }
+            .masonry-item {
+                break-inside: avoid;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#ffdea5",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#faf9f6",
+                        "inverse-on-surface": "#f2f1ee",
+                        "surface-dim": "#dbdad7",
+                        "surface-container": "#efeeeb",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#576846",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#806221",
+                        "inverse-surface": "#2f312f",
+                        "surface-container-low": "#f4f3f1",
+                        "on-secondary-fixed": "#111f05",
+                        "on-surface": "#1a1c1a",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#e9c176",
+                        "surface-bright": "#faf9f6",
+                        "background": "#faf9f6",
+                        "on-tertiary-fixed-variant": "#584233",
+                        "secondary-fixed-dim": "#b9cda4",
+                        "secondary": "#526442",
+                        "tertiary-fixed-dim": "#dfc1ac",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "on-surface-variant": "#4d453f",
+                        "primary": "#775a19",
+                        "on-background": "#1a1c1a",
+                        "surface-container-high": "#e9e8e5",
+                        "primary-container": "#ffe2b2",
+                        "outline-variant": "#d0c4bc",
+                        "on-tertiary-fixed": "#28180b",
+                        "tertiary-container": "#ffe0cc",
+                        "tertiary": "#715a49",
+                        "on-tertiary-container": "#7a6251",
+                        "on-secondary-fixed-variant": "#3b4c2c",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#775a19",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#e9c176",
+                        "surface-container-highest": "#e3e2e0",
+                        "outline": "#7f756e",
+                        "secondary-fixed": "#d5e9bf",
+                        "surface-variant": "#e3e2e0",
+                        "secondary-container": "#d2e6bc",
+                        "on-primary-fixed": "#261900",
+                        "tertiary-fixed": "#fddcc7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-md shadow-[0_20px_40px_rgba(119,90,25,0.05)] no-line-rule">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif text-[#775a19] dark:text-[#d4af37] italic">The Ethereal Editorial</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-10 font-serif tracking-wide text-sm">
+<a class="text-[#775a19] dark:text-[#d4af37] font-semibold border-b border-[#775a19]/30 pb-1 hover:text-[#775a19] transition-colors duration-500 ease-out" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#775a19] transition-colors duration-500 ease-out" href="#">About</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#775a19] transition-colors duration-500 ease-out" href="#">Services</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#775a19] transition-colors duration-500 ease-out" href="#">Gallery</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#775a19] transition-colors duration-500 ease-out" href="#">Testimonials</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#775a19] transition-colors duration-500 ease-out" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-sm text-xs font-label uppercase tracking-widest scale-up-lift">
+                Plan your wedding
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Cinematic shot of a couple walking through an Italian olive grove at sunset, soft golden backlighting and flowing silk dress" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbfwwvPa9olPMTyMXvuDS6etamAm_XxW0v6WhJEn8AqgNHdQFoIXExgj44HqmInOpIt9bEBgPmXjnIaiuiI6FiYKNYqyXPM1FktuQ14XAn7QFqfFRpozAGdhV35SPQDHaVKCnMsy8v5TKt0JAM7_uKSVLCoSl-Lx06MWPE_J7Wyq82nqtCKtf38g7MnjeoSz46w-qSdN8m-zoVW1flAUQ1-yJDshLuJ84L5pZDpZlNqYOOpdouDb0VBH-qN59kHTZooxp2bP50zvI"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/40 to-transparent"></div>
+</div>
+<div class="relative z-10 px-12 max-w-4xl">
+<span class="font-label text-primary text-xs uppercase tracking-[0.3em] block mb-6">Established in Artistry</span>
+<h1 class="font-headline text-5xl md:text-7xl leading-tight text-on-surface mb-8 italic">
+                Crafting Your <br/>
+<span class="not-italic">Everlasting Memories</span>
+</h1>
+<p class="text-on-surface-variant text-lg max-w-md leading-relaxed mb-10">
+                A boutique planning atelier dedicated to those who seek the extraordinary. We translate your soul's language into a living, breathing celebration.
+            </p>
+<div class="flex items-center gap-8">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-sm font-label uppercase tracking-widest scale-up-lift shadow-lg">
+                    Plan your wedding
+                </button>
+<button class="text-on-surface font-label text-xs uppercase tracking-widest border-b border-outline-variant pb-1 hover:text-primary transition-colors">
+                    View Portfolio
+                </button>
+</div>
+</div>
+</section>
+<!-- Services Preview -->
+<section class="py-32 px-12 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-xl">
+<h2 class="font-headline text-4xl mb-4">Curated Excellence</h2>
+<p class="text-on-surface-variant">Our services are designed to offer a seamless transition from your vision to an impeccably executed reality.</p>
+</div>
+<div class="h-px bg-outline-variant/30 flex-grow mx-12 hidden md:block"></div>
+<span class="font-headline text-primary italic text-2xl">The Atelier Approach</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Planning Card -->
+<div class="group relative bg-surface p-8 rounded-xl shadow-[0_20px_40px_rgba(119,90,25,0.03)] scale-up-lift">
+<div class="w-16 h-16 bg-primary-container/30 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary">auto_stories</span>
+</div>
+<img class="w-full h-64 object-cover rounded-xl mb-8" data-alt="Top-down shot of elegant stationery, a vintage fountain pen, and white ranunculus flowers on a cream linen surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRKSFKnJfp1Wd6K8UhL2HtwSg4MW3GnZx77zlWEZUtksAeDzK09jyaiCrpR3bfRBUbqZb_v29FNoYbmez8docxGQpiQfYDFDLRysgzllYLnHzHZ4L5sK0lS-DlF8KeICJy52R7SnYKZYBqKh7X89z4fGscVvKDnGRDQHWFWzk2zps7L-ssycfPAflqi1TYJts5CWW3hEvTGcgUB6YcOuPIYqLq-YSUgiSq96g8EoSzDxziVD_9NIhN2TDaC78NLoCFojvoYj213PU"/>
+<h3 class="font-headline text-2xl mb-4">Full-Service Planning</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">From the first sketch to the final dance, we manage every exquisite detail of your journey.</p>
+<a class="font-label text-xs uppercase tracking-widest text-primary flex items-center gap-2" href="#">Explore <span class="material-symbols-outlined text-sm">north_east</span></a>
+</div>
+<!-- Decoration Card -->
+<div class="group relative bg-surface p-8 rounded-xl shadow-[0_20px_40px_rgba(119,90,25,0.03)] scale-up-lift mt-0 md:mt-12">
+<div class="w-16 h-16 bg-secondary-container/30 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary">palette</span>
+</div>
+<img class="w-full h-64 object-cover rounded-xl mb-8" data-alt="Exquisite wedding table setting with tall tapered candles, crystal glassware, and lush greenery centerpieces in a historic hall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf6PCyAfMFisnnWQlgyTkgIJ8JILVp58lWue9m2KubcAJoQXY_zp-yblTApKTWlxYJQQ511GX53h9dIDPbXHZ-NI0xPQOxmRxXRtIWK4jAr50NqUXKoR2vc1oBHnxt0CISAX8gsl6n_wii3bCtMtrv5iUCIUlo00hEjYRFaWw1jmlEZuF6Dz0qY1sbQE-O6JF33TIVQCMLsp3CUejr7agbsk8xdwYA1moEsl2nNv361aIF9QppBSTJYZ1hXWOC08QoLI8wqDk6U2s"/>
+<h3 class="font-headline text-2xl mb-4">Creative Direction</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Designing atmospheric environments that evoke emotion and reflect your personal aesthetic.</p>
+<a class="font-label text-xs uppercase tracking-widest text-primary flex items-center gap-2" href="#">Explore <span class="material-symbols-outlined text-sm">north_east</span></a>
+</div>
+<!-- Coordination Card -->
+<div class="group relative bg-surface p-8 rounded-xl shadow-[0_20px_40px_rgba(119,90,25,0.03)] scale-up-lift">
+<div class="w-16 h-16 bg-tertiary-container/30 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-tertiary">diamond</span>
+</div>
+<img class="w-full h-64 object-cover rounded-xl mb-8" data-alt="Close-up of a bride's hands adjusting her lace veil, soft morning light through a large window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY5njvOjVCp0jq0futNxDr1oTLmeIjeRSVTDbLuIUMX3WoPqlIOGKv9jJGVUAF-2ulUqJSVy-96A0lu141MlcMEKw9u2fpUvRp1VoSUnEUf2UOXFiXlRH_Cv5tDVAAqVTH-cxeyHew7hn0yySSDcuCEN3RJTmelyWE9zFAK26AmeTPgeVUhUFWyNr3QOukbmoDQTO5e76kYVvDfKf8-PZrOO6D3acDdbp2w080PIAlvtgzU3Br4yXx2PbTdUFmkG_IdfVc0ZlNp7U"/>
+<h3 class="font-headline text-2xl mb-4">On-Day Coordination</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Discreet, masterful management ensuring your day unfolds exactly as choreographed.</p>
+<a class="font-label text-xs uppercase tracking-widest text-primary flex items-center gap-2" href="#">Explore <span class="material-symbols-outlined text-sm">north_east</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Preview -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-screen-2xl mx-auto">
+<h2 class="font-headline text-4xl mb-16 text-center italic">Moments in Vellum</h2>
+<div class="masonry">
+<div class="masonry-item">
+<img class="w-full rounded-xl object-cover hover:opacity-90 transition-opacity" data-alt="A long wedding table under a canopy of fairy lights and hanging wisteria flowers at twilight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClOpcCHaa1ithah_0A1blTSGaPpehrJFlxvHoj9sYwQ3d_usGwi1GwIysb3a_5JokXVRSSGwXUZC2groO5Hnq8Pz6ZdFA5RKRtyGYsoI28MuW3P2RBm2qq6P_y5p79q0TxGNPeWS9gDyPGRsfaFk66HdrAz_j7O5kRL6W5KbsjANSJugO80O7tJPDbzN26XaxspZKy5K29tA53JeJ1BtuURJkJgpxAonU2etqaYDGy0tfLRa4OzvOohSMF5PIGEPVGmqOq-WGiv80"/>
+</div>
+<div class="masonry-item">
+<img class="w-full rounded-xl object-cover hover:opacity-90 transition-opacity" data-alt="Close-up of a three-tier textured wedding cake decorated with fresh organic figs and gold leaf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB84L_JNjd1GiNk2GH9EMImDLftS-6MIfra9qRdJXdy09MpRMlQwxhwbzn_EfY7RdFPxLAlpZPlTE72NaonaxUYrUT-qGAPhoDR6L7Mu3iPfnQrNp1pfQrTJaux0P3IWAQyHHjt4XIPSQ9pxn0EBmRGCytnnUjZM_oBv7pj-eRo6z6C8WL7KpfKUXJj5WoDz3WIAXfMs6n7seESm9nRDMpUdDXkY-Ko8kZ1S19z_THnVYp8V0nVGTz1roo3QA9gMsbCTeYcZDl7nGg"/>
+</div>
+<div class="masonry-item">
+<img class="w-full rounded-xl object-cover hover:opacity-90 transition-opacity" data-alt="Emotional shot of a groom seeing the bride for the first time in a grand cathedral doorway" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSRWa5220aDzQiuT8r8BCJ_O5HYYKil5_5aaaAFKgifaCFL_uoFCr0gn1hrKFrMvPp-jFYlbMJiW6PSnUJsLtioJIT6QfNQ3bQYN3XSSqvdk3p0CpD-PMn7ooLJHDLGeEyA8v84qWID_MW7Gohjlr0t9843eu5b1O9EczOi_Cx3SwHGsyER-AXR24OvsQJrQllqUgp1qnVM77emwftJomIqqgj-lBm_qETKmi0zA2rA8MJsi1Lcauq7HrRNLceOBkb8K6sQ-DYmyA"/>
+</div>
+<div class="masonry-item">
+<img class="w-full rounded-xl object-cover hover:opacity-90 transition-opacity" data-alt="Artistic shot of champagne being poured into a tower of vintage crystal coupes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCviK3LO3RgNW0NY2SnZ-E4QqcPxbQJmEi_j-ufTbgFowUnpA7mLFeHcp1_6BQyVP2tqnoIVFqt6zxr_T59-KFqeY0rjX8jbtXgDSCnroHzIvzdHl0dify6EtKkOCg_7tglFpB8AnuGgjpThCWh3UXijCZZvocN3M3_-V_JCp4Dykzp9uJJwkCBDso2d8XHsK-kLcaziaRs5-6NfD9hl1PqUvrxSLvG-p4NPJXaNCewVaF03v2-bPWOGoJC5_uD-TobDjkLV4xZQQE"/>
+</div>
+<div class="masonry-item">
+<img class="w-full rounded-xl object-cover hover:opacity-90 transition-opacity" data-alt="Wide shot of a coastal wedding ceremony with a floral arch overlooking the Mediterranean sea" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASx-sW-jfvapcR5YvSJIxDwkbPK8SZr8E8_H1nFbrT4cwKVeaZhhKAqUReJ4Tszi33ZmUURbgV4guTKo6GIWoridB4vfFRQMajJ19-YR9mUDw2JK_EJO_0d1UTx31VEjeex0oPqJlB71z39JdGhUk5oWgyBe5sK2VXvqZC320svaRZi4ZlGC_rC2sMFvtcjafxKrax-ctKw0e7Cnas8OLDBOT53HLC5VXNhC7lCH2iZBJv9AZa47qxEOww_f7jPOlEtuaNyLaSSqc"/>
+</div>
+<div class="masonry-item">
+<img class="w-full rounded-xl object-cover hover:opacity-90 transition-opacity" data-alt="Detailed shot of a bride's embroidered silk train sweeping across an old stone floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDie1XkA4udyRfv1a990WyUL64HR0iWHQkfs7aMrmFx1inelMY4xyz0TgjKlW2fvWAUnMaYR3cd0CCiA8qvBbiRS2aZcpfYT_FVHsK6Li3ukTEHbDjQZOd3tm48eE81rYUPdhY8r6-hfnGvybtXnI8CSr15uKZsj5iKnS3lbkV8LGCcWL16ZvdnFAzRjgF2EsTB67ds-F8BXNNsiiOrILRgyuGQ39NiAZzliwoAXraVjYzXWy6BTb-iNS5u2FuJooBuER23EwWfi5Q"/>
+</div>
+</div>
+<div class="mt-16 text-center">
+<button class="border border-outline px-12 py-4 rounded-sm font-label text-xs uppercase tracking-[0.2em] hover:bg-on-surface hover:text-surface transition-all duration-500">
+                    Discover More Stories
+                </button>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-40 bg-tertiary-container/20">
+<div class="max-w-4xl mx-auto px-12 text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-12" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<blockquote class="font-headline text-3xl md:text-5xl leading-tight text-on-surface-variant mb-12 italic">
+                "Working with The Ethereal Editorial was like having a poet design our wedding. Every detail felt deeply personal, and the day was more than a celebration—it was a masterpiece."
+            </blockquote>
+<cite class="not-italic">
+<span class="font-label text-sm uppercase tracking-[0.2em] text-primary block mb-2">Clara &amp; Julian</span>
+<span class="text-stone-500 text-xs font-label uppercase tracking-widest">Lake Como, Italy</span>
+</cite>
+</div>
+</section>
+<!-- Contact CTA -->
+<section class="py-32 px-12">
+<div class="max-w-screen-xl mx-auto bg-primary text-on-primary rounded-xl overflow-hidden relative">
+<div class="absolute inset-0 opacity-20">
+<img class="w-full h-full object-cover" data-alt="Soft focused background of white silk ribbons blowing gently in the wind" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh18X07-ioacPm4Z89IKWJ2KdZc3DIWDRNcuAGUhM4-64nY42sFv1rUxAASSHeVliWUD5MV07If-k0vxY8lnv5XqIuRdwCz3iZcs6E6uyMoqc_nOyxmwDlFjanF2mrO21v2ZuizwxHZ74R7UApICagcv-DGsV2jkEe7O_UcX7MTB2pzlBzdYrZN-2rBYiOBc6iaCQVqghoKfar6ZnVDtKrllD0bsKV_VBKo7CmcqsEu_1laFew3I9XC4ncK2LGuptwxUU5r6E5A1I"/>
+</div>
+<div class="relative z-10 p-16 md:p-24 flex flex-col items-center text-center">
+<h2 class="font-headline text-4xl md:text-6xl mb-8">Start your journey today</h2>
+<p class="text-on-primary/80 text-lg max-w-xl mb-12">We are currently accepting a limited number of commissions for 2025. Let us create something timeless together.</p>
+<div class="flex flex-col md:flex-row gap-6 w-full max-w-md">
+<input class="flex-grow bg-white/10 border-b border-white/30 text-white placeholder:text-white/60 focus:ring-0 focus:border-white transition-all px-4 py-3 font-body" placeholder="Your Email Address" type="email"/>
+<button class="bg-surface text-primary px-10 py-4 rounded-sm font-label uppercase tracking-widest scale-up-lift whitespace-nowrap">
+                        Inquire Now
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#faf9f6] dark:bg-[#1a1c1a] w-full pt-20 pb-12">
+<div class="flex flex-col md:flex-row justify-between items-start px-12 gap-8 w-full border-t border-stone-200/20 max-w-screen-2xl mx-auto">
+<div class="flex flex-col gap-6">
+<div class="text-xl font-serif text-[#775a19] dark:text-[#d4af37]">The Ethereal Editorial</div>
+<p class="text-stone-500 max-w-xs font-body text-sm leading-relaxed">Defining the next generation of luxury celebrations through quiet sophistication and intentional design.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div class="flex flex-col gap-4">
+<span class="font-label text-xs uppercase tracking-[0.1em] text-[#775a19]">Discover</span>
+<a class="font-label text-xs uppercase tracking-[0.1em] text-stone-500 hover:text-[#775a19] transition-all" href="#">Instagram</a>
+<a class="font-label text-xs uppercase tracking-[0.1em] text-stone-500 hover:text-[#775a19] transition-all" href="#">Pinterest</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label text-xs uppercase tracking-[0.1em] text-[#775a19]">Connect</span>
+<a class="font-label text-xs uppercase tracking-[0.1em] text-stone-500 hover:text-[#775a19] transition-all" href="#">Newsletter Signup</a>
+<a class="font-label text-xs uppercase tracking-[0.1em] text-stone-500 hover:text-[#775a19] transition-all" href="#">Contact Us</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label text-xs uppercase tracking-[0.1em] text-[#775a19]">Legal</span>
+<a class="font-label text-xs uppercase tracking-[0.1em] text-stone-500 hover:text-[#775a19] transition-all" href="#">Privacy Policy</a>
+</div>
+</div>
+</div>
+<div class="mt-20 px-12 text-center w-full">
+<p class="font-sans text-xs uppercase tracking-[0.1em] text-stone-500">© 2024 The Ethereal Editorial. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

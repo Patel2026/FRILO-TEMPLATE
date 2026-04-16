@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Réservations | FRILO LOUNGE & GRILL</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface font-body text-on-surface-variant selection:bg-primary selection:text-on-primary antialiased">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0e0e0e]/40 backdrop-blur-xl shadow-[0_0_20px_rgba(224,141,255,0.1)]">
+        <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+            <a href="index.html" class="text-2xl font-bold tracking-[-0.02em] text-white font-headline neon-glow-purple">
+                FRILO <span class="text-secondary">LOUNGE</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-10 font-headline tracking-tighter uppercase text-sm">
+                <a class="text-neutral-400 hover:text-white transition-colors" href="index.html">Accueil</a>
+                <a class="text-neutral-400 hover:text-white transition-colors" href="about.html">Esprit</a>
+                <a class="text-neutral-400 hover:text-white transition-colors" href="menu.html">Carte</a>
+                <a class="text-neutral-400 hover:text-white transition-colors" href="events.html">Événements</a>
+            </div>
+            <a href="reservations.html" class="bg-gradient-to-r from-primary to-primary-dim text-on-primary-fixed px-6 py-2.5 font-headline font-bold uppercase tracking-wider text-xs rounded-lg hover:scale-95 transition-all duration-300">
+                Réserver une table
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-20">
+        <!-- Hero Header -->
+        <header class="max-w-7xl mx-auto px-8 py-12 mb-12">
+            <div class="flex flex-col items-start gap-4">
+                <span class="font-label tracking-[0.2em] uppercase text-secondary font-bold">Réservations</span>
+                <h1 class="text-6xl md:text-8xl font-headline font-bold tracking-tighter text-white neon-glow-purple leading-none uppercase">
+                    Entrez dans la<br/><span class="text-primary italic">Légende.</span>
+                </h1>
+                <p class="max-w-xl text-lg text-on-surface-variant font-light mt-4">
+                    Vivez l'immersion totale au cœur de la Haie Vive. Sécurisez votre position dans le cercle restreint du FRILO Lounge & Grill.
+                </p>
+            </div>
+        </header>
+
+        <!-- Reservation & Contact Grid -->
+        <section class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <!-- Reservation Form Column -->
+            <div class="lg:col-span-7">
+                <div class="glass-panel border border-outline-variant/15 p-8 md:p-12 rounded-xl shadow-2xl relative overflow-hidden">
+                    <div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-[80px]"></div>
+                    <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-secondary/10 rounded-full blur-[80px]"></div>
+                    <h2 class="text-3xl font-headline font-bold text-white mb-8 uppercase tracking-tighter">Réserver mon Expérience</h2>
+                    <form class="space-y-8 relative z-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="relative group">
+                                <label class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Date</label>
+                                <input class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface appearance-none" type="date"/>
+                            </div>
+                            <div class="relative group">
+                                <label class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Heure</label>
+                                <select class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface appearance-none">
+                                    <option class="bg-surface">20:00</option>
+                                    <option class="bg-surface">21:00</option>
+                                    <option class="bg-surface">22:00</option>
+                                    <option class="bg-surface">23:00</option>
+                                    <option class="bg-surface">00:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="relative group">
+                                <label class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Convives</label>
+                                <input class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface" max="15" min="1" type="number" value="2"/>
+                            </div>
+                            <div class="relative group">
+                                <label class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Expérience</label>
+                                <select class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface appearance-none">
+                                    <option class="bg-surface">Accès Lounge Standard</option>
+                                    <option class="bg-surface">Service Bouteille VIP</option>
+                                    <option class="bg-surface">Comptoir Alchimie</option>
+                                    <option class="bg-surface">Grillades Midnight Privée</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="relative group">
+                                <label class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Nom Complet</label>
+                                <input class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface placeholder:text-surface-bright" placeholder="VOTRE NOM" type="text"/>
+                            </div>
+                            <div class="relative group">
+                                <label class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Téléphone</label>
+                                <input class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface placeholder:text-surface-bright" placeholder="+229 -- -- -- --" type="tel"/>
+                            </div>
+                        </div>
+                        <button class="w-full bg-gradient-to-r from-primary to-primary-dim text-on-primary-fixed py-5 font-headline font-bold text-lg rounded-lg hover:shadow-[0_0_30px_rgba(224,141,255,0.4)] transition-all duration-300 transform hover:-translate-y-1" type="submit">
+                            CONFIRMER LA DEMANDE
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact & Info Column -->
+            <div class="lg:col-span-5 flex flex-col gap-8">
+                <!-- Info Card -->
+                <div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant/5">
+                    <h3 class="text-xl font-headline font-bold text-white mb-6 uppercase italic">Coordonnées</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-secondary">
+                                <span class="material-symbols-outlined">location_on</span>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium">Localisation</p>
+                                <p class="text-sm font-light">Avenue Jean-Paul II, Haie Vive<br/>Cotonou, Bénin</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-secondary">
+                                <span class="material-symbols-outlined">call</span>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium">Téléphone</p>
+                                <p class="text-sm font-light">+229 01 00 00 00 00</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-secondary">
+                                <span class="material-symbols-outlined">mail</span>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium">Email</p>
+                                <p class="text-sm font-light">concierge@frilo-lounge.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dark Map Mockup -->
+                <div class="relative h-64 md:h-80 rounded-xl overflow-hidden bg-surface-container shadow-inner border border-outline-variant/10 group">
+                    <img class="w-full h-full object-cover grayscale brightness-50 contrast-125 opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="Carte Cotonou" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQft7a4u-Jvj2xHQJSY3mCols2Nh0dDi_B3ZWKlXoWE3zoTIXThbCDomvQ80d-qedU6cclVV00uNBNJaBEg5-dQI326IbGCXOTIx9FlM1f0CgaitRta4EPiXMhVMGUYzXX9t-SEs0Q7GfGwm9IYrZ1KQW2WoWYVAPHekClz7wjdw171pjoZIL9ubpcwodPM_NNmEnJNHtVVLxtpEXbzUaKjpAges75qHdjFBETaQRnw6TYpNlNspdgVY9VshMH4sqgtEJleDYvG6sC"/>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="relative">
+                            <div class="absolute -inset-4 bg-primary/30 rounded-full blur-xl animate-pulse"></div>
+                            <span class="material-symbols-outlined text-primary text-5xl relative z-10" style="font-variation-settings: 'FILL' 1;">location_on</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Operating Hours -->
+                <div class="bg-surface-container-high p-6 rounded-xl border-l-4 border-secondary">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-secondary font-bold uppercase tracking-widest text-[10px]">Statut : Ouvert</span>
+                        <span class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_10px_#22c55e]"></span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <p class="text-on-surface-variant uppercase text-[10px] tracking-widest font-bold">Lun - Jeu</p>
+                            <p class="text-white font-medium">18:00 - 03:00</p>
+                        </div>
+                        <div>
+                            <p class="text-on-surface-variant uppercase text-[10px] tracking-widest font-bold">Ven - Dim</p>
+                            <p class="text-white font-medium">18:00 - 05:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Access Protocols (FAQ) -->
+        <section class="max-w-7xl mx-auto px-8 mt-32">
+            <h2 class="text-4xl font-headline font-bold text-white mb-12 uppercase tracking-tighter italic">Protocoles d'Accès</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="group p-8 bg-surface-container-low rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all">
+                    <h4 class="text-white font-headline font-bold text-lg uppercase mb-4 tracking-tight">Code Vestimentaire</h4>
+                    <p class="text-on-surface-variant text-sm font-light leading-relaxed">
+                        Cyber-chic, avant-garde ou tenue de soirée haut de gamme exigée. Pas de vêtements de sport décontractés, de tongs ou de tenues de travail. La direction se réserve le droit de refuser l'entrée.
+                    </p>
+                </div>
+                <div class="group p-8 bg-surface-container-low rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all">
+                    <h4 class="text-white font-headline font-bold text-lg uppercase mb-4 tracking-tight">Âge Requis</h4>
+                    <p class="text-on-surface-variant text-sm font-light leading-relaxed">
+                        Le FRILO Lounge & Grill est strictement réservé aux 21 ans et plus. Une pièce d'identité valide avec photo est requise pour tous les convives.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0e0e0e] w-full py-16 px-8 border-t border-white/5">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+            <div class="space-y-6">
+                <div class="text-xl font-black text-white font-headline uppercase">FRILO <span class="text-secondary">LOUNGE</span></div>
+                <p class="font-body font-light tracking-wide text-neutral-500 text-sm leading-relaxed">
+                    Une destination pour les audacieux. Cotonou, Haie Vive.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <h5 class="text-white font-bold text-xs uppercase tracking-widest font-label">Navigation</h5>
+                <ul class="space-y-3 font-body font-light tracking-wide text-sm">
+                    <li><a class="text-neutral-500 hover:text-secondary transition-colors" href="index.html">Accueil</a></li>
+                    <li><a class="text-neutral-500 hover:text-secondary transition-colors" href="about.html">Esprit</a></li>
+                    <li><a class="text-neutral-500 hover:text-secondary transition-colors" href="menu.html">Carte</a></li>
+                    <li><a class="text-neutral-500 hover:text-secondary transition-colors" href="events.html">Événements</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h5 class="text-white font-bold text-xs uppercase tracking-widest font-label">Le Sanctum</h5>
+                <div class="pt-4">
+                    <div class="text-[10px] text-neutral-600 uppercase tracking-widest">© 2026 FRILO LOUNGE & GRILL.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

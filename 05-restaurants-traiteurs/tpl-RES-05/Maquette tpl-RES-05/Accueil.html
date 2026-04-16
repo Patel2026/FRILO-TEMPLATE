@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Grand Harvest | A World of Flavor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Be_Vietnam_Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#bbb9b3",
+                        "surface-container": "#f6f3eb",
+                        "surface-container-high": "#f0eee5",
+                        "background": "#fffcf5",
+                        "on-tertiary": "#ffffff",
+                        "secondary-dim": "#b40026",
+                        "on-error-container": "#520c00",
+                        "surface-bright": "#fffcf5",
+                        "primary-dim": "#745200",
+                        "primary-container": "#feb700",
+                        "inverse-surface": "#0e0e0b",
+                        "secondary-fixed-dim": "#ffafad",
+                        "on-background": "#383833",
+                        "secondary-fixed": "#ffc3c1",
+                        "tertiary-fixed-dim": "#ef8a26",
+                        "error": "#be2d06",
+                        "inverse-primary": "#feb700",
+                        "secondary": "#ca002c",
+                        "inverse-on-surface": "#9e9d97",
+                        "tertiary-container": "#ff9735",
+                        "surface-variant": "#eae8df",
+                        "tertiary-fixed": "#ff9735",
+                        "surface-container-highest": "#eae8df",
+                        "primary-fixed-dim": "#ecaa00",
+                        "surface-dim": "#e5e3d9",
+                        "on-primary-fixed-variant": "#5f4200",
+                        "tertiary-dim": "#884800",
+                        "error-container": "#f95630",
+                        "on-tertiary-container": "#4d2600",
+                        "secondary-container": "#ffc3c1",
+                        "on-surface-variant": "#65645f",
+                        "on-secondary-fixed": "#6f0013",
+                        "on-tertiary-fixed": "#291200",
+                        "outline": "#82817b",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#533a00",
+                        "on-surface": "#383833",
+                        "surface-tint": "#845d00",
+                        "on-tertiary-fixed-variant": "#5a2e00",
+                        "surface-container-low": "#fcf9f2",
+                        "on-primary-fixed": "#392700",
+                        "surface": "#fffcf5",
+                        "primary": "#845d00",
+                        "error-dim": "#b92902",
+                        "primary-fixed": "#feb700",
+                        "tertiary": "#995200",
+                        "on-secondary-container": "#94001d",
+                        "on-secondary-fixed-variant": "#a50022"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+        }
+        .harvest-gradient {
+            background: linear-gradient(45deg, #845d00 0%, #feb700 100%);
+        }
+        .harvest-shadow {
+            box-shadow: 0px 20px 40px rgba(56, 56, 51, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fffcf5]/70 dark:bg-stone-900/70 backdrop-blur-xl shadow-[0_20_40px_rgba(56,56,51,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-extrabold text-[#845d00] dark:text-[#feb700] tracking-tighter font-headline">
+                The Grand Harvest
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-headline font-bold tracking-tight text-[#845d00] dark:text-[#feb700] border-b-2 border-[#845d00] pb-1" href="#">Home</a>
+<a class="font-headline font-bold tracking-tight text-[#383833] dark:text-stone-300 hover:text-[#845d00] transition-colors" href="#">About</a>
+<a class="font-headline font-bold tracking-tight text-[#383833] dark:text-stone-300 hover:text-[#845d00] transition-colors" href="#">Menu</a>
+<a class="font-headline font-bold tracking-tight text-[#383833] dark:text-stone-300 hover:text-[#845d00] transition-colors" href="#">Gallery</a>
+<a class="font-headline font-bold tracking-tight text-[#383833] dark:text-stone-300 hover:text-[#845d00] transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:block font-headline font-bold text-[#845d00] dark:text-[#feb700] hover:scale-105 transition-transform duration-200">Find Us</button>
+<button class="harvest-gradient text-white px-6 py-2.5 rounded-xl font-headline font-bold hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg">
+                    Book a Table
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-[921px] flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="The Grand Harvest Buffet" class="w-full h-full object-cover" data-alt="A sprawling, high-end buffet spread with vibrant salads, roasted meats, and international dishes under warm, sun-drenched restaurant lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzjdQTXQsbnlGkp85Urjy-Tg_YTPdkqXphAePuJQf0Yi2Zrak0DQXoRo7X4qmaBHeBKFoDAHYiGotUsQkh2ccODdzidCc3Dc4bWdHBlEaiD2pF24vbUXQbT_q5Fm7L5XLqnDcWVbVgXuM1Am2smJGu32qoNRkBgMQgmg2s75dXQYdQ3-JIG9NPLkQ3_iEBPluaroS985uNR3hKsgFX04kU6gGPbU3TyvYxmtdIyL9_T1FoSkCrCH2k0U5xFfmqOqgiZchG_Iq_o4wF"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl">
+<span class="inline-block px-4 py-1.5 mb-6 rounded-full bg-tertiary-container text-on-tertiary-container font-headline text-xs font-bold uppercase tracking-widest">
+                    Experience Abundance
+                </span>
+<h1 class="text-6xl md:text-8xl font-headline font-extrabold text-on-surface leading-[1.1] mb-8 -tracking-tight">
+                    A World of <span class="text-secondary">Flavor</span>, All on One Plate.
+                </h1>
+<p class="text-xl text-on-surface-variant mb-10 max-w-lg leading-relaxed">
+                    Indulge in a curated collection of culinary masterpieces. From farm-to-table freshness to international delights, we bring the harvest to your heart.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="harvest-gradient text-on-primary px-10 py-5 rounded-xl font-headline font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-xl">
+                        Plan Your Visit
+                    </button>
+<button class="bg-surface-container-highest text-on-surface px-10 py-5 rounded-xl font-headline font-bold text-lg hover:scale-105 active:scale-95 transition-all">
+                        View Menu
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<!-- Concept Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden harvest-shadow">
+<img alt="Chef preparing fresh greens" class="w-full h-full object-cover" data-alt="Professional chef in a clean kitchen carefully arranging microgreens on a vibrant salad platter, soft natural light from a window." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIrApe_qeZFy_LouWWBc9hNOyTelolClQBWw_bKyAJh68gJBoUVef2TMRiQBPngvv-FhqE_ZNii44fSipd1xiSXt9EEot4FE9pOk2sC0LJcX9D3Im_461o2z6e3akTmwKzXQRO1UxxHovubLYekIBmseV1GThBpkFV7aAybiepkcSDShMzI0iFfi8-Bnza6woo6pVAiA1HdVsoyxfd9FNqB-NB3c6d5sIVb-8n3WoaMtq4WMj8HjPNryDPdpzWOMmJzSnrWgG42E-U"/>
+</div>
+<div class="absolute -bottom-8 -right-8 w-64 h-64 rounded-lg overflow-hidden border-[12px] border-surface harvest-shadow hidden lg:block">
+<img alt="Fresh vegetables" class="w-full h-full object-cover" data-alt="Close up of vibrant heirlooom tomatoes and fresh herbs on a rustic wooden board, cinematic warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsZUqD0OFrGxDuzbVVXIur3ir2nprmMbnWfRI_4eemImfwynW_qRAUJiki-7VTf1jHqZreNvAeh_ts8Fk0Dbp7BehJHkXwQ8S8mgvQ1Dn_zvz6jESf0j6E95UHt3otVku0DxmIszAStfrwkqPAykTgGpJxembIasGnuAjEMF8zgF4tfcCj8cyUsJRDr10I5rPrLKXvQlEIv55u0jvwxtrN9kHZ3lEcaOQB2y5Ewgn667l2LFswt_HX2sutRJNcG9bOTeJSumli3okj"/>
+</div>
+</div>
+<div>
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface mb-8 leading-tight">
+                        Freshness Is Our <span class="italic font-normal">Only</span> Secret.
+                    </h2>
+<div class="space-y-6 text-lg text-on-surface-variant leading-relaxed">
+<p>
+                            At The Grand Harvest, we’ve reimagined the buffet experience. No more steam tables and generic dishes. We believe in high-end editorial dining that’s accessible to everyone.
+                        </p>
+<p>
+                            Our all-you-can-eat philosophy is rooted in seasonality. Every morning, our chefs hand-select produce from local valleys to ensure your plate is as vibrant as the season itself.
+                        </p>
+<div class="flex items-center gap-4 pt-4">
+<div class="flex -space-x-3">
+<div class="w-12 h-12 rounded-full border-4 border-surface bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">eco</span>
+</div>
+<div class="w-12 h-12 rounded-full border-4 border-surface bg-secondary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">restaurant</span>
+</div>
+<div class="w-12 h-12 rounded-full border-4 border-surface bg-tertiary-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-container">group</span>
+</div>
+</div>
+<p class="text-sm font-headline font-bold text-on-surface uppercase tracking-wider">Join 500+ daily happy guests</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Food Categories (Bento Grid) -->
+<section class="py-24 bg-surface-container">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface mb-4">Culinary Pillars</h2>
+<p class="text-lg text-on-surface-variant max-w-xl">Explore our four signature stations, each dedicated to a specific craft and culture.</p>
+</div>
+<button class="text-primary font-headline font-bold flex items-center gap-2 group">
+                    View Stations <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 grid-rows-2 gap-6 min-h-[700px]">
+<!-- The Grill -->
+<div class="md:col-span-7 bg-surface-container-lowest rounded-lg p-8 harvest-shadow relative overflow-hidden group">
+<div class="relative z-10">
+<h3 class="text-3xl font-headline font-extrabold mb-2">The Grill</h3>
+<p class="text-on-surface-variant max-w-xs">Premium cuts, slow-roasted over hickory and oak coals.</p>
+</div>
+<img alt="Premium grilled meat" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-700" data-alt="Slow cooked beef brisket and ribs on a charcoal grill with smoke rising, professional food photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMPxGyzJYHzvmef2WETJIRnrMaBN_si1CiVJ31mjuldxJ8bk3iIHQt8gHHFVMjPrJ-Qo3nwLEuStBG1hxaU89edgO4BleXUssxyz5dSQAeLT_f0aa6_hBJ2YdZnmeNxVwi3Mtw7bMUNWltC10iY69suZA93tMTfO8XJiC1nhgVgUvdqINHr8jT6_C3B8sqOt_CaQ7A2t77nDlmmBCws6MAXBNskaerrhiORhFa8fDZ-5zv8yg1x-mZ7AnpsdMootT8wihhtp2dkVkZ"/>
+<div class="absolute bottom-8 right-8">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-3xl">skillet</span>
+</div>
+</div>
+</div>
+<!-- Farm Fresh Salads -->
+<div class="md:col-span-5 bg-surface-container-lowest rounded-lg p-8 harvest-shadow relative overflow-hidden group">
+<div class="relative z-10">
+<h3 class="text-3xl font-headline font-extrabold mb-2 text-primary-dim">Farm Fresh Salads</h3>
+<p class="text-on-surface-variant max-w-xs">Picked this morning, tossed with house-made vinaigrettes.</p>
+</div>
+<img alt="Fresh green salad" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700" data-alt="A large, vibrant green salad bowl with colorful vegetables, nuts, and a drizzle of dressing, bright airy lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDShHM0i5sPeg8zDAif7ffydZnaw_3Q1gea8BWXCFoH4ubT1fYKPgdx_nCCFwCPVzRsJyV_Em6P17UP1AnbGMtwLj4CRH_czjPSEr8FsYPChVko3tKAYUJL5c_lvaqe7qyahJPfg9HhxZozwB0f7W1MMj3qNl9RHvsaufYYb_AVzcTXXYJEL26w0mlGrQGhtUC2ywXnWyfAHRIqG1rRO8ZF-RSWJsarEjnr21IBsPSMckEbYPmdhBY7U5-DchPK5SXK_hNm6kYI_Tt4"/>
+</div>
+<!-- International Flavors -->
+<div class="md:col-span-5 bg-surface-container-lowest rounded-lg p-8 harvest-shadow relative overflow-hidden group">
+<div class="relative z-10">
+<h3 class="text-3xl font-headline font-extrabold mb-2 text-secondary">International Flavors</h3>
+<p class="text-on-surface-variant max-w-xs">A rotating voyage from Tokyo to Tuscany.</p>
+</div>
+<img alt="International cuisine" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-700" data-alt="An assortment of sushi, pasta, and dim sum elegantly presented on white ceramic plates, high contrast lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7ldj5HN_M--YK3roMII4lwuaEf48TXZSqzgPChpmYGPlvaPKRUhphRMMs9AOfR7EaUGrov5g8oejyOpMAdoGYfmKejavaRP6u9eyQ9L_76R1V6GZhEjQxtp182km1M8cGGO7lCxlOrxfCvEY5KNLnMqrkh_M3UpsWj0U-6liyJQl76n6jOja4BZtcoWAMicv8GbiUoeQ8ELIfvvR0LezF9uYOUYyjf4tHRu1TE3Mzilad5hBR7tYjoOfML5nlJrSD9AY0nHM6DeK2"/>
+</div>
+<!-- Pastry Shop -->
+<div class="md:col-span-7 bg-surface-container-lowest rounded-lg p-8 harvest-shadow relative overflow-hidden group">
+<div class="relative z-10">
+<h3 class="text-3xl font-headline font-extrabold mb-2 text-tertiary">Pastry Shop</h3>
+<p class="text-on-surface-variant max-w-xs">Artisanal desserts and cakes made by our master pastry chefs.</p>
+</div>
+<img alt="Handcrafted desserts" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700" data-alt="A variety of colorful French macarons and delicate tarts arranged in a glass display case, soft dreamy lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY5wXrK5-lHEhCpk6OTaJh1Xik0kSgH5L7XH50fI-8mytkX9nxm7YRyllZXX1frqYv3NviJQ8VaJtCWJmzjmbk-Jd7bZEYsBj2EvKqid5UXZjJr_jnhZIkfOVVvxDbxuTUeei141n35peLVxXkkDdvoVVes5UzQJLUni4t8V7KhNtLnbrJtg4CMdf-QZ78RPRA6p4PQOQIDzp7Z-fqwTE0Z3soKqdeXTW0ZTesCPqCOslwa9f4GZpMfdwxoLoHr410jubc3kpxEGr3"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-32 bg-surface overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container/50 -skew-x-12 translate-x-20 z-0"></div>
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="text-center mb-16">
+<h2 class="text-5xl font-headline font-extrabold mb-4">Exceptional Value</h2>
+<p class="text-on-surface-variant text-lg">One price. Infinite possibilities. Choose your time to dine.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+<!-- Lunch Card -->
+<div class="bg-surface-container-lowest p-10 rounded-xl harvest-shadow border-t-8 border-primary relative">
+<div class="flex justify-between items-start mb-8">
+<div>
+<h3 class="text-3xl font-headline font-bold">The Lunch Feast</h3>
+<p class="text-on-surface-variant">Daily 11:00 AM - 4:00 PM</p>
+</div>
+<span class="material-symbols-outlined text-primary text-4xl">wb_sunny</span>
+</div>
+<div class="space-y-6">
+<div class="flex justify-between items-center pb-4 border-b border-outline-variant/20">
+<span class="text-xl font-bold">Adults</span>
+<span class="text-3xl font-headline font-extrabold text-primary">$28.95</span>
+</div>
+<div class="flex justify-between items-center pb-4 border-b border-outline-variant/20">
+<span class="text-xl font-bold">Children (5-12)</span>
+<span class="text-3xl font-headline font-extrabold text-primary">$14.50</span>
+</div>
+</div>
+<div class="mt-8 p-4 bg-surface-container rounded-lg text-sm italic text-on-surface-variant">
+                        *Inclusive of bottomless soft drinks and standard coffee.
+                    </div>
+</div>
+<!-- Dinner Card -->
+<div class="bg-secondary-container/10 p-10 rounded-xl harvest-shadow border-t-8 border-secondary relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4">
+<span class="bg-secondary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Premium Selection</span>
+</div>
+<div class="flex justify-between items-start mb-8">
+<div>
+<h3 class="text-3xl font-headline font-bold">The Grand Dinner</h3>
+<p class="text-on-surface-variant">Daily 5:00 PM - 10:00 PM</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-4xl">dark_mode</span>
+</div>
+<div class="space-y-6">
+<div class="flex justify-between items-center pb-4 border-b border-secondary/10">
+<span class="text-xl font-bold">Adults</span>
+<span class="text-3xl font-headline font-extrabold text-secondary">$42.95</span>
+</div>
+<div class="flex justify-between items-center pb-4 border-b border-secondary/10">
+<span class="text-xl font-bold">Children (5-12)</span>
+<span class="text-3xl font-headline font-extrabold text-secondary">$19.95</span>
+</div>
+</div>
+<div class="mt-8 p-4 bg-secondary-container/20 rounded-lg text-sm font-medium text-secondary">
+                        Includes Weekend Specialty Seafood and Prime Rib carving station.
+                    </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Preview -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-headline font-extrabold mb-4">Step Into The Atrium</h2>
+<p class="text-on-surface-variant text-lg max-w-2xl mx-auto">A bright, family-friendly atmosphere designed for celebration and comfort.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="aspect-square rounded-xl overflow-hidden group relative">
+<img alt="Restaurant Ambiance 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Interior of a modern, high-end restaurant with large windows, natural wood furniture, and greenery hanging from the ceiling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9p9dauxWVOy_uvdQm4z3pkVHISHTd1mrpF0jNdxElYF_tpDMS5JBXV0i7kW8K2U9OY-kzQGl74O9Gek0krgd9tBnAORTuwEQH2wLewRK-YtOy8-97_w84y4gB8v6AvZSKJEiccYyxr23F0h1C4WbpYT4Da0ETUlW0T_cDTGr8g6-0aLTrIOmxFv41Up-XZYSLsxRj1hScNBgWQ0FUu-3A0iy4praOqgkb7VtwOxzje_eebepKul1S6gXDPMt8D4OLJOdZpthuHN39"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden group relative md:translate-y-12">
+<img alt="Restaurant Ambiance 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Wide shot of a bustling, bright restaurant dining area with families enjoying a meal in a sophisticated environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuep7uIwgDWPdxctTcxwv9ftKnR49X4cSQNWQWsf4u820L9lsYfwaXdBsMP9zgtj5IkhQaJfNnw6iASNhh-qCQvejGwxRPujdlAiQtcYMlLzxx7p3LcCmcIo5X5Cs_xqpv-qUUxNp07njtn11hOBclAFS1Y9xlX0RJFVr6u0IIRlcgX76BcKCmGODlsY5TY5C5wQ5BShNRx_PawlFVYqmtd81NdL1ecIb6M0apEGvlsQntI6-sbapSgxpx-VMsJ1Qhg6bIbC1m1ndh"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden group relative">
+<img alt="Restaurant Ambiance 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close up of a beautifully set dining table with sparkling glassware and fresh flowers in a sunlit corner of the restaurant." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIwQRmfsKdFozs5zK5BVJFu6UhgHbo5jZyOBuR05S1RNf70FEnwlrFqkP2o4swR9qs9U2k1mZ3cso9zj4Br9jX7cYeeuXpapT3gfw8fs_rHgt1smOWdly48x_YySKdqOLGAzr-3UR_Y9bVhGOUStT2irEKISVuNMLDz-OwOCqRzYibFT0pDw6vj-7dCso9NlrltmQeSHLU12Y1wmV2e2W3RcPlB-0uUQfVr_0lbvtVagTXYA0BXbtI-rXwlTtwbivCJle7LjtkaGsY"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl">zoom_in</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-32 relative">
+<div class="max-w-5xl mx-auto px-8 bg-on-surface rounded-xl p-16 text-center relative overflow-hidden">
+<div class="absolute inset-0 bg-secondary/10 pointer-events-none"></div>
+<h2 class="text-4xl md:text-6xl font-headline font-extrabold text-white mb-8 relative z-10">Ready to Taste the Harvest?</h2>
+<p class="text-surface-variant text-xl mb-12 max-w-2xl mx-auto relative z-10">Walk-ins are always welcome, but we recommend booking for groups of 6 or more.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6 relative z-10">
+<button class="harvest-gradient text-white px-12 py-6 rounded-xl font-headline font-bold text-xl hover:scale-105 active:scale-95 transition-all shadow-2xl">
+                    Plan Your Visit
+                </button>
+<button class="bg-surface/10 hover:bg-surface/20 text-white border border-surface/30 px-12 py-6 rounded-xl font-headline font-bold text-xl transition-all">
+                    Call: (555) HARVEST
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-[#f6f3eb] dark:bg-stone-950">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-12 py-16 w-full text-center md:text-left max-w-7xl mx-auto">
+<div class="space-y-4">
+<div class="text-lg font-bold text-[#845d00] font-headline uppercase tracking-tighter">The Grand Harvest</div>
+<p class="font-['Be_Vietnam_Pro'] text-sm text-[#383833] dark:text-stone-400 leading-relaxed">
+                    © 2024 The Grand Harvest. All rights reserved. Open Daily: 11am - 10pm. 123 Orchard Lane, Harvest Valley.
+                </p>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-headline font-bold text-[#845d00] uppercase text-xs tracking-widest mb-2">Quick Links</span>
+<a class="font-['Be_Vietnam_Pro'] text-sm text-[#383833] dark:text-stone-400 opacity-80 hover:opacity-100 hover:text-[#ca002c] transition-colors" href="#">Hours</a>
+<a class="font-['Be_Vietnam_Pro'] text-sm text-[#383833] dark:text-stone-400 opacity-80 hover:opacity-100 hover:text-[#ca002c] transition-colors" href="#">Location</a>
+<a class="font-['Be_Vietnam_Pro'] text-sm text-[#383833] dark:text-stone-400 opacity-80 hover:opacity-100 hover:text-[#ca002c] transition-colors" href="#">Instagram</a>
+<a class="font-['Be_Vietnam_Pro'] text-sm text-[#383833] dark:text-stone-400 opacity-80 hover:opacity-100 hover:text-[#ca002c] transition-colors" href="#">Facebook</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-headline font-bold text-[#845d00] uppercase text-xs tracking-widest mb-2">Newsletter</span>
+<p class="font-['Be_Vietnam_Pro'] text-sm text-[#383833] dark:text-stone-400 mb-2">Get recipes and seasonal news.</p>
+<div class="flex">
+<input class="bg-surface border-none rounded-l-lg px-4 py-2 w-full text-sm focus:ring-2 focus:ring-primary/20" placeholder="Email address" type="email"/>
+<button class="bg-primary text-white px-4 py-2 rounded-r-lg font-bold text-sm">Join</button>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

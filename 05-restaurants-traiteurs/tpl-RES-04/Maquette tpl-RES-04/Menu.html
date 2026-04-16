@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Drinks Menu | Electric Sanctuary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#2c2c2c",
+                    "on-surface": "#ffffff",
+                    "tertiary-dim": "#ff51fa",
+                    "inverse-on-surface": "#565554",
+                    "inverse-primary": "#9a00cf",
+                    "on-surface-variant": "#adaaaa",
+                    "surface-container-highest": "#262626",
+                    "on-background": "#ffffff",
+                    "error-dim": "#d73357",
+                    "surface-tint": "#e08dff",
+                    "on-error": "#490013",
+                    "tertiary-fixed-dim": "#ff61f8",
+                    "secondary-dim": "#e6c047",
+                    "inverse-surface": "#fcf8f8",
+                    "primary-fixed-dim": "#d160ff",
+                    "surface-container": "#1a1919",
+                    "on-primary": "#4f006c",
+                    "secondary": "#f5ce53",
+                    "on-tertiary-fixed-variant": "#6a006a",
+                    "error-container": "#a70138",
+                    "on-primary-container": "#3d0055",
+                    "tertiary": "#ff51fa",
+                    "on-tertiary": "#400040",
+                    "error": "#ff6e84",
+                    "secondary-fixed": "#f5ce53",
+                    "on-tertiary-container": "#230023",
+                    "primary-dim": "#bc00fb",
+                    "tertiary-fixed": "#ff81f5",
+                    "surface-variant": "#262626",
+                    "surface-dim": "#0e0e0e",
+                    "surface-container-high": "#201f1f",
+                    "surface": "#0e0e0e",
+                    "outline": "#777575",
+                    "on-primary-fixed": "#000000",
+                    "tertiary-container": "#fe00fe",
+                    "primary": "#e08dff",
+                    "surface-container-lowest": "#000000",
+                    "secondary-fixed-dim": "#e6c047",
+                    "background": "#0e0e0e",
+                    "surface-container-low": "#131313",
+                    "on-tertiary-fixed": "#320032",
+                    "primary-container": "#d978ff",
+                    "on-secondary-fixed-variant": "#634e00",
+                    "on-secondary-container": "#fff7ea",
+                    "on-error-container": "#ffb2b9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        background: rgba(38, 38, 38, 0.4);
+        backdrop-filter: blur(20px);
+      }
+      .neon-text-glow {
+        text-shadow: 0 0 10px rgba(224, 141, 255, 0.5);
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface-variant selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-950/40 backdrop-blur-xl flex justify-between items-center px-8 py-4 max-w-full mx-auto shadow-[0_0_20px_rgba(224,141,255,0.1)]">
+<div class="text-2xl font-bold tracking-[-0.02em] text-white font-headline">Electric Sanctuary</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-neutral-400 hover:text-white transition-colors font-headline tracking-tighter uppercase" href="#">Home</a>
+<a class="text-neutral-400 hover:text-white transition-colors font-headline tracking-tighter uppercase" href="#">About</a>
+<a class="text-fuchsia-400 border-b-2 border-fuchsia-500 pb-1 font-headline tracking-tighter uppercase" href="#">Drinks</a>
+<a class="text-neutral-400 hover:text-white transition-colors font-headline tracking-tighter uppercase" href="#">Events</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-dim text-on-primary-fixed px-6 py-2 rounded-lg font-headline font-bold uppercase tracking-wider hover:scale-95 transition-all duration-200">
+            Book a Table
+        </button>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-[614px] flex items-center justify-center pt-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-surface/60 to-surface"></div>
+<img class="w-full h-full object-cover" data-alt="cinematic close-up of a crystal glass cocktail with purple neon lighting reflecting on dark liquid and ice in a dark luxury lounge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBugJYCu2yeOj8ck08ahtNdtyb2d8E9g6S4hIwBwATWmCELEH_V1fa3cRGjLqGgIGlOwq1-So8-rHJpLAPE7gqunfetDk5Hw7C1hoFXe1bJfLLlOAWt4CDwtkUp-DxngZ4Aef24nq748pxGqbDfuiu2TwSDWChFT7TK9vsVaUjjdKvybI5j8NY7JB_0-P6W3Wg5Wz2g_gGWAvaRlv-9LxMrXmmnB36s48eOkSZZm63P7j9Y2xZD2UrxirRgWogBD7ZsG3S0KtcW8f8"/>
+</div>
+<div class="relative z-10 text-center px-6">
+<h1 class="font-headline text-6xl md:text-8xl font-bold text-white tracking-tighter uppercase leading-none neon-text-glow">
+                The Liquid<br/><span class="text-primary italic">Manifesto</span>
+</h1>
+<p class="mt-6 font-body text-lg md:text-xl max-w-xl mx-auto text-on-surface-variant font-light tracking-wide">
+                Where molecular chemistry meets the neon pulse of the night.
+            </p>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-24 space-y-32">
+<!-- Signature Elixirs Section -->
+<section>
+<div class="flex items-end gap-4 mb-16">
+<h2 class="font-headline text-4xl md:text-6xl font-bold text-primary tracking-tighter uppercase">Signature Elixirs</h2>
+<div class="h-px flex-grow bg-gradient-to-r from-primary/30 to-transparent mb-4"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<!-- Drink 1 -->
+<div class="group flex flex-col md:flex-row gap-8 bg-surface-container-low p-6 rounded-xl hover:bg-surface-container transition-colors duration-500">
+<div class="w-full md:w-48 h-64 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" data-alt="modern craft cocktail with edible flowers and vibrant purple smoke in a tall glass against a dark moody background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1AFcp5v_ELcHPIpsX3HvvYuEB0EDxssHbUOQ3MGzoMcDIB0nnyEr0CnOrZqWMwQtPypdXnPfQ75Wo40zKlZnFWvWSgZiS0bB1R72SyW4zBGC_IdQnRps_CPwO01EnErz6bx1aczHSDDR8LsPiDd9SpsMuTYeUTnmGoZu7owUpphM9va185J76dbcOZWK2qBW5uSCSzdnNJP_sJHmUA29RYaoVZDMM0QaipcrMLqPAF3josl_3nzhU8Hso1LhzLvRqHerXnSqgm9OU"/>
+</div>
+<div class="flex-1 flex flex-col justify-center">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline text-2xl text-white font-bold">Electric Violet</h3>
+<span class="font-headline text-secondary text-xl font-bold tracking-tighter">$24</span>
+</div>
+<p class="font-body text-on-surface-variant font-light mb-6">Empress gin, lavender reduction, activated charcoal sphere, and a hint of static electricity.</p>
+<div class="flex gap-2">
+<span class="px-3 py-1 bg-surface-container-highest text-[10px] uppercase tracking-[0.2em] font-label text-primary-fixed border border-primary/20 rounded-full">Molecular</span>
+<span class="px-3 py-1 bg-surface-container-highest text-[10px] uppercase tracking-[0.2em] font-label text-secondary-fixed border border-secondary/20 rounded-full">House Favorite</span>
+</div>
+</div>
+</div>
+<!-- Drink 2 -->
+<div class="group flex flex-col md:flex-row gap-8 bg-surface-container-low p-6 rounded-xl hover:bg-surface-container transition-colors duration-500">
+<div class="w-full md:w-48 h-64 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" data-alt="short glass with dark red liquid and orange peel garnish under dramatic spotlight in a dark room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQjEcCFeI0XRWu6keiJbT9XrEY_fR_JF8hRo8urXwFygQJHn55GlaK2oD6YKFMrEVnvAvdiVtAsFz5W-6veiTtrsKNN1h8PEE393p1UYM2azUPll15u271b0lNc8ooRSBRbsD7XSz2-Ieyfe7GyV_9Y59XomQSYL7enLgBDY_nToKaPrLXYF4TEErnvMemkn2Qn9o0iLolG3kfVOslkPk3ZgHHqxrBhDSYti8q9hAgrAAc87M2yKkMQ4y7jVx0ulARfLlclCmLLs7b"/>
+</div>
+<div class="flex-1 flex flex-col justify-center">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline text-2xl text-white font-bold">Neon Negroni</h3>
+<span class="font-headline text-secondary text-xl font-bold tracking-tighter">$22</span>
+</div>
+<p class="font-body text-on-surface-variant font-light mb-6">Yuzu infused gin, amaro blend, and a dehydrated blood orange glowing under UV.</p>
+<div class="flex gap-2">
+<span class="px-3 py-1 bg-surface-container-highest text-[10px] uppercase tracking-[0.2em] font-label text-primary-fixed border border-primary/20 rounded-full">Citrus</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Classic Noir Section -->
+<section>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+<div class="lg:col-span-1">
+<h2 class="font-headline text-4xl font-bold text-primary tracking-tighter uppercase mb-6">Classic Noir</h2>
+<p class="font-body text-on-surface-variant font-light mb-8">The eternal silhouettes of mixology, refined for the midnight hour. No frills, just perfection.</p>
+<div class="aspect-[4/5] rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="vintage leather armchair next to a marble bar with a classic old fashioned cocktail and soft amber lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2x2Cx3Wi0LgMxmQ0-bhD6nB8WJEZJYJ6cCgOZu7HYs2efORp0Q3q2hyc2gmZ6lVq6XdPZKg6dwlkyD5E5lrFwL4LTUCSW3DnsCEval2mqnD07ffGx7MYCj499ETGlANpLE-PX_MSqyxviOZ68OmBeoa4aT_1lQZfvthOnrL8DMSxr1kaEKBoQOr0rrYbU-3fy4_YWVrupTCfUcQr74nEIvWjOolw5dKdKbnE6Ev9LCEUhXX3NEqAooXI9xHYl1Uxu_H3NhV3WnA6K"/>
+</div>
+</div>
+<div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
+<!-- Classic 1 -->
+<div class="border-b border-outline-variant/10 pb-6">
+<div class="flex justify-between mb-2">
+<h4 class="font-headline text-lg text-white uppercase tracking-tight">Sanctuary Old Fashioned</h4>
+<span class="text-secondary font-bold">$18</span>
+</div>
+<p class="text-sm font-light leading-relaxed">Single barrel bourbon, black walnut bitters, cedar smoke finish.</p>
+</div>
+<!-- Classic 2 -->
+<div class="border-b border-outline-variant/10 pb-6">
+<div class="flex justify-between mb-2">
+<h4 class="font-headline text-lg text-white uppercase tracking-tight">Vesper Dusk</h4>
+<span class="text-secondary font-bold">$19</span>
+</div>
+<p class="text-sm font-light leading-relaxed">Potato vodka, dry gin, lillet blanc, lemon twist oil essence.</p>
+</div>
+<!-- Classic 3 -->
+<div class="border-b border-outline-variant/10 pb-6">
+<div class="flex justify-between mb-2">
+<h4 class="font-headline text-lg text-white uppercase tracking-tight">Midnight Manhattan</h4>
+<span class="text-secondary font-bold">$20</span>
+</div>
+<p class="text-sm font-light leading-relaxed">Rye whiskey, sweet vermouth, luxardo cherry infusion.</p>
+</div>
+<!-- Classic 4 -->
+<div class="border-b border-outline-variant/10 pb-6">
+<div class="flex justify-between mb-2">
+<h4 class="font-headline text-lg text-white uppercase tracking-tight">Espresso Oblivion</h4>
+<span class="text-secondary font-bold">$21</span>
+</div>
+<p class="text-sm font-light leading-relaxed">Cold brew concentrate, vanilla bean vodka, dark cacao dust.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Reserve Spirits Section (Asymmetric Grid) -->
+<section>
+<div class="flex items-center gap-8 mb-16">
+<h2 class="font-headline text-4xl md:text-6xl font-bold text-primary tracking-tighter uppercase whitespace-nowrap">Reserve Spirits</h2>
+<div class="h-px w-full bg-surface-container-highest"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<div class="md:col-span-2 bg-surface-container-low p-10 rounded-xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4">
+<span class="material-symbols-outlined text-secondary text-4xl opacity-20">hotel_class</span>
+</div>
+<span class="font-label text-[10px] tracking-[0.3em] text-secondary-fixed mb-4 block">RARE VINTAGE</span>
+<h3 class="font-headline text-3xl text-white font-bold mb-4">Macallan 25 Year</h3>
+<p class="font-body font-light mb-8 max-w-sm">Sherry-seasoned oak casks from Jerez, Spain. Notes of citrus, dried fruits, and wood smoke.</p>
+<div class="text-secondary text-2xl font-bold font-headline tracking-tighter">$145 <span class="text-sm font-normal text-on-surface-variant italic">/ pour</span></div>
+</div>
+<div class="md:col-span-1 bg-surface-container-low p-8 rounded-xl flex flex-col justify-between group border border-white/5 hover:border-primary/20 transition-all">
+<div>
+<h3 class="font-headline text-xl text-white font-bold mb-2">Clase Azul Ultra</h3>
+<p class="text-xs font-light text-on-surface-variant">Anejo tequila aged for five years in Spanish sherry casks.</p>
+</div>
+<div class="text-secondary text-xl font-bold font-headline mt-8">$120</div>
+</div>
+<div class="md:col-span-1 bg-surface-container-low p-8 rounded-xl flex flex-col justify-between group border border-white/5 hover:border-primary/20 transition-all">
+<div>
+<h3 class="font-headline text-xl text-white font-bold mb-2">Hibiki 21 Year</h3>
+<p class="text-xs font-light text-on-surface-variant">A symphony of at least 20 whiskies. Sublimely harmonious.</p>
+</div>
+<div class="text-secondary text-xl font-bold font-headline mt-8">$110</div>
+</div>
+</div>
+</section>
+<!-- Bottle Service (Premium Section) -->
+<section class="bg-surface-container-low rounded-3xl p-8 md:p-16 relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<img class="w-full h-full object-cover" data-alt="blurred night club background with bokeh lights and champagne sparklers in the distance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkY25gGodKB2Oou0g4a_eooRdednbb9k4qFUv38uJaviokHit63jeOvPkAPaTUcY9SlSGAtfrzhPb0sPeu9OxBpluKEMab7w7cajneVZKS4f392DBwObRxW2UPw_aEToFLiB8vqOl3ClgNBhbJbmMywto5812JNcXQx6Qz5MlR8VdpEblh1vd4-zNQlKu8nDCtxv1NE0tufYI1Z0TQYzgIKqt_AIfjooJkUu85-Vc63f-JuJYKrQEUowxptA9_i-hC_63tgo5PolLX"/>
+</div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline text-5xl md:text-7xl font-bold text-white tracking-tighter uppercase leading-none mb-8">Bottle<br/><span class="text-secondary">Service</span></h2>
+<p class="font-body text-lg text-on-surface-variant mb-12 max-w-md">Elevate your evening with our exclusive table service. All presentations include premium mixers, fresh garnishes, and a dedicated host.</p>
+<div class="space-y-6">
+<div class="flex items-center justify-between border-b border-outline-variant/20 pb-4">
+<span class="font-headline text-xl text-white tracking-tight">Ace of Spades Gold</span>
+<span class="text-secondary font-bold text-2xl tracking-tighter">$1,200</span>
+</div>
+<div class="flex items-center justify-between border-b border-outline-variant/20 pb-4">
+<span class="font-headline text-xl text-white tracking-tight">Don Julio 1942 Magnum</span>
+<span class="text-secondary font-bold text-2xl tracking-tighter">$1,850</span>
+</div>
+<div class="flex items-center justify-between border-b border-outline-variant/20 pb-4">
+<span class="font-headline text-xl text-white tracking-tight">Grey Goose VX Luxe</span>
+<span class="text-secondary font-bold text-2xl tracking-tighter">$750</span>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-secondary to-primary opacity-20 blur-2xl group-hover:opacity-40 transition duration-1000"></div>
+<div class="relative aspect-square bg-surface-container-high rounded-2xl overflow-hidden border border-white/10 p-2">
+<img class="w-full h-full object-cover rounded-xl shadow-2xl" data-alt="luxury champagne bottle on ice with gold sparklers in a dark VIP lounge setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5B3BiNxASjziTh_qNkm9bo3aiZoRIgAUGj-74v9fTS0ntWGtVEz8z2CZdNRFDnsGisIgQNRAmOin2uUB0JfWictCv0iXDVetanTpaexuPcgZYM-iRy-ZsIcfN9dUgPXdGA9rr5ajegKUuBl9C9frbaLSxC1XKOZzcNmuYMi1fp0imuIZSXCtB6cB_MA73Xvd38DIzqgKYYbW4JwO-PK3UScoN2g-o_ZxBgJpFqYEU5R_De0uNCUopzle7Ub9PNS_1h6F5_TGglmBC"/>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-secondary text-on-secondary-fixed p-6 rounded-xl shadow-xl hidden md:block">
+<p class="font-headline font-black text-2xl uppercase tracking-tighter leading-none italic">VIP Only</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-950 w-full py-16 px-8 border-t border-white/5 mt-24">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="text-xl font-black text-white font-headline mb-6 tracking-tighter uppercase">Electric Sanctuary</div>
+<p class="font-body font-light tracking-wide text-neutral-500 max-w-sm">An immersive nocturnal escape defined by light, sound, and the art of the pour. Join us where the night never fades.</p>
+</div>
+<div>
+<h5 class="text-amber-400 font-bold font-label text-xs uppercase tracking-[0.2em] mb-6">Explore</h5>
+<ul class="space-y-4">
+<li><a class="font-body font-light tracking-wide text-neutral-500 hover:text-amber-200 transition-colors opacity-80 hover:opacity-100" href="#">Instagram</a></li>
+<li><a class="font-body font-light tracking-wide text-neutral-500 hover:text-amber-200 transition-colors opacity-80 hover:opacity-100" href="#">TikTok</a></li>
+<li><a class="font-body font-light tracking-wide text-neutral-500 hover:text-amber-200 transition-colors opacity-80 hover:opacity-100" href="#">Newsletter</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-amber-400 font-bold font-label text-xs uppercase tracking-[0.2em] mb-6">Location</h5>
+<ul class="space-y-4">
+<li><a class="font-body font-light tracking-wide text-neutral-500 hover:text-amber-200 transition-colors opacity-80 hover:opacity-100" href="#">Location</a></li>
+<li><a class="font-body font-light tracking-wide text-neutral-500 hover:text-amber-200 transition-colors opacity-80 hover:opacity-100" href="#">Hours</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body font-light tracking-wide text-neutral-500 text-xs">© 2024 ELECTRIC SANCTUARY. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-neutral-600 cursor-pointer hover:text-white transition-colors">wine_bar</span>
+<span class="material-symbols-outlined text-neutral-600 cursor-pointer hover:text-white transition-colors">nightlife</span>
+<span class="material-symbols-outlined text-neutral-600 cursor-pointer hover:text-white transition-colors">music_note</span>
+</div>
+</div>
+</footer>
+</body></html>

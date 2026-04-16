@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reservations | Electric Sanctuary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#2c2c2c",
+                        "on-surface": "#ffffff",
+                        "tertiary-dim": "#ff51fa",
+                        "inverse-on-surface": "#565554",
+                        "inverse-primary": "#9a00cf",
+                        "on-surface-variant": "#adaaaa",
+                        "surface-container-highest": "#262626",
+                        "on-background": "#ffffff",
+                        "error-dim": "#d73357",
+                        "surface-tint": "#e08dff",
+                        "on-error": "#490013",
+                        "tertiary-fixed-dim": "#ff61f8",
+                        "secondary-dim": "#e6c047",
+                        "inverse-surface": "#fcf8f8",
+                        "primary-fixed-dim": "#d160ff",
+                        "surface-container": "#1a1919",
+                        "on-primary": "#4f006c",
+                        "secondary": "#f5ce53",
+                        "on-tertiary-fixed-variant": "#6a006a",
+                        "error-container": "#a70138",
+                        "on-primary-container": "#3d0055",
+                        "tertiary": "#ff51fa",
+                        "on-secondary": "#584500",
+                        "on-primary-fixed-variant": "#4c0068",
+                        "primary-fixed": "#d978ff",
+                        "on-secondary-fixed": "#413200",
+                        "secondary-container": "#735c00",
+                        "outline-variant": "#494847",
+                        "on-tertiary": "#400040",
+                        "error": "#ff6e84",
+                        "secondary-fixed": "#f5ce53",
+                        "on-tertiary-container": "#230023",
+                        "primary-dim": "#bc00fb",
+                        "tertiary-fixed": "#ff81f5",
+                        "surface-variant": "#262626",
+                        "surface-dim": "#0e0e0e",
+                        "surface-container-high": "#201f1f",
+                        "surface": "#0e0e0e",
+                        "outline": "#777575",
+                        "on-primary-fixed": "#000000",
+                        "tertiary-container": "#fe00fe",
+                        "primary": "#e08dff",
+                        "surface-container-lowest": "#000000",
+                        "secondary-fixed-dim": "#e6c047",
+                        "background": "#0e0e0e",
+                        "surface-container-low": "#131313",
+                        "on-tertiary-fixed": "#320032",
+                        "primary-container": "#d978ff",
+                        "on-secondary-fixed-variant": "#634e00",
+                        "on-secondary-container": "#fff7ea",
+                        "on-error-container": "#ffb2b9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(38, 38, 38, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .neon-glow-text {
+            text-shadow: 0 0 10px rgba(224, 141, 255, 0.5);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0e0e0e;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #2c2c2c;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface-variant selection:bg-primary selection:text-on-primary antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-950/40 backdrop-blur-xl shadow-[0_0_20px_rgba(224,141,255,0.1)] flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-2xl font-bold tracking-[-0.02em] text-white font-headline">Electric Sanctuary</div>
+<div class="hidden md:flex gap-12 font-headline tracking-tighter uppercase text-sm">
+<a class="text-neutral-400 hover:text-white transition-colors hover:bg-white/5 p-2 rounded" href="#">Home</a>
+<a class="text-neutral-400 hover:text-white transition-colors hover:bg-white/5 p-2 rounded" href="#">About</a>
+<a class="text-neutral-400 hover:text-white transition-colors hover:bg-white/5 p-2 rounded" href="#">Drinks</a>
+<a class="text-neutral-400 hover:text-white transition-colors hover:bg-white/5 p-2 rounded" href="#">Events</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-dim text-on-primary-fixed font-headline font-bold py-2 px-6 rounded-full tracking-tight hover:scale-95 transition-transform duration-200">
+            Book a Table
+        </button>
+</nav>
+<main class="pt-24 pb-20">
+<!-- Hero Section -->
+<header class="max-w-7xl mx-auto px-8 py-12 mb-12">
+<div class="flex flex-col items-start gap-4">
+<span class="label-md tracking-[0.2em] uppercase text-secondary font-bold">Reservations</span>
+<h1 class="text-6xl md:text-8xl font-headline font-bold tracking-tighter text-white neon-glow-text leading-none">
+                    ENTER THE<br/><span class="text-primary italic">VOID.</span>
+</h1>
+<p class="max-w-xl text-lg text-on-surface-variant font-light mt-4">
+                    Experience the pulse of the underground. Secure your position in the Electric Sanctuary's inner circle.
+                </p>
+</div>
+</header>
+<!-- Reservation & Contact Grid -->
+<section class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Reservation Form Column -->
+<div class="lg:col-span-7">
+<div class="glass-panel border border-outline-variant/15 p-8 md:p-12 rounded-xl shadow-2xl relative overflow-hidden">
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-[80px]"></div>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-secondary/10 rounded-full blur-[80px]"></div>
+<h2 class="text-3xl font-headline font-bold text-white mb-8">Secure Your Spot</h2>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative group">
+<label class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Date</label>
+<input class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface appearance-none" type="date"/>
+</div>
+<div class="relative group">
+<label class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Time</label>
+<select class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface appearance-none">
+<option class="bg-surface">20:00</option>
+<option class="bg-surface">21:00</option>
+<option class="bg-surface">22:00</option>
+<option class="bg-surface">23:00</option>
+<option class="bg-surface">00:00</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative group">
+<label class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Guests</label>
+<input class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface" max="12" min="1" type="number" value="2"/>
+</div>
+<div class="relative group">
+<label class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Service Type</label>
+<select class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface appearance-none">
+<option class="bg-surface">Lounge Access</option>
+<option class="bg-surface">VIP Bottle Service</option>
+<option class="bg-surface">Main Bar</option>
+</select>
+</div>
+</div>
+<div class="space-y-8">
+<div class="relative group">
+<label class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Full Name</label>
+<input class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface placeholder:text-surface-bright" placeholder="ALEX MERCER" type="text"/>
+</div>
+<div class="relative group">
+<label class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Email Address</label>
+<input class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface placeholder:text-surface-bright" placeholder="ALEX@SANCTUARY.IO" type="email"/>
+</div>
+</div>
+<button class="w-full bg-gradient-to-r from-primary to-primary-dim text-on-primary-fixed py-5 font-headline font-bold text-lg rounded-lg hover:shadow-[0_0_30px_rgba(224,141,255,0.4)] transition-all duration-300 transform hover:-translate-y-1" type="submit">
+                            CONFIRM REQUEST
+                        </button>
+</form>
+</div>
+</div>
+<!-- Contact & Info Column -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- Contact Details -->
+<div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant/5">
+<h3 class="text-xl font-headline font-bold text-white mb-6">Contact Details</h3>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="text-white font-medium">Location</p>
+<p class="text-sm font-light">404 Neon Blvd, Lower District, Night City 77</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="text-white font-medium">Phone</p>
+<p class="text-sm font-light">+1 (555) ELE-CTRIC</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="text-white font-medium">Email</p>
+<p class="text-sm font-light">concierge@electricsanctuary.com</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Dark Map Mockup -->
+<div class="relative h-64 md:h-80 rounded-xl overflow-hidden bg-surface-container shadow-inner border border-outline-variant/10 group">
+<img class="w-full h-full object-cover grayscale brightness-50 contrast-125 opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="stylized dark themed satellite map of an urban city center with neon blue and pink glowing roads and highlights" data-location="Tokyo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvaZJ1Q9sfMUVt269QW_E7x_yCgMQjPiTzjhHDXXs6jsMCf3Wb5pAhSNHi8gyGCz7gamYJVhDrWr0fW2xLvc2B6BGM-3-kuVG13LC3RnLUbBs1PmYxDdlNEQDKf4CGz-yq50-zF_U5QI-uIxFzBPtswpT0Al2ee2U-bepWSqdXahwO6DAdKIjFQVjr7zcNKQmO5Ak-IkVNVBLwkiZwO2oaHMoSajNzkSeQ-vIrvitgAAdmJ46qJF-X8d5OajX1DdkteywhWqOgShHz"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/30 rounded-full blur-xl animate-pulse"></div>
+<span class="material-symbols-outlined text-primary text-5xl relative z-10" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+<div class="absolute bottom-4 left-4 bg-black/80 backdrop-blur-md px-3 py-1 rounded text-[10px] uppercase tracking-widest text-on-surface-variant">
+                        404 NEON BLVD, DISTRICT 0
+                    </div>
+</div>
+<!-- Operating Hours -->
+<div class="bg-surface-container-high p-6 rounded-xl border-l-4 border-secondary">
+<div class="flex justify-between items-center mb-4">
+<span class="text-secondary font-bold uppercase tracking-widest text-xs">Now Open</span>
+<span class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_10px_#22c55e]"></span>
+</div>
+<div class="grid grid-cols-2 gap-4 text-sm">
+<div>
+<p class="text-on-surface-variant">Mon - Thu</p>
+<p class="text-white font-medium">20:00 - 03:00</p>
+</div>
+<div>
+<p class="text-on-surface-variant">Fri - Sun</p>
+<p class="text-white font-medium">20:00 - 05:00</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="max-w-7xl mx-auto px-8 mt-32">
+<div class="flex items-end justify-between mb-12">
+<div class="max-w-md">
+<h2 class="text-4xl font-headline font-bold text-white mb-4">Access Protocols</h2>
+<p class="text-on-surface-variant font-light">Important information regarding your arrival at the Sanctuary.</p>
+</div>
+<div class="hidden md:block h-px flex-1 bg-surface-container-highest mx-12 mb-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- FAQ Item 1 -->
+<div class="group p-8 bg-surface-container-low rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all">
+<div class="flex items-center justify-between mb-4">
+<h4 class="text-white font-headline font-bold text-lg uppercase tracking-tight">Dress Code</h4>
+<span class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform">add</span>
+</div>
+<p class="text-on-surface-variant text-sm font-light leading-relaxed">
+                        Cyber-chic, avant-garde, or high-end evening wear is encouraged. No casual sportswear, flip-flops, or heavy industrial workwear. Management reserves the right to refuse entry based on attire.
+                    </p>
+</div>
+<!-- FAQ Item 2 -->
+<div class="group p-8 bg-surface-container-low rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all">
+<div class="flex items-center justify-between mb-4">
+<h4 class="text-white font-headline font-bold text-lg uppercase tracking-tight">Age Requirement</h4>
+<span class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform">add</span>
+</div>
+<p class="text-on-surface-variant text-sm font-light leading-relaxed">
+                        Electric Sanctuary is strictly 21+. Valid government-issued photo ID is required for all guests. Digital copies or photos of IDs are not accepted under any circumstances.
+                    </p>
+</div>
+<!-- FAQ Item 3 -->
+<div class="group p-8 bg-surface-container-low rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all">
+<div class="flex items-center justify-between mb-4">
+<h4 class="text-white font-headline font-bold text-lg uppercase tracking-tight">VIP &amp; Bottle Service</h4>
+<span class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform">add</span>
+</div>
+<p class="text-on-surface-variant text-sm font-light leading-relaxed">
+                        Table minimums apply for VIP Lounge reservations. Please contact our concierge directly via the booking form or phone for custom event inquiries and corporate buyouts.
+                    </p>
+</div>
+<!-- FAQ Item 4 -->
+<div class="group p-8 bg-surface-container-low rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all">
+<div class="flex items-center justify-between mb-4">
+<h4 class="text-white font-headline font-bold text-lg uppercase tracking-tight">Photography</h4>
+<span class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform">add</span>
+</div>
+<p class="text-on-surface-variant text-sm font-light leading-relaxed">
+                        To preserve the exclusivity and privacy of our sanctuary, flash photography is prohibited. We encourage a "living in the moment" philosophy. Respect the anonymity of other patrons.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-950 w-full py-16 px-8 border-t border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="flex flex-col gap-6">
+<div class="text-xl font-black text-white font-headline">ELECTRIC SANCTUARY</div>
+<p class="font-body font-light tracking-wide text-neutral-500 text-sm">
+                    The intersection of high-fidelity sound and immersive darkness.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-amber-400 font-bold font-body uppercase text-xs tracking-widest mb-2">Connect</h5>
+<a class="text-neutral-500 hover:text-amber-200 transition-colors font-body font-light" href="#">Instagram</a>
+<a class="text-neutral-500 hover:text-amber-200 transition-colors font-body font-light" href="#">TikTok</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-amber-400 font-bold font-body uppercase text-xs tracking-widest mb-2">Venue</h5>
+<a class="text-neutral-500 hover:text-amber-200 transition-colors font-body font-light" href="#">Location</a>
+<a class="text-neutral-500 hover:text-amber-200 transition-colors font-body font-light" href="#">Hours</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-amber-400 font-bold font-body uppercase text-xs tracking-widest mb-2">In the Loop</h5>
+<a class="text-neutral-500 hover:text-amber-200 transition-colors font-body font-light" href="#">Newsletter</a>
+<div class="mt-2 text-neutral-500 text-xs leading-relaxed">
+                    © 2024 ELECTRIC SANCTUARY. ALL RIGHTS RESERVED.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>

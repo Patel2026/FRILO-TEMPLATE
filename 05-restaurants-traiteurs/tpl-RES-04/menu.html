@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>La Carte | FRILO LOUNGE & GRILL</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface font-body text-on-surface-variant selection:bg-primary selection:text-on-primary antialiased">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0e0e0e]/40 backdrop-blur-xl shadow-[0_0_20px_rgba(224,141,255,0.1)]">
+        <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+            <a href="index.html" class="text-2xl font-bold tracking-[-0.02em] text-white font-headline neon-glow-purple">
+                FRILO <span class="text-secondary">LOUNGE</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-10 font-headline tracking-tighter uppercase text-sm">
+                <a class="text-neutral-400 hover:text-white transition-colors" href="index.html">Accueil</a>
+                <a class="text-neutral-400 hover:text-white transition-colors" href="about.html">Esprit</a>
+                <a class="text-primary border-b-2 border-primary pb-1" href="menu.html">Carte</a>
+                <a class="text-neutral-400 hover:text-white transition-colors" href="events.html">Événements</a>
+            </div>
+            <a href="reservations.html" class="bg-gradient-to-r from-primary to-primary-dim text-on-primary-fixed px-6 py-2.5 font-headline font-bold uppercase tracking-wider text-xs rounded-lg hover:scale-95 transition-all duration-300">
+                Réserver une table
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="relative min-h-[500px] flex items-center justify-center pt-24 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-surface/60 to-surface"></div>
+            <img class="w-full h-full object-cover" data-alt="Carte Cocktails" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBugJYCu2yeOj8ck08ahtNdtyb2d8E9g6S4hIwBwATWmCELEH_V1fa3cRGjLqGgIGlOwq1-So8-rHJpLAPE7gqunfetDk5Hw7C1hoFXe1bJfLLlOAWt4CDwtkUp-DxngZ4Aef24nq748pxGqbDfuiu2TwSDWChFT7TK9vsVaUjjdKvybI5j8NY7JB_0-P6W3Wg5Wz2g_gGWAvaRlv-9LxMrXmmnB36s48eOkSZZm63P7j9Y2xZD2UrxirRgWogBD7ZsG3S0KtcW8f8"/>
+        </div>
+        <div class="relative z-10 text-center px-6">
+            <span class="font-label uppercase tracking-[0.2em] text-secondary text-sm mb-4 block font-bold">L'Alchimie Culinaire</span>
+            <h1 class="font-headline text-6xl md:text-8xl font-bold text-white tracking-tighter uppercase leading-none neon-glow-purple">
+                Le Manifeste<br/><span class="text-primary italic">Liquide & Feu.</span>
+            </h1>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-24 space-y-32">
+        <!-- Elixirs signatures -->
+        <section>
+            <div class="flex items-end gap-4 mb-16">
+                <h2 class="font-headline text-4xl md:text-6xl font-bold text-primary tracking-tighter uppercase">Élixirs Signatures</h2>
+                <div class="h-px flex-grow bg-gradient-to-r from-primary/30 to-transparent mb-4"></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Cocktail 1 -->
+                <div class="group flex flex-col md:flex-row gap-8 bg-surface-container-low p-6 rounded-xl hover:bg-surface-container transition-colors duration-500">
+                    <div class="w-full md:w-48 h-64 overflow-hidden rounded-lg">
+                        <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" data-alt="Electric Violet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1AFcp5v_ELcHPIpsX3HvvYuEB0EDxssHbUOQ3MGzoMcDIB0nnyEr0CnOrZqWMwQtPypdXnPfQ75Wo40zKlZnFWvWSgZiS0bB1R72SyW4zBGC_IdQnRps_CPwO01EnErz6bx1aczHSDDR8LsPiDd9SpsMuTYeUTnmGoZu7owUpphM9va185J76dbcOZWK2qBW5uSCSzdnNJP_sJHmUA29RYaoVZDMM0QaipcrMLqPAF3josl_3nzhU8Hso1LhzLvRqHerXnSqgm9OU"/>
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-headline text-2xl text-white font-bold uppercase">Electric Violet</h3>
+                            <span class="font-headline text-secondary text-xl font-bold tracking-tighter">12 500</span>
+                        </div>
+                        <p class="font-body text-on-surface-variant font-light mb-6 leading-relaxed">Gin Empress, réduction de lavande sauvage, sphère de charbon actif et une pointe d'électricité statique.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-surface-container-highest text-[10px] uppercase tracking-[0.2em] font-label text-primary-fixed border border-primary/20 rounded-full font-bold">Moléculaire</span>
+                            <span class="px-3 py-1 bg-surface-container-highest text-[10px] uppercase tracking-[0.2em] font-label text-secondary-fixed border border-secondary/20 rounded-full font-bold">Favori</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cocktail 2 -->
+                <div class="group flex flex-col md:flex-row gap-8 bg-surface-container-low p-6 rounded-xl hover:bg-surface-container transition-colors duration-500">
+                    <div class="w-full md:w-48 h-64 overflow-hidden rounded-lg">
+                        <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" data-alt="Neon Negroni" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQjEcCFeI0XRWu6keiJbT9XrEY_fR_JF8hRo8urXwFygQJHn55GlaK2oD6YKFMrEVnvAvdiVtAsFz5W-6veiTtrsKNN1h8PEE393p1UYM2azUPll15u271b0lNc8ooRSBRbsD7XSz2-Ieyfe7GyV_9Y59XomQSYL7enLgBDY_nToKaPrLXYF4TEErnvMemkn2Qn9o0iLolG3kfVOslkPk3ZgHHqxrBhDSYti8q9hAgrAAc87M2yKkMQ4y7jVx0ulARfLlclCmLLs7b"/>
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-headline text-2xl text-white font-bold uppercase">Neon Negroni</h3>
+                            <span class="font-headline text-secondary text-xl font-bold tracking-tighter">11 000</span>
+                        </div>
+                        <p class="font-body text-on-surface-variant font-light mb-6 leading-relaxed">Gin infusé au yuzu, mélange d'amaros secrets et une orange sanguine déshydratée brillante sous UV.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-surface-container-highest text-[10px] uppercase tracking-[0.2em] font-label text-primary-fixed border border-primary/20 rounded-full font-bold">Citronné</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Midnight Grill -->
+        <section>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+                <div class="lg:col-span-1">
+                    <h2 class="font-headline text-4xl font-bold text-secondary tracking-tighter uppercase mb-6">Midnight Grill</h2>
+                    <p class="font-body text-on-surface-variant font-light mb-8 leading-relaxed">Les rituels du feu pour les heures tardives. Viandes d'exception sélectionnées pour leur persillage et leur caractère.</p>
+                    <div class="aspect-[4/5] rounded-xl overflow-hidden glass-card p-2">
+                        <img class="w-full h-full object-cover rounded-lg" data-alt="Grillade" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2x2Cx3Wi0LgMxmQ0-bhD6nB8WJEZJYJ6cCgOZu7HYs2efORp0Q3q2hyc2gmZ6lVq6XdPZKg6dwlkyD5E5lrFwL4LTUCSW3DnsCEval2mqnD07ffGx7MYCj499ETGlANpLE-PX_MSqyxviOZ68OmBeoa4aT_1lQZfvthOnrL8DMSxr1kaEKBoQOr0rrYbU-3fy4_YWVrupTCfUcQr74nEIvWjOolw5dKdKbnE6Ev9LCEUhXX3NEqAooXI9xHYl1Uxu_H3NhV3WnA6K"/>
+                    </div>
+                </div>
+                <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
+                    <!-- Grill 1 -->
+                    <div class="border-b border-outline-variant/10 pb-6 group">
+                        <div class="flex justify-between mb-2">
+                            <h4 class="font-headline text-lg text-white uppercase tracking-tight group-hover:text-secondary transition-colors">Obsidian Rib-Eye (350g)</h4>
+                            <span class="text-secondary font-bold">28 500</span>
+                        </div>
+                        <p class="text-sm font-light leading-relaxed">Bœuf maturé 28 jours, croûte de poivre noir et café, beurre au thym sauvage.</p>
+                    </div>
+                    <!-- Grill 2 -->
+                    <div class="border-b border-outline-variant/10 pb-6 group">
+                        <div class="flex justify-between mb-2">
+                            <h4 class="font-headline text-lg text-white uppercase tracking-tight group-hover:text-secondary transition-colors">Gambas de Grand-Popo</h4>
+                            <span class="text-secondary font-bold">22 000</span>
+                        </div>
+                        <p class="text-sm font-light leading-relaxed">Gambas géantes grillées à la flamme, marinade citronnelle-gingembre, chili fumé.</p>
+                    </div>
+                    <!-- Grill 3 -->
+                    <div class="border-b border-outline-variant/10 pb-6 group">
+                        <div class="flex justify-between mb-2">
+                            <h4 class="font-headline text-lg text-white uppercase tracking-tight group-hover:text-secondary transition-colors">Poulet Braisé "Midnight"</h4>
+                            <span class="text-secondary font-bold">14 500</span>
+                        </div>
+                        <p class="text-sm font-light leading-relaxed">Coquelet mariné 24h, épices secrètes du Chef, fumé au bois de manguier.</p>
+                    </div>
+                    <!-- Grill 4 -->
+                    <div class="border-b border-outline-variant/10 pb-6 group">
+                        <div class="flex justify-between mb-2">
+                            <h4 class="font-headline text-lg text-white uppercase tracking-tight group-hover:text-secondary transition-colors">Brochettes de Filet Mignon</h4>
+                            <span class="text-secondary font-bold">16 000</span>
+                        </div>
+                        <p class="text-sm font-light leading-relaxed">Morceaux choisis de filet, légumes de saison grillés, réduction balsamique-miel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reserve & Bottle Service -->
+        <section class="bg-surface-container-low rounded-3xl p-8 md:p-16 relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <img class="w-full h-full object-cover" data-alt="VIP Background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkY25gGodKB2Oou0g4a_eooRdednbb9k4qFUv38uJaviokHit63jeOvPkAPaTUcY9SlSGAtfrzhPb0sPeu9OxBpluKEMab7w7cajneVZKS4f392DBwObRxW2UPw_aEToFLiB8vqOl3ClgNBhbJbmMywto5812JNcXQx6Qz5MlR8VdpEblh1vd4-zNQlKu8nDCtxv1NE0tufYI1Z0TQYzgIKqt_AIfjooJkUu85-Vc63f-JuJYKrQEUowxptA9_i-hC_63tgo5PolLX"/>
+            </div>
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-headline text-5xl md:text-7xl font-bold text-white tracking-tighter uppercase leading-none mb-8">Service<br/><span class="text-secondary">VIP & Bottle</span></h2>
+                    <p class="font-body text-lg text-on-surface-variant mb-12 max-w-md font-light">Élevez votre soirée avec notre service à table exclusif. Chaque présentation inclut des accompagnements premium et un hôte dédié.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between border-b border-outline-variant/20 pb-4">
+                            <span class="font-headline text-xl text-white tracking-tight uppercase">Ace of Spades Gold</span>
+                            <span class="text-secondary font-bold text-2xl tracking-tighter">850 000</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-outline-variant/20 pb-4">
+                            <span class="font-headline text-xl text-white tracking-tight uppercase">Don Julio 1942 Magnum</span>
+                            <span class="text-secondary font-bold text-2xl tracking-tighter">1 200 000</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-outline-variant/20 pb-4">
+                            <span class="font-headline text-xl text-white tracking-tight uppercase">Grey Goose VX Luxe</span>
+                            <span class="text-secondary font-bold text-2xl tracking-tighter">450 000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-secondary to-primary opacity-20 blur-2xl group-hover:opacity-40 transition duration-1000"></div>
+                    <div class="relative aspect-square bg-surface-container-high rounded-2xl overflow-hidden border border-white/10 p-2">
+                        <img class="w-full h-full object-cover rounded-xl shadow-2xl" data-alt="Champagne VIP" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5B3BiNxASjziTh_qNkm9bo3aiZoRIgAUGj-74v9fTS0ntWGtVEz8z2CZdNRFDnsGisIgQNRAmOin2uUB0JfWictCv0iXDVetanTpaexuPcgZYM-iRy-ZsIcfN9dUgPXdGA9rr5ajegKUuBl9C9frbaLSxC1XKOZzcNmuYMi1fp0imuIZSXCtB6cB_MA73Xvd38DIzqgKYYbW4JwO-PK3UScoN2g-o_ZxBgJpFqYEU5R_De0uNCUopzle7Ub9PNS_1h6F5_TGglmBC"/>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-secondary text-on-secondary-fixed p-6 rounded-xl shadow-xl hidden md:block">
+                        <p class="font-headline font-black text-2xl uppercase tracking-tighter leading-none italic">VIP Only</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0e0e0e] w-full py-16 px-8 border-t border-white/5">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+            <div class="space-y-6">
+                <div class="text-xl font-black text-white font-headline uppercase">FRILO <span class="text-secondary">LOUNGE</span></div>
+                <p class="font-body font-light tracking-wide text-neutral-500 text-sm leading-relaxed">
+                    Une destination pour les audacieux. Cotonou, Haie Vive.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <h5 class="text-white font-bold text-xs uppercase tracking-widest font-label">Navigation</h5>
+                <ul class="space-y-3 font-body font-light tracking-wide text-sm">
+                    <li><a class="text-neutral-500 hover:text-secondary transition-colors" href="index.html">Accueil</a></li>
+                    <li><a class="text-neutral-500 hover:text-secondary transition-colors" href="about.html">Esprit</a></li>
+                    <li><a class="text-secondary font-bold" href="menu.html">Carte</a></li>
+                    <li><a class="text-neutral-500 hover:text-secondary transition-colors" href="events.html">Événements</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h5 class="text-white font-bold text-xs uppercase tracking-widest font-label">Contact</h5>
+                <ul class="space-y-3 font-body font-light tracking-wide text-sm">
+                    <li class="text-neutral-500">Haie Vive, Cotonou</li>
+                    <li class="text-neutral-500">+229 01 00 00 00 00</li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h5 class="text-white font-bold text-xs uppercase tracking-widest font-label">Le Sanctum</h5>
+                <div class="pt-4">
+                    <div class="text-[10px] text-neutral-600 uppercase tracking-widest">© 2026 FRILO LOUNGE & GRILL.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

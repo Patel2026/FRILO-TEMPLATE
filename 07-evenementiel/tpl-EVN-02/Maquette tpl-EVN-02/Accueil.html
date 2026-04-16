@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#bcc7dd",
+                    "inverse-primary": "#adc7f7",
+                    "on-secondary-fixed": "#111c2c",
+                    "on-secondary-fixed-variant": "#3c475a",
+                    "tertiary-fixed-dim": "#f2bc82",
+                    "on-surface-variant": "#43474e",
+                    "on-primary-container": "#86a0cd",
+                    "background": "#f5faff",
+                    "primary-fixed": "#d6e3ff",
+                    "on-primary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "inverse-on-surface": "#ecf1f6",
+                    "surface-container-high": "#e4e9ee",
+                    "secondary": "#545f72",
+                    "on-secondary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-tint": "#455f88",
+                    "on-surface": "#171c20",
+                    "surface": "#f5faff",
+                    "tertiary-fixed": "#ffddba",
+                    "primary-container": "#1a365d",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#321b00",
+                    "primary": "#002045",
+                    "outline": "#74777f",
+                    "surface-bright": "#f5faff",
+                    "surface-container-low": "#eff4f9",
+                    "outline-variant": "#c4c6cf",
+                    "on-primary-fixed": "#001b3c",
+                    "surface-variant": "#dee3e8",
+                    "on-tertiary-container": "#c6955e",
+                    "on-tertiary-fixed-variant": "#633f0f",
+                    "inverse-surface": "#2c3135",
+                    "surface-container-highest": "#dee3e8",
+                    "primary-fixed-dim": "#adc7f7",
+                    "on-tertiary-fixed": "#2b1700",
+                    "surface-dim": "#d5dbdf",
+                    "surface-container": "#e9eef3",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed": "#d8e3fa",
+                    "on-background": "#171c20",
+                    "secondary-container": "#d5e0f7",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#4f2e00",
+                    "on-secondary-container": "#586377",
+                    "on-primary-fixed-variant": "#2d476f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .glass-header {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<span class="text-xl font-bold tracking-tighter text-blue-950">ARCHITECT CURATOR</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-manrope text-sm font-medium tracking-tight text-blue-900 border-b-2 border-blue-900 pb-1" href="#">Home</a>
+<a class="font-manrope text-sm font-medium tracking-tight text-slate-500 hover:text-blue-900 transition-colors" href="#">About</a>
+<a class="font-manrope text-sm font-medium tracking-tight text-slate-500 hover:text-blue-900 transition-colors" href="#">Services</a>
+<a class="font-manrope text-sm font-medium tracking-tight text-slate-500 hover:text-blue-900 transition-colors" href="#">Portfolio</a>
+<a class="font-manrope text-sm font-medium tracking-tight text-slate-500 hover:text-blue-900 transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-manrope text-sm font-semibold tracking-wide hover:opacity-90 transition-all active:scale-95">
+                Request a Quote
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale-[20%] contrast-[1.1]" data-alt="Modern high-end corporate conference hall with rows of professional attendees, warm ambient lighting, and high-tech stage production" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARXvKsApoxl1wu-QvRtVhdbdjuwmtNzynsb5B2Ixog-wvegy0TJWKAMA3SCgKbxMDYNBaRVY7ojfpaxczmpGrIhKKk6xT1OBiWaH19M2AgBtOX9a_LnwGdyrlD_MvkXu0jHPl08-R46awV0Aotg8dRdRvAXAq11q8frS89IXJn1Xf9Fumh7g4rno8vhI9n-bg-MuFTivcDddcGXkUEpdfjyY-yBkHBXyA_xTdAVZtPvng0LJ2BYyEdFViOibL4bd_icSlxUmC8Q0M"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl">
+<span class="inline-block text-primary-fixed font-label text-xs tracking-[0.2em] font-bold uppercase mb-4">Elite Event Curation</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-white leading-[1.1] tracking-tighter mb-8">
+                        Orchestrating Excellence in Corporate Events
+                    </h1>
+<p class="text-on-primary-container text-lg md:text-xl font-light leading-relaxed mb-10 max-w-xl">
+                        Merging architectural precision with editorial storytelling to create corporate experiences that resonate and inspire.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-surface-container-lowest text-primary px-8 py-4 rounded-lg font-manrope font-bold text-base shadow-xl hover:bg-white transition-all active:scale-95">
+                            Request a Quote
+                        </button>
+<button class="border border-white/30 text-white backdrop-blur-sm px-8 py-4 rounded-lg font-manrope font-bold text-base hover:bg-white/10 transition-all">
+                            View Portfolio
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1: Services Overview (Editorial Layout) -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="font-headline text-3xl font-extrabold text-primary mb-4">Strategic Experiences</h2>
+<div class="w-12 h-1 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Service Card: Conferences -->
+<div class="group">
+<div class="aspect-[4/5] overflow-hidden rounded-xl mb-6 shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sleek modern conference stage with architectural blue lighting and large presentation screens in a professional setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvVK3OscgEWkjv-OOGVfIbDLaJxM8dpp9RufEL_PKsIevgBe2zs3mAoRpoKlA2t0y_nXOadtpxXEoPtduBCY1BumdXWh5je_rhnsmD_yQC4RZxJq7bLuW6zO4tC2BNoc8mGRz845VV7-hyVKFHH8ubDed46HED_MuP9QLPFTy1kOx77IuXorPQOmGnfNTFUZudVCu7svhEQIeQ1HeYiSHigxJICb7r3GBeH5mp3xq1yBYp9EeHkHCkkFUFiGjpTmjeJHUV5nXN6e4"/>
+</div>
+<h3 class="font-headline text-xl font-bold text-primary mb-2">Conferences</h3>
+<p class="text-on-surface-variant font-light leading-relaxed">Scaleable environments for knowledge exchange and industry leadership networking.</p>
+</div>
+<!-- Service Card: Seminars -->
+<div class="group md:mt-12">
+<div class="aspect-[4/5] overflow-hidden rounded-xl mb-6 shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Intimate professional seminar setting with clean white tables, modern tech accessories, and focused participants in soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyt2f0eRWyvmAOovyyVWoJW1MM8mQ0QBvTzRuRoiuh8yf8blfYoK5c0hVNEOM-fB1fmTxCa_Xi6f7UMCu5deq_xeXS5ImGpqfSCR4exlRDf-N81JRdTF5iVXUd4M00vIRXcf9vLZl9ifwsQoVnVIRWGFLdGycYbkkPnaJQiT853Gve8XYoKG9nwALfTPGHhYXWloO2bAUu2TiYBzRkVejFP2LnRCOOzl9Xa5aBd6pw-T62c6wFApdCMWZolzFGaZu607jFr7lrCvc"/>
+</div>
+<h3 class="font-headline text-xl font-bold text-primary mb-2">Seminars</h3>
+<p class="text-on-surface-variant font-light leading-relaxed">High-engagement workshops designed for focused learning and skill mastery.</p>
+</div>
+<!-- Service Card: Gala Events -->
+<div class="group">
+<div class="aspect-[4/5] overflow-hidden rounded-xl mb-6 shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Elegant corporate gala dinner with long banquet tables, crystal glassware, and sophisticated warm golden mood lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC45a5wNHESv-QmYyc83TjfVQKtK2JX79wHigp8BUJJRXLfZi7ce-fCAkpv_zLA4ZOnFXudGzdlxptmb6LeQR0jfJesRozpD1l4P2QahgbNahHfaev4mEEMMypDADwOFpXVlmJn6-_rgJPMI8ZxbqlP6Og5PZhiOqQRTdXjEZC0niR9PqThw-qunIcaWm67sZkrg_6M95TkYX-txczGROjoi7VLPWxVcbJU81KmDGGVuZDtTdeYT7mL1vC50pBQDtflPEpRqhC7_5A"/>
+</div>
+<h3 class="font-headline text-xl font-bold text-primary mb-2">Gala Events</h3>
+<p class="text-on-surface-variant font-light leading-relaxed">Premium celebratory experiences that reflect and honor corporate achievement.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: The Process (Event Ledger Style) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+<div>
+<span class="font-label text-xs tracking-widest font-bold text-primary mb-4 block">OUR METHODOLOGY</span>
+<h2 class="font-headline text-4xl font-extrabold text-primary mb-8 leading-tight">A Structured Approach to Curating Impact.</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-12">We don't just plan; we architect. Our four-phase process ensures every detail aligns with your strategic objectives.</p>
+<div class="space-y-0">
+<div class="group flex items-start gap-8 py-8 border-l-4 border-primary pl-8">
+<span class="text-primary/20 text-4xl font-headline font-black">01</span>
+<div>
+<h4 class="font-headline text-xl font-bold text-primary mb-2">Consultation</h4>
+<p class="text-on-surface-variant">Defining vision, stakeholders, and success metrics in a collaborative alignment workshop.</p>
+</div>
+</div>
+<div class="group flex items-start gap-8 py-8 border-l-4 border-transparent hover:border-primary/20 transition-colors pl-8">
+<span class="text-primary/20 text-4xl font-headline font-black">02</span>
+<div>
+<h4 class="font-headline text-xl font-bold text-primary mb-2">Strategy</h4>
+<p class="text-on-surface-variant">Developing the architectural blueprint, narrative arc, and resource management plan.</p>
+</div>
+</div>
+<div class="group flex items-start gap-8 py-8 border-l-4 border-transparent hover:border-primary/20 transition-colors pl-8">
+<span class="text-primary/20 text-4xl font-headline font-black">03</span>
+<div>
+<h4 class="font-headline text-xl font-bold text-primary mb-2">Execution</h4>
+<p class="text-on-surface-variant">Precision implementation of logistics, production, and high-touch attendee hospitality.</p>
+</div>
+</div>
+<div class="group flex items-start gap-8 py-8 border-l-4 border-transparent hover:border-primary/20 transition-colors pl-8">
+<span class="text-primary/20 text-4xl font-headline font-black">04</span>
+<div>
+<h4 class="font-headline text-xl font-bold text-primary mb-2">Analysis</h4>
+<p class="text-on-surface-variant">Comprehensive data review and post-event reporting to measure ROI and impact.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative mt-24">
+<div class="absolute -top-12 -left-12 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+<img class="rounded-xl shadow-2xl relative z-10" data-alt="A professional team in a modern minimal meeting room discussing strategy over tablet devices and architectural blueprints" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXMGH_Pe9ZwG7tMcwWiefuP-_be2zvYiC2ORj-d1tqfhtrKOCwEqOe--kpzCabHQ7JzlBPHv_IA0NV0bbrOBycUEOu19eUPP4YtmZdY9_1uWbYGbqKu1hhwPSTnS5V6KwyxCPDjzR6wrcy2SmeRH0nQGwtiOOX-1je5DnSrwSdW_oOf1Uohg6I5GV0o9Wt5caFCl2iDertKzTW7KMeN4QFSTCflayveiiZG0b6fcW2CALMTB3jNvv5C_d4ARpCbcywcjucoL6Emdo"/>
+</div>
+</div>
+</section>
+<!-- Section 3: Past Events Showcase (Grid) -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline text-3xl font-extrabold text-primary">The Portfolio</h2>
+<p class="text-on-surface-variant mt-2">Moments of curated excellence across the globe.</p>
+</div>
+<a class="text-primary font-bold text-sm flex items-center gap-2 hover:gap-4 transition-all" href="#">
+                        VIEW ALL CASE STUDIES <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="space-y-6">
+<div class="relative group cursor-pointer overflow-hidden rounded-lg aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Dynamic corporate product launch with cinematic blue and white spotlighting and large digital backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjzkOwQO4nNqYsgCdnzTC4my0CWsKWirr-jPr5L_HaRswvguX71DHbxtRRRdT1KlaQtWogi_wX4REQ7IdhloFE1dV-kQlZ4QhLcBU0fo6G6XM_KW6Iq548O2xMdebSY9pAfMOEvYgiu7WyNlMF5HEHBagTY91K9MhSkhgIx7hICYUYHNi4d4I9WhfYNAZA_UyePKve1gINkMEyTS7c4uLugCPl8i4LPZSQ65ttzdajcb8muC8ENO8FSC9otA_kAj97OQjxa5KcPPY"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="text-xs font-bold text-white/70 uppercase tracking-widest mb-1">Tech Summit</span>
+<h4 class="text-white font-bold text-xl">Global Connect 2023</h4>
+</div>
+</div>
+<div class="relative group cursor-pointer overflow-hidden rounded-lg aspect-[3/4]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Wide shot of a luxury award ceremony venue with elegant round tables and grand stage lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1NfnJKjuDKnO2rGEV4OQQ2OX-02nEluiFnEhDoGzFc47hMPSS9_pKiqJC82u7ysIiHQNYj7UCKXDddBhhYrBQl39iPnv7ho110AK_vgolvjwo_mV1V9TPWeUwn87pZ86PqA1uc0gccvfp2_qHV4NDp7ereQmYRaFg3ZEAmMbbl45tguS1vlROmVwtObChdlQppHIQnc_aH7keW858o1QmxqD1wuybwbOjpJjQKkY6QCA7vZPynU6prudCSTB8gDOAcDLd1ustmxI"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="text-xs font-bold text-white/70 uppercase tracking-widest mb-1">Financial Awards</span>
+<h4 class="text-white font-bold text-xl">Annual Excellence Gala</h4>
+</div>
+</div>
+</div>
+<div class="space-y-6 md:pt-12">
+<div class="relative group cursor-pointer overflow-hidden rounded-lg aspect-[3/4]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Indoor professional reception area with modern minimalist furniture and cocktail tables in a glass atrium" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN3OGTTHFiqnVsMkPIvowX0oj0JurAILauKYP9gq2-DbrcKS8jgSta0hgsnoskdBFpC9WQLEchb3nM06gN-oVM69X0V_LOkQca0irtW1CCF61-ZBTr3LhSLThYYcLv70MxdDSPaZoBvJp8cxy3CfCKp-7fXD2cwDZLiiCjl0vMM_gjTEtrfpVsHiezKpBmtcK37g8yRnx6SJ7lV_HQ2QTbEaVh_tUZwneqakiD8HlU8Wmq1qfOvHtOnm4hdYR5peOBdvshkbA5VE4"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="text-xs font-bold text-white/70 uppercase tracking-widest mb-1">Networking</span>
+<h4 class="text-white font-bold text-xl">Industry Pulse Meetup</h4>
+</div>
+</div>
+<div class="relative group cursor-pointer overflow-hidden rounded-lg aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of high-quality corporate workshop materials and attendee focused on a discussion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwnvQPTxZqiTzP6YSI2KPz565Z7S4yObtSPGopb2c_QEdE3KtKR1aywHqkYi86JmQUIeyPKkvpNZFmxdUMOqq7WFDcMxe1PJoz0Nn4aSSaBjKs6oVyzxJerqLxdTNGAqq_aTpWKDp6PCcn1hkmofF6i8nMitjaVGVO-ezT7bMire__ut3ws6cymNPBMz4fYQjaXRonO26mxJzwYTsqwLACTRmE7s2fv6ZrJZYIOp2Pl_KXPK862xxDr2hNQFJGYTaVSCn7sOVLYaw"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="text-xs font-bold text-white/70 uppercase tracking-widest mb-1">Leadership</span>
+<h4 class="text-white font-bold text-xl">Executive Retreat 2024</h4>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<div class="relative group cursor-pointer overflow-hidden rounded-lg aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Professional media cameras filming a corporate presentation in a well-lit studio environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1WboGr_03oGXBFITbV-gJAY3vwdkdbz2fwlJawbrK9D1kF_d7Hq5bu5E4etSrMxE0XjF__GDR4KvSJZvxtASusCjfwNup524W87mfEW2Z8VLrG4XXqk71APyBSJMnRIuZuIYK3ZuiHzquuiYBwsOWm0qsxe2tkvYxtPZf0kp3pYO2IfTgxKioFL7oBtzxgLu2cetfUJyWQhWah20dZ4CBnwS9WoRBpSMhnTcKsSPRanBrGrQELJqBkUgPY4f0K7QYqjPBWNXCgFU"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="text-xs font-bold text-white/70 uppercase tracking-widest mb-1">Broadcast</span>
+<h4 class="text-white font-bold text-xl">Digital Future Forum</h4>
+</div>
+</div>
+<div class="relative group cursor-pointer overflow-hidden rounded-lg aspect-[3/4]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Outdoor corporate cocktail event at dusk with soft white patio lights and a high-end coastal background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5ai8AGPN4n_ckMZ94ZKPHoKCEiT3TToVUvTZN134Gr9_6tWj3Lo3Z4dOgt-0Vzx0FuhBlIFX4QPTsgaTnSTdRpkn3uGoPFg6yo0AXK1WHSF7J_LxFabZi1xy8sc_kVh_o89n3x-QyuLW7n_xEqc_g3T4q84pvKWU2WKLQ5sAOcOq0xTOxbUJQXYywPA_tdaWnxtg6EgR2qwTGvspZrp4XWodhf7QpRQUYceLNEzO8nYjIgbBADc0yG-OCXueqeq1bdx5rKvWtLh8"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="text-xs font-bold text-white/70 uppercase tracking-widest mb-1">Corporate Social</span>
+<h4 class="text-white font-bold text-xl">Skyline Evening Soiree</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Testimonials -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<span class="font-label text-xs tracking-[0.3em] font-bold text-primary mb-4 block uppercase">Client Voice</span>
+<h2 class="font-headline text-3xl font-extrabold text-primary">Voices of Excellence</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-12 rounded-xl shadow-sm border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">format_quote</span>
+<p class="text-on-surface-variant italic text-lg leading-relaxed mb-8">
+                            "The attention to detail and architectural thinking Nexus brought to our annual leadership summit was unprecedented. They didn't just manage an event; they curated a brand experience."
+                        </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="Professional headshot of a corporate executive in a suit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaadOcptejxoZNQrVbq9mk-25DygUohzBjGz6GD-LgzU6KaeRnvawS9L4ZbrSRi2GcEREbJ-UaqlHVRBg4Vkq9RVFH-I5rElFNEUhv-cnT0n_J5GF08XBOS-I2chciooliALTb0d7eQLmJE6uHkoG3UfL7L0kZJqeE2u0UXVUr0K7CpHJh3Y_4lEXZEbuQwVeo_qEbsGDPbQ51_lDA-fm97QK5dOOhM3AeJNvdh3u5liADwlvNvSgI27keQVZZHZca9hFzCjApXFA"/>
+</div>
+<div>
+<h5 class="font-headline font-bold text-primary">David Chen</h5>
+<p class="text-xs text-on-surface-variant">CMO, Zenith Technology Group</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-12 rounded-xl shadow-sm border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">format_quote</span>
+<p class="text-on-surface-variant italic text-lg leading-relaxed mb-8">
+                            "Scaling our international conference was a daunting task. Nexus handled the complexity with absolute grace and tactical precision. Our NPS scores have never been higher."
+                        </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="Professional headshot of a female business leader" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH0t3Bu6mNBMoSkHqGLZaL7KWCSq8zItm0irmOwd4L9V9N5_56_oUvBq-vDVwtUJ11mms7Mrckb5fosrDZ2f9ctnTIz5tHUhAoSyZlfbksJzsHCSBTTPcp1kWgZOUoTxQ4tOrJxT8NAAzoiWrLGdh-cIeeY7S5gR2f7TQhKsi1jV8H8Md5_toTgi9UmdvVG4gEfHKwmr0CtZs4xkp-cpgVbgE6kdaCF3vLjc93IdjEXaqtvL6D2ueHnikjyh2lmOiuxssvyUmN1TU"/>
+</div>
+<div>
+<h5 class="font-headline font-bold text-primary">Sarah Williams</h5>
+<p class="text-xs text-on-surface-variant">VP Operations, Global Logistics Inc.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 bg-primary overflow-hidden relative">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute inset-0" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 40px 40px;"></div>
+</div>
+<div class="max-w-4xl mx-auto px-8 text-center relative z-10">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-white mb-6">Ready to curate your next milestone?</h2>
+<p class="text-on-primary-container text-lg mb-10">Experience the difference of architecturally-led event management.</p>
+<button class="bg-surface-container-lowest text-primary px-10 py-5 rounded-lg font-headline font-extrabold text-lg shadow-2xl hover:bg-white transition-all active:scale-95">
+                    Request Your Strategic Consultation
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full border-t border-slate-200/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="text-lg font-bold text-blue-950 mb-6 block">ARCHITECT CURATOR</span>
+<p class="font-inter text-xs text-slate-500 leading-loose">
+                    Redefining corporate gathering through the lens of architectural precision and editorial narrative.
+                </p>
+</div>
+<div>
+<h6 class="font-headline text-sm font-bold text-primary mb-6">Services</h6>
+<ul class="space-y-4 font-inter text-xs text-slate-500">
+<li><a class="hover:text-blue-700 hover:underline underline-offset-4 transition-opacity" href="#">Global Conferences</a></li>
+<li><a class="hover:text-blue-700 hover:underline underline-offset-4 transition-opacity" href="#">Executive Retreats</a></li>
+<li><a class="hover:text-blue-700 hover:underline underline-offset-4 transition-opacity" href="#">Product Launches</a></li>
+<li><a class="hover:text-blue-700 hover:underline underline-offset-4 transition-opacity" href="#">Virtual Experiences</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-headline text-sm font-bold text-primary mb-6">Connect</h6>
+<ul class="space-y-4 font-inter text-xs text-slate-500">
+<li><a class="hover:text-blue-700 hover:underline underline-offset-4 transition-opacity" href="#">LinkedIn</a></li>
+<li><a class="hover:text-blue-700 hover:underline underline-offset-4 transition-opacity" href="#">Instagram</a></li>
+<li><a class="hover:text-blue-700 hover:underline underline-offset-4 transition-opacity" href="#">Behance</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-headline text-sm font-bold text-primary mb-6">Company</h6>
+<ul class="space-y-4 font-inter text-xs text-slate-500">
+<li><a class="hover:text-blue-700 hover:underline underline-offset-4 transition-opacity" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-blue-700 hover:underline underline-offset-4 transition-opacity" href="#">Terms of Service</a></li>
+<li><a class="hover:text-blue-700 hover:underline underline-offset-4 transition-opacity" href="#">Cookie Settings</a></li>
+<li><a class="hover:text-blue-700 hover:underline underline-offset-4 transition-opacity" href="#">Accessibility</a></li>
+</ul>
+</div>
+</div>
+<div class="px-8 py-8 border-t border-slate-200/50 max-w-7xl mx-auto text-center">
+<p class="font-inter text-xs text-slate-500">© 2024 Architect Curator Event Management. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

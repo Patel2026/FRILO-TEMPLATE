@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | The Culinary Curator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #faf9f5;
+            color: #1b1c1a;
+        }
+        h1, h2, h3, .serif-font {
+            font-family: 'Noto Serif', serif;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#2f312e",
+                        "surface-container-highest": "#e3e2df",
+                        "primary-fixed": "#d8e8cb",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#121f0d",
+                        "outline": "#757870",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#705460",
+                        "on-tertiary-fixed-variant": "#5a3f4b",
+                        "on-surface-variant": "#444841",
+                        "surface-bright": "#faf9f5",
+                        "primary-fixed-dim": "#bccbb0",
+                        "surface-variant": "#e3e2df",
+                        "primary-container": "#6a7961",
+                        "secondary-fixed": "#f2e1b8",
+                        "secondary-fixed-dim": "#d5c59e",
+                        "inverse-primary": "#bccbb0",
+                        "primary": "#526049",
+                        "on-secondary-fixed-variant": "#514628",
+                        "inverse-on-surface": "#f2f1ed",
+                        "surface-dim": "#dbdad6",
+                        "on-tertiary-fixed": "#2a151f",
+                        "on-tertiary-container": "#fffbff",
+                        "surface-container": "#efeeea",
+                        "secondary-container": "#f2e1b8",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#706343",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#231b03",
+                        "surface-tint": "#54634c",
+                        "on-primary-fixed-variant": "#3d4b35",
+                        "on-primary": "#ffffff",
+                        "surface": "#faf9f5",
+                        "on-surface": "#1b1c1a",
+                        "on-background": "#1b1c1a",
+                        "secondary": "#695d3d",
+                        "tertiary-container": "#8b6c79",
+                        "on-primary-container": "#f8ffee",
+                        "surface-container-high": "#e9e8e4",
+                        "background": "#faf9f5",
+                        "tertiary-fixed-dim": "#e1bdcb",
+                        "outline-variant": "#c5c8be",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffd8e7",
+                        "surface-container-low": "#f4f4f0",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f5]/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-[0_8px_32px_rgba(27,28,26,0.04)]">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="font-serif text-2xl italic text-[#1b1c1a] dark:text-[#faf9f5]">The Culinary Curator</div>
+<div class="hidden md:flex items-center space-x-8 font-serif tracking-tight text-lg">
+<a class="text-[#1b1c1a]/70 dark:text-[#faf9f5]/70 hover:text-[#526049] transition-colors duration-300" href="#">Home</a>
+<a class="text-[#1b1c1a]/70 dark:text-[#faf9f5]/70 hover:text-[#526049] transition-colors duration-300" href="#">About</a>
+<a class="text-[#526049] dark:text-[#7D8C73] border-b border-[#526049] pb-1" href="#">Services</a>
+<a class="text-[#1b1c1a]/70 dark:text-[#faf9f5]/70 hover:text-[#526049] transition-colors duration-300" href="#">Gallery</a>
+<a class="text-[#1b1c1a]/70 dark:text-[#faf9f5]/70 hover:text-[#526049] transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-medium hover:bg-primary-container transition-all scale-95 active:duration-75 active:scale-90">Request a Quote</button>
+</div>
+</nav>
+<main class="pt-32">
+<section class="px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="grid md:grid-cols-2 gap-16 items-end mb-24">
+<div class="max-w-xl">
+<span class="font-label text-sm tracking-widest uppercase text-secondary mb-4 block">Our Expertise</span>
+<h1 class="text-6xl font-headline leading-tight text-on-surface mb-8">Artistry in Every Service.</h1>
+<p class="text-lg text-on-surface-variant leading-relaxed font-body">We transform standard gatherings into curated experiences. Whether it's an intimate dinner or a grand gala, our commitment to culinary excellence remains unwavering.</p>
+</div>
+<div class="hidden md:block">
+<div class="h-px bg-outline-variant/30 w-full mb-8"></div>
+<div class="flex justify-between items-center text-sm font-label tracking-widest text-on-surface-variant/60">
+<span>EST. 2014</span>
+<span>BESPOKE CATERING</span>
+</div>
+</div>
+</div>
+<div class="space-y-32">
+<div class="grid md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-7">
+<div class="aspect-[16/9] overflow-hidden rounded-xl bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Elegant outdoor wedding reception with white floral arrangements on a long table under warm sunset light and hanging bistro lamps" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsrxNwROxP9WO53MJXe7IyDe5iFY9Q7x-2kbrQa2e_TLHgynOhFG22i_1XpbqTw5zho1FACwJ2zZpIKRA4qsS6iGdfVdYqPIqSajAdnXoDivgLNC2rsMc3zTInPN22wwMvdhX89f1N52yeuH_Fc6BVU7aYhNxA6q4mRZ9CH0q0AQSY4GS7zhhiFbcPyOJEka-zSOFD775NNdEl320APJajZDg1_KtqA7Y_FdKIHa50z2ldjg_2C6ijBAV7w78VPFbeNXRd2uzfu_n3"/>
+</div>
+</div>
+<div class="md:col-span-5 md:-ml-20 z-10">
+<div class="bg-surface-container-lowest p-12 shadow-sm border border-outline-variant/10 rounded-lg">
+<span class="font-label text-xs tracking-widest uppercase text-primary mb-4 block">Experience</span>
+<h2 class="text-4xl font-headline text-on-surface mb-6">Weddings</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">From the first hors d'oeuvre to the final toast, we craft wedding menus that reflect your unique story. Our full-service approach includes comprehensive planning support and professional staffing.</p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 text-on-surface/80">
+<span class="material-symbols-outlined text-secondary" style="font-size: 20px;">check_circle</span>
+<span>Bespoke Full-Service Menus</span>
+</li>
+<li class="flex items-center gap-3 text-on-surface/80">
+<span class="material-symbols-outlined text-secondary" style="font-size: 20px;">check_circle</span>
+<span>Tasting &amp; Menu Consultation</span>
+</li>
+<li class="flex items-center gap-3 text-on-surface/80">
+<span class="material-symbols-outlined text-secondary" style="font-size: 20px;">check_circle</span>
+<span>Logistics &amp; Day-of Coordination</span>
+</li>
+</ul>
+<a class="inline-flex items-center text-secondary font-medium hover:underline underline-offset-8 transition-all group" href="#">
+                                Learn about wedding planning
+                                <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-5 md:order-1 order-2 z-10 md:-mr-20">
+<div class="bg-surface-container-lowest p-12 shadow-sm border border-outline-variant/10 rounded-lg">
+<span class="font-label text-xs tracking-widest uppercase text-primary mb-4 block">Professionalism</span>
+<h2 class="text-4xl font-headline text-on-surface mb-6">Corporate</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Elevate your brand with sophisticated catering. We provide seamless service for professional lunches, high-stakes conferences, and gala dinners that impress every stakeholder.</p>
+<div class="grid grid-cols-2 gap-6 mb-10">
+<div class="space-y-2">
+<span class="material-symbols-outlined text-primary">business_center</span>
+<p class="text-sm font-bold text-on-surface uppercase tracking-tight">Executive Lunch</p>
+</div>
+<div class="space-y-2">
+<span class="material-symbols-outlined text-primary">groups</span>
+<p class="text-sm font-bold text-on-surface uppercase tracking-tight">Conferences</p>
+</div>
+<div class="space-y-2">
+<span class="material-symbols-outlined text-primary">nightlife</span>
+<p class="text-sm font-bold text-on-surface uppercase tracking-tight">Gala Events</p>
+</div>
+<div class="space-y-2">
+<span class="material-symbols-outlined text-primary">celebration</span>
+<p class="text-sm font-bold text-on-surface uppercase tracking-tight">Product Launches</p>
+</div>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-lg w-full font-medium hover:bg-primary-container transition-colors">Corporate Inquiry</button>
+</div>
+</div>
+<div class="md:col-span-7 md:order-2 order-1">
+<div class="aspect-[16/9] overflow-hidden rounded-xl bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Professional corporate gala dinner set in a modern glass-walled atrium with minimalist white table settings and dim blue accent lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmEuCJF-MfbTRJ3PS_IPSN5RX4FSTLD83z6HrRXiFfbETnbTYXT4GIpv3v1lWOmIcBW-7AfTQTcBfbVt9qkW1gFfhRk5G-pEE_oePLji2fk7v8-TiBF0ITtEKCE_2WsMp6xl1UtcOnB8MiY8gXBPDlBlQf5RJ4HLTcYHd9ZFAI5KL9P5PZkSTByzcyUWFeh5OvND_vJGaioFCuf7GcuKVXMRoFfsdq8dTcp_pohMzB5_uON-fBkaaunh5IK97rCwxkY00Fdlf1qXXY"/>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-7">
+<div class="aspect-[16/9] overflow-hidden rounded-xl bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Intimate evening dinner party at home with wine glasses and gourmet small plates illuminated by warm candle light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHFXGQrtsdasg73meF_JrQgSOSThpKvsI0uRp0U-5Gl5aSkTglk9eWEVxqO5woX2h4nHhN9d_XU15oSp5DHds5Pi6tIfjrglhM4cc2nqxLeiLPJFyNVZm9Xdsc9ss_hmUlYZBR8MPOvnBzg2t2qu-0ueyinprm64GkCCJ3nkIF0GfzMFI6WKIXU2BumqoarxQhOvTqbptX1cATijt9gkEjMH9DrjoTclPsmtrcxY8F30Y0HL_OFz_2rFjlX_0iiX37UtSiy7x5Hb8z"/>
+</div>
+</div>
+<div class="md:col-span-5 md:-ml-20 z-10">
+<div class="bg-surface-container-lowest p-12 shadow-sm border border-outline-variant/10 rounded-lg">
+<span class="font-label text-xs tracking-widest uppercase text-primary mb-4 block">Intimacy</span>
+<h2 class="text-4xl font-headline text-on-surface mb-6">Social Events</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Celebrating life’s milestones with grace. From landmark birthdays to anniversaries, we bring the restaurant experience to your home or chosen venue.</p>
+<div class="flex flex-wrap gap-3 mb-10">
+<span class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant text-sm border border-outline-variant/20">Private Dinners</span>
+<span class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant text-sm border border-outline-variant/20">Birthdays</span>
+<span class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant text-sm border border-outline-variant/20">Anniversaries</span>
+<span class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant text-sm border border-outline-variant/20">Garden Parties</span>
+</div>
+<a class="inline-flex items-center text-secondary font-medium hover:underline underline-offset-8 transition-all group" href="#">
+                                Explore social packages
+                                <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-surface-container-low py-24 px-12">
+<div class="max-w-screen-2xl mx-auto">
+<div class="bg-surface-container-lowest p-16 md:p-24 rounded-lg shadow-sm border border-outline-variant/10 flex flex-col md:flex-row gap-16 items-center">
+<div class="flex-1">
+<span class="font-label text-sm tracking-widest uppercase text-secondary mb-6 block">The Curated Menu</span>
+<h2 class="text-5xl font-headline text-on-surface leading-tight mb-8">Bespoke Flavors, <br/>Personalized Plates.</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed font-body mb-8">We believe no two events should taste the same. Our culinary team works directly with you to design a menu that accommodates specific dietary needs while exceeding expectations. Gluten-free, plant-based, or hyper-local—your vision is our recipe.</p>
+<div class="grid grid-cols-2 gap-8 border-t border-outline-variant/20 pt-8">
+<div>
+<h4 class="font-bold text-on-surface text-lg mb-2">Dietary Design</h4>
+<p class="text-sm text-on-surface-variant">Expertise in vegan, keto, and allergy-sensitive gourmet cuisine.</p>
+</div>
+<div>
+<h4 class="font-bold text-on-surface text-lg mb-2">Local Sourcing</h4>
+<p class="text-sm text-on-surface-variant">Ingredients gathered from artisanal producers within 100 miles.</p>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full relative">
+<div class="aspect-square rounded-full overflow-hidden border-8 border-surface-container-low shadow-xl">
+<img class="w-full h-full object-cover" data-alt="Exquisitely plated gourmet dish with seared sea bass, vibrant microgreens, and a swirl of saffron-infused sauce on a minimalist plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGGYRoKgQVAwuZqr4v5dJmhADMPfu_720utL5dYUgdNSZwPbz0U9qvrPTmhes8Rd_1afklEhqi4a4YWj5jPgJQWN9Av6eJjxZQV9POfgFF8e8-OZ_RbWcn8SUTDDwYCPjzCRrfQlLNjc15Y3JN66_aQ7CSUJ04XYBPJb6db8laOZLAlrqWS_Uas43nmOJHProf1W85AmanqXJuCk6fOIxfWdBv1VPPUQPnPuLsiCxF4xy8X34ETxZkyZjUDVT_RG_svmYBBiy_ijpU"/>
+</div>
+<div class="absolute -bottom-8 -right-8 bg-primary p-8 rounded-lg text-on-primary hidden md:block max-w-[240px]">
+<p class="font-serif italic text-xl">"Food is our love language, and your story is our inspiration."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-12 max-w-screen-2xl mx-auto text-center">
+<div class="max-w-2xl mx-auto">
+<h2 class="text-4xl font-headline text-on-surface mb-8">Ready to curate your next event?</h2>
+<p class="text-on-surface-variant mb-12">Let's begin a conversation about your vision, your guests, and the menu that will bring them all together.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-medium hover:bg-primary-container transition-all">Schedule a Consultation</button>
+<button class="border border-outline-variant/40 px-10 py-4 rounded-lg font-medium text-on-surface hover:bg-surface-container transition-all">View 2024 Gallery</button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#f4f4f0] dark:bg-stone-950 w-full border-t border-[#c5c8be]/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-serif text-xl text-[#1b1c1a] dark:text-[#faf9f5] mb-6">The Culinary Curator</div>
+<p class="text-[#1b1c1a]/60 dark:text-[#faf9f5]/60 text-sm leading-relaxed mb-6">Crafting artisanal culinary experiences for those who appreciate the finer details of life.</p>
+</div>
+<div>
+<h4 class="font-sans text-sm tracking-wide uppercase text-[#526049] dark:text-[#7D8C73] mb-6">Services</h4>
+<ul class="space-y-4 font-sans text-sm tracking-wide uppercase">
+<li><a class="text-[#1b1c1a]/60 dark:text-[#faf9f5]/60 hover:underline decoration-[#695d3d] underline-offset-4 transition-opacity" href="#">Weddings</a></li>
+<li><a class="text-[#1b1c1a]/60 dark:text-[#faf9f5]/60 hover:underline decoration-[#695d3d] underline-offset-4 transition-opacity" href="#">Corporate</a></li>
+<li><a class="text-[#1b1c1a]/60 dark:text-[#faf9f5]/60 hover:underline decoration-[#695d3d] underline-offset-4 transition-opacity" href="#">Social</a></li>
+<li><a class="text-[#1b1c1a]/60 dark:text-[#faf9f5]/60 hover:underline decoration-[#695d3d] underline-offset-4 transition-opacity" href="#">Private Chef</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-sans text-sm tracking-wide uppercase text-[#526049] dark:text-[#7D8C73] mb-6">Company</h4>
+<ul class="space-y-4 font-sans text-sm tracking-wide uppercase">
+<li><a class="text-[#1b1c1a]/60 dark:text-[#faf9f5]/60 hover:underline decoration-[#695d3d] underline-offset-4 transition-opacity" href="#">Sustainability</a></li>
+<li><a class="text-[#1b1c1a]/60 dark:text-[#faf9f5]/60 hover:underline decoration-[#695d3d] underline-offset-4 transition-opacity" href="#">Careers</a></li>
+<li><a class="text-[#1b1c1a]/60 dark:text-[#faf9f5]/60 hover:underline decoration-[#695d3d] underline-offset-4 transition-opacity" href="#">Privacy Policy</a></li>
+<li><a class="text-[#1b1c1a]/60 dark:text-[#faf9f5]/60 hover:underline decoration-[#695d3d] underline-offset-4 transition-opacity" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-sans text-sm tracking-wide uppercase text-[#526049] dark:text-[#7D8C73] mb-6">Inquiry</h4>
+<p class="text-sm text-[#1b1c1a]/60 dark:text-[#faf9f5]/60 mb-4">Contact@culinarycurator.com</p>
+<div class="flex space-x-4">
+<span class="material-symbols-outlined text-[#526049] cursor-pointer">social_leaderboard</span>
+<span class="material-symbols-outlined text-[#526049] cursor-pointer">photo_camera</span>
+</div>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-[#c5c8be]/10 max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center text-[#1b1c1a]/40 dark:text-[#faf9f5]/40 text-xs tracking-widest uppercase">
+<span>© 2024 The Culinary Curator. All rights reserved.</span>
+<span class="mt-4 md:mt-0 italic font-serif">A taste of excellence.</span>
+</div>
+</footer>
+</body></html>

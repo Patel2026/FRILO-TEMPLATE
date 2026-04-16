@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bâtisseurs | FRILO Promotion</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-primary text-concrete-200 antialiased selection:bg-accent selection:text-white bg-blueprint">
+
+    <!-- Navbar Structure -->
+    <nav class="fixed w-full z-50 transition-all border-b border-white/10 bg-primary/90 backdrop-blur-md" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-accent flex items-center justify-center font-display font-bold text-primary text-xl">F.</div>
+                <div class="flex flex-col">
+                    <span class="font-display font-bold text-xl text-white tracking-widest leading-none mb-1">FRILO</span>
+                    <span class="text-[10px] font-sans font-bold uppercase tracking-[0.2em] text-accent">Promotion BTP</span>
+                </div>
+            </a>
+            
+            <div class="hidden lg:flex items-center space-x-10">
+                <a href="index.html" class="font-display text-white text-sm tracking-widest uppercase hover:text-accent transition-colors relative after:absolute after:-bottom-2 after:left-0 after:w-full after:h-0.5 after:bg-accent">Accueil</a>
+                <a href="projects.html" class="font-display text-concrete-400 text-sm tracking-widest uppercase hover:text-white transition-colors">Nos Programmes</a>
+                <a href="about.html" class="font-display text-concrete-400 text-sm tracking-widest uppercase hover:text-white transition-colors">L'Ingénierie</a>
+                <a href="contact.html" class="font-display text-concrete-400 text-sm tracking-widest uppercase hover:text-white transition-colors">Bulle de Vente</a>
+            </div>
+
+            <div class="hidden md:block">
+                <a href="projects.html" class="font-display text-xs border border-white/20 text-white px-6 py-2 uppercase tracking-widest hover:border-accent hover:text-accent transition-colors">Construire avec nous</a>
+            </div>
+
+            <button class="lg:hidden text-white">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 1. Hero Cinématique -->
+        <section class="relative h-screen min-h-[800px] flex items-center clip-diagonal bg-primary">
+            <div class="absolute inset-0 z-0">
+                <!-- Fallback to a beautiful modern architecture shot -->
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80" alt="Façade Immeuble" class="w-full h-full object-cover opacity-30 mix-blend-luminosity filter contrast-125">
+                <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-primary to-transparent"></div>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-6 w-full pt-20">
+                <div class="max-w-3xl">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="h-px w-12 bg-accent"></div>
+                        <span class="font-display text-accent text-sm tracking-[0.3em] uppercase">Constructeur & Promoteur au Bénin</span>
+                    </div>
+                    
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white leading-[1.1] mb-8">
+                        BÂTIR LE BÉNIN<br>
+                        <span class="text-transparent" style="-webkit-text-stroke: 1px rgba(255,255,255,0.5);">DE DEMAIN.</span>
+                    </h1>
+                    
+                    <p class="text-xl text-concrete-400 font-light mb-12 max-w-xl leading-relaxed border-l border-white/20 pl-6">
+                        Spécialiste de la Vente en l'État Futur d'Achèvement (VEFA). Nous concevons, finançons et érigeons des programmes résidentiels d'excellence.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <a href="projects.html" class="btn-primary">
+                            Voir les programmes neufs <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll indicator -->
+            <div class="absolute bottom-16 right-6 md:right-auto md:left-6 hidden md:flex items-center gap-4 rotate-90 origin-left">
+                <span class="font-display text-xs tracking-widest uppercase text-white/50">Défiler</span>
+                <div class="w-16 h-px bg-white/20 relative">
+                    <div class="absolute top-0 right-0 w-8 h-full bg-accent animate-pulse"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. L'ADN Bâtisseur -->
+        <section class="py-24 max-w-7xl mx-auto px-6 -mt-10 relative z-20">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative shadow-solid">
+                    <img src="https://images.unsplash.com/photo-1541888086925-ebca89bba478?auto=format&fit=crop&w=1000&q=80" alt="Chantier de construction" class="w-full aspect-square object-cover filter grayscale contrast-125">
+                    <div class="absolute inset-0 bg-accent mix-blend-multiply opacity-20"></div>
+                    <div class="absolute -top-6 -right-6 bg-primary border border-white/10 p-6 shadow-2xl">
+                        <span class="font-display text-5xl font-bold text-white block mb-1">ISO</span>
+                        <span class="text-[10px] font-sans font-bold uppercase tracking-widest text-concrete-400">Normes 9001 respectées</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-8">LA MAÎTRISE TOTALE <br>DE L'OUVRAGE.</h2>
+                    <div class="space-y-6 text-concrete-400 leading-relaxed font-light">
+                        <p>
+                            Contrairement aux agences immobilières classiques, FRILO Promotion ne joue pas les intermédiaires. Nous sourçons le foncier, concevons les plans avec nos architectes affiliés, et assurons la construction jusqu'à la remise des clés.
+                        </p>
+                        <p>
+                            Acheter un bien chez nous, c'est acheter sur plan ou neuf directement à la source, avec la **garantie décennale** de nos ouvrages au Bénin.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-8 mt-12 pt-12 border-t border-white/10">
+                        <div>
+                            <span class="font-display text-4xl text-accent font-bold block mb-2">14</span>
+                            <span class="text-xs uppercase tracking-widest text-concrete-400 font-bold">Résidences Livrées</span>
+                        </div>
+                        <div>
+                            <span class="font-display text-4xl text-accent font-bold block mb-2">04</span>
+                            <span class="text-xs uppercase tracking-widest text-concrete-400 font-bold">Chantiers en cours</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Programmes Neufs en Cours (Horizontal Scroll / Grid) -->
+        <section class="py-24 bg-surface border-y border-white/5 relative overflow-hidden">
+            <!-- Decorative huge text -->
+            <div class="absolute top-10 left-0 text-[15rem] font-display font-bold text-white/[0.02] whitespace-nowrap pointer-events-none select-none leading-none -z-0">
+                EN CONSTRUCTION
+            </div>
+            
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                    <div>
+                        <span class="font-display text-accent text-sm tracking-widest uppercase mb-4 block">Commercialisation VEFA</span>
+                        <h2 class="text-4xl md:text-5xl font-display font-bold text-white">PROGRAMMES ACTUELS</h2>
+                    </div>
+                    <a href="projects.html" class="font-display text-xs border-b-2 border-accent text-white pb-1 uppercase tracking-widest hover:text-accent transition-colors">Tous les projets</a>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10">
+                    
+                    <!-- Projet 1 -->
+                    <div class="bg-primary border border-white/10 group hover:border-accent transition-colors relative overflow-hidden">
+                        <div class="absolute top-4 left-4 z-20 bg-accent text-primary font-bold font-display text-xs py-1 px-3 uppercase tracking-widest">En Chantier</div>
+                        
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Villa 3D" class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent"></div>
+                        </div>
+                        
+                        <div class="p-8">
+                            <h3 class="text-2xl font-display font-bold text-white mb-2">Cité "L'OASIS" - Togbin</h3>
+                            <p class="text-concrete-400 text-sm mb-6">Lotissement privé de 12 villas contemporaines R+1 avec piscine. Accès direct goudron.</p>
+                            
+                            <!-- Bare de progression de vente -->
+                            <div class="mb-6">
+                                <div class="flex justify-between text-xs font-bold uppercase tracking-widest mb-2">
+                                    <span class="text-white">Commercialisation</span>
+                                    <span class="text-accent">75% Vendu</span>
+                                </div>
+                                <div class="progress-container">
+                                    <!-- Inline style for dynamic width simulation -->
+                                    <div class="progress-bar" style="width: 75%;"></div>
+                                </div>
+                                <p class="text-[10px] text-concrete-600 mt-2 uppercase tracking-wide">3 villas restantes - Livraison Mars 2027</p>
+                            </div>
+                            
+                            <div class="flex justify-between items-center pt-6 border-t border-white/5">
+                                <span class="font-display text-xl text-white">Dès 120M <span class="text-sm text-concrete-600">FCFA</span></span>
+                                <a href="contact.html" class="w-10 h-10 border border-white/20 flex items-center justify-center text-white group-hover:bg-accent group-hover:border-accent group-hover:text-primary transition-colors"><span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2 -->
+                    <div class="bg-primary border border-white/10 group hover:border-accent transition-colors relative overflow-hidden">
+                        <div class="absolute top-4 left-4 z-20 bg-white text-primary font-bold font-display text-xs py-1 px-3 uppercase tracking-widest">Lancement</div>
+                        
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" alt="Appartement 3D" class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent"></div>
+                        </div>
+                        
+                        <div class="p-8">
+                            <h3 class="text-2xl font-display font-bold text-white mb-2">Tour "LES ALIZÉS" - Haie Vive</h3>
+                            <p class="text-concrete-400 text-sm mb-6">Immeuble de haut standing R+6. Composé de F3, F4 et deux Penthouses panoramiques.</p>
+                            
+                            <!-- Bare de progression de vente -->
+                            <div class="mb-6">
+                                <div class="flex justify-between text-xs font-bold uppercase tracking-widest mb-2">
+                                    <span class="text-white">Commercialisation</span>
+                                    <span class="text-white">20% Vendu</span>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar bg-white" style="width: 20%;"></div>
+                                </div>
+                                <p class="text-[10px] text-concrete-600 mt-2 uppercase tracking-wide">Lancement commercial - Livraison Décembre 2028</p>
+                            </div>
+                            
+                            <div class="flex justify-between items-center pt-6 border-t border-white/5">
+                                <span class="font-display text-xl text-white">Dès 85M <span class="text-sm text-concrete-600">FCFA</span></span>
+                                <a href="contact.html" class="w-10 h-10 border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:border-white group-hover:text-primary transition-colors"><span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. VEFA (Focus Information) -->
+        <section class="py-32 max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-1">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-6">POURQUOI ACHETER <br>SUR PLAN (VEFA) ?</h2>
+                    <p class="text-concrete-400 mb-8 font-light leading-relaxed">
+                        L'achat sur plan avec un promoteur certifié vous protège avec un cadre légal strict, évitant les surcoûts et abandons de chantiers individuels.
+                    </p>
+                    <a href="contact.html" class="btn-outline">Guide Investisseur</a>
+                </div>
+                
+                <div class="lg:col-span-2 grid sm:grid-cols-2 gap-6">
+                    <div class="bg-surface p-8 border border-white/5">
+                        <span class="font-display text-4xl text-accent mb-4 block">01</span>
+                        <h4 class="font-display text-lg text-white mb-2">Échelonnement des paiements</h4>
+                        <p class="text-sm text-concrete-400 font-light">Payez progressivement selon l'avancement réel des travaux (Fondations, Hors d'eau, Finitions).</p>
+                    </div>
+                    <div class="bg-surface p-8 border border-white/5">
+                        <span class="font-display text-4xl text-accent mb-4 block">02</span>
+                        <h4 class="font-display text-lg text-white mb-2">Personnalisation extrême</h4>
+                        <p class="text-sm text-concrete-400 font-light">Acheter avant la construction vous permet de choisir vos revêtements, carrelages et agencements.</p>
+                    </div>
+                    <div class="bg-surface p-8 border border-white/5">
+                        <span class="font-display text-4xl text-accent mb-4 block">03</span>
+                        <h4 class="font-display text-lg text-white mb-2">Garantie d'achèvement</h4>
+                        <p class="text-sm text-concrete-400 font-light">Une garantie financière (GFA) notariale sécurise votre investissement quoi qu'il arrive.</p>
+                    </div>
+                    <div class="bg-surface p-8 border border-white/5">
+                        <span class="font-display text-4xl text-accent mb-4 block">04</span>
+                        <h4 class="font-display text-lg text-white mb-2">Haute Performance (Normes)</h4>
+                        <p class="text-sm text-concrete-400 font-light">Profitez des dernières normes en isolation thermique et phonique, inexistantes dans l'ancien.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CTA / Visite Bulle de vente -->
+        <section class="relative py-24 bg-accent">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541888086925-ebca89bba478?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center mix-blend-multiply opacity-20 filter grayscale"></div>
+            <div class="relative z-10 max-w-4xl mx-auto px-6 text-center text-primary">
+                <span class="material-symbols-outlined text-5xl mb-6 font-light">architecture</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">VENEZ DÉCOUVRIR NOS MAQUETTES 3D</h2>
+                <p class="mb-10 font-bold max-w-xl mx-auto">
+                    Prenez rendez-vous dans notre pavillon de vente à Cotonou. Nos architectes d'intérieur vous y présenteront les matériaux de vos futures résidences.
+                </p>
+                <a href="contact.html" class="bg-primary text-accent px-10 py-5 font-display font-bold uppercase tracking-widest hover:bg-white transition-colors border-2 border-primary">Prendre RDV au Pavillon</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Brutaliste -->
+    <footer class="bg-primary border-t border-white/10 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 mb-16">
+            
+            <div class="md:col-span-5">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-8 h-8 bg-accent flex items-center justify-center font-display font-bold text-primary">F.</div>
+                    <div class="flex flex-col">
+                        <span class="font-display font-bold text-lg text-white tracking-widest leading-none mb-1">FRILO</span>
+                        <span class="text-[8px] font-sans font-bold uppercase tracking-[0.2em] text-accent">Promotion BTP</span>
+                    </div>
+                </div>
+                <p class="text-concrete-400 text-sm font-light max-w-sm mb-6">Société de promotion immobilière et d'aménagement foncier. Créatrice de lieux de vie d'exception en République du Bénin.</p>
+                <div class="flex gap-4">
+                    <!-- Placeholder social icons -->
+                    <div class="w-8 h-8 border border-white/20 flex items-center justify-center hover:border-accent text-white hover:text-accent transition-colors"><span class="material-symbols-outlined text-sm">share</span></div>
+                </div>
+            </div>
+
+            <div class="md:col-span-3">
+                <h4 class="font-display text-white tracking-widest uppercase mb-6">S'informer</h4>
+                <ul class="space-y-3 text-sm text-concrete-400 font-light">
+                    <li><a href="projects.html" class="hover:text-accent transition-colors">Programmes en cours</a></li>
+                    <li><a href="projects.html" class="hover:text-accent transition-colors">Réalisations livrées</a></li>
+                    <li><a href="about.html" class="hover:text-accent transition-colors">Cahier des charges interne</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-4">
+                <h4 class="font-display text-white tracking-widest uppercase mb-6">Pavillon de vente</h4>
+                <ul class="space-y-4 text-sm text-concrete-400 font-light">
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-accent text-[18px]">location_on</span>
+                        <span>Quartier Haie Vive, Rue 12<br>Cotonou, Bénin</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-accent text-[18px]">call</span>
+                        <span>+229 00 00 00 00</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold tracking-widest uppercase text-concrete-600">
+            <p>&copy; 2026 FRILO Promotion. Tous droits réservés.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white">Mentions Légales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Effet de navbar au scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2');
+                nav.classList.remove('py-4');
+                nav.classList.replace('bg-primary/90', 'bg-primary');
+            } else {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-2');
+                nav.classList.replace('bg-primary', 'bg-primary/90');
+            }
+        });
+    </script>
+</body>
+</html>

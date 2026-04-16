@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#2c2c2c",
+                    "on-surface": "#ffffff",
+                    "tertiary-dim": "#ff51fa",
+                    "inverse-on-surface": "#565554",
+                    "inverse-primary": "#9a00cf",
+                    "on-surface-variant": "#adaaaa",
+                    "surface-container-highest": "#262626",
+                    "on-background": "#ffffff",
+                    "error-dim": "#d73357",
+                    "surface-tint": "#e08dff",
+                    "on-error": "#490013",
+                    "tertiary-fixed-dim": "#ff61f8",
+                    "secondary-dim": "#e6c047",
+                    "inverse-surface": "#fcf8f8",
+                    "primary-fixed-dim": "#d160ff",
+                    "surface-container": "#1a1919",
+                    "on-primary": "#4f006c",
+                    "secondary": "#f5ce53",
+                    "on-tertiary-fixed-variant": "#6a006a",
+                    "error-container": "#a70138",
+                    "on-primary-container": "#3d0055",
+                    "tertiary": "#ff51fa",
+                    "on-secondary": "#584500",
+                    "on-primary-fixed-variant": "#4c0068",
+                    "primary-fixed": "#d978ff",
+                    "on-secondary-fixed": "#413200",
+                    "secondary-container": "#735c00",
+                    "outline-variant": "#494847",
+                    "on-tertiary": "#400040",
+                    "error": "#ff6e84",
+                    "secondary-fixed": "#f5ce53",
+                    "on-tertiary-container": "#230023",
+                    "primary-dim": "#bc00fb",
+                    "tertiary-fixed": "#ff81f5",
+                    "surface-variant": "#262626",
+                    "surface-dim": "#0e0e0e",
+                    "surface-container-high": "#201f1f",
+                    "surface": "#0e0e0e",
+                    "outline": "#777575",
+                    "on-primary-fixed": "#000000",
+                    "tertiary-container": "#fe00fe",
+                    "primary": "#e08dff",
+                    "surface-container-lowest": "#000000",
+                    "secondary-fixed-dim": "#e6c047",
+                    "background": "#0e0e0e",
+                    "surface-container-low": "#131313",
+                    "on-tertiary-fixed": "#320032",
+                    "primary-container": "#d978ff",
+                    "on-secondary-fixed-variant": "#634e00",
+                    "on-secondary-container": "#fff7ea",
+                    "on-error-container": "#ffb2b9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neon-glow-purple {
+            text-shadow: 0 0 10px rgba(224, 141, 255, 0.8), 0 0 20px rgba(224, 141, 255, 0.4);
+        }
+        .glass-card {
+            background: rgba(38, 38, 38, 0.4);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar Shell -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-950/40 backdrop-blur-xl shadow-[0_0_20px_rgba(224,141,255,0.1)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-2xl font-bold tracking-[-0.02em] text-white font-headline">
+                Electric Sanctuary
+            </div>
+<div class="hidden md:flex items-center space-x-10 font-headline tracking-tighter uppercase text-sm">
+<a class="text-fuchsia-400 border-b-2 border-fuchsia-500 pb-1" href="#">Home</a>
+<a class="text-neutral-400 hover:text-white transition-colors" href="#">About</a>
+<a class="text-neutral-400 hover:text-white transition-colors" href="#">Drinks</a>
+<a class="text-neutral-400 hover:text-white transition-colors" href="#">Events</a>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-dim text-on-primary-fixed px-6 py-2.5 font-headline font-bold uppercase tracking-wider text-xs rounded-lg hover:scale-95 transition-all duration-300">
+                Book a Table
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60 scale-105" data-alt="cinematic wide shot of a crowded high-end nightclub with neon purple and blue lighting, silhouettes of people dancing and glowing cocktails on bar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7RUXEUNMBwkRvcVP1FZYWZP1DYnd9RSxZJaWxUw06zC0_We82L2LgMYZ_mpMAYT28Wd_9v1GxVNh7jiWKA0HHgKbqtrXKvhBmf9a2m9WpkOMXM9jmcZhFPEfQ5A1KHjB_7udsqd4XfKx_SA-GT4qhAsul_p9f3ojadLPY9lgJCUrUse17nvMbmCYfjPOvQ4FOwuhcfvjOroGTnLyjPx4KzyW6k29cfQnxhoiQoC9xtMcXrTUgV2Z_EdMOoIwFWOmP2WndB8uaFX0g"/>
+<div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-surface/40 to-surface"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-5xl">
+<span class="font-label uppercase tracking-[0.3em] text-secondary text-sm mb-6 block">The Ultimate Nightlife Experience</span>
+<h1 class="font-headline text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-none neon-glow-purple text-on-surface mb-8">
+                    Escape to the <br/>Extraordinary
+                </h1>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-12">
+<button class="px-10 py-4 bg-gradient-to-br from-primary to-primary-dim text-on-primary-fixed font-headline font-black uppercase tracking-widest rounded-xl hover:shadow-[0_0_30px_rgba(224,141,255,0.4)] transition-all">
+                        Explore the Night
+                    </button>
+<button class="px-10 py-4 bg-surface-container-high/40 backdrop-blur-md border border-outline-variant/30 text-on-surface font-headline font-black uppercase tracking-widest rounded-xl hover:bg-surface-bright transition-all">
+                        View Menu
+                    </button>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-on-surface-variant opacity-50">
+<span class="text-[10px] uppercase tracking-[0.2em] font-label">Scroll</span>
+<span class="material-symbols-outlined animate-bounce">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- Upcoming Events: Asymmetric Bento Grid -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<div class="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div>
+<h2 class="font-headline text-5xl font-bold tracking-tighter text-on-surface">Upcoming <span class="text-primary-dim">Events</span></h2>
+<p class="text-on-surface-variant mt-4 max-w-md font-light leading-relaxed">A curated calendar of high-octane performances and exclusive soirées designed for the elite.</p>
+</div>
+<a class="font-label text-secondary uppercase tracking-widest text-sm flex items-center gap-2 group" href="#">
+                    View Full Calendar 
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Techno Tuesday -->
+<div class="md:col-span-7 relative group overflow-hidden rounded-full aspect-[16/10] md:aspect-auto h-[500px]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="high contrast photo of a DJ deck in dark club with purple laser lights and atmospheric smoke" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEp_Bi71F3ZcJ_m8a4c-80-zZP08aCkGcJxTfcBOPgMTeCU-ktM6Bz0on-9tdgn-FDhIaHqggpN9cmzbzyeItlK6LCknFj-XnSrLiAaKtUsEgJUVMUhziUoYglQNF8fdna_gEjassRbK9PJJsJAMYhDSCRUWq2x64Zk-21-dqOIsO7DndMxb3I8t5-fj1D-F9pFRgLZHn-Q_9DUqTUoAphNVtEXvGQdXC-Wlek2-XiXJTORz8YsAHuX5Zy-jtzXG7sPjCh9NL3-eCk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 p-10 w-full">
+<div class="flex items-center gap-4 mb-4">
+<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Tuesday / 22:00</span>
+</div>
+<h3 class="font-headline text-4xl font-bold text-white mb-2">Techno Tuesday</h3>
+<p class="text-on-surface-variant text-sm mb-6 max-w-sm">Deep, industrial pulses meet a sanctuary of rhythm. Featuring guest residency by MARVØ.</p>
+<button class="bg-white text-black px-6 py-2 rounded-lg font-headline font-bold text-xs uppercase hover:bg-primary transition-colors">Join the List</button>
+</div>
+</div>
+<!-- Gold Standard Friday -->
+<div class="md:col-span-5 flex flex-col gap-6">
+<div class="relative group overflow-hidden rounded-full flex-grow">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="luxury vip lounge setting with plush gold seating, glowing champagne buckets and warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiPiPn5YHoQqH-c79M-6SONKEAKE4VZk43ff7_AxtEcM-cIh6rv9KpsbLyM906Me6B60GK43clxqAKTqJDp6BcW98aZ1ZnI9vO8bW1-BczoFk60RlO0TBW4sEOoAEJ50EUB4R1-3XfBHjbUFmWDrNtKzurNmbe2Iq06jmFH0Pnv1iG-HD62uBpb4dw3GkdnhKLMTiJtUw7diDrDvNQjHUP5Cswg3d6owM8z4uGhRz2U49PRdCJE7eSEWw9i5xSHB0Agc1-LPRI9VkV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
+<div class="absolute bottom-0 p-8">
+<span class="text-secondary font-black uppercase text-[10px] tracking-widest block mb-2">Weekend Ritual</span>
+<h3 class="font-headline text-3xl font-bold text-white mb-1">Gold Standard Friday</h3>
+<p class="text-on-surface-variant text-xs mb-4">The peak of sophistication and excess.</p>
+<span class="material-symbols-outlined text-secondary">stars</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-full border border-outline-variant/10">
+<div class="flex items-center justify-between">
+<div>
+<h4 class="font-headline font-bold text-lg text-on-surface">Secret Sundays</h4>
+<p class="text-on-surface-variant text-xs">Invite-only afterhours</p>
+</div>
+<div class="w-10 h-10 rounded-full border border-primary/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">lock</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Pour Section -->
+<section class="bg-surface-container-low py-32 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-20">
+<div class="order-2 lg:order-1 relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-primary-dim/20 rounded-full blur-[100px]"></div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<img class="rounded-xl w-full h-64 object-cover" data-alt="macro photo of a vibrant purple craft cocktail with an edible flower garnish and condensation on the glass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrigbHH1P3ZyvvVYi9bdnoOo5dYe9vr7op5TNlRxNMHE2SCSRmAp3a1n8ce5-qboF8Bji3aFeIsfcwmJWExFFcsCDQUzHhtynYhshDiZ4vQht1yfdMRBIgXxTJ7nvUktPs_ydXicy-1EXhFNLgrgRq6xtcB77OeNbODbwZkDZoEA_eYy37noj1x57UPTE6H6pVzkweO_Gynn4akkj3FgBf_Sh7xR4IhRlUy5N35qmYnEj0co8piA_5XhM4AcUWYE7RwKIpe8-VmsjH"/>
+<img class="rounded-xl w-full h-80 object-cover" data-alt="stylish bartender pouring a golden liquid into a crystal glass with dramatic backlighting and smoke effects" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcVYyxPM5EvkI85brpbCcmX1f0xw9m-YRPNPdGejD2sPFva8mncd1JXCCo3O4Ql31Cqdqr8FtZPXjHDGNx0S6Zv0nFe1FP4MEUfCk16-mfRt5V6pGTBHow7vTV7PdWdB4-1iMcNXdFoCIU-CVrdlg1b7tKR6TcxEk6mL8Vwo99nhnLxM4UFD-AzgWazTlnOqZzOjgCCLm94Fv2XS_IKDTIU0IJY4gLem2GEFpjZZ5dUtoOqHNGCykqGtjZJNWpwYTdF0xHtfgL2ftz"/>
+</div>
+<div class="space-y-4 pt-12">
+<img class="rounded-xl w-full h-80 object-cover" data-alt="a collection of luxury spirits bottles on a glowing shelf in a dark modern bar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt6IuQh5qzsd5eeS_batulRYrTkQisAacRGo5Z1lVsmZJKHJFJvW9JtorLMmkbjWnq7eibBT_nSP3C2NW3mweweqeU0AKlDuS6naWhMrlywk6RcA4okk5-ULv7z4EiitiQIV-KLxemp5SW8BRiQnP09Uezhz260lPCcieSu83I1v3WPIKnsdbkZTfcLz5CiMJre5s5FP19xuiv7PtXI4oj5-y9mOiwZIcpAuw6QXOS9kO1EqqX2SwL8i7l7g53hoUDHP2BcFXVXWIf"/>
+<img class="rounded-xl w-full h-64 object-cover" data-alt="close-up of a cocktail being stirred in a mixing glass with orange peel and large clear ice cubes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvltvbCHWdFex2CSjhnbVmQbXknkydw6lBg1erlKgh3-tvKt5dwhZpL_i6ZKW5LcH0NlIS0qdAxcK0tq6d7Fkc0dKStBCqT0BSyfLzY5PR-PjQzJFyvWFdGZYOFhCAgiAPOpoXck-pBHm3FtFKnuL9dCXpZO9BbHvutj2EaWqvsCZyL-8tJZLFO3g0UtJimQTjpj0nT-9ExykY7U0mTYDh7yjGx2OgEXouWCsnf5HTHNafCeFXgGsipUNqNSizDa0Hz-INJLp8R-1L"/>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<span class="font-label uppercase tracking-widest text-primary text-sm mb-4 block">Mixology &amp; Alchemy</span>
+<h2 class="font-headline text-5xl md:text-6xl font-bold tracking-tighter text-on-surface mb-8">The <span class="text-secondary">Pour</span></h2>
+<p class="text-on-surface-variant text-lg font-light leading-relaxed mb-10">Our bar is a laboratory of taste, where rare botanicals and top-shelf spirits collide. Each signature cocktail is a crafted experience, designed to electrify your senses and mirror the energy of the sanctuary.</p>
+<ul class="space-y-8">
+<li class="group">
+<div class="flex justify-between items-baseline border-b border-outline-variant/10 pb-4">
+<h4 class="font-headline text-xl font-bold text-on-surface group-hover:text-primary transition-colors">Electric Orchid</h4>
+<span class="text-secondary font-headline">24</span>
+</div>
+<p class="text-on-surface-variant text-sm mt-2 font-light">Gin, violette liqueur, elderflower, and edible neon petals.</p>
+</li>
+<li class="group">
+<div class="flex justify-between items-baseline border-b border-outline-variant/10 pb-4">
+<h4 class="font-headline text-xl font-bold text-on-surface group-hover:text-primary transition-colors">Gold Standard Old Fashioned</h4>
+<span class="text-secondary font-headline">28</span>
+</div>
+<p class="text-on-surface-variant text-sm mt-2 font-light">23k gold-infused bourbon, charcoal bitters, smoked oak.</p>
+</li>
+<li class="group">
+<div class="flex justify-between items-baseline border-b border-outline-variant/10 pb-4">
+<h4 class="font-headline text-xl font-bold text-on-surface group-hover:text-primary transition-colors">Midnight Muse</h4>
+<span class="text-secondary font-headline">22</span>
+</div>
+<p class="text-on-surface-variant text-sm mt-2 font-light">Espresso, organic agave, black sea salt, vanilla foam.</p>
+</li>
+</ul>
+<button class="mt-12 flex items-center gap-3 text-on-surface font-headline font-bold uppercase tracking-widest group">
+                        Full Drinks Ritual 
+                        <span class="w-12 h-[1px] bg-outline-variant group-hover:w-20 group-hover:bg-primary transition-all"></span>
+</button>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-8">
+<div class="max-w-5xl mx-auto bg-surface-container-high rounded-[2rem] p-12 md:p-20 border-[1px] border-secondary/20 relative overflow-hidden text-center">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-secondary/5 via-transparent to-transparent"></div>
+<div class="relative z-10">
+<h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tighter text-on-surface mb-6">Experience the <br/>Sanctuary Firsthand</h2>
+<p class="text-on-surface-variant text-lg max-w-2xl mx-auto mb-12 font-light">Secure your presence in the inner circle. VIP booths and table service are available for those who demand the pinnacle of night-time exclusivity.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="w-full sm:w-auto px-12 py-5 bg-secondary text-on-secondary-fixed font-headline font-black uppercase tracking-widest rounded-xl hover:scale-95 transition-all shadow-[0_10px_40px_rgba(245,206,83,0.15)]">
+                            Book a Table
+                        </button>
+<button class="w-full sm:w-auto px-12 py-5 border border-outline text-on-surface font-headline font-black uppercase tracking-widest rounded-xl hover:bg-surface-bright transition-all">
+                            VIP Inquiries
+                        </button>
+</div>
+<div class="mt-12 flex items-center justify-center gap-8 text-on-surface-variant opacity-60">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary mb-1">local_bar</span>
+<span class="text-[10px] uppercase font-label tracking-widest">Mixology</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary mb-1">music_note</span>
+<span class="text-[10px] uppercase font-label tracking-widest">Surround Sound</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary mb-1">workspace_premium</span>
+<span class="text-[10px] uppercase font-label tracking-widest">VIP Entry</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-neutral-950 w-full py-16 px-8 border-t border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-black text-white font-headline">ELECTRIC SANCTUARY</div>
+<p class="font-['Manrope'] font-light tracking-wide text-neutral-500 text-sm leading-relaxed">
+                    A destination for the bold. Where the night never ends and the sanctuary protects the extraordinary.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-amber-400 opacity-80 hover:opacity-100 cursor-pointer">public</span>
+<span class="material-symbols-outlined text-amber-400 opacity-80 hover:opacity-100 cursor-pointer">chat_bubble</span>
+<span class="material-symbols-outlined text-amber-400 opacity-80 hover:opacity-100 cursor-pointer">motion_photos_on</span>
+</div>
+</div>
+<div class="space-y-4">
+<h5 class="text-white font-bold text-xs uppercase tracking-widest">Navigation</h5>
+<ul class="space-y-3 font-['Manrope'] font-light tracking-wide text-sm">
+<li><a class="text-amber-400 font-bold hover:text-amber-200 transition-colors" href="#">Home</a></li>
+<li><a class="text-neutral-500 hover:text-amber-200 transition-colors" href="#">Instagram</a></li>
+<li><a class="text-neutral-500 hover:text-amber-200 transition-colors" href="#">TikTok</a></li>
+<li><a class="text-neutral-500 hover:text-amber-200 transition-colors" href="#">Newsletter</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-white font-bold text-xs uppercase tracking-widest">Information</h5>
+<ul class="space-y-3 font-['Manrope'] font-light tracking-wide text-sm">
+<li><a class="text-neutral-500 hover:text-amber-200 transition-colors" href="#">Location</a></li>
+<li><a class="text-neutral-500 hover:text-amber-200 transition-colors" href="#">Hours</a></li>
+<li><a class="text-neutral-500 hover:text-amber-200 transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-neutral-500 hover:text-amber-200 transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-white font-bold text-xs uppercase tracking-widest">The Sanctum</h5>
+<p class="font-['Manrope'] font-light tracking-wide text-neutral-500 text-sm italic leading-relaxed">
+                    "The night belongs to those who choose to live it in the glow."
+                </p>
+<div class="pt-4">
+<div class="text-[10px] text-neutral-600 uppercase tracking-widest">© 2024 ELECTRIC SANCTUARY. ALL RIGHTS RESERVED.</div>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

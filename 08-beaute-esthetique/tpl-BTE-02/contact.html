@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact | Flora Skin</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Be+Vietnam+Pro:wght@400;500&family=Satisfy&family=Caveat:wght@400;700&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface font-body text-on-surface-variant selection:bg-secondary-container selection:text-on-secondary-container antialiased">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav shadow-[0_10px_40px_rgba(29,28,22,0.05)]">
+        <div class="flex justify-between items-center px-8 py-4 max-w-full">
+            <div class="text-[22px] font-headline font-bold text-[#55433b]">Flora Skin</div>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-[#55433b] hover:text-[#94451a] transition-colors font-sans text-sm tracking-wide" href="index.html">Accueil</a>
+                <a class="text-[#55433b] hover:text-[#94451a] transition-colors font-sans text-sm tracking-wide" href="a-propos.html">Notre Histoire</a>
+                <a class="text-[#55433b] hover:text-[#94451a] transition-colors font-sans text-sm tracking-wide" href="services.html">Soins</a>
+                <a class="text-[#55433b] hover:text-[#94451a] transition-colors font-sans text-sm tracking-wide" href="#">Journal</a>
+                <a class="text-[#94451a] border-b-2 border-[#94451a] pb-1 font-medium font-sans text-sm tracking-wide" href="contact.html">Contact</a>
+            </div>
+            <button class="bg-[#94451a] text-white px-6 py-2.5 rounded-full font-medium hover:scale-105 transition-transform duration-300 active:scale-98">
+                Prendre RDV 🌿
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative h-[614px] flex items-center justify-center overflow-hidden bg-secondary">
+            <div class="absolute inset-0 opacity-20 mix-blend-overlay">
+                <img alt="Nature texture" class="w-full h-full object-cover" data-alt="Close-up of lush green moss and damp forest floor with soft morning light filtering through ferns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOavuogIkzaRMw3_wgcpCw_LTdOXH61iUDOHybYMCKAc40DPKhj6XLPFBVAtxQlYmlAw-3eRY9KtF0gmBVJiEfC3IUNP24VzsE6GZk4BU3QiGnI5QwWrVxNwx0UO6kZjyNeBOb5xbM46QnQZVY2CicppO0f7CO4QAFLgh-oadz3Vm7YfoLq6eL687-YFdElPViPvMF7rxGKS9oU0vQmLWEXaYcNfyJo87WD9hC-MHHpZ74BK8KTHOwRmxSfvOs_F27E-dsQ5w-i08"/>
+            </div>
+            <div class="relative z-10 text-center px-4">
+                <span class="font-handwritten text-secondary-container text-4xl mb-4 block">Entrez dans la serre</span>
+                <h1 class="font-headline text-5xl md:text-7xl text-on-secondary tracking-tight font-bold italic">Contactez-nous</h1>
+            </div>
+            <!-- Organic Transition -->
+            <div class="absolute bottom-0 left-0 w-full h-24 bg-surface botanical-divider"></div>
+        </section>
+
+        <!-- Info Cards Section -->
+        <section class="px-6 -mt-20 relative z-20 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-surface-container-lowest p-8 rounded-lg shadow-[0_10px_40px_rgba(29,28,22,0.05)] flex flex-col items-center text-center group hover:translate-y-[-8px] transition-transform duration-500 border border-outline-variant/10">
+                    <div class="w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center mb-6 text-secondary">
+                        <span class="material-symbols-outlined text-3xl">location_on</span>
+                    </div>
+                    <h3 class="font-headline text-2xl text-on-surface mb-3">Adresse</h3>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        14 Rue des Jardins Fleuris<br/>
+                        75003 Paris, France
+                    </p>
+                    <div class="mt-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="font-handwritten text-primary text-xl">On vous attend ✨</span>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-surface-container-lowest p-8 rounded-lg shadow-[0_10px_40px_rgba(29,28,22,0.05)] flex flex-col items-center text-center group hover:translate-y-[-8px] transition-transform duration-500 border border-outline-variant/10">
+                    <div class="w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center mb-6 text-secondary">
+                        <span class="material-symbols-outlined text-3xl">mail</span>
+                    </div>
+                    <h3 class="font-headline text-2xl text-on-surface mb-3">Email</h3>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        hello@floraskin.fr<br/>
+                        presse@floraskin.fr
+                    </p>
+                    <div class="mt-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="font-handwritten text-primary text-xl">Écrivez-nous ✉️</span>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-surface-container-lowest p-8 rounded-lg shadow-[0_10px_40px_rgba(29,28,22,0.05)] flex flex-col items-center text-center group hover:translate-y-[-8px] transition-transform duration-500 border border-outline-variant/10">
+                    <div class="w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center mb-6 text-secondary">
+                        <span class="material-symbols-outlined text-3xl">call</span>
+                    </div>
+                    <h3 class="font-headline text-2xl text-on-surface mb-3">Téléphone</h3>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        +33 (0)1 45 67 89 00<br/>
+                        Lun - Sam: 10h - 19h
+                    </p>
+                    <div class="mt-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="font-handwritten text-primary text-xl">Parlons beauté 🌿</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form & Map Section -->
+        <section class="mt-24 bg-secondary-container/30 py-24 px-6 text-left">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <!-- Booking Form -->
+                <div class="bg-surface p-10 md:p-14 rounded-lg shadow-sm">
+                    <span class="text-primary font-handwritten text-2xl mb-2 block italic">Réservez un soin</span>
+                    <h2 class="font-headline text-4xl text-on-surface mb-8 tracking-tight">Laissez éclore votre éclat</h2>
+                    <form class="space-y-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="relative group">
+                                <label class="block text-xs font-label uppercase tracking-widest text-outline mb-1">Nom complet</label>
+                                <input class="w-full bg-surface-container-high border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-all py-3 px-0 placeholder:text-on-surface-variant/30 text-on-surface" placeholder="Rose Martin" type="text"/>
+                            </div>
+                            <div class="relative group">
+                                <label class="block text-xs font-label uppercase tracking-widest text-outline mb-1">Email</label>
+                                <input class="w-full bg-surface-container-high border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-all py-3 px-0 placeholder:text-on-surface-variant/30 text-on-surface" placeholder="rose@jardin.fr" type="email"/>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <label class="block text-xs font-label uppercase tracking-widest text-outline mb-1">Soin souhaité</label>
+                            <select class="w-full bg-surface-container-high border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-all py-3 px-0 text-on-surface">
+                                <option>Soin Visage Signature - 60min</option>
+                                <option>Rituel Corps Botanique - 90min</option>
+                                <option>Consultation Holistique - 30min</option>
+                            </select>
+                        </div>
+                        <div class="relative">
+                            <label class="block text-xs font-label uppercase tracking-widest text-outline mb-1">Message ou Précisions</label>
+                            <textarea class="w-full bg-surface-container-high border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-all py-3 px-0 placeholder:text-on-surface-variant/30 text-on-surface resize-none" placeholder="Comment pouvons-nous prendre soin de vous ?" rows="4"></textarea>
+                        </div>
+                        <button class="w-full bg-primary text-white py-5 rounded-full text-lg font-medium shadow-lg hover:translate-y-[-2px] transition-all active:scale-95 flex items-center justify-center gap-3 group" type="submit">
+                            Envoyer ma demande
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                        </button>
+                    </form>
+                </div>
+                <!-- Custom Map -->
+                <div class="h-full min-h-[600px] relative rounded-lg overflow-hidden shadow-2xl">
+                    <img alt="Map location" class="w-full h-full object-cover" data-alt="Artistic stylized map of Paris with warm beige tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMKsYoqQ-QntndJSXbba0MazY4YdHR2B3q5Oyyq0JDjMz3vZMdyJImXtjCha-BMk7zJ9eOhXElqFjAd17azMmmcLXmyXGMi2nfVtT1lAjoGPmQzWJ37EPPRtvRzfiyX8sjoWqFUOO29cJjrXq5a4beY5XMSqHSkjWKYIxIo5JphzzXDKHrtRhIXH2QDzEIVCUxEPpS9ozEA0kPGo_6d_n-n0cEzj01DjreBw1P3B36Ap64f3c45EJTtn6QTs-DPzFsFtIayyYnD6E"/>
+                    <div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-primary">
+                        <div class="relative">
+                            <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center shadow-xl animate-bounce">
+                                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">spa</span>
+                            </div>
+                            <div class="absolute -bottom-16 -left-1/2 bg-surface px-6 py-3 rounded-full shadow-lg whitespace-nowrap text-sm font-bold tracking-tight text-on-surface">
+                                Flora Skin Studio
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Feed -->
+        <section class="py-24 bg-surface overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 text-left">
+                    <div>
+                        <span class="text-primary font-handwritten text-2xl mb-2 block italic">@floraskin_beauty</span>
+                        <h2 class="font-headline text-[44px] leading-tight text-on-surface">Suivez notre jardin 🌿</h2>
+                    </div>
+                    <a class="text-on-surface-variant font-medium flex items-center gap-2 hover:text-primary transition-colors border-b border-primary/20 pb-1" href="#">
+                        S'abonner au journal
+                        <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                    <div class="aspect-square relative group overflow-hidden rounded-lg">
+                        <img alt="Insta 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBux8z00zU2IBRBBE14N8PBl2Iy-3B8yTWnrB3FSUGhbj8-KLeb8jxus-vkkRIi883OV6qbRoLohWApPCXsMqnTH5Af7pIVmC2Q1VC0-QfWcnrxTvlZjr42HeooaywDJ_W2V4qaYNtBZkMUSsfQ3A030Rzcn4zGkUjwxYzOD0kRpIhxmm5KOmC9OAs3QsyOgWzsJXwFjDsInfcJMcjCmqCanxQLzMwCHi99-92lWhAatyaeKThdEv4r1OFCw8cdkiA5hYLJkdF3P10"/>
+                    </div>
+                    <div class="aspect-square relative group overflow-hidden rounded-lg md:translate-y-4">
+                        <img alt="Insta 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkc9vBzDciIR45L07e0Ctx5lzLMWdv7P_T7adn9ZiIPNqqHV-2v8VZBf-Dh7HdnhqyMrQMb3gVk0Q8DOrxF6VL7GS3nMrBIu8n6laZ9EgqhpTttTEmDXv5212r7UI_SsvaEQbHwDdra7tOjx_cE6tG2AovI78WU7tDohsvGhqYQ-rbvyTUHZWlDQZtoL8vdNo6WA81MJwB4t9pA3q_hSx-AWw52L3143Ex3i69QJo8VhtcANH0lHxYsrzJrahEJ10Lae7RwKAi_-k"/>
+                    </div>
+                    <div class="aspect-square relative group overflow-hidden rounded-lg">
+                        <img alt="Insta 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4kevn5YK6tOG1jWVGQzME9nXfbFrjxFHwQ5Xvd2roG22D1arHXjxYZtx_srdQorH4_qC2QjJQBJZyEEd5iUvotrp15Mm3hbOzacsklI4L-vuYknOEYGD1_7dEgAtvbbNwVYph0CITSdZz121Ecs2rMeaJVW1A2KvNX6NAkHVUMX7abhoivpZPJqtGeWp8ccLa4bK4x0EDbmL1Z73saZp9xdCp0PLce0qU4cN4t_UeqLt-mU2N7EZ7uuhMBFcWZ9QFoOMK4l2yxWE"/>
+                    </div>
+                    <div class="aspect-square relative group overflow-hidden rounded-lg md:translate-y-4">
+                        <img alt="Insta 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy1qmWF9hG-DmDORNiGuVbsKG0A4HR2dnKe6Np3AKT1jgFrCOHrJXJJ39kNedj3B3oIfdR_0CnlvZ0lQRDz5AIZavQoVoi_MLEf7KoI62HCm16ViBKG4XefAIZeqZSZWVQ2wzW3bN0tLndCKkhrzVfSosG4rHpN7xgPQjeCZXZgg2xMMhLEJs_hs4pnnc34UhpaQeLFSz7UhBxwEJDbtFWAtzpPx47Rh2V2ZO_XKoAWI0QCW5ReCqgvwQUzHp1w3IkENDHke1wmNQ"/>
+                    </div>
+                    <div class="aspect-square relative group overflow-hidden rounded-lg">
+                        <img alt="Insta 5" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBmHpe6_XlzH5x3RvcI2T3oq_ayrrX3EEeMNYFZp6XbQhyyF_wu1_t4Q30bwyn5MsMbRq5LffZwq4CmN87DOaPf8AXWVC1EbgQEgQSn4XFmZ5W5oRQMA1_dToifPx1vHNZaeVIsUevJOC3CgTk8vPjHv82lqdOb9M1mT5zms9AfRDVwqC3x2JVJY4pLEBe9LI7t3FWKWxT1nb1SL9P6R8bnAxNdUUU0Y7izwHF_0roAj1Pg9VSgGSDYWXXrUz_IFofWE3P9rPH7PE"/>
+                    </div>
+                    <div class="aspect-square relative group overflow-hidden rounded-lg md:translate-y-4">
+                        <img alt="Insta 6" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfFZQAOpIBqxESHgTk5N31oon2De209cxDNHalNlzgFK4cOSS9pSmZe6qXK2o2q3ZB_a2fjorjEcn1MjIT2IbMI0PqxpQy-G9bYHeYxJRmY7GW9NIo7v-TONj4jcjJCv7LzNS5gHdbGDswriqqncYbaWWLJ7oTAYjdgzLkiPm3qKLPBzQlAMB-BC0e38FzP3_vhvMfOvO4ysZg13odakCAOyBmsPTI2Vveaet4ilQZACQzCleVPZ0ctGJ3n792-B8oTPJxXajqW1g"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking CTA -->
+        <section class="max-w-7xl mx-auto px-6 mb-24 text-center">
+            <div class="bg-secondary rounded-lg p-12 md:p-20 relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10 pointer-events-none">
+                    <svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
+                        <path d="M0 100 C 20 0 50 0 100 100" fill="transparent" stroke="white" stroke-width="0.5"></path>
+                    </svg>
+                </div>
+                <div class="relative z-10">
+                    <h2 class="font-headline text-4xl md:text-5xl text-on-secondary mb-8 leading-tight max-w-2xl mx-auto italic">Prête pour votre parenthèse sensorielle ?</h2>
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                        <button class="bg-primary text-white px-10 py-5 rounded-full font-medium text-lg hover:scale-105 transition-all shadow-xl">
+                            Réserver maintenant
+                        </button>
+                        <button class="bg-surface-container-highest text-primary px-10 py-5 rounded-full font-medium text-lg hover:scale-105 transition-all">
+                            Voir la carte des soins
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#2D3D2B] text-[#d1eac8] w-full rounded-t-[40px] mt-20 overflow-hidden text-left">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 max-w-7xl mx-auto">
+            <div>
+                <div class="text-2xl font-serif text-[#fef9f0] mb-6">Flora Skin</div>
+                <p class="font-handwritten text-2xl text-[#c1673a] mb-4">Beauty grown from the earth.</p>
+                <p class="text-sm text-[#d1eac8]/60 leading-relaxed max-w-xs">
+                    Une approche holistique et botanique de la peau, infusée par la sagesse des plantes et le respect du vivant.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-headline text-2xl text-[#fef9f0]">Explorer</h4>
+                <nav class="flex flex-col gap-3">
+                    <a class="text-[#d1eac8]/80 hover:text-[#fef9f0] hover:translate-x-1 transition-transform" href="index.html">Accueil</a>
+                    <a class="text-[#d1eac8]/80 hover:text-[#fef9f0] hover:translate-x-1 transition-transform" href="a-propos.html">Notre Histoire</a>
+                    <a class="text-[#d1eac8]/80 hover:text-[#fef9f0] hover:translate-x-1 transition-transform" href="services.html">Soins</a>
+                    <a class="text-[#fef9f0] underline hover:translate-x-1 transition-transform" href="#">Contact</a>
+                </nav>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-headline text-2xl text-[#fef9f0]">Lettre du Jardin</h4>
+                <p class="text-sm text-[#d1eac8]/60 mb-4">Recevez nos rituels saisonniers et conseils de culture de soi.</p>
+                <div class="flex gap-2">
+                    <input class="bg-white/10 border-0 rounded-lg px-4 py-3 focus:ring-1 focus:ring-[#c1673a] w-full text-[#fef9f0] placeholder:text-[#d1eac8]/30" placeholder="Votre email" type="email"/>
+                    <button class="bg-[#c1673a] text-white p-3 rounded-lg hover:scale-105 transition-transform">
+                        <span class="material-symbols-outlined">send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-white/10 py-8 px-12 text-center text-xs tracking-widest text-[#d1eac8]/40">
+            © Flora Skin Beauty grown from the earth.
+        </div>
+    </footer>
+</body>
+</html>

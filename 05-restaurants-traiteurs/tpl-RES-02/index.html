@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>La Braise Express | Fast-Casual Urbain</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface text-on-surface font-body antialiased">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <a href="index.html" class="text-2xl font-black italic text-primary font-headline tracking-tighter uppercase">La Braise <span class="text-on-surface">Express</span></a>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="font-headline tracking-tighter uppercase font-bold text-primary border-b-2 border-primary pb-1 transition-all" href="index.html">Accueil</a>
+                <a class="font-headline tracking-tighter uppercase font-bold text-on-surface hover:text-primary transition-colors hover:scale-105 duration-200" href="about.html">Notre Histoire</a>
+                <a class="font-headline tracking-tighter uppercase font-bold text-on-surface hover:text-primary transition-colors hover:scale-105 duration-200" href="menu.html">Menu</a>
+                <a class="font-headline tracking-tighter uppercase font-bold text-on-surface hover:text-primary transition-colors hover:scale-105 duration-200" href="services.html">Services</a>
+                <a class="font-headline tracking-tighter uppercase font-bold text-on-surface hover:text-primary transition-colors hover:scale-105 duration-200" href="contact.html">Contact</a>
+            </div>
+            <a href="menu.html" class="bg-primary hover:bg-primary-dim text-on-primary font-headline tracking-tighter uppercase font-bold py-2 px-6 rounded-full scale-95 active:opacity-80 transition-all hover:scale-105">
+                Commander
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden min-h-[800px] flex items-center px-8">
+            <div class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <div class="md:col-span-6 z-10">
+                    <span class="inline-block px-4 py-1 bg-secondary-container text-on-secondary-container rounded-full text-sm font-bold uppercase tracking-widest mb-6">Zest &amp; Braise</span>
+                    <h1 class="font-headline text-6xl md:text-8xl font-black text-on-surface leading-[0.9] tracking-tighter mb-6">
+                        SAVEUR EN <br/> <span class="text-primary italic">MOUVEMENT.</span>
+                    </h1>
+                    <p class="text-on-surface-variant text-lg md:text-xl max-w-md mb-10 leading-relaxed">
+                        Le Fast-Casual gourmet et énergique à Cotonou. Épices audacieuses, ingrédients premium, et la vitesse que votre vie exige.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="menu.html" class="bg-primary hover:bg-primary-dim text-on-primary px-8 py-4 rounded-full font-headline font-bold text-lg flex items-center gap-2 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/20">
+                            Commander <span class="material-symbols-outlined">bolt</span>
+                        </a>
+                        <a href="menu.html" class="bg-surface-container-high text-on-surface px-8 py-4 rounded-full font-headline font-bold text-lg transition-all hover:bg-surface-variant">
+                            Découvrir le Menu
+                        </a>
+                    </div>
+                </div>
+                <div class="md:col-span-6 relative h-full min-h-[400px]">
+                    <div class="absolute inset-0 bg-primary-container rounded-[3rem] rotate-3 scale-105 -z-10 opacity-20"></div>
+                    <img class="w-full h-full object-cover rounded-[2rem] shadow-2xl transform -rotate-3 hover:rotate-0 transition-transform duration-500" data-alt="Gros plan d'un double burger au fromage fondu" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT_ZAIEKgT10o0oJaW25OagbGppQLRj2wyKm23pRkYWP3QwpC4X0ScwjtxX6EV-J_ggvBMhzXEGAnkpDnkflzEWJ79vTZpzVxp91vBZ5XZp6Ah_1-nEwqLlEJrfORznR7wfBne8LDeLU45ZWRaxcPz-gT25FUJyCCgxFTocgipiaJ3m4_RLKmoS8rnwAqQq2sX0g9iPIzGbv_4x5jUOSqobjK9YDrKAKjSww7pJnPXwljoHAuc9SdkcDX9y25RzVZ7ZcXvESCu-KUC"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Menu Highlights -->
+        <section class="bg-surface-container-low py-20 px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex justify-between items-end mb-12">
+                    <div>
+                        <h2 class="font-headline text-4xl font-black tracking-tighter uppercase text-on-surface">Favoris de Pointe</h2>
+                        <div class="w-20 h-2 bg-primary mt-2"></div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <a href="menu.html" class="bg-surface-container-lowest p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300 shadow-sm">
+                        <div class="w-16 h-16 bg-primary-container/20 text-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-4xl">lunch_dining</span>
+                        </div>
+                        <h3 class="font-headline font-bold text-lg">Burgers</h3>
+                    </a>
+                    <a href="menu.html" class="bg-surface-container-lowest p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300 shadow-sm">
+                        <div class="w-16 h-16 bg-secondary-container/30 text-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-4xl">tapas</span>
+                        </div>
+                        <h3 class="font-headline font-bold text-lg">Tacos</h3>
+                    </a>
+                    <a href="menu.html" class="bg-surface-container-lowest p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300 shadow-sm">
+                        <div class="w-16 h-16 bg-tertiary-container/30 text-tertiary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-4xl">ramen_dining</span>
+                        </div>
+                        <h3 class="font-headline font-bold text-lg">Bowls</h3>
+                    </a>
+                    <a href="menu.html" class="bg-surface-container-lowest p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300 shadow-sm">
+                        <div class="w-16 h-16 bg-primary-container/20 text-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-4xl">local_drink</span>
+                        </div>
+                        <h3 class="font-headline font-bold text-lg">Shakes</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Picks Bento Grid -->
+        <section class="py-24 px-8 max-w-7xl mx-auto">
+            <h2 class="font-headline text-5xl font-black tracking-tighter text-on-surface mb-16 text-center">NOS INCONTOURNABLES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                <!-- Main Featured Item -->
+                <div class="md:col-span-7 bg-surface-container-lowest rounded-[2rem] overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-xl transition-shadow duration-500">
+                    <div class="md:w-1/2 h-64 md:h-auto overflow-hidden">
+                        <img class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" data-alt="Gros plan d'un taco de rue au bœuf grillé" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEiVSkGzsZBWXPzT8vKDoqcCwHcahYUwRN84D6RFDZ0oSOsPCds2GAdiEz0lttFHWL3AaL46ktwqh2MOrxBG1m5Ja-P1MEEfCLE6tMZmm4ZyMpfQxqqFK4CZCtKQLN1FKneybWLCR8SwOQeGqNmyNnn-_fwVdnA5iapZ4C9QFBYoX_PN1wo5x1e7u6Ftj9XgQzakmtvd_lLElaNjGgk4MxzuRiL9azKMrxkaJ4yX_CK174EriEo3wLjn4w5ieY2WWVUp2UqryVwyc7"/>
+                    </div>
+                    <div class="md:w-1/2 p-10 flex flex-col justify-center">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="font-headline text-3xl font-bold leading-none">Le Tacos <br/>Braise-it</h3>
+                            <span class="text-primary font-headline text-2xl font-black">4 500 F</span>
+                        </div>
+                        <p class="text-on-surface-variant mb-8">Bavette marinée, oignons grillés, et notre sauce secrète au piment fumé.</p>
+                        <button class="bg-secondary text-on-secondary py-3 px-6 rounded-full font-bold flex items-center justify-center gap-2 self-start hover:bg-secondary-dim transition-colors">
+                            <span class="material-symbols-outlined text-xl">add_circle</span> Ajouter
+                        </button>
+                    </div>
+                </div>
+                <!-- Secondary Item 1 -->
+                <div class="md:col-span-5 bg-surface-container-low rounded-[2rem] p-8 flex flex-col justify-between shadow-sm group">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="font-headline text-2xl font-bold">Kinetic Bowl</h3>
+                        <span class="text-primary font-headline text-xl font-bold">5 500 F</span>
+                    </div>
+                    <div class="relative h-48 mb-6 overflow-hidden rounded-xl">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Bol santé avec quinoa et légumes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwyK5PTAm2JvXqFWdgCg6vKk_ljsrXaEr_bo0f1v2PDAR9D5r2CcfQ1YBp7-gwrrpqipL7KGztvZmkRDX3sVymPyDLOGo-fVWEhMdr-3xeI4VyDPYbM5DVgWrMHKcHaYQ1RKw3m7S1LpPnEzoBpM__6jCJGkoiPDHoBbkAt00QCgUB1hkeMceHDUepQyVarRl-pjY8PHX7g7EHUyAlRRmSWVxAHy5t6z4i2w0DhRidj7vMVwaU0HrUx-A48FoIDMNi_zvk6EG6Pdot"/>
+                    </div>
+                    <button class="w-full bg-surface-container-lowest border-2 border-primary text-primary py-3 rounded-full font-bold hover:bg-primary hover:text-on-primary transition-all">
+                        Achat Rapide
+                    </button>
+                </div>
+                <!-- Secondary Item 2 -->
+                <div class="md:col-span-5 bg-surface-container-low rounded-[2rem] p-8 flex flex-col justify-between shadow-sm group">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="font-headline text-2xl font-bold">Ailes Zest-Fumées</h3>
+                        <span class="text-primary font-headline text-xl font-bold">3 800 F</span>
+                    </div>
+                    <div class="relative h-48 mb-6 overflow-hidden rounded-xl">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Ailes de poulet croustillantes et glacées" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPBFcKQ7vuuA1hkXrjfWUVRih6K6EDsBtTD53lM0ovVsNoJ3zzKjIAcVgKQWREnUWuDQqI5ni7mNMn3KBQKt9IV5M-I2-STzFVMfHsBvj3f_tazXJU1ZnlugD0xcIKI41MYkqgHtj9xEL5EhMuUZ1Sxh-TKaL2eQTMtAEuqAWGmE4NZoxnY4uR-VnUoGGEMvZf9UQ5PraC8dVRpBBypD31BAk3Hh4lB9TcdQtOp43Nck-2TRfpBa_M61NPh-wk6kE0e_Ud-UWSsYkT"/>
+                    </div>
+                    <button class="w-full bg-surface-container-lowest border-2 border-primary text-primary py-3 rounded-full font-bold hover:bg-primary hover:text-on-primary transition-all">
+                        Achat Rapide
+                    </button>
+                </div>
+                <!-- Small Special Item -->
+                <div class="md:col-span-7 bg-primary text-on-primary rounded-[2rem] p-10 flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-1">
+                        <h3 class="font-headline text-4xl font-black mb-4 uppercase leading-none">LE SMASH <br/>MASTER</h3>
+                        <p class="opacity-90 mb-6 font-medium">Bœuf Wagyu doublement "smashé", triple cheddar, oignons caramélisés et pickles maison.</p>
+                        <button class="bg-on-primary text-primary px-8 py-3 rounded-full font-bold text-lg hover:scale-105 transition-transform">
+                            Prendre le Combo - 7 000 F
+                        </button>
+                    </div>
+                    <div class="w-48 h-48 bg-on-primary/10 rounded-full flex items-center justify-center">
+                        <span class="material-symbols-outlined text-8xl" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="bg-surface-container-highest py-24 px-8 overflow-hidden">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
+                    <h2 class="font-headline text-5xl font-black tracking-tighter text-on-surface mb-8 leading-none">PLUS VITE QUE <br/>VOTRE FAIM.</h2>
+                    <p class="text-on-surface-variant text-lg mb-12">Nous avons optimisé notre cuisine pour une vitesse maximale sans compromettre une once de qualité gourmet.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-6 bg-surface p-6 rounded-2xl shadow-sm border-l-4 border-primary">
+                            <div class="bg-primary-container/20 p-4 rounded-xl text-primary">
+                                <span class="material-symbols-outlined text-3xl">delivery_dining</span>
+                            </div>
+                            <div>
+                                <h4 class="font-headline text-xl font-bold">Livraison Éclair</h4>
+                                <p class="text-on-surface-variant">Plats chauds à votre porte en moins de 30 minutes sur Cotonou.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6 bg-surface p-6 rounded-2xl shadow-sm border-l-4 border-secondary">
+                            <div class="bg-secondary-container/20 p-4 rounded-xl text-secondary">
+                                <span class="material-symbols-outlined text-3xl">takeout_dining</span>
+                            </div>
+                            <div>
+                                <h4 class="font-headline text-xl font-bold">Smart Takeaway</h4>
+                                <p class="text-on-surface-variant">Passez la file d'attente. Commandez et récupérez votre repas en 5 minutes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative rounded-[3rem] overflow-hidden aspect-square">
+                    <img class="w-full h-full object-cover brightness-75" data-alt="Shot de mouvement flou d'un livreur en scooter à Cotonou" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMNEmkDiV3cKdPYBuLk6dTrMW2pbXiqsiUyWksOsCMLbx99Qo3y1kDhu6LK9aieNyu5j5c8SPoXs62Umk8rlJT3Oz851PqBxXaCB-Kve7lXoA9sXVp1UnZMQWfqaVMmbv73jUEyo9BIlJVkQqkN8727yqXFqhrP8S-Urfkc3xlzbdwhHOJH0K2ci3ud5FFN8Nr46ZEfqtdf86cXBMSzn1j3yx6jAYEDboF6A_zRrTuKDpQnYfvl44aqXceFc_MWZrECFYYCq9YKwFO"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-12">
+                        <div class="text-white">
+                            <div class="text-6xl font-black font-headline tracking-tighter">0.5s</div>
+                            <div class="text-xl uppercase tracking-widest font-bold">Traitement de commande moyen</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full rounded-t-3xl mt-20 bg-surface-container-low border-t-0">
+        <div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 max-w-7xl mx-auto">
+            <div class="flex flex-col items-center md:items-start gap-4">
+                <div class="text-xl font-black text-primary font-headline tracking-tighter uppercase italic">La Braise Express</div>
+                <p class="text-on-surface-variant text-sm font-body max-w-xs text-center md:text-left">Le savoir-faire culinaire à la vitesse de votre vie urbaine.</p>
+                <p class="text-on-surface-variant text-sm font-body">© 2026 La Braise Express. Tous droits réservés.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8">
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-body text-sm" href="#">Instagram</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-body text-sm" href="#">Facebook</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-body text-sm" href="#">TikTok</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-body text-sm" href="contact.html">Points de Vente</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-body text-sm" href="#">Mentions Légales</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#top" class="bg-surface-container-high p-3 rounded-full hover:bg-primary hover:text-on-primary transition-all group">
+                    <span class="material-symbols-outlined text-2xl">arrow_upward</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

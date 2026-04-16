@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Immobilier de Prestige | Agence FRILO</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface text-slate-800 antialiased selection:bg-accent selection:text-white">
+
+    <!-- Topbar Contact -->
+    <div class="bg-primary text-white/80 py-2 text-xs font-sans tracking-wide hidden md:block">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-accent">location_on</span> Immeuble CICA-TOYOTA, Cotonou</span>
+                <span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-accent">call</span> +229 00 00 00 00</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="hover:text-accent transition-colors">Notre Agence</a>
+                <a href="#" class="hover:text-accent transition-colors">Carrières</a>
+                <select class="bg-transparent border-none text-xs focus:ring-0 cursor-pointer">
+                    <option class="text-slate-800">FCFA</option>
+                    <option class="text-slate-800">EUR</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Principale -->
+    <nav class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex flex-col group">
+                <span class="font-display font-bold text-2xl text-primary tracking-tight leading-none">FRILO<span class="text-accent">.</span></span>
+                <span class="text-[10px] font-sans font-bold uppercase tracking-widest text-slate-400">Prestige Immobilier</span>
+            </a>
+            
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="text-primary font-bold text-sm tracking-wide border-b-2 border-primary pb-1">Accueil</a>
+                <a href="about.html" class="text-slate-600 hover:text-accent transition-colors text-sm font-semibold tracking-wide">L'Agence</a>
+                <a href="properties.html" class="text-slate-600 hover:text-accent transition-colors text-sm font-semibold tracking-wide">Nos Biens</a>
+                <a href="contact.html" class="text-slate-600 hover:text-accent transition-colors text-sm font-semibold tracking-wide">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="contact.html" class="btn-accent px-6 py-2.5 shadow-card">
+                    Estimer mon bien
+                </a>
+            </div>
+
+            <button class="lg:hidden text-primary">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 1. Hero Section & Smart Search -->
+        <section class="relative h-[85vh] min-h-[600px] flex items-center justify-center">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80" alt="Villa Moderne" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-primary/40 mix-blend-multiply"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent"></div>
+            </div>
+
+            <div class="relative z-10 w-full max-w-7xl mx-auto px-6 pt-20">
+                <div class="text-center md:text-left mb-10">
+                    <span class="inline-block py-1.5 px-4 bg-black/30 backdrop-blur-sm border border-white/20 text-white text-xs font-bold tracking-widest uppercase mb-4 rounded-full">Excellence Foncière au Bénin</span>
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-tight mb-6 drop-shadow-xl">
+                        Votre prochaine adresse <br><span class="text-accent italic">d'exception.</span>
+                    </h1>
+                    <p class="text-lg text-white/90 font-light max-w-2xl drop-shadow-md hidden md:block">
+                        Découvrez une sélection rigoureuse de villas de prestige, parcelles sécurisées et appartements haut de gamme à Cotonou et ses environs.
+                    </p>
+                </div>
+
+                <!-- Module de recherche avancé -->
+                <div class="bg-white p-4 md:p-6 rounded-xl shadow-luxury max-w-5xl mx-auto md:mx-0 w-full">
+                    <div class="flex gap-4 mb-4 border-b border-slate-100 pb-2">
+                        <button class="text-primary font-bold text-sm tracking-wide border-b-2 border-primary pb-2">Acheter</button>
+                        <button class="text-slate-400 font-medium text-sm tracking-wide hover:text-primary transition-colors pb-2">Louer</button>
+                        <button class="text-slate-400 font-medium text-sm tracking-wide hover:text-primary transition-colors pb-2 hidden sm:block">Investir</button>
+                    </div>
+                    
+                    <form class="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
+                        <div class="relative">
+                            <label class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Type de bien</label>
+                            <select class="w-full bg-slate-50 border border-slate-200 rounded-md py-3 pl-4 pr-10 focus:ring-accent focus:border-accent text-sm font-semibold text-primary appearance-none cursor-pointer">
+                                <option>Tous les biens</option>
+                                <option>Villa / Maison</option>
+                                <option>Appartement</option>
+                                <option>Terrain (Vidé)</option>
+                                <option>Bureaux commerciaux</option>
+                            </select>
+                            <span class="material-symbols-outlined absolute right-3 top-[30px] text-slate-400 pointer-events-none">expand_more</span>
+                        </div>
+                        <div class="relative">
+                            <label class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Localisation (Bénin)</label>
+                            <select class="w-full bg-slate-50 border border-slate-200 rounded-md py-3 pl-4 pr-10 focus:ring-accent focus:border-accent text-sm font-semibold text-primary appearance-none cursor-pointer">
+                                <option>Toute la zone</option>
+                                <option>Cotonou - Haie Vive / Cocotiers</option>
+                                <option>Cotonou - Fidjrossè / Togbin</option>
+                                <option>Abomey-Calavi</option>
+                                <option>Porto-Novo</option>
+                            </select>
+                            <span class="material-symbols-outlined absolute right-3 top-[30px] text-slate-400 pointer-events-none">expand_more</span>
+                        </div>
+                        <div class="relative hidden sm:block">
+                            <label class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Budget Max (FCFA)</label>
+                            <select class="w-full bg-slate-50 border border-slate-200 rounded-md py-3 pl-4 pr-10 focus:ring-accent focus:border-accent text-sm font-semibold text-primary appearance-none cursor-pointer">
+                                <option>Illimité</option>
+                                <option>Jusqu'à 50 Millions</option>
+                                <option>Jusqu'à 150 Millions</option>
+                                <option>Jusqu'à 500 Millions</option>
+                                <option>Plus de 500 Millions</option>
+                            </select>
+                            <span class="material-symbols-outlined absolute right-3 top-[30px] text-slate-400 pointer-events-none">expand_more</span>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn-primary w-full py-3 h-[46px]">
+                                <span class="material-symbols-outlined text-[18px]">search</span> Rechercher
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Bandeau de Confiance (Data) -->
+        <section class="bg-primary py-12 border-b-4 border-accent">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/10">
+                <div>
+                    <h3 class="text-3xl md:text-4xl font-display font-bold text-accent mb-1">+15</h3>
+                    <p class="text-xs font-bold tracking-widest uppercase text-white/50">Années d'expertise</p>
+                </div>
+                <div>
+                    <h3 class="text-3xl md:text-4xl font-display font-bold text-accent mb-1">+450</h3>
+                    <p class="text-xs font-bold tracking-widest uppercase text-white/50">Biens vendus</p>
+                </div>
+                <div>
+                    <h3 class="text-3xl md:text-4xl font-display font-bold text-accent mb-1">100%</h3>
+                    <p class="text-xs font-bold tracking-widest uppercase text-white/50">Dossiers sécurisés (Notaire)</p>
+                </div>
+                <div>
+                    <h3 class="text-3xl md:text-4xl font-display font-bold text-accent mb-1">+200</h3>
+                    <p class="text-xs font-bold tracking-widest uppercase text-white/50">Biens en gestion locative</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Catégories Lifestyle -->
+        <section class="section-padding bg-surface">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex justify-between items-end mb-12">
+                    <div>
+                        <span class="text-accent font-bold tracking-widest text-xs uppercase mb-2 block">Immobilier par mode de vie</span>
+                        <h2 class="text-3xl md:text-4xl font-display font-bold text-primary">Comment souhaitez-vous vivre ?</h2>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <a href="properties.html" class="group relative h-80 rounded-xl overflow-hidden shadow-card block">
+                        <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=600&q=80" alt="Bord de mer" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <h3 class="text-white font-display font-bold text-xl mb-1 flex items-center gap-2 group-hover:text-accent transition-colors">Route des Pêches <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">trending_flat</span></h3>
+                            <p class="text-white/70 text-sm">Villas & Terrains vue mer</p>
+                        </div>
+                    </a>
+                    
+                    <a href="properties.html" class="group relative h-80 rounded-xl overflow-hidden shadow-card block">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80" alt="Penthouse" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <h3 class="text-white font-display font-bold text-xl mb-1 flex items-center gap-2 group-hover:text-accent transition-colors">Appartements Premium <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">trending_flat</span></h3>
+                            <p class="text-white/70 text-sm">Centres d'affaires (Haie Vive, Cadjèhoun)</p>
+                        </div>
+                    </a>
+
+                    <a href="properties.html" class="group relative h-80 rounded-xl overflow-hidden shadow-card block">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=80" alt="Terrains" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <h3 class="text-white font-display font-bold text-xl mb-1 flex items-center gap-2 group-hover:text-accent transition-colors">Parcelles Sécurisées <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">trending_flat</span></h3>
+                            <p class="text-white/70 text-sm">Investissements long terme (Calavi, Ouidah)</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Nos Biens d'Exception -->
+        <section class="section-padding bg-white relative">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                    <div>
+                        <span class="text-accent font-bold tracking-widest text-xs uppercase mb-2 block">Dossiers Exclusifs</span>
+                        <h2 class="text-3xl md:text-4xl font-display font-bold text-primary">Sélection de Prestige.</h2>
+                    </div>
+                    <a href="properties.html" class="btn-secondary">Voir tout le catalogue</a>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Bien 1 -->
+                    <div class="property-card group cursor-pointer border border-slate-100">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Villa Fidjrosse" class="w-full h-full object-cover">
+                            <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded shadow-sm">À Vendre</div>
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur text-primary p-2 rounded-full shadow-sm hover:text-accent transition-colors">
+                                <span class="material-symbols-outlined text-[20px] leading-none">favorite_border</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display font-bold text-lg text-primary leading-tight hover:text-accent transition-colors">Villa d'Architecte Contemporaine</h3>
+                            </div>
+                            <p class="text-slate-500 text-sm mb-4 flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span> Fidjrossè - Cotonou</p>
+                            
+                            <div class="grid grid-cols-3 gap-4 border-y border-slate-100 py-3 mb-4">
+                                <div class="flex items-center gap-1 text-slate-600 text-sm font-medium">
+                                    <span class="material-symbols-outlined text-slate-400 text-[18px]">bed</span> 4
+                                </div>
+                                <div class="flex items-center gap-1 text-slate-600 text-sm font-medium">
+                                    <span class="material-symbols-outlined text-slate-400 text-[18px]">bathtub</span> 3
+                                </div>
+                                <div class="flex items-center gap-1 text-slate-600 text-sm font-medium">
+                                    <span class="material-symbols-outlined text-slate-400 text-[18px]">square_foot</span> 450m²
+                                </div>
+                            </div>
+                            <div class="text-xl font-display font-bold text-primary">
+                                185 000 000 <span class="text-sm font-sans font-normal text-slate-500">FCFA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bien 2 -->
+                    <div class="property-card group cursor-pointer border border-slate-100">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Penthouse Haie Vive" class="w-full h-full object-cover">
+                            <div class="absolute top-4 left-4 bg-accent text-primary text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded shadow-sm">À Louer</div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display font-bold text-lg text-primary leading-tight hover:text-accent transition-colors">Penthouse Panoramique Type T4</h3>
+                            </div>
+                            <p class="text-slate-500 text-sm mb-4 flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span> Haie Vive - Cotonou</p>
+                            
+                            <div class="grid grid-cols-3 gap-4 border-y border-slate-100 py-3 mb-4">
+                                <div class="flex items-center gap-1 text-slate-600 text-sm font-medium">
+                                    <span class="material-symbols-outlined text-slate-400 text-[18px]">bed</span> 3
+                                </div>
+                                <div class="flex items-center gap-1 text-slate-600 text-sm font-medium">
+                                    <span class="material-symbols-outlined text-slate-400 text-[18px]">bathtub</span> 2
+                                </div>
+                                <div class="flex items-center gap-1 text-slate-600 text-sm font-medium">
+                                    <span class="material-symbols-outlined text-slate-400 text-[18px]">square_foot</span> 210m²
+                                </div>
+                            </div>
+                            <div class="text-xl font-display font-bold text-primary">
+                                1 200 000 <span class="text-sm font-sans font-normal text-slate-500">FCFA/mois</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bien 3 -->
+                    <div class="property-card group cursor-pointer border border-slate-100 hidden lg:block">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" alt="Villa Calavi" class="w-full h-full object-cover">
+                            <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded shadow-sm">Neuf</div>
+                            <div class="absolute top-4 right-4 bg-primary-dark text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Vendu</div>
+                        </div>
+                        <div class="p-6 opacity-80">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display font-bold text-lg text-primary leading-tight">Résidence Familiale Sécurisée</h3>
+                            </div>
+                            <p class="text-slate-500 text-sm mb-4 flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span> Abomey-Calavi (Ardoise)</p>
+                            
+                            <div class="grid grid-cols-3 gap-4 border-y border-slate-100 py-3 mb-4">
+                                <div class="flex items-center gap-1 text-slate-600 text-sm font-medium">
+                                    <span class="material-symbols-outlined text-slate-400 text-[18px]">bed</span> 5
+                                </div>
+                                <div class="flex items-center gap-1 text-slate-600 text-sm font-medium">
+                                    <span class="material-symbols-outlined text-slate-400 text-[18px]">bathtub</span> 4
+                                </div>
+                                <div class="flex items-center gap-1 text-slate-600 text-sm font-medium">
+                                    <span class="material-symbols-outlined text-slate-400 text-[18px]">square_foot</span> 600m²
+                                </div>
+                            </div>
+                            <div class="text-xl font-display font-bold text-slate-400 line-through">
+                                95 000 000 <span class="text-sm font-sans font-normal">FCFA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Pourquoi FRILO ? (Focus Réassurance) -->
+        <section class="py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <span class="text-accent font-bold tracking-widest text-xs uppercase mb-2 block">La différence Frilo</span>
+                        <h2 class="text-3xl md:text-5xl font-display font-bold text-primary mb-8">Zéro litige foncier.<br>100% de tranquillité.</h2>
+                        <p class="text-slate-600 mb-8 leading-relaxed">
+                            Acquérir un bien immobilier en Afrique de l'Ouest peut être un parcours du combattant face aux faux titres de propriété et aux doubles ventes. Notre agence agit comme un bouclier juridique entre les opportunités du marché et votre capital.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center text-primary shrink-0">
+                                    <span class="material-symbols-outlined">gavel</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-primary mb-1">Audit Notarial Systématique</h4>
+                                    <p class="text-sm text-slate-500">Aucun bien n'intègre notre catalogue sans une vérification du Titre Foncier (TF) à l'IGN et au domaine.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center text-primary shrink-0">
+                                    <span class="material-symbols-outlined">real_estate_agent</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-primary mb-1">Agents Agréés</h4>
+                                    <p class="text-sm text-slate-500">Nos courtiers sont formés, certifiés et respectent un code d'éthique transparent (commissions fixes).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -top-4 -right-4 w-full h-full border-2 border-accent rounded-xl z-0"></div>
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32d7?auto=format&fit=crop&w=800&q=80" alt="Consultation en agence" class="w-full aspect-square object-cover rounded-xl relative z-10 shadow-luxury">
+                        <div class="absolute bottom-10 -left-10 bg-white p-6 rounded-xl shadow-luxury-hover border border-slate-100 z-20 flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80" alt="PDG" class="w-16 h-16 rounded-full object-cover">
+                            <div>
+                                <p class="text-xs text-slate-400 font-bold uppercase tracking-widest mb-1">Directeur d'Agence</p>
+                                <p class="font-display font-bold text-primary">"La confiance est notre seul actif."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Aperçu des Services -->
+        <section class="section-padding bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold text-primary mb-4">Notre Expertise sur mesure</h2>
+                    <p class="text-slate-500">Un accompagnement de A à Z pour chaque étape de votre vie immobilière.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="p-8 border border-slate-100 rounded-xl hover:shadow-luxury transition-shadow group cursor-default">
+                        <div class="w-16 h-16 mx-auto bg-slate-50 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-amber-500 transition-colors mb-6">
+                            <span class="material-symbols-outlined text-3xl">home_work</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-primary mb-3">Achat & Vente</h3>
+                        <p class="text-slate-500 text-sm mb-6 leading-relaxed">Transactions fluides, évaluation au prix du marché et sécurisation totale des fonds et des actes.</p>
+                        <a href="contact.html" class="text-accent font-bold text-sm uppercase tracking-widest hover:text-primary transition-colors">Vendre un bien</a>
+                    </div>
+                    
+                    <div class="p-8 border border-slate-100 rounded-xl hover:shadow-luxury transition-shadow group cursor-default">
+                        <div class="w-16 h-16 mx-auto bg-slate-50 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-amber-500 transition-colors mb-6">
+                            <span class="material-symbols-outlined text-3xl">key</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-primary mb-3">Gestion Locative</h3>
+                        <p class="text-slate-500 text-sm mb-6 leading-relaxed">Mise en location, perception des loyers garantie et entretien technique de votre patrimoine.</p>
+                        <a href="#" class="text-accent font-bold text-sm uppercase tracking-widest hover:text-primary transition-colors">Confier la gestion</a>
+                    </div>
+
+                    <div class="p-8 border border-slate-100 rounded-xl hover:shadow-luxury transition-shadow group cursor-default">
+                        <div class="w-16 h-16 mx-auto bg-slate-50 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-amber-500 transition-colors mb-6">
+                            <span class="material-symbols-outlined text-3xl">zoom_in</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-primary mb-3">Chasseur Immobilier</h3>
+                        <p class="text-slate-500 text-sm mb-6 leading-relaxed">Vous n'avez pas le temps ? Mandatez-nous pour trouver la perle rare selon votre cahier des charges précis.</p>
+                        <a href="contact.html" class="text-accent font-bold text-sm uppercase tracking-widest hover:text-primary transition-colors">Déposer un mandat</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Outil d'Estimation + 10. Alerte (Double bloc) -->
+        <section class="relative bg-primary text-white overflow-hidden py-0">
+            <div class="grid lg:grid-cols-2">
+                <!-- Estimation -->
+                <div class="p-12 md:p-24 bg-gradient-luxury">
+                    <span class="material-symbols-outlined text-accent text-5xl mb-6">calculate</span>
+                    <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Combien vaut votre bien ?</h2>
+                    <p class="text-white/70 mb-8 font-light">Le marché béninois évolue vite. Obtenez une estimation par l'un de nos experts locaux, basée sur les ventes réelles de votre quartier (non automatisé, 100% humain).</p>
+                    <form class="space-y-4 max-w-sm">
+                        <select class="w-full bg-white/10 border border-white/20 text-white placeholder-white/50 rounded py-3 px-4 outline-none focus:border-accent">
+                            <option>Cotonou</option>
+                            <option>Calavi</option>
+                            <option>Porto-Novo</option>
+                        </select>
+                        <input type="email" placeholder="Votre adresse e-mail" class="w-full bg-white/10 border border-white/20 text-white placeholder-white/50 rounded py-3 px-4 outline-none focus:border-accent">
+                        <button type="submit" class="btn-accent w-full py-4 text-primary mt-2">Estimer gratuitement</button>
+                    </form>
+                </div>
+                
+                <!-- Off Market -->
+                <div class="p-12 md:p-24 bg-primary relative">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl rounded-none"></div>
+                    <span class="material-symbols-outlined text-accent text-5xl mb-6">lock_open</span>
+                    <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Accès "Off-Market"</h2>
+                    <p class="text-white/70 mb-8 font-light">Au Bénin, les meilleures propriétés se vendent souvent avant même d'être publiées. Inscrivez-vous à notre liste VIP pour recevoir les exclusivités en avant-première.</p>
+                    <form class="space-y-4 max-w-sm">
+                        <input type="text" placeholder="Votre nom complet" class="w-full bg-primary-dark/50 border border-white/10 text-white placeholder-white/50 rounded py-3 px-4 outline-none focus:border-accent" required>
+                        <input type="tel" placeholder="Numéro Whatsapp" class="w-full bg-primary-dark/50 border border-white/10 text-white placeholder-white/50 rounded py-3 px-4 outline-none focus:border-accent" required>
+                        <button type="submit" class="w-full py-4 border border-accent text-accent hover:bg-accent hover:text-primary transition-colors font-bold uppercase tracking-widest text-xs rounded">Rejoindre la liste VIP</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Super Footer -->
+    <footer class="bg-primary-dark pt-20 pb-10 text-white/70 text-sm">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div>
+                    <a href="index.html" class="flex flex-col mb-6">
+                        <span class="font-display font-bold text-3xl text-white tracking-tight leading-none mb-1">FRILO<span class="text-accent">.</span></span>
+                        <span class="text-[10px] font-sans font-bold uppercase tracking-widest text-accent">Prestige Immobilier</span>
+                    </a>
+                    <p class="font-light leading-relaxed mb-6">
+                        La référence de l'immobilier résidentiel et commercial haut de gamme en République du Bénin. Fiabilité, Ethique, et Excellence foncière.
+                    </p>
+                </div>
+
+                <!-- Liens Rapides -->
+                <div>
+                    <h4 class="font-display font-bold text-white uppercase tracking-widest text-xs mb-6">L'Agence</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="hover:text-accent transition-colors">Notre histoire</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Notre équipe d'experts</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Politique de sécurité juridique</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition-colors">Nous recruter / Mandats</a></li>
+                    </ul>
+                </div>
+
+                <!-- Catalogue -->
+                <div>
+                    <h4 class="font-display font-bold text-white uppercase tracking-widest text-xs mb-6">Catalogue</h4>
+                    <ul class="space-y-3">
+                        <li><a href="properties.html" class="hover:text-accent transition-colors">Villas avec Piscine</a></li>
+                        <li><a href="properties.html" class="hover:text-accent transition-colors">Appartements Centre-ville</a></li>
+                        <li><a href="properties.html" class="hover:text-accent transition-colors">Terrains (Titre Foncier)</a></li>
+                        <li><a href="properties.html" class="hover:text-accent transition-colors">Immobilier d'entreprise</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-display font-bold text-white uppercase tracking-widest text-xs mb-6">Assistance Directe</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-accent text-lg mt-0.5">location_on</span>
+                            <span>Immeuble CICA-TOYOTA, 2ème étage<br>Cotonou, Bénin</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-accent text-lg">call</span>
+                            <span>+229 00 00 00 00</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-accent text-lg">mail</span>
+                            <span>agence@frilo.bj</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-light">
+                <p>&copy; 2026 FRILO Immobilier Afrique. Carte professionnelle N° 2026-X123.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-white transition-colors">Mentions Légales</a>
+                    <a href="#" class="hover:text-white transition-colors">Politique de Confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mini animation pour la navbar 
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                nav.classList.add('py-2');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-2');
+            }
+        });
+    </script>
+</body>
+</html>

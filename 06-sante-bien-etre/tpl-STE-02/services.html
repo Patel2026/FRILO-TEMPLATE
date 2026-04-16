@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr" class="light scroll-smooth">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Services | Clinika</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-surface text-on-surface">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <a href="index.html"
+                class="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-slate-50 font-headline">CLINIQUE
+                FRILO</a>
+            <div class="hidden md:flex items-center space-x-8 font-headline">
+                <a class="text-slate-600 dark:text-slate-400 hover:text-cyan-600 transition-all duration-300 hover:opacity-80 uppercase tracking-wider text-xs font-semibold"
+                    href="index.html">Accueil</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-cyan-600 transition-all duration-300 hover:opacity-80 uppercase tracking-wider text-xs font-semibold"
+                    href="about.html">À propos</a>
+                <a class="text-cyan-700 dark:text-cyan-400 border-b-2 border-cyan-700 dark:border-cyan-400 pb-1 transition-all duration-300 hover:opacity-80 uppercase tracking-wider text-xs font-semibold"
+                    href="services.html">Services</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-cyan-600 transition-all duration-300 hover:opacity-80 uppercase tracking-wider text-xs font-semibold"
+                    href="contact.html">Contact</a>
+            </div>
+            <a href="contact.html"
+                class="bg-secondary text-on-secondary px-6 py-2.5 rounded hover:opacity-90 active:scale-95 transition-all duration-150 font-bold font-headline text-center">
+                Prendre Rendez-vous
+            </a>
+        </div>
+    </nav>
+    <main class="pt-24">
+        <!-- Section 1: Page Header & Breadcrumbs -->
+        <header class="relative overflow-hidden pt-12 pb-20 px-8">
+            <div class="max-w-7xl mx-auto relative z-10">
+                <nav aria-label="Breadcrumb"
+                    class="flex items-center space-x-2 text-on-surface-variant label-md uppercase tracking-wider mb-6 text-sm font-semibold">
+                    <a class="hover:text-secondary transition-colors" href="index.html">Accueil</a>
+                    <span class="material-symbols-outlined text-sm">chevron_right</span>
+                    <span class="text-secondary font-bold">Services</span>
+                </nav>
+                <h1
+                    class="text-5xl md:text-7xl font-extrabold tracking-tight text-primary max-w-3xl leading-[1.1] font-headline">
+                    Excellence Médicale Spécialisée
+                </h1>
+                <p class="mt-6 text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                    Accédez à des soins de santé de classe mondiale grâce à notre gamme complète de services
+                    spécialisés, équipés des dernières technologies médicales et prodiguant des soins avec compassion.
+                </p>
+            </div>
+            <!-- Decorative background element -->
+            <div
+                class="absolute -right-20 top-0 w-1/2 h-full bg-secondary-fixed opacity-10 rounded-l-full blur-3xl -z-10">
+            </div>
+        </header>
+
+        <!-- Section 2: Full Services List (Bento Grid Style) -->
+        <section class="py-20 px-8 bg-surface-container-low">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                    <div>
+                        <span class="text-secondary text-sm uppercase tracking-widest font-bold">Notre Expertise</span>
+                        <h2 class="text-4xl font-extrabold mt-2 text-primary font-headline">Départements Médicaux</h2>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-on-surface-variant text-base font-medium">Plus de 24+ spécialités
+                            disponibles</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Service Card: Cardiology -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex flex-col items-start border border-outline-variant/10">
+                        <div
+                            class="w-14 h-14 bg-secondary-fixed/20 rounded-full flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">monitor_heart</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3 font-headline">Cardiologie</h3>
+                        <p class="text-on-surface-variant text-base leading-relaxed">Dépistage cardiaque avancé, gestion
+                            des maladies cardiaques et procédures mini-invasives.</p>
+                    </div>
+                    <!-- Service Card: Neurology -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex flex-col items-start border border-outline-variant/10">
+                        <div
+                            class="w-14 h-14 bg-secondary-fixed/20 rounded-full flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">psychology</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3 font-headline">Neurologie</h3>
+                        <p class="text-on-surface-variant text-base leading-relaxed">Diagnostic complet et traitement
+                            des troubles complexes du système nerveux.</p>
+                    </div>
+                    <!-- Service Card: Orthopedics -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex flex-col items-start border border-outline-variant/10">
+                        <div
+                            class="w-14 h-14 bg-secondary-fixed/20 rounded-full flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">skeleton</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3 font-headline">Orthopédie</h3>
+                        <p class="text-on-surface-variant text-base leading-relaxed">Des soins experts pour la santé du
+                            squelette, des articulations et des muscles, y compris des options chirurgicales avancées.
+                        </p>
+                    </div>
+                    <!-- Service Card: Dermatology -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex flex-col items-start border border-outline-variant/10">
+                        <div
+                            class="w-14 h-14 bg-secondary-fixed/20 rounded-full flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">face_6</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3 font-headline">Dermatologie</h3>
+                        <p class="text-on-surface-variant text-base leading-relaxed">Solutions cliniques et esthétiques
+                            pour la santé de la peau et des cheveux à l'aide de technologies laser modernes.</p>
+                    </div>
+                    <!-- Service Card: Pediatrics -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex flex-col items-start border border-outline-variant/10">
+                        <div
+                            class="w-14 h-14 bg-secondary-fixed/20 rounded-full flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">child_care</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3 font-headline">Pédiatrie</h3>
+                        <p class="text-on-surface-variant text-base leading-relaxed">Des soins spécialisés de la
+                            naissance à l'adolescence dans un environnement chaleureux et adapté aux enfants.</p>
+                    </div>
+                    <!-- Service Card: General Medicine -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex flex-col items-start border border-outline-variant/10">
+                        <div
+                            class="w-14 h-14 bg-secondary-fixed/20 rounded-full flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">medical_services</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3 font-headline">Médecine Générale</h3>
+                        <p class="text-on-surface-variant text-base leading-relaxed">Soins préventifs, consultations
+                            primaires et gestion holistique du bien-être général.</p>
+                    </div>
+                    <!-- Service Card: Dental Care -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex flex-col items-start border border-outline-variant/10">
+                        <div
+                            class="w-14 h-14 bg-secondary-fixed/20 rounded-full flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">dentistry</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3 font-headline">Soins Dentaires</h3>
+                        <p class="text-on-surface-variant text-base leading-relaxed">Des nettoyages de routine à la
+                            dentisterie restauratrice avancée pour l'amélioration du sourire.</p>
+                    </div>
+                    <!-- Service Card: Lab Tests -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex flex-col items-start border border-outline-variant/10">
+                        <div
+                            class="w-14 h-14 bg-secondary-fixed/20 rounded-full flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">biotech</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3 font-headline">Analyses & Diagnostics</h3>
+                        <p class="text-on-surface-variant text-base leading-relaxed">Des tests diagnostiques de haute
+                            précision avec une livraison rapide des résultats numériques sur votre portail.</p>
+                    </div>
+                    <!-- Service Card: Radiology -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex flex-col items-start border border-outline-variant/10">
+                        <div
+                            class="w-14 h-14 bg-secondary-fixed/20 rounded-full flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">radiology</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3 font-headline">Radiologie</h3>
+                        <p class="text-on-surface-variant text-base leading-relaxed">Imagerie de pointe incluant l'IRM,
+                            la tomodensitométrie et la radiographie pour un diagnostic précis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Service Details (Asymmetric Layout) -->
+        <section class="py-24 px-8 bg-surface">
+            <div class="max-w-7xl mx-auto space-y-32">
+                <!-- Cardiology Highlight -->
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="w-full lg:w-1/2 relative">
+                        <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Modern medical diagnostic room with clean lighting and high-tech heart monitoring equipment in a professional clinical setting"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYySpzR_oGtBiU1hpcE14nIAYU_QOQKwkXJi2j3PXocGV1Nr3Xur6BujNf9kBtPO9VMOIHNLvKMRrc9x1nXh6YBC1RQOK4t9JJNghHPj_DtS1bBHviht7SkJRkeNR1ZL2BirAPe2gFeBBSa2fmeSsYjYljxDPevWlMR7FqVJNImXZwmrXkZrgy5fLcX5NhMg5gyDtqihRFN3vSLctkxTJ05gXidSLzKXlhna-sumWRkCIaZUozkm-0Rf37EQeBo9GCXYV88-jZnF0h"
+                                alt="Section Cardiologie" />
+                        </div>
+                        <div
+                            class="absolute -bottom-8 -right-8 bg-secondary p-8 rounded-2xl hidden md:block max-w-[200px]">
+                            <p class="text-on-secondary font-bold text-3xl leading-none">98%</p>
+                            <p class="text-on-secondary/80 text-sm mt-2">de satisfaction patient en soins
+                                cardiologiques.</p>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <span
+                            class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4 inline-block">Unité
+                            Centrale</span>
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-6 font-headline">Institut de
+                            Cardiologie Avancée</h2>
+                        <p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                            Notre département de cardiologie est à l'avant-garde de la santé cardiaque, offrant une
+                            gamme complète d'options diagnostiques et thérapeutiques. Du dépistage initial à
+                            l'intervention complexe, notre équipe utilise les technologies d'assistance robotique les
+                            plus avancées.
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center text-on-surface font-medium">
+                                <span class="material-symbols-outlined text-secondary mr-3">check_circle</span>
+                                Électrophysiologie et études du rythme cardiaque
+                            </li>
+                            <li class="flex items-center text-on-surface font-medium">
+                                <span class="material-symbols-outlined text-secondary mr-3">check_circle</span>
+                                Cardiologie interventionnelle et angioplastie
+                            </li>
+                            <li class="flex items-center text-on-surface font-medium">
+                                <span class="material-symbols-outlined text-secondary mr-3">check_circle</span>
+                                Spécialistes en cardiologie pédiatrique
+                            </li>
+                        </ul>
+                        <a href="#"
+                            class="text-secondary font-bold flex w-max items-center hover:translate-x-2 transition-transform">
+                            Explorer le Département <span class="material-symbols-outlined ml-2">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Neurology Highlight (Reversed) -->
+                <div class="flex flex-col lg:flex-row-reverse items-center gap-16">
+                    <div class="w-full lg:w-1/2 relative">
+                        <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+                            <img class="w-full h-full object-cover"
+                                data-alt="A focused medical professional reviewing detailed brain scans on a digital screen with blue-toned professional atmosphere"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNWZiuBtpoyekeIspTdLwVNo8rPMH53AzHfai0u9Ig24VrhRwj9bGwCeRDl6lN2Xosar89DZPZuqZy-IbOARJ0DIrfzW5PFLgar7ock0kKEfOYxjaRztvyS20fGTAzA5cJK5LCJDe7ItYFrw6FST5ntTzwSGTcxnX0AfR4IfJW5yThB156pG1oCOfYLgl-IyJ8noOoQZDKYARFl9Hb-hoYfR279Cyedw-wJRLcMLrbd9_TuTZ6j5dhZ6MCI_xI8pdRD873q__HlzKw"
+                                alt="Spécialiste en Neurologie" />
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <span
+                            class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4 inline-block">Unité
+                            Spécialisée</span>
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-6 font-headline">Centre de
+                            Neurosciences</h2>
+                        <p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                            Nous fournissons des soins complets pour les affections neurologiques, en combinant
+                            l'expertise en neurologie clinique, neurochirurgie et réadaptation. Notre approche
+                            multidisciplinaire garantit que chaque patient reçoit un plan de traitement personnalisé.
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center text-on-surface font-medium">
+                                <span class="material-symbols-outlined text-secondary mr-3">check_circle</span>
+                                Prévention des AVC et soins actifs
+                            </li>
+                            <li class="flex items-center text-on-surface font-medium">
+                                <span class="material-symbols-outlined text-secondary mr-3">check_circle</span>
+                                Études sur les troubles de la mémoire et cognitifs
+                            </li>
+                            <li class="flex items-center text-on-surface font-medium">
+                                <span class="material-symbols-outlined text-secondary mr-3">check_circle</span>
+                                Neuro-imagerie avancée et diagnostics
+                            </li>
+                        </ul>
+                        <a href="#"
+                            class="text-secondary font-bold flex w-max items-center hover:translate-x-2 transition-transform">
+                            Explorer le Département <span class="material-symbols-outlined ml-2">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Emergency Care -->
+        <section class="py-20 px-8">
+            <div class="max-w-7xl mx-auto">
+                <div
+                    class="bg-primary-container rounded-[2rem] p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-12 overflow-hidden relative">
+                    <div class="relative z-10 text-center md:text-left">
+                        <span
+                            class="bg-error text-on-error px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-widest mb-6 inline-block">Urgences
+                            24/7</span>
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 font-headline">Unité
+                            d'Intervention d'Urgence</h2>
+                        <p class="text-on-primary-container text-lg max-w-xl">
+                            Notre centre de traumatologie Niveau 1 est équipé pour gérer toutes les urgences médicales
+                            avec des soins immédiats, une disponibilité 24/24h et des équipes spécialisées
+                            d'intervention rapide.
+                        </p>
+                        <div class="mt-10 flex flex-col sm:flex-row items-center gap-6">
+                            <div class="bg-white/10 backdrop-blur-md px-8 py-4 rounded-xl border border-white/20">
+                                <p class="text-white/70 text-xs uppercase tracking-widest mb-1">Ligne d'Urgence</p>
+                                <p class="text-white text-3xl font-bold font-body">+33 (0)1 40 50 60 70</p>
+                            </div>
+                            <a href="contact.html"
+                                class="bg-error text-on-error px-10 py-5 rounded-xl font-bold hover:opacity-90 active:scale-95 transition-all text-lg text-center inline-block">
+                                Obtenir l'Itinéraire
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Icon graphic -->
+                    <div class="relative z-10 flex items-center justify-center opacity-20 md:opacity-100">
+                        <span class="material-symbols-outlined text-[12rem] text-secondary-container"
+                            style="font-variation-settings: 'FILL' 1;">emergency</span>
+                    </div>
+                    <!-- Background aesthetic -->
+                    <div
+                        class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary to-transparent opacity-50">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: FAQ Accordion -->
+        <section class="py-24 px-8 bg-surface-container-low">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <span class="text-secondary text-sm uppercase tracking-widest font-bold">Questions Courantes</span>
+                    <h2 class="text-4xl font-extrabold mt-2 text-primary font-headline">Foire Aux Questions (FAQ)</h2>
+                </div>
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-surface-container-lowest rounded-2xl p-6 border border-outline-variant/10">
+                        <button class="w-full flex items-center justify-between text-left group">
+                            <span
+                                class="text-lg font-bold text-primary font-headline group-hover:text-secondary transition-colors">Comment
+                                puis-je prendre rendez-vous en ligne ?</span>
+                            <span class="material-symbols-outlined text-secondary">expand_more</span>
+                        </button>
+                        <div class="mt-4 text-on-surface-variant leading-relaxed">
+                            La réservation est simple grâce à notre portail numérique. Cliquez sur le bouton "Prendre
+                            Rendez-vous" en haut de la page, sélectionnez votre spécialité, choisissez un médecin et un
+                            créneau qui convient à votre emploi du temps.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-surface-container-lowest rounded-2xl p-6 border border-outline-variant/10">
+                        <button class="w-full flex items-center justify-between text-left group">
+                            <span
+                                class="text-lg font-bold text-primary font-headline group-hover:text-secondary transition-colors">Acceptez-vous
+                                les assurances internationales ?</span>
+                            <span class="material-symbols-outlined text-secondary">expand_more</span>
+                        </button>
+                        <div class="mt-4 text-on-surface-variant leading-relaxed">
+                            Oui, Clinika est partenaire avec la plupart des grandes compagnies d'assurance nationales et
+                            internationales. Nous vous recommandons de contacter notre service facturation pour une
+                            liste complète des prestataires.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-surface-container-lowest rounded-2xl p-6 border border-outline-variant/10">
+                        <button class="w-full flex items-center justify-between text-left group">
+                            <span
+                                class="text-lg font-bold text-primary font-headline group-hover:text-secondary transition-colors">Que
+                                dois-je apporter pour ma première consultation ?</span>
+                            <span class="material-symbols-outlined text-secondary">expand_more</span>
+                        </button>
+                        <div class="mt-4 text-on-surface-variant leading-relaxed">
+                            Veuillez vous présenter avec une pièce d'identité valide, votre carte vitale et d'assurance,
+                            ainsi que votre dossier médical récent lié à votre motif de visite. Arriver 15 minutes en
+                            avance aide à fluidifier l'enregistrement.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-surface-container-lowest rounded-2xl p-6 border border-outline-variant/10">
+                        <button class="w-full flex items-center justify-between text-left group">
+                            <span
+                                class="text-lg font-bold text-primary font-headline group-hover:text-secondary transition-colors">Les
+                                services d'urgence sont-ils disponibles 24h/24 ?</span>
+                            <span class="material-symbols-outlined text-secondary">expand_more</span>
+                        </button>
+                        <div class="mt-4 text-on-surface-variant leading-relaxed">
+                            Absolument. Notre service des urgences et nos unités de soins critiques sont opérationnels
+                            24 heures sur 24, 365 jours par an, avec une équipe complète de professionnels médicaux
+                            spécialisés sur le qui-vive.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative w-full pt-16 pb-8 bg-slate-900 dark:bg-black text-white">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+            <div class="col-span-1 md:col-span-1">
+                <div class="text-xl font-extrabold text-white mb-6 font-headline">Clinika</div>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Fournir des soins médicaux exceptionnels en mettant l'accent sur la chaleur humaine et la précision
+                    clinique.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-headline text-white font-bold mb-6">Départements</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform duration-200 block"
+                            href="#">Cardiologie</a></li>
+                    <li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform duration-200 block"
+                            href="#">Neurologie</a></li>
+                    <li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform duration-200 block"
+                            href="#">Pédiatrie</a></li>
+                    <li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform duration-200 block"
+                            href="#">Soins Dentaires</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-headline text-white font-bold mb-6">Légal</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform duration-200 block"
+                            href="#">Politique de Confidentialité</a></li>
+                    <li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform duration-200 block"
+                            href="#">Conditions Générales</a></li>
+                    <li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform duration-200 block"
+                            href="#">Gestion des Cookies</a></li>
+                    <li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform duration-200 block"
+                            href="#">Accessibilité</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-headline text-white font-bold mb-6">Newsletter</h4>
+                <div class="flex flex-col space-y-4">
+                    <p class="text-slate-400 text-sm">Restez informé avec nos conseils de santé et actualités.</p>
+                    <div
+                        class="flex bg-slate-800 rounded-lg overflow-hidden focus-within:ring-2 focus-within:ring-secondary transition-all">
+                        <input class="bg-transparent border-none text-white px-4 py-2 w-full outline-none text-sm"
+                            placeholder="Adresse Email" type="email" required />
+                        <button class="bg-secondary px-4 text-white hover:bg-on-tertiary-container transition-colors">
+                            <span class="material-symbols-outlined mt-1">send</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-slate-400 text-sm">© 2024 Clinika Excellence Médicale. Tous droits réservés.</p>
+            <div class="flex space-x-6">
+                <a class="text-slate-400 hover:text-white transition-colors" href="#"><span
+                        class="material-symbols-outlined">public</span></a>
+                <a class="text-slate-400 hover:text-white transition-colors" href="#"><span
+                        class="material-symbols-outlined">alternate_email</span></a>
+                <a class="text-slate-400 hover:text-white transition-colors" href="#"><span
+                        class="material-symbols-outlined">call</span></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

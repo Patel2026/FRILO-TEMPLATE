@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;600;800&display=swap');
+
+:root {
+    --surface: #faf9f7;
+    --secondary: #775a19;
+    --on-secondary-fixed: #261900;
+}
+
+body {
+    background-color: var(--surface);
+    color: #1a1c1b;
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, .serif {
+    font-family: 'Noto Serif', serif;
+}
+
+/* Strict Architectual Rule: No Rounded Corners */
+* {
+    border-radius: 0 !important;
+}
+
+/* Editorial Spacing: Replacing Lines with White Space */
+.editorial-space {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+/* The Editorial Reveal: Image/Text Overlap */
+.editorial-reveal {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+    .editorial-reveal {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .editorial-reveal-img {
+        width: 60%;
+        z-index: 0;
+    }
+    
+    .editorial-reveal-text {
+        width: 45%;
+        margin-left: -5%;
+        z-index: 10;
+        background-color: #e3e2e0; /* surface-container-highest */
+        padding: 4rem;
+        box-shadow: 0 40px 80px rgba(26, 28, 27, 0.04);
+    }
+}
+
+/* Glassmorphism (Frosted Beige) */
+.glass-aura {
+    backdrop-filter: blur(20px);
+    background-color: rgba(250, 249, 247, 0.7);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+/* Ghost Border (Light Catching) */
+.ghost-border {
+    outline: 1px solid rgba(209, 197, 180, 0.2);
+}
+
+/* Tonal Shifts for Sectioning */
+.bg-tonal-low {
+    background-color: #f4f3f1;
+}
+
+.bg-tonal-high {
+    background-color: #e9e8e6;
+}
+
+/* Metallic CTA */
+.btn-noble {
+    background-color: var(--on-secondary-fixed);
+    color: #ffdea5; /* secondary-fixed */
+    transition: all 500ms ease;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+.btn-noble:hover {
+    background: linear-gradient(135deg, #775a19 0%, #a18341 100%);
+    color: white;
+}
+
+/* Minimalist Inputs */
+.input-aura {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(127, 118, 103, 0.3); /* outline at low opacity */
+    padding: 1rem 0;
+    transition: all 400ms ease;
+}
+
+.input-aura:focus {
+    outline: none;
+    border-bottom-color: var(--secondary);
+}
+
+/* Editorial Journal Grid */
+.journal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .journal-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.journal-item {
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    background-color: #e3e2e0;
+}
+
+.journal-item img {
+    width: 100%;
+    height: 100%;
+    object-cover: cover;
+    transition: transform 1s ease;
+}
+
+.journal-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Custom Selection */
+::selection {
+    background: var(--secondary);
+    color: white;
+}

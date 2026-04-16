@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saisir l'Agence | FRILO Patrimoine</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-surface text-earth-800 antialiased selection:bg-accent selection:text-white flex flex-col min-h-screen">
+
+    <!-- Navbar Principale -->
+    <nav class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-minimal transition-all" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="index.html" class="flex flex-col group">
+                <span class="font-serif font-bold text-2xl text-primary tracking-tight leading-none mb-1">FRILO Patrimoine</span>
+            </a>
+            
+            <div class="hidden lg:flex items-center space-x-10">
+                <a href="index.html" class="text-earth-600 hover:text-primary transition-colors text-sm font-semibold tracking-wide">Accueil</a>
+                <a href="services.html" class="text-earth-600 hover:text-primary transition-colors text-sm font-semibold tracking-wide">Pôles d'Expertise</a>
+                <a href="about.html" class="text-earth-600 hover:text-primary transition-colors text-sm font-semibold tracking-wide">L'Institution</a>
+                <a href="contact.html" class="text-primary font-bold text-sm tracking-wide border-b-2 border-accent pb-1">Contact</a>
+            </div>
+
+            <button class="lg:hidden text-primary">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-16 pb-24 relative overflow-hidden bg-white">
+        <!-- Motif léger -->
+        <div class="absolute inset-0 bg-pinstripe opacity-10 -z-10 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
+            
+            <!-- Coordonnées et Directions -->
+            <div>
+                <span class="text-accent font-bold tracking-widest text-xs uppercase mb-4 block">Siège Administratif</span>
+                <h1 class="text-5xl font-serif font-bold text-primary mb-6 leading-tight">Nos experts vous <br>écoutent.</h1>
+                <p class="text-lg text-earth-600 font-light mb-10 leading-relaxed max-w-md">
+                    Chaque relation démarre par un audit approfondi. Programmons un rendez-vous (physique ou visio) pour étudier la qualification de votre dossier foncier.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="card-solid p-6 flex gap-4">
+                        <div class="w-12 h-12 flex items-center justify-center text-primary bg-primary/5 rounded shrink-0">
+                            <span class="material-symbols-outlined">domain</span>
+                        </div>
+                        <div>
+                            <h4 class="font-serif font-bold text-lg text-primary mb-1">Adresse Principale (Bénin)</h4>
+                            <p class="text-earth-600 text-sm leading-relaxed">Immeuble CICA-TOYOTA, 2ème étage<br>Quartier Ganhi, Cotonou<br>République du Bénin</p>
+                        </div>
+                    </div>
+
+                    <div class="card-solid p-6 flex gap-4">
+                        <div class="w-12 h-12 flex items-center justify-center text-primary bg-primary/5 rounded shrink-0">
+                            <span class="material-symbols-outlined">call</span>
+                        </div>
+                        <div>
+                            <h4 class="font-serif font-bold text-lg text-primary mb-1">Contacts Téléphoniques</h4>
+                            <p class="text-earth-600 text-sm leading-relaxed">Secrétariat : +229 00 00 00 00<br>Ligne Diaspora (Whatsapp) : +229 00 00 00 01</p>
+                        </div>
+                    </div>
+
+                    <div class="card-solid p-6 flex gap-4">
+                        <div class="w-12 h-12 flex items-center justify-center text-primary bg-primary/5 rounded shrink-0">
+                            <span class="material-symbols-outlined">mail</span>
+                        </div>
+                        <div>
+                            <h4 class="font-serif font-bold text-lg text-primary mb-1">Requêtes Numériques</h4>
+                            <a href="mailto:contact@frilopatrimoine.bj" class="text-accent text-sm font-bold tracking-wide hover:text-primary transition-colors">contact@frilopatrimoine.bj</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulaire de Demande d'Entretien (Type Corporate) -->
+            <div class="bg-primary text-white p-10 md:p-14 shadow-corporate relative">
+                <div class="absolute top-0 right-0 w-2 bg-accent h-full"></div>
+                <h2 class="text-3xl font-serif font-bold mb-8">Demande d'Entretien Préalable</h2>
+                
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-white/50 mb-2">Nom & Prénom</label>
+                            <input type="text" class="w-full bg-white/5 border border-white/20 rounded-sm text-sm text-white px-4 py-3 outline-none focus:border-accent" required placeholder="Votre nom complet">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-white/50 mb-2">Téléphone</label>
+                            <input type="tel" class="w-full bg-white/5 border border-white/20 rounded-sm text-sm text-white px-4 py-3 outline-none focus:border-accent" required placeholder="Ex: +33 6 ...">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-widest text-white/50 mb-2">Qualité du requérant</label>
+                        <select class="w-full bg-white/5 border border-white/20 rounded-sm text-sm text-white px-4 py-3 outline-none focus:border-accent appearance-none cursor-pointer">
+                            <option class="text-earth-900">Propriétaire bailleur</option>
+                            <option class="text-earth-900">Vendeur</option>
+                            <option class="text-earth-900">Investisseur (Diaspora / Expatrié)</option>
+                            <option class="text-earth-900">Représentant d'entreprise</option>
+                            <option class="text-earth-900">Locataire potentiel</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-widest text-white/50 mb-2">Objet du futur mandat (Optionnel)</label>
+                        <textarea rows="4" class="w-full bg-white/5 border border-white/20 rounded-sm text-sm text-white px-4 py-3 outline-none focus:border-accent resize-none placeholder-white/30" placeholder="Résumez brièvement le patrimoine concerné ou votre besoin spécifique..."></textarea>
+                    </div>
+
+                    <div class="pt-4">
+                        <button type="submit" class="btn-accent w-full py-4 !rounded-sm">Soumettre le dossier</button>
+                        <p class="text-[10px] text-white/40 mt-4 text-center">Un conseiller en gestion patrimoniale étudiera votre demande et vous contactera sous 24h ouvrées.</p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Institutionnel -->
+    <footer class="bg-primary text-white/70 py-12 text-sm text-center border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <span class="font-serif font-bold text-xl text-white tracking-tight leading-none mb-4 block">FRILO Patrimoine</span>
+            <p class="text-xs uppercase tracking-widest opacity-60">SOCIÉTÉ DE GESTION FONCIÈRE. COTONOU. &copy; 2026</p>
+        </div>
+    </footer>
+</body>
+</html>

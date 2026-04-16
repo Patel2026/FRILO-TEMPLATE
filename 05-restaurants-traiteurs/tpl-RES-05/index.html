@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>L'Atrium des Saveurs | Buffet Gastronomique & Cuisine de Saison</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container/30 antialiased">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 glass-nav shadow-[0_20px_40px_rgba(56,56,51,0.06)]">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <a href="index.html" class="text-2xl font-extrabold text-primary tracking-tighter font-headline">
+                L'Atrium <span class="text-secondary">des Saveurs</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight text-sm uppercase">
+                <a class="text-primary border-b-2 border-primary pb-1" href="index.html">Accueil</a>
+                <a class="text-on-surface hover:text-primary transition-colors" href="about.html">Esprit</a>
+                <a class="text-on-surface hover:text-primary transition-colors" href="menu.html">La Table</a>
+                <a class="text-on-surface hover:text-primary transition-colors" href="gallery.html">Galerie</a>
+                <a class="text-on-surface hover:text-primary transition-colors" href="contact.html">Contact</a>
+            </div>
+            <button class="harvest-gradient text-white px-6 py-2.5 rounded-xl font-headline font-bold hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg uppercase text-xs tracking-wider">
+                Réserver une table
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <header class="relative min-h-[90vh] flex items-center pt-24 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img alt="L'Atrium Hero" class="w-full h-full object-cover" data-alt="Buffet haut de gamme ensoleillé" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzjdQTXQsbnlGkp85Urjy-Tg_YTPdkqXphAePuJQf0Yi2Zrak0DQXoRo7X4qmaBHeBKFoDAHYiGotUsQkh2ccODdzidCc3Dc4bWdHBlEaiD2pF24vbUXQbT_q5Fm7L5XLqnDcWVbVgXuM1Am2smJGu32qoNRkBgMQgmg2s75dXQYdQ3-JIG9NPLkQ3_iEBPluaroS985uNR3hKsgFX04kU6gGPbU3TyvYxmtdIyL9_T1FoSkCrCH2k0U5xFfmqOqgiZchG_Iq_o4wF"/>
+                <div class="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent"></div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+                <div class="max-w-3xl">
+                    <span class="inline-block px-4 py-1.5 mb-6 rounded-full bg-tertiary-container text-on-tertiary-container font-headline text-[10px] font-black uppercase tracking-[0.2em]">
+                        L'Abondance Réinventée
+                    </span>
+                    <h1 class="text-6xl md:text-8xl font-headline font-extrabold text-on-surface leading-[1.1] mb-8 -tracking-tight">
+                        Tout l'Éclat des <span class="text-secondary italic font-normal">Saisons</span> dans votre assiette.
+                    </h1>
+                    <p class="text-xl text-on-surface-variant mb-10 max-w-lg leading-relaxed font-light">
+                        Plongez dans un univers de saveurs solaires. De la terre à votre table, nous célébrons la fraîcheur de Cotonou avec un buffet gastronomique curaté chaque matin.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <button class="harvest-gradient text-white px-10 py-5 rounded-xl font-headline font-black uppercase tracking-widest text-sm hover:scale-105 active:scale-95 transition-all shadow-xl">
+                            Planifier ma visite
+                        </button>
+                        <button class="bg-surface-container-highest/20 backdrop-blur-md text-on-surface px-10 py-5 rounded-xl font-headline font-black uppercase tracking-widest text-sm hover:bg-surface-container-highest transition-all">
+                            Découvrir le Menu
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Concept Section -->
+        <section class="py-32 bg-surface">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="grid md:grid-cols-2 gap-24 items-center">
+                    <div class="relative">
+                        <div class="aspect-[4/5] rounded-[3rem] overflow-hidden harvest-shadow">
+                            <img alt="Chef au travail" class="w-full h-full object-cover" data-alt="Chef préparant des produits frais" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIrApe_qeZFy_LouWWBc9hNOyTelolClQBWw_bKyAJh68gJBoUVef2TMRiQBPngvv-FhqE_ZNii44fSipd1xiSXt9EEot4FE9pOk2sC0LJcX9D3Im_461o2z6e3akTmwKzXQRO1UxxHovubLYekIBmseV1GThBpkFV7aAybiepkcSDShMzI0iFfi8-Bnza6woo6pVAiA1HdVsoyxfd9FNqB-NB3c6d5sIVb-8n3WoaMtq4WMj8HjPNryDPdpzWOMmJzSnrWgG42E-U"/>
+                        </div>
+                        <div class="absolute -bottom-12 -right-12 w-72 h-72 rounded-[2rem] overflow-hidden border-[16px] border-background harvest-shadow hidden lg:block">
+                            <img alt="Légumes frais" class="w-full h-full object-cover" data-alt="Ananas de Calavi" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsZUqD0OFrGxDuzbVVXIur3ir2nprmMbnWfRI_4eemImfwynW_qRAUJiki-7VTf1jHqZreNvAeh_ts8Fk0Dbp7BehJHkXwQ8S8mgvQ1Dn_zvz6jESf0j6E95UHt3otVku0DxmIszAStfrwkqPAykTgGpJxembIasGnuAjEMF8zgF4tfcCj8cyUsJRDr10I5rPrLKXvQlEIv55u0jvwxtrN9kHZ3lEcaOQB2y5Ewgn667l2LFswt_HX2sutRJNcG9bOTeJSumli3okj"/>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="font-label uppercase tracking-[0.3em] text-primary text-xs mb-6 block font-bold">L'Atrium ensoleillé</span>
+                        <h2 class="text-5xl md:text-6xl font-headline font-extrabold text-on-surface mb-8 leading-tight">
+                            La Fraîcheur est notre <span class="italic font-normal">Seul</span> Secret.
+                        </h2>
+                        <div class="space-y-8 text-lg text-on-surface-variant leading-relaxed font-light">
+                            <p>
+                                À l'Atrium des Saveurs, nous avons réinventé l'expérience du buffet. Fini les plats génériques. Nous croyons en une gastronomie éditoriale, accessible et vivante.
+                            </p>
+                            <p>
+                                Notre philosophie de buffet à volonté s'appuie sur la saisonnalité. Chaque matin, nos chefs sélectionnent les meilleurs produits du marché Dantokpa pour garantir une assiette aussi vibrante que la journée ensoleillée.
+                            </p>
+                            <div class="flex items-center gap-6 pt-6">
+                                <div class="flex -space-x-4">
+                                    <div class="w-14 h-14 rounded-full border-4 border-background bg-primary/10 flex items-center justify-center text-primary">
+                                        <span class="material-symbols-outlined">eco</span>
+                                    </div>
+                                    <div class="w-14 h-14 rounded-full border-4 border-background bg-secondary/10 flex items-center justify-center text-secondary">
+                                        <span class="material-symbols-outlined">restaurant</span>
+                                    </div>
+                                    <div class="w-14 h-14 rounded-full border-4 border-background bg-tertiary-container/10 flex items-center justify-center text-on-tertiary-container">
+                                        <span class="material-symbols-outlined">favorite</span>
+                                    </div>
+                                </div>
+                                <p class="text-xs font-headline font-black text-on-surface uppercase tracking-widest leading-tight">Plus de 300 <br/>convives comblés par jour</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Piliers Culinaires -->
+        <section class="py-32 bg-surface-container">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                    <div class="max-w-xl">
+                        <h2 class="text-5xl font-headline font-extrabold text-on-surface mb-6 uppercase tracking-tighter">Les Piliers de l'Atrium</h2>
+                        <p class="text-lg text-on-surface-variant font-light">Explorez quatre stations signatures, chacune dédiée à un savoir-faire éthique et généreux.</p>
+                    </div>
+                    <a href="menu.html" class="text-primary font-headline font-black uppercase tracking-widest text-xs flex items-center gap-3 group">
+                        Découvrir les Stations <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 grid-rows-2 gap-8 min-h-[800px]">
+                    <!-- The Grill -->
+                    <div class="md:col-span-8 bg-surface-container-lowest rounded-[2rem] p-10 shadow-2xl relative overflow-hidden group">
+                        <div class="relative z-10 h-full flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-4xl font-headline font-extrabold mb-4 uppercase italic">Le Pavillon des Grilles</h3>
+                                <p class="text-on-surface-variant max-w-sm font-light">Découpes premium, rôties lentement sur un lit de bois d'ébène et de caféier.</p>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white">
+                                    <span class="material-symbols-outlined text-3xl">skillet</span>
+                                </div>
+                                <span class="text-[10px] font-black uppercase tracking-widest text-primary">Le Chef's Pick</span>
+                            </div>
+                        </div>
+                        <img alt="The Grill" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-1000" data-alt="Grillades fumantes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMPxGyzJYHzvmef2WETJIRnrMaBN_si1CiVJ31mjuldxJ8bk3iIHQt8gHHFVMjPrJ-Qo3nwLEuStBG1hxaU89edgO4BleXUssxyz5dSQAeLT_f0aa6_hBJ2YdZnmeNxVwi3Mtw7bMUNWltC10iY69suZA93tMTfO8XJiC1nhgVgUvdqINHr8jT6_C3B8sqOt_CaQ7A2t77nDlmmBCws6MAXBNskaerrhiORhFa8fDZ-5zv8yg1x-mZ7AnpsdMootT8wihhtp2dkVkZ"/>
+                    </div>
+                    <!-- Farm Fresh -->
+                    <div class="md:col-span-4 bg-tertiary-container/10 rounded-[2rem] p-10 shadow-2xl relative overflow-hidden group">
+                        <div class="relative z-10">
+                            <h3 class="text-3xl font-headline font-extrabold mb-4 text-primary-dim uppercase">Le Potager Frais</h3>
+                            <p class="text-on-surface-variant font-light">Récoltés à l'aube, assemblés avec nos vinaigrettes artisanales.</p>
+                        </div>
+                        <img alt="Salades" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-1000" data-alt="Salades vibrantes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuShHM0i5sPeg8zDAif7ffydZnaw_3Q1gea8BWXCFoH4ubT1fYKPgdx_nCCFwCPVzRsJyV_Em6P17UP1AnbGMtwLj4CRH_czjPSEr8FsYPChVko3tKAYUJL5c_lvaqe7qyahJPfg9HhxZozwB0f7W1MMj3qNl9RHvsaufYYb_AVzcTXXYJEL26w0mlGrQGhtUC2ywXnWyfAHRIqG1rRO8ZF-RSWJsarEjnr21IBsPSMckEbYPmdhBY7U5-DchPK5SXK_hNm6kYI_Tt4"/>
+                    </div>
+                    <!-- Ocean Bounty -->
+                    <div class="md:col-span-12 lg:col-span-5 bg-secondary-container/10 rounded-[2rem] p-10 shadow-2xl relative overflow-hidden group">
+                        <div class="relative z-10">
+                            <h3 class="text-3xl font-headline font-extrabold mb-4 text-secondary uppercase">Trésors du Littoral</h3>
+                            <p class="text-on-surface-variant font-light">Un voyage tournant de Grand-Popo à nos côtes, fraîcheur maximale garantie.</p>
+                        </div>
+                        <img alt="Seafood" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-1000" data-alt="Fruits de mer frais" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7ldj5HN_M--YK3roMII4lwuaEf48TXZSqzgPChpmYGPlvaPKRUhphRMMs9AOfR7EaUGrov5g8oejyOpMAdoGYfmKejavaRP6u9eyQ9L_76R1V6GZhEjQxtp182km1M8cGGO7lCxlOrxfCvEY5KNLnMqrkh_M3UpsWj0U-6liyJQl76n6jOja4BZtcoWAMicv8GbiUoeQ8ELIfvvR0LezF9uYOUYyjf4tHRu1TE3Mzilad5hBR7tYjoOfML5nlJrSD9AY0nHM6DeK2"/>
+                    </div>
+                    <!-- Pastry Shop -->
+                    <div class="md:col-span-12 lg:col-span-7 bg-surface-container-highest/20 rounded-[2rem] p-10 shadow-2xl relative overflow-hidden group">
+                        <div class="relative z-10 h-full flex flex-col justify-center">
+                            <h3 class="text-4xl font-headline font-extrabold mb-4 uppercase">La Pâtisserie d'Atrium</h3>
+                            <p class="text-on-surface-variant max-w-sm font-light">Desserts haute couture et mignardises créés par nos maîtres pâtissiers.</p>
+                        </div>
+                        <img alt="Pastry" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-1000" data-alt="Pâtisseries artisanales" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY5wXrK5-lHEhCpk6OTaJh1Xik0kSgH5L7XH50fI-8mytkX9nxm7YRyllZXX1frqYv3NviJQ8VaJtCWJmzjmbk-Jd7bZEYsBj2EvKqid5UXZjJr_jnhZIkfOVVvxDbxuTUeei141n35peLVxXkkDdvoVVes5UzQJLUni4t8V7KhNtLnbrJtg4CMdf-QZ78RPRA6p4PQOQIDzp7Z-fqwTE0Z3soKqdeXTW0ZTesCPqCOslwa9f4GZpMfdwxoLoHr410jubc3kpxEGr3"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tarification / Buffet Model -->
+        <section class="py-32 bg-surface overflow-hidden relative">
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container/30 -skew-x-12 translate-x-24 z-0"></div>
+            <div class="max-w-7xl mx-auto px-8 relative z-10">
+                <div class="text-center mb-24">
+                    <h2 class="text-6xl font-headline font-extrabold mb-6 tracking-tighter uppercase italic">Une Valeur Exceptionnelle</h2>
+                    <p class="text-on-surface-variant text-lg font-light">Un prix unique. Des possibilités infinies. Choisissez votre instant de dégustation.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                    <!-- Lunch Feast -->
+                    <div class="bg-surface-container-lowest p-12 rounded-[2rem] shadow-2xl border-t-8 border-primary relative">
+                        <div class="flex justify-between items-start mb-12">
+                            <div>
+                                <h3 class="text-4xl font-headline font-black uppercase">Le Festin du Midi</h3>
+                                <p class="text-on-surface-variant mt-2 font-bold uppercase tracking-widest text-[10px]">Quotidien / 12h00 - 16h00</p>
+                            </div>
+                            <span class="material-symbols-outlined text-primary text-5xl">wb_sunny</span>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="flex justify-between items-center pb-6 border-b border-outline-variant/10">
+                                <span class="text-xl font-bold uppercase">Adultes</span>
+                                <span class="text-4xl font-headline font-black text-primary">18 500 <span class="text-sm">FCFA</span></span>
+                            </div>
+                            <div class="flex justify-between items-center pb-6 border-b border-outline-variant/10">
+                                <span class="text-xl font-bold uppercase">Enfants (5-12 ans)</span>
+                                <span class="text-4xl font-headline font-black text-primary">9 000 <span class="text-sm">FCFA</span></span>
+                            </div>
+                        </div>
+                        <div class="mt-10 p-6 bg-surface-container rounded-xl text-xs flex items-center gap-4 text-on-surface-variant">
+                            <span class="material-symbols-outlined opacity-50">info</span>
+                            <p class="font-light italic">Inclut les boissons non-alcoolisées à volonté.</p>
+                        </div>
+                    </div>
+                    <!-- Dinner Feast -->
+                    <div class="bg-secondary-container/10 p-12 rounded-[2rem] shadow-2xl border-t-8 border-secondary relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-6">
+                            <span class="bg-secondary text-white text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-[0.2em] shadow-lg">Sélection Premium</span>
+                        </div>
+                        <div class="flex justify-between items-start mb-12">
+                            <div>
+                                <h3 class="text-4xl font-headline font-black uppercase">Le Grand Dîner</h3>
+                                <p class="text-on-surface-variant mt-2 font-bold uppercase tracking-widest text-[10px]">Quotidien / 19h00 - 23h00</p>
+                            </div>
+                            <span class="material-symbols-outlined text-secondary text-5xl">dark_mode</span>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="flex justify-between items-center pb-6 border-b border-secondary/10">
+                                <span class="text-xl font-bold uppercase">Adultes</span>
+                                <span class="text-4xl font-headline font-black text-secondary">28 000 <span class="text-sm">FCFA</span></span>
+                            </div>
+                            <div class="flex justify-between items-center pb-6 border-b border-secondary/10">
+                                <span class="text-xl font-bold uppercase">Enfants (5-12 ans)</span>
+                                <span class="text-4xl font-headline font-black text-secondary">14 000 <span class="text-sm">FCFA</span></span>
+                            </div>
+                        </div>
+                        <div class="mt-10 p-6 bg-secondary-container/20 rounded-xl text-xs flex items-center gap-4 text-secondary font-bold">
+                            <span class="material-symbols-outlined">stars</span>
+                            <p class="uppercase tracking-widest">Inclut les spécialités de crustacés du Weekend.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Preview -->
+        <section class="py-32 bg-surface-container-low">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="text-center mb-24">
+                    <h2 class="text-5xl font-headline font-extrabold mb-6 uppercase tracking-tighter italic">L'Atmosphère de l'Atrium</h2>
+                    <p class="text-on-surface-variant text-lg max-w-2xl mx-auto font-light">Un cadre lumineux, conçu pour la célébration, les échanges et le confort.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="aspect-square rounded-[2rem] overflow-hidden group relative harvest-shadow">
+                        <img alt="Ambiance 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Intérieur lumineux" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9p9dauxWVOy_uvdQm4z3pkVHISHTd1mrpF0jNdxElYF_tpDMS5JBXV0i7kW8K2U9OY-kzQGl74O9Gek0krgd9tBnAORTuwEQH2wLewRK-YtOy8-97_w84y4gB8v6AvZSKJEiccYyxr23F0h1C4WbpYT4Da0ETUlW0T_cDTGr8g6-0aLTrIOmxFv41Up-XZYSLsxRj1hScNBgWQ0FUu-3A0iy4praOqgkb7VtwOxzje_eebepKul1S6gXDPMt8D4OLJOdZpthuHN39"/>
+                    </div>
+                    <div class="aspect-square rounded-[2rem] overflow-hidden group relative harvest-shadow md:translate-y-16">
+                        <img alt="Ambiance 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Table d'amis" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuep7uIwgDWPdxctTcxwv9ftKnR49X4cSQNWQWsf4u820L9lsYfwaXdBsMP9zgtj5IkhQaJfNnw6iASNhh-qCQvejGwxRPujdlAiQtcYMlLzxx7p3LcCmcIo5X5Cs_xqpv-qUUxNp07njtn11hOBclAFS1Y9xlX0RJFVr6u0IIRlcgX76BcKCmGODlsY5TY5C5wQ5BShNRx_PawlFVYqmtd81NdL1ecIb6M0apEGvlsQntI6-sbapSgxpx-VMsJ1Qhg6bIbC1m1ndh"/>
+                    </div>
+                    <div class="aspect-square rounded-[2rem] overflow-hidden group relative harvest-shadow">
+                        <img alt="Ambiance 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Détails de table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIwQRmfsKdFozs5zK5BVJFu6UhgHbo5jZyOBuR05S1RNf70FEnwlrFqkP2o4swR9qs9U2k1mZ3cso9zj4Br9jX7cYeeuXpapT3gfw8fs_rHgt1smOWdly48x_YySKdqOLGAzr-3UR_Y9bVhGOUStT2irEKISVuNMLDz-OwOCqRzYibFT0pDw6vj-7dCso9NlrltmQeSHLU12Y1wmV2e2W3RcPlB-0uUQfVr_0lbvtVagTXYA0BXbtI-rXwlTtwbivCJle7LjtkaGsY"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="py-32 relative">
+            <div class="max-w-6xl mx-auto px-8">
+                <div class="bg-on-surface rounded-[3rem] p-16 md:p-24 text-center relative overflow-hidden shadow-2xl">
+                    <div class="absolute inset-0 bg-secondary/10 pointer-events-none"></div>
+                    <h2 class="text-5xl md:text-7xl font-headline font-extrabold text-white mb-10 relative z-10 italic uppercase">Prêt à Goûter <br/>à la Moisson ?</h2>
+                    <p class="text-surface-variant text-xl mb-14 max-w-2xl mx-auto relative z-10 font-light">Les réservations sont vivement conseillées pour les tablées de plus de 6 personnes.</p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-8 relative z-10">
+                        <button class="harvest-gradient text-white px-12 py-6 rounded-2xl font-headline font-black uppercase tracking-widest text-lg hover:scale-105 active:scale-95 transition-all shadow-2xl">
+                            Réserver maintenant
+                        </button>
+                        <button class="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-12 py-6 rounded-2xl font-headline font-black uppercase tracking-widest text-lg transition-all">
+                            Appeler le Concierge
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-surface-container py-20">
+        <div class="max-w-7xl mx-auto px-12 grid grid-cols-1 md:grid-cols-4 gap-16">
+            <div class="space-y-6">
+                <div class="text-xl font-extrabold text-primary font-headline uppercase tracking-tighter">L'Atrium <span class="text-secondary">des Saveurs</span></div>
+                <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                    Une célébration quotidienne de l'abondance. Ouvert tous les jours de 12h00 à 23h30.
+                </p>
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-primary cursor-pointer">eco</span>
+                    <span class="material-symbols-outlined text-primary cursor-pointer">local_dining</span>
+                </div>
+            </div>
+            <div>
+                <span class="font-headline font-black text-primary uppercase text-[10px] tracking-widest mb-8 block">Navigation</span>
+                <ul class="space-y-4 text-sm font-bold uppercase tracking-tight">
+                    <li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="index.html">Accueil</a></li>
+                    <li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="about.html">Esprit</a></li>
+                    <li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="menu.html">La Table</a></li>
+                    <li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="font-headline font-black text-primary uppercase text-[10px] tracking-widest mb-8 block">Le Lieu</span>
+                <p class="text-sm text-on-surface-variant leading-relaxed">
+                    Avenue Jean-Paul II, Haie Vive<br/>Cotonou, Bénin<br/>
+                    +229 01 00 00 00
+                </p>
+            </div>
+            <div>
+                <span class="font-headline font-black text-primary uppercase text-[10px] tracking-widest mb-8 block">Lettre de Saison</span>
+                <div class="flex">
+                    <input class="bg-background border-none rounded-l-xl px-4 py-3 w-full text-xs focus:ring-2 focus:ring-primary/20" placeholder="Email" type="email"/>
+                    <button class="bg-primary text-white px-6 rounded-r-xl font-black text-[10px] uppercase">OK</button>
+                </div>
+                <p class="text-[9px] mt-4 text-on-surface-variant opacity-60 uppercase tracking-widest">© 2026 L'ATRIUM DES SAVEURS. TOUS DROITS RÉSERVÉS.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

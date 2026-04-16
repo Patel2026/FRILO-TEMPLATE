@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery | The Kinetic Gala</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&amp;family=Be+Vietnam+Pro:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#26fedc",
+                        "secondary-container": "#006b5b",
+                        "tertiary": "#ff62c5",
+                        "on-tertiary-container": "#000000",
+                        "tertiary-container": "#ff00bd",
+                        "primary-fixed-dim": "#bc6fff",
+                        "surface-tint": "#cf96ff",
+                        "surface-container-high": "#32113d",
+                        "on-tertiary-fixed": "#350025",
+                        "secondary": "#26fedc",
+                        "on-background": "#fbdbff",
+                        "on-primary-fixed-variant": "#450074",
+                        "error": "#ff6e84",
+                        "on-tertiary-fixed-variant": "#710052",
+                        "secondary-fixed-dim": "#00efce",
+                        "background": "#1b0424",
+                        "secondary-dim": "#00efce",
+                        "on-primary-container": "#37005f",
+                        "on-secondary": "#005d4f",
+                        "on-error-container": "#ffb2b9",
+                        "on-secondary-container": "#ddfff5",
+                        "on-secondary-fixed": "#00483d",
+                        "surface-container-low": "#22062c",
+                        "primary-dim": "#a533ff",
+                        "surface-container": "#2a0b35",
+                        "surface": "#1b0424",
+                        "inverse-on-surface": "#684a70",
+                        "surface-variant": "#3a1646",
+                        "outline": "#8a6a92",
+                        "surface-container-highest": "#3a1646",
+                        "tertiary-fixed": "#ff89cd",
+                        "error-dim": "#d73357",
+                        "on-primary-fixed": "#000000",
+                        "on-primary": "#480079",
+                        "on-secondary-fixed-variant": "#006859",
+                        "on-error": "#490013",
+                        "primary-container": "#c683ff",
+                        "outline-variant": "#5a3d62",
+                        "tertiary-fixed-dim": "#ff6ec7",
+                        "primary": "#cf96ff",
+                        "on-surface-variant": "#c39fca",
+                        "on-surface": "#fbdbff",
+                        "tertiary-dim": "#ff62c5",
+                        "surface-bright": "#421b4f",
+                        "inverse-primary": "#8d00e6",
+                        "error-container": "#a70138",
+                        "surface-container-lowest": "#000000",
+                        "inverse-surface": "#fff7fb",
+                        "on-tertiary": "#440030",
+                        "primary-fixed": "#c683ff",
+                        "surface-dim": "#1b0424"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #1b0424;
+            color: #fbdbff;
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#1b0424]/60 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(72,0,121,0.2)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#cf96ff] font-['Epilogue']">The Kinetic Gala</div>
+<div class="hidden md:flex items-center space-x-8 font-['Epilogue'] tracking-tight">
+<a class="text-white/80 hover:text-[#cf96ff] transition-colors hover:scale-105 transition-transform duration-200" href="#">Home</a>
+<a class="text-white/80 hover:text-[#cf96ff] transition-colors hover:scale-105 transition-transform duration-200" href="#">About</a>
+<a class="text-white/80 hover:text-[#cf96ff] transition-colors hover:scale-105 transition-transform duration-200" href="#">Services</a>
+<a class="text-[#26fedc] border-b-2 border-[#26fedc] pb-1 hover:scale-105 transition-transform duration-200" href="#">Gallery</a>
+<a class="text-white/80 hover:text-[#cf96ff] transition-colors hover:scale-105 transition-transform duration-200" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:scale-105 active:scale-95 transition-all duration-200">
+                Plan your event
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Hero Header -->
+<header class="mb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-2xl">
+<span class="text-secondary font-bold uppercase tracking-widest text-sm mb-4 block font-label">Visual Anthology</span>
+<h1 class="text-6xl md:text-8xl font-black font-headline text-primary leading-tight tracking-tighter">
+                        Structured <br/> <span class="text-white">Euphoria.</span>
+</h1>
+</div>
+<div class="flex flex-wrap gap-3">
+<button class="px-8 py-3 rounded-full bg-tertiary text-on-tertiary font-bold transition-all hover:scale-105">All Moments</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-highest text-on-surface-variant font-bold border border-outline-variant/20 hover:border-secondary transition-all hover:scale-105">Parties</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-highest text-on-surface-variant font-bold border border-outline-variant/20 hover:border-secondary transition-all hover:scale-105">Themed Events</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-highest text-on-surface-variant font-bold border border-outline-variant/20 hover:border-secondary transition-all hover:scale-105">Decor</button>
+</div>
+</div>
+</header>
+<!-- Immersive Bento Grid -->
+<div class="editorial-grid">
+<!-- Large Feature Card -->
+<div class="col-span-12 md:col-span-8 row-span-2 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-[16/10]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Massive indoor warehouse party with vibrant purple and cyan laser lights, dense crowd dancing in silhouette, and professional stage lighting setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2gBa-ZY0i3XMt3Ox3UsUdc-0hMYawyO4yLaY2IqMSy-FPyYCyp2_m9nwJ5oqKIppzzEOm_ECRjL-U4p9oUePyGfATHpIiRgd_BDzLMqqel9maIvvNPUCsOfRLkzpY7_AZqR7Sqtkl7pPYJ-m8SGNtWBERPpcKCeSvMxtg5Z36DAt0ZlE_RimfokgUCJfMSYhUeHQronapC6I5lRTJEnNwWdL7CkfZE-BsXNNcW4erIyxiWJm8-vcuDor3kQCRGxGYDn6gnJmu1xU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface/90 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+<div class="absolute bottom-8 left-8 right-8">
+<p class="text-secondary font-bold mb-2">Parties</p>
+<h3 class="text-3xl font-black font-headline text-white">The Midnight Neon Pulse</h3>
+</div>
+</div>
+<!-- Vertical Tall Card -->
+<div class="col-span-12 md:col-span-4 row-span-3 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-[4/5] md:aspect-auto">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Elegant luxury event decor with cascading floral arrangements, crystal chandeliers, and soft warm ambient lighting in a high-end ballroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-hyMYvZY4eWkzAEl5KAVfSrOgYGCoUHKLXwDa8pUsgzZDhKfxlxKO3_LcjtXMjGlU11qbebZ6KDyCAagLS2C9bYafw4PVjVJ8l9kbDqGQgLtM3HLF35T1OS0_b3a9PdltcEbHKzBt6ZpN-BZf7jzuipgp2PGu2uk4ERwyH65DDJsrBzMjSj_27eXuslGVTIWR9BXlJ6zrrYYToXnApR-d82KZoszCMpcVnFDI82MbWEc-z6rwM4csGQnJWgJHVfUv6eZwVxfrz8A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<p class="text-tertiary font-bold mb-2">Decor</p>
+<h3 class="text-2xl font-black font-headline text-white">Floral Architecture</h3>
+</div>
+</div>
+<!-- Square Card -->
+<div class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Energetic festival atmosphere with confetti cannons firing over a massive crowd during a peak performance moment with bright stage lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC68w-LL-UqOIhIJNd0zQaEYyDZ4RDUSGObr6LOEcfP6IMDBgvkCcewPCJs6kgIqSWdYuasevFxHduvQGArXTgHGTD7sTtihYpDLr1DOwonfpbKfjQu1xEiNEXIfSIPVm1tdLFqtwdDzRk00lDsjW4M0972PSiQomeUJ9afF5lVH6PKi5KgRY9HPMepni0sR_Z7SAe4mJhajstv4mTm2htZ4BZIxAm9cQJPynSzWXVxVrj1JIlawEov4kcgw5Id32tLaS0Sh5STac"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface/90 via-transparent to-transparent opacity-40"></div>
+<div class="absolute bottom-6 left-6">
+<p class="text-secondary font-bold mb-1">Parties</p>
+<h3 class="text-xl font-bold font-headline text-white">Peak Momentum</h3>
+</div>
+</div>
+<!-- Medium Landscape Card -->
+<div class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-video">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Cyberpunk themed event setup with glowing neon signs, metallic reflective surfaces, and moody pink and blue atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE-46PQEJQP5FMhNZzexjXRWKMgbHQR15k_C6vEw4Xf2tnQBAmazdjLjQpeA1O_-OBdmoydeRvBrvHXKx-FbJazAH53APDBsqJsUJ1TCI-_IivJ5G2fwdgZIwESBxyIIT341jyodUreeYL7ZPUA5lhJlWktvZgvRPMzAHPWTCdw61G4kk1J4P4YbC-0scXDwkzsrfcxTrX2JzczQvXFRiZi1-01a4lzsHDujY-QhuZhCmkMnvrsEv1AFJkQI4JAnnhGdfSBIrBu4c"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<p class="text-secondary font-bold mb-1">Themed Events</p>
+<h3 class="text-xl font-bold font-headline text-white">Neon Noir 2024</h3>
+</div>
+</div>
+<!-- Wide Banner Card -->
+<div class="col-span-12 md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-[21/9]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Wide shot of a massive outdoor garden party at twilight with thousands of hanging fairy lights and people socializing around illuminated tables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvxuPwJ7Uz9r1gTtkyf-wgITloos_EsZgucB5twpYtpVs_7O-8FLWFqbOzcCrVZPXIVFwBDpf9rU6hemV1n71iGdTc0ChI__XlkZjg1m9zlAdTBxEuTOzCvEA7W_-BG2NrLaOWmQ1beC4wjy0CDlkv8L3PxRrm8PfCz7X9wLWbb-ETuzv-ZqJOAC5z6Rsy8P3N5nGulxpGLdRcm0SJN7YKOj-UKqLglgJm-YmWiKg2QkHWfQv1DfNNf0VK_M2g-aiew6PQzBLyy4Q"/>
+<div class="absolute inset-0 bg-[#480079]/20 group-hover:bg-transparent transition-colors"></div>
+<div class="absolute bottom-8 left-8">
+<p class="text-tertiary font-bold mb-2">Themed Events</p>
+<h3 class="text-3xl font-black font-headline text-white">Electric Garden Soirée</h3>
+</div>
+</div>
+<!-- Detail Grid -->
+<div class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Macro shot of a DJ mixing console with colorful illuminated buttons and sliders in a dark club environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMEyocp5qQ_CccMq0Np2WhFtnaxByFn6gCcESyhAFJJW99zaq1I3L4-dm_dRaEHI0qQkNN1Vo_4ZnStl4obF41QD2VZ3-CKZmXCp2M8JVf7i5SPwavHRzcUiB3oW5snPIn6CF48PZudDQC5WXFfDO2gbX1MuBXFL938gxwjlJcqxhC2VDLCCeq5Sk8D3bYb2oU8mmkP9ATemqKIgKRBe9CmMkklsGi-aV0XIUzsFYIuchEpzkS5ilTKgWw209dIFQycFLIvgUPn9w"/>
+<div class="absolute inset-0 border-[12px] border-surface transition-all group-hover:border-0"></div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-primary/20 backdrop-blur-sm">
+<span class="material-symbols-outlined text-6xl text-white">play_circle</span>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Professional table setting with architectural geometric centerpieces and sophisticated purple tinted glassware" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqP8M8akFPSnl8syyfK0pEF5e8UI-UpHCo4hZo0OO_EfiaV4FpDyFtxerYfJx8lJ63BRHyomZZOQwJoTcwvuz-ucr7-uQoQ2KmWd13gVUwfoYID25myfxGL6g8Ezzg4lmWOrfI_a4kdEMddZmTAf0K-7UEegC6rBMLOGKB8x4k9084g1X3HCVJsRybeS8PEBRekj6Dkl5Eift-lfKFRQxcIQrFcH2_vKlDXMoRuZnXL8zA_txKPfUtfcCsYBgchblwPiTimZ-7nDM"/>
+<div class="absolute top-6 right-6">
+<span class="bg-surface-bright/80 backdrop-blur px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest text-primary">Award Winning</span>
+</div>
+<div class="absolute bottom-6 left-6">
+<p class="text-tertiary font-bold mb-1">Decor</p>
+<h3 class="text-xl font-bold font-headline text-white">Geometric Elegance</h3>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of guests celebrating with sparking drinks and glowing wristbands at a high-energy gala event" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxBP2npCpYyx0WKi7r7_FnKSDf5R4NFXAuyMPf5FjLjmr0nejsVR5HnwX-M1DcDklxiJiyjzIlBh41LKcb6g-S6WIl4LagWEMAP3MXFlfSg4MVfGqfGcrFTfC_9TCjlVpYFen16hSGyjuIfqNnQCRDqvSZVv8drn59Uys19Zz7vGMM1v-mRns07F1jfKz6i_5Hf3cqcu0BYh3KzsfxU4TRUJn944HrsZMTnnynD1FWcZYV2jV02Qea6wo3h3P3nkxBxmhl_tRjTFk"/>
+<div class="absolute inset-0 flex flex-col justify-end p-6">
+<p class="text-secondary font-bold mb-1">Parties</p>
+<h3 class="text-xl font-bold font-headline text-white">Glow Collective</h3>
+</div>
+</div>
+</div>
+<!-- Load More Section -->
+<div class="mt-20 flex flex-col items-center gap-6">
+<button class="group flex items-center gap-4 bg-surface-container-high px-10 py-5 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all">
+<span class="text-xl font-bold font-headline uppercase tracking-widest">Discover More Euphoria</span>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+<p class="text-outline text-sm font-label tracking-widest uppercase">Archive dating back to 2018</p>
+</div>
+</main>
+<!-- Call to Action Section (Glassmorphism) -->
+<section class="max-w-7xl mx-auto px-6 mb-32">
+<div class="relative overflow-hidden rounded-xl bg-[#32113d]/40 backdrop-blur-3xl border border-outline-variant/10 p-12 md:p-20 flex flex-col md:flex-row items-center gap-12">
+<div class="absolute -top-24 -left-24 w-96 h-96 bg-primary/20 rounded-full blur-[100px]"></div>
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-tertiary/20 rounded-full blur-[100px]"></div>
+<div class="flex-1 relative z-10 text-center md:text-left">
+<h2 class="text-4xl md:text-6xl font-black font-headline text-white mb-6">Your event is the next <span class="text-secondary">Masterpiece.</span></h2>
+<p class="text-on-surface-variant text-lg max-w-xl">Let's translate your vision into a kinetic experience that stays in memory forever.</p>
+</div>
+<div class="flex-shrink-0 relative z-10">
+<a class="inline-block bg-primary text-on-primary px-12 py-6 rounded-full text-xl font-black font-headline tracking-tight hover:scale-105 active:scale-95 transition-all shadow-[0_0_50px_rgba(207,150,255,0.3)]" href="#">
+                    Start Planning
+                </a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-[#22062c]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start mb-12 md:mb-0">
+<div class="text-xl font-black text-[#cf96ff] mb-4 font-['Epilogue'] tracking-tighter">The Kinetic Gala</div>
+<p class="font-['Be_Vietnam_Pro'] text-sm uppercase tracking-widest text-[#8a6a92]">© 2024 The Kinetic Gala. Structured Euphoria.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-['Be_Vietnam_Pro'] text-sm uppercase tracking-widest">
+<a class="text-[#8a6a92] hover:text-[#26fedc] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#8a6a92] hover:text-[#26fedc] transition-colors" href="#">Terms of Service</a>
+<a class="text-[#8a6a92] hover:text-[#26fedc] transition-colors" href="#">FAQ</a>
+<a class="text-[#8a6a92] hover:text-[#26fedc] transition-colors" href="#">Instagram</a>
+<a class="text-[#8a6a92] hover:text-[#26fedc] transition-colors" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+</body></html>

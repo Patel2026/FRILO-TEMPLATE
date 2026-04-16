@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=Be+Vietnam+Pro:wght@400;500&amp;family=Caveat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#793106",
+                    "on-background": "#1d1c16",
+                    "tertiary-fixed-dim": "#b9ccb3",
+                    "on-primary-container": "#fffbff",
+                    "tertiary": "#4f604c",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#ece8df",
+                    "secondary-container": "#d1eac8",
+                    "background": "#fef9f0",
+                    "primary": "#94451a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed": "#351000",
+                    "surface": "#fef9f0",
+                    "inverse-on-surface": "#f5f0e7",
+                    "secondary": "#4e644a",
+                    "inverse-primary": "#ffb694",
+                    "surface-bright": "#fef9f0",
+                    "on-error-container": "#93000a",
+                    "error": "#ba1a1a",
+                    "error-container": "#ffdad6",
+                    "inverse-surface": "#32302a",
+                    "outline": "#88736a",
+                    "outline-variant": "#dbc1b7",
+                    "surface-container-low": "#f8f3ea",
+                    "tertiary-container": "#687964",
+                    "on-surface": "#1d1c16",
+                    "on-tertiary-container": "#f7fff1",
+                    "primary-fixed": "#ffdbcc",
+                    "on-secondary-fixed": "#0c200b",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#ded9d1",
+                    "on-tertiary-fixed-variant": "#3b4b38",
+                    "secondary-fixed": "#d1eac8",
+                    "primary-container": "#b35c30",
+                    "primary-fixed-dim": "#ffb694",
+                    "on-secondary-fixed-variant": "#374c34",
+                    "on-tertiary-fixed": "#101f0f",
+                    "surface-variant": "#e7e2d9",
+                    "surface-tint": "#98471d",
+                    "tertiary-fixed": "#d5e8ce",
+                    "surface-container": "#f2ede4",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#546a4f",
+                    "on-surface-variant": "#55433b",
+                    "secondary-fixed-dim": "#b5cdad",
+                    "surface-container-highest": "#e7e2d9",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Be Vietnam Pro"]
+            }
+          }
+        }
+      }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+.glass-nav {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px)
+    }
+.paper-texture {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuATQwpMcGJpHeMCejO3jiZ-hCLGSCn3mNw6ifcQEnClhUuip9W9WOFgQLChMdj2O24dF5V9Rw0XK4IWzF5nGxwcAHHCRMtzTRRdCtKSQMt9IITi7H5anf6jgLxu2U3f7a4aB_gPTSbX0vzyR4ZgY1qivEmdabvrpSKzVi29gakfrJ5c_pJCIFJU5xlzgwq0IyJ6N0TzInyIoYmTxdFItHQrmEcSZqUhz06dOTaGiU6dvqIwUNmPFtwBoL9Brt8Np-GcvdEPH8huuDw)
+    }</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#F4EFE6]/70 backdrop-blur-md dark:bg-stone-900/70 shadow-[0_10px_40px_rgba(29,28,22,0.05)] flex justify-between items-center px-8 py-4 max-w-full">
+<div class="text-[22px] font-serif font-bold text-[#55433b] dark:text-[#fef9f0]">Flora Skin</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-[#55433b] dark:text-[#e7e2d9] hover:text-[#94451a] transition-colors font-sans text-sm tracking-wide" href="#">Accueil</a>
+<a class="text-[#55433b] dark:text-[#e7e2d9] hover:text-[#94451a] transition-colors font-sans text-sm tracking-wide" href="#">Notre Histoire</a>
+<a class="text-[#94451a] border-b-2 border-[#94451a] pb-1 font-medium font-sans text-sm tracking-wide" href="#">Soins</a>
+<a class="text-[#55433b] dark:text-[#e7e2d9] hover:text-[#94451a] transition-colors font-sans text-sm tracking-wide" href="#">Journal</a>
+<a class="text-[#55433b] dark:text-[#e7e2d9] hover:text-[#94451a] transition-colors font-sans text-sm tracking-wide" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full hover:scale-105 transition-transform duration-300 scale-102 active:scale-98 font-label text-sm font-medium">
+            Prendre RDV 🌿
+        </button>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-secondary">
+<img class="w-full h-full object-cover opacity-60" data-alt="dreamy macro photography of dew drops on mossy green forest floor with soft morning light filtering through leaves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfcxS8MGVOW6MbspiYzPHrvOUNKsAo9KLPowfXkC4JVtXnjkFHYaNfHgDFa75tzPlb0E-xS2bquSII0fJSWJBEhiiMtib17lpBOcM2QXG27Eg5pCiF4gRq6ULnrYHp1wV-WK2SmekDmPKdrSDFrIgMNmsM-fPodlF1BkZY_tPLJtRSiDOo76Mrx7-Q0O7l4MgJkLGY7v8kGgosQCJWd2fP6hMWFNdoKbIO9evaaVlCz2EjJUdLOc8n-1ubb-l1D8USfn9f9GnGM2s"/>
+</div>
+<div class="relative z-10 text-center px-6">
+<span class="font-caveat text-3xl text-secondary-container mb-4 block animate-fade-in">L'art de la Terre</span>
+<h1 class="font-headline text-6xl md:text-8xl text-white tracking-tight">Nos Soins</h1>
+</div>
+</section>
+<!-- Intro Section -->
+<section class="bg-surface-container-low py-24 px-6 paper-texture">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="font-headline text-4xl text-on-surface mb-8 leading-tight">Une philosophie de régénération organique pour votre peau.</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-12">
+                    Chaque rituel Flora Skin est une immersion sensorielle conçue à partir d'extraits botaniques purs. Nous fusionnons la sagesse ancestrale de l'herboristerie avec des protocoles de soin modernes pour restaurer l'éclat originel de votre visage et de votre corps.
+                </p>
+<div class="flex flex-wrap justify-center gap-4">
+<span class="px-6 py-2 bg-secondary-container text-on-secondary-container rounded-full font-label text-xs tracking-widest uppercase flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="eco">eco</span> Certifié Bio
+                    </span>
+<span class="px-6 py-2 bg-secondary-container text-on-secondary-container rounded-full font-label text-xs tracking-widest uppercase flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="pets">pets</span> Cruelty-Free
+                    </span>
+<span class="px-6 py-2 bg-secondary-container text-on-secondary-container rounded-full font-label text-xs tracking-widest uppercase flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="recycling">recycling</span> Éco-conçu
+                    </span>
+</div>
+</div>
+</section>
+<!-- Soins Menu Tabs -->
+<section class="py-16 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-center border-b border-outline-variant/30 mb-16">
+<div class="flex space-x-12">
+<button class="pb-4 text-primary border-b-2 border-primary font-label font-bold text-sm tracking-[0.2em] uppercase transition-all">Visage</button>
+<button class="pb-4 text-on-surface-variant hover:text-primary font-label text-sm tracking-[0.2em] uppercase transition-all">Corps</button>
+<button class="pb-4 text-on-surface-variant hover:text-primary font-label text-sm tracking-[0.2em] uppercase transition-all">Rituels</button>
+</div>
+</div>
+<!-- Visage Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="luxurious facial treatment close-up with honey-like liquid texture and orange slices, warm afternoon light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrjvAXI4aJyfTMt1qQDhE_o-HWvtNXpfZheQxJgPiQOORjUylCZVRYPw6UjqJYj5e4xehzskakPUKyipIKcrwCTO04lBeJJsp9VHf_0WbjR4H7w_jjQoUKs5Y9T157LA9cG5pV7TzNieCoSU9x78FsFZPQfvNAlOdVNotiwl0ScZune1NLNFftjYjdyyoxKcvMN8Eeew0xrCuOgDJbVPjswB1csax3T2eNwT2d6nuEz6VCICtalNYb1BgZjgsxVtmBY9QlUTob9mU"/>
+<div class="absolute top-4 right-4 bg-surface/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary">60 MIN</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl text-on-surface mb-3">Soin Éclat Royal</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Un cocktail de vitamine C et d'enzymes de fruits pour réveiller les teints ternes instantanément.</p>
+<div class="flex justify-between items-center">
+<span class="font-serif text-xl text-primary">85 €</span>
+<button class="text-secondary font-label text-xs font-bold uppercase tracking-widest flex items-center gap-2 group-hover:translate-x-2 transition-transform">Découvrir <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+</div>
+<!-- Repeat for 8 more cards with variations -->
+<!-- Card 2 -->
+<div class="group bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="person applying green herbal clay mask to face, macro shot with botanical leaf shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3Tpx93OaWgmI_s11KEjAxN5JEW8xXMpkuBiChgk82GMhL0yzg91ikqTJURugfiIzZsJ3mOnCp5JFuC0BFd9mJJ3dyaGKo78ncZm7KIM1BQ3dxq5w6JSccIPiPCuYOh7eoDZsiEWiK39bpoG5AoGRxp5gcykP3eGD79QNXTrkOueL9utO9i5tx81OfEWlENEsM77JUvfykyy58AG12reMpLHzZUQMyjr5dJ5N9c4VeDekY2P2SUqsk3ZMIbOEATobvxEY8xsM3q6M"/>
+<div class="absolute top-4 right-4 bg-surface/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary">45 MIN</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl text-on-surface mb-3">Masque Argile &amp; Thé</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Purification profonde aux argiles volcaniques et extraits de thé vert antioxydant.</p>
+<div class="flex justify-between items-center">
+<span class="font-serif text-xl text-primary">65 €</span>
+<button class="text-secondary font-label text-xs font-bold uppercase tracking-widest flex items-center gap-2 group-hover:translate-x-2 transition-transform">Découvrir <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="professional therapist performing facial massage with jade roller and green botanical oils" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr9D4uE-qNZRNoaaQ93AA4advMAW3dyl9DrMxKTbaJ474dSos3oPMmAJ6EMZyzeD32kTyKok7e3v__PYxoiWbW5ijpP8tZnfmjJvNeCdWB3JqfJbd8AEtTSvgEJMQxm5rAiuy8zU3Ct_rVrSWBHfFV2KmPSv7pMLAuVvf8SDqo4oKrt_--VPXcWhQqyegAlM0ee15BnQurhILvOzjj_SM0YKGQ-F71FgfryDFdqmU_nav3IODR2F5lpSHENYkwgjJvPymYPYI9Jhk"/>
+<div class="absolute top-4 right-4 bg-surface/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary">90 MIN</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl text-on-surface mb-3">Lifting Végétal</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Modelage ancestral drainant et actifs raffermissants pour une peau lissée et tonique.</p>
+<div class="flex justify-between items-center">
+<span class="font-serif text-xl text-primary">120 €</span>
+<button class="text-secondary font-label text-xs font-bold uppercase tracking-widest flex items-center gap-2 group-hover:translate-x-2 transition-transform">Découvrir <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+</div>
+<!-- Duplicate logic for rows 2 and 3 -->
+<div class="group bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 lg:col-span-1">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="fresh cucumber and mint leaves in water, bright airy minimalist aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKMeWuRoRgsH-CKFNCkQ0NnUaj8pVQQhV9cJvo5FDAO1kBwVdxwrO47LlzqHfaGZ9D_PISQUyDlwoLrmWTAgOO-G1MVy4c2FPZnY55hJFMhT1YcfEqujav0CIS9utZA2UCtgYWH6M74xZlzZfQFQISSNgMcoBEfmFd2NdZDJOAALgG2mTbrfSAxwvTUp0zCPdel_x37U3Em2YULJrFvbyEEcTqzIA967733HRtgciSB-vSORs1QR5kMi4tHWanzaARlTtSYAM6gVs"/>
+<div class="absolute top-4 right-4 bg-surface/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary">50 MIN</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl text-on-surface mb-3">Détox à l'Ortie</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Drainage lymphatique doux couplé à un masque frais oxygénant.</p>
+<div class="flex justify-between items-center">
+<span class="font-serif text-xl text-primary">75 €</span>
+<button class="text-secondary font-label text-xs font-bold uppercase tracking-widest flex items-center gap-2 group-hover:translate-x-2 transition-transform">Découvrir <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+</div>
+<div class="group bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 lg:col-span-1">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="transparent droplet of serum on a green leaf, macro photography, high end skincare feel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwF7DqULDHLUgOrcCmxlYhVPNJWKZ9XReFT_9kWjqveoSHH9WqblmHi7ZOzG2A47viE8TOvoe3nUg-JNqQSgHAof93ME7a4kxIdKTRxUbqvGd2QeTtBEfjaPIfhWvEpr0NJak2U0bHADftcR9b2LFUqUYIHdzKPGM-2DLp4ZXKGqDpq91p1oLUQUgmwdsmXdmtl7l-DEM1bNn9CbhGQ5x8X-cQfE0L55mQBPNDjsxNFnwYSmLOionUh7QDvLFX53m2DW34a10ML2g"/>
+<div class="absolute top-4 right-4 bg-surface/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary">60 MIN</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl text-on-surface mb-3">Hydratation Intense</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Plongez votre peau dans un bain d'aloé vera et d'acide hyaluronique végétal.</p>
+<div class="flex justify-between items-center">
+<span class="font-serif text-xl text-primary">90 €</span>
+<button class="text-secondary font-label text-xs font-bold uppercase tracking-widest flex items-center gap-2 group-hover:translate-x-2 transition-transform">Découvrir <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+</div>
+<div class="group bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 lg:col-span-1">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="close up of chamomile flowers in a wooden bowl with soft ethereal lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNAQafr1NkFS8rEFJ6Yrscmm2Q1aPgRMi2-toVuuWVTXJUlnmME1z5Ooft2ewUsCfzkMWwbj4tpwFE4GnFDMnTcnKyWXbkTRoVag0W2jBgiFw47bym8nj6Z3VgkButnIrjOYoZ9KX67UkLo2dwzO8Cidt07V-UfBR8E-IvGCmdIH9VY2HhkYIHi9i9mSustpSAo8TtQxMAuolxfj5-uJk0MtY-G4KQzOK0KTywLORCih7nTAGzswcpzI2HBcmCnLEfQLHFoiK-FoQ"/>
+<div class="absolute top-4 right-4 bg-surface/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary">55 MIN</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl text-on-surface mb-3">Soin Apaisant Camomille</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Spécialement conçu pour les peaux réactives, à base de calendula et de camomille bleue.</p>
+<div class="flex justify-between items-center">
+<span class="font-serif text-xl text-primary">80 €</span>
+<button class="text-secondary font-label text-xs font-bold uppercase tracking-widest flex items-center gap-2 group-hover:translate-x-2 transition-transform">Découvrir <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How it Works: Horizontal Process -->
+<section class="py-24 bg-surface-container overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<span class="font-caveat text-2xl text-primary mb-2 block">Le Voyage Flora</span>
+<h2 class="font-headline text-4xl mb-16">Votre parcours de régénération</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+<!-- Connector line (hidden on mobile) -->
+<div class="hidden md:block absolute top-1/4 left-0 w-full h-[1px] bg-outline-variant/30 z-0"></div>
+<!-- Step 1 -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-20 h-20 bg-background rounded-full flex items-center justify-center mb-8 shadow-sm border-4 border-secondary-container">
+<span class="material-symbols-outlined text-3xl text-secondary" data-icon="forum">forum</span>
+</div>
+<h4 class="font-headline text-xl mb-4">Consultation</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Nous analysons votre typologie cutanée et vos besoins saisonniers pour un soin sur-mesure.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-20 h-20 bg-background rounded-full flex items-center justify-center mb-8 shadow-sm border-4 border-secondary-container">
+<span class="material-symbols-outlined text-3xl text-secondary" data-icon="spa">spa</span>
+</div>
+<h4 class="font-headline text-xl mb-4">Protocole</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Application des nectars botaniques par des gestuelles de massage précises et relaxantes.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-20 h-20 bg-background rounded-full flex items-center justify-center mb-8 shadow-sm border-4 border-secondary-container">
+<span class="material-symbols-outlined text-3xl text-secondary" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h4 class="font-headline text-xl mb-4">Résultats</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Une peau visiblement repulpée, un esprit apaisé et des conseils de routine à domicile.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ: Moss Green Bg -->
+<section class="bg-secondary py-24 px-6 text-white">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-headline text-4xl mb-12 text-center">Questions fréquentes</h2>
+<div class="space-y-6">
+<div class="border-b border-white/20 pb-6 group">
+<button class="w-full flex justify-between items-center text-left text-xl font-headline focus:outline-none">
+<span>Quels produits utilisez-vous lors des soins ?</span>
+<span class="material-symbols-outlined text-tertiary-fixed">add</span>
+</button>
+<div class="hidden group-focus-within:block mt-4 text-secondary-container/90 leading-relaxed font-body font-light">
+                            Nous utilisons exclusivement notre propre gamme "Flora Organics", formulée à froid avec des ingrédients 100% naturels, sans parabens, silicones ou parfums synthétiques.
+                        </div>
+</div>
+<div class="border-b border-white/20 pb-6 group">
+<button class="w-full flex justify-between items-center text-left text-xl font-headline focus:outline-none">
+<span>Faut-il prévoir une tenue particulière ?</span>
+<span class="material-symbols-outlined text-tertiary-fixed">add</span>
+</button>
+<div class="hidden group-focus-within:block mt-4 text-secondary-container/90 leading-relaxed font-body font-light">
+                            Nous mettons à votre disposition des peignoirs en coton biologique et des chaussons. Venez simplement comme vous êtes, nous nous occupons de tout.
+                        </div>
+</div>
+<div class="border-b border-white/20 pb-6 group">
+<button class="w-full flex justify-between items-center text-left text-xl font-headline focus:outline-none">
+<span>Puis-je offrir un soin en cadeau ?</span>
+<span class="material-symbols-outlined text-tertiary-fixed">add</span>
+</button>
+<div class="hidden group-focus-within:block mt-4 text-secondary-container/90 leading-relaxed font-body font-light">
+                            Absolument. Nos cartes cadeaux sont disponibles à l'accueil du studio ou en ligne, présentées dans un bel écrin en papier recyclé avec quelques graines à planter.
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking CTA -->
+<section class="py-24 px-6 relative overflow-hidden bg-background">
+<div class="max-w-6xl mx-auto rounded-lg bg-surface-container-highest p-12 md:p-24 flex flex-col items-center text-center relative z-10">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-primary mb-6">Réservez votre instant</span>
+<h2 class="font-headline text-5xl md:text-6xl text-on-surface mb-8">Accordez-vous une pause sensorielle.</h2>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label text-sm font-bold uppercase tracking-widest hover:scale-105 transition-all shadow-lg">
+                        Prendre rendez-vous
+                    </button>
+<button class="border border-primary text-primary px-10 py-4 rounded-full font-label text-sm font-bold uppercase tracking-widest hover:bg-primary/5 transition-all">
+                        Voir tous les tarifs
+                    </button>
+</div>
+<!-- Decorative botanical element -->
+<div class="absolute -bottom-20 -right-20 w-64 h-64 opacity-10 rotate-12 pointer-events-none">
+<span class="material-symbols-outlined text-[12rem]" data-icon="potted_plant">potted_plant</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[40px] mt-20 bg-[#2D3D2B] dark:bg-[#1a241a] text-[#d1eac8]">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-2xl font-serif text-[#fef9f0]">Flora Skin</div>
+<p class="font-body text-sm opacity-80 leading-relaxed">La beauté cultivée par la terre. Notre sanctuaire urbain vous accueille pour une régénération profonde et consciente.</p>
+<div class="flex space-x-4">
+<a class="w-10 h-10 rounded-full border border-[#d1eac8]/20 flex items-center justify-center hover:bg-[#d1eac8]/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">nest_eco_leaf</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-[#d1eac8]/20 flex items-center justify-center hover:bg-[#d1eac8]/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">spa</span>
+</a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-serif text-2xl text-[#fef9f0]">Navigation</h4>
+<div class="flex flex-col space-y-4">
+<a class="text-[#d1eac8]/80 hover:text-[#fef9f0] hover:translate-x-1 transition-transform font-body" href="#">Accueil</a>
+<a class="text-[#d1eac8]/80 hover:text-[#fef9f0] hover:translate-x-1 transition-transform font-body" href="#">Notre Histoire</a>
+<a class="text-[#fef9f0] underline hover:translate-x-1 transition-transform font-body" href="#">Soins</a>
+<a class="text-[#d1eac8]/80 hover:text-[#fef9f0] hover:translate-x-1 transition-transform font-body" href="#">Journal</a>
+<a class="text-[#d1eac8]/80 hover:text-[#fef9f0] hover:translate-x-1 transition-transform font-body" href="#">Contact</a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-serif text-2xl text-[#fef9f0]">Horaires &amp; Lieu</h4>
+<div class="space-y-2 text-[#d1eac8]/80 font-body">
+<p>Mardi — Samedi : 10h00 - 19h00</p>
+<p>Lundi &amp; Dimanche : Fermé</p>
+<p class="pt-4 font-caveat text-xl text-[#c1673a]">42 Rue Botanique, Paris 75003</p>
+</div>
+<div class="mt-6 pt-6 border-t border-[#d1eac8]/10">
+<p class="text-xs opacity-60 font-body uppercase tracking-widest">© Flora Skin Beauty grown from the earth.</p>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

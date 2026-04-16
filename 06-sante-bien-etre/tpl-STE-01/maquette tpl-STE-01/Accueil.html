@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Clinical Sanctuary | Modern Medical Care</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#78dc77",
+                    "primary": "#0061a4",
+                    "tertiary": "#904d00",
+                    "outline-variant": "#bfc7d4",
+                    "background": "#f8f9ff",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#00731e",
+                    "primary-fixed-dim": "#9ecaff",
+                    "error-container": "#ffdad6",
+                    "surface-container-high": "#e5e8f0",
+                    "secondary-fixed": "#94f990",
+                    "surface-container-highest": "#dfe2ea",
+                    "surface-tint": "#0061a4",
+                    "on-background": "#181c22",
+                    "secondary": "#006e1c",
+                    "surface-container-low": "#f1f3fc",
+                    "outline": "#707883",
+                    "on-tertiary-container": "#452200",
+                    "tertiary-container": "#db7900",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed": "#ffdcc2",
+                    "inverse-on-surface": "#eef1f9",
+                    "on-primary-fixed": "#001d36",
+                    "tertiary-fixed-dim": "#ffb77b",
+                    "on-secondary-fixed": "#002204",
+                    "on-primary-fixed-variant": "#00497d",
+                    "surface-variant": "#dfe2ea",
+                    "on-primary-container": "#002c4f",
+                    "on-surface-variant": "#404752",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#005313",
+                    "secondary-container": "#91f78e",
+                    "primary-container": "#2196f3",
+                    "surface": "#f8f9ff",
+                    "on-tertiary-fixed": "#2e1500",
+                    "inverse-surface": "#2d3137",
+                    "surface-container": "#ebeef6",
+                    "surface-dim": "#d7dae2",
+                    "error": "#ba1a1a",
+                    "inverse-primary": "#9ecaff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#6d3900",
+                    "on-surface": "#181c22",
+                    "primary-fixed": "#d1e4ff",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#f8f9ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0061a4 0%, #2196f3 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body antialiased">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 h-20 glass-nav shadow-sm shadow-blue-900/5">
+<div class="flex justify-between items-center px-12 max-w-screen-2xl mx-auto h-full">
+<div class="text-2xl font-bold text-blue-800 tracking-tight font-headline">The Clinical Sanctuary</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-blue-700 border-b-2 border-blue-600 font-headline tracking-tight font-semibold py-1" href="#">Home</a>
+<a class="text-slate-600 hover:text-blue-500 transition-colors duration-300 font-headline tracking-tight font-semibold" href="#">About</a>
+<a class="text-slate-600 hover:text-blue-500 transition-colors duration-300 font-headline tracking-tight font-semibold" href="#">Services</a>
+<a class="text-slate-600 hover:text-blue-500 transition-colors duration-300 font-headline tracking-tight font-semibold" href="#">Team</a>
+<a class="text-slate-600 hover:text-blue-500 transition-colors duration-300 font-headline tracking-tight font-semibold" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary px-8 py-3 rounded-xl font-semibold shadow-sm hover:scale-105 active:scale-95 transition-all duration-300">
+                Book Appointment
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-surface py-24 md:py-32">
+<div class="max-w-screen-2xl mx-auto px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative z-10">
+<h1 class="font-headline text-6xl md:text-7xl font-extrabold text-on-surface leading-[1.1] mb-8 tracking-tight">
+                        Care that <span class="text-primary italic">breathes</span> with you.
+                    </h1>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-10 max-w-lg">
+                        Experience a new standard of healthcare. We combine world-class medical expertise with a tranquil environment designed for your total well-being.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-xl text-lg font-bold shadow-lg shadow-primary/20 hover:bg-primary-container transition-all">
+                            Book an Appointment
+                        </button>
+<button class="flex items-center gap-3 px-8 py-5 text-primary font-bold hover:bg-surface-container-low rounded-xl transition-all">
+<span class="material-symbols-outlined">play_circle</span>
+                            Tour the Sanctuary
+                        </button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-20 -right-20 w-96 h-96 bg-primary-fixed rounded-full blur-[100px] opacity-30"></div>
+<div class="relative rounded-xl overflow-hidden shadow-2xl transform rotate-2">
+<img class="w-full aspect-[4/5] object-cover" data-alt="Modern clinical examination room with soft natural light, minimalist furniture, and a large window overlooking a garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUxW-HlgrxfMvU24M1skPDpgCXTmmq3zdl1R-Aw9Ceq9FS8R3whVIw2FueEwCXzwxhV5u4x91T-srg9zILlvQ0wqM9hpqeUh220RhsPYcuyR3qhHn9Y6YlFTHMKpZYjwCSIpj3Dv3h4i6w9XrumEFgVFDwpoihKcGikuD2PET3akt9EF5uH6JQeyIFCw4IruEq0ekhJUaRVNjJjmZ42YoC8Qw0p7pkwwPz7l9ePNoy05RYw0lSVb1dmMXHK4Y5Xf9Bz4JlkpVWeUs"/>
+</div>
+<div class="absolute -bottom-10 -left-10 bg-surface-container-lowest p-8 rounded-xl shadow-xl border-outline-variant/15 border max-w-xs">
+<div class="flex items-center gap-4 mb-4">
+<div class="bg-secondary-container p-3 rounded-full">
+<span class="material-symbols-outlined text-on-secondary-fixed-variant" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<span class="font-bold text-on-surface">5-Star Rated Care</span>
+</div>
+<p class="text-sm text-on-surface-variant italic">"The most peaceful medical visit I've ever had. Truly a sanctuary."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="mb-16">
+<span class="text-primary font-bold tracking-widest text-sm uppercase">Our Expertise</span>
+<h2 class="font-headline text-4xl font-bold mt-4">Curated Medical Services</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<div class="md:col-span-2 group relative overflow-hidden rounded-xl bg-surface-container-lowest p-10 hover:shadow-xl transition-all duration-500">
+<div class="flex justify-between items-start">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary mb-6">cardiology</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Integrative Cardiology</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-md">Comprehensive heart health combining advanced diagnostics with lifestyle optimization for long-term vitality.</p>
+</div>
+<img class="w-48 h-48 object-cover rounded-xl shadow-md opacity-80 group-hover:opacity-100 transition-opacity" data-alt="Doctor explaining heart health on a tablet to a patient in a light-filled office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXMsX5XnL_ReoLkNQo53zgIOjxFdqagWtmLt6dmpUH2KLQ7QUGkemhtu55Ux3BzfqRlEXgMAI1tbxDF1hRagpv1p9mkZV0by_kworOLygHXmMtJFeMXW6ceFBk-0TV7CFlBr1oCNMg_4jYbVr9H6RvE3ZORIHmhJHAePMdx1rMjpE4rL66juCWSnyTbL6L5OwsxyOsxJkfh66Xid_b5k5t86eS5Sc11r3_teYON48XDko9PCi3z-a17oXVDXKgCOSlzYj9rtEuxhg"/>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-primary text-on-primary rounded-xl p-10 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl mb-6">psychology</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Holistic Wellness</h3>
+<p class="opacity-90 leading-relaxed">Mental and emotional support systems integrated into your physical health plan.</p>
+</div>
+<a class="flex items-center gap-2 font-bold mt-8 group" href="#">
+                            Learn More <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-10 hover:shadow-xl transition-all">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">vital_signs</span>
+<h3 class="font-headline text-xl font-bold mb-4">Preventative Screening</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Advanced early detection protocols designed to catch risks before they become symptoms.</p>
+</div>
+<!-- Service Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-10 hover:shadow-xl transition-all">
+<span class="material-symbols-outlined text-4xl text-tertiary mb-6">dermatology</span>
+<h3 class="font-headline text-xl font-bold mb-4">Dermatological Care</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Clinical skin health treatments using the latest laser technology and regenerative therapies.</p>
+</div>
+<!-- Service Card 5 -->
+<div class="bg-surface-container-lowest rounded-xl p-10 hover:shadow-xl transition-all">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">science</span>
+<h3 class="font-headline text-xl font-bold mb-4">Precision Laboratory</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Fast, accurate on-site diagnostics with immediate digital results through our patient portal.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Preview Section -->
+<section class="py-32 bg-surface overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-12 grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-4">
+<span class="text-secondary font-bold tracking-widest text-sm uppercase">The Practitioners</span>
+<h2 class="font-headline text-5xl font-extrabold mt-6 leading-tight">Led by Pioneers in Human Care</h2>
+<p class="text-on-surface-variant mt-8 text-lg leading-relaxed">
+                        Our team isn't just medical professionals—they are compassionate guides committed to your sanctuary journey.
+                    </p>
+<button class="mt-10 text-primary font-bold flex items-center gap-2 group">
+                        Meet the full team <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">east</span>
+</button>
+</div>
+<div class="lg:col-span-8 flex gap-8">
+<div class="flex-none w-80 group">
+<div class="rounded-xl overflow-hidden h-[450px] mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Portrait of a professional female doctor in a light blue coat smiling warmly in a bright hallway" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgybBCr9he91KTr4RPQfDQ2_Jd7cVUeGFzTiQ14CXF1AWxAv7gpBRjA1cXrp0TXIvEUVlYb_P4LVbmOLkNZX2-py2K02egBUaJM-v8etZtUcv_K9NTByQ3SMhG5f_Yhi8xbsdGBr0uQHYH9n06tvAMjJWJ1PuneB1liqE7UBSHZnMiAV5p6sUQOV3X7ctyIulDwRcfNGpeEJn3CTlftwi3hCxwPCjVHigzK2fxoWJy4ejxWbIpgM4uARyi0XVcmodQ_InHY0iLqNc"/>
+<div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-6 rounded-lg">
+<h4 class="font-headline font-bold text-xl">Dr. Elena Vos</h4>
+<p class="text-primary text-sm font-semibold uppercase tracking-wider">Chief Medical Officer</p>
+</div>
+</div>
+</div>
+<div class="flex-none w-80 group mt-12">
+<div class="rounded-xl overflow-hidden h-[450px] mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Portrait of a confident male specialist with glasses looking thoughtfully at the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2DDDjtZtoriPoBmL4Agx0JyyCoFa8S4tsv_zZgGJEsUdK8y5_MKuubLFAg6_qnpRfmeT6ibYg49QbgeftuD5Z1rqe1vDj1SXOxgVEwcyI-Ly3ykVbrgT6-kk--ZM_ySOa16AuefS6SLV1CqBHrnAWWiNAJJJPEFC6CPrwmmTOqpAnfg_Eh0MdH57a6X1kH2YMLZIgQtB5JBW32f56PMAV74A1w0BacaHk8t8kLqoVskaJORT-QVUsirTxNG6g93xDq5LVRHZo5u8"/>
+<div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-6 rounded-lg">
+<h4 class="font-headline font-bold text-xl">Dr. Marcus Chen</h4>
+<p class="text-primary text-sm font-semibold uppercase tracking-wider">Head of Cardiology</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-headline text-3xl font-bold">Voices of Healing</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm border border-outline-variant/10">
+<div class="flex gap-1 text-tertiary-container mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed mb-8 italic">"The transition from a standard clinic to The Sanctuary changed how I view my health. I no longer feel like a number on a chart."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-on-primary-fixed">JS</div>
+<div>
+<p class="font-bold">Julian Sterling</p>
+<p class="text-xs text-on-surface-variant">Patient since 2021</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm border border-outline-variant/10 md:translate-y-6">
+<div class="flex gap-1 text-tertiary-container mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed mb-8 italic">"Their focus on preventative care and wellness has truly given me a new lease on life. The doctors here actually listen."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-on-secondary-fixed">MR</div>
+<div>
+<p class="font-bold">Maya Rodriguez</p>
+<p class="text-xs text-on-surface-variant">Patient since 2022</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm border border-outline-variant/10">
+<div class="flex gap-1 text-tertiary-container mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed mb-8 italic">"Sophisticated, clean, and professional. The patient portal makes managing my appointments and results incredibly easy."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center font-bold text-on-tertiary-fixed">AK</div>
+<div>
+<p class="font-bold">Aidan Kovar</p>
+<p class="text-xs text-on-surface-variant">Patient since 2023</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Preview -->
+<section class="py-24 bg-surface">
+<div class="max-w-screen-xl mx-auto px-12">
+<div class="bg-primary-container rounded-xl overflow-hidden flex flex-col md:flex-row shadow-2xl">
+<div class="p-16 flex-1 text-on-primary">
+<h2 class="font-headline text-4xl font-bold mb-6">Start Your Journey Today</h2>
+<p class="text-lg opacity-90 mb-10 max-w-md">Our intake specialists are available to guide you through the process of joining the Sanctuary.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-2xl">call</span>
+<span class="font-headline font-bold text-xl">+1 (555) 012-3456</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-2xl">location_on</span>
+<span class="font-headline font-bold text-xl">1200 Wellness Way, Ste 100</span>
+</div>
+</div>
+</div>
+<div class="flex-1 bg-surface-container-lowest p-16">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold mb-2 text-on-surface-variant">Full Name</label>
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all px-4 py-3 rounded-t-lg" placeholder="Jane Doe" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-bold mb-2 text-on-surface-variant">Email Address</label>
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all px-4 py-3 rounded-t-lg" placeholder="jane@example.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-bold mb-2 text-on-surface-variant">Message (Optional)</label>
+<textarea class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all px-4 py-3 rounded-t-lg" placeholder="How can we help?" rows="3"></textarea>
+</div>
+<button class="w-full hero-gradient text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-primary/30 transition-all">
+                                Request a Consultation
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-12 bg-slate-50 dark:bg-slate-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-blue-900 dark:text-blue-100 mb-6">The Clinical Sanctuary</div>
+<p class="text-slate-500 font-inter text-sm leading-relaxed mb-8">Elevating medical care through art, science, and empathy.</p>
+</div>
+<div>
+<h4 class="font-bold text-blue-900 mb-6">Explore</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-blue-600 transition-opacity font-inter text-sm underline-offset-4 hover:underline" href="#">About Us</a></li>
+<li><a class="text-slate-500 hover:text-blue-600 transition-opacity font-inter text-sm underline-offset-4 hover:underline" href="#">Our Services</a></li>
+<li><a class="text-slate-500 hover:text-blue-600 transition-opacity font-inter text-sm underline-offset-4 hover:underline" href="#">Team Members</a></li>
+<li><a class="text-slate-500 hover:text-blue-600 transition-opacity font-inter text-sm underline-offset-4 hover:underline" href="#">Patient Portal</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-blue-900 mb-6">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-blue-600 transition-opacity font-inter text-sm underline-offset-4 hover:underline" href="#">Careers</a></li>
+<li><a class="text-slate-500 hover:text-blue-600 transition-opacity font-inter text-sm underline-offset-4 hover:underline" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 hover:text-blue-600 transition-opacity font-inter text-sm underline-offset-4 hover:underline" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 hover:text-blue-600 transition-opacity font-inter text-sm underline-offset-4 hover:underline" href="#">FAQs</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-blue-900 mb-6">Connect</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-900 hover:bg-blue-200 transition-all" href="#">
+<span class="material-symbols-outlined text-lg">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-900 hover:bg-blue-200 transition-all" href="#">
+<span class="material-symbols-outlined text-lg">medical_services</span>
+</a>
+</div>
+<div class="mt-8">
+<p class="text-xs text-slate-500 font-inter">Emergency? Please call 911 immediately.</p>
+</div>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto px-12 mt-16 pt-8 border-t border-slate-200">
+<p class="text-slate-500 text-sm font-inter">© 2024 The Clinical Sanctuary. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

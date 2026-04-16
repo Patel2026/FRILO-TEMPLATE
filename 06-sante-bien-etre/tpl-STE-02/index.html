@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="fr" class="light scroll-smooth">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>CLINIQUE FRILO | Excellence Médicale</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-surface text-on-surface">
+    <!-- TopAppBar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-sm">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <a href="index.html" class="text-2xl font-extrabold tracking-tight text-slate-900 font-headline">CLINIQUE
+                FRILO</a>
+            <div class="hidden md:flex space-x-8 items-center font-headline">
+                <a class="text-cyan-700 border-b-2 border-cyan-700 pb-1 font-medium transition-all duration-300"
+                    href="index.html">Accueil</a>
+                <a class="text-slate-600 hover:text-cyan-600 transition-all duration-300" href="about.html">À propos</a>
+                <a class="text-slate-600 hover:text-cyan-600 transition-all duration-300"
+                    href="services.html">Services</a>
+                <a class="text-slate-600 hover:text-cyan-600 transition-all duration-300"
+                    href="contact.html">Contact</a>
+                <a href="contact.html"
+                    class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-bold transition-all duration-300 hover:opacity-90 active:scale-95 text-center">Rendez-vous</a>
+            </div>
+            <!-- Mobile Menu Icon (Placeholder) -->
+            <button class="md:hidden text-primary">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Slider (Conceptual Single Slide) -->
+    <header class="relative h-[580px] w-full mt-16 overflow-hidden flex items-center">
+        <img class="absolute inset-0 w-full h-full object-cover"
+            data-alt="Wide shot of a modern minimalist hospital lobby with natural lighting coming through floor-to-ceiling windows and clean architectural lines"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTsqBwPu_Rq7ooKCW-RuRVPTcf0_3_hoUUZBJQGxBQMfAfXjndig6Vs6yYmf1pJ9Kfx65tzdH97YOzfb6xdy8lJ-I-wta36q0DRMCtClSxN3sgd_e0fdj4dlQ-S9mxRzKttdMaPuTihwTLdb0aTnWEzlCBOrFeW6mZYSgO6DER1v_wz2j9p3h2iXJ2rYhLrvwc9XwgcBXzxl052zPOe95v3L3TVZQicjS_lXB23y1_HWKDw_TjOJiE9azDheSBGO9rOdU7zPFrjwa2"
+            alt="Hall d'accueil moderne de l'hôpital" />
+        <div class="absolute inset-0 bg-primary/60"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+            <div class="max-w-2xl">
+                <span
+                    class="inline-block text-secondary-fixed-dim uppercase tracking-[0.2em] font-bold text-sm mb-4">Des
+                    soins de classe mondiale</span>
+                <h1 class="text-5xl md:text-7xl font-headline font-extrabold text-white leading-tight mb-6">Votre Santé
+                    Est <br /><span class="text-on-tertiary-container">Notre Priorité</span></h1>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="contact.html"
+                        class="inline-block text-center bg-secondary text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-on-secondary-container transition-colors duration-300">Prendre
+                        Rendez-vous</a>
+                    <a href="about.html"
+                        class="inline-block text-center bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-colors duration-300">En
+                        Savoir Plus</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Quick Info Bar -->
+    <section class="relative z-20 -mt-12 px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div
+                class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-b-4 border-secondary flex flex-col items-center text-center">
+                <div
+                    class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center text-secondary mb-4">
+                    <span class="material-symbols-outlined text-3xl">medical_services</span>
+                </div>
+                <h3 class="font-headline font-bold text-lg mb-2">Médecins Experts</h3>
+                <p class="text-sm text-on-surface-variant">Des spécialistes de premier ordre dans tous les domaines
+                    médicaux.</p>
+            </div>
+            <div
+                class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-b-4 border-secondary flex flex-col items-center text-center">
+                <div
+                    class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center text-secondary mb-4">
+                    <span class="material-symbols-outlined text-3xl">calendar_month</span>
+                </div>
+                <h3 class="font-headline font-bold text-lg mb-2">Rendez-vous Faciles</h3>
+                <p class="text-sm text-on-surface-variant">Réservez en ligne en quelques secondes avec notre espace
+                    patient intelligent.</p>
+            </div>
+            <div
+                class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-b-4 border-secondary flex flex-col items-center text-center">
+                <div
+                    class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center text-secondary mb-4">
+                    <span class="material-symbols-outlined text-3xl">biotech</span>
+                </div>
+                <h3 class="font-headline font-bold text-lg mb-2">Équipement Moderne</h3>
+                <p class="text-sm text-on-surface-variant">La toute dernière technologie pour un diagnostic précis.</p>
+            </div>
+            <div
+                class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-b-4 border-secondary flex flex-col items-center text-center">
+                <div
+                    class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center text-secondary mb-4">
+                    <span class="material-symbols-outlined text-3xl">favorite</span>
+                </div>
+                <h3 class="font-headline font-bold text-lg mb-2">Soins aux Patients</h3>
+                <p class="text-sm text-on-surface-variant">Une attention personnalisée pour chaque individu.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. About Intro -->
+    <section class="py-24 px-8 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div>
+            <div class="bg-secondary-fixed w-12 h-1 mb-6"></div>
+            <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-primary mb-6">La redéfinition de
+                l'<br />Excellence Médicale</h2>
+            <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
+                Chez Clinika, nous associons la technologie médicale de pointe à un accompagnement humain bienveillant.
+                Notre mission est de fournir des soins de santé accessibles, de haute qualité, qui renforcent notre
+                communauté.
+            </p>
+            <ul class="space-y-4 mb-8">
+                <li class="flex items-center gap-3 font-medium">
+                    <span class="material-symbols-outlined text-secondary font-bold">check_circle</span>
+                    Accrédité par les Normes de Santé Internationales
+                </li>
+                <li class="flex items-center gap-3 font-medium">
+                    <span class="material-symbols-outlined text-secondary font-bold">check_circle</span>
+                    Services de Support d'Urgence 24/7
+                </li>
+                <li class="flex items-center gap-3 font-medium">
+                    <span class="material-symbols-outlined text-secondary font-bold">check_circle</span>
+                    Infrastructure Avancée de Télémédecine
+                </li>
+            </ul>
+            <a href="about.html"
+                class="text-secondary font-bold flex w-max items-center gap-2 hover:translate-x-2 transition-transform duration-300">
+                Découvrez Notre Mission <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+        </div>
+        <div class="relative">
+            <div class="absolute -top-6 -left-6 w-full h-full border-2 border-secondary rounded-xl z-0"></div>
+            <img class="relative z-10 rounded-xl shadow-2xl w-full aspect-square object-cover"
+                data-alt="A professional female doctor in a white coat smiling confidently in a bright medical setting with blurred equipment background"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD3T_FomU2uM8UxvQU5-9AzCfUF6PM9jpLfqysHJLeGkNbUxkFGTIs0SvU1rCkrurOxJ6fVSfYc5Bp_w1fHWSUyWOVfE6m9QmO7KIO-Ud8wvY1HtmJrpyBrHjIwtVappXZ5BL3stkYBybL0Mqg4LeTA85QyrdwYx7W-rhDZyOPQ92_WvKC6jcBG1M2Ed60ySpogSjXU8TmzLsDMb8pzCITY-RIRZMjqIWKdmRivmX72MpGOE8CWmLBOLAGTLTjeCuX4WeOGlhTsw5T"
+                alt="Médecin de la clinique" />
+        </div>
+    </section>
+
+    <!-- 4. Services Overview -->
+    <section class="bg-surface-container-low py-24 px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-headline font-extrabold text-primary mb-4">Nos Services Spécialisés</h2>
+                <p class="text-on-surface-variant max-w-xl mx-auto">Fournir des soins complets dans de multiples
+                    disciplines avec le plus haut niveau d'expertise.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Cardiology -->
+                <div
+                    class="bg-surface-container-lowest p-10 rounded-2xl hover:shadow-xl transition-all duration-300 group">
+                    <div
+                        class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                        <span class="material-symbols-outlined text-3xl">cardiology</span>
+                    </div>
+                    <h3 class="text-xl font-headline font-bold mb-3">Cardiologie</h3>
+                    <p class="text-on-surface-variant text-sm mb-6">Des soins cardiaques experts avec des options de
+                        diagnostic et de traitement avancées pour toutes les affections cardiovasculaires.</p>
+                    <a class="font-bold text-secondary text-sm flex items-center gap-1 group-hover:underline"
+                        href="services.html">En savoir plus <span
+                            class="material-symbols-outlined text-xs">open_in_new</span></a>
+                </div>
+                <!-- Neurology -->
+                <div
+                    class="bg-surface-container-lowest p-10 rounded-2xl hover:shadow-xl transition-all duration-300 group">
+                    <div
+                        class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                        <span class="material-symbols-outlined text-3xl">psychology</span>
+                    </div>
+                    <h3 class="text-xl font-headline font-bold mb-3">Neurologie</h3>
+                    <p class="text-on-surface-variant text-sm mb-6">Des soins neurologiques complets axés sur le
+                        diagnostic et le traitement des troubles du cerveau et du système nerveux.</p>
+                    <a class="font-bold text-secondary text-sm flex items-center gap-1 group-hover:underline"
+                        href="services.html">En savoir plus <span
+                            class="material-symbols-outlined text-xs">open_in_new</span></a>
+                </div>
+                <!-- Pediatrics -->
+                <div
+                    class="bg-surface-container-lowest p-10 rounded-2xl hover:shadow-xl transition-all duration-300 group">
+                    <div
+                        class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                        <span class="material-symbols-outlined text-3xl">child_care</span>
+                    </div>
+                    <h3 class="text-xl font-headline font-bold mb-3">Pédiatrie</h3>
+                    <p class="text-on-surface-variant text-sm mb-6">Des soins médicaux spécialisés pour les nourrissons,
+                        les enfants et les adolescents dans un environnement bienveillant.</p>
+                    <a class="font-bold text-secondary text-sm flex items-center gap-1 group-hover:underline"
+                        href="services.html">En savoir plus <span
+                            class="material-symbols-outlined text-xs">open_in_new</span></a>
+                </div>
+                <!-- Orthopedics -->
+                <div
+                    class="bg-surface-container-lowest p-10 rounded-2xl hover:shadow-xl transition-all duration-300 group">
+                    <div
+                        class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                        <span class="material-symbols-outlined text-3xl">orthopedics</span>
+                    </div>
+                    <h3 class="text-xl font-headline font-bold mb-3">Orthopédie</h3>
+                    <p class="text-on-surface-variant text-sm mb-6">Une spécialité axée sur les affections impliquant le
+                        système musculo-squelettique et la restauration de la mobilité dans votre vie.</p>
+                    <a class="font-bold text-secondary text-sm flex items-center gap-1 group-hover:underline"
+                        href="services.html">En savoir plus <span
+                            class="material-symbols-outlined text-xs">open_in_new</span></a>
+                </div>
+                <!-- Dermatology -->
+                <div
+                    class="bg-surface-container-lowest p-10 rounded-2xl hover:shadow-xl transition-all duration-300 group">
+                    <div
+                        class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                        <span class="material-symbols-outlined text-3xl">vaccines</span>
+                    </div>
+                    <h3 class="text-xl font-headline font-bold mb-3">Dermatologie</h3>
+                    <p class="text-on-surface-variant text-sm mb-6">Des traitements complets de soins de la peau, du
+                        dépistage diagnostique aux solutions de dermatologie esthétique.</p>
+                    <a class="font-bold text-secondary text-sm flex items-center gap-1 group-hover:underline"
+                        href="services.html">En savoir plus <span
+                            class="material-symbols-outlined text-xs">open_in_new</span></a>
+                </div>
+                <!-- Diagnostics -->
+                <div
+                    class="bg-surface-container-lowest p-10 rounded-2xl hover:shadow-xl transition-all duration-300 group">
+                    <div
+                        class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                        <span class="material-symbols-outlined text-3xl">labs</span>
+                    </div>
+                    <h3 class="text-xl font-headline font-bold mb-3">Analyses & Diagnostics</h3>
+                    <p class="text-on-surface-variant text-sm mb-6">Des services de laboratoire à la pointe de la
+                        technologie fournissant des résultats rapides et précis pour divers dépistages.</p>
+                    <a class="font-bold text-secondary text-sm flex items-center gap-1 group-hover:underline"
+                        href="services.html">En savoir plus <span
+                            class="material-symbols-outlined text-xs">open_in_new</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Stats Counter -->
+    <section class="bg-primary text-white py-20">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+            <div>
+                <div class="text-5xl font-extrabold font-headline mb-2 text-on-tertiary-container">5000+</div>
+                <div class="text-sm uppercase tracking-widest text-on-primary-container">Patients Suivis</div>
+            </div>
+            <div>
+                <div class="text-5xl font-extrabold font-headline mb-2 text-on-tertiary-container">120+</div>
+                <div class="text-sm uppercase tracking-widest text-on-primary-container">Médecins Experts</div>
+            </div>
+            <div>
+                <div class="text-5xl font-extrabold font-headline mb-2 text-on-tertiary-container">15+</div>
+                <div class="text-sm uppercase tracking-widest text-on-primary-container">Années d'Excellence</div>
+            </div>
+            <div>
+                <div class="text-5xl font-extrabold font-headline mb-2 text-on-tertiary-container">25+</div>
+                <div class="text-sm uppercase tracking-widest text-on-primary-container">Spécialisations</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Doctors/Team -->
+    <section class="py-24 px-8 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+            <div class="max-w-xl">
+                <h2 class="text-4xl font-headline font-extrabold text-primary mb-4">Rencontrez nos Spécialistes</h2>
+                <p class="text-on-surface-variant">Notre équipe est composée de professionnels certifiés dédiés à votre
+                    santé et à votre bien-être à long terme.</p>
+            </div>
+            <button
+                class="bg-surface-container-highest px-6 py-3 rounded-lg font-bold hover:bg-surface-container-high transition-colors">Voir
+                Tous les Médecins</button>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Doctor 1 -->
+            <div class="bg-surface-container-lowest p-4 rounded-[24px] shadow-sm hover:shadow-lg transition-all">
+                <img class="w-full aspect-[4/5] object-cover rounded-[12px] mb-6"
+                    data-alt="Portrait of a focused male doctor with glasses and a stethoscope, professional medical studio lighting"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQluStbx5N79GHx2Kaa1lkRr7rMlWLhZ6vGF6M2GHlvAiqeWmkSVE9R6OZSr5-0OJS5iCsfjkH82siLVq107UOY1oEXzHLbX6uAYggkaIbNTg9Y6BYx1OSFQ9IMlH48uaGRqbaKPIjhTHMHOSHFGoYBVGACfeMLB_K2fS0GdMjY4YwHGJCfmZ7-7nf-ZL087UPnqvh3v2Q__UxH0n-ujud2KFEXRizFEcngwjgpr6rrgv8ll6ScvAVCFID_GcWkkkgftzJF-BtX7qg"
+                    alt="Dr. Aris Thorne" />
+                <div class="px-2 pb-2">
+                    <span
+                        class="text-xs font-bold text-secondary bg-secondary/10 px-3 py-1 rounded-full mb-3 inline-block">Cardiologue</span>
+                    <h3 class="text-xl font-headline font-extrabold mb-1">Dr. Aris Thorne</h3>
+                    <p class="text-sm text-on-surface-variant mb-4">12 Ans d'Expérience</p>
+                    <div class="flex gap-2">
+                        <button class="p-2 bg-surface-container rounded-lg hover:text-secondary"><span
+                                class="material-symbols-outlined text-sm">mail</span></button>
+                        <button class="p-2 bg-surface-container rounded-lg hover:text-secondary"><span
+                                class="material-symbols-outlined text-sm">share</span></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Doctor 2 -->
+            <div class="bg-surface-container-lowest p-4 rounded-[24px] shadow-sm hover:shadow-lg transition-all">
+                <img class="w-full aspect-[4/5] object-cover rounded-[12px] mb-6"
+                    data-alt="Portrait of a friendly female doctor in lab coat smiling, natural clinical office environment lighting"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzwX8Tqlh3xPe6UskXqDE_1CjX7Pg9zX0KKhpob5rNkElLpKX4bVk7xKVpdJqMKTpcETwwjyYLEE7xXv6Q3QKlaZ11OmCHCntigekS8zZf-w3wGtIXwOGs_PV6LUDo_GN8blwJsAvRTlsxqdtEMXL6Yzk7lwhQjqYiT8AA2Akts6qKQSlzVOxA0fNki87ub1Ypbkn-lVm0fW4U0uiw6BRiRl7H39u6a9lISChZbn-Gk6DBEn-aDEe7LfRSpRUYLEF8iBmSyknajSKK"
+                    alt="Dre. Sarah Jenks" />
+                <div class="px-2 pb-2">
+                    <span
+                        class="text-xs font-bold text-secondary bg-secondary/10 px-3 py-1 rounded-full mb-3 inline-block">Pédiatre</span>
+                    <h3 class="text-xl font-headline font-extrabold mb-1">Dre. Sarah Jenks</h3>
+                    <p class="text-sm text-on-surface-variant mb-4">8 Ans d'Expérience</p>
+                    <div class="flex gap-2">
+                        <button class="p-2 bg-surface-container rounded-lg hover:text-secondary"><span
+                                class="material-symbols-outlined text-sm">mail</span></button>
+                        <button class="p-2 bg-surface-container rounded-lg hover:text-secondary"><span
+                                class="material-symbols-outlined text-sm">share</span></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Doctor 3 -->
+            <div class="bg-surface-container-lowest p-4 rounded-[24px] shadow-sm hover:shadow-lg transition-all">
+                <img class="w-full aspect-[4/5] object-cover rounded-[12px] mb-6"
+                    data-alt="Male surgeon in blue scrubs looking confident, standing in a modern clinic corridor"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVrUszsMIL2V3eCP6Eu3QHoHDOGMDf0FosnRYfTnS66hP9UF6qtLkfNqWBTuvjWpTGvgVQ6wM4cFxrCgMbSSDtrRC64IiHs0uzblnu5vUV25ZvNaPHw51ULy_SHMvFGJ5iYaY7iOOnUO7DnVq4zSz2SSC8ZxIkyX0N8zyrFkO26BFbRfFneeKKlgh0yuQLLztx6yunzPdR3qKLUUhq7ELdYT3WdDK33u8SFS2qQ5NEKlIAwYhJ3VxVKql-A51TA1L5PmRqO6zvBWcZ"
+                    alt="Dr. Marcus Vane" />
+                <div class="px-2 pb-2">
+                    <span
+                        class="text-xs font-bold text-secondary bg-secondary/10 px-3 py-1 rounded-full mb-3 inline-block">Neurologue</span>
+                    <h3 class="text-xl font-headline font-extrabold mb-1">Dr. Marcus Vane</h3>
+                    <p class="text-sm text-on-surface-variant mb-4">15 Ans d'Expérience</p>
+                    <div class="flex gap-2">
+                        <button class="p-2 bg-surface-container rounded-lg hover:text-secondary"><span
+                                class="material-symbols-outlined text-sm">mail</span></button>
+                        <button class="p-2 bg-surface-container rounded-lg hover:text-secondary"><span
+                                class="material-symbols-outlined text-sm">share</span></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Doctor 4 -->
+            <div class="bg-surface-container-lowest p-4 rounded-[24px] shadow-sm hover:shadow-lg transition-all">
+                <img class="w-full aspect-[4/5] object-cover rounded-[12px] mb-6"
+                    data-alt="Experienced female medical director in a professional navy suit, standing in a high-end medical board room"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8V8WLQrzEwJjoeJBeb6M2GMuisCvcSkTwgJr_TBjvwdxmvXfhYUywK76GBj1v-igMLlAMbtGWBbUhyX-ftHu3j7Ik4GWtMcokv0yplCFPgyT0u0CC9tAvR9UHg3d24Q1PckTc0qfgEP6nVICZFVyZ9iK1I_bk_plyxZbe1k-mogAZ6pLGJxbUa_adfV2P_foSZLBH1BD_NovgkJc9xowPgGkKb2YnU9Pnt1nyycudi_KyQOwhVyDm2udk7KkuyEH34vwsVFwrMuod"
+                    alt="Dre. Elena Ross" />
+                <div class="px-2 pb-2">
+                    <span
+                        class="text-xs font-bold text-secondary bg-secondary/10 px-3 py-1 rounded-full mb-3 inline-block">Dermatologue</span>
+                    <h3 class="text-xl font-headline font-extrabold mb-1">Dre. Elena Ross</h3>
+                    <p class="text-sm text-on-surface-variant mb-4">10 Ans d'Expérience</p>
+                    <div class="flex gap-2">
+                        <button class="p-2 bg-surface-container rounded-lg hover:text-secondary"><span
+                                class="material-symbols-outlined text-sm">mail</span></button>
+                        <button class="p-2 bg-surface-container rounded-lg hover:text-secondary"><span
+                                class="material-symbols-outlined text-sm">share</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. How It Works -->
+    <section class="py-24 bg-surface">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-headline font-extrabold text-primary mb-4">Comment ça Marche</h2>
+                <p class="text-on-surface-variant max-w-xl mx-auto">Trois étapes simples pour accéder à des soins de
+                    santé de classe mondiale dans le confort de votre foyer.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center relative">
+                    <div
+                        class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold font-headline mx-auto mb-6 shadow-xl relative z-10">
+                        01</div>
+                    <div class="hidden md:block absolute top-10 left-[60%] w-full h-[2px] bg-outline-variant/30"></div>
+                    <h3 class="text-xl font-headline font-extrabold mb-3">Remplissez le Formulaire en Ligne</h3>
+                    <p class="text-on-surface-variant px-4">Fournissez vos informations et choisissez votre spécialiste
+                        via notre portail sécurisé.</p>
+                </div>
+                <div class="text-center relative">
+                    <div
+                        class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold font-headline mx-auto mb-6 shadow-xl relative z-10">
+                        02</div>
+                    <div class="hidden md:block absolute top-10 left-[60%] w-full h-[2px] bg-outline-variant/30"></div>
+                    <h3 class="text-xl font-headline font-extrabold mb-3">Visitez la Clinique</h3>
+                    <p class="text-on-surface-variant px-4">Arrivez à l'heure prévue et rencontrez votre spécialiste
+                        pour une consultation approfondie.</p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold font-headline mx-auto mb-6 shadow-xl">
+                        03</div>
+                    <h3 class="text-xl font-headline font-extrabold mb-3">Recevez Votre Traitement</h3>
+                    <p class="text-on-surface-variant px-4">Obtenez des soins professionnels et un plan de récupération
+                        sur-mesure adapté à vos besoins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Testimonials -->
+    <section class="py-24 px-8 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between mb-12 gap-6">
+            <h2 class="text-4xl font-headline font-extrabold text-primary">Témoignages de Patients</h2>
+            <div class="flex gap-4">
+                <button
+                    class="w-12 h-12 rounded-full border-2 border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </button>
+                <button
+                    class="w-12 h-12 rounded-full border-2 border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-surface-container-low p-8 rounded-2xl relative">
+                <span
+                    class="material-symbols-outlined text-secondary text-5xl absolute -top-4 left-6 opacity-20">format_quote</span>
+                <p class="italic text-on-surface-variant mb-6 relative z-10 leading-relaxed">
+                    "L'efficacité du processus de réservation et les soins authentiques que j'ai reçus du Dr. Thorne ne
+                    ressemblent à aucune autre clinique. Un service vraiment exceptionnel."
+                </p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-secondary-fixed"></div>
+                    <div>
+                        <h4 class="font-bold font-headline mt-1">Jonathan Blake</h4>
+                        <p class="text-xs text-on-surface-variant">Patient en Cardiologie</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-surface-container-low p-8 rounded-2xl relative border-b-4 border-secondary">
+                <span
+                    class="material-symbols-outlined text-secondary text-5xl absolute -top-4 left-6 opacity-20">format_quote</span>
+                <p class="italic text-on-surface-variant mb-6 relative z-10 leading-relaxed">
+                    "Clinika est notre clinique familiale depuis des années. Le service de pédiatrie est absolument
+                    merveilleux avec les enfants. Hautement recommandé !"
+                </p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-secondary-fixed"></div>
+                    <div>
+                        <h4 class="font-bold font-headline mt-1">Émilie Watson</h4>
+                        <p class="text-xs text-on-surface-variant">Mère de famille</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-surface-container-low p-8 rounded-2xl relative">
+                <span
+                    class="material-symbols-outlined text-secondary text-5xl absolute -top-4 left-6 opacity-20">format_quote</span>
+                <p class="italic text-on-surface-variant mb-6 relative z-10 leading-relaxed">
+                    "Des installations modernes et un personnel très compétent. J'ai apprécié la façon dont ils ont
+                    expliqué clairement chaque partie de mon plan de traitement."
+                </p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-secondary-fixed"></div>
+                    <div>
+                        <h4 class="font-bold font-headline mt-1">David Chen</h4>
+                        <p class="text-xs text-on-surface-variant">Bilan de Santé</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Booking Strip -->
+    <section class="max-w-7xl mx-auto px-8 mb-24">
+        <div
+            class="bg-secondary rounded-3xl p-12 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-12">
+            <div class="max-w-md text-white text-center lg:text-left">
+                <h2 class="text-4xl font-headline font-extrabold mb-4">Prêt à Planifier Votre Visite ?</h2>
+                <p class="text-secondary-fixed-dim text-lg">Nos experts n'attendent que vous pour vous prodiguer les
+                    meilleurs soins médicaux possibles.</p>
+            </div>
+            <div class="w-full lg:max-w-2xl bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">
+                <form class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <input
+                        class="bg-surface-container-low/20 border-white/10 text-white placeholder-white/60 rounded-lg p-3 outline-none focus:ring-2 focus:ring-white"
+                        placeholder="Nom Complet" type="text" required />
+                    <input
+                        class="bg-surface-container-low/20 border-white/10 text-white placeholder-white/60 rounded-lg p-3 outline-none focus:ring-2 focus:ring-white"
+                        placeholder="Adresse Email" type="email" required />
+                    <button type="submit"
+                        class="bg-white text-secondary font-bold py-3 rounded-lg hover:bg-secondary-fixed transition-colors">Réserver</button>
+                </form>
+                <p class="text-white/60 text-xs mt-4 text-center">En cliquant sur réserver, vous acceptez notre
+                    politique de confidentialité et de protection des données.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Blog/News -->
+    <section class="pb-24 px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-headline font-extrabold text-primary mb-4">Actualités Médicales</h2>
+            <p class="text-on-surface-variant">Restez informé des derniers conseils de santé et des avancées cliniques
+                de nos experts.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <article class="group">
+                <div class="overflow-hidden rounded-2xl mb-6">
+                    <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                        data-alt="A stethoscope resting on top of medical documents in a bright sunlit office"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO5WUB0Xf6emq1KHwkiHOICn6U-WwK3uy_BotBhIf59S-C4lef6_fa4Jj4zM7hqqu0cJ79hkf0LetpizpqP9AtRHWURaK_Mv4HyMKV_TRCGekQC8d7luNJkH90iJExAAbIzVNsCtjbPOlzdJIxoOdl0u_7_59WtGJPgyVrWeJXwEVEX0F1AhjW-cehRfrBT9kf7SWjV41vRUa0qpGGzFhsoBvT9kKFPwftWmOHGjEHZpN8-m8Twc1Aa_2kDYLe-gbAH0gEb1H95c6N"
+                        alt="Stethoscope" />
+                </div>
+                <div class="flex items-center gap-4 text-sm text-on-surface-variant mb-3 font-semibold">
+                    <span>24 Oct, 2024</span>
+                    <span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+                    <span>Santé Publique</span>
+                </div>
+                <h3 class="text-xl font-headline font-extrabold mb-4 group-hover:text-secondary transition-colors">10
+                    Conseils pour Protéger Son Coeur à Tout Âge</h3>
+                <p class="text-on-surface-variant mb-6 line-clamp-2">Comment comprendre les fondements physiologiques
+                    pour réduire significativement vos risques cardiovasculaires...</p>
+                <a class="font-bold flex items-center gap-1 hover:gap-3 transition-all duration-300 text-secondary"
+                    href="#">Lire l'article <span
+                        class="material-symbols-outlined text-sm mt-0.5">arrow_right_alt</span></a>
+            </article>
+            <article class="group">
+                <div class="overflow-hidden rounded-2xl mb-6">
+                    <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                        data-alt="Doctor's hands holding a digital tablet displaying 3D medical imaging of a human brain"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnv8qFbbMJ25xiQJIStZEMlSJ_FSRv5Gm7HKkeVezor7a1SGtq9MBwC6bOs7jsd0YaK03wqlgbQ1WFDZ2vdIt4o7yLizwD6lPcthQtUPr2iiCamKCX2-DLTHNSEUwqnMKRn-kCiCHTy41n2usAdD0OvwfhBdk0UaKlVFbEORdvqgj-Ncsc-zRFhZn_7u1NE3HkJQ-NVlUn5dntCTz-_RVPMP4pvil21fc6GFyqCcaCFCH3mRwGsddWm9KmbOZDO2SoaK0eh7WXPRqE"
+                        alt="Images 3D du cerveau humain" />
+                </div>
+                <div class="flex items-center gap-4 text-sm text-on-surface-variant mb-3 font-semibold">
+                    <span>18 Oct, 2024</span>
+                    <span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+                    <span>Innovation</span>
+                </div>
+                <h3 class="text-xl font-headline font-extrabold mb-4 group-hover:text-secondary transition-colors">
+                    Diagnostic par IA : Le Futur de la Médecine Préventive</h3>
+                <p class="text-on-surface-variant mb-6 line-clamp-2">Comment nous mettons en oeuvre le machine learning
+                    pour détecter des problèmes de santé potentiels très en amont...</p>
+                <a class="font-bold flex items-center gap-1 hover:gap-3 transition-all duration-300 text-secondary"
+                    href="#">Lire l'article <span
+                        class="material-symbols-outlined text-sm mt-0.5">arrow_right_alt</span></a>
+            </article>
+            <article class="group">
+                <div class="overflow-hidden rounded-2xl mb-6">
+                    <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                        data-alt="Close up of a variety of colorful vitamins and healthy lifestyle elements like fresh fruit and water"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7KB3di11-kDqlRrPnnbP1WUCMkBbp_-7LA4n8JKaMgIFvELNLFFLbQ81H3f2Yz_isktu2u8Qd4GfJaRSn4BxewhDQ3dfnb7GFTYfrPjzr0l4KxWPNFnH7Moa_YAg08CXypWXsEPQalKw-SAWvBH0v7eYJDWXGXZNnt-gtHbb9pUxeAQ6FS6BzVi85OWN7Q6dzxSYORGHnIhRjj5y6a4fiDZFJzFwdJM4NYUmXZKCGXvf1OTHi6-pXJY10qRPGRJa4OagmDMvE1-b1"
+                        alt="Vitamines et fruits frais" />
+                </div>
+                <div class="flex items-center gap-4 text-sm text-on-surface-variant mb-3 font-semibold">
+                    <span>12 Oct, 2024</span>
+                    <span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+                    <span>Nutrition</span>
+                </div>
+                <h3 class="text-xl font-headline font-extrabold mb-4 group-hover:text-secondary transition-colors">Le
+                    Lien Entre la Nutrition et La Clarté Mentale</h3>
+                <p class="text-on-surface-variant mb-6 line-clamp-2">Exploration des répercussions directes de votre
+                    alimentation sur vos performances cognitives et votre santé cérébrale...</p>
+                <a class="font-bold flex items-center gap-1 hover:gap-3 transition-all duration-300 text-secondary"
+                    href="#">Lire l'article <span
+                        class="material-symbols-outlined text-sm mt-0.5">arrow_right_alt</span></a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white relative w-full pt-16 pb-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+            <div>
+                <div class="text-xl font-extrabold text-white mb-6 font-headline">Clinika</div>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Fournir l'excellence médicale avec une compassion
+                    humaine depuis 2009. À l'avant-garde des solutions de santé modernes.</p>
+                <div class="flex gap-4">
+                    <span
+                        class="material-symbols-outlined text-slate-400 hover:text-white cursor-pointer transition-colors">public</span>
+                    <span
+                        class="material-symbols-outlined text-slate-400 hover:text-white cursor-pointer transition-colors">mail</span>
+                    <span
+                        class="material-symbols-outlined text-slate-400 hover:text-white cursor-pointer transition-colors">phone</span>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-headline font-bold mb-6 text-white uppercase tracking-wider text-xs">Liens Rapides</h4>
+                <ul class="space-y-4 text-sm">
+                    <li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block"
+                            href="services.html">Nos Services</a></li>
+                    <li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block"
+                            href="contact.html">Prendre Rendez-vous</a></li>
+                    <li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block"
+                            href="about.html">Découvrir Clinika</a></li>
+                    <li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block"
+                            href="#">Espace Patient</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-headline font-bold mb-6 text-white uppercase tracking-wider text-xs">Catégories</h4>
+                <ul class="space-y-4 text-sm">
+                    <li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block"
+                            href="#">Cardiologie</a></li>
+                    <li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block"
+                            href="#">Neurologie</a></li>
+                    <li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block"
+                            href="#">Pédiatrie</a></li>
+                    <li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block"
+                            href="#">Dermatologie</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-headline font-bold mb-6 text-white uppercase tracking-wider text-xs">Informations
+                    Pratiques</h4>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex gap-3">
+                        <span class="material-symbols-outlined text-secondary">location_on</span>
+                        <span class="text-slate-400">1200 Avenue de la Santé, Quartier Médical, 75005 Paris</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="material-symbols-outlined text-secondary">call</span>
+                        <span class="text-slate-400">+33 (0)1 23 45 67 89</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="material-symbols-outlined text-secondary">schedule</span>
+                        <span class="text-slate-400">Lundi - Samedi : 08:00 - 20:00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-slate-400 text-xs">© 2024 Clinika Excellence Médicale. Tous droits réservés.</p>
+            <div class="flex gap-6 text-xs text-slate-400">
+                <a class="hover:text-white" href="#">Politique de Confidentialité</a>
+                <a class="hover:text-white" href="#">Conditions Générales</a>
+                <a class="hover:text-white" href="#">Gestion des Cookies</a>
+                <a class="hover:text-white" href="#">Accessibilité</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

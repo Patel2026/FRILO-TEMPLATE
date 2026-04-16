@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L'Ingénierie | FRILO Promotion</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="tailwind-config.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-primary text-concrete-200 antialiased selection:bg-accent selection:text-white bg-blueprint">
+
+    <!-- Navbar Structure -->
+    <nav class="fixed w-full z-50 transition-all border-b border-white/10 bg-primary/90 backdrop-blur-md" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-accent flex items-center justify-center font-display font-bold text-primary text-xl">F.</div>
+                <div class="flex flex-col">
+                    <span class="font-display font-bold text-xl text-white tracking-widest leading-none mb-1">FRILO</span>
+                    <span class="text-[10px] font-sans font-bold uppercase tracking-[0.2em] text-accent">Promotion BTP</span>
+                </div>
+            </a>
+            
+            <div class="hidden lg:flex items-center space-x-10">
+                <a href="index.html" class="font-display text-concrete-400 text-sm tracking-widest uppercase hover:text-white transition-colors">Accueil</a>
+                <a href="projects.html" class="font-display text-concrete-400 text-sm tracking-widest uppercase hover:text-white transition-colors">Nos Programmes</a>
+                <a href="about.html" class="font-display text-white text-sm tracking-widest uppercase hover:text-accent transition-colors relative after:absolute after:-bottom-2 after:left-0 after:w-full after:h-0.5 after:bg-accent">L'Ingénierie</a>
+                <a href="contact.html" class="font-display text-concrete-400 text-sm tracking-widest uppercase hover:text-white transition-colors">Bulle de Vente</a>
+            </div>
+
+            <button class="lg:hidden text-white">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-[104px]">
+        <!-- Header Page -->
+        <header class="py-24 border-b border-white/5 relative bg-surface">
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <span class="font-display text-accent text-sm tracking-[0.3em] uppercase mb-4 block">Notre ADN Industriel</span>
+                <h1 class="text-5xl md:text-7xl font-display font-bold text-white mb-8 leading-tight">CONCEVOIR L'AVENIR <br>DU PAYSAGE URBAIN.</h1>
+                <div class="h-px w-24 bg-accent mb-8"></div>
+                <p class="text-concrete-400 font-light leading-relaxed max-w-2xl text-lg">
+                    L'architecture n'est pas seulement une question de rendement financier. C'est l'art de façonner le cadre de vie des générations ouest-africaines de demain.
+                </p>
+            </div>
+        </header>
+
+        <!-- Les Chiffres et les Normes -->
+        <section class="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-12 gap-16 items-start">
+            
+            <div class="lg:col-span-4 space-y-8">
+                <div class="bg-primary border border-white/10 p-8 hover:border-accent transition-colors">
+                    <span class="material-symbols-outlined text-4xl text-accent mb-4">architecture</span>
+                    <h3 class="font-display text-2xl text-white mb-2">BUREAUX D'ÉTUDES</h3>
+                    <p class="text-sm font-light text-concrete-400">Chaque projet est certifié par des ingénieurs structure locaux et internationaux (Eurocode 8) contre les risques sismiques et côtiers.</p>
+                </div>
+                <div class="bg-primary border border-white/10 p-8 hover:border-accent transition-colors">
+                    <span class="material-symbols-outlined text-4xl text-accent mb-4">eco</span>
+                    <h3 class="font-display text-2xl text-white mb-2">BIOCLIMATISME</h3>
+                    <p class="text-sm font-light text-concrete-400">Orientation optimisée pour les vents marins, isolation thermique de façade, et gestion autonome de l'eau (Forages profonds intégrés).</p>
+                </div>
+                <div class="bg-primary border border-white/10 p-8 hover:border-accent transition-colors">
+                    <span class="material-symbols-outlined text-4xl text-accent mb-4">verified</span>
+                    <h3 class="font-display text-2xl text-white mb-2">GARANTIE DÉCENNALE</h3>
+                    <p class="text-sm font-light text-concrete-400">Nous sommes les rares promoteurs au Bénin adhérant stricto-sensu aux assurances de gros œuvre valables 10 ans.</p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-8 lg:pl-12">
+                <div class="prose prose-invert prose-lg max-w-none prose-headings:font-display prose-headings:uppercase prose-headings:tracking-wider">
+                    <h2>La fin de l'amateurisme BTP</h2>
+                    <p>Le marché de la construction au Bénin est en pleine restructuration. L'époque des chantiers non supervisés, construits sans maître d'œuvre ou avec des matériaux de contrebande est révolue.</p>
+                    <p>Fondé par des ingénieurs civils, FRILO Promotion intègre toute la chaîne de valeur du développement immobilier. Nous avons notre propre cellule de contrôle technique qui opère comme un auditeur impitoyable de nos propres chantiers.</p>
+                    
+                    <div class="my-12">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80" alt="Ingénieur BTP" class="w-full aspect-video object-cover filter grayscale contrast-125 border border-white/10">
+                        <p class="text-[10px] uppercase font-bold tracking-widest text-concrete-600 mt-4 text-center">Inspection des fondations pieux - Tour La Marina (Nov 2025)</p>
+                    </div>
+
+                    <h2>Transparence pour l'Investisseur</h2>
+                    <p>Acheter sur plan (VEFA) nécessite un lien de confiance total entre le bâtisseur et l'investisseur (souvent issu de la diaspora). C'est pourquoi nous avons mis au point "l'Extranet Acquéreur" :</p>
+                    <ul>
+                        <li><strong class="text-accent">Caméras de chantier 24/7</strong> accessibles depuis votre smartphone.</li>
+                        <li>Rapport mensuel signé par l'architecte du cabinet.</li>
+                        <li>Validation comptable obligatoire pour le versement des appels de fonds.</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <!-- Footer Brutaliste -->
+    <footer class="bg-primary border-t border-white/10 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6 border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold tracking-widest uppercase text-concrete-600">
+            <p>&copy; 2026 FRILO Promotion. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
