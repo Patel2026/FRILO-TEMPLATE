@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html class="scroll-smooth" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="scroll-smooth" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Esprit | PULSE - L'Énergie des Événements</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&family=Be+Vietnam+Pro:wght@400;500;600;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Be+Vietnam+Pro:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet">
     <!-- Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-tertiary selection:text-background antialiased overflow-x-hidden">
 
@@ -31,7 +29,11 @@
                 Plan Project
             </button>
         </div>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main class="pt-40">
         <!-- Vision Header -->
@@ -39,7 +41,7 @@
             <div class="grid lg:grid-cols-2 gap-32 items-end">
                 <div>
                     <span class="text-secondary font-black tracking-[0.4em] uppercase mb-8 block text-sm">Philosophie Kinétique</span>
-                    <h1 class="font-headline text-6xl md:text-8xl font-black leading-none uppercase tracking-tighter mb-12">L'Euphorie <br/><span class="signature-gradient">Structurée.</span></h1>
+                    <h1 class="font-headline text-6xl md:text-8xl font-black leading-none uppercase tracking-tighter mb-12">L'Euphorie <br><span class="signature-gradient">Structurée.</span></h1>
                     <p class="text-2xl font-light leading-relaxed mb-12 text-on-surface-variant opacity-80">
                         Chez PULSE, nous croyons que l'énergie la plus sauvage nécessite l'architecture la plus rigoureuse pour s'exprimer pleinement.
                     </p>
@@ -51,7 +53,7 @@
                 <div class="relative group">
                     <div class="absolute -inset-10 bg-primary/20 rounded-full blur-[120px] opacity-50"></div>
                     <div class="rounded-kinetic overflow-hidden shadow-2xl relative z-10 p-4 bg-surface-container-low">
-                        <img alt="Équipe en action" class="w-full aspect-square object-cover rounded-[2.5rem] transition-transform duration-1000 group-hover:scale-105 grayscale-[50%] group-hover:grayscale-0" data-alt="Équipe créative en réunion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcBqaG--sZGqgHi5vak-73fV-yzZR_-gUb5lNGtA4hFiNn4vkIuqiCvtnRU8rcI0h9Des8uaFl79JkDUrQSvJ1q2GeP0gW0hueARwhSO5kob1f-qMKVo8kCJzrdJxbzPjnDI3MRVmUFig3DSIfXHZcXcvSqiP-RqHkYNqJodxPWieCjHV6R_NH63EtQcBzc6zQDfXJTpwKfrp83FcL55TlniXBOwks14DhCA6oIDcVi0g7GtOBAzi7BdT-i1rVQd4VtyAp6RsNoUY"/>
+                        <img alt="Équipe en action" class="w-full aspect-square object-cover rounded-[2.5rem] transition-transform duration-1000 group-hover:scale-105 grayscale-[50%] group-hover:grayscale-0" data-alt="Équipe créative en réunion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcBqaG--sZGqgHi5vak-73fV-yzZR_-gUb5lNGtA4hFiNn4vkIuqiCvtnRU8rcI0h9Des8uaFl79JkDUrQSvJ1q2GeP0gW0hueARwhSO5kob1f-qMKVo8kCJzrdJxbzPjnDI3MRVmUFig3DSIfXHZcXcvSqiP-RqHkYNqJodxPWieCjHV6R_NH63EtQcBzc6zQDfXJTpwKfrp83FcL55TlniXBOwks14DhCA6oIDcVi0g7GtOBAzi7BdT-i1rVQd4VtyAp6RsNoUY">
                     </div>
                 </div>
             </div>
@@ -85,7 +87,7 @@
                     
                     <div class="bg-surface-container-high p-16 rounded-kinetic border border-white/5 shadow-2xl relative overflow-hidden group">
                         <div class="absolute -top-32 -right-32 w-80 h-80 bg-tertiary/10 rounded-full blur-[100px] group-hover:bg-tertiary/20 transition-colors"></div>
-                        <h4 class="font-headline text-4xl font-black mb-10 leading-tight uppercase tracking-tighter">Engagement <br/><span class="text-tertiary">Sans Filtre.</span></h4>
+                        <h4 class="font-headline text-4xl font-black mb-10 leading-tight uppercase tracking-tighter">Engagement <br><span class="text-tertiary">Sans Filtre.</span></h4>
                         <p class="text-on-surface-variant font-light leading-loose mb-12 opacity-80 italic italic">"Leurs événements ne sont pas seulement vus, ils sont ressentis jusque dans les moelles. Ils ont une compréhension instinctuelle du rythme et de l'émotion."</p>
                         <div class="flex items-center gap-6">
                             <div class="w-16 h-1 bg-tertiary"></div>
@@ -112,7 +114,7 @@
             <div class="col-span-1">
                 <span class="text-4xl font-black text-primary font-headline italic mb-8 block">PULSE</span>
                 <p class="text-on-surface-variant leading-relaxed font-light text-base opacity-70 normal-case tracking-normal">
-                    Fidjrossè Beach, Sector 4<br/>Cotonou, Bénin
+                    Fidjrossè Beach, Sector 4<br>Cotonou, Bénin
                 </p>
             </div>
             <div>
@@ -131,5 +133,43 @@
             </p>
         </div>
     </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Live</a>
+        <a href="a-propos.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Esprit</a>
+        <a href="services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Craft</a>
+        <a href="gallery.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Vibe</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Flux</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

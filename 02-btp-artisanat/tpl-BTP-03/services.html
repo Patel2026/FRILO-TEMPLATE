@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Nos Services | Atelier Artisanal</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="js/tailwind-config.js"></script>
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="bg-surface text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
 <!-- TopNavBar -->
@@ -25,6 +23,10 @@
             <span class="material-symbols-outlined text-3xl">menu</span>
         </button>
     </div>
+
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
 </nav>
 
 <!-- Hero Section -->
@@ -40,12 +42,12 @@
         <div class="md:w-1/3 flex justify-end">
             <a href="contact.html" class="group bg-secondary text-on-secondary w-32 h-32 rounded-full font-bold flex flex-col items-center justify-center gap-2 hover:opacity-90 transition-all active:scale-95 shadow-xl hover:shadow-2xl headline-font">
                 <span class="material-symbols-outlined text-3xl">calendar_today</span>
-                <span class="text-center text-xs leading-tight">Prendre<br/>Rendez-vous</span>
+                <span class="text-center text-xs leading-tight">Prendre<br>Rendez-vous</span>
             </a>
         </div>
     </div>
     <div class="relative w-full h-[614px] rounded-[3rem] overflow-hidden shadow-2xl">
-        <img class="w-full h-full object-cover" data-alt="Close-up of master craftsman hands working with fine wood on a sunlit workbench, warm golden dust motes in the air, editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-WTY2rtWEB_-hpV7C7v3tEUKZBYTJknU9UyVhfxdf1k9K0pMg9JaDsRDGdAZrM_j9onsDE0PszuOpN_w75y4fbT4yonA6nU-xRoSJ9E08tWc7Qht4TAtwMPs1TInMhw6nfjENdxblpuG-oMgI8hEhOHI-2h7-zWgGxxF5G9iazLKqMAJhnv4_1H90UVtdhpc08LYCsXD-K_HtDJsnq3bgtpDPljBjoBYoUqUVWX6zTa9bDzQpanOvQqhPohU9qCa3cBprgEQFKiY" alt="Atelier bois" />
+        <img class="w-full h-full object-cover" data-alt="Close-up of master craftsman hands working with fine wood on a sunlit workbench, warm golden dust motes in the air, editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-WTY2rtWEB_-hpV7C7v3tEUKZBYTJknU9UyVhfxdf1k9K0pMg9JaDsRDGdAZrM_j9onsDE0PszuOpN_w75y4fbT4yonA6nU-xRoSJ9E08tWc7Qht4TAtwMPs1TInMhw6nfjENdxblpuG-oMgI8hEhOHI-2h7-zWgGxxF5G9iazLKqMAJhnv4_1H90UVtdhpc08LYCsXD-K_HtDJsnq3bgtpDPljBjoBYoUqUVWX6zTa9bDzQpanOvQqhPohU9qCa3cBprgEQFKiY" alt="Atelier bois">
         <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
     </div>
 </header>
@@ -56,7 +58,7 @@
     <section class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         <div class="order-2 md:order-1">
             <div class="h-[500px] rounded-[3rem] overflow-hidden bg-surface-container-high shadow-xl rotate-1 group hover:rotate-0 transition-transform duration-500">
-                <img class="w-full h-full object-cover" data-alt="Interior of a modern house showing complex architectural wooden beams and high ceilings, bright natural light pouring through floor to ceiling windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7bsJwN7HmiUm7DlwEpXe2FEDDlSeaFJjeLoJxpLXmyiyDpeDFYqIM6mi3K2FemDrFU6ov5-SwMFs1X1EoLIOEjXVAB2n6QYPGsGaRHGuQBS2pJuYKV-SQvRGUercZaE8BkPzSZYHInDLg9ocy78hCjmxKz548pcyQXrP7kO88O3I-o85TzcefgiQHxp-tVlrNsajLpowLIri0Lec3yAMd0pX-IK_IbYoC2HtQVXuzWQBRpzjjlCTzdLtErB8oxK-8GYHWx1kltLw" alt="Charpente apparente" />
+                <img class="w-full h-full object-cover" data-alt="Interior of a modern house showing complex architectural wooden beams and high ceilings, bright natural light pouring through floor to ceiling windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7bsJwN7HmiUm7DlwEpXe2FEDDlSeaFJjeLoJxpLXmyiyDpeDFYqIM6mi3K2FemDrFU6ov5-SwMFs1X1EoLIOEjXVAB2n6QYPGsGaRHGuQBS2pJuYKV-SQvRGUercZaE8BkPzSZYHInDLg9ocy78hCjmxKz548pcyQXrP7kO88O3I-o85TzcefgiQHxp-tVlrNsajLpowLIri0Lec3yAMd0pX-IK_IbYoC2HtQVXuzWQBRpzjjlCTzdLtErB8oxK-8GYHWx1kltLw" alt="Charpente apparente">
             </div>
         </div>
         <div class="order-1 md:order-2 space-y-8">
@@ -95,7 +97,7 @@
                 <span class="w-12 h-[2px] bg-primary rounded-full"></span>
                 <span class="font-bold text-primary tracking-widest text-sm uppercase headline-font">Domaine 02</span>
             </div>
-            <h2 class="text-5xl font-bold tracking-tight text-on-surface headline-font">Agencement & Ébénisterie</h2>
+            <h2 class="text-5xl font-bold tracking-tight text-on-surface headline-font">Agencement &amp; Ébénisterie</h2>
             <p class="text-lg text-on-surface-variant leading-relaxed font-body">
                 Chaque assemblage, chaque grain de bois et chaque finition sont traités avec passion. Nos maîtres ébénistes créent des meubles sur-mesure, des escaliers réalisés à la main et des aménagements uniques qui confèrent à votre espace tout son caractère.
             </p>
@@ -115,7 +117,7 @@
         </div>
         <div>
             <div class="h-[500px] rounded-[3rem] overflow-hidden bg-surface-container-high shadow-xl -rotate-1 group hover:rotate-0 transition-transform duration-500">
-                <img class="w-full h-full object-cover" data-alt="Macro detail shot of a perfectly joined wood corner in a luxury kitchen cabinet, soft side lighting highlighting wood grain and satin finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmlgyvlQlQmyDgcgHLX2fq30UtdHvhyBzCr6vLXrsLo1hdnrYDqzszNYx2npELAdiJ-vBMKpWJ5mhp6MvyyuVC1b1X2pFiJb8qQ3apSJHi0p3WnJ1CVxmoLSpj_D7jPQqpx8VLEddCQD0x596GwwWELiXe7Pdr3lxieHjEMiUwwcq2KAci_NWD9kRpkP404tNVcfVGgt80--CUbb1p8ur_zysLxPsrwRT1MGUy_2VJi88JWbpNW7HgQ0ogzpN9V8P7XVYBSNZ_FoA" alt="Détail ébénisterie" />
+                <img class="w-full h-full object-cover" data-alt="Macro detail shot of a perfectly joined wood corner in a luxury kitchen cabinet, soft side lighting highlighting wood grain and satin finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmlgyvlQlQmyDgcgHLX2fq30UtdHvhyBzCr6vLXrsLo1hdnrYDqzszNYx2npELAdiJ-vBMKpWJ5mhp6MvyyuVC1b1X2pFiJb8qQ3apSJHi0p3WnJ1CVxmoLSpj_D7jPQqpx8VLEddCQD0x596GwwWELiXe7Pdr3lxieHjEMiUwwcq2KAci_NWD9kRpkP404tNVcfVGgt80--CUbb1p8ur_zysLxPsrwRT1MGUy_2VJi88JWbpNW7HgQ0ogzpN9V8P7XVYBSNZ_FoA" alt="Détail ébénisterie">
             </div>
         </div>
     </section>
@@ -124,7 +126,7 @@
     <section class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         <div class="order-2 md:order-1">
             <div class="h-[500px] rounded-[3rem] overflow-hidden bg-surface-container-high shadow-xl rotate-1 group hover:rotate-0 transition-transform duration-500">
-                <img class="w-full h-full object-cover" data-alt="Mood board of construction materials: raw oak samples, dark slate tiles, brass hardware, and textile swatches arranged neatly on a designer table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-U2ph2dVShI0eykLvpy7zpTxqqIfBVT4KMKu1bBDXuUPQpUXwAu5sJg3QX_W7FwISBMlHuqbFEHwhe1j5Xp1IvJEoTvWFJhVCSriSRYrGB7fM1PAgkl_NMO3htmHCI8BOGybNcaMV1ip1rUIsnfsmQF41pOukVb_2KMSGDV3e6bI0fXMe8yyKQAcYKtXeG0npQEo6k2tHpuQtzkyyJ2E01IeNFQNULFW9jiIWGpQkTrfiEKowdaPaeBSyPjMQZ5ZAf9rYOX45I3c" alt="Échantillons de bois" />
+                <img class="w-full h-full object-cover" data-alt="Mood board of construction materials: raw oak samples, dark slate tiles, brass hardware, and textile swatches arranged neatly on a designer table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-U2ph2dVShI0eykLvpy7zpTxqqIfBVT4KMKu1bBDXuUPQpUXwAu5sJg3QX_W7FwISBMlHuqbFEHwhe1j5Xp1IvJEoTvWFJhVCSriSRYrGB7fM1PAgkl_NMO3htmHCI8BOGybNcaMV1ip1rUIsnfsmQF41pOukVb_2KMSGDV3e6bI0fXMe8yyKQAcYKtXeG0npQEo6k2tHpuQtzkyyJ2E01IeNFQNULFW9jiIWGpQkTrfiEKowdaPaeBSyPjMQZ5ZAf9rYOX45I3c" alt="Échantillons de bois">
             </div>
         </div>
         <div class="order-1 md:order-2 space-y-8">
@@ -190,7 +192,7 @@
         <div class="absolute inset-0 opacity-10 pointer-events-none transition-transform duration-1000 group-hover:scale-110">
             <span class="material-symbols-outlined text-[20rem] absolute -bottom-10 -left-10">handyman</span>
         </div>
-        <h2 class="text-4xl md:text-6xl font-bold mb-8 relative z-10 headline-font tracking-tight leading-tight">Prêt à façonner un lieu<br/>qui traversera les générations ?</h2>
+        <h2 class="text-4xl md:text-6xl font-bold mb-8 relative z-10 headline-font tracking-tight leading-tight">Prêt à façonner un lieu<br>qui traversera les générations ?</h2>
         <div class="flex flex-col md:flex-row gap-6 justify-center relative z-10 mt-12">
             <a href="contact.html" class="bg-surface text-primary px-10 py-5 rounded-full font-black text-lg hover:scale-105 transition-transform shadow-lg headline-font">Prendre Rendez-vous</a>
             <a href="tel:0123456789" class="border-2 border-surface/30 text-surface px-10 py-5 rounded-full font-black text-lg hover:bg-surface/20 transition-colors headline-font">Appeler l'Atelier</a>
@@ -215,7 +217,7 @@
             <a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="contact.html">Contact</a>
         </div>
         <div class="flex flex-col gap-4 font-['Inter'] text-stone-600 text-sm">
-            <h4 class="font-bold text-on-surface mb-2 headline-font uppercase tracking-widest text-[#964900] text-xs">Ressources & Légal</h4>
+            <h4 class="font-bold text-on-surface mb-2 headline-font uppercase tracking-widest text-[#964900] text-xs">Ressources &amp; Légal</h4>
             <a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="#">Instagram</a>
             <a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="#">LinkedIn</a>
             <a class="text-stone-500 hover:text-[#964900] transition-colors hover:translate-x-1 duration-200" href="#">Politique de Confidentialité</a>
@@ -227,5 +229,42 @@
         <p class="font-['Inter'] text-stone-500 text-sm">© 2024 Atelier Artisanal. Conception avec âme.</p>
     </div>
 </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">À propos</a>
+        <a href="services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Services</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

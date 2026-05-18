@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html class="scroll-smooth" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="scroll-smooth" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Notre Histoire | Flora Skin</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Caveat:wght@400;700&family=Be+Vietnam+Pro:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;family=Caveat:wght@400;700&amp;family=Be+Vietnam+Pro:wght@400;500&amp;display=swap" rel="stylesheet">
     <!-- Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-surface font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container antialiased">
 
@@ -29,7 +27,11 @@
         <button class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-full font-medium hover:scale-105 transition-transform duration-300 active:scale-98 shadow-md">
             Prendre RDV 🌿
         </button>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main class="pt-20">
         <!-- Hero Banner -->
@@ -54,7 +56,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                 <div class="relative">
                     <div class="absolute -top-6 -left-6 w-full h-full border border-outline-variant/30 rounded-lg -z-10"></div>
-                    <img alt="Fondatrice Flora Skin" class="w-full aspect-[4/5] object-cover rounded-lg shadow-xl" data-alt="Elegant woman in her artisan laboratory surrounded by botanical extracts and amber glass bottles, soft natural light, warm film photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAog17Qg7QXbzJW11Ujkj_dcm2LFYpC7CK3zYu7mDqfOuVGiaTgc8tKXxk0bOjnvikUMaX6HK3301Xn5dvVyNe43WJ7q_oGpcT9oN1l4Q1Az3nTjp_IhRNihqTdvvH8u6_egNeGaSDSlMcX4ovygWMk74GHqv4XX_5z-FjUhGaGHWtkB3Zb4FQQZ9lgurhBqq4XzSwGZrysFDHINg4iR9fdeV3Vq7F5vAPQPDaHYS_EDc3e1Cq1z3tqlS9poE9jhvQY8veexgRzaf0"/>
+                    <img alt="Fondatrice Flora Skin" class="w-full aspect-[4/5] object-cover rounded-lg shadow-xl" data-alt="Elegant woman in her artisan laboratory surrounded by botanical extracts and amber glass bottles, soft natural light, warm film photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAog17Qg7QXbzJW11Ujkj_dcm2LFYpC7CK3zYu7mDqfOuVGiaTgc8tKXxk0bOjnvikUMaX6HK3301Xn5dvVyNe43WJ7q_oGpcT9oN1l4Q1Az3nTjp_IhRNihqTdvvH8u6_egNeGaSDSlMcX4ovygWMk74GHqv4XX_5z-FjUhGaGHWtkB3Zb4FQQZ9lgurhBqq4XzSwGZrysFDHINg4iR9fdeV3Vq7F5vAPQPDaHYS_EDc3e1Cq1z3tqlS9poE9jhvQY8veexgRzaf0">
                     <div class="absolute -bottom-10 -right-10 bg-surface-container-high p-8 rounded-lg max-w-xs hidden lg:block border-l-4 border-primary">
                         <p class="font-handwritten text-2xl text-primary leading-tight">"La nature possède déjà toutes les réponses dont notre peau a besoin."</p>
                     </div>
@@ -117,7 +119,7 @@
             <div class="max-w-7xl mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center gap-16">
                     <div class="w-full md:w-1/3 text-left">
-                        <h2 class="font-headline text-4xl text-on-surface-variant mb-6">Certifications & Engagements</h2>
+                        <h2 class="font-headline text-4xl text-on-surface-variant mb-6">Certifications &amp; Engagements</h2>
                         <p class="text-on-surface-variant/70 text-lg">Nous ne nous contentons pas de mots. Nos standards sont validés par les labels les plus exigeants de l'industrie.</p>
                     </div>
                     <div class="w-full md:w-2/3 grid grid-cols-1 sm:grid-cols-3 gap-8">
@@ -207,7 +209,7 @@
                     <!-- Member 1 -->
                     <div class="group">
                         <div class="relative mb-6 overflow-hidden rounded-lg aspect-[3/4]">
-                            <img alt="Sophie Expert Botaniste" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6__ubml4aZzSGS7jtPjiQ3TPUsls-Is5MJJjabEoyUic5b_ZUfLQxDCLkBPNr7F26dnKITi9z7AFYJ7S2B4qjETpZ83Zj1_qsDS_m-Boul7yRFEvdt3UnjnKkMVbItlEyukkgOwSxgobBCYfKAwdMSTHEfosYjUUXstgoWueot-x0C0len-0tYup1Thz96E-krRXe1WHZ1C-nvls2FCt0NsR2GXKO8wuZygi9bFtsOMAyM2WPgBtttqHMGScXqUq5pvaF0GkreMs"/>
+                            <img alt="Sophie Expert Botaniste" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6__ubml4aZzSGS7jtPjiQ3TPUsls-Is5MJJjabEoyUic5b_ZUfLQxDCLkBPNr7F26dnKITi9z7AFYJ7S2B4qjETpZ83Zj1_qsDS_m-Boul7yRFEvdt3UnjnKkMVbItlEyukkgOwSxgobBCYfKAwdMSTHEfosYjUUXstgoWueot-x0C0len-0tYup1Thz96E-krRXe1WHZ1C-nvls2FCt0NsR2GXKO8wuZygi9bFtsOMAyM2WPgBtttqHMGScXqUq5pvaF0GkreMs">
                         </div>
                         <h4 class="font-headline text-xl text-on-surface-variant">Sophie Morel</h4>
                         <p class="text-primary font-handwritten text-lg">Botaniste Expert</p>
@@ -215,7 +217,7 @@
                     <!-- Member 2 -->
                     <div class="group">
                         <div class="relative mb-6 overflow-hidden rounded-lg aspect-[3/4]">
-                            <img alt="Marc Formulation Lab" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn9rbNFEx0893CQeH9IzLuh5trtNs3X2bnNnJAuaLWUIEu4IjXySIYhb1rfet6TcSsqTffPlpZu6zwAbu4TQSyTi6nvYQeduW6UWj5jsql8NykO1lHH5_ny8lpd_5Gca0s4VS-3DYddMMoPUWLp715X2L1ctwV9ODXEAaHu3eJpakR8V8GES0QNAOFvqu4lrvmVOir84kUbvqOJ8BkxbrhpA9KUXy9Gz02r3W17ELpwSfnypb1AEkUEflU1W_9b7Q5ee1pXALRJXU"/>
+                            <img alt="Marc Formulation Lab" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn9rbNFEx0893CQeH9IzLuh5trtNs3X2bnNnJAuaLWUIEu4IjXySIYhb1rfet6TcSsqTffPlpZu6zwAbu4TQSyTi6nvYQeduW6UWj5jsql8NykO1lHH5_ny8lpd_5Gca0s4VS-3DYddMMoPUWLp715X2L1ctwV9ODXEAaHu3eJpakR8V8GES0QNAOFvqu4lrvmVOir84kUbvqOJ8BkxbrhpA9KUXy9Gz02r3W17ELpwSfnypb1AEkUEflU1W_9b7Q5ee1pXALRJXU">
                         </div>
                         <h4 class="font-headline text-xl text-on-surface-variant">Dr. Marc Dupont</h4>
                         <p class="text-primary font-handwritten text-lg">Responsable Labo</p>
@@ -223,7 +225,7 @@
                     <!-- Member 3 -->
                     <div class="group">
                         <div class="relative mb-6 overflow-hidden rounded-lg aspect-[3/4]">
-                            <img alt="Inès Conseillère Soin" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxDXLU4ZdfxFy66feVc0n6UCsgohyzgX3xRY62rdiDNfiT6VWKjq_WnCvpL5Wjs3veyffK3VNIevDheA71f9QtGolmAw-2z8tjaeGVJ-ePs6HI9emWyflR69yGQoVQ_WqD5p3PmeEzeztnzHe8x1mWNm--dx_egwdMmUwSFD3O77aEs9L9yDJSkoCo2SEFaUC6j0_T8S6xh42EvHbXgfG2LtcUsNu0OJV0QnarbBBaHXUsLA1xn6FH3y3Md1Y-p-GguAiY1Jxk2vQ"/>
+                            <img alt="Inès Conseillère Soin" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxDXLU4ZdfxFy66feVc0n6UCsgohyzgX3xRY62rdiDNfiT6VWKjq_WnCvpL5Wjs3veyffK3VNIevDheA71f9QtGolmAw-2z8tjaeGVJ-ePs6HI9emWyflR69yGQoVQ_WqD5p3PmeEzeztnzHe8x1mWNm--dx_egwdMmUwSFD3O77aEs9L9yDJSkoCo2SEFaUC6j0_T8S6xh42EvHbXgfG2LtcUsNu0OJV0QnarbBBaHXUsLA1xn6FH3y3Md1Y-p-GguAiY1Jxk2vQ">
                         </div>
                         <h4 class="font-headline text-xl text-on-surface-variant">Inès Blanc</h4>
                         <p class="text-primary font-handwritten text-lg">Conseillère Holistique</p>
@@ -231,7 +233,7 @@
                     <!-- Member 4 -->
                     <div class="group">
                         <div class="relative mb-6 overflow-hidden rounded-lg aspect-[3/4]">
-                            <img alt="Léa Création Contenu" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnQ66kDtRK7VGOgKo_d76Qi4zhHsG7CyymADdCWxcFqTMXiaBgqBj2Y4WVLMqzEozjAYBBWKi9x7_HWEAW2uP5u40bz2P_U5LGNxu1o9IFV9Tgh0s7fznI57mDmsmf4qkcr0Nq3IKJgPyKEH8e_21s36yJ1_yLDTHP26olmDc81n8AfXj3YQJT3RcAxXnxWp3BU_HR3OY09b0FW_x8Wgd0EYVq3aawxVYpeoQlicO1IDNJJevVf2aVD3urZ6psBJsrji3hsa76O_c"/>
+                            <img alt="Léa Création Contenu" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnQ66kDtRK7VGOgKo_d76Qi4zhHsG7CyymADdCWxcFqTMXiaBgqBj2Y4WVLMqzEozjAYBBWKi9x7_HWEAW2uP5u40bz2P_U5LGNxu1o9IFV9Tgh0s7fznI57mDmsmf4qkcr0Nq3IKJgPyKEH8e_21s36yJ1_yLDTHP26olmDc81n8AfXj3YQJT3RcAxXnxWp3BU_HR3OY09b0FW_x8Wgd0EYVq3aawxVYpeoQlicO1IDNJJevVf2aVD3urZ6psBJsrji3hsa76O_c">
                         </div>
                         <h4 class="font-headline text-xl text-on-surface-variant">Léa Petit</h4>
                         <p class="text-primary font-handwritten text-lg">Directrice Créative</p>
@@ -288,7 +290,7 @@
                 <h4 class="font-handwritten text-xl text-[#c1673a] mb-6">Newsletter</h4>
                 <p class="text-[#d1eac8]/70 text-sm mb-6">Inscrivez-vous pour recevoir nos rituels de saison.</p>
                 <form class="flex flex-col space-y-4">
-                    <input class="bg-transparent border-b border-[#d1eac8]/30 py-2 focus:outline-none focus:border-[#c1673a] text-[#fef9f0]" placeholder="votre@email.com" type="email"/>
+                    <input class="bg-transparent border-b border-[#d1eac8]/30 py-2 focus:outline-none focus:border-[#c1673a] text-[#fef9f0]" placeholder="votre@email.com" type="email">
                     <button class="text-left font-bold text-sm tracking-widest uppercase hover:text-[#fef9f0]">S'inscrire</button>
                 </form>
             </div>
@@ -297,5 +299,43 @@
             <p class="text-[#d1eac8]/40 text-xs">© Flora Skin Beauty grown from the earth.</p>
         </div>
     </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="a-propos.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Notre Histoire</a>
+        <a href="services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Soins</a>
+        <a href="#" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Journal</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

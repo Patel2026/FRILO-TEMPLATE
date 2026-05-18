@@ -1,20 +1,18 @@
-<!DOCTYPE html>
-<html class="scroll-smooth" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="scroll-smooth" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Contact | L'Atrium des Saveurs</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet">
     <!-- Icons -->
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-primary-container/30 antialiased">
 
@@ -35,12 +33,16 @@
                 Réserver une table
             </button>
         </div>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main class="pt-32 pb-24">
         <header class="max-w-7xl mx-auto px-8 mb-20 text-center">
             <span class="font-label text-secondary font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Nous Trouver</span>
-            <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter uppercase mb-6">Préparez votre <br/><span class="text-primary italic font-normal text-6xl md:text-8xl">Visite.</span></h1>
+            <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter uppercase mb-6">Préparez votre <br><span class="text-primary italic font-normal text-6xl md:text-8xl">Visite.</span></h1>
             <p class="max-w-2xl mx-auto text-on-surface-variant text-lg font-light leading-relaxed">
                 Une table vous attend sous l'éclat de l'atrium. Que ce soit pour un déjeuner d'affaires rapide ou une célébration familiale, nous prenons soin de chaque détail.
             </p>
@@ -56,21 +58,21 @@
                     <div class="space-y-6">
                         <div class="group">
                             <label class="text-[10px] uppercase font-black tracking-widest text-primary mb-2 block">Nom Complet</label>
-                            <input class="w-full bg-surface border-none rounded-2xl py-4 px-6 focus:ring-2 focus:ring-primary/20 text-on-surface" placeholder="Votre nom" type="text"/>
+                            <input class="w-full bg-surface border-none rounded-2xl py-4 px-6 focus:ring-2 focus:ring-primary/20 text-on-surface" placeholder="Votre nom" type="text">
                         </div>
                         <div class="grid md:grid-cols-2 gap-6">
                             <div class="group">
                                 <label class="text-[10px] uppercase font-black tracking-widest text-primary mb-2 block">Email</label>
-                                <input class="w-full bg-surface border-none rounded-2xl py-4 px-6 focus:ring-2 focus:ring-primary/20 text-on-surface" placeholder="votre@email.com" type="email"/>
+                                <input class="w-full bg-surface border-none rounded-2xl py-4 px-6 focus:ring-2 focus:ring-primary/20 text-on-surface" placeholder="votre@email.com" type="email">
                             </div>
                             <div class="group">
                                 <label class="text-[10px] uppercase font-black tracking-widest text-primary mb-2 block">Téléphone</label>
-                                <input class="w-full bg-surface border-none rounded-2xl py-4 px-6 focus:ring-2 focus:ring-primary/20 text-on-surface" placeholder="+229 -- -- -- --" type="tel"/>
+                                <input class="w-full bg-surface border-none rounded-2xl py-4 px-6 focus:ring-2 focus:ring-primary/20 text-on-surface" placeholder="+229 -- -- -- --" type="tel">
                             </div>
                         </div>
                         <div class="group">
                             <label class="text-[10px] uppercase font-black tracking-widest text-primary mb-2 block">Date souhaitée</label>
-                            <input class="w-full bg-surface border-none rounded-2xl py-4 px-6 focus:ring-2 focus:ring-primary/20 text-on-surface" type="date"/>
+                            <input class="w-full bg-surface border-none rounded-2xl py-4 px-6 focus:ring-2 focus:ring-primary/20 text-on-surface" type="date">
                         </div>
                         <div class="group">
                             <label class="text-[10px] uppercase font-black tracking-widest text-primary mb-2 block">Votre Message</label>
@@ -93,7 +95,7 @@
                         </div>
                         <div>
                             <h3 class="font-headline font-bold text-lg mb-1 uppercase">Localisation</h3>
-                            <p class="text-on-surface-variant font-light text-sm leading-relaxed">Avenue Jean-Paul II, Haie Vive<br/>Cotonou, Bénin</p>
+                            <p class="text-on-surface-variant font-light text-sm leading-relaxed">Avenue Jean-Paul II, Haie Vive<br>Cotonou, Bénin</p>
                         </div>
                     </div>
                     <div class="bg-white p-8 rounded-3xl shadow-sm border border-outline-variant/15 flex items-start gap-6 group hover:border-primary/30 transition-all">
@@ -102,7 +104,7 @@
                         </div>
                         <div>
                             <h3 class="font-headline font-bold text-lg mb-1 uppercase">Ligne Concierge</h3>
-                            <p class="text-on-surface-variant font-light text-sm leading-relaxed">+229 01 00 00 00 00<br/>Disponibilité : 10h00 - 22h00</p>
+                            <p class="text-on-surface-variant font-light text-sm leading-relaxed">+229 01 00 00 00 00<br>Disponibilité : 10h00 - 22h00</p>
                         </div>
                     </div>
                     <div class="bg-white p-8 rounded-3xl shadow-sm border border-outline-variant/15 flex items-start gap-6 group hover:border-primary/30 transition-all">
@@ -127,7 +129,7 @@
 
                 <!-- Dark Map Mockup -->
                 <div class="relative h-72 md:h-80 rounded-[3rem] overflow-hidden bg-surface-container shadow-inner border border-outline-variant/10 group">
-                    <img alt="Carte" class="w-full h-full object-cover grayscale opacity-40 group-hover:scale-105 transition-transform duration-1000" data-alt="Carte de Cotonou" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQft7a4u-Jvj2xHQJSY3mCols2Nh0dDi_B3ZWKlXoWE3zoTIXThbCDomvQ80d-qedU6cclVV00uNBNJaBEg5-dQI326IbGCXOTIx9FlM1f0CgaitRta4EPiXMhVMGUYzXX9t-SEs0Q7GfGwm9IYrZ1KQW2WoWYVAPHekClz7wjdw171pjoZIL9ubpcwodPM_NNmEnJNHtVVLxtpEXbzUaKjpAges75qHdjFBETaQRnw6TYpNlNspdgVY9VshMH4sqgtEJleDYvG6sC"/>
+                    <img alt="Carte" class="w-full h-full object-cover grayscale opacity-40 group-hover:scale-105 transition-transform duration-1000" data-alt="Carte de Cotonou" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQft7a4u-Jvj2xHQJSY3mCols2Nh0dDi_B3ZWKlXoWE3zoTIXThbCDomvQ80d-qedU6cclVV00uNBNJaBEg5-dQI326IbGCXOTIx9FlM1f0CgaitRta4EPiXMhVMGUYzXX9t-SEs0Q7GfGwm9IYrZ1KQW2WoWYVAPHekClz7wjdw171pjoZIL9ubpcwodPM_NNmEnJNHtVVLxtpEXbzUaKjpAges75qHdjFBETaQRnw6TYpNlNspdgVY9VshMH4sqgtEJleDYvG6sC">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="relative">
                             <div class="absolute -inset-4 bg-primary/30 rounded-full blur-xl animate-pulse"></div>
@@ -164,18 +166,56 @@
             <div>
                 <span class="font-headline font-black text-primary uppercase text-[10px] tracking-widest mb-8 block">Le Lieu</span>
                 <p class="text-sm text-on-surface-variant leading-relaxed">
-                    Cotonou, Bénin<br/>
+                    Cotonou, Bénin<br>
                     +229 01 00 00 00
                 </p>
             </div>
             <div>
                 <span class="font-headline font-black text-primary uppercase text-[10px] tracking-widest mb-8 block">Newsletter</span>
                 <div class="flex">
-                    <input class="bg-background border-none rounded-l-xl px-4 py-3 w-full text-xs" placeholder="Votre email" type="email"/>
+                    <input class="bg-background border-none rounded-l-xl px-4 py-3 w-full text-xs" placeholder="Votre email" type="email">
                     <button class="bg-primary text-white px-6 rounded-r-xl font-black text-[10px] uppercase">OK</button>
                 </div>
             </div>
         </div>
     </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Esprit</a>
+        <a href="menu.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">La Table</a>
+        <a href="gallery.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Galerie</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

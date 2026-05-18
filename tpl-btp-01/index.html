@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
+<!DOCTYPE html><html lang="fr"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArchBuild - Construction & Architecture</title>
+    <title>ArchBuild - Construction &amp; Architecture</title>
     
     <!-- Polices Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
     
     <!-- Fichier CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -26,7 +24,11 @@
                 <a href="#services">Nos Services</a>
                 <a href="#realisations">Réalisations</a>
                 <a href="#contact" class="btn">Devis Gratuit</a>
-            </nav>
+            
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
         </div>
     </header>
 
@@ -76,7 +78,7 @@
         <div class="container cta-content">
             <h2>Prêt à construire ?</h2>
             <p>Discutons de vos plans. Nos devis sont gratuits et envoyés sous 24h.</p>
-            <a href="mailto:contact@client-btp.com" class="btn btn-dark">Contactez-nous &rarr;</a>
+            <a href="mailto:contact@client-btp.com" class="btn btn-dark">Contactez-nous →</a>
         </div>
     </section>
 
@@ -94,7 +96,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 ArchBuild. Créé par FRILO.</p>
+            <p>© 2026 ArchBuild. Créé par FRILO.</p>
         </div>
     </footer>
 
@@ -102,5 +104,38 @@
     <script>
         document.addEventListener('contextmenu', event => event.preventDefault()); // Bloque clic droit
     </script>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

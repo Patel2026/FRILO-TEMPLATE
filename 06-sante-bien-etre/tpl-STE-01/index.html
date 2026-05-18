@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html class="scroll-smooth" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="scroll-smooth" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Clinique Le Sanctuaire | Soins Médicaux Modernes</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="js/tailwind-config.js"></script>
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="bg-background text-on-surface font-body antialiased">
 <!-- Top Navigation Bar -->
@@ -24,6 +22,10 @@
             Prendre Rendez-vous
         </a>
     </div>
+
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
 </nav>
 
 <main class="pt-20">
@@ -50,7 +52,7 @@
             <div class="relative">
                 <div class="absolute -top-20 -right-20 w-96 h-96 bg-primary-fixed rounded-full blur-[100px] opacity-30"></div>
                 <div class="relative rounded-xl overflow-hidden shadow-2xl transform rotate-2">
-                    <img class="w-full aspect-[4/5] object-cover" data-alt="Modern clinical examination room with soft natural light, minimalist furniture, and a large window overlooking a garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUxW-HlgrxfMvU24M1skPDpgCXTmmq3zdl1R-Aw9Ceq9FS8R3whVIw2FueEwCXzwxhV5u4x91T-srg9zILlvQ0wqM9hpqeUh220RhsPYcuyR3qhHn9Y6YlFTHMKpZYjwCSIpj3Dv3h4i6w9XrumEFgVFDwpoihKcGikuD2PET3akt9EF5uH6JQeyIFCw4IruEq0ekhJUaRVNjJjmZ42YoC8Qw0p7pkwwPz7l9ePNoy05RYw0lSVb1dmMXHK4Y5Xf9Bz4JlkpVWeUs" alt="Salle d'examen moderne de la clinique" />
+                    <img class="w-full aspect-[4/5] object-cover" data-alt="Modern clinical examination room with soft natural light, minimalist furniture, and a large window overlooking a garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUxW-HlgrxfMvU24M1skPDpgCXTmmq3zdl1R-Aw9Ceq9FS8R3whVIw2FueEwCXzwxhV5u4x91T-srg9zILlvQ0wqM9hpqeUh220RhsPYcuyR3qhHn9Y6YlFTHMKpZYjwCSIpj3Dv3h4i6w9XrumEFgVFDwpoihKcGikuD2PET3akt9EF5uH6JQeyIFCw4IruEq0ekhJUaRVNjJjmZ42YoC8Qw0p7pkwwPz7l9ePNoy05RYw0lSVb1dmMXHK4Y5Xf9Bz4JlkpVWeUs" alt="Salle d'examen moderne de la clinique">
                 </div>
                 <div class="absolute -bottom-10 -left-10 bg-surface-container-lowest p-8 rounded-xl shadow-xl border-outline-variant/15 border max-w-xs">
                     <div class="flex items-center gap-4 mb-4">
@@ -81,7 +83,7 @@
                             <h3 class="font-headline text-2xl font-bold mb-4">Cardiologie Intégrative</h3>
                             <p class="text-on-surface-variant leading-relaxed max-w-md">Une santé cardiaque globale alliant des diagnostics de pointe à une optimisation de vos habitudes de vie pour une vitalité durable.</p>
                         </div>
-                        <img class="w-48 h-48 object-cover rounded-xl shadow-md opacity-80 group-hover:opacity-100 transition-opacity" data-alt="Doctor explaining heart health on a tablet to a patient in a light-filled office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXMsX5XnL_ReoLkNQo53zgIOjxFdqagWtmLt6dmpUH2KLQ7QUGkemhtu55Ux3BzfqRlEXgMAI1tbxDF1hRagpv1p9mkZV0by_kworOLygHXmMtJFeMXW6ceFBk-0TV7CFlBr1oCNMg_4jYbVr9H6RvE3ZORIHmhJHAePMdx1rMjpE4rL66juCWSnyTbL6L5OwsxyOsxJkfh66Xid_b5k5t86eS5Sc11r3_teYON48XDko9PCi3z-a17oXVDXKgCOSlzYj9rtEuxhg" alt="Cardiologue en consultation avec un patient" />
+                        <img class="w-48 h-48 object-cover rounded-xl shadow-md opacity-80 group-hover:opacity-100 transition-opacity" data-alt="Doctor explaining heart health on a tablet to a patient in a light-filled office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXMsX5XnL_ReoLkNQo53zgIOjxFdqagWtmLt6dmpUH2KLQ7QUGkemhtu55Ux3BzfqRlEXgMAI1tbxDF1hRagpv1p9mkZV0by_kworOLygHXmMtJFeMXW6ceFBk-0TV7CFlBr1oCNMg_4jYbVr9H6RvE3ZORIHmhJHAePMdx1rMjpE4rL66juCWSnyTbL6L5OwsxyOsxJkfh66Xid_b5k5t86eS5Sc11r3_teYON48XDko9PCi3z-a17oXVDXKgCOSlzYj9rtEuxhg" alt="Cardiologue en consultation avec un patient">
                     </div>
                 </div>
                 <!-- Service Card 2 -->
@@ -133,7 +135,7 @@
             <div class="lg:col-span-8 flex flex-col md:flex-row gap-8">
                 <div class="flex-none w-full md:w-80 group">
                     <div class="rounded-xl overflow-hidden h-[450px] mb-6 relative">
-                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Portrait of a professional female doctor in a light blue coat smiling warmly in a bright hallway" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgybBCr9he91KTr4RPQfDQ2_Jd7cVUeGFzTiQ14CXF1AWxAv7gpBRjA1cXrp0TXIvEUVlYb_P4LVbmOLkNZX2-py2K02egBUaJM-v8etZtUcv_K9NTByQ3SMhG5f_Yhi8xbsdGBr0uQHYH9n06tvAMjJWJ1PuneB1liqE7UBSHZnMiAV5p6sUQOV3X7ctyIulDwRcfNGpeEJn3CTlftwi3hCxwPCjVHigzK2fxoWJy4ejxWbIpgM4uARyi0XVcmodQ_InHY0iLqNc" alt="Portrait du Dr. Elena Vos" />
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Portrait of a professional female doctor in a light blue coat smiling warmly in a bright hallway" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgybBCr9he91KTr4RPQfDQ2_Jd7cVUeGFzTiQ14CXF1AWxAv7gpBRjA1cXrp0TXIvEUVlYb_P4LVbmOLkNZX2-py2K02egBUaJM-v8etZtUcv_K9NTByQ3SMhG5f_Yhi8xbsdGBr0uQHYH9n06tvAMjJWJ1PuneB1liqE7UBSHZnMiAV5p6sUQOV3X7ctyIulDwRcfNGpeEJn3CTlftwi3hCxwPCjVHigzK2fxoWJy4ejxWbIpgM4uARyi0XVcmodQ_InHY0iLqNc" alt="Portrait du Dr. Elena Vos">
                         <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-6 rounded-lg">
                             <h4 class="font-headline font-bold text-xl">Dr. Elena Vos</h4>
                             <p class="text-primary text-sm font-semibold uppercase tracking-wider">Médecin Chef</p>
@@ -142,7 +144,7 @@
                 </div>
                 <div class="flex-none w-full md:w-80 group md:mt-12">
                     <div class="rounded-xl overflow-hidden h-[450px] mb-6 relative">
-                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Portrait of a confident male specialist with glasses looking thoughtfully at the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2DDDjtZtoriPoBmL4Agx0JyyCoFa8S4tsv_zZgGJEsUdK8y5_MKuubLFAg6_qnpRfmeT6ibYg49QbgeftuD5Z1rqe1vDj1SXOxgVEwcyI-Ly3ykVbrgT6-kk--ZM_ySOa16AuefS6SLV1CqBHrnAWWiNAJJJPEFC6CPrwmmTOqpAnfg_Eh0MdH57a6X1kH2YMLZIgQtB5JBW32f56PMAV74A1w0BacaHk8t8kLqoVskaJORT-QVUsirTxNG6g93xDq5LVRHZo5u8" alt="Portrait du Dr. Marcus Chen" />
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Portrait of a confident male specialist with glasses looking thoughtfully at the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2DDDjtZtoriPoBmL4Agx0JyyCoFa8S4tsv_zZgGJEsUdK8y5_MKuubLFAg6_qnpRfmeT6ibYg49QbgeftuD5Z1rqe1vDj1SXOxgVEwcyI-Ly3ykVbrgT6-kk--ZM_ySOa16AuefS6SLV1CqBHrnAWWiNAJJJPEFC6CPrwmmTOqpAnfg_Eh0MdH57a6X1kH2YMLZIgQtB5JBW32f56PMAV74A1w0BacaHk8t8kLqoVskaJORT-QVUsirTxNG6g93xDq5LVRHZo5u8" alt="Portrait du Dr. Marcus Chen">
                         <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-6 rounded-lg">
                             <h4 class="font-headline font-bold text-xl">Dr. Marcus Chen</h4>
                             <p class="text-primary text-sm font-semibold uppercase tracking-wider">Chef de Clinique - Cardiologie</p>
@@ -238,11 +240,11 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label class="block text-sm font-bold mb-2 text-on-surface-variant">Nom Complet</label>
-                                <input class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all px-4 py-3 rounded-t-lg outline-none" placeholder="Jeanne Dupont" type="text"/>
+                                <input class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all px-4 py-3 rounded-t-lg outline-none" placeholder="Jeanne Dupont" type="text">
                             </div>
                             <div>
                                 <label class="block text-sm font-bold mb-2 text-on-surface-variant">Adresse Email</label>
-                                <input class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all px-4 py-3 rounded-t-lg outline-none" placeholder="jeanne@exemple.fr" type="email"/>
+                                <input class="w-full bg-surface-container-low border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all px-4 py-3 rounded-t-lg outline-none" placeholder="jeanne@exemple.fr" type="email">
                             </div>
                         </div>
                         <div>
@@ -304,5 +306,43 @@
         <p class="text-slate-500 text-sm font-inter">© 2024 Clinique Le Sanctuaire. Tous droits réservés.</p>
     </div>
 </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">À propos</a>
+        <a href="services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Services</a>
+        <a href="equipe.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Équipe</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

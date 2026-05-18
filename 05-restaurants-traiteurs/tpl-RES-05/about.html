@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html class="scroll-smooth" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="scroll-smooth" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>L'Esprit | L'Atrium des Saveurs</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet">
     <!-- Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-primary-container/30 antialiased">
 
@@ -33,7 +31,11 @@
                 Réserver une table
             </button>
         </div>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main class="pt-32">
         <!-- Brand Story -->
@@ -42,7 +44,7 @@
                 <div>
                     <span class="font-label uppercase tracking-[0.3em] text-secondary text-xs mb-6 block font-bold">Notre Manifeste</span>
                     <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight text-on-surface mb-8 uppercase">
-                        Célébrer la Terre,<br/><span class="italic text-primary font-normal">Nourrir l'Ame.</span>
+                        Célébrer la Terre,<br><span class="italic text-primary font-normal">Nourrir l'Ame.</span>
                     </h1>
                     <p class="text-xl font-light leading-loose mb-8 text-on-surface-variant">
                         L'Atrium des Saveurs est né d'une vision simple : transformer le concept de buffet en une célébration éditoriale du goût. Nous avons voulu créer un espace où l'abondance ne sacrifie jamais la qualité.
@@ -54,7 +56,7 @@
                 <div class="relative">
                     <div class="absolute -top-10 -left-10 w-64 h-64 bg-primary/5 rounded-full blur-[100px]"></div>
                     <div class="aspect-square rounded-[3rem] overflow-hidden glass-nav p-3 shadow-2xl">
-                        <img alt="The Gallery" class="w-full h-full object-cover rounded-[2.5rem]" data-alt="Intérieur sophistiqué" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQft7a4u-Jvj2xHQJSY3mCols2Nh0dDi_B3ZWKlXoWE3zoTIXThbCDomvQ80d-qedU6cclVV00uNBNJaBEg5-dQI326IbGCXOTIx9FlM1f0CgaitRta4EPiXMhVMGUYzXX9t-SEs0Q7GfGwm9IYrZ1KQW2WoWYVAPHekClz7wjdw171pjoZIL9ubpcwodPM_NNmEnJNHtVVLxtpEXbzUaKjpAges75qHdjFBETaQRnw6TYpNlNspdgVY9VshMH4sqgtEJleDYvG6sC"/>
+                        <img alt="The Gallery" class="w-full h-full object-cover rounded-[2.5rem]" data-alt="Intérieur sophistiqué" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQft7a4u-Jvj2xHQJSY3mCols2Nh0dDi_B3ZWKlXoWE3zoTIXThbCDomvQ80d-qedU6cclVV00uNBNJaBEg5-dQI326IbGCXOTIx9FlM1f0CgaitRta4EPiXMhVMGUYzXX9t-SEs0Q7GfGwm9IYrZ1KQW2WoWYVAPHekClz7wjdw171pjoZIL9ubpcwodPM_NNmEnJNHtVVLxtpEXbzUaKjpAges75qHdjFBETaQRnw6TYpNlNspdgVY9VshMH4sqgtEJleDYvG6sC">
                     </div>
                 </div>
             </div>
@@ -93,13 +95,13 @@
             <div class="grid lg:grid-cols-2 gap-24 items-center">
                 <div class="order-2 lg:order-1 relative">
                     <div class="grid grid-cols-2 gap-6">
-                        <img class="rounded-[2rem] w-full h-80 object-cover" data-alt="Herbes fraîches" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsZUqD0OFrGxDuzbVVXIur3ir2nprmMbnWfRI_4eemImfwynW_qRAUJiki-7VTf1jHqZreNvAeh_ts8Fk0Dbp7BehJHkXwQ8S8mgvQ1Dn_zvz6jESf0j6E95UHt3otVku0DxmIszAStfrwkqPAykTgGpJxembIasGnuAjEMF8zgF4tfcCj8cyUsJRDr10I5rPrLKXvQlEIv55u0jvwxtrN9kHZ3lEcaOQB2y5Ewgn667l2LFswt_HX2sutRJNcG9bOTeJSumli3okj"/>
-                        <img class="rounded-[2rem] w-full h-64 object-cover mt-12" data-alt="Marché local" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzjdQTXQsbnlGkp85Urjy-Tg_YTPdkqXphAePuJQf0Yi2Zrak0DQXoRo7X4qmaBHeBKFoDAHYiGotUsQkh2ccODdzidCc3Dc4bWdHBlEaiD2pF24vbUXQbT_q5Fm7L5XLqnDcWVbVgXuM1Am2smJGu32qoNRkBgMQgmg2s75dXQYdQ3-JIG9NPLkQ3_iEBPluaroS985uNR3hKsgFX04kU6gGPbU3TyvYxmtdIyL9_T1FoSkCrCH2k0U5xFfmqOqgiZchG_Iq_o4wF"/>
+                        <img class="rounded-[2rem] w-full h-80 object-cover" data-alt="Herbes fraîches" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsZUqD0OFrGxDuzbVVXIur3ir2nprmMbnWfRI_4eemImfwynW_qRAUJiki-7VTf1jHqZreNvAeh_ts8Fk0Dbp7BehJHkXwQ8S8mgvQ1Dn_zvz6jESf0j6E95UHt3otVku0DxmIszAStfrwkqPAykTgGpJxembIasGnuAjEMF8zgF4tfcCj8cyUsJRDr10I5rPrLKXvQlEIv55u0jvwxtrN9kHZ3lEcaOQB2y5Ewgn667l2LFswt_HX2sutRJNcG9bOTeJSumli3okj">
+                        <img class="rounded-[2rem] w-full h-64 object-cover mt-12" data-alt="Marché local" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzjdQTXQsbnlGkp85Urjy-Tg_YTPdkqXphAePuJQf0Yi2Zrak0DQXoRo7X4qmaBHeBKFoDAHYiGotUsQkh2ccODdzidCc3Dc4bWdHBlEaiD2pF24vbUXQbT_q5Fm7L5XLqnDcWVbVgXuM1Am2smJGu32qoNRkBgMQgmg2s75dXQYdQ3-JIG9NPLkQ3_iEBPluaroS985uNR3hKsgFX04kU6gGPbU3TyvYxmtdIyL9_T1FoSkCrCH2k0U5xFfmqOqgiZchG_Iq_o4wF">
                     </div>
                 </div>
                 <div class="order-1 lg:order-2">
                     <span class="font-label uppercase tracking-widest text-primary text-xs mb-4 block font-bold">Le Potager d'Atrium</span>
-                    <h2 class="font-headline text-5xl font-extrabold text-on-surface mb-8 uppercase tracking-tighter">Du Terroir à <br/><span class="text-secondary italic font-normal">l'Assiette.</span></h2>
+                    <h2 class="font-headline text-5xl font-extrabold text-on-surface mb-8 uppercase tracking-tighter">Du Terroir à <br><span class="text-secondary italic font-normal">l'Assiette.</span></h2>
                     <p class="text-lg font-light leading-relaxed mb-10 text-on-surface-variant">
                         Notre équipe de jardiniers et de cuisiniers travaille en symbiose. La carte n'est pas dictée par les tendances, mais par ce que la terre nous offre de plus beau aujourd'hui. L'ananas "Pain de Sucre", les mangues charnues et les légumes croquants sont les véritables stars de notre atrium.
                     </p>
@@ -138,18 +140,56 @@
             <div>
                 <span class="font-headline font-black text-primary uppercase text-[10px] tracking-widest mb-8 block">Le Lieu</span>
                 <p class="text-sm text-on-surface-variant leading-relaxed">
-                    Haie Vive, Cotonou<br/>
+                    Haie Vive, Cotonou<br>
                     +229 01 00 00 00
                 </p>
             </div>
             <div>
                 <span class="font-headline font-black text-primary uppercase text-[10px] tracking-widest mb-8 block">L'Engagement</span>
                 <p class="text-[10px] text-on-surface-variant leading-relaxed opacity-60">
-                    Projets communautaires avec les maraîchers locaux.<br/>
+                    Projets communautaires avec les maraîchers locaux.<br>
                     100% Gestion responsable des déchets.
                 </p>
             </div>
         </div>
     </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Esprit</a>
+        <a href="menu.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">La Table</a>
+        <a href="gallery.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Galerie</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

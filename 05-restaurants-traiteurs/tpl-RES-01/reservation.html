@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html class="dark" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="dark" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Réservation | L'Ébène Haute Cuisine</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,400&family=Manrope:wght@200;400;600&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,400&amp;family=Manrope:wght@200;400;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
     <style>
         .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
         input[type="date"]::-webkit-calendar-picker-indicator,
@@ -29,7 +27,11 @@
             <a class="font-headline tracking-tight text-lg uppercase text-[#f1c97d] border-b border-[#f1c97d]/30 pb-1 hover:tracking-widest" href="reservation.html">Réservation</a>
         </div>
         <a href="reservation.html" class="bg-primary text-on-primary px-8 py-3 font-label font-bold text-sm tracking-widest uppercase hover:bg-primary-fixed-dim transition-all duration-500">Réserver une Table</a>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main class="pt-32 pb-24">
         <!-- Hero Section -->
@@ -42,7 +44,7 @@
                 </p>
             </div>
             <div class="h-[400px] w-full overflow-hidden">
-                <img class="w-full h-full object-cover grayscale opacity-60" data-alt="Intérieur dramatique d'un restaurant sombre avec des projecteurs dorés sur les tables individuelles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPHhqcA-7qSKF56pLtpXy5bZ6-oRKoEBDz48Jv9nJCTMU4PaJtaAxGdXc9jLiR_htVyzmqYNYHiP_-YQiKTc36yOMDnAp0cZDzgHBoN9xpF8WNCqNKDAu5FgIeSBnJULBCRl0iphhKeCN0Vnkh3VItlZmowFMUZoxA78mZgaGMv4ds-T9mZrX18ZU6OlYP6SuWYNNex1q2KqBdZqcFCXUfD5QjWUHEqm5BpEEMaiE4k6x0kfTgWOWl4LBsx6an42r3EOH_QzkDCYxq"/>
+                <img class="w-full h-full object-cover grayscale opacity-60" data-alt="Intérieur dramatique d'un restaurant sombre avec des projecteurs dorés sur les tables individuelles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPHhqcA-7qSKF56pLtpXy5bZ6-oRKoEBDz48Jv9nJCTMU4PaJtaAxGdXc9jLiR_htVyzmqYNYHiP_-YQiKTc36yOMDnAp0cZDzgHBoN9xpF8WNCqNKDAu5FgIeSBnJULBCRl0iphhKeCN0Vnkh3VItlZmowFMUZoxA78mZgaGMv4ds-T9mZrX18ZU6OlYP6SuWYNNex1q2KqBdZqcFCXUfD5QjWUHEqm5BpEEMaiE4k6x0kfTgWOWl4LBsx6an42r3EOH_QzkDCYxq">
             </div>
         </section>
 
@@ -66,7 +68,7 @@
                         </div>
                         <div class="relative">
                             <label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">Date</label>
-                            <input class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary rounded-none text-on-surface" type="date"/>
+                            <input class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary rounded-none text-on-surface" type="date">
                         </div>
                     </div>
                     
@@ -83,16 +85,16 @@
                         </div>
                         <div class="relative">
                             <label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">Occasion</label>
-                            <input class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary rounded-none text-on-surface placeholder:text-surface-variant" placeholder="Anniversaire, Affaires, etc." type="text"/>
+                            <input class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary rounded-none text-on-surface placeholder:text-surface-variant" placeholder="Anniversaire, Affaires, etc." type="text">
                         </div>
                     </div>
                     
                     <div class="space-y-6">
                         <label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant">Coordonnées</label>
-                        <input class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary rounded-none text-on-surface placeholder:text-surface-variant" placeholder="Nom Complet" type="text"/>
+                        <input class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary rounded-none text-on-surface placeholder:text-surface-variant" placeholder="Nom Complet" type="text">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                            <input class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary rounded-none text-on-surface placeholder:text-surface-variant" placeholder="Adresse Courriel" type="email"/>
-                            <input class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary rounded-none text-on-surface placeholder:text-surface-variant" placeholder="Numéro de Téléphone" type="tel"/>
+                            <input class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary rounded-none text-on-surface placeholder:text-surface-variant" placeholder="Adresse Courriel" type="email">
+                            <input class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary rounded-none text-on-surface placeholder:text-surface-variant" placeholder="Numéro de Téléphone" type="tel">
                         </div>
                     </div>
                     
@@ -108,8 +110,8 @@
                 <!-- Contact Block -->
                 <div class="space-y-12">
                     <div>
-                        <h3 class="font-label text-xs uppercase tracking-[0.4em] text-primary mb-8">Accès & Contact</h3>
-                        <p class="font-headline text-3xl font-light leading-snug mb-4">Rue 205, Quartier Haie Vive,<br/> Cotonou, Bénin</p>
+                        <h3 class="font-label text-xs uppercase tracking-[0.4em] text-primary mb-8">Accès &amp; Contact</h3>
+                        <p class="font-headline text-3xl font-light leading-snug mb-4">Rue 205, Quartier Haie Vive,<br> Cotonou, Bénin</p>
                         <a class="font-label text-primary border-b border-primary/20 pb-1 uppercase text-xs tracking-widest hover:text-on-surface transition-colors" href="#">Obtenir l'Itinéraire</a>
                     </div>
                     <div class="space-y-4 font-body">
@@ -118,7 +120,7 @@
                     </div>
                     <div class="pt-4 space-y-2 font-body">
                         <h4 class="text-[10px] uppercase tracking-[0.2em] text-outline">Service du Soir</h4>
-                        <p class="text-sm font-light">Mercredi — Dimanche<br/>18:00 — 02:00</p>
+                        <p class="text-sm font-light">Mercredi — Dimanche<br>18:00 — 02:00</p>
                     </div>
                 </div>
 
@@ -137,7 +139,7 @@
                 <div class="relative group cursor-crosshair">
                     <div class="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors z-10"></div>
                     <div class="h-64 bg-surface-container-high w-full flex items-center justify-center relative grayscale contrast-125">
-                        <img class="w-full h-full object-cover opacity-30" data-alt="Photographie architecturale sombre montrant des lignes géométriques" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQmmzs3kS4YN6whJ4Zl45KJ_zKPhA_GLtPZjdBX4tLPJQvXQ3yGF7HwGiMrmCtghTmd_OwHQ_qy8qqt0YEcJd8Vn-IZfcNubQQBOvpyfJk1bBzaZtdZIp2i-xnjM6856-rK-UBziipNtB-vcbtDdSet2n2FSrCOmupxu2CRjvs6wLuObz4Ium7TRRkrLgGWINmmTcVQruqb1BlaV61Tevb-S5o5UsG1fpc47kigSveMkYPLEYTOeMpMva8xjwj7jd8eMNccE_SfrJj"/>
+                        <img class="w-full h-full object-cover opacity-30" data-alt="Photographie architecturale sombre montrant des lignes géométriques" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQmmzs3kS4YN6whJ4Zl45KJ_zKPhA_GLtPZjdBX4tLPJQvXQ3yGF7HwGiMrmCtghTmd_OwHQ_qy8qqt0YEcJd8Vn-IZfcNubQQBOvpyfJk1bBzaZtdZIp2i-xnjM6856-rK-UBziipNtB-vcbtDdSet2n2FSrCOmupxu2CRjvs6wLuObz4Ium7TRRkrLgGWINmmTcVQruqb1BlaV61Tevb-S5o5UsG1fpc47kigSveMkYPLEYTOeMpMva8xjwj7jd8eMNccE_SfrJj">
                         <div class="absolute z-20 flex flex-col items-center">
                             <span class="material-symbols-outlined text-primary text-4xl" data-weight="fill">location_on</span>
                             <span class="font-label text-[10px] uppercase tracking-[0.3em] mt-2 font-bold text-on-surface">Voir la Carte</span>
@@ -152,7 +154,7 @@
             <h2 class="font-headline text-4xl font-light mb-12">Rejoindre le Cercle Privé</h2>
             <p class="font-body text-on-surface-variant font-light mb-12 italic">Recevez des invitations exclusives pour nos dégustations en cave saisonnières et nos premières culinaires.</p>
             <div class="flex flex-col md:flex-row gap-0 max-w-md mx-auto">
-                <input class="flex-1 bg-surface-container-low px-8 py-4 focus:outline-none border-none font-body text-xs tracking-widest placeholder:text-surface-variant" placeholder="VOTRE ADRESSE COURRIEL" type="email"/>
+                <input class="flex-1 bg-surface-container-low px-8 py-4 focus:outline-none border-none font-body text-xs tracking-widest placeholder:text-surface-variant" placeholder="VOTRE ADRESSE COURRIEL" type="email">
                 <button class="bg-on-surface text-background px-10 py-4 uppercase font-label text-xs font-bold tracking-widest hover:bg-primary transition-colors">Rejoindre</button>
             </div>
         </section>
@@ -169,5 +171,42 @@
         </div>
         <p class="font-body text-sm tracking-[0.1em] uppercase text-[#99907c]">© 2026 L'Ébène Haute Cuisine. Tous droits réservés.</p>
     </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">L'Expérience</a>
+        <a href="menu.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Dégustation</a>
+        <a href="gallery.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Galerie</a>
+        <a href="reservation.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Réservation</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

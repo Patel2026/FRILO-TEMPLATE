@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html class="dark" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="dark" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Services | ARCHITECTUS</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="js/tailwind-config.js"></script>
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
 <!-- TopNavBar -->
@@ -22,6 +20,10 @@
     <a href="contact.html" class="milled-gradient px-6 py-2 rounded-md font-bold text-on-primary active:scale-95 duration-200 transition-all uppercase text-sm tracking-widest font-label inline-block cursor-pointer focus:outline-none">
         Obtenir un Devis
     </a>
+
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
 </nav>
 
 <main class="pt-32 pb-24">
@@ -30,7 +32,7 @@
         <div class="lg:col-span-8">
             <span class="font-label text-tertiary text-sm tracking-[0.2em] uppercase mb-4 block">Compétences Fondamentales</span>
             <h1 class="font-headline text-5xl md:text-7xl font-bold leading-[1.1] tracking-tighter text-on-background">
-                NOTRE <span class="text-primary">SOUVERAINETÉ</span><br/>
+                NOTRE <span class="text-primary">SOUVERAINETÉ</span><br>
                 STRUCTURELLE.
             </h1>
         </div>
@@ -80,7 +82,7 @@
             <div class="lg:col-span-7 order-1 lg:order-2">
                 <div class="aspect-[16/10] bg-surface-container-low rounded-xl overflow-hidden relative group border border-outline-variant/20">
                     <div class="absolute inset-0 bg-gradient-to-tr from-surface-container-lowest/80 to-transparent z-10"></div>
-                    <img alt="Industrial Facility" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="Massive modern industrial factory exterior with complex steel piping and large glass panels at sunset with technical lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsUxBhzY7Y0gcR3vztUAIQA7wplrf3SreyzzJ3UNWJDMrAercWu7cAq6TcoNJot-2KM6-IIafmun9a_pQDcd1Ee8hIlfTW9COaA_ISXHK3l4XstGg-qbKPeASMyjQqbRROkqn1POiVGVx-OT7NDOoD4GwElsbd937r5SWbVnQvFORn9pn-vgE0PZ-GbCGEAEsgztfY4kk5dVj0bzLJc-oT2-oEw6LkPTd25jyecBjlXLV5fytMO1fEp_baHCeSRio1fuwPjxW6QrY"/>
+                    <img alt="Industrial Facility" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="Massive modern industrial factory exterior with complex steel piping and large glass panels at sunset with technical lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsUxBhzY7Y0gcR3vztUAIQA7wplrf3SreyzzJ3UNWJDMrAercWu7cAq6TcoNJot-2KM6-IIafmun9a_pQDcd1Ee8hIlfTW9COaA_ISXHK3l4XstGg-qbKPeASMyjQqbRROkqn1POiVGVx-OT7NDOoD4GwElsbd937r5SWbVnQvFORn9pn-vgE0PZ-GbCGEAEsgztfY4kk5dVj0bzLJc-oT2-oEw6LkPTd25jyecBjlXLV5fytMO1fEp_baHCeSRio1fuwPjxW6QrY">
                     <div class="absolute bottom-6 left-6 z-20">
                         <div class="bg-surface-container-highest/90 backdrop-blur-md px-4 py-2 rounded-sm flex items-center gap-4">
                             <span class="font-label text-tertiary text-xs uppercase tracking-tighter">Progression</span>
@@ -99,10 +101,10 @@
             <div class="lg:col-span-7">
                 <div class="grid grid-cols-2 gap-4">
                     <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden relative translate-y-12">
-                        <img alt="Commercial Tower" class="w-full h-full object-cover" data-alt="Futuristic skyscraper with geometric glass facade reflecting a clear blue sky during daytime with architectural precision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnwgNdCDLkF2p8-iZ1ln-nWh3P74REasP3b-kt-giLvIQhVDRfuER-ty8kPsVIc9-rLLEOX7xHnuskNtbRB0nlU0vqhjQqB9YVQo2AwSE6mqYp_bj7Eus6QfRLmVhd3hSzrucjhKVs_i7-QMnvEEOJ7HaVmn6vzxltg1UMLAPa-fn0e4_7_fOt-_WouQKpw-0TOFtc6g-DZaz2g9MmSKxuTui4EzCYRja1Yc-ZAoUGB2DSKw82eAs2qKYMcInnk38KZfG9klGftWk"/>
+                        <img alt="Commercial Tower" class="w-full h-full object-cover" data-alt="Futuristic skyscraper with geometric glass facade reflecting a clear blue sky during daytime with architectural precision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnwgNdCDLkF2p8-iZ1ln-nWh3P74REasP3b-kt-giLvIQhVDRfuER-ty8kPsVIc9-rLLEOX7xHnuskNtbRB0nlU0vqhjQqB9YVQo2AwSE6mqYp_bj7Eus6QfRLmVhd3hSzrucjhKVs_i7-QMnvEEOJ7HaVmn6vzxltg1UMLAPa-fn0e4_7_fOt-_WouQKpw-0TOFtc6g-DZaz2g9MmSKxuTui4EzCYRja1Yc-ZAoUGB2DSKw82eAs2qKYMcInnk38KZfG9klGftWk">
                     </div>
                     <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden relative">
-                        <img alt="Office Interior" class="w-full h-full object-cover" data-alt="Spacious minimalist office lobby with polished concrete floors and exposed structural steel beams with warm ambient light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDamV3DWqWF5u5YAgb8UN4ysYUhsYhkWYthvBXrTeVHyEyT-y0lmLTWZz5eXyOqg-v3T4yfS5z1_C9rc6O8z-TLXcmUG8t1K1nNg_jlWXVsyZZWkELqZ8_yzLSq-UoOvZP-Cn5f_jOw5JLcKdjyD_t_oKYj6DiPTKyytaDwUNVXVqAlw3qu4s5C-4CqOIKT1LjD_w61Ycr7GrLY4oGgq3qCmwbMda4Yhr5YbBbrcitL2QNnhodvDEEyNoUO7XDfBEpBFIhi_IEZeVw"/>
+                        <img alt="Office Interior" class="w-full h-full object-cover" data-alt="Spacious minimalist office lobby with polished concrete floors and exposed structural steel beams with warm ambient light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDamV3DWqWF5u5YAgb8UN4ysYUhsYhkWYthvBXrTeVHyEyT-y0lmLTWZz5eXyOqg-v3T4yfS5z1_C9rc6O8z-TLXcmUG8t1K1nNg_jlWXVsyZZWkELqZ8_yzLSq-UoOvZP-Cn5f_jOw5JLcKdjyD_t_oKYj6DiPTKyytaDwUNVXVqAlw3qu4s5C-4CqOIKT1LjD_w61Ycr7GrLY4oGgq3qCmwbMda4Yhr5YbBbrcitL2QNnhodvDEEyNoUO7XDfBEpBFIhi_IEZeVw">
                     </div>
                 </div>
             </div>
@@ -147,7 +149,7 @@
                     </div>
                     <span class="font-label text-outline text-4xl font-black opacity-20">03</span>
                 </div>
-                <h2 class="font-headline text-4xl font-bold mb-6 text-on-surface">Génie Civil & Ouvrages d'art</h2>
+                <h2 class="font-headline text-4xl font-bold mb-6 text-on-surface">Génie Civil &amp; Ouvrages d'art</h2>
                 <p class="text-secondary mb-10 text-lg leading-relaxed">
                     Connecter les vastes réseaux en bâtissant des infrastructures à l'épreuve du temps. Nos équipes exécutent des ponts suspendus complexes, des voies rapides, et des réseaux d'égouts massifs pour le siècle qui vient.
                 </p>
@@ -168,7 +170,7 @@
             <div class="lg:col-span-7 order-1 lg:order-2">
                 <div class="relative">
                     <div class="aspect-square bg-surface-container-low rounded-full overflow-hidden border-8 border-surface-container-high relative">
-                        <img alt="Civil Engineering" class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-500" data-alt="Aerial view of a complex highway interchange with symmetric concrete curves and technical urban planning at twilight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJHznw4g2rMs59pM6pP1dLvxouInt-WbaeLtuUWK6veLUXfH_44MPbRlqzMkDonfWb4FVVhRtTBWHi2BTeZJEM-0x2LHTTlt4QNpfzHK5R5YPe5jyowyRI8_1xg6TdXgs_2puuzLAM4KLibhqerk-EOIeF5wMMlGxIOcremlSlbYl5CSNxPsVkK6E541CBh-Hn4WZ-OJyPnpRj_RlBEw7Pw1H8YTAnuQoIxSiTOzhTsQg9ttRaXyoAckAg62EdwEU6CvalL8jmbtg"/>
+                        <img alt="Civil Engineering" class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-500" data-alt="Aerial view of a complex highway interchange with symmetric concrete curves and technical urban planning at twilight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJHznw4g2rMs59pM6pP1dLvxouInt-WbaeLtuUWK6veLUXfH_44MPbRlqzMkDonfWb4FVVhRtTBWHi2BTeZJEM-0x2LHTTlt4QNpfzHK5R5YPe5jyowyRI8_1xg6TdXgs_2puuzLAM4KLibhqerk-EOIeF5wMMlGxIOcremlSlbYl5CSNxPsVkK6E541CBh-Hn4WZ-OJyPnpRj_RlBEw7Pw1H8YTAnuQoIxSiTOzhTsQg9ttRaXyoAckAg62EdwEU6CvalL8jmbtg">
                     </div>
                     <!-- Technical Overlay Labels -->
                     <div class="absolute top-10 right-0 bg-surface-container-highest p-4 rounded shadow-2xl border border-outline-variant/20 hidden md:block">
@@ -221,7 +223,7 @@
     <div class="space-y-4">
         <h4 class="text-orange-500 font-bold mb-6">Institutionnel</h4>
         <a class="block text-slate-500 hover:text-orange-500 transition-colors hover:underline decoration-orange-500 decoration-2 underline-offset-4" href="#">Qui Sommes-Nous ?</a>
-        <a class="block text-slate-500 hover:text-orange-500 transition-colors hover:underline decoration-orange-500 decoration-2 underline-offset-4" href="#">Emplois & Carrières</a>
+        <a class="block text-slate-500 hover:text-orange-500 transition-colors hover:underline decoration-orange-500 decoration-2 underline-offset-4" href="#">Emplois &amp; Carrières</a>
         <a class="block text-slate-500 hover:text-orange-500 transition-colors hover:underline decoration-orange-500 decoration-2 underline-offset-4" href="#">Protocoles de Chantier</a>
         <a class="block text-slate-500 hover:text-orange-500 transition-colors hover:underline decoration-orange-500 decoration-2 underline-offset-4" href="#">Engagement Climat</a>
     </div>
@@ -239,5 +241,43 @@
         </div>
     </div>
 </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">À propos</a>
+        <a href="services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Services</a>
+        <a href="portfolio.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Réalisations</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

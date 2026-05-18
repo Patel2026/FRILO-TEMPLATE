@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html><html lang="fr" class="scroll-smooth"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pavillon de Vente | FRILO Promotion</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-primary text-concrete-200 antialiased selection:bg-accent selection:text-white bg-blueprint">
 
@@ -34,13 +32,17 @@
                 <span class="material-symbols-outlined text-3xl">menu</span>
             </button>
         </div>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main class="pt-[104px]">
         <div class="max-w-7xl mx-auto px-6 py-20 pb-32">
             
             <div class="text-center md:text-left mb-16">
-                <span class="font-display text-accent text-sm tracking-[0.3em] uppercase mb-4 block">Espace Acquéreurs & Investisseurs</span>
+                <span class="font-display text-accent text-sm tracking-[0.3em] uppercase mb-4 block">Espace Acquéreurs &amp; Investisseurs</span>
                 <h1 class="text-5xl md:text-6xl font-display font-bold text-white mb-6 leading-tight">ENTRER DANS <br>LE PROGRAMME.</h1>
                 <p class="text-lg text-concrete-400 font-light max-w-2xl">
                     Réservez votre créneau pour visiter notre pavillon des ventes, découvrir les maquettes 3D interactives de nos résidences et consulter le cahier des charges des finitions (carrelages, menuiseries).
@@ -95,11 +97,11 @@
                         <div class="grid md:grid-cols-2 gap-8">
                             <div>
                                 <label class="block text-[10px] font-bold uppercase tracking-widest text-concrete-500 mb-2">Identification</label>
-                                <input type="text" class="w-full bg-transparent border-b border-white/20 text-white pb-2 pt-1 font-light outline-none focus:border-accent transition-colors placeholder-concrete-700" placeholder="Nom Complet" required>
+                                <input type="text" class="w-full bg-transparent border-b border-white/20 text-white pb-2 pt-1 font-light outline-none focus:border-accent transition-colors placeholder-concrete-700" placeholder="Nom Complet" required="">
                             </div>
                             <div>
                                 <label class="block text-[10px] font-bold uppercase tracking-widest text-concrete-500 mb-2">Contact Direct</label>
-                                <input type="tel" class="w-full bg-transparent border-b border-white/20 text-white pb-2 pt-1 font-light outline-none focus:border-accent transition-colors placeholder-concrete-700" placeholder="+229 ou international" required>
+                                <input type="tel" class="w-full bg-transparent border-b border-white/20 text-white pb-2 pt-1 font-light outline-none focus:border-accent transition-colors placeholder-concrete-700" placeholder="+229 ou international" required="">
                             </div>
                         </div>
 
@@ -107,7 +109,7 @@
                             <label class="block text-[10px] font-bold uppercase tracking-widest text-concrete-500 mb-4">Programme de prédilection</label>
                             <div class="grid sm:grid-cols-2 gap-4">
                                 <label class="border border-white/10 p-4 cursor-pointer hover:border-accent transition-colors group flex items-start gap-3">
-                                    <input type="radio" name="projet" class="mt-1 bg-transparent border-white/20 text-accent focus:ring-accent accent-accent" checked>
+                                    <input type="radio" name="projet" class="mt-1 bg-transparent border-white/20 text-accent focus:ring-accent accent-accent" checked="">
                                     <div>
                                         <span class="block font-display text-white text-sm tracking-wide">Cité "L'OASIS" (Togbin)</span>
                                         <span class="text-[10px] text-concrete-500 uppercase tracking-widest">Villas R+1</span>
@@ -148,8 +150,45 @@
     <!-- Footer Brutaliste -->
     <footer class="bg-primary border-t border-white/10 pt-10 pb-10">
         <div class="max-w-7xl mx-auto px-6 flex justify-center text-[10px] font-bold tracking-widest uppercase text-concrete-600">
-            <p>&copy; 2026 FRILO Promotion. Tous droits réservés.</p>
+            <p>© 2026 FRILO Promotion. Tous droits réservés.</p>
         </div>
     </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="projects.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Nos Programmes</a>
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">L'Ingénierie</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Bulle de Vente</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

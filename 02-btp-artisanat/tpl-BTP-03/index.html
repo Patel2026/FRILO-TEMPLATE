@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html class="scroll-smooth" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="scroll-smooth" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Atelier Artisanal | Conception avec Âme</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="js/tailwind-config.js"></script>
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="bg-surface text-on-surface">
 <!-- TopNavBar -->
@@ -24,6 +22,10 @@
             Obtenir un Devis
         </a>
     </div>
+
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
 </nav>
 
 <main class="pt-24 space-y-32">
@@ -54,7 +56,7 @@
             <div class="lg:col-span-6">
                 <div class="relative group">
                     <div class="absolute -inset-4 bg-primary-container/10 rounded-xl blur-2xl group-hover:bg-primary-container/20 transition-all duration-500"></div>
-                    <img class="relative w-full aspect-[4/5] object-cover rounded-[3rem] shadow-2xl" data-alt="Close-up of an artisan woodworker meticulously measuring a piece of walnut wood in a sunlit, sawdust-filled modern workshop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8Z25I5JXjBdsfWMA9TmUs9h9ncMQhEziaomaxf3Aa1-InoTltlRHMdql0Mo4Lw4RdFaailVewH0CI0trTcW_TkLZskJpdRnUaZ6I-Vy5DrjX0p180SnKSvVZO_yqJvbeJOcRqVxIiYOhARSX9WOzb_D0O_TsWtZmR9EnWZbCuaxjyeVrZlrrmzMZBIReUhVOBSNpAMjev4zIqD0_m4GhcjuZJEs-1zHDLs3qOU7E8Rj-fppU2NXcUATjxd8WmUF4p-v816NdZnOQ" alt="Artisan ébéniste dans son atelier" />
+                    <img class="relative w-full aspect-[4/5] object-cover rounded-[3rem] shadow-2xl" data-alt="Close-up of an artisan woodworker meticulously measuring a piece of walnut wood in a sunlit, sawdust-filled modern workshop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8Z25I5JXjBdsfWMA9TmUs9h9ncMQhEziaomaxf3Aa1-InoTltlRHMdql0Mo4Lw4RdFaailVewH0CI0trTcW_TkLZskJpdRnUaZ6I-Vy5DrjX0p180SnKSvVZO_yqJvbeJOcRqVxIiYOhARSX9WOzb_D0O_TsWtZmR9EnWZbCuaxjyeVrZlrrmzMZBIReUhVOBSNpAMjev4zIqD0_m4GhcjuZJEs-1zHDLs3qOU7E8Rj-fppU2NXcUATjxd8WmUF4p-v816NdZnOQ" alt="Artisan ébéniste dans son atelier">
                 </div>
             </div>
         </div>
@@ -74,7 +76,7 @@
                 <!-- Service Card 1 -->
                 <div class="bg-surface-container-lowest p-8 rounded-[2rem] space-y-6 hover:-translate-y-2 transition-transform duration-300">
                     <div class="w-full aspect-[16/10] overflow-hidden rounded-2xl">
-                        <img class="w-full h-full object-cover" data-alt="Minimalist modern kitchen with custom oak cabinetry and integrated handles in a bright airy space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfVsoUJL-x19EhvUXShYCfLpuAobs9gYFx7CyCzkXVFAin2Hx7yJmTv4VXMhmLCZ9Fd_JVAlQrZ1pr7uuteH84vOLmsorI6eVjHagXz8ABX1UhjWJffl1g0JU2svdwwDlnt7aUb4i2PW10K51kyluogjBk94akjRAW7yXmsNVuwVPP4WKF1kNKewElM63im2GL2P2ezeJlZqFwDcCQRCL8KjVw44P8hJcnTOwe8L63nz1ytrAMG7uLO86RP3mc3W8fHEVMZsnwajw" alt="Agencement sur-mesure" />
+                        <img class="w-full h-full object-cover" data-alt="Minimalist modern kitchen with custom oak cabinetry and integrated handles in a bright airy space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfVsoUJL-x19EhvUXShYCfLpuAobs9gYFx7CyCzkXVFAin2Hx7yJmTv4VXMhmLCZ9Fd_JVAlQrZ1pr7uuteH84vOLmsorI6eVjHagXz8ABX1UhjWJffl1g0JU2svdwwDlnt7aUb4i2PW10K51kyluogjBk94akjRAW7yXmsNVuwVPP4WKF1kNKewElM63im2GL2P2ezeJlZqFwDcCQRCL8KjVw44P8hJcnTOwe8L63nz1ytrAMG7uLO86RP3mc3W8fHEVMZsnwajw" alt="Agencement sur-mesure">
                     </div>
                     <div class="space-y-3">
                         <h3 class="text-2xl font-bold">Agencement Sur-Mesure</h3>
@@ -84,7 +86,7 @@
                 <!-- Service Card 2 -->
                 <div class="bg-surface-container-lowest p-8 rounded-[2rem] space-y-6 hover:-translate-y-2 transition-transform duration-300">
                     <div class="w-full aspect-[16/10] overflow-hidden rounded-2xl">
-                        <img class="w-full h-full object-cover" data-alt="Open concept home interior renovation featuring clean white walls and natural wood flooring transitions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvVZHt7dY-G6miJ0f6BKXfBRiwmTtdOyBgY-hrhucIDV0eP3jlDpQlcxL4kc51vSufbvbu6OlEkW06izvQaO1K0lxSOwnlMgKpuBwhsR3P8GZM-eTzd_juS2d6_QaDMGhv075Q4-yVHcd5DyFVjVj2a0a5xafe5jBlFb7YmLKXptAjGWb8qW3nJ135CtwkxwKtDMsbD2rs4tOtbjCeIbjiXZ4pF9pLjVaClp5508RQANHrk2lm_axYq3aq5txPZA1bVAYz0-HYeFs" alt="Rénovation Intérieure" />
+                        <img class="w-full h-full object-cover" data-alt="Open concept home interior renovation featuring clean white walls and natural wood flooring transitions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvVZHt7dY-G6miJ0f6BKXfBRiwmTtdOyBgY-hrhucIDV0eP3jlDpQlcxL4kc51vSufbvbu6OlEkW06izvQaO1K0lxSOwnlMgKpuBwhsR3P8GZM-eTzd_juS2d6_QaDMGhv075Q4-yVHcd5DyFVjVj2a0a5xafe5jBlFb7YmLKXptAjGWb8qW3nJ135CtwkxwKtDMsbD2rs4tOtbjCeIbjiXZ4pF9pLjVaClp5508RQANHrk2lm_axYq3aq5txPZA1bVAYz0-HYeFs" alt="Rénovation Intérieure">
                     </div>
                     <div class="space-y-3">
                         <h3 class="text-2xl font-bold">Rénovation Intérieure</h3>
@@ -94,7 +96,7 @@
                 <!-- Service Card 3 -->
                 <div class="bg-surface-container-lowest p-8 rounded-[2rem] space-y-6 hover:-translate-y-2 transition-transform duration-300">
                     <div class="w-full aspect-[16/10] overflow-hidden rounded-2xl">
-                        <img class="w-full h-full object-cover" data-alt="Handcrafted solid wood dining table with elegant tapered legs in a warm sunlit dining room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcnm85kNnA4Ksni7xJvbOw4FvF9fOhFJFP6jYf3nETfshSK_LKiAuRXeqjd6xsEqsGvGWn55xL2hLY2Am4Iss1gpj9RX8E9e0SujmpcGJpsndH4wNxWhVSd8tfMuoEljwXvRQNCwVOsfifNlJev38OTXcPBMJiJUxyYldO0y-UdGka98RoCYTL3kRqseZUyroyVnN2GC5L_VSRGr6ayIRC_d54a8kCT6F2XQMFtAUUEg_42ga0JrxGeXpe-kNh7M7ULRmwALge-0Q" alt="Ébénisterie d'Art" />
+                        <img class="w-full h-full object-cover" data-alt="Handcrafted solid wood dining table with elegant tapered legs in a warm sunlit dining room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcnm85kNnA4Ksni7xJvbOw4FvF9fOhFJFP6jYf3nETfshSK_LKiAuRXeqjd6xsEqsGvGWn55xL2hLY2Am4Iss1gpj9RX8E9e0SujmpcGJpsndH4wNxWhVSd8tfMuoEljwXvRQNCwVOsfifNlJev38OTXcPBMJiJUxyYldO0y-UdGka98RoCYTL3kRqseZUyroyVnN2GC5L_VSRGr6ayIRC_d54a8kCT6F2XQMFtAUUEg_42ga0JrxGeXpe-kNh7M7ULRmwALge-0Q" alt="Ébénisterie d'Art">
                     </div>
                     <div class="space-y-3">
                         <h3 class="text-2xl font-bold">Ébénisterie d'Art</h3>
@@ -159,28 +161,28 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-auto md:h-[800px]">
             <div class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-[2rem] group min-h-[300px]">
-                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Luxurious master bedroom featuring a custom-built floor-to-ceiling wooden headboard and warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtYge9ykbfompbcXI9JipMT98M0plLCPNYn7MSc_FOCEr35bToEr6wteehnEJi2sucWPPxyeFt0cS50T-Y4xdm9_MbV37CpAxS7FOeWFhD73G0IA9WJRUiAVQMcg7EUJ66vSzEw0cfDHbzulTKiDYtp3EHCRjp3bHqzKE5Dm-RUrlrNwowq9VmwQCp5a7z2jAoTmLN20QkkuqGgcuiTDy8QDIXwTP6s8gymhbzZsAAXMWxJgm_-xsRUCYGU-yb-qAQ8NQyi1NjfZc" alt="Master Bedroom" />
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Luxurious master bedroom featuring a custom-built floor-to-ceiling wooden headboard and warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtYge9ykbfompbcXI9JipMT98M0plLCPNYn7MSc_FOCEr35bToEr6wteehnEJi2sucWPPxyeFt0cS50T-Y4xdm9_MbV37CpAxS7FOeWFhD73G0IA9WJRUiAVQMcg7EUJ66vSzEw0cfDHbzulTKiDYtp3EHCRjp3bHqzKE5Dm-RUrlrNwowq9VmwQCp5a7z2jAoTmLN20QkkuqGgcuiTDy8QDIXwTP6s8gymhbzZsAAXMWxJgm_-xsRUCYGU-yb-qAQ8NQyi1NjfZc" alt="Master Bedroom">
                 <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
                     <p class="text-surface font-bold text-2xl headline-font mb-1">La Suite Héritage</p>
                     <p class="text-surface/90">Rénovation Complète de Chambre</p>
                 </div>
             </div>
             <div class="md:col-span-2 relative overflow-hidden rounded-[2rem] group min-h-[300px]">
-                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Modern living room with custom walnut floating shelves and a minimalist fireplace surround" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsZiEmOea5RuvNa6zq-PNW0mJzCU0eSiNCD8wNgN8PxTO57hleEa91vhXFezNFkLUuK0DSYIHqJ9_tIhBtNlxzIex1yzEwM4w-QkMCk37izfEiyrYET7B5zkB_NX3QUMGXAoE5HDlmIwAVBOnbFQudcsy2bAV014yufwZw4jhvblVjZZqqy_FDHd2k8YW3OQ6gRCNS3HOGKAijQPZb09c4wx-MgZnngxFKk6tA4sqwqBxbJeZtYN7GXc-bU5PQ32PIZpevUHhRFBI" alt="Living Room Detail" />
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Modern living room with custom walnut floating shelves and a minimalist fireplace surround" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsZiEmOea5RuvNa6zq-PNW0mJzCU0eSiNCD8wNgN8PxTO57hleEa91vhXFezNFkLUuK0DSYIHqJ9_tIhBtNlxzIex1yzEwM4w-QkMCk37izfEiyrYET7B5zkB_NX3QUMGXAoE5HDlmIwAVBOnbFQudcsy2bAV014yufwZw4jhvblVjZZqqy_FDHd2k8YW3OQ6gRCNS3HOGKAijQPZb09c4wx-MgZnngxFKk6tA4sqwqBxbJeZtYN7GXc-bU5PQ32PIZpevUHhRFBI" alt="Living Room Detail">
                 <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
                     <p class="text-surface font-bold text-xl headline-font mb-1">Manteau de Cheminée Minimaliste</p>
                     <p class="text-surface/90">Agencement de Salon</p>
                 </div>
             </div>
             <div class="relative overflow-hidden rounded-[2rem] group min-h-[300px]">
-                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Close-up of precise dovetail joinery in a handmade wooden jewelry box or drawer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjhfkWQKg6vgsM50MZBUgCY2GE4H1c78ZOZKCCDROTbPuflG0PgNv9PrnaZTLciyoaecETEeoOz6uTNH9HAVspxpjCcbCdcXE5fTfFUc1YP2bMHBQlU71OHwvL3l8kYlha7EnA9fvDxrY4wSwN0DbjbodDisOQ_NijY8HTYErbhIaU2Nq9JWGn96mcVZifPhIxwIrMMv9XZmpRCTUXHul8ImrbAGOyxjnzxVu6WwTv2YTyu7MswN5-rJxLYI7sRiz3Ll4ffGBy9qk" alt="Joinery Detail" />
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Close-up of precise dovetail joinery in a handmade wooden jewelry box or drawer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjhfkWQKg6vgsM50MZBUgCY2GE4H1c78ZOZKCCDROTbPuflG0PgNv9PrnaZTLciyoaecETEeoOz6uTNH9HAVspxpjCcbCdcXE5fTfFUc1YP2bMHBQlU71OHwvL3l8kYlha7EnA9fvDxrY4wSwN0DbjbodDisOQ_NijY8HTYErbhIaU2Nq9JWGn96mcVZifPhIxwIrMMv9XZmpRCTUXHul8ImrbAGOyxjnzxVu6WwTv2YTyu7MswN5-rJxLYI7sRiz3Ll4ffGBy9qk" alt="Joinery Detail">
                 <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
                     <p class="text-surface font-bold headline-font mb-1">Assemblage Traditionnel</p>
                     <p class="text-surface/90 text-sm">Précision d'ébénisterie</p>
                 </div>
             </div>
             <div class="relative overflow-hidden rounded-[2rem] group min-h-[300px]">
-                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Ergonomic home office setup with a custom L-shaped desk made from reclaimed wood boards" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj_RG-xticlSrdQVvhvUB4jC0jSCaPoZ9Za5xl2aLtY4lMS3Hg7AfooYbCqzRRAhwaZMklnt7kFXfzYZ7_hH8A4bySnlZEkzk6Xj6RlWp9AuGg_Fli-FK4rBXRVdwIW9mdVNoRej8jRuK3rVPNFxzR3Hzw9DoBQaoamA7T3a4CfChgQX_C6ZxS3_9u4ezyRBUkc4dtqD1-KBj1qS4ZpV7FlQLSqFsbZSvGQEkTL2ABs3HcTJV284rI5Q2Y1QqJ938Pcfz9TxKfuU0" alt="Home Office" />
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Ergonomic home office setup with a custom L-shaped desk made from reclaimed wood boards" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj_RG-xticlSrdQVvhvUB4jC0jSCaPoZ9Za5xl2aLtY4lMS3Hg7AfooYbCqzRRAhwaZMklnt7kFXfzYZ7_hH8A4bySnlZEkzk6Xj6RlWp9AuGg_Fli-FK4rBXRVdwIW9mdVNoRej8jRuK3rVPNFxzR3Hzw9DoBQaoamA7T3a4CfChgQX_C6ZxS3_9u4ezyRBUkc4dtqD1-KBj1qS4ZpV7FlQLSqFsbZSvGQEkTL2ABs3HcTJV284rI5Q2Y1QqJ938Pcfz9TxKfuU0" alt="Home Office">
                 <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
                     <p class="text-surface font-bold headline-font mb-1">Alcôve Bureau</p>
                     <p class="text-surface/90 text-sm">Espace de travail intégré</p>
@@ -229,7 +231,7 @@
             <p class="font-bold text-[#964900] text-xs uppercase tracking-widest headline-font">La Newsletter</p>
             <p class="text-stone-600 text-sm">Actualités saisonnières sur l'artisanat et inspirations design.</p>
             <div class="flex bg-surface rounded-xl p-1 shadow-inner">
-                <input class="bg-transparent border-none focus:ring-0 text-sm w-full px-4 outline-none" placeholder="email@adresse.com" type="email"/>
+                <input class="bg-transparent border-none focus:ring-0 text-sm w-full px-4 outline-none" placeholder="email@adresse.com" type="email">
                 <button class="bg-primary text-on-primary p-3 rounded-lg hover:bg-primary-container transition-colors">
                     <span class="material-symbols-outlined text-sm">send</span>
                 </button>
@@ -244,5 +246,42 @@
         </div>
     </div>
 </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">À propos</a>
+        <a href="services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Services</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

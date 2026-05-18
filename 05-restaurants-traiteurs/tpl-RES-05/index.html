@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html class="scroll-smooth" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>L'Atrium des Saveurs | Buffet Gastronomique & Cuisine de Saison</title>
+<!DOCTYPE html><html class="scroll-smooth" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>L'Atrium des Saveurs | Buffet Gastronomique &amp; Cuisine de Saison</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet">
     <!-- Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-primary-container/30 antialiased">
 
@@ -33,13 +31,17 @@
                 Réserver une table
             </button>
         </div>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main>
         <!-- Hero Section -->
         <header class="relative min-h-[90vh] flex items-center pt-24 overflow-hidden">
             <div class="absolute inset-0 z-0">
-                <img alt="L'Atrium Hero" class="w-full h-full object-cover" data-alt="Buffet haut de gamme ensoleillé" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzjdQTXQsbnlGkp85Urjy-Tg_YTPdkqXphAePuJQf0Yi2Zrak0DQXoRo7X4qmaBHeBKFoDAHYiGotUsQkh2ccODdzidCc3Dc4bWdHBlEaiD2pF24vbUXQbT_q5Fm7L5XLqnDcWVbVgXuM1Am2smJGu32qoNRkBgMQgmg2s75dXQYdQ3-JIG9NPLkQ3_iEBPluaroS985uNR3hKsgFX04kU6gGPbU3TyvYxmtdIyL9_T1FoSkCrCH2k0U5xFfmqOqgiZchG_Iq_o4wF"/>
+                <img alt="L'Atrium Hero" class="w-full h-full object-cover" data-alt="Buffet haut de gamme ensoleillé" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzjdQTXQsbnlGkp85Urjy-Tg_YTPdkqXphAePuJQf0Yi2Zrak0DQXoRo7X4qmaBHeBKFoDAHYiGotUsQkh2ccODdzidCc3Dc4bWdHBlEaiD2pF24vbUXQbT_q5Fm7L5XLqnDcWVbVgXuM1Am2smJGu32qoNRkBgMQgmg2s75dXQYdQ3-JIG9NPLkQ3_iEBPluaroS985uNR3hKsgFX04kU6gGPbU3TyvYxmtdIyL9_T1FoSkCrCH2k0U5xFfmqOqgiZchG_Iq_o4wF">
                 <div class="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent"></div>
             </div>
             <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
@@ -71,10 +73,10 @@
                 <div class="grid md:grid-cols-2 gap-24 items-center">
                     <div class="relative">
                         <div class="aspect-[4/5] rounded-[3rem] overflow-hidden harvest-shadow">
-                            <img alt="Chef au travail" class="w-full h-full object-cover" data-alt="Chef préparant des produits frais" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIrApe_qeZFy_LouWWBc9hNOyTelolClQBWw_bKyAJh68gJBoUVef2TMRiQBPngvv-FhqE_ZNii44fSipd1xiSXt9EEot4FE9pOk2sC0LJcX9D3Im_461o2z6e3akTmwKzXQRO1UxxHovubLYekIBmseV1GThBpkFV7aAybiepkcSDShMzI0iFfi8-Bnza6woo6pVAiA1HdVsoyxfd9FNqB-NB3c6d5sIVb-8n3WoaMtq4WMj8HjPNryDPdpzWOMmJzSnrWgG42E-U"/>
+                            <img alt="Chef au travail" class="w-full h-full object-cover" data-alt="Chef préparant des produits frais" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIrApe_qeZFy_LouWWBc9hNOyTelolClQBWw_bKyAJh68gJBoUVef2TMRiQBPngvv-FhqE_ZNii44fSipd1xiSXt9EEot4FE9pOk2sC0LJcX9D3Im_461o2z6e3akTmwKzXQRO1UxxHovubLYekIBmseV1GThBpkFV7aAybiepkcSDShMzI0iFfi8-Bnza6woo6pVAiA1HdVsoyxfd9FNqB-NB3c6d5sIVb-8n3WoaMtq4WMj8HjPNryDPdpzWOMmJzSnrWgG42E-U">
                         </div>
                         <div class="absolute -bottom-12 -right-12 w-72 h-72 rounded-[2rem] overflow-hidden border-[16px] border-background harvest-shadow hidden lg:block">
-                            <img alt="Légumes frais" class="w-full h-full object-cover" data-alt="Ananas de Calavi" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsZUqD0OFrGxDuzbVVXIur3ir2nprmMbnWfRI_4eemImfwynW_qRAUJiki-7VTf1jHqZreNvAeh_ts8Fk0Dbp7BehJHkXwQ8S8mgvQ1Dn_zvz6jESf0j6E95UHt3otVku0DxmIszAStfrwkqPAykTgGpJxembIasGnuAjEMF8zgF4tfcCj8cyUsJRDr10I5rPrLKXvQlEIv55u0jvwxtrN9kHZ3lEcaOQB2y5Ewgn667l2LFswt_HX2sutRJNcG9bOTeJSumli3okj"/>
+                            <img alt="Légumes frais" class="w-full h-full object-cover" data-alt="Ananas de Calavi" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsZUqD0OFrGxDuzbVVXIur3ir2nprmMbnWfRI_4eemImfwynW_qRAUJiki-7VTf1jHqZreNvAeh_ts8Fk0Dbp7BehJHkXwQ8S8mgvQ1Dn_zvz6jESf0j6E95UHt3otVku0DxmIszAStfrwkqPAykTgGpJxembIasGnuAjEMF8zgF4tfcCj8cyUsJRDr10I5rPrLKXvQlEIv55u0jvwxtrN9kHZ3lEcaOQB2y5Ewgn667l2LFswt_HX2sutRJNcG9bOTeJSumli3okj">
                         </div>
                     </div>
                     <div>
@@ -101,7 +103,7 @@
                                         <span class="material-symbols-outlined">favorite</span>
                                     </div>
                                 </div>
-                                <p class="text-xs font-headline font-black text-on-surface uppercase tracking-widest leading-tight">Plus de 300 <br/>convives comblés par jour</p>
+                                <p class="text-xs font-headline font-black text-on-surface uppercase tracking-widest leading-tight">Plus de 300 <br>convives comblés par jour</p>
                             </div>
                         </div>
                     </div>
@@ -136,7 +138,7 @@
                                 <span class="text-[10px] font-black uppercase tracking-widest text-primary">Le Chef's Pick</span>
                             </div>
                         </div>
-                        <img alt="The Grill" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-1000" data-alt="Grillades fumantes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMPxGyzJYHzvmef2WETJIRnrMaBN_si1CiVJ31mjuldxJ8bk3iIHQt8gHHFVMjPrJ-Qo3nwLEuStBG1hxaU89edgO4BleXUssxyz5dSQAeLT_f0aa6_hBJ2YdZnmeNxVwi3Mtw7bMUNWltC10iY69suZA93tMTfO8XJiC1nhgVgUvdqINHr8jT6_C3B8sqOt_CaQ7A2t77nDlmmBCws6MAXBNskaerrhiORhFa8fDZ-5zv8yg1x-mZ7AnpsdMootT8wihhtp2dkVkZ"/>
+                        <img alt="The Grill" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-1000" data-alt="Grillades fumantes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMPxGyzJYHzvmef2WETJIRnrMaBN_si1CiVJ31mjuldxJ8bk3iIHQt8gHHFVMjPrJ-Qo3nwLEuStBG1hxaU89edgO4BleXUssxyz5dSQAeLT_f0aa6_hBJ2YdZnmeNxVwi3Mtw7bMUNWltC10iY69suZA93tMTfO8XJiC1nhgVgUvdqINHr8jT6_C3B8sqOt_CaQ7A2t77nDlmmBCws6MAXBNskaerrhiORhFa8fDZ-5zv8yg1x-mZ7AnpsdMootT8wihhtp2dkVkZ">
                     </div>
                     <!-- Farm Fresh -->
                     <div class="md:col-span-4 bg-tertiary-container/10 rounded-[2rem] p-10 shadow-2xl relative overflow-hidden group">
@@ -144,7 +146,7 @@
                             <h3 class="text-3xl font-headline font-extrabold mb-4 text-primary-dim uppercase">Le Potager Frais</h3>
                             <p class="text-on-surface-variant font-light">Récoltés à l'aube, assemblés avec nos vinaigrettes artisanales.</p>
                         </div>
-                        <img alt="Salades" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-1000" data-alt="Salades vibrantes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuShHM0i5sPeg8zDAif7ffydZnaw_3Q1gea8BWXCFoH4ubT1fYKPgdx_nCCFwCPVzRsJyV_Em6P17UP1AnbGMtwLj4CRH_czjPSEr8FsYPChVko3tKAYUJL5c_lvaqe7qyahJPfg9HhxZozwB0f7W1MMj3qNl9RHvsaufYYb_AVzcTXXYJEL26w0mlGrQGhtUC2ywXnWyfAHRIqG1rRO8ZF-RSWJsarEjnr21IBsPSMckEbYPmdhBY7U5-DchPK5SXK_hNm6kYI_Tt4"/>
+                        <img alt="Salades" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-1000" data-alt="Salades vibrantes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuShHM0i5sPeg8zDAif7ffydZnaw_3Q1gea8BWXCFoH4ubT1fYKPgdx_nCCFwCPVzRsJyV_Em6P17UP1AnbGMtwLj4CRH_czjPSEr8FsYPChVko3tKAYUJL5c_lvaqe7qyahJPfg9HhxZozwB0f7W1MMj3qNl9RHvsaufYYb_AVzcTXXYJEL26w0mlGrQGhtUC2ywXnWyfAHRIqG1rRO8ZF-RSWJsarEjnr21IBsPSMckEbYPmdhBY7U5-DchPK5SXK_hNm6kYI_Tt4">
                     </div>
                     <!-- Ocean Bounty -->
                     <div class="md:col-span-12 lg:col-span-5 bg-secondary-container/10 rounded-[2rem] p-10 shadow-2xl relative overflow-hidden group">
@@ -152,7 +154,7 @@
                             <h3 class="text-3xl font-headline font-extrabold mb-4 text-secondary uppercase">Trésors du Littoral</h3>
                             <p class="text-on-surface-variant font-light">Un voyage tournant de Grand-Popo à nos côtes, fraîcheur maximale garantie.</p>
                         </div>
-                        <img alt="Seafood" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-1000" data-alt="Fruits de mer frais" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7ldj5HN_M--YK3roMII4lwuaEf48TXZSqzgPChpmYGPlvaPKRUhphRMMs9AOfR7EaUGrov5g8oejyOpMAdoGYfmKejavaRP6u9eyQ9L_76R1V6GZhEjQxtp182km1M8cGGO7lCxlOrxfCvEY5KNLnMqrkh_M3UpsWj0U-6liyJQl76n6jOja4BZtcoWAMicv8GbiUoeQ8ELIfvvR0LezF9uYOUYyjf4tHRu1TE3Mzilad5hBR7tYjoOfML5nlJrSD9AY0nHM6DeK2"/>
+                        <img alt="Seafood" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-1000" data-alt="Fruits de mer frais" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7ldj5HN_M--YK3roMII4lwuaEf48TXZSqzgPChpmYGPlvaPKRUhphRMMs9AOfR7EaUGrov5g8oejyOpMAdoGYfmKejavaRP6u9eyQ9L_76R1V6GZhEjQxtp182km1M8cGGO7lCxlOrxfCvEY5KNLnMqrkh_M3UpsWj0U-6liyJQl76n6jOja4BZtcoWAMicv8GbiUoeQ8ELIfvvR0LezF9uYOUYyjf4tHRu1TE3Mzilad5hBR7tYjoOfML5nlJrSD9AY0nHM6DeK2">
                     </div>
                     <!-- Pastry Shop -->
                     <div class="md:col-span-12 lg:col-span-7 bg-surface-container-highest/20 rounded-[2rem] p-10 shadow-2xl relative overflow-hidden group">
@@ -160,7 +162,7 @@
                             <h3 class="text-4xl font-headline font-extrabold mb-4 uppercase">La Pâtisserie d'Atrium</h3>
                             <p class="text-on-surface-variant max-w-sm font-light">Desserts haute couture et mignardises créés par nos maîtres pâtissiers.</p>
                         </div>
-                        <img alt="Pastry" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-1000" data-alt="Pâtisseries artisanales" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY5wXrK5-lHEhCpk6OTaJh1Xik0kSgH5L7XH50fI-8mytkX9nxm7YRyllZXX1frqYv3NviJQ8VaJtCWJmzjmbk-Jd7bZEYsBj2EvKqid5UXZjJr_jnhZIkfOVVvxDbxuTUeei141n35peLVxXkkDdvoVVes5UzQJLUni4t8V7KhNtLnbrJtg4CMdf-QZ78RPRA6p4PQOQIDzp7Z-fqwTE0Z3soKqdeXTW0ZTesCPqCOslwa9f4GZpMfdwxoLoHr410jubc3kpxEGr3"/>
+                        <img alt="Pastry" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-1000" data-alt="Pâtisseries artisanales" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY5wXrK5-lHEhCpk6OTaJh1Xik0kSgH5L7XH50fI-8mytkX9nxm7YRyllZXX1frqYv3NviJQ8VaJtCWJmzjmbk-Jd7bZEYsBj2EvKqid5UXZjJr_jnhZIkfOVVvxDbxuTUeei141n35peLVxXkkDdvoVVes5UzQJLUni4t8V7KhNtLnbrJtg4CMdf-QZ78RPRA6p4PQOQIDzp7Z-fqwTE0Z3soKqdeXTW0ZTesCPqCOslwa9f4GZpMfdwxoLoHr410jubc3kpxEGr3">
                     </div>
                 </div>
             </div>
@@ -239,13 +241,13 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div class="aspect-square rounded-[2rem] overflow-hidden group relative harvest-shadow">
-                        <img alt="Ambiance 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Intérieur lumineux" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9p9dauxWVOy_uvdQm4z3pkVHISHTd1mrpF0jNdxElYF_tpDMS5JBXV0i7kW8K2U9OY-kzQGl74O9Gek0krgd9tBnAORTuwEQH2wLewRK-YtOy8-97_w84y4gB8v6AvZSKJEiccYyxr23F0h1C4WbpYT4Da0ETUlW0T_cDTGr8g6-0aLTrIOmxFv41Up-XZYSLsxRj1hScNBgWQ0FUu-3A0iy4praOqgkb7VtwOxzje_eebepKul1S6gXDPMt8D4OLJOdZpthuHN39"/>
+                        <img alt="Ambiance 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Intérieur lumineux" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9p9dauxWVOy_uvdQm4z3pkVHISHTd1mrpF0jNdxElYF_tpDMS5JBXV0i7kW8K2U9OY-kzQGl74O9Gek0krgd9tBnAORTuwEQH2wLewRK-YtOy8-97_w84y4gB8v6AvZSKJEiccYyxr23F0h1C4WbpYT4Da0ETUlW0T_cDTGr8g6-0aLTrIOmxFv41Up-XZYSLsxRj1hScNBgWQ0FUu-3A0iy4praOqgkb7VtwOxzje_eebepKul1S6gXDPMt8D4OLJOdZpthuHN39">
                     </div>
                     <div class="aspect-square rounded-[2rem] overflow-hidden group relative harvest-shadow md:translate-y-16">
-                        <img alt="Ambiance 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Table d'amis" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuep7uIwgDWPdxctTcxwv9ftKnR49X4cSQNWQWsf4u820L9lsYfwaXdBsMP9zgtj5IkhQaJfNnw6iASNhh-qCQvejGwxRPujdlAiQtcYMlLzxx7p3LcCmcIo5X5Cs_xqpv-qUUxNp07njtn11hOBclAFS1Y9xlX0RJFVr6u0IIRlcgX76BcKCmGODlsY5TY5C5wQ5BShNRx_PawlFVYqmtd81NdL1ecIb6M0apEGvlsQntI6-sbapSgxpx-VMsJ1Qhg6bIbC1m1ndh"/>
+                        <img alt="Ambiance 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Table d'amis" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuep7uIwgDWPdxctTcxwv9ftKnR49X4cSQNWQWsf4u820L9lsYfwaXdBsMP9zgtj5IkhQaJfNnw6iASNhh-qCQvejGwxRPujdlAiQtcYMlLzxx7p3LcCmcIo5X5Cs_xqpv-qUUxNp07njtn11hOBclAFS1Y9xlX0RJFVr6u0IIRlcgX76BcKCmGODlsY5TY5C5wQ5BShNRx_PawlFVYqmtd81NdL1ecIb6M0apEGvlsQntI6-sbapSgxpx-VMsJ1Qhg6bIbC1m1ndh">
                     </div>
                     <div class="aspect-square rounded-[2rem] overflow-hidden group relative harvest-shadow">
-                        <img alt="Ambiance 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Détails de table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIwQRmfsKdFozs5zK5BVJFu6UhgHbo5jZyOBuR05S1RNf70FEnwlrFqkP2o4swR9qs9U2k1mZ3cso9zj4Br9jX7cYeeuXpapT3gfw8fs_rHgt1smOWdly48x_YySKdqOLGAzr-3UR_Y9bVhGOUStT2irEKISVuNMLDz-OwOCqRzYibFT0pDw6vj-7dCso9NlrltmQeSHLU12Y1wmV2e2W3RcPlB-0uUQfVr_0lbvtVagTXYA0BXbtI-rXwlTtwbivCJle7LjtkaGsY"/>
+                        <img alt="Ambiance 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Détails de table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIwQRmfsKdFozs5zK5BVJFu6UhgHbo5jZyOBuR05S1RNf70FEnwlrFqkP2o4swR9qs9U2k1mZ3cso9zj4Br9jX7cYeeuXpapT3gfw8fs_rHgt1smOWdly48x_YySKdqOLGAzr-3UR_Y9bVhGOUStT2irEKISVuNMLDz-OwOCqRzYibFT0pDw6vj-7dCso9NlrltmQeSHLU12Y1wmV2e2W3RcPlB-0uUQfVr_0lbvtVagTXYA0BXbtI-rXwlTtwbivCJle7LjtkaGsY">
                     </div>
                 </div>
             </div>
@@ -256,7 +258,7 @@
             <div class="max-w-6xl mx-auto px-8">
                 <div class="bg-on-surface rounded-[3rem] p-16 md:p-24 text-center relative overflow-hidden shadow-2xl">
                     <div class="absolute inset-0 bg-secondary/10 pointer-events-none"></div>
-                    <h2 class="text-5xl md:text-7xl font-headline font-extrabold text-white mb-10 relative z-10 italic uppercase">Prêt à Goûter <br/>à la Moisson ?</h2>
+                    <h2 class="text-5xl md:text-7xl font-headline font-extrabold text-white mb-10 relative z-10 italic uppercase">Prêt à Goûter <br>à la Moisson ?</h2>
                     <p class="text-surface-variant text-xl mb-14 max-w-2xl mx-auto relative z-10 font-light">Les réservations sont vivement conseillées pour les tablées de plus de 6 personnes.</p>
                     <div class="flex flex-col sm:flex-row justify-center gap-8 relative z-10">
                         <button class="harvest-gradient text-white px-12 py-6 rounded-2xl font-headline font-black uppercase tracking-widest text-lg hover:scale-105 active:scale-95 transition-all shadow-2xl">
@@ -296,19 +298,57 @@
             <div>
                 <span class="font-headline font-black text-primary uppercase text-[10px] tracking-widest mb-8 block">Le Lieu</span>
                 <p class="text-sm text-on-surface-variant leading-relaxed">
-                    Avenue Jean-Paul II, Haie Vive<br/>Cotonou, Bénin<br/>
+                    Avenue Jean-Paul II, Haie Vive<br>Cotonou, Bénin<br>
                     +229 01 00 00 00
                 </p>
             </div>
             <div>
                 <span class="font-headline font-black text-primary uppercase text-[10px] tracking-widest mb-8 block">Lettre de Saison</span>
                 <div class="flex">
-                    <input class="bg-background border-none rounded-l-xl px-4 py-3 w-full text-xs focus:ring-2 focus:ring-primary/20" placeholder="Email" type="email"/>
+                    <input class="bg-background border-none rounded-l-xl px-4 py-3 w-full text-xs focus:ring-2 focus:ring-primary/20" placeholder="Email" type="email">
                     <button class="bg-primary text-white px-6 rounded-r-xl font-black text-[10px] uppercase">OK</button>
                 </div>
                 <p class="text-[9px] mt-4 text-on-surface-variant opacity-60 uppercase tracking-widest">© 2026 L'ATRIUM DES SAVEURS. TOUS DROITS RÉSERVÉS.</p>
             </div>
         </div>
     </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Esprit</a>
+        <a href="menu.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">La Table</a>
+        <a href="gallery.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Galerie</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

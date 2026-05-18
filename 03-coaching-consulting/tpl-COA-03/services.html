@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html><html lang="fr" class="scroll-smooth"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Programmes | Sacha Coach</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-surface text-slate-800 antialiased selection:bg-accent selection:text-white flex flex-col min-h-screen">
 
@@ -36,7 +34,11 @@
                 <span class="material-symbols-outlined text-3xl">menu</span>
             </button>
         </div>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main class="flex-grow pt-32 pb-24">
         
@@ -83,7 +85,7 @@
                         </div>
                     </div>
                     <div class="hidden lg:block relative">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Introspection" class="w-full aspect-square object-cover rounded-[2rem] shadow-none group-hover:shadow-soft-hover transition-all duration-500 delay-100 filter grayscale group-hover:grayscale-0">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Introspection" class="w-full aspect-square object-cover rounded-[2rem] shadow-none group-hover:shadow-soft-hover transition-all duration-500 delay-100 filter grayscale group-hover:grayscale-0">
                     </div>
                 </div>
             </div>
@@ -93,7 +95,7 @@
                 <div class="absolute -top-40 -left-40 w-96 h-96 border-[40px] border-white/5 rounded-full"></div>
                 <div class="grid lg:grid-cols-2 gap-12 items-center relative z-10">
                     <div class="hidden lg:block relative">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" alt="Executive" class="w-full aspect-square object-cover rounded-[2rem] shadow-soft-hover box-border border-4 border-white/10">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Executive" class="w-full aspect-square object-cover rounded-[2rem] shadow-soft-hover box-border border-4 border-white/10">
                     </div>
                     <div>
                         <div class="absolute top-0 right-0 bg-accent text-white px-4 py-1 text-xs font-bold uppercase tracking-widest rounded-bl-xl rounded-tr-xl">Le plus demandé</div>
@@ -165,8 +167,45 @@
                 <a href="services.html" class="hover:text-accent transition-colors font-medium text-primary border-b border-primary">Programmes</a>
                 <a href="contact.html" class="hover:text-accent transition-colors font-medium">Contact</a>
             </div>
-            <p>&copy; 2026 Sacha Coaching. Tous droits réservés.</p>
+            <p>© 2026 Sacha Coaching. Tous droits réservés.</p>
         </div>
     </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Mon Parcours</a>
+        <a href="services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Coaching</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

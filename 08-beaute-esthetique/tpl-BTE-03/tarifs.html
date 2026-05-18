@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html class="scroll-smooth" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="scroll-smooth" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Tarifs | FRILO BEAUTY</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
     <!-- Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container antialiased">
 
@@ -29,7 +27,11 @@
         <button class="bg-primary text-on-primary px-6 py-3 font-bold uppercase tracking-widest text-xs transition-transform active:scale-95 duration-150">
             Prendre RDV
         </button>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main class="pt-32 pb-24 text-left">
         <!-- Hero Header -->
@@ -38,7 +40,7 @@
                 <div class="max-w-2xl">
                     <span class="text-primary font-bold tracking-[0.3em] text-xs uppercase mb-4 block">Notre Manifeste</span>
                     <h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter leading-[0.9] text-on-surface mb-6 uppercase">
-                        INVESTISSEZ DANS <br/><span class="text-primary">VOTRE ÉCLAT.</span>
+                        INVESTISSEZ DANS <br><span class="text-primary">VOTRE ÉCLAT.</span>
                     </h1>
                 </div>
                 <p class="text-on-surface-variant max-w-md font-body leading-relaxed text-lg border-l-2 border-primary-container pl-6">
@@ -84,7 +86,7 @@
                     </div>
                     <div class="flex flex-col md:flex-row justify-between items-start md:items-center group/item hover:bg-surface-container-high/30 p-4 transition-colors">
                         <div class="flex-1">
-                            <h3 class="text-xl font-bold font-headline uppercase mb-2 leading-none">Massage Sculpt & Lift</h3>
+                            <h3 class="text-xl font-bold font-headline uppercase mb-2 leading-none">Massage Sculpt &amp; Lift</h3>
                             <p class="text-on-surface-variant text-sm max-w-md">Technique de lifting manuel axée sur la tonification musculaire et la définition de la mâchoire.</p>
                         </div>
                         <div class="flex items-center gap-8 mt-4 md:mt-0">
@@ -96,10 +98,10 @@
             </div>
             <!-- Featured Image Block -->
             <div class="md:col-span-4 min-h-[400px] bg-primary relative overflow-hidden border-b border-outline-variant/10">
-                <img alt="Soin Beauté" class="w-full h-full object-cover grayscale mix-blend-multiply opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdyfHMCc-6UUTPW3bQXki4pSxxUvMUcfvtowPLYe3kCmqsXKlbxREUlKarAmkmxF2a7FxnVO2vcNdWBLh7E-PtVXYSQlvmCghhhcOL6BqF008KyrZY9gA106e6Mp1yghaNKwsAHMTibQ3K9vF1F6yd2jBi7YfNwxfjE5jfza2Xj8KlvUGK1KjPAJR_ItDRVdS63q60bJsoSdSwYfzEojLD0LVsfGju2YfDCCYG2EIyEmx1JXoh36DbLFO2h5wzkkrYjfllVgVgNDk"/>
+                <img alt="Soin Beauté" class="w-full h-full object-cover grayscale mix-blend-multiply opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdyfHMCc-6UUTPW3bQXki4pSxxUvMUcfvtowPLYe3kCmqsXKlbxREUlKarAmkmxF2a7FxnVO2vcNdWBLh7E-PtVXYSQlvmCghhhcOL6BqF008KyrZY9gA106e6Mp1yghaNKwsAHMTibQ3K9vF1F6yd2jBi7YfNwxfjE5jfza2Xj8KlvUGK1KjPAJR_ItDRVdS63q60bJsoSdSwYfzEojLD0LVsfGju2YfDCCYG2EIyEmx1JXoh36DbLFO2h5wzkkrYjfllVgVgNDk">
                 <div class="absolute inset-0 flex items-center justify-center p-12">
                     <div class="text-surface border-2 border-surface/30 p-8 backdrop-blur-sm">
-                        <h4 class="text-2xl font-headline font-bold uppercase leading-none mb-4">Accès <br/>Membre</h4>
+                        <h4 class="text-2xl font-headline font-bold uppercase leading-none mb-4">Accès <br>Membre</h4>
                         <p class="text-sm font-medium mb-6">Maintien illimité de votre aura à partir de 199€/mois.</p>
                         <a class="inline-block border-b-2 border-surface font-bold text-xs uppercase tracking-widest pb-1 hover:text-primary-container transition-colors" href="#">En savoir plus</a>
                     </div>
@@ -133,14 +135,14 @@
                         </div>
                         <span class="font-headline font-bold">160€</span>
                     </div>
-                    <button class="w-full bg-primary text-on-primary py-4 font-bold uppercase text-xs tracking-widest hover:bg-primary-dim transition-colors mt-4">Consulter & Réserver</button>
+                    <button class="w-full bg-primary text-on-primary py-4 font-bold uppercase text-xs tracking-widest hover:bg-primary-dim transition-colors mt-4">Consulter &amp; Réserver</button>
                 </div>
             </div>
             <!-- Category: Nails & Details -->
             <div class="md:col-span-8 bg-surface-container-lowest p-12 border-b border-outline-variant/10">
                 <div class="flex justify-between items-start mb-16">
                     <div>
-                        <h2 class="text-4xl font-headline font-bold uppercase tracking-tight mb-2">Ongles & Détails</h2>
+                        <h2 class="text-4xl font-headline font-bold uppercase tracking-tight mb-2">Ongles &amp; Détails</h2>
                         <p class="text-on-surface-variant font-medium tracking-wide">Les touches finales qui définissent votre esthétique.</p>
                     </div>
                     <span class="material-symbols-outlined text-outline-variant text-4xl">brush</span>
@@ -221,5 +223,43 @@
             <p class="font-body uppercase tracking-[0.2em] text-[10px] text-[#5c5b5b]">© 2024 FRILO BEAUTY. TOUS DROITS RÉSERVÉS.</p>
         </div>
     </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="a-propos.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">À propos</a>
+        <a href="services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Soins</a>
+        <a href="tarifs.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Tarifs</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

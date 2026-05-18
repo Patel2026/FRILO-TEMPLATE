@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html class="dark" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="dark" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Galerie | L'Ébène Haute Cuisine</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&amp;family=Manrope:wght@300;400;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
     <style>
         .gallery-mask {
             mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
@@ -33,7 +31,11 @@
                 Réserver une Table
             </a>
         </div>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main class="pt-32 pb-24">
         <!-- Hero Section -->
@@ -42,7 +44,7 @@
                 <div>
                     <span class="font-label text-sm uppercase tracking-[0.3em] text-outline mb-4 block">Récit Visuel</span>
                     <h1 class="text-6xl md:text-8xl font-headline font-light leading-none tracking-tighter">
-                        Une Étude <br/><span class="italic text-primary">d'Ombre & de Lumière</span>
+                        Une Étude <br><span class="italic text-primary">d'Ombre &amp; de Lumière</span>
                     </h1>
                 </div>
                 <div class="max-w-xs">
@@ -60,7 +62,7 @@
                 <!-- Large Vertical Feature -->
                 <div class="md:col-span-7 group cursor-pointer">
                     <div class="overflow-hidden mb-4">
-                        <img class="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105 grayscale-[30%] hover:grayscale-0" data-alt="Intérieur luxueux sombre avec des textures de marbre" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARSoi-acgZWrx4KIVDVNZ1NGVVZIaxJU_ahKARz7sVmxbqM9BSaw497l-eKtG1PQFIvZPmYbIYOT2j8tlO6icGWaSIW_-3CoNrK0YEcxRx9yb8IBTfxo9Ml0jh50kerSTmHoE5iKXjEVaNqGWCXrPq_kzHq4Ce1irAJ2qnmBn0C-IgYSQuVJQaMAjuncmCJEs-hqb2LJaC7NghBg9oAC2XJz9UOrntfOgVl0v5eWtcoPReZiEhUAvXSYg18D56J7XlKF48zA0NHaWc"/>
+                        <img class="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105 grayscale-[30%] hover:grayscale-0" data-alt="Intérieur luxueux sombre avec des textures de marbre" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARSoi-acgZWrx4KIVDVNZ1NGVVZIaxJU_ahKARz7sVmxbqM9BSaw497l-eKtG1PQFIvZPmYbIYOT2j8tlO6icGWaSIW_-3CoNrK0YEcxRx9yb8IBTfxo9Ml0jh50kerSTmHoE5iKXjEVaNqGWCXrPq_kzHq4Ce1irAJ2qnmBn0C-IgYSQuVJQaMAjuncmCJEs-hqb2LJaC7NghBg9oAC2XJz9UOrntfOgVl0v5eWtcoPReZiEhUAvXSYg18D56J7XlKF48zA0NHaWc">
                     </div>
                     <div class="flex justify-between items-baseline border-b border-outline-variant/10 pb-4">
                         <h3 class="font-headline text-2xl font-light">Le Grand Salon</h3>
@@ -72,7 +74,7 @@
                 <div class="md:col-span-5 flex flex-col gap-20 pt-24">
                     <div class="group cursor-pointer">
                         <div class="overflow-hidden mb-4">
-                            <img class="w-full aspect-square object-cover transition-transform duration-1000 group-hover:scale-105 grayscale-[20%] hover:grayscale-0" data-alt="Plat de coquille Saint-Jacques sur assiette noire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhsNNpeomOL1XEKwenKHDWO1ajsSRbqSW1C9vf8AB_4WnEcMO3Yl0i9kG1T4Gi9nKoE8QBwxqnocvIcpABvnRHWk4ubt9lSQs8VVYzx8hZBvAKinTCqeE1jnMmQ247l4dXTHjKHchmJI1lLJsLKAlcTN_BcgUsY-v26Sig8Pfv913oTXirjzzv7qI6fGuspLBV-4sXA79MGHsBqMdTuUmGHn1By2Mwr3iCiUGOMbcFAjQg6sLavCbwIsdbx3bSgRs24ZuSwLIg0WUl"/>
+                            <img class="w-full aspect-square object-cover transition-transform duration-1000 group-hover:scale-105 grayscale-[20%] hover:grayscale-0" data-alt="Plat de coquille Saint-Jacques sur assiette noire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhsNNpeomOL1XEKwenKHDWO1ajsSRbqSW1C9vf8AB_4WnEcMO3Yl0i9kG1T4Gi9nKoE8QBwxqnocvIcpABvnRHWk4ubt9lSQs8VVYzx8hZBvAKinTCqeE1jnMmQ247l4dXTHjKHchmJI1lLJsLKAlcTN_BcgUsY-v26Sig8Pfv913oTXirjzzv7qI6fGuspLBV-4sXA79MGHsBqMdTuUmGHn1By2Mwr3iCiUGOMbcFAjQg6sLavCbwIsdbx3bSgRs24ZuSwLIg0WUl">
                         </div>
                         <div class="flex justify-between items-baseline border-b border-outline-variant/10 pb-4">
                             <h3 class="font-headline text-xl font-light italic">Profondeurs Océaniques</h3>
@@ -82,7 +84,7 @@
                     
                     <div class="group cursor-pointer pl-12">
                         <div class="overflow-hidden mb-4">
-                            <img class="w-full aspect-[3/4] object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Verre en cristal sur un bar sombre" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxBMnN9yWOXfywFXbcReuvUYE_5LykR6iMC1Vox3lrlWiwUsWB11W9bvdCBqc4JL8kocQIpNq5aMMxCzXXu2J-x7K-4cFnw-r4d0k6BXmSY4Zr3ICXfy6A83kz2_qUVsrMi35aQPbFeS3dtdEYdoYhnMCz0DwGWdpZmLPobgzbVF3Hxr_T_yL1STYAr-jxIjDiK1IR7cGvSOIa15rvEDlgDwY-YmPe58qWGzbhYbEPbMnJZfrRE48NAVMc7_dV02EBfsqYhcetQsJQ"/>
+                            <img class="w-full aspect-[3/4] object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Verre en cristal sur un bar sombre" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxBMnN9yWOXfywFXbcReuvUYE_5LykR6iMC1Vox3lrlWiwUsWB11W9bvdCBqc4JL8kocQIpNq5aMMxCzXXu2J-x7K-4cFnw-r4d0k6BXmSY4Zr3ICXfy6A83kz2_qUVsrMi35aQPbFeS3dtdEYdoYhnMCz0DwGWdpZmLPobgzbVF3Hxr_T_yL1STYAr-jxIjDiK1IR7cGvSOIa15rvEDlgDwY-YmPe58qWGzbhYbEPbMnJZfrRE48NAVMc7_dV02EBfsqYhcetQsJQ">
                         </div>
                         <div class="flex justify-between items-baseline border-b border-outline-variant/10 pb-4">
                             <h3 class="font-headline text-xl font-light">Le Bar de Minuit</h3>
@@ -94,7 +96,7 @@
                 <!-- Full Width Panoramic Interruption -->
                 <div class="md:col-span-12 py-12">
                     <div class="relative h-[614px] overflow-hidden group">
-                        <img class="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-110" data-alt="Mains d'un chef effectuant un dressage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSbICeSQjkHCumGARZo-sYHGa0XOJ2P7RmMte3zlF8wemsgq9LN_qc99I-u3ZksrPWw1goy1L7AKRbNR_3jjvQdlGJgWQT4v2kde2gDMO4zaLl7biYifJ1trQisurtC2D9Mwxcjvrkb8y3mmMFeQXgdL2qdiIuAmIz18oHRE6EOslZsaxntJXgvBcbttlFJpITgW98g59OJ3EHK9CEfNNymOAxvSISHrJR-Fcv22IhJ79rhCYq7q2TyqwGKo1BWFjWaZdZC0Pmn3h1"/>
+                        <img class="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-110" data-alt="Mains d'un chef effectuant un dressage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSbICeSQjkHCumGARZo-sYHGa0XOJ2P7RmMte3zlF8wemsgq9LN_qc99I-u3ZksrPWw1goy1L7AKRbNR_3jjvQdlGJgWQT4v2kde2gDMO4zaLl7biYifJ1trQisurtC2D9Mwxcjvrkb8y3mmMFeQXgdL2qdiIuAmIz18oHRE6EOslZsaxntJXgvBcbttlFJpITgW98g59OJ3EHK9CEfNNymOAxvSISHrJR-Fcv22IhJ79rhCYq7q2TyqwGKo1BWFjWaZdZC0Pmn3h1">
                         <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
                             <div class="text-center px-6">
                                 <h2 class="font-headline text-4xl md:text-6xl font-light text-primary tracking-tight">La Précision de la Passion</h2>
@@ -107,7 +109,7 @@
                 <div class="md:col-span-4 flex flex-col gap-12">
                     <div class="group cursor-pointer">
                         <div class="overflow-hidden mb-4">
-                            <img class="w-full aspect-[4/3] object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Salle à manger privée et luxueuse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ2lSenFi1PsbPf6VbrXD0G77c_YdPbbsSxrbaLApcEHytyP5Cu9DGa3uHv8iWyFkWqareyO2UjpVyb7c2Vc7wfWmzKb33xs7kBUJOMVvT7zTDuPbWG-kjXT5O4hYFUKym7ZlyDVceOZmcpuksC53sh826QDXnxxvlu1r7HN6krY6uY06llyf-fKTAzqD9ryAsqur6_I7HURIAI3hhNlMpZfON0XSLrmTqrRPl2BaA535XsE1laY7RzXDp_Def2s9I6poWPulQg_Ye"/>
+                            <img class="w-full aspect-[4/3] object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Salle à manger privée et luxueuse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ2lSenFi1PsbPf6VbrXD0G77c_YdPbbsSxrbaLApcEHytyP5Cu9DGa3uHv8iWyFkWqareyO2UjpVyb7c2Vc7wfWmzKb33xs7kBUJOMVvT7zTDuPbWG-kjXT5O4hYFUKym7ZlyDVceOZmcpuksC53sh826QDXnxxvlu1r7HN6krY6uY06llyf-fKTAzqD9ryAsqur6_I7HURIAI3hhNlMpZfON0XSLrmTqrRPl2BaA535XsE1laY7RzXDp_Def2s9I6poWPulQg_Ye">
                         </div>
                         <div class="flex justify-between items-baseline border-b border-outline-variant/10 pb-4">
                             <h3 class="font-headline text-xl font-light">La Réserve</h3>
@@ -118,7 +120,7 @@
 
                 <div class="md:col-span-8 group cursor-pointer md:mt-24">
                     <div class="overflow-hidden mb-4">
-                        <img class="w-full aspect-[16/9] object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Cave à vin immense" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDQVL9lDRfEuvkScBH3Ka1Uh3tbu4Pa4FfFJqoPovmHugjcyrvK_9fetzeKXuNEjUAKmpOgwFICUnAfAjvkgQoaYyVfiUaL6h7d91_vJFWyjvOnIBBu4nYUnMN5GDpu4fnB-IoMt6vVMkesxUB7SJR4lc5wGLQWmjwHPhME_FWWL1dOoHEcXyYK9VpQIxeo4veM2buoOwp-itWrDiKIZq2T_yheMWntQkSDyJYYvrBcPFQnMwUHG58_E5GBXAtcqRNdE5wUA8be2F8"/>
+                        <img class="w-full aspect-[16/9] object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Cave à vin immense" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDQVL9lDRfEuvkScBH3Ka1Uh3tbu4Pa4FfFJqoPovmHugjcyrvK_9fetzeKXuNEjUAKmpOgwFICUnAfAjvkgQoaYyVfiUaL6h7d91_vJFWyjvOnIBBu4nYUnMN5GDpu4fnB-IoMt6vVMkesxUB7SJR4lc5wGLQWmjwHPhME_FWWL1dOoHEcXyYK9VpQIxeo4veM2buoOwp-itWrDiKIZq2T_yheMWntQkSDyJYYvrBcPFQnMwUHG58_E5GBXAtcqRNdE5wUA8be2F8">
                     </div>
                     <div class="flex justify-between items-baseline border-b border-outline-variant/10 pb-4">
                         <h3 class="font-headline text-2xl font-light italic">Millésimes du Siècle</h3>
@@ -165,5 +167,42 @@
             </div>
         </div>
     </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">L'Expérience</a>
+        <a href="menu.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Dégustation</a>
+        <a href="gallery.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Galerie</a>
+        <a href="reservation.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Réservation</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

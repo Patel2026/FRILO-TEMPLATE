@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Réalisations | STRUCTUR</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="js/tailwind-config.js"></script>
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
 <!-- TopNavBar -->
@@ -22,12 +20,16 @@
     <a href="contact.html" class="bg-primary text-on-primary px-6 py-3 font-headline font-bold uppercase tracking-tighter hover:translate-y-[-2px] transition-all duration-150 shadow-block block">
         Demander un Devis
     </a>
+
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
 </nav>
 
 <!-- Hero Section -->
 <header class="relative h-[614px] flex items-end px-12 pb-20 bg-primary overflow-hidden">
     <div class="absolute inset-0 opacity-40">
-        <img alt="High-angle shot of a large-scale construction site with cranes and steel framework under a dramatic blue sky" class="w-full h-full object-cover" data-alt="High-angle shot of a large-scale construction site with cranes and steel framework under a dramatic blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-E2WMQAkMsQKCSjYdL9Uj2KeMRmb_16khif8VEISdgEuUzXOWtT94SO-eS0Osd9YN3zFdesKthj7UOFoY5ApaHfF1yhZeJBcU_FdpIqXPZbiUDnFneIrgWzCAdODTOcvEzSuEXwH_KKpmU-vfygTK4nRlCOqZvIo9FPphEesDrplYKpTAR21Xc0Zd-QaspiRZ0R8VXoxHd_6ipmbiyGFIjx__1JTlnS-QGX_vaA1iOpzk6BzNVgmLT6aXCxAbKkj3ccOXxYSoNzg"/>
+        <img alt="High-angle shot of a large-scale construction site with cranes and steel framework under a dramatic blue sky" class="w-full h-full object-cover" data-alt="High-angle shot of a large-scale construction site with cranes and steel framework under a dramatic blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-E2WMQAkMsQKCSjYdL9Uj2KeMRmb_16khif8VEISdgEuUzXOWtT94SO-eS0Osd9YN3zFdesKthj7UOFoY5ApaHfF1yhZeJBcU_FdpIqXPZbiUDnFneIrgWzCAdODTOcvEzSuEXwH_KKpmU-vfygTK4nRlCOqZvIo9FPphEesDrplYKpTAR21Xc0Zd-QaspiRZ0R8VXoxHd_6ipmbiyGFIjx__1JTlnS-QGX_vaA1iOpzk6BzNVgmLT6aXCxAbKkj3ccOXxYSoNzg">
     </div>
     <div class="absolute inset-0 bg-gradient-to-tr from-primary via-primary/60 to-transparent"></div>
     <div class="relative z-10 max-w-4xl">
@@ -60,7 +62,7 @@
     <!-- Project 1: Featured Large -->
     <article class="grid grid-cols-1 lg:grid-cols-12 gap-0 bg-surface-container-lowest group">
         <div class="lg:col-span-8 relative aspect-[16/9] overflow-hidden">
-            <img alt="Brutalist concrete museum exterior with sharp angles and dramatic shadows during sunset" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Brutalist concrete museum exterior with sharp angles and dramatic shadows during sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoW9RecPHqf5emAHToWrTm8VnD5wvy-qYTcKT_xUpzwC64MDS3gy1nkuW6nRUc4q0c0c3Fa51iyw7JllcMsWXJUvMcdZ4mhQTkNQH4boKU8hhMLrThGK82LD8cAtBsbK1WsX0ZZl6yZTJEsIDD6zzzi9JhS4Kj85Dz7og1kSRIB79zG9uJyrxZsnYgHdd55_p8lwlBYTZHvi9AyAWUNYIJGHklp9wQ_Z8Exsxnf5Fx5kcy94FiVBsQgd4UEe9WUgs_C5vqcamLSq4"/>
+            <img alt="Brutalist concrete museum exterior with sharp angles and dramatic shadows during sunset" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Brutalist concrete museum exterior with sharp angles and dramatic shadows during sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoW9RecPHqf5emAHToWrTm8VnD5wvy-qYTcKT_xUpzwC64MDS3gy1nkuW6nRUc4q0c0c3Fa51iyw7JllcMsWXJUvMcdZ4mhQTkNQH4boKU8hhMLrThGK82LD8cAtBsbK1WsX0ZZl6yZTJEsIDD6zzzi9JhS4Kj85Dz7og1kSRIB79zG9uJyrxZsnYgHdd55_p8lwlBYTZHvi9AyAWUNYIJGHklp9wQ_Z8Exsxnf5Fx5kcy94FiVBsQgd4UEe9WUgs_C5vqcamLSq4">
             <div class="absolute top-8 left-8">
                 <span class="bg-secondary-container text-on-secondary-container px-4 py-1 font-label text-[0.6875rem] font-bold uppercase tracking-[0.1em]">Commercial</span>
             </div>
@@ -96,7 +98,7 @@
         <!-- Project 2 -->
         <article class="bg-surface-container-low flex flex-col">
             <div class="relative aspect-square overflow-hidden">
-                <img alt="Sleek glass and steel corporate skyscraper reflecting the morning sky" class="w-full h-full object-cover" data-alt="Sleek glass and steel corporate skyscraper reflecting the morning sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy0tyy1_Fm4Jh2GkzGRf6ofm2w9kNLpDF1nkiGgQnCnoV8ub6zI1FgZ7BUbECfgnwy9RExml_t9iDu-9etLQYDio1jhvcyFiJH_04SkZtvpIGdI4TA91OF4KK2JsG_7qf9ATrFfwqalMKVwyXv3BFC9xCtIkYOoey9uzSZ_FvACiHdR4AGZzoLZ1FBYrBTaoiAXsDpMfdOeZ9ZwhZnoPvqq3MenZ17u7i6o9I8R8DMwYOZLs597PgVpyKTHLCGOdR2ErjTUZoq-Rk"/>
+                <img alt="Sleek glass and steel corporate skyscraper reflecting the morning sky" class="w-full h-full object-cover" data-alt="Sleek glass and steel corporate skyscraper reflecting the morning sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy0tyy1_Fm4Jh2GkzGRf6ofm2w9kNLpDF1nkiGgQnCnoV8ub6zI1FgZ7BUbECfgnwy9RExml_t9iDu-9etLQYDio1jhvcyFiJH_04SkZtvpIGdI4TA91OF4KK2JsG_7qf9ATrFfwqalMKVwyXv3BFC9xCtIkYOoey9uzSZ_FvACiHdR4AGZzoLZ1FBYrBTaoiAXsDpMfdOeZ9ZwhZnoPvqq3MenZ17u7i6o9I8R8DMwYOZLs597PgVpyKTHLCGOdR2ErjTUZoq-Rk">
                 <div class="absolute inset-0 bg-primary/20 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
                     <span class="bg-surface px-8 py-3 font-label text-[0.6875rem] font-bold uppercase tracking-[0.1em]">Explorer L'Étude De Cas</span>
                 </div>
@@ -125,11 +127,11 @@
         <article class="bg-surface-container-low flex flex-col">
             <div class="relative aspect-square grid grid-cols-2 gap-1 bg-primary">
                 <div class="relative overflow-hidden group/before">
-                    <img alt="Dilapidated brick warehouse with broken windows and overgrown weeds" class="w-full h-full object-cover grayscale opacity-60" data-alt="Dilapidated brick warehouse with broken windows and overgrown weeds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg4q1MeavZHcSxnz2I6s_e4XTCTk2Fq0j9VcB-Y-45Snoxqit0hGwLKeXsK9i1T9pNQ0mYxgh-kAeR6W8-4ZhyGP0_fW0sEYvbj17EsdAG0NOw3oOiUcvoS6eTBCFB30N0VCg6apb62GlFWdIJySb5Oc1EIzdVJr6U8_zhfMdKLT7wkk8ckBQT7tVd-lG8H1IceJa-6Z4GJb0taa-sAovlEStNZMUmBmML38h3Yg3Rcj9tY3AkLqGwfYjezrDoqEouhd_tfMY330s"/>
+                    <img alt="Dilapidated brick warehouse with broken windows and overgrown weeds" class="w-full h-full object-cover grayscale opacity-60" data-alt="Dilapidated brick warehouse with broken windows and overgrown weeds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg4q1MeavZHcSxnz2I6s_e4XTCTk2Fq0j9VcB-Y-45Snoxqit0hGwLKeXsK9i1T9pNQ0mYxgh-kAeR6W8-4ZhyGP0_fW0sEYvbj17EsdAG0NOw3oOiUcvoS6eTBCFB30N0VCg6apb62GlFWdIJySb5Oc1EIzdVJr6U8_zhfMdKLT7wkk8ckBQT7tVd-lG8H1IceJa-6Z4GJb0taa-sAovlEStNZMUmBmML38h3Yg3Rcj9tY3AkLqGwfYjezrDoqEouhd_tfMY330s">
                     <div class="absolute bottom-4 left-4 bg-primary text-on-primary px-2 py-1 text-[0.5rem] font-bold uppercase tracking-widest">AVANT</div>
                 </div>
                 <div class="relative overflow-hidden group/after">
-                    <img alt="Modern luxury residential complex with clean lines, wood accents and large windows" class="w-full h-full object-cover" data-alt="Modern luxury residential complex with clean lines, wood accents and large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1DjNXiQiMHNZND37UsgaB4v9WB3QVkT1ylb-KFBLGHdflkeHG5ZXwJ8VUj7v1pO_-AJFgt40CmTgjWyEFB3eTNc-2_KR6lA1n9f3CGpZ177X8h8iNSGgGw5vaPsu_ZlRyFhY4qCTkKjQJgMTGSSgYjOblihSsKyLbKIxFx-Ff0-kvvexVevwKihiEQbu3D8nAvh3TBatNDXo9mDLMzDqTliBtL9tUPAoGFqQ_2aBLPzDMZUCew3ow3tWsMHrrNvwXl7jXoTZ-nig"/>
+                    <img alt="Modern luxury residential complex with clean lines, wood accents and large windows" class="w-full h-full object-cover" data-alt="Modern luxury residential complex with clean lines, wood accents and large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1DjNXiQiMHNZND37UsgaB4v9WB3QVkT1ylb-KFBLGHdflkeHG5ZXwJ8VUj7v1pO_-AJFgt40CmTgjWyEFB3eTNc-2_KR6lA1n9f3CGpZ177X8h8iNSGgGw5vaPsu_ZlRyFhY4qCTkKjQJgMTGSSgYjOblihSsKyLbKIxFx-Ff0-kvvexVevwKihiEQbu3D8nAvh3TBatNDXo9mDLMzDqTliBtL9tUPAoGFqQ_2aBLPzDMZUCew3ow3tWsMHrrNvwXl7jXoTZ-nig">
                     <div class="absolute bottom-4 left-4 bg-secondary-container text-on-secondary-container px-2 py-1 text-[0.5rem] font-bold uppercase tracking-widest">APRÈS</div>
                 </div>
             </div>
@@ -144,11 +146,11 @@
     <!-- Project 4: Full-width Industrial -->
     <article class="bg-primary text-on-primary flex flex-col lg:flex-row-reverse">
         <div class="lg:w-1/2 aspect-video lg:aspect-auto">
-            <img alt="Detailed shot of industrial piping and steel structures in a modern processing plant" class="w-full h-full object-cover opacity-80" data-alt="Detailed shot of industrial piping and steel structures in a modern processing plant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_bGP6VhEbH65lbDXvMZoyYeVPMRiQJBzfaX1itPV5xJSpyGuQmmfRkrV_08yY7c9OdZYr4y75xtQ_yQ9PrKoAQtyy5IkCxkJ_GD9lARBYgPAID6vwMDqRZpesbqqAMRkVUmMKsJyRsSv-M1icc1XOQyvAYi6SJDct3sY3A4XVCGTRB-UD1C0mnVLIrJTTozB6q397NfzZtXpKfdYBe81o47we0puv-MzDtel6qv3Bi1J5jNHQJc5mJNqcyCvHbXLJhza4HqEL-_c"/>
+            <img alt="Detailed shot of industrial piping and steel structures in a modern processing plant" class="w-full h-full object-cover opacity-80" data-alt="Detailed shot of industrial piping and steel structures in a modern processing plant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_bGP6VhEbH65lbDXvMZoyYeVPMRiQJBzfaX1itPV5xJSpyGuQmmfRkrV_08yY7c9OdZYr4y75xtQ_yQ9PrKoAQtyy5IkCxkJ_GD9lARBYgPAID6vwMDqRZpesbqqAMRkVUmMKsJyRsSv-M1icc1XOQyvAYi6SJDct3sY3A4XVCGTRB-UD1C0mnVLIrJTTozB6q397NfzZtXpKfdYBe81o47we0puv-MzDtel6qv3Bi1J5jNHQJc5mJNqcyCvHbXLJhza4HqEL-_c">
         </div>
         <div class="lg:w-1/2 p-16 flex flex-col justify-center">
             <span class="font-label text-[0.6875rem] uppercase tracking-[0.2em] text-secondary-container mb-6">FIABILITÉ À GRANDE ÉCHELLE</span>
-            <h2 class="font-headline text-4xl font-black tracking-tighter uppercase mb-8 leading-none">Extension du Pôle<br/>Pétro-Chimique</h2>
+            <h2 class="font-headline text-4xl font-black tracking-tighter uppercase mb-8 leading-none">Extension du Pôle<br>Pétro-Chimique</h2>
             <div class="space-y-8">
                 <div class="flex gap-6 items-start">
                     <span class="material-symbols-outlined text-secondary-container">engineering</span>
@@ -215,5 +217,43 @@
         <p class="text-slate-500 dark:text-slate-400">© 2024 STRUCTUR ARCHITECTURE BTP. TOUS DROITS RÉSERVÉS.</p>
     </div>
 </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">À propos</a>
+        <a href="services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Services</a>
+        <a href="portfolio.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Réalisations</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html class="scroll-smooth" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="scroll-smooth" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Contact | L'Élite Événementielle</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
     <!-- Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed antialiased">
 
@@ -36,14 +34,18 @@
                 Demander un Devis
             </button>
         </div>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main class="pt-40">
         <!-- Header -->
         <header class="max-w-7xl mx-auto px-8 mb-32">
             <div class="max-w-3xl">
                 <span class="font-label text-[10px] tracking-[0.4em] font-black text-primary mb-8 block uppercase">Dialogue Stratégique</span>
-                <h1 class="display-lg font-extrabold text-primary mb-10 tracking-tighter">Planifiez votre <br/><span class="text-slate-400">Prochain Jalon.</span></h1>
+                <h1 class="display-lg font-extrabold text-primary mb-10 tracking-tighter">Planifiez votre <br><span class="text-slate-400">Prochain Jalon.</span></h1>
                 <p class="text-xl font-light text-on-surface-variant leading-relaxed opacity-80">
                     Chaque grand événement commence par une consultation structurée. Discutons de vos enjeux et architecturons ensemble votre réussite.
                 </p>
@@ -58,17 +60,17 @@
                     <div class="grid md:grid-cols-2 gap-10">
                         <div class="space-y-2">
                             <label class="font-label text-xs uppercase tracking-widest text-slate-400 font-bold">Nom Complet</label>
-                            <input class="input-elite" placeholder="Prénom & Nom" type="text"/>
+                            <input class="input-elite" placeholder="Prénom &amp; Nom" type="text">
                         </div>
                         <div class="space-y-2">
                             <label class="font-label text-xs uppercase tracking-widest text-slate-400 font-bold">Société / Institution</label>
-                            <input class="input-elite" placeholder="Votre organisation" type="text"/>
+                            <input class="input-elite" placeholder="Votre organisation" type="text">
                         </div>
                     </div>
                     <div class="grid md:grid-cols-2 gap-10">
                         <div class="space-y-2">
                             <label class="font-label text-xs uppercase tracking-widest text-slate-400 font-bold">Email Professionnel</label>
-                            <input class="input-elite" placeholder="email@votre-societe.com" type="email"/>
+                            <input class="input-elite" placeholder="email@votre-societe.com" type="email">
                         </div>
                         <div class="space-y-2">
                             <label class="font-label text-xs uppercase tracking-widest text-slate-400 font-bold">Nature de l'Événement</label>
@@ -102,14 +104,14 @@
                                 <span class="material-symbols-outlined text-primary text-3xl">corporate_fare</span>
                                 <div>
                                     <p class="font-headline font-bold text-xs uppercase text-primary mb-2">Quartier Général</p>
-                                    <p class="text-on-surface-variant leading-relaxed">Zone Résidentielle Novotel, Villa Elite<br/>Haie Vive, Cotonou</p>
+                                    <p class="text-on-surface-variant leading-relaxed">Zone Résidentielle Novotel, Villa Elite<br>Haie Vive, Cotonou</p>
                                 </div>
                             </div>
                             <div class="flex gap-8">
                                 <span class="material-symbols-outlined text-primary text-3xl">smart_display</span>
                                 <div>
                                     <p class="font-headline font-bold text-xs uppercase text-primary mb-2">Pôle Broadcast</p>
-                                    <p class="text-on-surface-variant leading-relaxed">Studio "Atrium" - Centre d'Affaires<br/>Boulevard de la Marina</p>
+                                    <p class="text-on-surface-variant leading-relaxed">Studio "Atrium" - Centre d'Affaires<br>Boulevard de la Marina</p>
                                 </div>
                             </div>
                             <div class="flex gap-8">
@@ -125,7 +127,7 @@
 
                 <!-- Visual Element: Map-like texture or brand image -->
                 <div class="relative aspect-video rounded-3xl overflow-hidden shadow-ambient group">
-                    <img class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:scale-110 group-hover:grayscale-0" data-alt="Siège social moderne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzjdQTXQsbnlGkp85Urjy-Tg_YTPdkqXphAePuJQf0Yi2Zrak0DQXoRo7X4qmaBHeBKFoDAHYiGotUsQkh2ccODdzidCc3Dc4bWdHBlEaiD2pF24vbUXQbT_q5Fm7L5XLqnDcWVbVgXuM1Am2smJGu32qoNRkBgMQgmg2s75dXQYdQ3-JIG9NPLkQ3_iEBPluaroS985uNR3hKsgFX04kU6gGPbU3TyvYxmtdIyL9_T1FoSkCrCH2k0U5xFfmqOqgiZchG_Iq_o4wF"/>
+                    <img class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:scale-110 group-hover:grayscale-0" data-alt="Siège social moderne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzjdQTXQsbnlGkp85Urjy-Tg_YTPdkqXphAePuJQf0Yi2Zrak0DQXoRo7X4qmaBHeBKFoDAHYiGotUsQkh2ccODdzidCc3Dc4bWdHBlEaiD2pF24vbUXQbT_q5Fm7L5XLqnDcWVbVgXuM1Am2smJGu32qoNRkBgMQgmg2s75dXQYdQ3-JIG9NPLkQ3_iEBPluaroS985uNR3hKsgFX04kU6gGPbU3TyvYxmtdIyL9_T1FoSkCrCH2k0U5xFfmqOqgiZchG_Iq_o4wF">
                     <div class="absolute inset-x-8 bottom-8 p-6 bg-primary/95 text-white rounded-xl backdrop-blur-md translate-y-6 group-hover:translate-y-0 transition-transform">
                         <p class="text-xs font-bold uppercase tracking-widest">Disponibilité : 24/7 pour missions en cours.</p>
                     </div>
@@ -164,5 +166,43 @@
             © 2026 L'ÉLITE ÉVÉNEMENTIELLE.
         </div>
     </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="a-propos.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Philosophie</a>
+        <a href="services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Expertise</a>
+        <a href="portfolio.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Engagement</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

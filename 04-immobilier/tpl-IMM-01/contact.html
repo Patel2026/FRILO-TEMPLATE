@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html><html lang="fr" class="scroll-smooth"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactez-nous | FRILO Prestige</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-surface text-slate-800 antialiased selection:bg-accent selection:text-white flex flex-col min-h-screen">
 
@@ -50,7 +48,11 @@
                 <span class="material-symbols-outlined text-3xl">menu</span>
             </button>
         </div>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main class="flex-grow">
         
@@ -108,7 +110,7 @@
                     <!-- Tabs Fictive (Sert à styliser l'interface) -->
                     <div class="flex gap-2 mb-8 border-b border-white/20 pb-4">
                         <label class="cursor-pointer group flex items-center gap-2">
-                            <input type="radio" name="sujet" class="text-accent focus:ring-accent" checked>
+                            <input type="radio" name="sujet" class="text-accent focus:ring-accent" checked="">
                             <span class="text-sm font-bold tracking-widest uppercase">Je Vends (Estimation)</span>
                         </label>
                         <label class="cursor-pointer group flex items-center gap-2 ml-4">
@@ -161,8 +163,45 @@
     <footer class="bg-primary-dark py-8 text-white/70 text-sm border-t-4 border-accent text-center">
         <div class="max-w-7xl mx-auto px-6">
             <span class="font-display font-bold text-xl text-white tracking-tight leading-none mb-4 block">FRILO<span class="text-accent">.</span> Prestige Immobilier</span>
-            <p class="text-xs font-light">&copy; 2026 FRILO Immobilier Afrique. Tous droits réservés.</p>
+            <p class="text-xs font-light">© 2026 FRILO Immobilier Afrique. Tous droits réservés.</p>
         </div>
     </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">L'Agence</a>
+        <a href="properties.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Nos Biens</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

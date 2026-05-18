@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html class="light" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="light" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Philosophie | The FRILO Culinary</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet">
     <!-- Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
     <style>
         .editorial-shadow {
             box-shadow: 0 32px 64px -12px rgba(27, 28, 26, 0.04);
@@ -36,7 +34,11 @@
                 Demander un devis
             </a>
         </div>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main class="pt-32 pb-24">
         <!-- Hero Section -->
@@ -53,7 +55,7 @@
                 </div>
                 <div class="lg:col-span-5 relative">
                     <div class="aspect-[4/5] overflow-hidden rounded-xl editorial-shadow">
-                        <img class="w-full h-full object-cover" data-alt="Chef préparant un plat avec précision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCallKx767V_LMj-_z_XR3xM8-BG3Xy1p96Y8uIFjK9JDrM_8VMFeozIr2R020iMoGdpYXxtNskL_Zvecbpl56ZRs8AsOl5ztD5vN2TVG0223XkPEnv5U3F3CrPZT1WX5IrZ9mMIUHz3iEeImI7pzWChg0q-bvJwDvMaET7L-lbqcgVV64oDs-USvixGIGVmGSde6bc6rmqQeau23T74E_dEt65KoJFdfAVznSfiHU3au46aouhvBI2_Mt5kmywVzsSHPygNPkN1R-M"/>
+                        <img class="w-full h-full object-cover" data-alt="Chef préparant un plat avec précision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCallKx767V_LMj-_z_XR3xM8-BG3Xy1p96Y8uIFjK9JDrM_8VMFeozIr2R020iMoGdpYXxtNskL_Zvecbpl56ZRs8AsOl5ztD5vN2TVG0223XkPEnv5U3F3CrPZT1WX5IrZ9mMIUHz3iEeImI7pzWChg0q-bvJwDvMaET7L-lbqcgVV64oDs-USvixGIGVmGSde6bc6rmqQeau23T74E_dEt65KoJFdfAVznSfiHU3au46aouhvBI2_Mt5kmywVzsSHPygNPkN1R-M">
                     </div>
                     <div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-lg shadow-xl max-w-xs hidden lg:block">
                         <p class="font-headline text-lg italic text-primary">"L'âme d'un plat réside dans le silence de la création."</p>
@@ -69,12 +71,12 @@
                     <div class="relative order-2 lg:order-1">
                         <div class="grid grid-cols-2 gap-4">
                             <div class="space-y-4">
-                                <img class="rounded-xl w-full aspect-square object-cover" data-alt="Cuisine moderne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcaDQOcPwt8j1UyRP_kxAhcFl-2Ja26aOFuf-X6dXb-Qyvp0bPn-4OQHvf_z6d0bujVbNj0B7vWSq1d6yaeVc31yQLO7xtLBH5ZcrGsV64X18lUAzkBjVH7HD8RepXuhr_nvc9SCnZIng1sTZKj7T4PB00DTut5x4lLtbUax05YY9kr1zbc87lkA07FqxWR3nPvxrNii57yTXAAqAiFT6jxmBSNIdZFHenqe1Cb7pmKtAW1Htgw-OtNsCMz_Ka9f-YoslfLxOpj3-k"/>
-                                <img class="rounded-xl w-full aspect-[3/4] object-cover" data-alt="Entrée raffinée" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW9iMV-JUmk3B-Igi3FFjlXqdyueWp469WQXtEueQZdqG3OZJTyqZxV3NdFp01bxzpt1hNQentXovEIXt_Imy-jAKRO4KuXOxfTixuw0LNo6t8SF2wbVEpiXSfr3pP-WVrD94Jt6cA6PX6B2NN9GYrBji27QAukBLk2YRx4yvPNkVJpoMKfUkZFhPJb4rG5X101ZFrgsI-S9CfZK9JFhG7gz-C0qt03wOyI4UcXMXbuaZGkIWW_NhnApM33pox_5yl7_4_qrAW4NEe"/>
+                                <img class="rounded-xl w-full aspect-square object-cover" data-alt="Cuisine moderne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcaDQOcPwt8j1UyRP_kxAhcFl-2Ja26aOFuf-X6dXb-Qyvp0bPn-4OQHvf_z6d0bujVbNj0B7vWSq1d6yaeVc31yQLO7xtLBH5ZcrGsV64X18lUAzkBjVH7HD8RepXuhr_nvc9SCnZIng1sTZKj7T4PB00DTut5x4lLtbUax05YY9kr1zbc87lkA07FqxWR3nPvxrNii57yTXAAqAiFT6jxmBSNIdZFHenqe1Cb7pmKtAW1Htgw-OtNsCMz_Ka9f-YoslfLxOpj3-k">
+                                <img class="rounded-xl w-full aspect-[3/4] object-cover" data-alt="Entrée raffinée" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW9iMV-JUmk3B-Igi3FFjlXqdyueWp469WQXtEueQZdqG3OZJTyqZxV3NdFp01bxzpt1hNQentXovEIXt_Imy-jAKRO4KuXOxfTixuw0LNo6t8SF2wbVEpiXSfr3pP-WVrD94Jt6cA6PX6B2NN9GYrBji27QAukBLk2YRx4yvPNkVJpoMKfUkZFhPJb4rG5X101ZFrgsI-S9CfZK9JFhG7gz-C0qt03wOyI4UcXMXbuaZGkIWW_NhnApM33pox_5yl7_4_qrAW4NEe">
                             </div>
                             <div class="pt-12 space-y-4">
-                                <img class="rounded-xl w-full aspect-[3/4] object-cover" data-alt="Décoration de gala" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqBRius0IpxNFLx8W0U25JI3GnF0ebgN03S6CBp7jXIr-xpb-jZ6I39ijqOwcYJqtZvRAfEvcUzLeWAdbRR53ZEqKiQoqq9AnrkSF0UY9G2JoDTL6e2-qIOJtsZ1aQwZsAhabejH6M3bwHw4Cg1_0DmBR4VqscZi11Vs3mv2c1YshL1YNOONsdLL6f97tTJueRTlws0qmn1sT_tPVo4JBBaNfRmy05nRC9KL7kDhgsP9SvfpWzx27ty4ianINIHOWI8qMe2XRtq0WD"/>
-                                <img class="rounded-xl w-full aspect-square object-cover" data-alt="Personnel en formation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArjsYO4NqJpVnxOHN_UGAV4jCOW47D1taL6uNi_bmcTnWYpfb4OWLpeuPl9UqCMzgmvIVte5yjVMZkfEiMh7qArpURYNNvTsRHoppv-e7Q_cuPfkBvVAo3fGBsIP2oSN5_A-y4gvT2fO3OkWxl0CASqdb8W6I-flH7w27C035Ho6jK--04_g-TLDDBPj42g-aygvl8CZrVEltVDc_7OC5-V9NPr_pxTe8fzZGtEAYXILOQ3XthYiJ4GQOFUYmaQ1xuUoyQssWvQUXO"/>
+                                <img class="rounded-xl w-full aspect-[3/4] object-cover" data-alt="Décoration de gala" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqBRius0IpxNFLx8W0U25JI3GnF0ebgN03S6CBp7jXIr-xpb-jZ6I39ijqOwcYJqtZvRAfEvcUzLeWAdbRR53ZEqKiQoqq9AnrkSF0UY9G2JoDTL6e2-qIOJtsZ1aQwZsAhabejH6M3bwHw4Cg1_0DmBR4VqscZi11Vs3mv2c1YshL1YNOONsdLL6f97tTJueRTlws0qmn1sT_tPVo4JBBaNfRmy05nRC9KL7kDhgsP9SvfpWzx27ty4ianINIHOWI8qMe2XRtq0WD">
+                                <img class="rounded-xl w-full aspect-square object-cover" data-alt="Personnel en formation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArjsYO4NqJpVnxOHN_UGAV4jCOW47D1taL6uNi_bmcTnWYpfb4OWLpeuPl9UqCMzgmvIVte5yjVMZkfEiMh7qArpURYNNvTsRHoppv-e7Q_cuPfkBvVAo3fGBsIP2oSN5_A-y4gvT2fO3OkWxl0CASqdb8W6I-flH7w27C035Ho6jK--04_g-TLDDBPj42g-aygvl8CZrVEltVDc_7OC5-V9NPr_pxTe8fzZGtEAYXILOQ3XthYiJ4GQOFUYmaQ1xuUoyQssWvQUXO">
                             </div>
                         </div>
                     </div>
@@ -108,7 +110,7 @@
                 <!-- Lead Chef -->
                 <div class="group bg-surface-container-lowest p-6 rounded-xl transition-all hover:bg-surface-container">
                     <div class="overflow-hidden rounded-lg mb-8 aspect-[3/4]">
-                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Chef Julian" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdIKD3pDsg9FwK8Dws5GLLI8nLQvsD3M6bpxJ5fQJeDzJ4SmsUl3VO3I8atcHJJGGkL-51t-AHbqJXKU8PdviOrW96TtqylB2hM2HX-nwSnCs8aVqQDUgyqt9J9XguOonaskcYU9b__PgxuK8xbnQRosf3TEb4L8kJjgpgjkkuRRnorLDawppl2hZVJBsWbfP4v4g7uVL6hxfw7vEzm2aXQrkgwDc34uuPPCYLrHpzp68dHB_x_jbnnJgEPzNcCSmZ7hWtEGST5zgV"/>
+                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Chef Julian" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdIKD3pDsg9FwK8Dws5GLLI8nLQvsD3M6bpxJ5fQJeDzJ4SmsUl3VO3I8atcHJJGGkL-51t-AHbqJXKU8PdviOrW96TtqylB2hM2HX-nwSnCs8aVqQDUgyqt9J9XguOonaskcYU9b__PgxuK8xbnQRosf3TEb4L8kJjgpgjkkuRRnorLDawppl2hZVJBsWbfP4v4g7uVL6hxfw7vEzm2aXQrkgwDc34uuPPCYLrHpzp68dHB_x_jbnnJgEPzNcCSmZ7hWtEGST5zgV">
                     </div>
                     <h3 class="font-headline text-2xl text-on-surface mb-2">Julian Vane</h3>
                     <p class="font-label text-xs uppercase tracking-widest text-secondary mb-4">Chef Exécutif</p>
@@ -119,7 +121,7 @@
                 <!-- Designer -->
                 <div class="group bg-surface-container-lowest p-6 rounded-xl transition-all hover:bg-surface-container">
                     <div class="overflow-hidden rounded-lg mb-8 aspect-[3/4]">
-                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Elena Rossi" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhXTOw0FESLAjdJ_Ik3GoP3LZYpbhpCXYFWbHlMiOMHMV4kquxSbvHhLqw2iNbu5ggFN58TazadqojmprD08Fd18iqol8Lvt4R2svTSzr9Z6C4X14o_MFHjASzDhSQlDcvQPF9CFrT3J7M3XUlbJ8g7dSFlLJkszRzx81BBZqoASoMVflnkGuNZC_pNvHMWAU__ZLDQzRAGb5aD_CrIe_lm7TdWwDjBNnxovSoZwThPARAQwObReWrDlh2FM5SGvlGW5SAXjKE47AZ"/>
+                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Elena Rossi" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhXTOw0FESLAjdJ_Ik3GoP3LZYpbhpCXYFWbHlMiOMHMV4kquxSbvHhLqw2iNbu5ggFN58TazadqojmprD08Fd18iqol8Lvt4R2svTSzr9Z6C4X14o_MFHjASzDhSQlDcvQPF9CFrT3J7M3XUlbJ8g7dSFlLJkszRzx81BBZqoASoMVflnkGuNZC_pNvHMWAU__ZLDQzRAGb5aD_CrIe_lm7TdWwDjBNnxovSoZwThPARAQwObReWrDlh2FM5SGvlGW5SAXjKE47AZ">
                     </div>
                     <h3 class="font-headline text-2xl text-on-surface mb-2">Elena Rossi</h3>
                     <p class="font-label text-xs uppercase tracking-widest text-secondary mb-4">Designer d'Événements</p>
@@ -130,7 +132,7 @@
                 <!-- Sommelier -->
                 <div class="group bg-surface-container-lowest p-6 rounded-xl transition-all hover:bg-surface-container">
                     <div class="overflow-hidden rounded-lg mb-8 aspect-[3/4]">
-                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Marcus Thorne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjQAO20R2Dj3SlQfUfAs73sJZEBtVqqf_qfaSZN2T9jbqjn7Hup11zddVpIBaNAr_sv06U2HovvrI8v44kzQ-OlTY3EythcXQ6ceEUitGu2FbDMilErI2QTHgItKUkR8Oq9258P8QmmaCTZHqg8Bvp6m3lY1M6gfGVmYxFtWOgNQqlvvVItQg6gXUWaU8XctXhqb069rmEdsW7M1yhxM9iRk4iFZEiXgAOEM1-3Uqa7u7RvQQMxxf7MmMvj5uDvkqJoGLp_nGmbM_z"/>
+                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Marcus Thorne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjQAO20R2Dj3SlQfUfAs73sJZEBtVqqf_qfaSZN2T9jbqjn7Hup11zddVpIBaNAr_sv06U2HovvrI8v44kzQ-OlTY3EythcXQ6ceEUitGu2FbDMilErI2QTHgItKUkR8Oq9258P8QmmaCTZHqg8Bvp6m3lY1M6gfGVmYxFtWOgNQqlvvVItQg6gXUWaU8XctXhqb069rmEdsW7M1yhxM9iRk4iFZEiXgAOEM1-3Uqa7u7RvQQMxxf7MmMvj5uDvkqJoGLp_nGmbM_z">
                     </div>
                     <h3 class="font-headline text-2xl text-on-surface mb-2">Marcus Thorne</h3>
                     <p class="font-label text-xs uppercase tracking-widest text-secondary mb-4">Maître Sommelier</p>
@@ -195,5 +197,43 @@
             </p>
         </div>
     </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Philosophie</a>
+        <a href="services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Prestations</a>
+        <a href="gallery.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Portfolio</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

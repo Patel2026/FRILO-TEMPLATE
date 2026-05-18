@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Contact | STRUCTUR</title>
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="js/tailwind-config.js"></script>
 </head>
@@ -23,19 +21,23 @@
         <a href="contact.html" class="bg-secondary-container text-on-primary px-6 py-2 font-bold hover:translate-y-[-2px] transition-all duration-150 block">
             Demander un Devis
         </a>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 </header>
 
 <main>
 <!-- Hero Section: Brutalist Impact -->
 <section class="relative bg-primary-container py-24 md:py-32 px-6 md:px-12 overflow-hidden">
     <div class="absolute inset-0 opacity-20 pointer-events-none">
-        <img class="w-full h-full object-cover grayscale" data-alt="high-contrast architectural photography of raw concrete and steel beams with sharp geometric shadows and industrial textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiWKQVw-7U1Kx-9wIKB6cT-58a_t5ISoScUUUo9iFNhpCLxHm5YqLG9hqghpnWKtGevqhKRudzNSBuPrNvVMR83p8rZzak83jranraWQvBH60I7CskTbOZlzJUr2NAKT9V3O__f8TphY6amfiAK_PWneQ8ezR1KdKMTPVi08QuswRg0rX8cAz1CI7J_WIwhy4-C9f3R92x2N_8e4tSxleZ3wpT49CSoO1y7SuJkocFgTYQhNqYEuHJGv8xZyx-LtxszkOmJ7ro2uM"/>
+        <img class="w-full h-full object-cover grayscale" data-alt="high-contrast architectural photography of raw concrete and steel beams with sharp geometric shadows and industrial textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiWKQVw-7U1Kx-9wIKB6cT-58a_t5ISoScUUUo9iFNhpCLxHm5YqLG9hqghpnWKtGevqhKRudzNSBuPrNvVMR83p8rZzak83jranraWQvBH60I7CskTbOZlzJUr2NAKT9V3O__f8TphY6amfiAK_PWneQ8ezR1KdKMTPVi08QuswRg0rX8cAz1CI7J_WIwhy4-C9f3R92x2N_8e4tSxleZ3wpT49CSoO1y7SuJkocFgTYQhNqYEuHJGv8xZyx-LtxszkOmJ7ro2uM">
     </div>
     <div class="relative z-10 max-w-5xl">
         <p class="font-label text-[0.6875rem] uppercase tracking-[0.1em] text-secondary-fixed mb-4">Contacter Notre Équipe Technique</p>
         <h1 class="font-headline text-5xl md:text-7xl font-black text-on-primary tracking-tighter leading-none mb-8">
-            CONSTRUISONS <br/> <span class="text-secondary-container">L'AVENIR ENSEMBLE.</span>
+            CONSTRUISONS <br> <span class="text-secondary-container">L'AVENIR ENSEMBLE.</span>
         </h1>
         <p class="max-w-2xl text-primary-fixed text-lg leading-relaxed">
             Des cadres industriels complexes aux résidences minimalistes brutalistes, notre équipe d'ingénierie est prête à traduire vos plans en réalité.
@@ -53,7 +55,7 @@
                 <div>
                     <p class="font-label text-[0.6875rem] uppercase tracking-[0.1em] text-outline mb-2">Siège Principal</p>
                     <address class="not-italic text-xl font-medium leading-tight">
-                        1200 Industrial Plz, Ste 400<br/>
+                        1200 Industrial Plz, Ste 400<br>
                         Chicago, IL 60601
                     </address>
                 </div>
@@ -94,11 +96,11 @@
             <form class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
                 <div class="col-span-1">
                     <label class="font-label text-[0.6875rem] uppercase tracking-[0.1em] text-outline mb-1 block" for="name">Nom Complet</label>
-                    <input class="w-full bg-transparent border-b-2 border-outline focus:border-secondary focus:ring-0 px-0 py-2 outline-none transition-all placeholder:text-outline-variant" id="name" name="name" placeholder="Jean Dupont" type="text"/>
+                    <input class="w-full bg-transparent border-b-2 border-outline focus:border-secondary focus:ring-0 px-0 py-2 outline-none transition-all placeholder:text-outline-variant" id="name" name="name" placeholder="Jean Dupont" type="text">
                 </div>
                 <div class="col-span-1">
                     <label class="font-label text-[0.6875rem] uppercase tracking-[0.1em] text-outline mb-1 block" for="email">Email Professionnel</label>
-                    <input class="w-full bg-transparent border-b-2 border-outline focus:border-secondary focus:ring-0 px-0 py-2 outline-none transition-all placeholder:text-outline-variant" id="email" name="email" placeholder="j.dupont@entreprise.com" type="email"/>
+                    <input class="w-full bg-transparent border-b-2 border-outline focus:border-secondary focus:ring-0 px-0 py-2 outline-none transition-all placeholder:text-outline-variant" id="email" name="email" placeholder="j.dupont@entreprise.com" type="email">
                 </div>
                 <div class="col-span-2">
                     <label class="font-label text-[0.6875rem] uppercase tracking-[0.1em] text-outline mb-1 block" for="project_type">Type De Chantier</label>
@@ -110,7 +112,7 @@
                     </select>
                 </div>
                 <div class="col-span-2">
-                    <label class="font-label text-[0.6875rem] uppercase tracking-[0.1em] text-outline mb-1 block" for="message">Détails & Périmètre Du Projet</label>
+                    <label class="font-label text-[0.6875rem] uppercase tracking-[0.1em] text-outline mb-1 block" for="message">Détails &amp; Périmètre Du Projet</label>
                     <textarea class="w-full bg-transparent border-b-2 border-outline focus:border-secondary focus:ring-0 px-0 py-2 outline-none transition-all placeholder:text-outline-variant" id="message" name="message" placeholder="Décrivez l'emplacement, la surface et les principales exigences techniques..." rows="4"></textarea>
                 </div>
                 <div class="col-span-2 pt-6">
@@ -126,7 +128,7 @@
 <!-- Map Section -->
 <section class="w-full h-[500px] bg-surface-container-high relative">
     <div class="absolute inset-0 bg-slate-200">
-        <img class="w-full h-full object-cover" data-alt="dark-themed minimalist vector map of Chicago downtown area with bold street lines and custom map markers" data-location="Chicago" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1611hhGC3GisAMJbrqrwBLSIUlzMPcsagOITLjHV5233Q2DLdXkg0mYXq0O1XdYqYljmPY6lN4hpYj1G5Wm5MAYvYgDWIDljY6NLZWchcJOI4YMaQ60AGKPTwv53UippiL1ChBtAXC9mgCAu_zIMgTiuig3XS9TljiUeFF9D9PGObAq2N0B5XZJYtP59Ke0a7YQb_IX4kIEFYOQw5hkl6g-Q_UwtZqK5J8I2xSKvW67rSnAX5AskOSLaA0-_qcFnWueHAo-9wiK8"/>
+        <img class="w-full h-full object-cover" data-alt="dark-themed minimalist vector map of Chicago downtown area with bold street lines and custom map markers" data-location="Chicago" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1611hhGC3GisAMJbrqrwBLSIUlzMPcsagOITLjHV5233Q2DLdXkg0mYXq0O1XdYqYljmPY6lN4hpYj1G5Wm5MAYvYgDWIDljY6NLZWchcJOI4YMaQ60AGKPTwv53UippiL1ChBtAXC9mgCAu_zIMgTiuig3XS9TljiUeFF9D9PGObAq2N0B5XZJYtP59Ke0a7YQb_IX4kIEFYOQw5hkl6g-Q_UwtZqK5J8I2xSKvW67rSnAX5AskOSLaA0-_qcFnWueHAo-9wiK8">
         <!-- Floating Map Overlay -->
         <div class="absolute bottom-12 left-6 md:left-12 bg-primary p-8 text-on-primary max-w-sm hidden md:block">
             <p class="font-label text-[0.6875rem] uppercase tracking-[0.1em] mb-2 opacity-70">Siège De Projets</p>
@@ -181,11 +183,49 @@
     <div>
         <h4 class="font-bold text-slate-900 dark:text-slate-100 mb-6">Newsletter</h4>
         <div class="flex border-b-2 border-slate-300 dark:border-slate-700 pb-2">
-            <input class="bg-transparent border-none focus:ring-0 text-[0.6875rem] w-full p-0" placeholder="ADRESSE EMAIL" type="email"/>
+            <input class="bg-transparent border-none focus:ring-0 text-[0.6875rem] w-full p-0" placeholder="ADRESSE EMAIL" type="email">
             <button class="material-symbols-outlined text-slate-400">arrow_forward</button>
         </div>
         <p class="mt-8 text-slate-400 font-medium">© 2024 STRUCTUR ARCHITECTURE BTP. TOUS DROITS RÉSERVÉS.</p>
     </div>
 </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">À propos</a>
+        <a href="services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Services</a>
+        <a href="portfolio.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Réalisations</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html class="scroll-smooth" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="scroll-smooth" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Flora Skin | La beauté qui vient de la terre</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Caveat:wght@400;700&family=Be+Vietnam+Pro:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;family=Caveat:wght@400;700&amp;family=Be+Vietnam+Pro:wght@400;500&amp;display=swap" rel="stylesheet">
     <!-- Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-surface font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container antialiased">
 
@@ -31,7 +29,11 @@
                 Prendre RDV 🌿
             </button>
         </div>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main class="overflow-x-hidden">
         <!-- Hero Section -->
@@ -45,10 +47,10 @@
                 <div class="space-y-8">
                     <span class="inline-flex items-center gap-2 bg-primary/10 text-primary-fixed font-medium px-4 py-1.5 rounded-full border border-primary/20">
                         <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">eco</span>
-                        🌿 100% Naturel & Certifié Bio
+                        🌿 100% Naturel &amp; Certifié Bio
                     </span>
                     <h1 class="font-headline text-5xl md:text-[76px] leading-[1.1] text-surface tracking-tight">
-                        La beauté qui vient <br/>de la terre.
+                        La beauté qui vient <br>de la terre.
                     </h1>
                     <p class="font-headline italic text-xl md:text-[22px] text-secondary-fixed max-w-md">
                         Des rituels botaniques infusés de conscience pour révéler l'éclat originel de votre peau.
@@ -76,7 +78,7 @@
 
                 <div class="relative flex justify-center lg:justify-end">
                     <div class="relative w-72 h-96 md:w-[450px] md:h-[600px] rounded-[160px] md:rounded-[200px] overflow-hidden rotate-[-3deg] shadow-2xl border-8 border-secondary-container/20">
-                        <img class="w-full h-full object-cover" data-alt="close-up portrait of woman with glowing dewy skin, soft warm lighting, botanical blurred background, editorial beauty style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJbdfR8zUn6FxBDG6HZqnNLNZSj5wkuOzcdBb4ysRNnA-VDemYKs5JSmOWeLnaUuTlQBX-Rp-uiwIUPFvldhLH4amxP1fQAsI7BL9zGZxRZyxdYo7M4uh6DUTcfCDEW5i6sBtPnmroLuNnmg1SXKmbpEUY1G06HHF9FXg5FRhWqXcz9PkbaHYim-E9slhx_fBi5xLEplDh9X-2PAjJzB45dl6c8FdWwuTyuFzBuJ5Pfv82SaQ0RvnpN7z63KNsqENQ7jPL5mJRmT8"/>
+                        <img class="w-full h-full object-cover" data-alt="close-up portrait of woman with glowing dewy skin, soft warm lighting, botanical blurred background, editorial beauty style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJbdfR8zUn6FxBDG6HZqnNLNZSj5wkuOzcdBb4ysRNnA-VDemYKs5JSmOWeLnaUuTlQBX-Rp-uiwIUPFvldhLH4amxP1fQAsI7BL9zGZxRZyxdYo7M4uh6DUTcfCDEW5i6sBtPnmroLuNnmg1SXKmbpEUY1G06HHF9FXg5FRhWqXcz9PkbaHYim-E9slhx_fBi5xLEplDh9X-2PAjJzB45dl6c8FdWwuTyuFzBuJ5Pfv82SaQ0RvnpN7z63KNsqENQ7jPL5mJRmT8">
                     </div>
                     <!-- Floating Ingredient Cards -->
                     <div class="absolute -left-8 top-1/4 bg-surface-bright/90 backdrop-blur p-4 rounded-2xl shadow-xl border border-secondary-container/30 flex items-center gap-3 animate-bounce shadow-primary/10" style="animation-duration: 4s;">
@@ -103,7 +105,7 @@
 
         <!-- Wave Divider 1 -->
         <div class="bg-surface">
-            <svg class="fill-secondary w-full" viewbox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+            <svg class="fill-secondary w-full" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
             </svg>
         </div>
@@ -137,7 +139,7 @@
 
         <!-- Wave Divider 2 -->
         <div class="bg-secondary-container/20">
-            <svg class="fill-surface w-full" viewbox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+            <svg class="fill-surface w-full" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0,32L60,42.7C120,53,240,75,360,74.7C480,75,600,53,720,48C840,43,960,53,1080,53.3C1200,53,1320,43,1380,37.3L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
             </svg>
         </div>
@@ -147,11 +149,11 @@
             <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                 <div class="grid grid-cols-2 gap-4 relative">
                     <div class="space-y-4 mt-8">
-                        <img class="rounded-[40px] w-full h-64 object-cover" data-alt="flat lay of organic botanical ingredients like lavender, dried flowers, and small glass vials on linen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2n_wNqQUgxzdvBx-PsW4-YPGowOC3CYC_TuJ0Kwlr60PdjKocz7_R7D98_Fta97yH23xIRfCLOTNsRuQEPdMP34UMYwr8R-PNCsA5jM8dRb8SP9zO7F4FIvxkC5rdmgVz9HiifQQdgcjLNZE8aIVoByAPvcRsjS4ZcFsMA-CyQ1cifqbpFScdsQnkztDtrplwB2RYLIE6H727N4UDjUGeXc1k4mH44fbX1CqgT4ZBF38vXyDhzFotxm0UJ8TarqHm0dH_NOHR7fs"/>
-                        <img class="rounded-[80px] w-full h-80 object-cover" data-alt="close up of a glass amber jar of skin cream on a minimalist wooden surface with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzFvoHQaGko9I9yc7WsO75eMCXIV1GJ8eMnsLVuGZYkAaYAQd2dbeuLVDYKeGRD0i4dQpt2ZRrWRF5QxBy0a5ZHJJ2OO0RjoHPZozgSGxoiigBXKGG4rLT8BVx9aloenHhp8uvGi-CayKb5jrMcvJF5ed9MnrTWKull-nJDTobCFoU7M4KragtPta0nxIjzRMa1hL1JVuJ-TXRHE5rgrGRlcsFtzWIBeupP6GpqPAQG7TADZgVmPv9stX2xza5HOAETcvN1mgbW8U"/>
+                        <img class="rounded-[40px] w-full h-64 object-cover" data-alt="flat lay of organic botanical ingredients like lavender, dried flowers, and small glass vials on linen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2n_wNqQUgxzdvBx-PsW4-YPGowOC3CYC_TuJ0Kwlr60PdjKocz7_R7D98_Fta97yH23xIRfCLOTNsRuQEPdMP34UMYwr8R-PNCsA5jM8dRb8SP9zO7F4FIvxkC5rdmgVz9HiifQQdgcjLNZE8aIVoByAPvcRsjS4ZcFsMA-CyQ1cifqbpFScdsQnkztDtrplwB2RYLIE6H727N4UDjUGeXc1k4mH44fbX1CqgT4ZBF38vXyDhzFotxm0UJ8TarqHm0dH_NOHR7fs">
+                        <img class="rounded-[80px] w-full h-80 object-cover" data-alt="close up of a glass amber jar of skin cream on a minimalist wooden surface with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzFvoHQaGko9I9yc7WsO75eMCXIV1GJ8eMnsLVuGZYkAaYAQd2dbeuLVDYKeGRD0i4dQpt2ZRrWRF5QxBy0a5ZHJJ2OO0RjoHPZozgSGxoiigBXKGG4rLT8BVx9aloenHhp8uvGi-CayKb5jrMcvJF5ed9MnrTWKull-nJDTobCFoU7M4KragtPta0nxIjzRMa1hL1JVuJ-TXRHE5rgrGRlcsFtzWIBeupP6GpqPAQG7TADZgVmPv9stX2xza5HOAETcvN1mgbW8U">
                     </div>
                     <div class="mt-20">
-                        <img class="rounded-[60px] w-full h-full object-cover" data-alt="delicate hands applying face oil to cheeks, soft warm glow, intimate atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUOsiglqCEhjKm1z2TuEWSmYpYgsuAr5PNvxakVsIyEVlz-nsMFGbMhfMNcIy5j-_fMRr1cKcZsNpgQEVgD_h4ezHe-0ThcWTHOGTiLRXeqBZmQIMwUXmIyrdjqRF5myr7zYCRQ3XLWJtVn6KhSDnZThmR0JyYXup3bU019gXft-25KIk_2J4nBwk5ybpeGlW3Xvy7h2ucTgBJrp6_eTuj8JjaAjtmyNwkeW2-wH67vIh76cYYGNbO010tLByQJNi90vIKXwHMLv4"/>
+                        <img class="rounded-[60px] w-full h-full object-cover" data-alt="delicate hands applying face oil to cheeks, soft warm glow, intimate atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUOsiglqCEhjKm1z2TuEWSmYpYgsuAr5PNvxakVsIyEVlz-nsMFGbMhfMNcIy5j-_fMRr1cKcZsNpgQEVgD_h4ezHe-0ThcWTHOGTiLRXeqBZmQIMwUXmIyrdjqRF5myr7zYCRQ3XLWJtVn6KhSDnZThmR0JyYXup3bU019gXft-25KIk_2J4nBwk5ybpeGlW3Xvy7h2ucTgBJrp6_eTuj8JjaAjtmyNwkeW2-wH67vIh76cYYGNbO010tLByQJNi90vIKXwHMLv4">
                     </div>
                 </div>
                 <div class="space-y-6">
@@ -180,7 +182,7 @@
 
         <!-- Wave Divider 3 -->
         <div class="bg-secondary">
-            <svg class="fill-secondary-container/20 w-full" viewbox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+            <svg class="fill-secondary-container/20 w-full" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0,96L120,85.3C240,75,480,53,720,58.7C960,64,1200,96,1320,112L1440,128L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
             </svg>
         </div>
@@ -196,7 +198,7 @@
                     <!-- Card 1 -->
                     <div class="bg-surface rounded-lg overflow-hidden flex flex-col group hover:-translate-y-2 transition-transform duration-500 shadow-2xl">
                         <div class="h-64 overflow-hidden relative">
-                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="close up of a facial treatment being performed, clay mask application, spa atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDux7dx9c-TfVwnRvJRv0T_aqMNb86OhiGXD0aDcqqxMy_eP0Levbq4mxkx7uHV7-8GdLP_A4WjtncZ-S5wkC4rd2G30eQ0DD_YAgtIsL75Ab8qENYhROak4mPzj6yfPzHpaPMRmlfgBAXXkqpapYP4_cYzWYCLMPR-1OHqhlv-tKYIyGYG1n2ZlvvcEoOcrXxnhdz1UUkSU2aZUEQMBdasgeavmCRvljS7_O7QR9hnZVgi2el3iNG3_ntD3nKV7nq8AWaFc46isUo"/>
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="close up of a facial treatment being performed, clay mask application, spa atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDux7dx9c-TfVwnRvJRv0T_aqMNb86OhiGXD0aDcqqxMy_eP0Levbq4mxkx7uHV7-8GdLP_A4WjtncZ-S5wkC4rd2G30eQ0DD_YAgtIsL75Ab8qENYhROak4mPzj6yfPzHpaPMRmlfgBAXXkqpapYP4_cYzWYCLMPR-1OHqhlv-tKYIyGYG1n2ZlvvcEoOcrXxnhdz1UUkSU2aZUEQMBdasgeavmCRvljS7_O7QR9hnZVgi2el3iNG3_ntD3nKV7nq8AWaFc46isUo">
                             <span class="absolute top-4 left-4 bg-secondary-container text-on-secondary-container text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Visage</span>
                         </div>
                         <div class="p-8 space-y-4 flex-grow">
@@ -211,7 +213,7 @@
                     <!-- Card 2 -->
                     <div class="bg-surface rounded-lg overflow-hidden flex flex-col group hover:-translate-y-2 transition-transform duration-500 shadow-2xl">
                         <div class="h-64 overflow-hidden relative">
-                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="massage therapy with essential oils on bare back, candlelit warm environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRbaSZlvxK_rMFcGIHDHDYNY4p66ShSVNm93OJzSoHWjRPI20NrohxYl5wsTEqW8YRgBuQhkm35eNhtaUn4WfalJnj3gh03yAjHQJUBMZ1tMzyiaFRsJ3LTcWCb6Dbd7d9_U8ka5P4B34OU_tFsQrKEaCe8gGBEwcsP62vDwdYil81yPStgWu8RFD8M76mFGAlwyFEXg43AN3QW61Zj3y_8d9USNcI3CtwZIzuAJduSRzbldJzVA9BGh4AaJ9aCeU8-aD14x2TElw"/>
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="massage therapy with essential oils on bare back, candlelit warm environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRbaSZlvxK_rMFcGIHDHDYNY4p66ShSVNm93OJzSoHWjRPI20NrohxYl5wsTEqW8YRgBuQhkm35eNhtaUn4WfalJnj3gh03yAjHQJUBMZ1tMzyiaFRsJ3LTcWCb6Dbd7d9_U8ka5P4B34OU_tFsQrKEaCe8gGBEwcsP62vDwdYil81yPStgWu8RFD8M76mFGAlwyFEXg43AN3QW61Zj3y_8d9USNcI3CtwZIzuAJduSRzbldJzVA9BGh4AaJ9aCeU8-aD14x2TElw">
                             <span class="absolute top-4 left-4 bg-secondary-container text-on-secondary-container text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Corps</span>
                         </div>
                         <div class="p-8 space-y-4 flex-grow">
@@ -226,7 +228,7 @@
                     <!-- Card 3 -->
                     <div class="bg-surface rounded-lg overflow-hidden flex flex-col group hover:-translate-y-2 transition-transform duration-500 shadow-2xl">
                         <div class="h-64 overflow-hidden relative">
-                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="close up of hands receiving a manicure treatment, floral petals in water bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWNtIGFQcMlU5PIaQAaGf5xsbnG4qDISNrhOvwfF9lTcMut6xhpVsz6xxo8vh5r7Ejw0kU2mrg3iyOm3R-uttfjrkdVnOIg44vYNpPsvg7zA-Mu589v1eyLeefL9RT7XJpZrzGSO5vw79bcyfk2fAWy_YppyL1bbD68VT0y2Mj7jmKW0XKIGNYodJlxBNqtzMkTLEF-_jQ-3LUxoY0jGf22Qi6rvVrG_Kof5QO5rLU7hTwyYAbQHtMJf3Z952qiXXaqSm00dL8mg4"/>
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="close up of hands receiving a manicure treatment, floral petals in water bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWNtIGFQcMlU5PIaQAaGf5xsbnG4qDISNrhOvwfF9lTcMut6xhpVsz6xxo8vh5r7Ejw0kU2mrg3iyOm3R-uttfjrkdVnOIg44vYNpPsvg7zA-Mu589v1eyLeefL9RT7XJpZrzGSO5vw79bcyfk2fAWy_YppyL1bbD68VT0y2Mj7jmKW0XKIGNYodJlxBNqtzMkTLEF-_jQ-3LUxoY0jGf22Qi6rvVrG_Kof5QO5rLU7hTwyYAbQHtMJf3Z952qiXXaqSm00dL8mg4">
                             <span class="absolute top-4 left-4 bg-secondary-container text-on-secondary-container text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Mains</span>
                         </div>
                         <div class="p-8 space-y-4 flex-grow">
@@ -241,7 +243,7 @@
                     <!-- Card 4 -->
                     <div class="bg-surface rounded-lg overflow-hidden flex flex-col group hover:-translate-y-2 transition-transform duration-500 shadow-2xl">
                         <div class="h-64 overflow-hidden relative">
-                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="calm environment with steam rising from a diffuser, soft towels and bamboo elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMB7qt63EFfXmcOIljlzi0wztgDh7J9XYkajEuMAOktNVVmNThbabR5-lenZNx4Qiclm0D-rKyM1HRuMIKX-J-mbm30DkN1kp6bqA49cRIi54xWnbUxAqEtgMnQulo-mvbFylQN72pFWB_qFM-ClEaF9NNdHLIET3ocBFyCSKLVXpPvQdOhegIHd33Fqrwvo4Q1YjrM6km-Y3OfC5sW-IZZAK2vglR-8q1XcPEEgUmsm8eCCFBsUtb_GElGsnNyYASGb3KlJI9rQ4"/>
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="calm environment with steam rising from a diffuser, soft towels and bamboo elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMB7qt63EFfXmcOIljlzi0wztgDh7J9XYkajEuMAOktNVVmNThbabR5-lenZNx4Qiclm0D-rKyM1HRuMIKX-J-mbm30DkN1kp6bqA49cRIi54xWnbUxAqEtgMnQulo-mvbFylQN72pFWB_qFM-ClEaF9NNdHLIET3ocBFyCSKLVXpPvQdOhegIHd33Fqrwvo4Q1YjrM6km-Y3OfC5sW-IZZAK2vglR-8q1XcPEEgUmsm8eCCFBsUtb_GElGsnNyYASGb3KlJI9rQ4">
                             <span class="absolute top-4 left-4 bg-secondary-container text-on-secondary-container text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Visage</span>
                         </div>
                         <div class="p-8 space-y-4 flex-grow">
@@ -364,5 +366,43 @@
             </div>
         </div>
     </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="a-propos.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Notre Histoire</a>
+        <a href="services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Soins</a>
+        <a href="#" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Journal</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html class="dark" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="dark" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Savoir-Faire | L'Ébène Haute Cuisine</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&amp;family=Manrope:wght@300;400;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
 
@@ -24,19 +22,23 @@
         <a href="reservation.html" class="bg-primary text-on-primary px-8 py-3 text-sm font-semibold tracking-[0.15em] uppercase hover:bg-primary-fixed-dim transition-all duration-500">
             Réserver une Table
         </a>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main class="pt-24">
         <!-- Hero Section: The Philosophy -->
         <section class="relative min-h-screen flex items-center justify-center overflow-hidden px-12">
             <div class="absolute inset-0 z-0">
-                <img class="w-full h-full object-cover opacity-40" data-alt="Gros plan cinématique d'un chef effectuant un dressage à la pince" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb2D7UgOwMJftolkOVOnWnQcyNHpq9G8ADlYzT_hL9WRv_6Ab2N82y0vP8n3cGDMfg9dJ3dbBrwMDK3fvUUqtKvOoAIWTFyGrXLGufv9HS1TtcCwJMt6-1ST_320t9TwMTbJL1GPut82mws4row4AwrlA2AH2mf31VpJS5eFjR2rJexT3FkDz2hVUXwW09cPrpqkoJ-dkRO7MGO89qaDib6GuIUetnfJiZqim_96Tg-CNcx2MiZQKP-4bkDJYUrchrD4GLmk6EO3Um"/>
+                <img class="w-full h-full object-cover opacity-40" data-alt="Gros plan cinématique d'un chef effectuant un dressage à la pince" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb2D7UgOwMJftolkOVOnWnQcyNHpq9G8ADlYzT_hL9WRv_6Ab2N82y0vP8n3cGDMfg9dJ3dbBrwMDK3fvUUqtKvOoAIWTFyGrXLGufv9HS1TtcCwJMt6-1ST_320t9TwMTbJL1GPut82mws4row4AwrlA2AH2mf31VpJS5eFjR2rJexT3FkDz2hVUXwW09cPrpqkoJ-dkRO7MGO89qaDib6GuIUetnfJiZqim_96Tg-CNcx2MiZQKP-4bkDJYUrchrD4GLmk6EO3Um">
                 <div class="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
             </div>
             <div class="relative z-10 text-center max-w-4xl">
                 <span class="font-label text-sm tracking-[0.4em] text-primary uppercase mb-8 block">Notre Essence</span>
                 <h1 class="font-headline text-6xl md:text-8xl font-light mb-12 leading-tight">
-                    Où l'Ombre <br/>
+                    Où l'Ombre <br>
                     <span class="italic font-serif text-primary">Définit</span> la Saveur
                 </h1>
                 <p class="font-body text-xl text-on-surface-variant font-light leading-relaxed max-w-2xl mx-auto">
@@ -49,10 +51,10 @@
         <section class="py-32 px-12 max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
                 <div class="md:col-span-7">
-                    <img class="w-full aspect-[4/5] object-cover grayscale brightness-75 border-none" data-alt="Intérieur maussade et exclusif du restaurant avec marbre noir" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfau9k9iFov7rEJgXCq7cs8qPHmhmChH9epakq7KUKeUeiP0yNHD3Odm_2HOzl13uHCJUPyvW4BbeL-f79o3KU0MbFnn0q-fy4wp8mP8w5bXz4BFRsOCnDbwpkS2XQM06fGr9fn-LK0GjCqTfvrz2hkP9HeXpodzPVWElUUOlY25kPZYpMqsVOZ-ETh54iZWDvpJe79eCcGJaSH6xYRe4dSW8j9sEXX8zUzR94zcOgtbH8BlHZplAOTlqwLSD4k9oVNizj7152Bklt"/>
+                    <img class="w-full aspect-[4/5] object-cover grayscale brightness-75 border-none" data-alt="Intérieur maussade et exclusif du restaurant avec marbre noir" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfau9k9iFov7rEJgXCq7cs8qPHmhmChH9epakq7KUKeUeiP0yNHD3Odm_2HOzl13uHCJUPyvW4BbeL-f79o3KU0MbFnn0q-fy4wp8mP8w5bXz4BFRsOCnDbwpkS2XQM06fGr9fn-LK0GjCqTfvrz2hkP9HeXpodzPVWElUUOlY25kPZYpMqsVOZ-ETh54iZWDvpJe79eCcGJaSH6xYRe4dSW8j9sEXX8zUzR94zcOgtbH8BlHZplAOTlqwLSD4k9oVNizj7152Bklt">
                 </div>
                 <div class="md:col-span-5 md:pl-12">
-                    <h2 class="font-headline text-4xl mb-8 font-light leading-snug">L'Héritage <br/> de Notre Maison</h2>
+                    <h2 class="font-headline text-4xl mb-8 font-light leading-snug">L'Héritage <br> de Notre Maison</h2>
                     <div class="space-y-6 font-body text-on-surface-variant leading-relaxed">
                         <p>Installé au cœur du quartier diplomatique de la Haie Vive (Cotonou), L'Ébène a commencé comme un collectif restreint d'artisans cherchant à redéfinir l'expérience singulière d'un dîner nocturne. Nous opérons en marge des traditions, mélangeant habilement techniques d'avant-garde moléculaire et un respect quasi religieux pour l'ingrédient endémique.</p>
                         <p>Notre cuisine est un laboratoire de précision chirurgicale. Chaque texture y est considérée ; chaque effluve est curaté pour éveiller une mémoire enfouie, sublimer une mousson, ou illustrer une émotion silencieuse.</p>
@@ -65,7 +67,7 @@
         <section class="bg-surface-container-lowest py-32 px-12">
             <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
                 <div class="md:col-span-5 md:order-2 relative">
-                    <img class="w-full aspect-square object-cover" data-alt="Portrait brut du chef Hakim Sènou" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC29hmaqQ2zcNXYFfRHbdAFWLJfafHG0Weq_vRXcb424kafL5J54bt0Z6RLaQMSiqLg-GyJhi9YFGhf4dVya98kfsAST2Sed0dydAgYGaJCFYMMuSJCwy9umKGA_JkNelfyRQqYFB9z0EJEKyC4ShspkHMAQ98ErN6ZW4wsx1n2pzE1ocSXApZB5cAey8RmDTlfuhaSJUpDf3Gq18LGSYlVGHPLA_0hbYVy0I_KefvGaDXfo-VqsFDpNR3BvW-j0SelJcgXCX1Xc1WD"/>
+                    <img class="w-full aspect-square object-cover" data-alt="Portrait brut du chef Hakim Sènou" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC29hmaqQ2zcNXYFfRHbdAFWLJfafHG0Weq_vRXcb424kafL5J54bt0Z6RLaQMSiqLg-GyJhi9YFGhf4dVya98kfsAST2Sed0dydAgYGaJCFYMMuSJCwy9umKGA_JkNelfyRQqYFB9z0EJEKyC4ShspkHMAQ98ErN6ZW4wsx1n2pzE1ocSXApZB5cAey8RmDTlfuhaSJUpDf3Gq18LGSYlVGHPLA_0hbYVy0I_KefvGaDXfo-VqsFDpNR3BvW-j0SelJcgXCX1Xc1WD">
                     <div class="mt-8 text-right md:absolute md:-left-24 md:top-24 md:text-left md:mt-0">
                         <p class="font-headline text-2xl text-primary mb-1">Chef Hakim Sènou</p>
                         <p class="font-label text-xs tracking-[0.2em] text-outline uppercase">Visionnaire Exécutif</p>
@@ -73,7 +75,7 @@
                 </div>
                 <div class="md:col-span-7 md:order-1 pt-12">
                     <span class="font-label text-xs tracking-[0.3em] text-outline uppercase mb-6 block italic">Le Parcours Culinaire</span>
-                    <h2 class="font-headline text-5xl mb-12 font-light">La Précision Née <br/> de la Passion.</h2>
+                    <h2 class="font-headline text-5xl mb-12 font-light">La Précision Née <br> de la Passion.</h2>
                     <div class="grid grid-cols-1 gap-12 font-body text-on-surface-variant leading-relaxed">
                         <div class="border-l border-outline-variant/30 pl-8">
                             <p class="text-primary font-headline text-xl mb-3">01. La Fondation</p>
@@ -107,16 +109,16 @@
         <section class="px-12 pb-32 max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px]">
                 <div class="md:col-span-2 md:row-span-2 overflow-hidden">
-                    <img class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-1000" data-alt="Gros plan extrême de truffes fraîchement tranchées" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsboS3BEtDAtW21eqHkyDSRVX3IDzEo6yVE9f29gqZejCWzj3VXWaWT-T0t-LBDgs3ORB0JAGeAmZxTxjY3OeYBg1fm9f9beNjOKNArlfN13jQb4DoEu4vHOzwI4dTCjedCiFoxQqN4F_Ofe08eHJ6wIanZp-pG846JF3Rv5wW3FupJB1yXyWGvdP_YFqfPXH2v7aWEjCiRmONjtEzkbWm1_4TwSI4XatNN1vBRqAbvzqxccDpNS4LRteOVKQiN4VuienlZLweDUpp"/>
+                    <img class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-1000" data-alt="Gros plan extrême de truffes fraîchement tranchées" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsboS3BEtDAtW21eqHkyDSRVX3IDzEo6yVE9f29gqZejCWzj3VXWaWT-T0t-LBDgs3ORB0JAGeAmZxTxjY3OeYBg1fm9f9beNjOKNArlfN13jQb4DoEu4vHOzwI4dTCjedCiFoxQqN4F_Ofe08eHJ6wIanZp-pG846JF3Rv5wW3FupJB1yXyWGvdP_YFqfPXH2v7aWEjCiRmONjtEzkbWm1_4TwSI4XatNN1vBRqAbvzqxccDpNS4LRteOVKQiN4VuienlZLweDUpp">
                 </div>
                 <div class="md:col-span-2 overflow-hidden">
-                    <img class="w-full h-full object-cover brightness-50 hover:scale-105 transition-transform duration-1000" data-alt="Cocktail signature avec feuille d'or" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEo2U2itV11m511CcWURfGM3nWNjk_v95BctWEID0hj_AXTrEkRRNgN4acwMl2UcBneLnzynhM4EITLfxffsTJYz34we4o8vJX2Q161YeRtzsoG5j3qP6y3gvtGGEU5m8RViuQ77-zzV2XhTdmqA4YiYwA50PlZQ50ZMFx-r6Yls-RsvJHpgeliOQGUr5XvfrX0Z1G-LqkuzuKGFKVcO1SW8s6AYYIT4Pu3UyxqyNftkN-_OtHUIfOZN8sqTu1Y2KaQzM_MGXz4ei_"/>
+                    <img class="w-full h-full object-cover brightness-50 hover:scale-105 transition-transform duration-1000" data-alt="Cocktail signature avec feuille d'or" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEo2U2itV11m511CcWURfGM3nWNjk_v95BctWEID0hj_AXTrEkRRNgN4acwMl2UcBneLnzynhM4EITLfxffsTJYz34we4o8vJX2Q161YeRtzsoG5j3qP6y3gvtGGEU5m8RViuQ77-zzV2XhTdmqA4YiYwA50PlZQ50ZMFx-r6Yls-RsvJHpgeliOQGUr5XvfrX0Z1G-LqkuzuKGFKVcO1SW8s6AYYIT4Pu3UyxqyNftkN-_OtHUIfOZN8sqTu1Y2KaQzM_MGXz4ei_">
                 </div>
                 <div class="overflow-hidden">
-                    <img class="w-full h-full object-cover grayscale brightness-75 hover:scale-105 transition-transform duration-1000" data-alt="Plat gastronomique moléculaire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD8hkFdZstjsYNmi_GnXatTa-MuuP-2cFMbBeMfVSS242aiAj1Ry2xQ70OAGOFW4nenPXjahBtkawrrOvMCA5ApF6D0HkevaIbS2ZH0xMBlR9C5rOmo0RSeewMNgOpDCYGT9dwjFvgdMxj9tetlsij-HKeyRsNlK8CDjsrwh0xq_DAGsHlO1wx9OYk0WiKnqzooy_v6i-D_ilkT4dNxJTkok9uzmsYrmHojGROJfa7cqOhqQcBtEF1zuMjs7TIESl-IwZsn1C6JhI4"/>
+                    <img class="w-full h-full object-cover grayscale brightness-75 hover:scale-105 transition-transform duration-1000" data-alt="Plat gastronomique moléculaire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD8hkFdZstjsYNmi_GnXatTa-MuuP-2cFMbBeMfVSS242aiAj1Ry2xQ70OAGOFW4nenPXjahBtkawrrOvMCA5ApF6D0HkevaIbS2ZH0xMBlR9C5rOmo0RSeewMNgOpDCYGT9dwjFvgdMxj9tetlsij-HKeyRsNlK8CDjsrwh0xq_DAGsHlO1wx9OYk0WiKnqzooy_v6i-D_ilkT4dNxJTkok9uzmsYrmHojGROJfa7cqOhqQcBtEF1zuMjs7TIESl-IwZsn1C6JhI4">
                 </div>
                 <div class="overflow-hidden">
-                    <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="Table rustique avec ingrédients frais" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrr_3cSBd0Ni7FsW98cuUu9JlL9liOvYBCuoUfsRUSpW5E6ARl7v6CbzvpULBX_Bwdnal1Tok8cc31NAnQNSmPCu3UAOjyOE4TCLPT9VJamQXjak5JXwngTMhufnSkkTPaIOQx_iY-zzTWDK6QApWcZLYoNk3b2_HnQkIW6Yja9kYxiiZrZzzSAe57wZk8hNP01oM7WBoOpM0unrlc4q3GzveixpnArA8aHPqERPi8AyiYcFSDwlmzAnEiQz81OxWJG6B71y4XHfvb"/>
+                    <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="Table rustique avec ingrédients frais" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrr_3cSBd0Ni7FsW98cuUu9JlL9liOvYBCuoUfsRUSpW5E6ARl7v6CbzvpULBX_Bwdnal1Tok8cc31NAnQNSmPCu3UAOjyOE4TCLPT9VJamQXjak5JXwngTMhufnSkkTPaIOQx_iY-zzTWDK6QApWcZLYoNk3b2_HnQkIW6Yja9kYxiiZrZzzSAe57wZk8hNP01oM7WBoOpM0unrlc4q3GzveixpnArA8aHPqERPi8AyiYcFSDwlmzAnEiQz81OxWJG6B71y4XHfvb">
                 </div>
             </div>
         </section>
@@ -151,5 +153,42 @@
             © 2026 L'Ébène Haute Cuisine. Tous droits réservés.
         </div>
     </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">L'Expérience</a>
+        <a href="menu.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Dégustation</a>
+        <a href="gallery.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Galerie</a>
+        <a href="reservation.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Réservation</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

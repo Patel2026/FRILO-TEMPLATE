@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html class="scroll-smooth" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="scroll-smooth" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Galerie | L'Atrium des Saveurs</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet">
     <!-- Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-primary-container/30 antialiased">
 
@@ -33,7 +31,11 @@
                 Réserver une table
             </button>
         </div>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main class="pt-32 pb-24">
         <header class="max-w-7xl mx-auto px-8 mb-20">
@@ -51,26 +53,26 @@
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
                 <!-- Large Image 1 -->
                 <div class="md:col-span-8 group relative overflow-hidden rounded-[3rem] aspect-[16/10] harvest-shadow">
-                    <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Intérieur Grand Atrium" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9p9dauxWVOy_uvdQm4z3pkVHISHTd1mrpF0jNdxElYF_tpDMS5JBXV0i7kW8K2U9OY-kzQGl74O9Gek0krgd9tBnAORTuwEQH2wLewRK-YtOy8-97_w84y4gB8v6AvZSKJEiccYyxr23F0h1C4WbpYT4Da0ETUlW0T_cDTGr8g6-0aLTrIOmxFv41Up-XZYSLsxRj1hScNBgWQ0FUu-3A0iy4praOqgkb7VtwOxzje_eebepKul1S6gXDPMt8D4OLJOdZpthuHN39"/>
+                    <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Intérieur Grand Atrium" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9p9dauxWVOy_uvdQm4z3pkVHISHTd1mrpF0jNdxElYF_tpDMS5JBXV0i7kW8K2U9OY-kzQGl74O9Gek0krgd9tBnAORTuwEQH2wLewRK-YtOy8-97_w84y4gB8v6AvZSKJEiccYyxr23F0h1C4WbpYT4Da0ETUlW0T_cDTGr8g6-0aLTrIOmxFv41Up-XZYSLsxRj1hScNBgWQ0FUu-3A0iy4praOqgkb7VtwOxzje_eebepKul1S6gXDPMt8D4OLJOdZpthuHN39">
                     <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                         <span class="material-symbols-outlined text-white text-5xl">zoom_in</span>
                     </div>
                 </div>
                 <!-- Small Image 1 -->
                 <div class="md:col-span-4 group relative overflow-hidden rounded-[2rem] aspect-square harvest-shadow md:translate-y-12">
-                    <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Détails Buffet Fresh" src="https://lh3.googleusercontent.com/aida-public/AB6AXuShHM0i5sPeg8zDAif7ffydZnaw_3Q1gea8BWXCFoH4ubT1fYKPgdx_nCCFwCPVzRsJyV_Em6P17UP1AnbGMtwLj4CRH_czjPSEr8FsYPChVko3tKAYUJL5c_lvaqe7qyahJPfg9HhxZozwB0f7W1MMj3qNl9RHvsaufYYb_AVzcTXXYJEL26w0mlGrQGhtUC2ywXnWyfAHRIqG1rRO8ZF-RSWJsarEjnr21IBsPSMckEbYPmdhBY7U5-DchPK5SXK_hNm6kYI_Tt4"/>
+                    <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Détails Buffet Fresh" src="https://lh3.googleusercontent.com/aida-public/AB6AXuShHM0i5sPeg8zDAif7ffydZnaw_3Q1gea8BWXCFoH4ubT1fYKPgdx_nCCFwCPVzRsJyV_Em6P17UP1AnbGMtwLj4CRH_czjPSEr8FsYPChVko3tKAYUJL5c_lvaqe7qyahJPfg9HhxZozwB0f7W1MMj3qNl9RHvsaufYYb_AVzcTXXYJEL26w0mlGrQGhtUC2ywXnWyfAHRIqG1rRO8ZF-RSWJsarEjnr21IBsPSMckEbYPmdhBY7U5-DchPK5SXK_hNm6kYI_Tt4">
                 </div>
                 <!-- Small Image 2 -->
                 <div class="md:col-span-4 group relative overflow-hidden rounded-[2rem] aspect-square harvest-shadow">
-                    <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Grillades Chef" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMPxGyzJYHzvmef2WETJIRnrMaBN_si1CiVJ31mjuldxJ8bk3iIHQt8gHHFVMjPrJ-Qo3nwLEuStBG1hxaU89edgO4BleXUssxyz5dSQAeLT_f0aa6_hBJ2YdZnmeNxVwi3Mtw7bMUNWltC10iY69suZA93tMTfO8XJiC1nhgVgUvdqINHr8jT6_C3B8sqOt_CaQ7A2t77nDlmmBCws6MAXBNskaerrhiORhFa8fDZ-5zv8yg1x-mZ7AnpsdMootT8wihhtp2dkVkZ"/>
+                    <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Grillades Chef" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMPxGyzJYHzvmef2WETJIRnrMaBN_si1CiVJ31mjuldxJ8bk3iIHQt8gHHFVMjPrJ-Qo3nwLEuStBG1hxaU89edgO4BleXUssxyz5dSQAeLT_f0aa6_hBJ2YdZnmeNxVwi3Mtw7bMUNWltC10iY69suZA93tMTfO8XJiC1nhgVgUvdqINHr8jT6_C3B8sqOt_CaQ7A2t77nDlmmBCws6MAXBNskaerrhiORhFa8fDZ-5zv8yg1x-mZ7AnpsdMootT8wihhtp2dkVkZ">
                 </div>
                 <!-- Large Image 2 -->
                 <div class="md:col-span-8 group relative overflow-hidden rounded-[3rem] aspect-[16/10] harvest-shadow md:-translate-y-12">
-                    <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Atmosphère Soirée" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuep7uIwgDWPdxctTcxwv9ftKnR49X4cSQNWQWsf4u820L9lsYfwaXdBsMP9zgtj5IkhQaJfNnw6iASNhh-qCQvejGwxRPujdlAiQtcYMlLzxx7p3LcCmcIo5X5Cs_xqpv-qUUxNp07njtn11hOBclAFS1Y9xlX0RJFVr6u0IIRlcgX76BcKCmGODlsY5TY5C5wQ5BShNRx_PawlFVYqmtd81NdL1ecIb6M0apEGvlsQntI6-sbapSgxpx-VMsJ1Qhg6bIbC1m1ndh"/>
+                    <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Atmosphère Soirée" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuep7uIwgDWPdxctTcxwv9ftKnR49X4cSQNWQWsf4u820L9lsYfwaXdBsMP9zgtj5IkhQaJfNnw6iASNhh-qCQvejGwxRPujdlAiQtcYMlLzxx7p3LcCmcIo5X5Cs_xqpv-qUUxNp07njtn11hOBclAFS1Y9xlX0RJFVr6u0IIRlcgX76BcKCmGODlsY5TY5C5wQ5BShNRx_PawlFVYqmtd81NdL1ecIb6M0apEGvlsQntI6-sbapSgxpx-VMsJ1Qhg6bIbC1m1ndh">
                 </div>
                 <!-- Wide Image 1 -->
                 <div class="md:col-span-12 group relative overflow-hidden rounded-[3rem] h-[500px] harvest-shadow">
-                    <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Long Board Harvest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzjdQTXQsbnlGkp85Urjy-Tg_YTPdkqXphAePuJQf0Yi2Zrak0DQXoRo7X4qmaBHeBKFoDAHYiGotUsQkh2ccODdzidCc3Dc4bWdHBlEaiD2pF24vbUXQbT_q5Fm7L5XLqnDcWVbVgXuM1Am2smJGu32qoNRkBgMQgmg2s75dXQYdQ3-JIG9NPLkQ3_iEBPluaroS985uNR3hKsgFX04kU6gGPbU3TyvYxmtdIyL9_T1FoSkCrCH2k0U5xFfmqOqgiZchG_Iq_o4wF"/>
+                    <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Long Board Harvest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzjdQTXQsbnlGkp85Urjy-Tg_YTPdkqXphAePuJQf0Yi2Zrak0DQXoRo7X4qmaBHeBKFoDAHYiGotUsQkh2ccODdzidCc3Dc4bWdHBlEaiD2pF24vbUXQbT_q5Fm7L5XLqnDcWVbVgXuM1Am2smJGu32qoNRkBgMQgmg2s75dXQYdQ3-JIG9NPLkQ3_iEBPluaroS985uNR3hKsgFX04kU6gGPbU3TyvYxmtdIyL9_T1FoSkCrCH2k0U5xFfmqOqgiZchG_Iq_o4wF">
                 </div>
             </div>
         </section>
@@ -106,7 +108,7 @@
             <div>
                 <span class="font-headline font-black text-primary uppercase text-[10px] tracking-widest mb-8 block">Le Lieu</span>
                 <p class="text-sm text-on-surface-variant leading-relaxed">
-                    Haie Vive, Cotonou<br/>
+                    Haie Vive, Cotonou<br>
                     +229 01 00 00 00
                 </p>
             </div>
@@ -118,5 +120,43 @@
             </div>
         </div>
     </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Esprit</a>
+        <a href="menu.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">La Table</a>
+        <a href="gallery.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Galerie</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

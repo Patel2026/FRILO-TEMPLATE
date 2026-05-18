@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html class="dark" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Réservations | FRILO LOUNGE & GRILL</title>
+<!DOCTYPE html><html class="dark" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Réservations | FRILO LOUNGE &amp; GRILL</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
     <!-- Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-surface font-body text-on-surface-variant selection:bg-primary selection:text-on-primary antialiased">
 
@@ -32,7 +30,11 @@
                 Réserver une table
             </a>
         </div>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main class="pt-24 pb-20">
         <!-- Hero Header -->
@@ -40,10 +42,10 @@
             <div class="flex flex-col items-start gap-4">
                 <span class="font-label tracking-[0.2em] uppercase text-secondary font-bold">Réservations</span>
                 <h1 class="text-6xl md:text-8xl font-headline font-bold tracking-tighter text-white neon-glow-purple leading-none uppercase">
-                    Entrez dans la<br/><span class="text-primary italic">Légende.</span>
+                    Entrez dans la<br><span class="text-primary italic">Légende.</span>
                 </h1>
                 <p class="max-w-xl text-lg text-on-surface-variant font-light mt-4">
-                    Vivez l'immersion totale au cœur de la Haie Vive. Sécurisez votre position dans le cercle restreint du FRILO Lounge & Grill.
+                    Vivez l'immersion totale au cœur de la Haie Vive. Sécurisez votre position dans le cercle restreint du FRILO Lounge &amp; Grill.
                 </p>
             </div>
         </header>
@@ -60,7 +62,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div class="relative group">
                                 <label class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Date</label>
-                                <input class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface appearance-none" type="date"/>
+                                <input class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface appearance-none" type="date">
                             </div>
                             <div class="relative group">
                                 <label class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Heure</label>
@@ -76,7 +78,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div class="relative group">
                                 <label class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Convives</label>
-                                <input class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface" max="15" min="1" type="number" value="2"/>
+                                <input class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface" max="15" min="1" type="number" value="2">
                             </div>
                             <div class="relative group">
                                 <label class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Expérience</label>
@@ -91,11 +93,11 @@
                         <div class="space-y-8">
                             <div class="relative group">
                                 <label class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Nom Complet</label>
-                                <input class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface placeholder:text-surface-bright" placeholder="VOTRE NOM" type="text"/>
+                                <input class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface placeholder:text-surface-bright" placeholder="VOTRE NOM" type="text">
                             </div>
                             <div class="relative group">
                                 <label class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Téléphone</label>
-                                <input class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface placeholder:text-surface-bright" placeholder="+229 -- -- -- --" type="tel"/>
+                                <input class="w-full bg-transparent border-b-2 border-surface-container-highest py-3 focus:outline-none focus:border-secondary transition-all text-on-surface placeholder:text-surface-bright" placeholder="+229 -- -- -- --" type="tel">
                             </div>
                         </div>
                         <button class="w-full bg-gradient-to-r from-primary to-primary-dim text-on-primary-fixed py-5 font-headline font-bold text-lg rounded-lg hover:shadow-[0_0_30px_rgba(224,141,255,0.4)] transition-all duration-300 transform hover:-translate-y-1" type="submit">
@@ -117,7 +119,7 @@
                             </div>
                             <div>
                                 <p class="text-white font-medium">Localisation</p>
-                                <p class="text-sm font-light">Avenue Jean-Paul II, Haie Vive<br/>Cotonou, Bénin</p>
+                                <p class="text-sm font-light">Avenue Jean-Paul II, Haie Vive<br>Cotonou, Bénin</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
@@ -143,7 +145,7 @@
 
                 <!-- Dark Map Mockup -->
                 <div class="relative h-64 md:h-80 rounded-xl overflow-hidden bg-surface-container shadow-inner border border-outline-variant/10 group">
-                    <img class="w-full h-full object-cover grayscale brightness-50 contrast-125 opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="Carte Cotonou" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQft7a4u-Jvj2xHQJSY3mCols2Nh0dDi_B3ZWKlXoWE3zoTIXThbCDomvQ80d-qedU6cclVV00uNBNJaBEg5-dQI326IbGCXOTIx9FlM1f0CgaitRta4EPiXMhVMGUYzXX9t-SEs0Q7GfGwm9IYrZ1KQW2WoWYVAPHekClz7wjdw171pjoZIL9ubpcwodPM_NNmEnJNHtVVLxtpEXbzUaKjpAges75qHdjFBETaQRnw6TYpNlNspdgVY9VshMH4sqgtEJleDYvG6sC"/>
+                    <img class="w-full h-full object-cover grayscale brightness-50 contrast-125 opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="Carte Cotonou" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQft7a4u-Jvj2xHQJSY3mCols2Nh0dDi_B3ZWKlXoWE3zoTIXThbCDomvQ80d-qedU6cclVV00uNBNJaBEg5-dQI326IbGCXOTIx9FlM1f0CgaitRta4EPiXMhVMGUYzXX9t-SEs0Q7GfGwm9IYrZ1KQW2WoWYVAPHekClz7wjdw171pjoZIL9ubpcwodPM_NNmEnJNHtVVLxtpEXbzUaKjpAges75qHdjFBETaQRnw6TYpNlNspdgVY9VshMH4sqgtEJleDYvG6sC">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="relative">
                             <div class="absolute -inset-4 bg-primary/30 rounded-full blur-xl animate-pulse"></div>
@@ -185,7 +187,7 @@
                 <div class="group p-8 bg-surface-container-low rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all">
                     <h4 class="text-white font-headline font-bold text-lg uppercase mb-4 tracking-tight">Âge Requis</h4>
                     <p class="text-on-surface-variant text-sm font-light leading-relaxed">
-                        Le FRILO Lounge & Grill est strictement réservé aux 21 ans et plus. Une pièce d'identité valide avec photo est requise pour tous les convives.
+                        Le FRILO Lounge &amp; Grill est strictement réservé aux 21 ans et plus. Une pièce d'identité valide avec photo est requise pour tous les convives.
                     </p>
                 </div>
             </div>
@@ -213,10 +215,47 @@
             <div class="space-y-4">
                 <h5 class="text-white font-bold text-xs uppercase tracking-widest font-label">Le Sanctum</h5>
                 <div class="pt-4">
-                    <div class="text-[10px] text-neutral-600 uppercase tracking-widest">© 2026 FRILO LOUNGE & GRILL.</div>
+                    <div class="text-[10px] text-neutral-600 uppercase tracking-widest">© 2026 FRILO LOUNGE &amp; GRILL.</div>
                 </div>
             </div>
         </div>
     </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Esprit</a>
+        <a href="menu.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Carte</a>
+        <a href="events.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Événements</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

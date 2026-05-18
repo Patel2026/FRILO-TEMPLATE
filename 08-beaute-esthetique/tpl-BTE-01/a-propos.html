@@ -1,34 +1,26 @@
-<!DOCTYPE html>
-<html class="scroll-smooth" lang="fr">
-
-<head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<!DOCTYPE html><html class="scroll-smooth" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Sanctuaire | L'AURA - Haute Beauté</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;600;800&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet">
     <!-- Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 
-<body
-    class="bg-surface text-on-surface font-body selection:bg-secondary selection:text-white antialiased overflow-x-hidden">
+<body class="bg-surface text-on-surface font-body selection:bg-secondary selection:text-white antialiased overflow-x-hidden">
 
     <!-- TopNavBar (Glassmorphism) -->
     <nav class="fixed top-0 w-full z-50 glass-aura ghost-border">
         <div class="flex justify-between items-center px-12 py-6 max-w-full">
             <a href="index.html" class="text-2xl font-headline tracking-tighter text-on-background uppercase">L'Aura
                 Haute Beauté</a>
-            <div
-                class="hidden md:flex items-center gap-12 font-label text-[10px] font-extrabold tracking-[0.3em] uppercase">
+            <div class="hidden md:flex items-center gap-12 font-label text-[10px] font-extrabold tracking-[0.3em] uppercase">
                 <a class="text-on-surface/50 hover:text-on-surface transition-all" href="index.html">Accueil</a>
                 <a class="text-secondary border-b border-secondary pb-1" href="a-propos.html">A propos</a>
                 <a class="text-on-surface/50 hover:text-on-surface transition-all" href="services.html">Services</a>
@@ -39,18 +31,21 @@
                 Réserver
             </button>
         </div>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main class="pt-40">
         <!-- Brand Narrative Section -->
         <section class="max-w-[1400px] mx-auto px-12 mb-48">
             <div class="grid lg:grid-cols-2 gap-32 items-end">
                 <div>
-                    <span
-                        class="font-label text-[10px] uppercase tracking-[0.5em] text-secondary mb-10 block font-black">Le
+                    <span class="font-label text-[10px] uppercase tracking-[0.5em] text-secondary mb-10 block font-black">Le
                         Manifeste du Silence</span>
                     <h1 class="text-7xl md:text-9xl font-headline tracking-tighter leading-none mb-16">Le Curateur
-                        <br /><span class="italic font-normal text-on-surface/40">Silencieux.</span>
+                        <br><span class="italic font-normal text-on-surface/40">Silencieux.</span>
                     </h1>
                     <p class="text-2xl font-light leading-relaxed mb-16 text-on-surface-variant opacity-80">
                         Nous croyons que la véritable élégance ne crie pas. Elle se manifeste dans l'espace qui entoure
@@ -66,13 +61,9 @@
                 </div>
                 <div class="relative group">
                     <div class="aspect-[4/5] bg-surface-variant overflow-hidden group shadow-2xl">
-                        <img alt="Atmosphère Sanctuaire"
-                            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                            data-alt="Orchidée banche sur fond beige"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiiyyzRPEWyiqc_sNuajhS2kNL21NsEqd0tLUNOBQGDUldQ0AAgBtKJSuvahVKAnFUrLChuDL3vuUVZVgLvw-KC7V47wd_YGda1gRikR-PZsJfbf7_-xUmsc9qVQSZA1olZiK2Oa9JzYkbaSubFsH81MVHdGPrRxzDSz-MBta_MUOh0Ot7uF_1s4M3R_j1JMBPkkDjHloMuI5lpUc3m9ULRJGYgWywNVmg2IvSc7zwEwnVNmsw5SpRD7FtpSwssX8WVXTYQw41oz8" />
+                        <img alt="Atmosphère Sanctuaire" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Orchidée banche sur fond beige" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiiyyzRPEWyiqc_sNuajhS2kNL21NsEqd0tLUNOBQGDUldQ0AAgBtKJSuvahVKAnFUrLChuDL3vuUVZVgLvw-KC7V47wd_YGda1gRikR-PZsJfbf7_-xUmsc9qVQSZA1olZiK2Oa9JzYkbaSubFsH81MVHdGPrRxzDSz-MBta_MUOh0Ot7uF_1s4M3R_j1JMBPkkDjHloMuI5lpUc3m9ULRJGYgWywNVmg2IvSc7zwEwnVNmsw5SpRD7FtpSwssX8WVXTYQw41oz8">
                     </div>
-                    <div
-                        class="absolute -bottom-12 -left-12 bg-secondary text-white p-12 hidden md:block w-64 shadow-2xl">
+                    <div class="absolute -bottom-12 -left-12 bg-secondary text-white p-12 hidden md:block w-64 shadow-2xl">
                         <p class="font-headline text-xl italic mb-4">"La main est le prolongement du cœur."</p>
                         <span class="font-label text-[8px] uppercase tracking-widest font-black opacity-60">— Dr.
                             Amélia, Fondatrice</span>
@@ -85,16 +76,13 @@
         <section class="py-48 bg-tonal-low px-12 overflow-hidden">
             <div class="max-w-[1400px] mx-auto editorial-reveal flex flex-col md:flex-row-reverse items-center">
                 <div class="editorial-reveal-img h-[600px] md:translate-x-12">
-                    <img alt="Science Clinique" class="w-full h-full object-cover grayscale-[0.3]"
-                        data-alt="Détails macro de produits cosmétiques de luxe"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbntIiojGEk5tergfxA2MbB_u59om2N7R_MLjSL0mkBjK4WCktZDBqjsnUo6b6FF2NG5algDuqa6vhfrpzOfKydKEl3V1ZoLOksBbUljE9J3qjcIvehg_bCtmjdEIqg1fJMLEdq5kdhqcFKowOMORKL-SsUAxJt9DLIB9n88ngzH7fzZeYAQZkeownE4p71E_oQXHqXpKCvL9gsxkrp-3gxpps3wpUmgKEaU3ZZWSaWg-gwhB3xRpYLZ4tNzzBssGIer3UcoR6YBs" />
+                    <img alt="Science Clinique" class="w-full h-full object-cover grayscale-[0.3]" data-alt="Détails macro de produits cosmétiques de luxe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbntIiojGEk5tergfxA2MbB_u59om2N7R_MLjSL0mkBjK4WCktZDBqjsnUo6b6FF2NG5algDuqa6vhfrpzOfKydKEl3V1ZoLOksBbUljE9J3qjcIvehg_bCtmjdEIqg1fJMLEdq5kdhqcFKowOMORKL-SsUAxJt9DLIB9n88ngzH7fzZeYAQZkeownE4p71E_oQXHqXpKCvL9gsxkrp-3gxpps3wpUmgKEaU3ZZWSaWg-gwhB3xRpYLZ4tNzzBssGIer3UcoR6YBs">
                 </div>
                 <div class="editorial-reveal-text md:-mr-12 md:translate-x-[-5%]">
-                    <span
-                        class="font-label text-[10px] uppercase tracking-[0.4em] text-secondary mb-8 block font-black">L'Engagement
+                    <span class="font-label text-[10px] uppercase tracking-[0.4em] text-secondary mb-8 block font-black">L'Engagement
                         Aura</span>
-                    <h2 class="text-5xl font-headline mb-10 tracking-tighter leading-tight italic font-normal">Science &
-                        <br />Sensorialité.
+                    <h2 class="text-5xl font-headline mb-10 tracking-tighter leading-tight italic font-normal">Science &amp;
+                        <br>Sensorialité.
                     </h2>
                     <p class="text-on-surface-variant font-light leading-loose text-lg mb-12 opacity-80">Chaque soin est
                         une équation parfaite entre l'efficacité clinique de la cosmétique moléculaire et la profondeur
@@ -127,28 +115,61 @@
 
     <!-- Footer -->
     <footer class="bg-stone-100 py-32 px-12 border-t border-on-surface/5">
-        <div
-            class="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-24 mb-32 pb-24 border-b border-on-surface/5">
+        <div class="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-24 mb-32 pb-24 border-b border-on-surface/5">
             <div class="col-span-1">
                 <span class="text-2xl font-headline tracking-tighter uppercase mb-10 block">L'AURA HAUTE BEAUTÉ</span>
-                <p
-                    class="font-label text-xs uppercase tracking-[0.1em] text-on-surface-variant opacity-60 leading-loose">
+                <p class="font-label text-xs uppercase tracking-[0.1em] text-on-surface-variant opacity-60 leading-loose">
                     Curateur d'expériences esthétiques élevées depuis 2026.
                 </p>
             </div>
             <div>
                 <h6 class="font-headline text-lg mb-10">Sanctuaire</h6>
-                <p
-                    class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant opacity-60 leading-loose">
-                    Quartier Haie Vive<br />Près de l'Ambassade de France<br />Cotonou, Bénin
+                <p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant opacity-60 leading-loose">
+                    Quartier Haie Vive<br>Près de l'Ambassade de France<br>Cotonou, Bénin
                 </p>
             </div>
         </div>
-        <div
-            class="flex flex-col md:flex-row justify-between items-center gap-8 opacity-40 font-label text-[8px] uppercase tracking-[0.5em] font-black">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8 opacity-40 font-label text-[8px] uppercase tracking-[0.5em] font-black">
             <span>© 2026 L'AURA HAUTE BEAUTÉ. MADE WITH CALM.</span>
         </div>
     </footer>
-</body>
 
-</html>
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="a-propos.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">A propos</a>
+        <a href="services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Services</a>
+        <a href="gallery.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Galerie</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

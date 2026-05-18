@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html class="scroll-smooth" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="scroll-smooth" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Contact | FRILO BEAUTY</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
     <!-- Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container antialiased">
 
@@ -27,14 +25,18 @@
             <a class="font-label text-[12px] uppercase tracking-[0.2em] text-[#b70049] border-b-2 border-[#b70049] pb-1" href="contact.html">Contact</a>
         </div>
         <button class="bg-primary text-on-primary px-6 py-2 font-label text-[12px] uppercase tracking-widest hover:bg-primary-dim transition-all active:scale-95 shadow-lg">Prendre RDV</button>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <main class="pt-24 min-h-screen text-left">
         <!-- Hero Section -->
         <section class="px-8 md:px-16 py-12 md:py-24 grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
             <div class="md:col-span-8">
                 <span class="text-primary font-label text-[12px] uppercase tracking-[0.4em] mb-4 block">Contactez-nous</span>
-                <h1 class="text-6xl md:text-8xl font-headline font-extrabold leading-[0.9] tracking-tighter uppercase text-on-surface">Connectez avec <br/> votre <span class="text-primary">Aura.</span></h1>
+                <h1 class="text-6xl md:text-8xl font-headline font-extrabold leading-[0.9] tracking-tighter uppercase text-on-surface">Connectez avec <br> votre <span class="text-primary">Aura.</span></h1>
             </div>
             <div class="md:col-span-4 pb-2">
                 <p class="text-on-surface-variant text-lg leading-relaxed border-l-4 border-primary pl-6">
@@ -53,7 +55,7 @@
                         <div class="space-y-10">
                             <div>
                                 <p class="text-primary font-label text-[10px] uppercase tracking-[0.2em] mb-2">Adresse</p>
-                                <p class="text-xl font-medium leading-snug">742 Boulevard Néon, <br/>Quartier de la Mode, NY 10012</p>
+                                <p class="text-xl font-medium leading-snug">742 Boulevard Néon, <br>Quartier de la Mode, NY 10012</p>
                             </div>
                             <div>
                                 <p class="text-primary font-label text-[10px] uppercase tracking-[0.2em] mb-2">Renseignements</p>
@@ -110,10 +112,10 @@
                     <h2 class="font-headline text-3xl font-bold uppercase mb-10 tracking-tight">Demande d'Infos</h2>
                     <form action="#" class="space-y-8">
                         <div class="relative">
-                            <input class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 placeholder:uppercase placeholder:text-[10px] placeholder:tracking-[0.2em] outline-none" placeholder="Votre Nom" type="text"/>
+                            <input class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 placeholder:uppercase placeholder:text-[10px] placeholder:tracking-[0.2em] outline-none" placeholder="Votre Nom" type="text">
                         </div>
                         <div class="relative">
-                            <input class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 placeholder:uppercase placeholder:text-[10px] placeholder:tracking-[0.2em] outline-none" placeholder="Adresse Email" type="email"/>
+                            <input class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 placeholder:uppercase placeholder:text-[10px] placeholder:tracking-[0.2em] outline-none" placeholder="Adresse Email" type="email">
                         </div>
                         <div class="relative">
                             <select class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 uppercase text-[10px] tracking-[0.2em] text-on-surface-variant outline-none">
@@ -134,7 +136,7 @@
                 <!-- Map Component (Full Width Lower) -->
                 <div class="md:col-span-12 h-[500px] relative overflow-hidden group shadow-xl">
                     <div class="absolute inset-0 grayscale contrast-125 opacity-80 hover:grayscale-0 transition-all duration-700">
-                        <img alt="Carte Moderne" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBTisZS_cHqXWityPMM36T3an-zJDhRdZThLDP5aaoNOR4ZXNwxlfjeaWvPoQNOdvFC7h7Bj_kOA1Qh3flaRHsHU1jfam7JLiQmlb7yvmx3msP4MbjMsZl75oRf-ZldxjhtJaEFL9KJzrcmNKTfgM5fU48dknkkCg46fo4YVkJU8qTM5t23J_Fw-yQRnq6PLTQC0W73ERbIcunwd267nRZ3aerS0xn7eHUpJRvl4ZnJQdt16ZJpU0j0wdOmCntzgnCKIDwWcMkhvM"/>
+                        <img alt="Carte Moderne" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBTisZS_cHqXWityPMM36T3an-zJDhRdZThLDP5aaoNOR4ZXNwxlfjeaWvPoQNOdvFC7h7Bj_kOA1Qh3flaRHsHU1jfam7JLiQmlb7yvmx3msP4MbjMsZl75oRf-ZldxjhtJaEFL9KJzrcmNKTfgM5fU48dknkkCg46fo4YVkJU8qTM5t23J_Fw-yQRnq6PLTQC0W73ERbIcunwd267nRZ3aerS0xn7eHUpJRvl4ZnJQdt16ZJpU0j0wdOmCntzgnCKIDwWcMkhvM">
                     </div>
                     <div class="absolute inset-0 pointer-events-none flex items-center justify-center">
                         <div class="w-16 h-16 bg-primary flex items-center justify-center text-on-primary">
@@ -164,5 +166,43 @@
             © 2024 FRILO BEAUTY. TOUS DROITS RÉSERVÉS.
         </div>
     </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="a-propos.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">À propos</a>
+        <a href="services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Soins</a>
+        <a href="tarifs.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Tarifs</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html lang="fr" class="scroll-smooth"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Notre Équipe | Clinique Le Sanctuaire</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="js/tailwind-config.js"></script>
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
 <!-- Top Navigation Bar -->
@@ -27,10 +25,14 @@
                 Prendre Rendez-vous
             </a>
             <div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container">
-                <img alt="Logo de la clinique" class="w-full h-full object-cover" data-alt="minimalist logo of a medical clinic with soft blue and green abstract medical cross symbol" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw4mheYH2dKKgtIh1KOSN_kF49A3cOLFwopl9PGwDl3bRLue3pEdv7ClMcWe-oFH3x4gtQCBusonvxnH31Erz6moev9NqAEaMwcb6Vn_0kuUTXRkkhv8DshqZCohpOey85HPdINb3P9MZk7K5VFuvILB2giYKZ1xX-UgH5XeHqX5oRjG9INjo3xteQM623zW0cfl_nmXjTtgDq0tbPTgQtCTg_JAMuQdWkK0gpERLAJ8aTI-nP5ICEQ3oKNJJ9vUy7bGanERTUrik" />
+                <img alt="Logo de la clinique" class="w-full h-full object-cover" data-alt="minimalist logo of a medical clinic with soft blue and green abstract medical cross symbol" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw4mheYH2dKKgtIh1KOSN_kF49A3cOLFwopl9PGwDl3bRLue3pEdv7ClMcWe-oFH3x4gtQCBusonvxnH31Erz6moev9NqAEaMwcb6Vn_0kuUTXRkkhv8DshqZCohpOey85HPdINb3P9MZk7K5VFuvILB2giYKZ1xX-UgH5XeHqX5oRjG9INjo3xteQM623zW0cfl_nmXjTtgDq0tbPTgQtCTg_JAMuQdWkK0gpERLAJ8aTI-nP5ICEQ3oKNJJ9vUy7bGanERTUrik">
             </div>
         </div>
     </div>
+
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
 </nav>
 
 <main class="pt-32 pb-24">
@@ -58,7 +60,7 @@
             <!-- Lead Doctor Card - Featured -->
             <div class="md:col-span-8 group relative overflow-hidden bg-surface-container-lowest rounded-[2rem] p-10 flex flex-col md:flex-row gap-10 items-center transition-all duration-500 hover:shadow-2xl hover:shadow-primary/5">
                 <div class="w-full md:w-1/2 h-[400px] overflow-hidden rounded-2xl">
-                    <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="Professional female doctor in her 40s wearing a white clinical coat, soft natural lighting, warm clinical environment background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFqX2z_XhD2wDHHiYa-6Z4HleMwYvUqRSagv6VF2guG_bXJaXLuURgeRCQA-aEayV_2ShlDi31YIBzx085eF2hNOLeYWYNr4UE-lg1zlEMm48ZCsEzZcDmbZ_cepAdDi5CtoRWAiRSPFoUOqPWS1yXc8uKFcN-EEOQjLtICyOSrxk_ScZh2pIav2UXXRgEvogi_9TViBtwDCRzc0WWrtkd9y2l1lmtY0is2lYWMFIzMZRVsdKR8e8WjuylMndg2f_YoHH0YQQas4Q" alt="Dre. Sarah Chen" />
+                    <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="Professional female doctor in her 40s wearing a white clinical coat, soft natural lighting, warm clinical environment background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFqX2z_XhD2wDHHiYa-6Z4HleMwYvUqRSagv6VF2guG_bXJaXLuURgeRCQA-aEayV_2ShlDi31YIBzx085eF2hNOLeYWYNr4UE-lg1zlEMm48ZCsEzZcDmbZ_cepAdDi5CtoRWAiRSPFoUOqPWS1yXc8uKFcN-EEOQjLtICyOSrxk_ScZh2pIav2UXXRgEvogi_9TViBtwDCRzc0WWrtkd9y2l1lmtY0is2lYWMFIzMZRVsdKR8e8WjuylMndg2f_YoHH0YQQas4Q" alt="Dre. Sarah Chen">
                 </div>
                 <div class="md:w-1/2">
                     <div class="flex items-center gap-3 mb-4">
@@ -83,7 +85,7 @@
             <!-- Specialist 1 -->
             <div class="md:col-span-4 group bg-surface-container-low rounded-[2rem] p-8 flex flex-col transition-all duration-500 hover:bg-surface-container-lowest">
                 <div class="aspect-square overflow-hidden rounded-2xl mb-8">
-                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Male doctor with glasses smiling, professional portrait, soft office lighting, clean blue medical background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuIIKwFmH0JY_DA-ktIalox99FmBlQcZ5ZtdEXF-aAQPmc-JdshXcezgsWI_f2bLy57FFl3XdY9j251HM3tr71P7vFXF0hlgZSk6YOlP6xgn7N5KR6Xz57VFub63YdoMg249OYhq-2YydU_ZKVwT59OMOSxGdwBo1xk6T5SJD2BEesd3OlgWqE-A3HMkzFLKplYTAmc7uouTgq_yFEXqhQT-iz0s5cZ6zMmDVaepCtIT-yYXWNpRGpRYnbY81c2bV_2i3QV9bxJws" alt="Dr. James Wilson" />
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Male doctor with glasses smiling, professional portrait, soft office lighting, clean blue medical background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuIIKwFmH0JY_DA-ktIalox99FmBlQcZ5ZtdEXF-aAQPmc-JdshXcezgsWI_f2bLy57FFl3XdY9j251HM3tr71P7vFXF0hlgZSk6YOlP6xgn7N5KR6Xz57VFub63YdoMg249OYhq-2YydU_ZKVwT59OMOSxGdwBo1xk6T5SJD2BEesd3OlgWqE-A3HMkzFLKplYTAmc7uouTgq_yFEXqhQT-iz0s5cZ6zMmDVaepCtIT-yYXWNpRGpRYnbY81c2bV_2i3QV9bxJws" alt="Dr. James Wilson">
                 </div>
                 <div class="flex flex-col flex-grow">
                     <h3 class="font-headline text-2xl font-bold text-on-background mb-1">Dr. James Wilson</h3>
@@ -103,7 +105,7 @@
             <!-- Specialist 2 -->
             <div class="md:col-span-4 group bg-surface-container-low rounded-[2rem] p-8 flex flex-col transition-all duration-500 hover:bg-surface-container-lowest">
                 <div class="aspect-square overflow-hidden rounded-2xl mb-8">
-                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Young female doctor looking confident, clinical setting with blurred medical equipment, bright and airy photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpdcehLNwsxdBaQ0sMXfByKCJYnwOjsofv2T3PjuohVC8Zcf1wjENT1oWbuekz40iz4l0HxnMr3oKp4grgCsoMYG_TYvKD4_VFcWyS6PLe5Y5T36FY9BhW0SrE5IUXgQGCCfLueUIYio4-vYy3cXVICATE4Re7XhiDaYk34_bw023mjccAoqUyqQhTEFdu4Yt3bDvJt8SSy9Kc1nWyqms7d4VEhMXy5zfHMSiINPb5b14dQXfPXkq5TP057eNhc-QazdyFilWA6oQ" alt="Dre. Elena Rodriguez" />
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Young female doctor looking confident, clinical setting with blurred medical equipment, bright and airy photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpdcehLNwsxdBaQ0sMXfByKCJYnwOjsofv2T3PjuohVC8Zcf1wjENT1oWbuekz40iz4l0HxnMr3oKp4grgCsoMYG_TYvKD4_VFcWyS6PLe5Y5T36FY9BhW0SrE5IUXgQGCCfLueUIYio4-vYy3cXVICATE4Re7XhiDaYk34_bw023mjccAoqUyqQhTEFdu4Yt3bDvJt8SSy9Kc1nWyqms7d4VEhMXy5zfHMSiINPb5b14dQXfPXkq5TP057eNhc-QazdyFilWA6oQ" alt="Dre. Elena Rodriguez">
                 </div>
                 <div class="flex flex-col flex-grow">
                     <h3 class="font-headline text-2xl font-bold text-on-background mb-1">Dre. Elena Rodriguez</h3>
@@ -123,7 +125,7 @@
             <!-- Specialist 3 -->
             <div class="md:col-span-4 group bg-surface-container-low rounded-[2rem] p-8 flex flex-col transition-all duration-500 hover:bg-surface-container-lowest">
                 <div class="aspect-square overflow-hidden rounded-2xl mb-8">
-                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Experienced male doctor smiling warmly, professional medical portrait, high-end editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzTXW11ER8Ilbfc6LxFH2cxq-T0me8Q5WaBw9cVbW46bJIJz7j_RLMuC6P1Xaz83H9-6rUXIuEkEDRG3jceTkNy3gc29Xldse9m5gcNgn3EutU17_mQuMyBNrpn6rLq_TlE3ZtrN8MmzG1uhhP9mslJtlEQGsSgXyVuAK1aCsNFvjliVYttNKHE9d6Ne70RmRzoDmT7sAmt7rj6xXuXEG4gQWfdOY7ZEbmc5VaIOMv-Wcw_9uepIM6mfJCK903q-buFxYtBi51gpI" alt="Dr. Marcus Thorne" />
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Experienced male doctor smiling warmly, professional medical portrait, high-end editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzTXW11ER8Ilbfc6LxFH2cxq-T0me8Q5WaBw9cVbW46bJIJz7j_RLMuC6P1Xaz83H9-6rUXIuEkEDRG3jceTkNy3gc29Xldse9m5gcNgn3EutU17_mQuMyBNrpn6rLq_TlE3ZtrN8MmzG1uhhP9mslJtlEQGsSgXyVuAK1aCsNFvjliVYttNKHE9d6Ne70RmRzoDmT7sAmt7rj6xXuXEG4gQWfdOY7ZEbmc5VaIOMv-Wcw_9uepIM6mfJCK903q-buFxYtBi51gpI" alt="Dr. Marcus Thorne">
                 </div>
                 <div class="flex flex-col flex-grow">
                     <h3 class="font-headline text-2xl font-bold text-on-background mb-1">Dr. Marcus Thorne</h3>
@@ -143,7 +145,7 @@
             <!-- Specialist 4 -->
             <div class="md:col-span-4 group bg-surface-container-low rounded-[2rem] p-8 flex flex-col transition-all duration-500 hover:bg-surface-container-lowest">
                 <div class="aspect-square overflow-hidden rounded-2xl mb-8">
-                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Medical professional with a stethoscope, focused and professional look, soft lighting in a modern clinical room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6IYi7TEGNfM3DgUnHpiOzAB5hsYwpR6RSiNzPbB7lOxYJ9hw2KaEU-sPEcv0yqMyzRB21mtU4FFCwPjOvVW2bgVP6pZTUeSh1gDD9A9cSMSCelmmJmsoukEXH3NzNQ-m8p0OGBqvEjaKwEIi2D-MgBW_KYv-viQiGsTfbqb2Ik0ts9G83uDgd7O291OpP5rrLSJev1CDAPWqDBLMOSQaSBwUeN9l2aPM5Oawf04esn1kB1vSP9EPS7S0WTqw1I5kqjaNpVkPsY0w" alt="Dre. Amelia Vance" />
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Medical professional with a stethoscope, focused and professional look, soft lighting in a modern clinical room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6IYi7TEGNfM3DgUnHpiOzAB5hsYwpR6RSiNzPbB7lOxYJ9hw2KaEU-sPEcv0yqMyzRB21mtU4FFCwPjOvVW2bgVP6pZTUeSh1gDD9A9cSMSCelmmJmsoukEXH3NzNQ-m8p0OGBqvEjaKwEIi2D-MgBW_KYv-viQiGsTfbqb2Ik0ts9G83uDgd7O291OpP5rrLSJev1CDAPWqDBLMOSQaSBwUeN9l2aPM5Oawf04esn1kB1vSP9EPS7S0WTqw1I5kqjaNpVkPsY0w" alt="Dre. Amelia Vance">
                 </div>
                 <div class="flex flex-col flex-grow">
                     <h3 class="font-headline text-2xl font-bold text-on-background mb-1">Dre. Amelia Vance</h3>
@@ -205,7 +207,7 @@
             <h4 class="font-bold font-headline text-primary uppercase tracking-widest text-xs mb-2">Newsletter</h4>
             <p class="text-slate-500">Restez informés des nouveautés et innovations santé.</p>
             <div class="flex gap-2">
-                <input class="bg-surface-container-low border-none rounded-xl px-4 py-2 text-sm focus:ring-2 focus:ring-primary w-full outline-none" placeholder="Adresse Email" type="email"/>
+                <input class="bg-surface-container-low border-none rounded-xl px-4 py-2 text-sm focus:ring-2 focus:ring-primary w-full outline-none" placeholder="Adresse Email" type="email">
                 <button class="bg-primary text-white p-2 rounded-xl flex items-center justify-center">
                     <span class="material-symbols-outlined">send</span>
                 </button>
@@ -216,5 +218,43 @@
         © 2024 Clinique Le Sanctuaire. Tous droits réservés.
     </div>
 </footer>
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">À propos</a>
+        <a href="services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Services</a>
+        <a href="equipe.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Équipe</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>

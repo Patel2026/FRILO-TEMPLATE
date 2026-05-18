@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html class="light" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="light" lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Accueil | FRILO Héritage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="tailwind-config.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-secondary-container">
 
@@ -27,19 +25,23 @@
                 Visite Privée
             </a>
         </div>
-    </nav>
+    
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 z-50 text-current">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</nav>
 
     <!-- Hero Section -->
     <section class="relative h-screen w-full flex items-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img alt="Architecture Moderne de Luxe" class="w-full h-full object-cover" data-alt="Une villa contemporaine époustouflante au crépuscule, jeux de lumière dramatiques sur les baies vitrées reflétant une piscine à débordement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg-lTmb-Vf8VsHTE_r7Rwgnl32KE0YF2mLr0jaeuyrqD3gp54UxYQ5eAtL3hDvZBSDpG4ZdCBvBANOFgM1eELlorElWfuzjTjZGYlSYAK-Si_NM-MkGeGIL0loHG_bLcMuij-OuTNBNCjuET8QQEYM4a297lIqCUZ9VGlozk_q9lDgbSHN2ktba7tG9p3StIHJaM8B6fdzxUCh5H-2IvBnIUrAO2dy1YzqdLUdNw8wyUZnLfU3jvIeH1gnu_OKvnCcSOTjtSD-cpr7"/>
+            <img alt="Architecture Moderne de Luxe" class="w-full h-full object-cover" data-alt="Une villa contemporaine époustouflante au crépuscule, jeux de lumière dramatiques sur les baies vitrées reflétant une piscine à débordement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg-lTmb-Vf8VsHTE_r7Rwgnl32KE0YF2mLr0jaeuyrqD3gp54UxYQ5eAtL3hDvZBSDpG4ZdCBvBANOFgM1eELlorElWfuzjTjZGYlSYAK-Si_NM-MkGeGIL0loHG_bLcMuij-OuTNBNCjuET8QQEYM4a297lIqCUZ9VGlozk_q9lDgbSHN2ktba7tG9p3StIHJaM8B6fdzxUCh5H-2IvBnIUrAO2dy1YzqdLUdNw8wyUZnLfU3jvIeH1gnu_OKvnCcSOTjtSD-cpr7">
             <div class="absolute inset-0 image-overlay"></div>
         </div>
         <div class="relative z-10 w-full px-12 md:px-24 pt-20">
             <div class="max-w-4xl">
                 <span class="inline-block text-secondary font-semibold tracking-[0.4em] uppercase text-xs mb-6">Maison Fondée en 2014</span>
                 <h1 class="font-headline text-5xl md:text-8xl text-white font-bold leading-tight mb-8">
-                    Créateur <br/> d'<span class="italic font-normal">Héritages</span> Architecturaux
+                    Créateur <br> d'<span class="italic font-normal">Héritages</span> Architecturaux
                 </h1>
                 <p class="text-white/80 text-lg md:text-xl max-w-xl mb-12 font-light leading-relaxed">
                     Un portefeuille confidentiel réunissant les résidences les plus exclusives du Bénin, manié avec la discrétion d'une galerie d'art privée.
@@ -66,7 +68,7 @@
         <div class="grid grid-cols-1 md:grid-cols-12 gap-16">
             <div class="md:col-span-4">
                 <h2 class="font-headline text-4xl md:text-5xl font-bold leading-tight mb-8">
-                    Gestion <br/> d'Exception
+                    Gestion <br> d'Exception
                 </h2>
                 <div class="w-24 h-1 bg-secondary mb-8"></div>
                 <p class="text-on-surface-variant leading-relaxed mb-8">
@@ -117,18 +119,18 @@
     <!-- Feature Slate: Heritage & Heritage -->
     <section class="w-full grid grid-cols-1 lg:grid-cols-2">
         <div class="relative min-h-[600px] bg-stone-900">
-            <img alt="Détails architecturaux et plans" class="w-full h-full object-cover opacity-60" data-alt="Close-up of high-quality architectural blueprints and tactile building materials on a dark wooden table in a sophisticated library." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkDE4JsWmkIxcydldiYx1RHbqopP5HuBORGuKQ0hrjxMsshafidQOYjkjREC1w6vMnNJOuRKiN91GXU8couvSu-B0iypjct0nP2lxnaH5So1jNTatYaHimnajdb0GKHtLlctxCjEsnBmBUn-duH-GwHqPZhZkl1SQ4cq2bK1FYyoTXg18-Ts-GoS9XOaXrFEUZ8_Vznz8IHebh8rOhtJE7pI5Ds34yNVjXF2KEOn5fs7wzSlf3PJ9iA9zHnS8y8cguC8ehQTnHLWSR"/>
+            <img alt="Détails architecturaux et plans" class="w-full h-full object-cover opacity-60" data-alt="Close-up of high-quality architectural blueprints and tactile building materials on a dark wooden table in a sophisticated library." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkDE4JsWmkIxcydldiYx1RHbqopP5HuBORGuKQ0hrjxMsshafidQOYjkjREC1w6vMnNJOuRKiN91GXU8couvSu-B0iypjct0nP2lxnaH5So1jNTatYaHimnajdb0GKHtLlctxCjEsnBmBUn-duH-GwHqPZhZkl1SQ4cq2bK1FYyoTXg18-Ts-GoS9XOaXrFEUZ8_Vznz8IHebh8rOhtJE7pI5Ds34yNVjXF2KEOn5fs7wzSlf3PJ9iA9zHnS8y8cguC8ehQTnHLWSR">
             <div class="absolute inset-0 flex items-center justify-center">
                 <div class="text-center p-12">
                     <span class="font-headline text-8xl text-white/10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">2014</span>
-                    <h4 class="font-headline text-white text-3xl md:text-5xl relative z-10">L'Héritage <br/> de l'Excellence</h4>
+                    <h4 class="font-headline text-white text-3xl md:text-5xl relative z-10">L'Héritage <br> de l'Excellence</h4>
                 </div>
             </div>
         </div>
         
         <div class="bg-surface-container-highest p-12 md:p-24 flex flex-col justify-center">
             <span class="text-secondary text-xs font-bold tracking-[0.4em] uppercase mb-8">Notre Manifeste</span>
-            <h2 class="font-headline text-4xl font-bold mb-10 leading-tight">Préserver le passé, <br/>éditer le futur.</h2>
+            <h2 class="font-headline text-4xl font-bold mb-10 leading-tight">Préserver le passé, <br>éditer le futur.</h2>
             <p class="text-on-surface-variant text-lg leading-relaxed mb-10">
                 Fondée sur les principes d'intégrité architecturale et de service sans compromis, la maison FRILO Héritage passe ses journées à connecter des individus visionnaires à des propriétés qui défient l'ordinaire au Bénin. Notre fondation repose sur la confiance notariale et une compréhension innée du design de haut vol.
             </p>
@@ -160,7 +162,7 @@
         <div class="relative z-10 flex flex-col md:flex-row items-end justify-between gap-12">
             <div class="max-w-2xl">
                 <h2 class="font-headline text-5xl md:text-7xl text-white font-bold leading-tight mb-8">
-                    Initiez Votre <br/> <span class="italic font-normal">Nouveau Chapitre</span>
+                    Initiez Votre <br> <span class="italic font-normal">Nouveau Chapitre</span>
                 </h2>
                 <p class="text-white/60 text-xl leading-relaxed">
                     Représentation exclusive pour la clientèle la plus exigeante de la sous-région. Échangez avec nos directeurs associés dans la plus stricte confidentialité.
@@ -200,5 +202,43 @@
         </div>
     </footer>
 
-</body>
-</html>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-2xl flex-col items-center justify-center text-on-surface">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-current hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center space-y-8">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Accueil</a>
+        <a href="services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Services</a>
+        <a href="about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Savoir-Faire</a>
+        <a href="experts.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Experts</a>
+        <a href="contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#b70049] transition-colors">Contact</a>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+    });
+</script>
+</body></html>
